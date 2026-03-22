@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CogniCit — Suplement diety z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną | Cognivia</title>
-  <meta name="description" content="CogniCit to suplement diety z kwasem alfa-liponowym 250mg, cytykoliną 300mg i beta-cyklodekstryną 250mg. Preparat w przygotowaniu.">
+  <title>CogniCit — Dokładnie to czego ci trzeba | Cognivia</title>
+  <meta name="description" content="CogniCit — suplement diety z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną. Preparat w przygotowaniu.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --gold: #c9a96e;
-      --gold-light: #e8d5a8;
-      --forest: #1a3a2a;
-      --forest-light: #2d5a42;
+      --beige: #f5f0e8;
       --cream: #faf7f0;
-      --warm-white: #fdfcf8;
+      --white: #fdfcf8;
       --charcoal: #2a2a28;
-      --soft-text: #5a5a58;
-      --accent: #8b6914;
-      --rose: #c4727f;
+      --soft: #5a5a58;
+      --gold: #c9a96e;
+      --botanical-yellow: #e8d5a8;
+      --line: #2a2a28;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'DM Sans', sans-serif; color: var(--charcoal); background: var(--warm-white); overflow-x: hidden; }
-    
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--charcoal);
+      background: var(--beige);
+      overflow-x: hidden;
+    }
+
     /* === LEGAL BAR === */
     .legal-bar {
-      background: var(--forest);
-      color: rgba(255,255,255,0.85);
+      background: var(--charcoal);
+      color: rgba(255,255,255,0.7);
       padding: 6px 5%;
       font-size: 10px;
       text-align: center;
@@ -37,250 +40,272 @@
 
     /* === HEADER === */
     header {
-      position: fixed; top: 32px; left: 0; width: 100%; z-index: 1000;
-      padding: 20px 5%;
+      position: fixed; top: 30px; width: 100%; z-index: 1000;
+      padding: 24px 6%;
       display: flex; justify-content: space-between; align-items: center;
-      transition: all 0.4s ease;
+      transition: all 0.4s;
     }
     header.scrolled {
-      background: rgba(250,247,240,0.97);
-      backdrop-filter: blur(20px);
-      box-shadow: 0 1px 0 rgba(0,0,0,0.06);
-      padding: 14px 5%;
+      background: rgba(245,240,232,0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 rgba(42,42,40,0.08);
+      padding: 16px 6%;
     }
     .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 28px; font-weight: 800;
-      color: var(--forest);
+      font-family: 'EB Garamond', serif;
+      font-size: 26px; font-weight: 600;
+      color: var(--charcoal);
       text-decoration: none;
-      letter-spacing: -0.5px;
+      letter-spacing: 1px;
     }
-    .logo span { color: var(--gold); }
-    nav { display: flex; align-items: center; gap: 32px; }
-    nav a { color: var(--charcoal); text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; transition: color 0.3s; }
-    nav a:hover { color: var(--gold); }
-    nav .cta-nav { background: var(--forest); color: white; padding: 10px 24px; border-radius: 2px; font-size: 12px; letter-spacing: 1px; }
-    nav .cta-nav:hover { background: var(--gold); }
+    nav { display: flex; gap: 36px; align-items: center; }
+    nav a {
+      color: var(--charcoal);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: opacity 0.3s;
+    }
+    nav a:hover { opacity: 0.5; }
 
     /* === HERO === */
     .hero {
       min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
       align-items: center;
-      gap: 0;
-      padding-top: 100px;
+      justify-content: center;
+      text-align: center;
+      padding: 140px 6% 80px;
       position: relative;
-      overflow: hidden;
     }
-    .hero-left {
-      padding: 0 8% 0 8%;
-      z-index: 2;
-    }
-    .hero-right {
-      position: relative;
-      height: 100vh;
-      overflow: hidden;
-    }
-    .hero-right img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .hero-right::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: linear-gradient(to right, var(--warm-white) 0%, transparent 30%);
-      z-index: 1;
-    }
-    .hero-badge {
-      display: inline-block;
-      background: var(--gold);
-      color: white;
-      padding: 6px 16px;
+    .hero-content { max-width: 700px; position: relative; z-index: 2; }
+    .hero-tag {
       font-size: 11px;
-      letter-spacing: 2px;
+      letter-spacing: 4px;
       text-transform: uppercase;
-      font-weight: 600;
-      margin-bottom: 24px;
+      color: var(--soft);
+      margin-bottom: 32px;
     }
     .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(48px, 7vw, 88px);
-      font-weight: 900;
-      color: var(--forest);
-      line-height: 1.05;
-      margin-bottom: 16px;
+      font-family: 'EB Garamond', serif;
+      font-size: clamp(52px, 8vw, 96px);
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1.1;
+      margin-bottom: 24px;
+      letter-spacing: -1px;
     }
     .hero h1 em {
       font-style: italic;
-      color: var(--gold);
+      color: var(--charcoal);
     }
-    .hero-subtitle {
-      font-size: 18px;
-      font-weight: 300;
-      color: var(--soft-text);
-      margin-bottom: 32px;
-      max-width: 480px;
-      line-height: 1.7;
+    .hero-slogan {
+      font-family: 'EB Garamond', serif;
+      font-size: 22px;
+      font-style: italic;
+      color: var(--soft);
+      margin-bottom: 40px;
     }
     .hero-badges {
-      display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap;
+      display: flex; gap: 16px; justify-content: center; margin-bottom: 40px; flex-wrap: wrap;
     }
-    .hero-badges .hbadge {
-      background: white;
-      border: 1px solid var(--gold-light);
+    .hero-badges span {
+      font-size: 12px;
+      letter-spacing: 1px;
       padding: 8px 16px;
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--forest);
-      border-radius: 2px;
+      border: 1px solid rgba(42,42,40,0.2);
+      color: var(--charcoal);
     }
     .hero-legal {
       font-size: 11px;
       color: #999;
       font-style: italic;
-      margin-top: 20px;
-      max-width: 400px;
+      max-width: 500px;
+      margin: 0 auto;
     }
-    .cta-button {
-      display: inline-block;
-      background: var(--forest);
-      color: white;
-      padding: 16px 48px;
-      font-size: 13px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s;
-      border: none;
-      cursor: pointer;
-    }
-    .cta-button:hover { background: var(--gold); }
 
-    /* === INGREDIENTS SECTION === */
-    .section-ingredients {
-      padding: 120px 8%;
-      background: var(--cream);
-      position: relative;
-    }
-    .section-ingredients::before {
-      content: '';
+    /* === CHAMOMILE SVG ILLUSTRATION === */
+    .chamomile {
       position: absolute;
-      top: 0; left: 50%;
-      transform: translateX(-50%);
-      width: 1px; height: 80px;
-      background: var(--gold-light);
+      z-index: 1;
+      opacity: 0.12;
     }
-    .section-header {
-      text-align: center;
-      margin-bottom: 80px;
+    .chamomile-hero {
+      right: 8%; top: 15%;
+      width: 300px; height: 300px;
     }
-    .section-header .overline {
+    .chamomile-left {
+      left: 3%; bottom: 10%;
+      width: 200px; height: 200px;
+      transform: rotate(-15deg);
+    }
+
+    /* === SECTION STYLING === */
+    section { padding: 120px 6%; position: relative; }
+    .section-overline {
       font-size: 11px;
       letter-spacing: 4px;
       text-transform: uppercase;
       color: var(--gold);
-      font-weight: 600;
       margin-bottom: 16px;
     }
-    .section-header h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(32px, 4vw, 52px);
-      font-weight: 700;
-      color: var(--forest);
-      margin-bottom: 16px;
+    .section-title {
+      font-family: 'EB Garamond', serif;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 400;
+      color: var(--charcoal);
+      margin-bottom: 24px;
+      line-height: 1.2;
     }
-    .section-header p {
-      font-size: 16px;
-      color: var(--soft-text);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .ingredients-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 40px;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-    .ing-card {
-      background: white;
-      border-radius: 0;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.06);
-      transition: transform 0.4s, box-shadow 0.4s;
-    }
-    .ing-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 30px 80px rgba(0,0,0,0.1);
-    }
-    .ing-card-img {
-      height: 280px;
-      overflow: hidden;
-      position: relative;
-    }
-    .ing-card-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.6s;
-    }
-    .ing-card:hover .ing-card-img img {
-      transform: scale(1.05);
-    }
-    .ing-card-img .overlay {
-      position: absolute;
-      bottom: 0; left: 0;
-      width: 100%; padding: 24px;
-      background: linear-gradient(transparent, rgba(26,58,42,0.9));
-      color: white;
-    }
-    .ing-card-img .overlay .amount {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--gold);
-    }
-    .ing-card-img .overlay h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 24px;
-      font-weight: 700;
-    }
-    .ing-card-body {
-      padding: 32px;
-    }
-    .ing-card-body p {
-      margin-bottom: 16px;
-      font-size: 14px;
+    .section-text {
+      font-size: 15px;
+      color: var(--soft);
       line-height: 1.8;
-      color: var(--soft-text);
-    }
-    .ing-card-body .science-ref {
-      font-size: 11px;
-      color: #aaa;
-      border-top: 1px solid #eee;
-      padding-top: 16px;
+      max-width: 600px;
     }
 
-    /* === HOW IT WORKS === */
-    .section-how {
-      padding: 120px 8%;
-      background: var(--forest);
-      color: white;
-      position: relative;
+    /* === PRODUCTS === */
+    .products {
+      background: var(--cream);
     }
-    .section-how .section-header h2 { color: white; }
-    .section-how .section-header p { color: rgba(255,255,255,0.6); }
-    .section-how .section-header .overline { color: var(--gold); }
-    .how-grid {
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+      max-width: 1200px;
+      margin: 60px auto 0;
+    }
+    .product-card {
+      text-align: center;
+      padding: 40px 24px;
+      border: 1px solid rgba(42,42,40,0.08);
+      background: var(--white);
+      transition: box-shadow 0.4s;
+    }
+    .product-card:hover {
+      box-shadow: 0 20px 60px rgba(42,42,40,0.06);
+    }
+    .product-card .amount {
+      font-family: 'EB Garamond', serif;
+      font-size: 36px;
+      font-weight: 400;
+      color: var(--charcoal);
+      margin-bottom: 8px;
+    }
+    .product-card h3 {
+      font-family: 'EB Garamond', serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 16px;
+    }
+    .product-card p {
+      font-size: 14px;
+      color: var(--soft);
+      line-height: 1.7;
+    }
+    .product-card .ref {
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(42,42,40,0.08);
+    }
+
+    /* === INGREDIENTS DETAIL === */
+    .ingredients-detail {
+      background: var(--beige);
+    }
+    .ing-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      max-width: 1100px;
+      margin: 0 auto 80px;
+      align-items: center;
+    }
+    .ing-row.reverse { direction: rtl; }
+    .ing-row.reverse > * { direction: ltr; }
+    .ing-illustration {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+    .ing-illustration svg {
+      width: 200px;
+      height: 200px;
+    }
+    .ing-info h3 {
+      font-family: 'EB Garamond', serif;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 16px;
+    }
+    .ing-info p {
+      font-size: 15px;
+      color: var(--soft);
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .ing-info .pub-count {
+      display: inline-block;
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: 1px;
+      margin-top: 8px;
+    }
+
+    /* === COMPOSITION === */
+    .composition {
+      background: var(--cream);
+    }
+    .comp-table {
+      max-width: 700px;
+      margin: 40px auto 0;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .comp-table th {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 14px 20px;
+      text-align: left;
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+    .comp-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(42,42,40,0.1);
+      font-size: 14px;
+    }
+    .comp-table tr:nth-child(even) td { background: rgba(245,240,232,0.5); }
+    .comp-note {
+      max-width: 700px;
+      margin: 20px auto 0;
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    /* === HOW TO USE === */
+    .how-to-use {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+    .how-to-use .section-overline { color: var(--gold); }
+    .how-to-use .section-title { color: var(--white); }
+    .how-steps {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
+      max-width: 1100px;
+      margin: 60px auto 0;
     }
     .how-step {
       text-align: center;
@@ -289,379 +314,441 @@
     .how-step::after {
       content: '→';
       position: absolute;
-      right: -28px; top: 40px;
-      font-size: 24px;
+      right: -28px; top: 20px;
+      font-size: 20px;
       color: var(--gold);
-      opacity: 0.5;
+      opacity: 0.4;
     }
     .how-step:last-child::after { display: none; }
-    .step-num {
-      width: 72px; height: 72px;
-      border: 2px solid var(--gold);
+    .how-step .step-num {
+      width: 56px; height: 56px;
+      border: 1px solid var(--gold);
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 28px; font-weight: 700;
+      font-family: 'EB Garamond', serif;
+      font-size: 22px;
       color: var(--gold);
-      margin: 0 auto 20px;
+      margin: 0 auto 16px;
     }
     .how-step h4 {
-      font-family: 'Playfair Display', serif;
-      font-size: 20px;
+      font-family: 'EB Garamond', serif;
+      font-size: 18px;
+      font-weight: 500;
       margin-bottom: 8px;
     }
     .how-step p {
-      font-size: 14px;
-      color: rgba(255,255,255,0.6);
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
       line-height: 1.6;
     }
 
-    /* === COMPOSITION TABLE === */
-    .section-composition {
-      padding: 120px 8%;
-      background: var(--warm-white);
-    }
-    .comp-table {
-      max-width: 800px;
-      margin: 0 auto;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    .comp-table th {
-      background: var(--forest);
-      color: white;
-      padding: 16px 24px;
-      text-align: left;
-      font-weight: 500;
-      font-size: 14px;
-      letter-spacing: 0.5px;
-    }
-    .comp-table td {
-      padding: 16px 24px;
-      border-bottom: 1px solid #e8e5de;
-      font-size: 15px;
-    }
-    .comp-table tr:nth-child(even) td { background: var(--cream); }
-    .comp-note {
-      max-width: 800px;
-      margin: 24px auto 0;
-      font-size: 12px;
-      color: #999;
-      text-align: center;
-      line-height: 1.8;
-    }
-
     /* === PHILOSOPHY === */
-    .section-philosophy {
-      padding: 120px 8%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-      max-width: 1400px;
+    .philosophy {
+      background: var(--beige);
+    }
+    .philosophy-inner {
+      max-width: 700px;
       margin: 0 auto;
+      text-align: center;
     }
-    .philosophy-img {
-      height: 600px;
-      overflow: hidden;
+    .philosophy-inner .section-title {
+      margin-bottom: 32px;
     }
-    .philosophy-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .philosophy-text .overline {
-      font-size: 11px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
-    .philosophy-text h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      font-weight: 700;
-      color: var(--forest);
-      margin-bottom: 24px;
-      line-height: 1.2;
-    }
-    .philosophy-text p {
+    .philosophy-inner p {
       font-size: 15px;
+      color: var(--soft);
       line-height: 1.9;
-      color: var(--soft-text);
       margin-bottom: 16px;
+    }
+    .philosophy-link {
+      display: inline-block;
+      margin-top: 24px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      text-decoration: none;
+      border-bottom: 1px solid var(--charcoal);
+      padding-bottom: 4px;
     }
 
     /* === WARNINGS === */
-    .section-warnings {
-      padding: 60px 8%;
-      background: #fdf6f6;
+    .warnings {
+      background: #faf5f5;
+      padding: 48px 6%;
     }
     .warnings-inner {
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
-      border-left: 4px solid #c0392b;
-      padding: 32px;
+      border-left: 3px solid #c0392b;
+      padding-left: 24px;
     }
     .warnings-inner h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'EB Garamond', serif;
       color: #c0392b;
-      font-size: 24px;
+      font-size: 22px;
+      font-weight: 500;
       margin-bottom: 16px;
     }
     .warnings-inner ul {
       padding-left: 20px;
     }
     .warnings-inner li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       font-size: 14px;
-      color: var(--soft-text);
+      color: var(--soft);
     }
 
     /* === CTA === */
-    .section-cta {
-      padding: 120px 8%;
+    .cta-section {
       background: var(--cream);
       text-align: center;
     }
-    .section-cta h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      color: var(--forest);
+    .cta-section .section-title {
       margin-bottom: 16px;
     }
-    .section-cta p {
-      font-size: 16px;
-      color: var(--soft-text);
-      margin-bottom: 32px;
+    .cta-section .section-text {
+      margin: 0 auto 32px;
+      text-align: center;
     }
     .email-form {
       display: flex;
-      gap: 12px;
-      max-width: 500px;
+      gap: 0;
+      max-width: 480px;
       margin: 0 auto;
     }
     .email-form input {
       flex: 1;
       padding: 16px 20px;
-      border: 1px solid #ddd;
+      border: 1px solid rgba(42,42,40,0.2);
+      border-right: none;
       font-family: inherit;
       font-size: 14px;
-      background: white;
+      background: var(--white);
+      color: var(--charcoal);
+      outline: none;
     }
     .email-form button {
       padding: 16px 32px;
-      background: var(--forest);
-      color: white;
-      border: none;
-      font-family: inherit;
-      font-size: 13px;
+      background: var(--charcoal);
+      color: var(--white);
+      border: 1px solid var(--charcoal);
+      font-family: 'EB Garamond', serif;
+      font-size: 14px;
       letter-spacing: 1px;
-      text-transform: uppercase;
-      font-weight: 600;
       cursor: pointer;
       transition: background 0.3s;
     }
-    .email-form button:hover { background: var(--gold); }
+    .email-form button:hover { background: var(--gold); border-color: var(--gold); }
     .form-note {
       font-size: 11px;
       color: #999;
-      margin-top: 12px;
+      margin-top: 16px;
+    }
+
+    /* === ENTITY INFO === */
+    .entity {
+      background: var(--white);
+      text-align: center;
+    }
+    .entity-inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .entity h3 {
+      font-family: 'EB Garamond', serif;
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 16px;
+    }
+    .entity p {
+      font-size: 14px;
+      color: var(--soft);
+      line-height: 1.7;
     }
 
     /* === FOOTER === */
     footer {
       background: var(--charcoal);
-      color: rgba(255,255,255,0.6);
-      padding: 80px 8%;
-    }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 60px;
-      max-width: 1200px;
-      margin: 0 auto 60px;
-    }
-    .footer-brand .logo {
-      font-size: 32px;
-      color: white;
-      margin-bottom: 16px;
-      display: block;
-    }
-    .footer-brand p {
-      font-size: 14px;
-      line-height: 1.7;
-      max-width: 300px;
-    }
-    .footer-col h4 {
-      color: white;
-      font-size: 13px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-    .footer-col a {
-      display: block;
       color: rgba(255,255,255,0.5);
+      padding: 60px 6%;
+      text-align: center;
+    }
+    footer .footer-logo {
+      font-family: 'EB Garamond', serif;
+      font-size: 28px;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+    footer a {
+      color: var(--gold);
       text-decoration: none;
-      font-size: 14px;
-      margin-bottom: 12px;
-      transition: color 0.3s;
     }
-    .footer-col a:hover { color: var(--gold); }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .footer-links a {
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
     .footer-legal {
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding-top: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
       font-size: 11px;
-      color: rgba(255,255,255,0.35);
+      color: rgba(255,255,255,0.3);
       line-height: 1.8;
+      max-width: 700px;
+      margin: 24px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
     }
+
+    /* === DIVIDER LINE ART === */
+    .divider {
+      text-align: center;
+      padding: 40px 0;
+    }
+    .divider svg {
+      width: 120px;
+      height: 40px;
+      opacity: 0.2;
+    }
+
+    /* === FADE IN === */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
 
     /* === RESPONSIVE === */
     @media (max-width: 1024px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-right { height: 50vh; }
-      .hero-right::before { background: linear-gradient(to bottom, var(--warm-white) 0%, transparent 30%); }
-      .ingredients-cards { grid-template-columns: 1fr; max-width: 500px; }
-      .how-grid { grid-template-columns: 1fr 1fr; }
+      .products-grid { grid-template-columns: 1fr; max-width: 400px; }
+      .ing-row { grid-template-columns: 1fr; gap: 40px; }
+      .ing-row.reverse { direction: ltr; }
+      .how-steps { grid-template-columns: 1fr 1fr; }
       .how-step::after { display: none; }
-      .section-philosophy { grid-template-columns: 1fr; }
-      .philosophy-img { height: 400px; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 768px) {
       nav { display: none; }
-      .hero h1 { font-size: 42px; }
-      .how-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 48px; }
+      .how-steps { grid-template-columns: 1fr; }
       .email-form { flex-direction: column; }
-      .footer-grid { grid-template-columns: 1fr; gap: 40px; }
-    }
-
-    /* === ANIMATIONS === */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s, transform 0.8s;
-    }
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
+      .email-form input { border-right: 1px solid rgba(42,42,40,0.2); }
+      .footer-links { flex-direction: column; gap: 12px; }
     }
   </style>
 </head>
 <body>
   <!-- LEGAL BAR -->
   <div class="legal-bar">
-    <strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. Nie przekraczać zalecanej dziennej porcji. Przechowywać w sposób niedostępny dla małych dzieci.
+    <strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia.
   </div>
 
   <!-- HEADER -->
   <header id="header">
-    <a href="index.html" class="logo">Cogni<span>via</span></a>
+    <a href="#" class="logo">C O G N I V I A</a>
     <nav>
       <a href="produkt.html">Produkt</a>
       <a href="#składniki">Składniki</a>
-      <a href="#nauka">Nauka</a>
+      <a href="#stosowanie">Stosowanie</a>
       <a href="blog/">Blog</a>
       <a href="o-nas.html">O nas</a>
-      <a href="#kontakt" class="cta-nav">Kontakt</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-left">
-      <div class="hero-badge">Suplement diety</div>
-      <h1>Poznaj<br><em>CogniCit</em></h1>
-      <p class="hero-subtitle">Trzy starannie dobrane składniki — kwas alfa-liponowy, cytykolina i beta-cyklodekstryna — w jednej kapsułce. Preparat wspierający organizm, opracowany z myślą o jakości i zgodności z regulacjami UE.</p>
+    <!-- Chamomile decoration -->
+    <div class="chamomile chamomile-hero">
+      <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="150" cy="80" rx="18" ry="45" stroke="#2a2a28" stroke-width="1.2" fill="none"/>
+        <ellipse cx="150" cy="80" rx="18" ry="45" stroke="#2a2a28" stroke-width="1.2" fill="none" transform="rotate(45 150 150)"/>
+        <ellipse cx="150" cy="80" rx="18" ry="45" stroke="#2a2a28" stroke-width="1.2" fill="none" transform="rotate(90 150 150)"/>
+        <ellipse cx="150" cy="80" rx="18" ry="45" stroke="#2a2a28" stroke-width="1.2" fill="none" transform="rotate(135 150 150)"/>
+        <ellipse cx="150" cy="80" rx="18" ry="45" stroke="#2a2a28" stroke-width="1.2" fill="none" transform="rotate(180 150 150)"/>
+        <ellipse cx="150" cy="80" rx="18" ry="45" stroke="#2a2a28" stroke-width="1.2" fill="none" transform="rotate(225 150 150)"/>
+        <ellipse cx="150" cy="80" rx="18" ry="45" stroke="#2a2a28" stroke-width="1.2" fill="none" transform="rotate(270 150 150)"/>
+        <ellipse cx="150" cy="80" rx="18" ry="45" stroke="#2a2a28" stroke-width="1.2" fill="none" transform="rotate(315 150 150)"/>
+        <circle cx="150" cy="150" r="22" stroke="#2a2a28" stroke-width="1.2" fill="#e8d5a8"/>
+        <path d="M150 172 Q148 220 145 270" stroke="#2a2a28" stroke-width="1.2" fill="none"/>
+        <path d="M145 220 Q130 210 115 215" stroke="#2a2a28" stroke-width="1" fill="none"/>
+        <path d="M147 240 Q160 230 175 235" stroke="#2a2a28" stroke-width="1" fill="none"/>
+      </svg>
+    </div>
+    <div class="chamomile chamomile-left">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="50" rx="12" ry="30" stroke="#2a2a28" stroke-width="1" fill="none"/>
+        <ellipse cx="100" cy="50" rx="12" ry="30" stroke="#2a2a28" stroke-width="1" fill="none" transform="rotate(60 100 100)"/>
+        <ellipse cx="100" cy="50" rx="12" ry="30" stroke="#2a2a28" stroke-width="1" fill="none" transform="rotate(120 100 100)"/>
+        <ellipse cx="100" cy="50" rx="12" ry="30" stroke="#2a2a28" stroke-width="1" fill="none" transform="rotate(180 100 100)"/>
+        <ellipse cx="100" cy="50" rx="12" ry="30" stroke="#2a2a28" stroke-width="1" fill="none" transform="rotate(240 100 100)"/>
+        <ellipse cx="100" cy="50" rx="12" ry="30" stroke="#2a2a28" stroke-width="1" fill="none" transform="rotate(300 100 100)"/>
+        <circle cx="100" cy="100" r="14" stroke="#2a2a28" stroke-width="1" fill="#e8d5a8"/>
+        <path d="M100 114 Q99 145 97 180" stroke="#2a2a28" stroke-width="1" fill="none"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Suplement diety</div>
+      <h1><em>CogniCit</em></h1>
+      <div class="hero-slogan">Dokładnie to czego ci trzeba</div>
       <div class="hero-badges">
-        <span class="hbadge">ALA 250 mg</span>
-        <span class="hbadge">Cytokolina 300 mg</span>
-        <span class="hbadge">Beta‑CD 250 mg</span>
+        <span>ALA 250 mg</span>
+        <span>Cytokolina 300 mg</span>
+        <span>Beta‑CD 250 mg</span>
       </div>
-      <a href="produkt.html" class="cta-button">Dowiedz się więcej</a>
-      <p class="hero-legal">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.</p>
-    </div>
-    <div class="hero-right">
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=1600&fit=crop&crop=center" alt="Natura — inspiracja dla zdrowia" loading="eager">
+      <p class="hero-legal">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia.</p>
     </div>
   </section>
 
-  <!-- INGREDIENTS -->
-  <section class="section-ingredients" id="składniki">
-    <div class="section-header fade-in">
-      <div class="overline">Składniki</div>
-      <h2>Trzy składniki, jedna kapsułka</h2>
-      <p>Każdy składnik jest starannie dobrany i występuje w precyzyjnie określonej dawce.</p>
+  <!-- DIVIDER -->
+  <div class="divider">
+    <svg viewBox="0 0 120 40" fill="none"><path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="#2a2a28" stroke-width="0.8"/><circle cx="60" cy="20" r="3" fill="#e8d5a8" stroke="#2a2a28" stroke-width="0.5"/></svg>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="składniki">
+    <div style="text-align:center;">
+      <div class="section-overline fade-in">Składniki</div>
+      <div class="section-title fade-in">Trzy starannie dobrane składniki</div>
+      <p class="section-text fade-in" style="margin: 0 auto;">Każdy składnik jest precyzyjnie dobrany i występuje w określonej dawce.</p>
     </div>
-    <div class="ingredients-cards">
-      <div class="ing-card fade-in">
-        <div class="ing-card-img">
-          <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=400&fit=crop" alt="Kwas alfa-liponowy — antyoksydant" loading="lazy">
-          <div class="overlay">
-            <div class="amount">250 mg</div>
-            <h3>Kwas Alfa‑Liponowy</h3>
-          </div>
-        </div>
-        <div class="ing-card-body">
-          <p>ALA jest naturalnie występującym związkiem organicznym, pomagającym chronić komórki przed stresem oksydacyjnym. Jest jednym z niewielu antyoksydantów rozpuszczalnych zarówno w wodzie, jak i w tłuszczach.</p>
-          <p>Uczestniczy w metabolizmie energetycznym mitochondriów i wspiera prawidłowe funkcjonowanie organizmu.</p>
-          <div class="science-ref">113 publikacji naukowych w PubMed (marzec 2026). PMID: 41469453.</div>
-        </div>
+    <div class="products-grid">
+      <div class="product-card fade-in">
+        <div class="amount">250 mg</div>
+        <h3>Kwas Alfa‑Liponowy</h3>
+        <p>ALA pomaga chronić komórki przed stresem oksydacyjnym. Jest jednym z niewielu antyoksydantów rozpuszczalnych zarówno w wodzie, jak i w tłuszczach.</p>
+        <div class="ref">113 publikacji naukowych w PubMed</div>
       </div>
-
-      <div class="ing-card fade-in">
-        <div class="ing-card-img">
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop" alt="Cytykolina — składnik błon komórkowych" loading="lazy">
-          <div class="overlay">
-            <div class="amount">300 mg</div>
-            <h3>Cytykolina</h3>
-          </div>
-        </div>
-        <div class="ing-card-body">
-          <p>Cytykolina (CDP-cholina) jest naturalnym składnikiem występującym w organizmie człowieka. Jest prekursorem fosfatydylocholiny — głównego składnika błon komórkowych neuronów.</p>
-          <p>W suplementacji, cytykolina jest stosowana jako składnik wspierający prawidłowe funkcjonowanie układu nerwowego.</p>
-          <div class="science-ref">233 publikacji naukowych w PubMed (marzec 2026).</div>
-        </div>
+      <div class="product-card fade-in">
+        <div class="amount">300 mg</div>
+        <h3>Cytykolina</h3>
+        <p>Cytykolina (CDP-cholina) jest naturalnym składnikiem występującym w organizmie człowieka — prekursorem fosfatydylocholiny, głównego składnika błon komórkowych.</p>
+        <div class="ref">233 publikacji naukowych w PubMed</div>
       </div>
-
-      <div class="ing-card fade-in">
-        <div class="ing-card-img">
-          <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&h=400&fit=crop" alt="Beta-cyklodekstryna — nośnik" loading="lazy">
-          <div class="overlay">
-            <div class="amount">250 mg</div>
-            <h3>Beta‑Cyklodekstryna</h3>
-          </div>
-        </div>
-        <div class="ing-card-body">
-          <p>Beta-cyklodekstryna jest naturalnym oligosacharydem otrzymywanym z enzymatycznej degradacji skrobi. Posiada unikalną strukturę molekularną — kształt „kubka" — pozwalający na tworzenie kompleksów inclusionnych.</p>
-          <p>W suplementacji jest stosowana jako nośnik — pomaga zwiększyć stabilność i biodostępność składników aktywnych.</p>
-          <div class="science-ref">1 176 publikacji naukowych w PubMed (marzec 2026).</div>
-        </div>
+      <div class="product-card fade-in">
+        <div class="amount">250 mg</div>
+        <h3>Beta‑Cyklodekstryna</h3>
+        <p>Beta-CD jest naturalnym oligosacharydem stosowanym jako nośnik — pomaga zwiększyć stabilność i biodostępność składników aktywnych.</p>
+        <div class="ref">1 176 publikacji naukowych w PubMed</div>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="section-how" id="nauka">
-    <div class="section-header fade-in">
-      <div class="overline">Jak stosować</div>
-      <h2>Cztery proste kroki</h2>
-      <p>CogniCit jest przeznaczony do codziennego stosowania jako część zrównoważonej diety.</p>
+  <!-- INGREDIENTS DETAIL -->
+  <section class="ingredients-detail">
+    <div class="ing-row fade-in">
+      <div class="ing-illustration">
+        <!-- Leaf illustration -->
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 180 Q95 120 60 80 Q40 55 30 30" stroke="#2a2a28" stroke-width="1.2" fill="none"/>
+          <path d="M100 180 Q105 120 140 80 Q160 55 170 30" stroke="#2a2a28" stroke-width="1.2" fill="none"/>
+          <path d="M60 80 Q80 75 100 80 Q120 75 140 80" stroke="#2a2a28" stroke-width="1" fill="none"/>
+          <path d="M75 100 Q100 95 125 100" stroke="#2a2a28" stroke-width="0.8" fill="none"/>
+          <path d="M85 120 Q100 115 115 120" stroke="#2a2a28" stroke-width="0.8" fill="none"/>
+          <circle cx="100" cy="60" r="20" fill="#e8d5a8" opacity="0.3" stroke="#2a2a28" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <div class="ing-info">
+        <h3>Kwas Alfa‑Liponowy</h3>
+        <p>ALA jest naturalnie występującym związkiem organicznym, który pomaga chronić komórki przed stresem oksydacyjnym. Uczestniczy w metabolizmie energetycznym mitochondriów — „elektrowni" komórek.</p>
+        <p>W badaniach naukowych ALA wykazała działanie neuroprotekcyjne w modelach niedokrwiennych (PMID: 41469453).</p>
+        <div class="pub-count">→ 113 publikacji PubMed</div>
+      </div>
     </div>
-    <div class="how-grid">
+
+    <div class="ing-row reverse fade-in">
+      <div class="ing-illustration">
+        <!-- Molecule illustration -->
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="80" r="30" stroke="#2a2a28" stroke-width="1.2" fill="none"/>
+          <circle cx="100" cy="80" r="10" fill="#e8d5a8" stroke="#2a2a28" stroke-width="0.8"/>
+          <circle cx="60" cy="120" r="20" stroke="#2a2a28" stroke-width="1" fill="none"/>
+          <circle cx="60" cy="120" r="6" fill="#e8d5a8" stroke="#2a2a28" stroke-width="0.8"/>
+          <circle cx="140" cy="120" r="20" stroke="#2a2a28" stroke-width="1" fill="none"/>
+          <circle cx="140" cy="120" r="6" fill="#e8d5a8" stroke="#2a2a28" stroke-width="0.8"/>
+          <line x1="85" y1="95" x2="70" y2="108" stroke="#2a2a28" stroke-width="1"/>
+          <line x1="115" y1="95" x2="130" y2="108" stroke="#2a2a28" stroke-width="1"/>
+          <path d="M60 140 Q58 160 55 180" stroke="#2a2a28" stroke-width="0.8" fill="none"/>
+          <path d="M140 140 Q142 160 145 180" stroke="#2a2a28" stroke-width="0.8" fill="none"/>
+        </svg>
+      </div>
+      <div class="ing-info">
+        <h3>Cytykolina</h3>
+        <p>Cytykolina (CDP-cholina) jest naturalnym składnikiem metabolizmu fosfolipidów. Po spożyciu jest rozkładana na cytydynę i cholinę — dwa związki wykorzystywane przez organizm do syntezy fosfatydylocholiny.</p>
+        <p>Cholina jest również prekursorem acetylocholiny — neuroprzekaźnika zaangażowanego w procesy poznawcze.</p>
+        <div class="pub-count">→ 233 publikacji PubMed</div>
+      </div>
+    </div>
+
+    <div class="ing-row fade-in">
+      <div class="ing-illustration">
+        <!-- Cup/molecule shape -->
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M70 60 Q70 140 100 160 Q130 140 130 60" stroke="#2a2a28" stroke-width="1.2" fill="none"/>
+          <ellipse cx="100" cy="60" rx="30" ry="10" stroke="#2a2a28" stroke-width="1.2" fill="#e8d5a8" fill-opacity="0.3"/>
+          <path d="M85 90 Q100 85 115 90" stroke="#2a2a28" stroke-width="0.8" fill="none"/>
+          <path d="M88 110 Q100 105 112 110" stroke="#2a2a28" stroke-width="0.8" fill="none"/>
+          <path d="M93 130 Q100 127 107 130" stroke="#2a2a28" stroke-width="0.8" fill="none"/>
+        </svg>
+      </div>
+      <div class="ing-info">
+        <h3>Beta‑Cyklodekstryna</h3>
+        <p>Beta-cyklodekstryna jest naturalnym oligosacharydem otrzymywanym z enzymatycznej degradacji skrobi. Posiada unikalną strukturę molekularną — kształt „kubka" — pozwalający na tworzenie kompleksów inclusionnych.</p>
+        <p>W suplementacji jest stosowana jako nośnik — pomaga zwiększyć stabilność i biodostępność składników aktywnych preparatu.</p>
+        <div class="pub-count">→ 1 176 publikacji PubMed</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider">
+    <svg viewBox="0 0 120 40" fill="none"><path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="#2a2a28" stroke-width="0.8"/><circle cx="60" cy="20" r="3" fill="#e8d5a8" stroke="#2a2a28" stroke-width="0.5"/></svg>
+  </div>
+
+  <!-- COMPOSITION -->
+  <section class="composition">
+    <div style="text-align:center;">
+      <div class="section-overline fade-in">Skład</div>
+      <div class="section-title fade-in">Informacje o składzie</div>
+    </div>
+    <table class="comp-table fade-in">
+      <thead>
+        <tr><th>Składnik</th><th>Zawartość w 1 kapsułce</th><th>% RWS*</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Kwas alfa-liponowy (ALA)</td><td>250 mg</td><td>—**</td></tr>
+        <tr><td>Cytykolina (CDP-cholina)</td><td>300 mg</td><td>—**</td></tr>
+        <tr><td>Beta-cyklodekstryna</td><td>250 mg</td><td>—**</td></tr>
+      </tbody>
+    </table>
+    <p class="comp-note fade-in">
+      * RWS — Referencyjna Wartość Spożycia (Rozporządzenie WE nr 1169/2011).<br>
+      ** RWS nie została ustalona.<br>
+      <strong>Zalecana dzienna porcja:</strong> 1 kapsułka dziennie, najlepiej rano z posiłkiem.<br>
+      <strong>Nie przekraczać zalecanej porcji do spożycia w ciągu dnia.</strong>
+    </p>
+  </section>
+
+  <!-- HOW TO USE -->
+  <section class="how-to-use" id="stosowanie">
+    <div style="text-align:center;">
+      <div class="section-overline fade-in">Jak stosować</div>
+      <div class="section-title fade-in">Cztery proste kroki</div>
+    </div>
+    <div class="how-steps">
       <div class="how-step fade-in">
         <div class="step-num">1</div>
         <h4>1 kapsułka dziennie</h4>
-        <p>Zalecana porcja to 1 kapsułka dziennie. Nie przekraczać zalecanej porcji.</p>
+        <p>Zalecana porcja to 1 kapsułka dziennie. Nie przekraczać.</p>
       </div>
       <div class="how-step fade-in">
         <div class="step-num">2</div>
         <h4>Rano z posiłkiem</h4>
-        <p>Najlepiej przyjmować rano z posiłkiem, popić szklanką wody.</p>
+        <p>Najlepiej przyjmować rano z posiłkiem, popić wodą.</p>
       </div>
       <div class="how-step fade-in">
         <div class="step-num">3</div>
@@ -676,47 +763,25 @@
     </div>
   </section>
 
-  <!-- COMPOSITION TABLE -->
-  <section class="section-composition">
-    <div class="section-header fade-in">
-      <div class="overline">Skład</div>
-      <h2>Informacje o składzie</h2>
-    </div>
-    <table class="comp-table">
-      <thead>
-        <tr><th>Składnik</th><th>Zawartość w 1 kapsułce</th><th>% RWS*</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Kwas alfa-liponowy (ALA)</td><td>250 mg</td><td>—**</td></tr>
-        <tr><td>Cytykolina (CDP-cholina)</td><td>300 mg</td><td>—**</td></tr>
-        <tr><td>Beta-cyklodekstryna</td><td>250 mg</td><td>—**</td></tr>
-      </tbody>
-    </table>
-    <p class="comp-note">
-      * RWS — Referencyjna Wartość Spożycia (Rozporządzenie WE nr 1169/2011).<br>
-      ** RWS nie została ustalona.<br>
-      <strong>Zalecana dzienna porcja:</strong> 1 kapsułka dziennie, najlepiej rano z posiłkiem.<br>
-      <strong>Nie przekraczać zalecanej porcji do spożycia w ciągu dnia.</strong>
-    </p>
-  </section>
-
   <!-- PHILOSOPHY -->
-  <section class="section-philosophy">
-    <div class="philosophy-img fade-in">
-      <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&h=1000&fit=crop" alt="Filozofia Cognivia — jakość i nauka" loading="lazy">
-    </div>
-    <div class="philosophy-text fade-in">
-      <div class="overline">Nasza filozofia</div>
-      <h2>Jakość zaczyna się od składników</h2>
+  <section class="philosophy">
+    <div class="philosophy-inner fade-in">
+      <div class="section-overline">Nasza filozofia</div>
+      <div class="section-title">Jakość zaczyna się od składników</div>
       <p>W Cognivia wierzymy, że suplement diety powinien być przejrzysty, bezpieczny i oparty na naukowych podstawach. Każdy składnik CogniCit został wybrany na podstawie dostępnej literatury naukowej.</p>
       <p>Nasz preparat jest produkowany zgodnie z dobrymi praktykami produkcyjnymi (GMP), a każda partia jest testowana pod kątem jakości i bezpieczeństwa.</p>
-      <p><a href="o-nas.html" style="color: var(--gold); text-decoration: none; font-weight: 600; font-size: 14px; letter-spacing: 1px; text-transform: uppercase;">Dowiedz się więcej →</a></p>
+      <a href="o-nas.html" class="philosophy-link">Dowiedz się więcej</a>
     </div>
   </section>
 
+  <!-- DIVIDER -->
+  <div class="divider">
+    <svg viewBox="0 0 120 40" fill="none"><path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="#2a2a28" stroke-width="0.8"/><circle cx="60" cy="20" r="3" fill="#e8d5a8" stroke="#2a2a28" stroke-width="0.5"/></svg>
+  </div>
+
   <!-- WARNINGS -->
-  <section class="section-warnings">
-    <div class="warnings-inner">
+  <section class="warnings">
+    <div class="warnings-inner fade-in">
       <h3>Ostrzeżenia</h3>
       <ul>
         <li><strong>Nie przekraczać zalecanej porcji do spożycia w ciągu dnia.</strong></li>
@@ -731,9 +796,9 @@
   </section>
 
   <!-- CTA -->
-  <section class="section-cta" id="kontakt">
-    <h2 class="fade-in">Bądź pierwszy</h2>
-    <p class="fade-in">Zostaw swój e-mail, a powiadomimy Cię o premierze CogniCit.</p>
+  <section class="cta-section" id="kontakt">
+    <div class="section-title fade-in">Bądź pierwszy</div>
+    <p class="section-text fade-in">Zostaw swój e-mail, a powiadomimy Cię o premierze CogniCit.</p>
     <form class="email-form fade-in" action="https://formspree.io/f/your-form-id" method="POST">
       <input type="hidden" name="_subject" value="Nowy lead CogniCit">
       <input type="email" name="email" placeholder="Twój adres e-mail" required>
@@ -742,46 +807,44 @@
     <p class="form-note fade-in">Twoje dane będą przetwarzane zgodnie z <a href="polityka-prywatnosci.html" style="color: var(--gold);">polityką prywatności</a>.</p>
   </section>
 
+  <!-- ENTITY -->
+  <section class="entity">
+    <div class="entity-inner fade-in">
+      <h3>Podmiot odpowiedzialny</h3>
+      <p>
+        <strong>Cognivia</strong><br>
+        ul. [ADRES — do uzupełnienia]<br>
+        [KOD] [MIASTO], Polska<br>
+        NIP: [NUMER — do uzupełnienia]<br><br>
+        <a href="mailto:cognivia.business@outlook.com" style="color: var(--gold);">cognivia.business@outlook.com</a>
+      </p>
+      <p style="font-size: 12px; color: #999; margin-top: 16px;">
+        CogniCit jest zgłoszony do Głównego Inspektora Sanitarnego (GIS) zgodnie z ustawą o bezpieczeństwie żywności i żywienia.
+      </p>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="logo">Cogni<span style="color: var(--gold);">via</span></span>
-        <p>Polska firma zajmująca się suplementacją opartą na nauce. CogniCit to nasz pierwszy preparat — suplement diety w przygotowaniu.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Nawigacja</h4>
-        <a href="index.html">Strona główna</a>
-        <a href="produkt.html">Produkt</a>
-        <a href="nauka.html">Nauka</a>
-        <a href="blog/">Blog</a>
-        <a href="o-nas.html">O nas</a>
-      </div>
-      <div class="footer-col">
-        <h4>Informacje</h4>
-        <a href="regulamin.html">Regulamin</a>
-        <a href="polityka-prywatnosci.html">Polityka prywatności</a>
-        <a href="mailto:cognivia.business@outlook.com">Kontakt</a>
-      </div>
-      <div class="footer-col">
-        <h4>Podmiot</h4>
-        <p style="font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7;">
-          Cognivia<br>
-          ul. [ADRES — do uzupełnienia]<br>
-          [KOD] [MIASTO], Polska<br>
-          NIP: [NUMER]
-        </p>
-      </div>
+    <div class="footer-logo">C O G N I V I A</div>
+    <div class="footer-links">
+      <a href="produkt.html">Produkt</a>
+      <a href="nauka.html">Nauka</a>
+      <a href="blog/">Blog</a>
+      <a href="o-nas.html">O nas</a>
+      <a href="regulamin.html">Regulamin</a>
+      <a href="polityka-prywatnosci.html">Prywatność</a>
+      <a href="mailto:cognivia.business@outlook.com">Kontakt</a>
     </div>
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
     <div class="footer-legal">
-      <strong style="color: var(--gold);">Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. Nie przekraczać zalecanej dziennej porcji. Przechowywać w sposób niedostępny dla małych dzieci.<br><br>
-      Strona zawiera oświadczenia żywieniowe i zdrowotne zgodne z Rozporządzeniem (WE) nr 1924/2006 oraz informacje zgodne z Rozporządzeniem (WE) nr 1169/2011.<br>
-      © 2026 Cognivia. Wszelkie prawa zastrzeżone.
+      <strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. Nie przekraczać zalecanej dziennej porcji. Przechowywać w sposób niedostępny dla małych dzieci.<br><br>
+      Strona zawiera oświadczenia żywieniowe i zdrowotne zgodne z Rozporządzeniem (WE) nr 1924/2006 oraz informacje zgodne z Rozporządzeniem (WE) nr 1169/2011.
     </div>
   </footer>
 
   <script>
-    // Header scroll effect
+    // Header scroll
     window.addEventListener('scroll', () => {
       document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
     });
