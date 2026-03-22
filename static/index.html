@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CogniCit — Wsparcie dla mózgu</title>
+  <meta name="description" content="CogniCit to nootropowy suplement diety wspierający pamięć i koncentrację. Alfa‑Lipoic Acid, Cytokolina, Beta‑Cyclodextrina. Produkt w przygotowaniu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cognivia-green: #2D6642;
+      --cognivia-pink: #C8327A;
+      --cognivia-white: #FFFFFF;
+      --cognivia-light: #F4F8F5;
+      --cognivia-text: #1A1A1A;
+    }
+    body {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: var(--cognivia-text);
+      background: var(--cognivia-light);
+      margin: 0;
+      line-height: 1.75;
+    }
+    header {
+      position: fixed;
+      top: 0; width: 100%;
+      background: transparent;
+      padding: 16px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+    header.scrolled {
+      background: var(--cognivia-white);
+      box-shadow: 0 1px 0 var(--cognivia-green);
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--cognivia-green);
+      text-decoration: none;
+    }
+    nav a {
+      margin-left: 24px;
+      color: var(--cognivia-text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 48px;
+      padding: 0 5%;
+      padding-top: 80px;
+    }
+    .hero .product-image {
+      transform: rotate(-3deg);
+      animation: float 3s ease-in-out infinite;
+      filter: drop-shadow(0 20px 40px rgba(45,102,66,0.15));
+    }
+    @keyframes float {
+      0%,100% { transform: rotate(-3deg) translateY(0); }
+      50% { transform: rotate(-3deg) translateY(-15px); }
+    }
+    h1 {
+      font-size: clamp(48px, 6vw, 80px);
+      font-weight: 700;
+      color: var(--cognivia-green);
+      margin: 0;
+    }
+    .subtitle {
+      font-size: 22px;
+      font-weight: 300;
+      margin: 16px 0 24px;
+    }
+    .badge {
+      display: inline-flex;
+      border: 1px solid var(--cognivia-green);
+      color: var(--cognivia-green);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin: 4px;
+    }
+    .price {
+      font-size: 42px;
+      color: var(--cognivia-pink);
+      font-weight: 700;
+      margin: 24px 0;
+    }
+    .btn {
+      background: var(--cognivia-green);
+      color: var(--cognivia-white);
+      border: none;
+      padding: 16px 48px;
+      font-family: inherit;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: var(--cognivia-pink);
+    }
+    .ingredients {
+      background: var(--cognivia-light);
+      padding: 80px 5%;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--cognivia-white);
+      padding: 40px;
+      border-radius: 4px;
+      box-shadow: 0 4px 24px rgba(45,102,66,0.08);
+      border-top: 4px solid var(--cognivia-pink);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--cognivia-green);
+    }
+    .how {
+      background: var(--cognivia-green);
+      color: var(--cognivia-white);
+      padding: 80px 5%;
+    }
+    .how h2 { color: var(--cognivia-white); }
+    .steps {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .step {
+      flex: 1 1 200px;
+      text-align: center;
+    }
+    .step-number {
+      width: 60px;
+      height: 60px;
+      border: 2px solid var(--cognivia-pink);
+      color: var(--cognivia-pink);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 auto 16px;
+    }
+    .faq {
+      background: var(--cognivia-light);
+      padding: 80px 5%;
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba(45,102,66,0.2);
+      padding: 20px 0;
+    }
+    .faq-question {
+      font-weight: 600;
+      color: var(--cognivia-green);
+      cursor: pointer;
+    }
+    footer {
+      background: #1A1A1A;
+      color: rgba(255,255,255,0.7);
+      padding: 60px 5%;
+    }
+    footer a { color: var(--cognivia-pink); }
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; padding-top: 120px; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <a href="#" class="logo">Cognivia</a>
+    <nav>
+      <a href="#skład">Skład</a>
+      <a href="#działanie">Działanie</a>
+      <a href="#faq">FAQ</a>
+      <a href="mailto:cognivia.co@gmail.com" class="btn">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="text">
+      <div class="badge">Nowość</div>
+      <h1>CogniCit</h1>
+      <div class="subtitle">Wsparcie dla mózgu i układu nerwowego</div>
+      <div>
+        <span class="badge">ALA 250 mg</span>
+        <span class="badge">Cytokolina 300 mg</span>
+        <span class="badge">Beta‑CD 250 mg</span>
+      </div>
+      <div class="price">79,00 zł</div>
+      <form action="https://formspree.io/f/your-form-id" method="POST" style="max-width:400px; margin-top:16px;">
+        <input type="hidden" name="_subject" value="New CogniCit lead from landing page">
+        <input type="email" name="email" placeholder="Twój e‑mail" required style="width:100%; padding:12px; margin-bottom:8px; border:1px solid #ccc; border-radius:4px;">
+        <button type="submit" class="btn" style="width:100%;">Powiadom mnie o premierze</button>
+        <p style="font-size:12px; color:#666; margin-top:8px;">Szpiegujemy Cię? Nie. Wysyłamy tylko informacje o premierze CogniCit.</p>
+      </form>
+    </div>
+    <div class="product-image">
+      <!-- Placeholder: Replace with actual product image -->
+      <img src="placeholder-product.png" alt="CogniCit" style="width:100%; max-width:400px; height:auto;">
+    </div>
+  </section>
+
+  <section id="skład" class="ingredients">
+    <h2 style="text-align:center; color:var(--cognivia-green);">Kluczowe składniki</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Kwas Alfa‑Liponowy (ALA)</h3>
+        <p>Silny antyoksydant wspierający mitochondria komórek nerwowych. Neutralizuje wolne rodniki.</p>
+      </div>
+      <div class="card">
+        <h3>Cytykolina (CDP‑cholina)</h3>
+        <p>Prekursor acetylocholiny — neuroprzekaźnika pamięci i koncentracji. Regeneruje błony komórkowe.</p>
+      </div>
+      <div class="card">
+        <h3>Beta‑cyklodekstryna</h3>
+        <p>Zwiększa stabilność i biodostępność składników aktywnych, chroniąc Cytokoliny przed wilgocią.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="działanie" class="how">
+    <h2 style="text-align:center;">Jak działa CogniCit?</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h4>Wchłanianie</h4>
+        <p>Beta‑CD zwiększa biodostępność.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h4>Ochrona</h4>
+        <p>ALA chroni neurony przed stresem oksydacyjnym.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h4>Odżywianie</h4>
+        <p>Cytokolina zasila błony komórkowe.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h4>Efekt</h4>
+        <p>Lepsza pamięć, koncentracja, jasność umysłu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <h2 style="text-align:center; color:var(--cognivia-green);">Najczęstsze pytania</h2>
+    <div class="faq-item">
+      <div class="faq-question">Czy CogniCit jest lekiem?</div>
+      <div class="faq-answer">Nie, to suplement diety i nie zastępuje leków.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Jak dawkować?</div>
+      <div class="faq-answer">Zalecana porcja to 1 kapsułka dziennie, najlepiej rano.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Czy produkt jest bezpieczny?</div>
+      <div class="faq-answer">Tak, produkowany w zakładach GMP; każda partia jest testowana.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Kiedy będzie dostępny?</div>
+      <div class="faq-answer">Jesteśmy w fazie pre‑launch. Zostaw e‑mail, a powiadomimy Cię o premierze.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzezone.</p>
+    <p>
+      <a href="mailto:cognivia.co@gmail.com">cognivia.co@gmail.com</a> |
+      <a href="/polityka-prywatnosci.html">Polityka prywatności</a> |
+      <a href="/regulamin.html">Regulamin</a>
+    </p>
+  </footer>
+
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+  </script>
+</body>
+</html>

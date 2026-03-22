@@ -29,4 +29,4 @@ We may modify these terms at any time; continued use constitutes acceptance.
 
 These terms are governed by Polish law.
 
-Contact for questions: cognivia.co@gmail.com.
+Contact for questions: cognivia.business@outlook.com.

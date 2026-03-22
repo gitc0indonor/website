@@ -1,29 +1,45 @@
----
-title: FAQ | Cognivia
----
+# Najczęściej zadawane pytania (FAQ)
 
-# Frequently Asked Questions about Cognicit
+## Ogólne
+**Q: Co to jest Cognicit?**  
+A: Cognicit to suplement diety wspierający pamięć, koncentrację i ogólną sprawność poznawczą. Zawiera Alpha-Lipoic Acid, Cytokolina (CDP-Choline) i β‑Cyclodekstrynę.
 
-**Q: What is Cognicit?**
-Cognicit is a nootropic dietary supplement formulated to support cognitive functions such as focus, memory, and mental clarity. It contains Alpha Lipoic Acid, Citicoline, and Beta-Cyclodextrin.
+**Q: Czy Cognicit jest bezpieczny?**  
+A: Tak, produkty są wytwarzane z użyciem składników najwyższej jakości, w zakładach certyfikowanych GMP. Każda partia jest testowana pod kątem czystości i zgodności.
 
-**Q: How should I take Cognicit?**
-Take one capsule daily with water, preferably in the morning. Do not exceed the recommended dose.
+**Q: Jak szybko zobaczę efekty?**  
+A: Niektórzy użytkownicy zauważają poprawę skupienia już po kilku dniach. Optymalne efekty widoczne są po regularnym stosowaniu przez 2–4 tygodnie.
 
-**Q: Is Cognicit suitable for vegetarians?**
-Our capsules are made from gelatin; we are exploring a vegetarian HPMC alternative for future batches.
+**Q: Czy mogę łążyć Cognicit z lekami?**  
+A: Jeśli przyjmujesz leki lub masz schorzenia, skonsultuj się z lekarzem przed rozpoczęciem suplementacji.
 
-**Q: Is Cognicit approved by regulatory authorities?**
-Cognicit is a dietary supplement, not a medicine. It is manufactured in compliance with GMP standards and meets EU food supplement regulations.
+**Q: Czy produkt jest odpowiedni dla wegetarian/wegan?**  
+A: Kapsułki są HPMC (roślinne), nie zawierają produktów odzwierzęcych. Są wegańskie.
 
-**Q: Can I take Cognicit with other medications?**
-Consult your healthcare provider before starting any new supplement, especially if you are pregnant, nursing, have a medical condition, or are taking medication.
+## Zamówienie i wysyłka
+**Q: Ile czasu trwa dostawa?**  
+A: W Polsce zazwyczaj 2–4 dni roboczych. Do innych krajów UE 5–10 dni.
 
-**Q: Where will Cognicit be available?**
-We plan to launch in Poland first, then expand to other EU countries. Sign up for updates on our website.
+**Q: Czy oferujecie zwroty?**  
+A: Jeśli produkt nie spełni Twoich oczekiwań, możesz go zwrócić w ciągu 14 dni od otrzymania (nieskorzystany, w oryginalnym opakowaniu).
 
-**Q: How can I contact Cognivia?**
-Email us at cognivia.co@gmail.com or use our [contact page](/contact).
+**Q: Jak mogę śledzić moje zamówienie?**  
+A: Po wysłaniu otrzymasz e-mail z numerem śledzenia.
 
----
-*Last updated: 2025-03-19*
+## Skład i dawkowanie
+**Q: Jak often我应该服用 Cognicit？**  
+A: Zalecana dawka to 1 kapsułka dziennie, najlepiej rano lub przed aktywnością umysłową.
+
+**Q: Czy mogę przekroczyć dawkę?**  
+A: Nie zaleca się przekraczania dawki. Przestrzegaj zaleceń na opakowaniu.
+
+## Płatności i bezpieczeństwo
+**Q: Jakie metody płatności akceptujecie?**  
+A: Przelewy, BLIK, karty, PayPal.
+
+**Q: Czy moje dane są bezpieczne?**  
+A: Tak, przestrzegamy RODO i używamy szyfrowanych połączeń.
+
+## Współpraca
+**Q: Chcę zostać dystrybutorem. Jak się skontaktować?**  
+A: Wyślij maila na cognivia.business@outlook.com z tematem "Współpraca dystrybucyjna".

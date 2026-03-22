@@ -60,7 +60,7 @@ Both options feature the Cognivia logo and product information in Polish and Eng
 
 ## How to Order
 
-1. Contact us at **cognivia.co@gmail.com** with your requirements.
+1. Contact us at **cognivia.business@outlook.com** with your requirements.
 2. We will send you a formal quotation and sample policy.
 3. Upon agreement, we provide a proforma invoice.
 4. Production begins after deposit payment.

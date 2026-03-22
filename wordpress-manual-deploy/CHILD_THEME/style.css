@@ -1,0 +1,79 @@
+/*
+ Theme Name:   Astra Child
+ Theme URI:    https://cognivia.co
+ Description:  Astra child theme for Cognivia - Cognicit nootropic supplement brand
+ Author:       Cognivia
+ Author URI:   https://cognivia.co
+ Template:     astra
+ Version:      1.0.0
+ License:      GPL v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain: astra-child
+*/
+
+/* ====== Brand Colors ====== */
+:root {
+    --primary-color: #2D6642;   /* Deep green */
+    --secondary-color: #C8327A; /* Pink */
+    --accent-color: #F4F8F5;    /* Light mint */
+}
+
+/* Apply primary color to various elements */
+a, .site-title a:hover, .main-navigation a:hover,
+.entry-title a:hover, .widget a:hover,
+.woocommerce .woocommerce-breadcrumb a:hover,
+.woocommerce ul.products li.product .button:hover,
+.woocommerce a.added_to_cart:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce .related.products .button:hover,
+.woocommerce .woocommerce-widget-layered-nav-list a:hover,
+.woocommerce .widget_layered_nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Buttons */
+button, .button, .wp-block-button__link,
+ input[type="button"], input[type="submit"] {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+button:hover, .button:hover {
+    background-color: #236a36;
+    border-color: #236a36;
+}
+
+/* Secondary color for highlights */
+mark, ins {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Background accents */
+.site, .site-content {
+    background-color: var(--accent-color);
+}
+
+/* Typography: Cormorant Garamond for headings */
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.site-description,
+.entry-title,
+.entry-header,
+.page-title,
+.woocommerce .product-title,
+.woocommerce .woocommerce-product-details__title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
+
+/* Ensure body uses a clean sans-serif */
+body, button, input, select, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}

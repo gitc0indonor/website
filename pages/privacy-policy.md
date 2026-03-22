@@ -31,10 +31,10 @@ Our website uses functional cookies only; no tracking or advertising cookies are
 
 ## Your Rights**
 
-You may request access to, correction, or deletion of your personal data by contacting us at cognivia.co@gmail.com.
+You may request access to, correction, or deletion of your personal data by contacting us at cognivia.business@outlook.com.
 
 ## Changes to This Policy**
 
 We may update this policy occasionally. Changes are posted on this page.
 
-Contact: Cognivia, Poland, cognivia.co@gmail.com.
+Contact: Cognivia, Poland, cognivia.business@outlook.com.
