@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog — Suplementacja i zdrowie | Cognivia</title>
+  <meta name="description" content="Blog Cognivia — artykuły o suplementach diety, składnikach aktywnych i zdrowym stylu życia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #c9a96e; --forest: #1a3a2a; --cream: #faf7f0; --charcoal: #2a2a28; --soft-text: #5a5a58; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; color: var(--charcoal); background: #fdfcf8; }
+    .legal-bar { background: var(--forest); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
+    .legal-bar strong { color: var(--gold); }
+    header { position: fixed; top: 32px; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(253,252,248,0.95); backdrop-filter: blur(10px); }
+    .logo { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--forest); text-decoration: none; }
+    .logo span { color: var(--gold); }
+    nav a { margin-left: 24px; color: var(--charcoal); text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+    .blog-hero { padding: 140px 8% 80px; text-align: center; }
+    .blog-hero h1 { font-family: 'Playfair Display', serif; font-size: 56px; color: var(--forest); margin-bottom: 16px; }
+    .blog-hero p { font-size: 16px; color: var(--soft-text); max-width: 600px; margin: 0 auto; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; padding: 0 8% 80px; }
+    .blog-card { background: white; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.06); transition: transform 0.3s; }
+    .blog-card:hover { transform: translateY(-4px); }
+    .blog-card img { width: 100%; height: 240px; object-fit: cover; }
+    .blog-card-body { padding: 24px; }
+    .blog-card-body .tag { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
+    .blog-card-body h3 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--forest); margin-bottom: 12px; }
+    .blog-card-body p { font-size: 14px; color: var(--soft-text); line-height: 1.7; margin-bottom: 16px; }
+    .blog-card-body a { color: var(--gold); text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    .legal-note { font-size: 11px; color: #999; text-align: center; padding: 40px 8%; max-width: 800px; margin: 0 auto; line-height: 1.8; }
+    footer { background: var(--charcoal); color: rgba(255,255,255,0.6); padding: 40px 8%; text-align: center; font-size: 13px; }
+    footer a { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <div class="legal-bar"><strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.</div>
+  <header>
+    <a href="index.html" class="logo">Cogni<span>via</span></a>
+    <nav><a href="index.html">Strona główna</a><a href="produkt.html">Produkt</a><a href="nauka.html">Nauka</a><a href="o-nas.html">O nas</a></nav>
+  </header>
+  <section class="blog-hero">
+    <h1>Blog</h1>
+    <p>Artykuły o suplementacji, składnikach aktywnych i zdrowym stylu życia. Wszystkie treści są zgodne z polskimi regulacjami dotyczącymi suplementów diety.</p>
+  </section>
+  <div class="blog-grid">
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Antyoksydanty" loading="lazy">
+      <div class="blog-card-body">
+        <div class="tag">Składniki</div>
+        <h3>Co to są antyoksydanty i dlaczego są ważne?</h3>
+        <p>Antyoksydanty to związki, które pomagają chronić komórki przed stresem oksydacyjnym — procesem naturalnie zachodzącym w organizmie. Kwas alfa-liponowy jest jednym z niewielu antyoksydantów rozpuszczalnych zarówno w wodzie, jak i w tłuszczach.</p>
+        <a href="blog/antyoksydanty.html">Czytaj więcej →</a>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop" alt="Cytykolina" loading="lazy">
+      <div class="blog-card-body">
+        <div class="tag">Nauka</div>
+        <h3>Cytykolina — naturalny składnik organizmu</h3>
+        <p>Cytykolina (CDP-cholina) jest naturalnym składnikiem występującym w organizmie człowieka. Jest prekursorem fosfatydylocholiny — głównego składnika błon komórkowych. W bazie PubMed odnotowano ponad 230 publikacji naukowych dotyczących tego składnika.</p>
+        <a href="blog/cytykolina.html">Czytaj więcej →</a>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&h=400&fit=crop" alt="Beta-cyklodekstryna" loading="lazy">
+      <div class="blog-card-body">
+        <div class="tag">Technologia</div>
+        <h3>Beta-cyklodekstryna — nośnik z natury</h3>
+        <p>Beta-cyklodekstryna to naturalny oligosacharyd otrzymywany z enzymatycznej degradacji skrobi. Jej unikalna struktura molekularna — kształt „kubka" — pozwala na tworzenie kompleksów, które pomagają zwiększyć stabilność i biodostępność składników aktywnych.</p>
+        <a href="blog/beta-cyklodekstryna.html">Czytaj więcej →</a>
+      </div>
+    </article>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&h=400&fit=crop" alt="Suplementy a regulacje" loading="lazy">
+      <div class="blog-card-body">
+        <div class="tag">Regulacje</div>
+        <h3>Suplement diety a lek — jaka jest różnica?</h3>
+        <p>W Polsce i UE suplementy diety są regulowane inaczej niż leki. Suplement diety nie leczy i nie zapobiega chorobom — jest uzupełnieniem zróżnicowanej diety. Dowiedz się, jakie prawa chronią konsumentów i na co zwracać uwagę.</p>
+        <a href="blog/suplement-vs-lek.html">Czytaj więcej →</a>
+      </div>
+    </article>
+  </div>
+  <div class="legal-note">
+    <strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. Nie przekraczać zalecanej dziennej porcji. Przechowywać w sposób niedostępny dla małych dzieci.<br>
+    Treści na blogu mają charakter informacyjny i nie stanowią porady medycznej.
+  </div>
+  <footer>
+    <p>© 2026 Cognivia. <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a> | <a href="polityka-prywatnosci.html">Polityka prywatności</a> | <a href="regulamin.html">Regulamin</a></p>
+  </footer>
+</body>
+</html>
