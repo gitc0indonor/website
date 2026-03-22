@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CogniCit — Suplement diety | Składniki i zastosowanie | Cognivia</title>
+  <meta name="description" content="CogniCit suplement diety — kwas alfa-liponowy 250mg, cytykolina 300mg, beta-cyklodekstryna 250mg. Składniki naturalnie wspierające organizm.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cognivia-green: #2D6642;
+      --cognivia-pink: #C8327A;
+      --cognivia-beige: #f5f0e8;
+      --cognivia-charcoal: #2a2a28;
+      --cognivia-text: #4a4a48;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--cognivia-text);
+      background: var(--cognivia-beige);
+      line-height: 1.7;
+    }
+    .legal-bar {
+      background: #f9f5ef;
+      border-bottom: 1px solid #e0dcd4;
+      padding: 8px 5%;
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+    }
+    .legal-bar strong { color: #c0392b; }
+    header {
+      position: fixed;
+      top: 38px;
+      width: 100%;
+      background: rgba(245,240,232,0.95);
+      backdrop-filter: blur(10px);
+      padding: 16px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    .logo { font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 700; color: var(--cognivia-green); text-decoration: none; }
+    nav a { margin-left: 24px; color: var(--cognivia-charcoal); text-decoration: none; font-size: 14px; font-weight: 500; }
+    .hero { padding: 120px 5% 60px; text-align: center; max-width: 900px; margin: 0 auto; }
+    .hero h1 { font-family: 'EB Garamond', serif; font-size: 56px; font-weight: 700; color: var(--cognivia-green); margin-bottom: 8px; }
+    .hero .tagline { font-size: 20px; font-weight: 300; color: var(--cognivia-text); margin-bottom: 16px; }
+    .hero .badge-row { display: flex; gap: 12px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap; }
+    .badge { display: inline-block; border: 1px solid var(--cognivia-green); color: var(--cognivia-green); padding: 4px 12px; border-radius: 20px; font-size: 13px; }
+    .legal-disclaimer { font-size: 12px; color: #888; font-style: italic; margin-top: 16px; }
+    section { padding: 80px 5%; }
+    section h2 { font-family: 'EB Garamond', serif; font-size: 40px; color: var(--cognivia-green); text-align: center; margin-bottom: 48px; }
+    .ingredients-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1200px; margin: 0 auto; }
+    .ingredient-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+    .ingredient-card .card-header { background: var(--cognivia-green); color: white; padding: 24px; }
+    .ingredient-card .card-header h3 { font-family: 'EB Garamond', serif; font-size: 24px; margin-bottom: 4px; }
+    .ingredient-card .card-header .amount { font-size: 14px; opacity: 0.8; }
+    .ingredient-card .card-body { padding: 24px; }
+    .ingredient-card .card-body p { margin-bottom: 16px; }
+    .ingredient-card .card-body .science-note { font-size: 12px; color: #888; border-top: 1px solid #eee; padding-top: 16px; }
+    .science-section { background: white; border-radius: 8px; max-width: 900px; margin: 0 auto; padding: 48px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+    .science-section h3 { font-family: 'EB Garamond', serif; color: var(--cognivia-green); font-size: 28px; margin-bottom: 16px; }
+    .science-section p { margin-bottom: 16px; line-height: 1.8; }
+    .science-section .ref { font-size: 11px; color: #999; }
+    .science-section .legal-note { font-size: 12px; color: #888; background: #f9f5ef; padding: 16px; border-left: 3px solid var(--cognivia-green); margin-top: 24px; }
+    .composition-table { width: 100%; max-width: 700px; margin: 24px auto; border-collapse: collapse; }
+    .composition-table th { background: var(--cognivia-green); color: white; padding: 12px 16px; text-align: left; font-weight: 500; }
+    .composition-table td { padding: 12px 16px; border-bottom: 1px solid #eee; }
+    .composition-table tr:nth-child(even) td { background: #fafafa; }
+    .composition-note { font-size: 12px; color: #888; text-align: center; max-width: 700px; margin: 16px auto 0; }
+    .warnings { background: #fef5f5; border-left: 4px solid #c0392b; padding: 24px; max-width: 900px; margin: 40px auto; border-radius: 4px; }
+    .warnings h3 { color: #c0392b; font-family: 'EB Garamond', serif; margin-bottom: 12px; }
+    .warnings ul { padding-left: 20px; }
+    .warnings li { margin-bottom: 8px; font-size: 14px; }
+    footer { background: var(--cognivia-charcoal); color: rgba(255,255,255,0.7); padding: 60px 5%; font-size: 14px; }
+    footer a { color: var(--cognivia-pink); }
+    .footer-legal { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 11px; color: rgba(255,255,255,0.4); line-height: 1.6; }
+    @media (max-width: 768px) { .hero h1 { font-size: 36px; } .ingredients-grid { grid-template-columns: 1fr; } .science-section { padding: 24px; } }
+  </style>
+</head>
+<body>
+  <div class="legal-bar">
+    <strong>Suplement diety.</strong> Nie może być stosowany jako substytut (zamiennik) zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. Nie przekraczać zalecanej dziennej porcji. Przechowywać w sposób niedostępny dla małych dzieci.
+  </div>
+  <header>
+    <a href="index.html" class="logo">Cognivia</a>
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <a href="produkt.html">Produkt</a>
+      <a href="nauka.html">Nauka</a>
+      <a href="blog/">Blog</a>
+      <a href="o-nas.html">O nas</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div style="font-size: 12px; color: var(--cognivia-pink); text-transform: uppercase; letter-spacing: 3px; font-weight: 600; margin-bottom: 12px;">Suplement diety</div>
+    <h1>CogniCit</h1>
+    <div class="tagline">Z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną</div>
+    <div class="badge-row">
+      <span class="badge">ALA 250 mg</span>
+      <span class="badge">Cytokolina 300 mg</span>
+      <span class="badge">Beta‑CD 250 mg</span>
+    </div>
+    <p class="legal-disclaimer">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.</p>
+  </section>
+
+  <!-- SKŁADNIKI -->
+  <section id="składniki" style="background: white;">
+    <h2>Składniki</h2>
+    <div class="ingredients-grid">
+      <div class="ingredient-card">
+        <div class="card-header">
+          <h3>Kwas Alfa‑Liponowy (ALA)</h3>
+          <div class="amount">250 mg na kapsułkę</div>
+        </div>
+        <div class="card-body">
+          <p>Kwas alfa-liponowy jest naturalnie występującym związkiem organicznym, który pomaga chronić komórki przed stresem oksydacyjnym. Jest jednym z niewielu antyoksydantów rozpuszczalnych zarówno w wodzie, jak i w tłuszczach.</p>
+          <p>ALA uczestniczy w metabolizmie energetycznym mitochondriów — „elektrowni" komórek — i wspiera prawidłowe funkcjonowanie organizmu.</p>
+          <div class="science-note">
+            <strong>Dostępne badania:</strong> W bazie PubMed odnotowano 113 publikacji naukowych dotyczących kwasu alfa-liponowego i funkcji poznawczych (stan na marzec 2026). Badania wykazały m.in. działanie neuroprotekcyjne i redukcję stresu oksydacyjnego.<br>
+            <em>Źródło: PubMed — PMID 41469453 (Sci Rep, 2025)</em>
+          </div>
+        </div>
+      </div>
+
+      <div class="ingredient-card">
+        <div class="card-header">
+          <h3>Cytykolina (CDP‑cholina)</h3>
+          <div class="amount">300 mg na kapsułkę</div>
+        </div>
+        <div class="card-body">
+          <p>Cytykolina (cytidyno-5'-difosfocholina) jest naturalnym składnikiem występującym w organizmie człowieka. Jest prekursorem fosfatydylocholiny — głównego składnika błon komórkowych neuronów.</p>
+          <p>W suplementacji, cytykolina jest stosowana jako składnik wspierający prawidłowe funkcjonowanie układu nerwowego.</p>
+          <div class="science-note">
+            <strong>Dostępne badania:</strong> W bazie PubMed odnotowano 233 publikacji naukowych dotyczących cytykoliny i funkcji poznawczych (stan na marzec 2026). Cytykolina jest jednym z najczęściej badanych składników nootropowych.<br>
+            <em>Źródło: PubMed — wyszukiwanie „citicoline cognition" (233 wyniki)</em>
+          </div>
+        </div>
+      </div>
+
+      <div class="ingredient-card">
+        <div class="card-header">
+          <h3>Beta‑Cyklodekstryna</h3>
+          <div class="amount">250 mg na kapsułkę</div>
+        </div>
+        <div class="card-body">
+          <p>Beta-cyklodekstryna jest naturalnym oligosacharydem otrzymywanym z enzymatycznej degradacji skrobi. Posiada unikalną strukturę molekularną — kształt „kubka" — który pozwala na tworzenie kompleksów inclusionnych z innymi związkami.</p>
+          <p>W suplementacji, beta-cyklodekstryna jest stosowana jako nośnik — pomaga zwiększyć stabilność i biodostępność składników aktywnych preparatu.</p>
+          <div class="science-note">
+            <strong>Dostępne badania:</strong> W bazie PubMed odnotowano 1 176 publikacji dotyczących cyklodekstryn i biodostępności (stan na marzec 2026). Beta-CD jest powszechnie stosowana w farmacji i suplementacji.<br>
+            <em>Źródło: PubMed — wyszukiwanie „cyclodextrin bioavailability enhancement" (1 176 wyników)</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABELA SKŁADU -->
+  <section>
+    <h2>Informacje o składzie</h2>
+    <table class="composition-table">
+      <thead>
+        <tr>
+          <th>Składnik</th>
+          <th>Zawartość w 1 kapsułce</th>
+          <th>% RWS*</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kwas alfa-liponowy (ALA)</td>
+          <td>250 mg</td>
+          <td>—**</td>
+        </tr>
+        <tr>
+          <td>Cytykolina (CDP-cholina)</td>
+          <td>300 mg</td>
+          <td>—**</td>
+        </tr>
+        <tr>
+          <td>Beta-cyklodekstryna</td>
+          <td>250 mg</td>
+          <td>—**</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="composition-note">
+      * RWS — Referencyjna Wartość Spożycia (zgodnie z Rozporządzeniem WE nr 1169/2011).<br>
+      ** RWS nie została ustalona.<br>
+      <strong>Zalecana dzienna porcja:</strong> 1 kapsułka dziennie, najlepiej rano z posiłkiem, popić wodą.<br>
+      <strong>Nie przekraczać zalecanej porcji do spożycia w ciągu dnia.</strong>
+    </p>
+  </section>
+
+  <!-- OSTRZEŻENIA -->
+  <section>
+    <div class="warnings">
+      <h3>Ostrzeżenia</h3>
+      <ul>
+        <li><strong>Nie przekraczać zalecanej porcji do spożycia w ciągu dnia.</strong></li>
+        <li>Suplement diety nie może być stosowany jako substytut (zamiennik) zróżnicowanej diety.</li>
+        <li>Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia.</li>
+        <li>Przechowywać w temperaturze pokojowej, w sposób niedostępny dla małych dzieci.</li>
+        <li>Nie stosować w przypadku nadwrażliwości na którykolwiek ze składników produktu.</li>
+        <li>Kobiety w ciąży i karmiące piersią powinny skonsultować stosowanie suplementu z lekarzem.</li>
+        <li>Osoby przyjmujące leki powinny skonsultować stosowanie suplementu z lekarzem.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PODMIOT ODPOWIEDZIALNY -->
+  <section style="background: white;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2 style="text-align: left;">Podmiot odpowiedzialny</h2>
+      <p>
+        <strong>Cognivia</strong><br>
+        ul. [ADRES FIRMY — do uzupełnienia]<br>
+        [KOD POCZTOWY] [MIASTO], Polska<br>
+        NIP: [NUMER NIP — do uzupełnienia]<br>
+        REGON: [NUMER REGON — do uzupełnienia]<br>
+        <br>
+        E-mail: <a href="mailto:cognivia.business@outlook.com" style="color: var(--cognivia-pink);">cognivia.business@outlook.com</a>
+      </p>
+      <p style="font-size: 12px; color: #888; margin-top: 16px;">
+        Suplement diety CogniCit jest zgłoszony do Głównego Inspektora Sanitarnego (GIS) zgodnie z ustawą 
+        z dnia 25 sierpnia 2006 r. o bezpieczeństwie żywności i żywienia (Dz.U. 2006 nr 171 poz. 1225 ze zm.).
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="kontakt">
+    <p style="font-family: 'EB Garamond', serif; font-size: 24px; color: white; margin-bottom: 16px;">Cognivia</p>
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
+    <p style="margin-top: 8px;">
+      <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a> |
+      <a href="polityka-prywatnosci.html">Polityka prywatności</a> |
+      <a href="regulamin.html">Regulamin</a> |
+      <a href="o-nas.html">O nas</a>
+    </p>
+    <div class="footer-legal">
+      <strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. Nie przekraczać zalecanej dziennej porcji. Przechowywać w sposób niedostępny dla małych dzieci.<br><br>
+      Strona zawiera oświadczenia żywieniowe i zdrowotne zgodne z Rozporządzeniem (WE) nr 1924/2006 oraz informacje zgodne z Rozporządzeniem (WE) nr 1169/2011.
+    </div>
+  </footer>
+</body>
+</html>

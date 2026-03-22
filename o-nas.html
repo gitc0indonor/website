@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O nas — Cognivia | Suplementy diety oparte na nauce</title>
+  <meta name="description" content="Cognivia — polska firma zajmująca się suplementacją opartą na nauce. Twórcy CogniCit — suplementu diety w przygotowaniu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #c9a96e; --forest: #1a3a2a; --cream: #faf7f0; --charcoal: #2a2a28; --soft-text: #5a5a58; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; color: var(--charcoal); background: #fdfcf8; line-height: 1.8; }
+    .legal-bar { background: var(--forest); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
+    .legal-bar strong { color: var(--gold); }
+    header { position: fixed; top: 32px; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(253,252,248,0.95); backdrop-filter: blur(10px); }
+    .logo { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--forest); text-decoration: none; }
+    .logo span { color: var(--gold); }
+    nav a { margin-left: 24px; color: var(--charcoal); text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+    .hero-section { min-height: 70vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 120px 8% 80px; gap: 80px; }
+    .hero-section h1 { font-family: 'Playfair Display', serif; font-size: 52px; color: var(--forest); line-height: 1.1; margin-bottom: 24px; }
+    .hero-section p { font-size: 16px; color: var(--soft-text); margin-bottom: 16px; }
+    .hero-section img { width: 100%; height: 500px; object-fit: cover; }
+    .values-section { padding: 80px 8%; background: var(--cream); }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1200px; margin: 0 auto; }
+    .value-card { background: white; padding: 40px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+    .value-card h3 { font-family: 'Playfair Display', serif; color: var(--forest); font-size: 24px; margin-bottom: 12px; }
+    .value-card p { font-size: 14px; color: var(--soft-text); }
+    .value-card .icon { font-size: 32px; margin-bottom: 16px; }
+    .compliance-section { padding: 80px 8%; }
+    .compliance-inner { max-width: 900px; margin: 0 auto; }
+    .compliance-inner h2 { font-family: 'Playfair Display', serif; font-size: 36px; color: var(--forest); margin-bottom: 24px; }
+    .compliance-inner p { font-size: 15px; color: var(--soft-text); margin-bottom: 16px; }
+    .compliance-inner ul { padding-left: 20px; margin-bottom: 24px; }
+    .compliance-inner li { margin-bottom: 8px; font-size: 14px; color: var(--soft-text); }
+    .contact-section { padding: 80px 8%; background: var(--forest); color: white; text-align: center; }
+    .contact-section h2 { font-family: 'Playfair Display', serif; font-size: 42px; margin-bottom: 16px; }
+    .contact-section p { font-size: 16px; color: rgba(255,255,255,0.7); margin-bottom: 8px; }
+    .contact-section a { color: var(--gold); }
+    footer { background: var(--charcoal); color: rgba(255,255,255,0.6); padding: 40px 8%; text-align: center; font-size: 13px; }
+    footer a { color: var(--gold); }
+    @media (max-width: 768px) {
+      .hero-section { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="legal-bar"><strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.</div>
+  <header>
+    <a href="index.html" class="logo">Cogni<span>via</span></a>
+    <nav><a href="index.html">Strona główna</a><a href="produkt.html">Produkt</a><a href="nauka.html">Nauka</a><a href="blog/">Blog</a></nav>
+  </header>
+  <section class="hero-section">
+    <div>
+      <h1>Polska firma oparta na nauce</h1>
+      <p>Cognivia to polska firma zajmująca się suplementacją opartą na naukowych podstawach. Nasz pierwszy preparat — CogniCit — jest suplementem diety w fazie przygotowań do premiery.</p>
+      <p>Wierzymy, że suplement diety powinien być <strong>przejrzysty</strong>, <strong>bezpieczny</strong> i <strong>oparty na dowodach naukowych</strong>. Każdy składnik CogniCit został wybrany na podstawie dostępnej literatury naukowej.</p>
+      <p style="margin-top: 24px;"><a href="mailto:cognivia.business@outlook.com" style="color: var(--gold); text-decoration: none; font-weight: 600;">cognivia.business@outlook.com</a></p>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&h=600&fit=crop" alt="Cognivia — jakość i nauka" loading="lazy">
+    </div>
+  </section>
+
+  <section class="values-section">
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="icon">🔬</div>
+        <h3>Oparte na nauce</h3>
+        <p>Każdy składnik CogniCit jest wybrany na podstawie dostępnej literatury naukowej. W bazie PubMed odnotowano setki publikacji dotyczących naszych składników.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">🛡️</div>
+        <h3>Bezpieczeństwo</h3>
+        <p>Preparat jest produkowany zgodnie z dobrymi praktykami produkcyjnymi (GMP). Każda partia jest testowana pod kątem jakości i bezpieczeństwa.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">⚖️</div>
+        <h3>Zgodność z prawem</h3>
+        <p>CogniCit jest zgodny z regulacjami UE i polskim prawem o suplementach diety. Nie składamy obietnic leczniczych — suplement diety to nie lek.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="compliance-section">
+    <div class="compliance-inner">
+      <h2>Compliance — zgodność z regulacjami</h2>
+      <p>Cognivia jako firma suplementacyjna działa zgodnie z następującymi regulacjami:</p>
+      <ul>
+        <li><strong>Rozporządzenie (WE) nr 1924/2006</strong> — oświadczenia żywieniowe i zdrowotne dotyczące żywności. Na stronach Cognivia umieszczamy wyłącznie oświadczenia dopuszczone w załącznikach do rozporządzenia.</li>
+        <li><strong>Rozporządzenie (WE) nr 1169/2011</strong> — przekazywanie konsumentom informacji na temat żywności. Tabela składu z % RWS jest zgodna z tym rozporządzeniem.</li>
+        <li><strong>Ustawa z 25.08.2006 r. o bezpieczeństwie żywności i żywienia</strong> (Dz.U. 2006 nr 171 poz. 1225 ze zm.) — podstawa prawna dla suplementów diety w Polsce.</li>
+        <li><strong>Dyrektywa 2002/46/WE</strong> — harmonizacja przepisów dotyczących suplementów żywnościowych w UE.</li>
+        <li><strong>Rozporządzenie Ministra Zdrowia</strong> — wymogi dotyczące oznakowania suplementów diety w Polsce.</li>
+      </ul>
+      <p>CogniCit jest zgłoszony do Głównego Inspektora Sanitarnego (GIS) zgodnie z ustawą o bezpieczeństwie żywności i żywienia.</p>
+      <p><strong>Na naszych stronach NIE umieszczamy:</strong></p>
+      <ul>
+        <li>Oświadczeń zdrowotnych dotyczących leczenia chorób</li>
+        <li>Oświadczeń sugerujących, że suplement diety zapobiega chorobom</li>
+        <li>Oświadczeń dotyczących odchudzania lub redukcji masy ciała</li>
+        <li>Referencji pacjentów (suplement diety to nie lek)</li>
+        <li>Porównania z lekami</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h2>Kontakt</h2>
+    <p>Cognivia<br>ul. [ADRES — do uzupełnienia]<br>[KOD] [MIASTO], Polska</p>
+    <p>NIP: [NUMER — do uzupełnienia]</p>
+    <p style="margin-top: 16px;"><a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Cognivia. <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a> | <a href="polityka-prywatnosci.html">Polityka prywatności</a> | <a href="regulamin.html">Regulamin</a></p>
+    <p style="font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 16px;">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.</p>
+  </footer>
+</body>
+</html>
