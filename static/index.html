@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CogniCit — Wsparcie dla mózgu</title>
-  <meta name="description" content="CogniCit to nootropowy suplement diety wspierający pamięć i koncentrację. Alfa‑Lipoic Acid, Cytokolina, Beta‑Cyclodextrina. Produkt w przygotowaniu.">
+  <title>CogniCit — Suplement diety | Cognivia</title>
+  <meta name="description" content="CogniCit to suplement diety z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną. Preparat w przygotowaniu. Suplement diety nie może być stosowany jako substytut zróżnicowanej diety.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
       --cognivia-white: #FFFFFF;
       --cognivia-light: #F4F8F5;
       --cognivia-text: #1A1A1A;
+      --cognivia-legal: #666666;
     }
     body {
       font-family: 'Cormorant Garamond', Georgia, serif;
@@ -23,9 +24,25 @@
       margin: 0;
       line-height: 1.75;
     }
+    /* ===== OBOWIĄZKOWY PASEK PRAWNY ===== */
+    .legal-notice {
+      background: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+      padding: 8px 5%;
+      font-size: 11px;
+      color: var(--cognivia-legal);
+      text-align: center;
+      line-height: 1.4;
+    }
+    .legal-notice strong {
+      color: #c0392b;
+      font-weight: 700;
+    }
+    /* ===== NAGŁÓWEK ===== */
     header {
       position: fixed;
-      top: 0; width: 100%;
+      top: 38px; /* pod paskiem prawnym */
+      width: 100%;
       background: transparent;
       padding: 16px 5%;
       display: flex;
@@ -50,6 +67,7 @@
       text-decoration: none;
       font-weight: 500;
     }
+    /* ===== HERO ===== */
     .hero {
       min-height: 100vh;
       display: grid;
@@ -57,7 +75,7 @@
       align-items: center;
       gap: 48px;
       padding: 0 5%;
-      padding-top: 80px;
+      padding-top: 118px;
     }
     .hero .product-image {
       transform: rotate(-3deg);
@@ -74,10 +92,25 @@
       color: var(--cognivia-green);
       margin: 0;
     }
+    .product-category {
+      font-size: 14px;
+      color: var(--cognivia-pink);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
     .subtitle {
       font-size: 22px;
       font-weight: 300;
-      margin: 16px 0 24px;
+      margin: 16px 0 8px;
+    }
+    .legal-disclaimer {
+      font-size: 12px;
+      color: var(--cognivia-legal);
+      margin: 8px 0 24px;
+      font-style: italic;
+      line-height: 1.5;
     }
     .badge {
       display: inline-flex;
@@ -88,29 +121,7 @@
       font-size: 13px;
       margin: 4px;
     }
-    .price {
-      font-size: 42px;
-      color: var(--cognivia-pink);
-      font-weight: 700;
-      margin: 24px 0;
-    }
-    .btn {
-      background: var(--cognivia-green);
-      color: var(--cognivia-white);
-      border: none;
-      padding: 16px 48px;
-      font-family: inherit;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 18px;
-      cursor: pointer;
-      border-radius: 2px;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: var(--cognivia-pink);
-    }
+    /* ===== SEKCJA SKŁADNIKÓW ===== */
     .ingredients {
       background: var(--cognivia-light);
       padding: 80px 5%;
@@ -133,6 +144,13 @@
       margin-top: 0;
       color: var(--cognivia-green);
     }
+    .card .ingredient-note {
+      font-size: 11px;
+      color: var(--cognivia-legal);
+      margin-top: 12px;
+      font-style: italic;
+    }
+    /* ===== JAK UŻYWAĆ ===== */
     .how {
       background: var(--cognivia-green);
       color: var(--cognivia-white);
@@ -163,6 +181,38 @@
       font-weight: 700;
       margin: 0 auto 16px;
     }
+    /* ===== SKŁAD ===== */
+    .composition {
+      background: var(--cognivia-white);
+      padding: 80px 5%;
+    }
+    .composition-table {
+      max-width: 800px;
+      margin: 24px auto;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .composition-table th,
+    .composition-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    .composition-table th {
+      background: var(--cognivia-green);
+      color: var(--cognivia-white);
+      font-weight: 600;
+    }
+    .composition-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    .composition-note {
+      font-size: 12px;
+      color: var(--cognivia-legal);
+      margin-top: 16px;
+      text-align: center;
+    }
+    /* ===== FAQ ===== */
     .faq {
       background: var(--cognivia-light);
       padding: 80px 5%;
@@ -176,124 +226,299 @@
       color: var(--cognivia-green);
       cursor: pointer;
     }
+    .faq-answer {
+      display: none;
+      margin-top: 8px;
+    }
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+    /* ===== OSTRZEŻENIA ===== */
+    .warnings {
+      background: #fff3f3;
+      border-left: 4px solid #c0392b;
+      padding: 24px 5%;
+      margin: 40px auto;
+      max-width: 1200px;
+    }
+    .warnings h3 {
+      color: #c0392b;
+      margin-top: 0;
+    }
+    .warnings ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .warnings li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    /* ===== FOOTER ===== */
     footer {
       background: #1A1A1A;
       color: rgba(255,255,255,0.7);
       padding: 60px 5%;
+      font-size: 14px;
     }
     footer a { color: var(--cognivia-pink); }
+    .footer-legal {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+    }
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
-      .hero { grid-template-columns: 1fr; padding-top: 120px; }
+      .hero { grid-template-columns: 1fr; padding-top: 160px; }
       .cards { grid-template-columns: 1fr; }
+      .steps { flex-direction: column; }
+      .composition-table { font-size: 13px; }
+      .composition-table th, .composition-table td { padding: 8px 12px; }
     }
   </style>
 </head>
 <body>
+
+  <!-- ===== OBOWIĄZKOWY PASEK PRAWNY (zgodny z rozporządzeniem WE 1924/2006 i ustawą o bezpieczeństwie żywności) ===== -->
+  <div class="legal-notice">
+    <strong>Suplement diety.</strong> Nie może być stosowany jako substytut (zamiennik) zróżnicowanej diety. 
+    Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. 
+    Nie przekraczać zalecanej dziennej porcji.
+    Przechowywać w sposób niedostępny dla małych dzieci.
+  </div>
+
+  <!-- ===== NAGŁÓWEK ===== -->
   <header id="header">
     <a href="#" class="logo">Cognivia</a>
     <nav>
       <a href="#skład">Skład</a>
-      <a href="#działanie">Działanie</a>
+      <a href="#użytkowanie">Jak używać</a>
+      <a href="#informacje">Informacje</a>
       <a href="#faq">FAQ</a>
-      <a href="mailto:cognivia.co@gmail.com" class="btn">Kontakt</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
   </header>
 
+  <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="text">
-      <div class="badge">Nowość</div>
+      <div class="product-category">Suplement diety</div>
       <h1>CogniCit</h1>
-      <div class="subtitle">Wsparcie dla mózgu i układu nerwowego</div>
+      <div class="subtitle">Z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną</div>
+      <div class="legal-disclaimer">
+        Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety. 
+        Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia.
+      </div>
       <div>
         <span class="badge">ALA 250 mg</span>
         <span class="badge">Cytokolina 300 mg</span>
         <span class="badge">Beta‑CD 250 mg</span>
       </div>
-      <div class="price">79,00 zł</div>
+      <p style="font-size: 14px; margin: 16px 0 8px; color: var(--cognivia-legal);">
+        Zalecana dzienna porcja: 1 kapsułka. 
+        Nie przekraczać zalecanej porcji.
+      </p>
       <form action="https://formspree.io/f/your-form-id" method="POST" style="max-width:400px; margin-top:16px;">
-        <input type="hidden" name="_subject" value="New CogniCit lead from landing page">
+        <input type="hidden" name="_subject" value="Nowy lead CogniCit">
         <input type="email" name="email" placeholder="Twój e‑mail" required style="width:100%; padding:12px; margin-bottom:8px; border:1px solid #ccc; border-radius:4px;">
-        <button type="submit" class="btn" style="width:100%;">Powiadom mnie o premierze</button>
-        <p style="font-size:12px; color:#666; margin-top:8px;">Szpiegujemy Cię? Nie. Wysyłamy tylko informacje o premierze CogniCit.</p>
+        <button type="submit" style="background: var(--cognivia-green); color: white; border: none; padding: 16px 48px; font-family: inherit; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 18px; cursor: pointer; border-radius: 2px; width: 100%;">Powiadom mnie o premierze</button>
+        <p style="font-size:12px; color:#666; margin-top:8px;">
+          Twoje dane będą przetwarzane zgodnie z polityką prywatności. 
+          <a href="/polityka-prywatnosci.html" style="color: var(--cognivia-pink);">Polityka prywatności</a>.
+        </p>
       </form>
     </div>
     <div class="product-image">
-      <!-- Placeholder: Replace with actual product image -->
-      <img src="placeholder-product.png" alt="CogniCit" style="width:100%; max-width:400px; height:auto;">
+      <img src="placeholder-product.png" alt="CogniCit — suplement diety" style="width:100%; max-width:400px; height:auto;">
     </div>
   </section>
 
+  <!-- ===== SKŁADNIKI ===== -->
   <section id="skład" class="ingredients">
-    <h2 style="text-align:center; color:var(--cognivia-green);">Kluczowe składniki</h2>
+    <h2 style="text-align:center; color:var(--cognivia-green);">Składniki</h2>
+    <p style="text-align:center; font-size:14px; color:var(--cognivia-legal); max-width: 800px; margin: 0 auto 40px;">
+      CogniCit zawiera składniki, które przyczyniają się do prawidłowego funkcjonowania organizmu.
+    </p>
     <div class="cards">
       <div class="card">
         <h3>Kwas Alfa‑Liponowy (ALA)</h3>
-        <p>Silny antyoksydant wspierający mitochondria komórek nerwowych. Neutralizuje wolne rodniki.</p>
+        <p>Kwas alfa-liponowy pomaga chronić komórki przed stresem oksydacyjnym.</p>
+        <div class="ingredient-note">
+          Oświadczenie zdrowotne zgodne z Rozporządzeniem WE 1924/2006 — kwas alfa-liponowy przyczynia się do ochrony komórek przed stresem oksydacyjnym.
+        </div>
       </div>
       <div class="card">
         <h3>Cytykolina (CDP‑cholina)</h3>
-        <p>Prekursor acetylocholiny — neuroprzekaźnika pamięci i koncentracji. Regeneruje błony komórkowe.</p>
+        <p>Cytykolina jest składnikiem naturalnie występującym w organizmie, uczestniczącym w metabolizmie fosfolipidów błon komórkowych.</p>
+        <div class="ingredient-note">
+          Składnik naturalnie występujący w organizmie człowieka.
+        </div>
       </div>
       <div class="card">
         <h3>Beta‑cyklodekstryna</h3>
-        <p>Zwiększa stabilność i biodostępność składników aktywnych, chroniąc Cytokoliny przed wilgocią.</p>
+        <p>Beta-cyklodekstryna jest nośnikiem pomagającym zwiększyć stabilność i biodostępność składników aktywnych.</p>
+        <div class="ingredient-note">
+          Substancja pomocnicza — nośnik.
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="działanie" class="how">
-    <h2 style="text-align:center;">Jak działa CogniCit?</h2>
+  <!-- ===== INFORMACJE O SKŁADZIE I PORCJI DZIENNEJ ===== -->
+  <section id="informacje" class="composition" style="padding: 80px 5%;">
+    <h2 style="text-align:center; color:var(--cognivia-green);">Informacje o składzie</h2>
+    <table class="composition-table">
+      <thead>
+        <tr>
+          <th>Składnik</th>
+          <th>Zawartość w 1 kapsułce</th>
+          <th>% RWS*</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kwas alfa-liponowy (ALA)</td>
+          <td>250 mg</td>
+          <td>—**</td>
+        </tr>
+        <tr>
+          <td>Cytykolina (CDP-cholina)</td>
+          <td>300 mg</td>
+          <td>—**</td>
+        </tr>
+        <tr>
+          <td>Beta-cyklodekstryna</td>
+          <td>250 mg</td>
+          <td>—**</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="composition-note">
+      * RWS — Referencyjna Wartość Spożycia (zgodnie z Rozporządzeniem WE 1169/2011).<br>
+      ** RWS nie została ustalona.<br>
+      <strong>Zalecana dzienna porcja:</strong> 1 kapsułka dziennie, najlepiej rano, popić wodą.<br>
+      <strong>Nie przekraczać zalecanej porcji do spożycia w ciągu dnia.</strong>
+    </p>
+  </section>
+
+  <!-- ===== JAK STOSOWAĆ ===== -->
+  <section id="użytkowanie" class="how">
+    <h2 style="text-align:center;">Jak stosować CogniCit?</h2>
     <div class="steps">
       <div class="step">
         <div class="step-number">1</div>
-        <h4>Wchłanianie</h4>
-        <p>Beta‑CD zwiększa biodostępność.</p>
+        <h4>1 kapsułka dziennie</h4>
+        <p>Zalecana porcja to 1 kapsułka dziennie. Nie przekraczać zalecanej porcji.</p>
       </div>
       <div class="step">
         <div class="step-number">2</div>
-        <h4>Ochrona</h4>
-        <p>ALA chroni neurony przed stresem oksydacyjnym.</p>
+        <h4>Rano z posiłkiem</h4>
+        <p>Najlepiej przyjmować rano z posiłkiem, popić wodą.</p>
       </div>
       <div class="step">
         <div class="step-number">3</div>
-        <h4>Odżywianie</h4>
-        <p>Cytokolina zasila błony komórkowe.</p>
+        <h4>Regularne stosowanie</h4>
+        <p>Suplement diety działa najlepiej przy regularnym, długotrwałym stosowaniu.</p>
       </div>
       <div class="step">
         <div class="step-number">4</div>
-        <h4>Efekt</h4>
-        <p>Lepsza pamięć, koncentracja, jasność umysłu.</p>
+        <h4>Zdrowy tryb życia</h4>
+        <p>Pamiętaj o zrównoważonej diecie i aktywności fizycznej.</p>
       </div>
     </div>
   </section>
 
+  <!-- ===== OSTRZEŻENIA ===== -->
+  <section class="warnings" style="padding: 40px 5%;">
+    <h3>Ostrzeżenia</h3>
+    <ul>
+      <li><strong>Nie przekraczać zalecanej porcji do spożycia w ciągu dnia.</strong></li>
+      <li>Suplement diety nie może być stosowany jako substytut (zamiennik) zróżnicowanej diety.</li>
+      <li>Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia.</li>
+      <li>Przechowywać w temperaturze pokojowej, w sposób niedostępny dla małych dzieci.</li>
+      <li>Nie stosować w przypadku nadwrażliwości na którykolwiek ze składników produktu.</li>
+      <li>Kobiety w ciąży i karmiące piersią powinny skonsultować stosowanie suplementu z lekarzem.</li>
+      <li>Osoby przyjmujące leki powinny skonsultować stosowanie suplementu z lekarzem.</li>
+    </ul>
+  </section>
+
+  <!-- ===== FAQ ===== -->
   <section class="faq" id="faq">
     <h2 style="text-align:center; color:var(--cognivia-green);">Najczęstsze pytania</h2>
     <div class="faq-item">
       <div class="faq-question">Czy CogniCit jest lekiem?</div>
-      <div class="faq-answer">Nie, to suplement diety i nie zastępuje leków.</div>
+      <div class="faq-answer">Nie. CogniCit jest suplementem diety i nie może być stosowany jako substytut zróżnicowanej diety ani zamiennik leków. Suplement diety nie leczy i nie zapobiega chorobom.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-question">Jak dawkować?</div>
-      <div class="faq-answer">Zalecana porcja to 1 kapsułka dziennie, najlepiej rano.</div>
+      <div class="faq-question">Jak dawkować CogniCit?</div>
+      <div class="faq-answer">Zalecana porcja to 1 kapsułka dziennie, najlepiej rano z posiłkiem, popić wodą. Nie przekraczać zalecanej porcji do spożycia w ciągu dnia.</div>
     </div>
     <div class="faq-item">
       <div class="faq-question">Czy produkt jest bezpieczny?</div>
-      <div class="faq-answer">Tak, produkowany w zakładach GMP; każda partia jest testowana.</div>
+      <div class="faq-answer">CogniCit jest suplementem diety produkowanym zgodnie z dobrymi praktykami produkcyjnymi (GMP). Każda partia jest testowana pod kątem jakości i bezpieczeństwa. Jednak suplement diety nie zastępuje zróżnicowanej diety.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-question">Kiedy będzie dostępny?</div>
-      <div class="faq-answer">Jesteśmy w fazie pre‑launch. Zostaw e‑mail, a powiadomimy Cię o premierze.</div>
+      <div class="faq-question">Kiedy produkt będzie dostępny?</div>
+      <div class="faq-answer">Jesteśmy w fazie przygotowań do premiery. Zostaw swój e-mail, a powiadomimy Cię, gdy produkt będzie dostępny.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Czy mogę stosować CogniCit z innymi suplementami?</div>
+      <div class="faq-answer">Przed stosowaniem kilku suplementów diety jednocześnie zalecamy konsultację z lekarzem lub farmaceutą.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Czy produkt jest odpowiedni dla dzieci?</div>
+      <div class="faq-answer">CogniCit jest przeznaczony dla dorosłych. Przechowywać w sposób niedostępny dla małych dzieci.</div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2026 Cognivia. Wszelkie prawa zastrzezone.</p>
+  <!-- ===== DANE PODMIOTU ODPOWIEDZIALNEGO ===== -->
+  <section style="background: var(--cognivia-white); padding: 40px 5%; border-top: 1px solid #eee;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h3 style="color: var(--cognivia-green); margin-top: 0;">Podmiot odpowiedzialny</h3>
+      <p>
+        <strong>Cognivia</strong><br>
+        ul. [ADRES FIRMY — do uzupełnienia]<br>
+        [KOD POCZTOWY] [MIASTO], Polska<br>
+        NIP: [NUMER NIP — do uzupełnienia]<br>
+        REGON: [NUMER REGON — do uzupełnienia]<br>
+        KRS: [NUMER KRS — do uzupełnienia, jeśli spółka]<br>
+        <br>
+        E-mail: <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a><br>
+        Strona internetowa: www.cognivia.pl (w budowie)
+      </p>
+      <p style="font-size: 12px; color: var(--cognivia-legal); margin-top: 16px;">
+        Suplement diety CogniCit jest zgłoszony do Głównego Inspektora Sanitarnego (GIS) zgodnie z ustawą 
+        z dnia 25 sierpnia 2006 r. o bezpieczeństwie żywności i żywienia (Dz.U. 2006 nr 171 poz. 1225 ze zm.).
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="kontakt">
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
     <p>
-      <a href="mailto:cognivia.co@gmail.com">cognivia.co@gmail.com</a> |
+      <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a> |
       <a href="/polityka-prywatnosci.html">Polityka prywatności</a> |
       <a href="/regulamin.html">Regulamin</a>
     </p>
+    <div class="footer-legal">
+      <p>
+        <strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety. 
+        Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. 
+        Nie przekraczać zalecanej dziennej porcji.
+        Przechowywać w sposób niedostępny dla małych dzieci.
+      </p>
+      <p>
+        Strona zawiera oświadczenia żywieniowe i zdrowotne zgodne z Rozporządzeniem Parlamentu Europejskiego 
+        i Rady (WE) nr 1924/2006 z dnia 20 grudnia 2006 r. w sprawie oświadczeń żywieniowych i zdrowotnych 
+        dotyczących żywności.
+      </p>
+      <p>
+        Informacje o składzie zgodne z Rozporządzeniem (WE) nr 1169/2011 w sprawie przekazywania konsumentom 
+        informacji na temat żywności.
+      </p>
+    </div>
   </footer>
 
   <script>
@@ -302,6 +527,14 @@
       const header = document.getElementById('header');
       if (window.scrollY > 50) header.classList.add('scrolled');
       else header.classList.remove('scrolled');
+    });
+
+    // FAQ toggle
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        item.classList.toggle('open');
+      });
     });
   </script>
 </body>
