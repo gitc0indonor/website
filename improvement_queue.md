@@ -6,8 +6,8 @@
 3. ~~Add trust badges row (GMP, EU Compliant, Lab Tested)~~ ✅ DONE
 4. ~~Add structured data (JSON-LD for Product)~~ ✅ DONE
 5. ~~Add sticky bottom email signup bar~~ ✅ DONE
-6. Create detailed ingredient pages (ALA, Citicoline, β-CD)
-7. Improve FAQ section with smooth accordion animations
+6. ~~Create detailed ingredient pages (ALA, Citicoline, β-CD)~~ ✅ DONE
+7. ~~Improve FAQ section with smooth accordion animations~~ ✅ DONE
 8. Add product comparison table (vs competitors)
 9. Optimize SVG illustrations for faster rendering
 10. Add smooth scroll progress indicator
@@ -21,3 +21,6 @@
 18. Add Google PageSpeed optimization (lazy loading, preloading)
 19. Create Polish-language blog post: "Czym jest cytykolina?"
 20. Add real photos of product/packaging
+21. [NEW] Add "Why CogniCit?" comparison section — side-by-side with generic supplements
+22. [NEW] Create shipping & delivery info page (/dostawa) for pre-launch transparency
+23. [NEW] Add micro-interactions to CTA buttons (hover pulse, ripple effect on click)

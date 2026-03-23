@@ -27,8 +27,31 @@
 | # | Title | Focus | Status |
 |---|-------|-------|--------|
 | 1 | Czym jest cytykolina? | Education / SEO | Outline ready |
-| 2 | Kwas alfa-liponowy — naturalny antyoksydant | ALA deep-dive | Idea |
+| 2 | Kwas alfa-liponowy — naturalny antyoksydant | ALA deep-dive | Outline ready |
 | 3 | Beta-cyklodekstryna w suplementach | Bioavailability | Idea |
 | 4 | Suplement diety vs lek — co musisz wiedzieć | Regulatory / Trust | Idea |
 | 5 | Jak czytać etykiety suplementów? | Consumer education | Idea |
 | 6 | 5 rzeczy, które warto wiedzieć o nootropikach | Trend / SEO | Idea |
+
+---
+
+### New Blog Post Outline (Added 2026-03-23)
+**Title:** Kwas alfa-liponowy — naturalny antyoksydant dla mózgu  
+**Target:** Polish audience, SEO-focused  
+**Word count:** 1200-1800  
+**Keywords:** kwas alfa-liponowy, ALA, antyoksydant, suplement diety, neuroprotekcja, stres oksydacyjny  
+
+**Outline:**
+1. **Wstęp** — Czym jest kwas alfa-liponowy i gdzie występuje naturalnie?
+2. **Unikalna właściwość** — Podwójna rozpuszczalność (woda + tłuszcze)
+3. **Jak działa ALA?** — Antyoksydacja, regeneracja witamin C i E, chelatacja metali
+4. **ALA a mitochondria** — Rola w metabolizmie energetycznym
+5. **Badania naukowe** — Przegląd kluczowych publikacji (113 w PubMed), dawki
+6. **Biodostępność** — Lepiej na czczo czy po posiłku? Liczby.
+7. **ALA w CogniCit** — Jak 250 mg ALA łączy się z cytykoliną i beta-CD
+8. **Bezpieczeństwo** — Profil, interakcje, kto powinien uważać
+9. **Podsumowanie** — Key takeaways
+
+**CTA:** Email signup for launch notification  
+**Internal links:** kwas-alfa-liponowy.html, nauka.html, index.html  
+**Status:** Outline ready, needs writing
