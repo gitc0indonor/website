@@ -291,3 +291,23 @@
 **CTA:** Email signup for launch notification  
 **Internal links:** faq.html, jak-stosowac.html, produkt.html, regulamin.html, blog/suplement-vs-lek.html  
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #11)
+**Title:** Dlaczego przejrzystość składu ma znaczenie? Jak Cognivia stawia na otwartość  
+**Target:** Polish audience, trust-building / brand differentiation  
+**Word count:** 1200-1600  
+**Keywords:** przejrzystość suplementów, skład suplementu diety, dobry suplement, certyfikat GMP suplement, bezpieczny suplement diety  
+
+**Outline:**
+1. **Wstęp** — Rynek suplementów w Polsce: 30 000+ produktów — jak konsument ma wybrać?
+2. **Problem braku przejrzystości** — Mieszanki zastrzeżone, brak dawek składników, ukryte wypełniacze — dlaczego to powszechne?
+3. **Co oznacza prawdziwa przejrzystość?** — Pełny skład z dawkami, numer partii, certyfikat GMP, wyniki CoA, zgłoszenie GIS
+4. **Jak Cognivia podchodzi do przejrzystości?** — 3 składniki, każdemu poświęcona strona, jasne dawki, publiczne certyfikaty
+5. **Certyfikaty i dokumenty — co to znaczy w praktyce?** — GMP, lab tests, GIS — odsyłamy do /certyfikaty.html
+6. **Dlaczego to ważne dla konsumenta?** — Bezpieczeństwo, skuteczność, zaufanie, prawo do informacji
+7. **Checklist: jak sprawdzić przejrzystość suplementu?** — 5 pytań przed zakupem
+8. **Podsumowanie** — Cognivia = precyzja, synergia, przejrzystość. Zero ukrytych składników.
+
+**CTA:** Email signup for launch notification + link to certyfikaty.html  
+**Internal links:** certyfikaty.html, produkt.html, faq.html, jak-czytac-etykiety.html, blog/suplement-vs-lek.html  
+**Status:** Outline ready, needs writing

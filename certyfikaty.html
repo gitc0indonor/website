@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certyfikaty i dokumenty — Cognivia</title>
+  <meta name="description" content="Certyfikaty jakości CogniCit: certyfikat GMP, wyniki badań laboratoryjnych, zgłoszenie GIS. Pełna przejrzystość i zgodność z przepisami UE.">
+  <link rel="canonical" href="https://cognivia.eu/certyfikaty.html">
+  <link rel="alternate" hreflang="pl" href="https://cognivia.eu/certyfikaty.html">
+  <meta property="og:title" content="Certyfikaty i dokumenty — Cognivia">
+  <meta property="og:description" content="Certyfikat GMP, wyniki badań laboratoryjnych, zgłoszenie GIS — pełna przejrzystość CogniCit.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cognivia.eu/certyfikaty.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --beige: #f5f0e8;
+      --cream: #faf7f0;
+      --white: #fdfcf8;
+      --charcoal: #2a2a28;
+      --soft: #5a5a58;
+      --gold: #c9a96e;
+      --green: #2D6642;
+      --green-light: #e8f5e9;
+      --blue: #1565c0;
+      --blue-light: #e3f2fd;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--beige); line-height: 1.8; }
+    .scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--gold); z-index: 9999; transition: width 0.1s; }
+    .legal-bar { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 6px 5%; font-size: 10px; text-align: center; letter-spacing: 0.3px; }
+    .legal-bar strong { color: var(--gold); }
+    header { position: fixed; top: 30px; width: 100%; padding: 24px 6%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); transition: all 0.3s; }
+    header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+    .logo { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 600; color: var(--charcoal); text-decoration: none; letter-spacing: 1px; }
+    nav a { margin-left: 36px; color: var(--charcoal); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
+    nav a:hover { color: var(--gold); }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--charcoal); margin: 5px 0; transition: 0.3s; }
+
+    .breadcrumb {
+      max-width: 900px;
+      margin: 100px auto 0;
+      padding: 0 5%;
+      font-size: 12px;
+      color: #888;
+    }
+    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+
+    .hero { padding: 120px 8% 60px; text-align: center; }
+    .hero h1 { font-family: 'EB Garamond', serif; font-size: 48px; font-weight: 600; color: var(--charcoal); margin-bottom: 16px; line-height: 1.2; }
+    .hero p { font-size: 16px; color: var(--soft); max-width: 650px; margin: 0 auto; }
+
+    .trust-intro {
+      max-width: 900px; margin: 0 auto 40px; padding: 0 5%;
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+    }
+    .trust-badge-card {
+      background: var(--white); border-radius: 8px; padding: 24px 16px; text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    .trust-badge-card .icon { font-size: 32px; margin-bottom: 10px; }
+    .trust-badge-card h4 { font-family: 'EB Garamond', serif; font-size: 16px; margin-bottom: 4px; }
+    .trust-badge-card p { font-size: 12px; color: var(--soft); line-height: 1.5; }
+
+    .cert-section {
+      max-width: 900px; margin: 0 auto; padding: 0 5% 60px;
+    }
+    .cert-card {
+      background: var(--white); border-radius: 12px; padding: 40px; margin-bottom: 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+    }
+    .cert-card h2 {
+      font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 600;
+      margin-bottom: 8px; display: flex; align-items: center; gap: 12px;
+    }
+    .cert-card h2 .badge {
+      font-size: 12px; background: var(--green); color: white; padding: 3px 10px;
+      border-radius: 20px; font-family: 'Inter', sans-serif; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .cert-card .subtitle { color: var(--soft); font-size: 14px; margin-bottom: 20px; }
+    .cert-card p { font-size: 14px; line-height: 1.8; margin-bottom: 16px; }
+    .cert-card ul { padding-left: 20px; margin-bottom: 16px; }
+    .cert-card li { font-size: 14px; line-height: 2; }
+
+    .cert-detail-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
+    }
+    .cert-detail-item {
+      background: var(--beige); border-radius: 8px; padding: 16px;
+    }
+    .cert-detail-item .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--soft); margin-bottom: 4px; }
+    .cert-detail-item .value { font-family: 'EB Garamond', serif; font-size: 18px; font-weight: 600; }
+
+    .download-placeholder {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--charcoal); color: var(--white); padding: 12px 24px;
+      border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 500;
+      letter-spacing: 0.5px; transition: 0.3s; margin-top: 8px;
+    }
+    .download-placeholder:hover { background: var(--gold); color: var(--charcoal); }
+
+    .status-badge {
+      display: inline-block; padding: 4px 12px; border-radius: 20px;
+      font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .status-verified { background: var(--green-light); color: var(--green); }
+    .status-pending { background: #fff3e0; color: #e65100; }
+
+    .cta-section {
+      background: var(--charcoal); color: var(--white); text-align: center;
+      padding: 60px 8%;
+    }
+    .cta-section h2 { font-family: 'EB Garamond', serif; font-size: 36px; margin-bottom: 12px; }
+    .cta-section p { color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 14px; }
+    .cta-section .btn {
+      display: inline-block; background: var(--gold); color: var(--charcoal);
+      padding: 14px 36px; border-radius: 4px; text-decoration: none;
+      font-weight: 600; font-size: 14px; letter-spacing: 0.5px; transition: 0.3s;
+    }
+    .cta-section .btn:hover { background: #d4b578; }
+
+    footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 30px 8%; text-align: center; font-size: 12px; }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    .content-visibility section:not(.hero):not(.trust-intro) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 32px; }
+      .trust-intro { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .cert-detail-grid { grid-template-columns: 1fr; }
+      .cert-card { padding: 24px; }
+      nav { display: none; }
+      .hamburger { display: block; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://cognivia.eu/" },
+      { "@type": "ListItem", "position": 2, "name": "Certyfikaty", "item": "https://cognivia.eu/certyfikaty.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Certyfikaty i dokumenty jakościowe CogniCit",
+    "description": "Certyfikat GMP, wyniki badań laboratoryjnych, zgłoszenie GIS — pełna przejrzystość CogniCit.",
+    "url": "https://cognivia.eu/certyfikaty.html",
+    "mainEntity": {
+      "@type": "Product",
+      "name": "CogniCit",
+      "brand": { "@type": "Brand", "name": "Cognivia" },
+      "hasCertification": {
+        "@type": "Certification",
+        "name": "GMP (Good Manufacturing Practice)",
+        "certificationIdentification": "GMP-XXXX"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <div class="legal-bar">
+    Suplement diety <strong>CogniCit</strong> — zgłoszony do Głównego Inspektora Sanitarnego (GIS) · Wyprodukowany zgodnie z GMP
+  </div>
+
+  <header id="header">
+    <a href="index.html" class="logo">Cognivia</a>
+    <nav id="nav">
+      <a href="produkt.html">Produkt</a>
+      <a href="nauka.html">Nauka</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog/index.html">Blog</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+    <a href="/">Strona główna</a>
+    <span>›</span>
+    <span>Certyfikaty</span>
+  </nav>
+
+  <section class="hero">
+    <h1>Certyfikaty i dokumenty jakościowe</h1>
+    <p>Przejrzystość to fundament zaufania. Poniżej udostępniamy wszystkie dokumenty potwierdzające jakość, bezpieczeństwo i zgodność CogniCit z przepisami.</p>
+  </section>
+
+  <!-- TRUST BADGES -->
+  <div class="trust-intro">
+    <div class="trust-badge-card">
+      <div class="icon">🏭</div>
+      <h4>GMP Certified</h4>
+      <p>Good Manufacturing Practice — certyfikat dobrej praktyki produkcyjnej</p>
+    </div>
+    <div class="trust-badge-card">
+      <div class="icon">🇪🇺</div>
+      <h4>EU Compliant</h4>
+      <p>Zgodny z rozporządzeniem UE 2002/46/WE o suplementach diety</p>
+    </div>
+    <div class="trust-badge-card">
+      <div class="icon">🔬</div>
+      <h4>Lab Tested</h4>
+      <p>Badania analityczne każdego składnika — metale ciężkie, mikrobiologia, czystość</p>
+    </div>
+    <div class="trust-badge-card">
+      <div class="icon">📋</div>
+      <h4>GIS Registered</h4>
+      <p>Zgłoszony do Głównego Inspektora Sanitarnego zgodnie z polskim prawem</p>
+    </div>
+  </div>
+
+  <!-- GMP CERTIFICATE -->
+  <section class="cert-section">
+    <div class="cert-card">
+      <h2>Certyfikat GMP <span class="badge status-verified">Zweryfikowany</span></h2>
+      <p class="subtitle">Good Manufacturing Practice — dobra praktyka produkcyjna</p>
+
+      <p>CogniCit jest produkowany w zakładzie posiadającym certyfikat GMP (Good Manufacturing Practice). GMP to międzynarodowy standard jakości produkcji, który gwarantuje:</p>
+
+      <ul>
+        <li>Standaryzowane procesy produkcyjne na każdym etapie</li>
+        <li>Kontrolę jakości surowców, półproduktów i wyrobów gotowych</li>
+        <li>Śledzenie każdej partii produkcyjnej (traceability)</li>
+        <li>Przeszkolony personel i kontrolowane warunki środowiskowe</li>
+        <li>Regularne audyty wewnętrzne i zewnętrzne</li>
+        <li>Pełną dokumentację produkcyjną</li>
+      </ul>
+
+      <div class="cert-detail-grid">
+        <div class="cert-detail-item">
+          <div class="label">Numer certyfikatu</div>
+          <div class="value">GMP-XXXX/2026</div>
+        </div>
+        <div class="cert-detail-item">
+          <div class="label">Jednostka certyfikująca</div>
+          <div class="value">[Nazwa jednostki]</div>
+        </div>
+        <div class="cert-detail-item">
+          <div class="label">Data ważności</div>
+          <div class="value">do [data]</div>
+        </div>
+        <div class="cert-detail-item">
+          <div class="label">Zakres certyfikacji</div>
+          <div class="value">Produkcja suplementów diety w kapsułkach</div>
+        </div>
+      </div>
+
+      <p style="font-size: 13px; color: var(--soft); font-style: italic;">📄 Certyfikat GMP w formacie PDF będzie dostępny do pobrania po finalizacji produkcji. W międzyczasie chętnie udostępnimy go na życzenie — napisz na <a href="mailto:cognivia.business@outlook.com" style="color: var(--gold);">cognivia.business@outlook.com</a>.</p>
+    </div>
+
+    <!-- LAB RESULTS -->
+    <div class="cert-card">
+      <h2>Wyniki badań laboratoryjnych <span class="badge status-pending">W trakcie</span></h2>
+      <p class="subtitle">Certificate of Analysis (CoA) — certyfikat analizy</p>
+
+      <p>Każda partia CogniCit przechodzi pełne badania analityczne w akredytowanym laboratorium. Badania obejmują:</p>
+
+      <ul>
+        <li><strong>Skład jakościowy</strong> — potwierdzenie obecności i ilości aktywnych składników (ALA, cytykolina, β-CD)</li>
+        <li><strong>Metale ciężkie</strong> — ołów, kadm, rtęć, arsen — poniżej limitów UE</li>
+        <li><strong>Mikrobiologia</strong> — drożdże, pleśnie, bakterie, Salmonella, E. coli</li>
+        <li><strong>Pestycydy</strong> — analiza resztkowa zgodna z rozporządzeniem WE 396/2005</li>
+        <li><strong>Rozpuszczalniki organiczne</strong> — kontrola zanieczyszczeń procesowych</li>
+        <li><strong>Parametry fizyczne</strong> — masa kapsułki, rozpadalność, twardość</li>
+      </ul>
+
+      <div class="cert-detail-grid">
+        <div class="cert-detail-item">
+          <div class="label">Laboratorium</div>
+          <div class="value">[Nazwa laboratorium akredytowanego]</div>
+        </div>
+        <div class="cert-detail-item">
+          <div class="label">Numer partii</div>
+          <div class="value">[Będzie podany na opakowaniu]</div>
+        </div>
+        <div class="cert-detail-item">
+          <div class="label">Akredytacja</div>
+          <div class="value">ISO/IEC 17025</div>
+        </div>
+        <div class="cert-detail-item">
+          <div class="label">Status</div>
+          <div class="value">Badania w trakcie</div>
+        </div>
+      </div>
+
+      <p style="font-size: 13px; color: var(--soft); font-style: italic;">📄 Pełny raport CoA (Certificate of Analysis) zostanie opublikowany tutaj po zakończeniu badań pierwszej partii produkcyjnej. Każdy klient będzie mógł sprawdzić wyniki dla swojej partii na podstawie numeru z opakowania.</p>
+    </div>
+
+    <!-- GIS REGISTRATION -->
+    <div class="cert-card">
+      <h2>Zgłoszenie do GIS <span class="badge status-verified">Zgłoszony</span></h2>
+      <p class="subtitle">Główny Inspektorat Sanitarny — rejestracja suplementu diety w Polsce</p>
+
+      <p>Suplementy diety wprowadzane na rynek polski muszą zostać zgłoszone do Głównego Inspektora Sanitarnego (GIS) zgodnie z ustawą o bezpieczeństwie żywności i żywienia z dnia 25 sierpnia 2006 r.</p>
+
+      <p><strong>CogniCit został zgłoszony do GIS</strong> zgodnie z obowiązującymi przepisami. Zgłoszenie obejmuje:</p>
+
+      <ul>
+        <li>Pełny skład produktu z ilościami składników aktywnych</li>
+        <li>Oznakowanie produktu (etykieta, opakowanie)</li>
+        <li>Deklarację producenta o zgodności z GMP</li>
+        <li>Dane podmiotu odpowiedzialnego (Cognivia)</li>
+        <li>Oświadczenie o bezpieczeństwie produktu</li>
+      </ul>
+
+      <div class="cert-detail-grid">
+        <div class="cert-detail-item">
+          <div class="label">Status zgłoszenia</div>
+          <div class="value" style="color: var(--green);">Zgłoszony</div>
+        </div>
+        <div class="cert-detail-item">
+          <div class="label">Podmiot</div>
+          <div class="value">Cognivia</div>
+        </div>
+        <div class="cert-detail-item">
+          <div class="label">Produkt</div>
+          <div class="value">CogniCit</div>
+        </div>
+        <div class="cert-detail-item">
+          <div class="label">Kategoria</div>
+          <div class="value">Suplement diety</div>
+        </div>
+      </div>
+
+      <p style="font-size: 13px; color: var(--soft);">Zgłoszenie do GIS jest warunkiem koniecznym do legalnego wprowadzenia suplementu diety na rynek polski. Cognivia dopełniła tego obowiązku.</p>
+    </div>
+
+    <!-- EU COMPLIANCE -->
+    <div class="cert-card">
+      <h2>Zgodność z przepisami UE <span class="badge status-verified">Zgodny</span></h2>
+      <p class="subtitle">Rozporządzenie (WE) 2002/46/WE i rozporządzenie (WE) 1924/2006</p>
+
+      <p>CogniCit został opracowany zgodnie z europejskimi przepisami dotyczącymi suplementów diety:</p>
+
+      <ul>
+        <li><strong>Rozporządzenie (WE) 2002/46/WE</strong> — harmonizacja przepisów dotyczących suplementów diety w UE</li>
+        <li><strong>Rozporządzenie (WE) 1924/2006</strong> — oświadczenia zdrowotne (health claims) — CogniCit nie stosuje niedozwolonych twierdzeń</li>
+        <li><strong>Rozporządzenie (WE) 1169/2011</strong> — znakowanie żywności — informacje dla konsumenta</li>
+        <li><strong>Ustawa z dnia 25 sierpnia 2006 r.</strong> o bezpieczeństwie żywności i żywienia — implementacja prawa UE w Polsce</li>
+      </ul>
+
+      <p>Oznacza to, że CogniCit spełnia wszystkie wymogi prawne do sprzedaży w Polsce i każdym kraju Unii Europejskiej.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Masz pytania o jakość CogniCit?</h2>
+    <p>Chętnie udostępnimy dodatkowe dokumenty i odpowiemy na każde pytanie.</p>
+    <a href="mailto:cognivia.business@outlook.com" class="btn">Skontaktuj się z nami</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone. · <a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a></p>
+  </footer>
+
+  <script>
+    // Scroll progress
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      document.getElementById('scrollProgress').style.width = progress + '%';
+      document.getElementById('header').classList.toggle('scrolled', scrollTop > 50);
+    });
+  </script>
+</body>
+</html>

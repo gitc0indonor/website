@@ -95,7 +95,7 @@
 25. Add real photos of product/packaging
 26. [NEW] Set up Google Analytics / Plausible for conversion tracking
 27. [NEW] Add order confirmation email template
-28. [NEW] Create /certyfikaty page showing GMP certificate, lab results, GIS registration proof
+28. [DONE] ~~Create /certyfikaty page showing GMP certificate, lab results, GIS registration proof~~ ✅ — Full page with GMP cert details, lab results section (CoA), GIS registration info, EU compliance section, trust badge cards, breadcrumbs, JSON-LD schemas, responsive. Added to sitemap.xml and index.html footer. Power Cycle #11.
 29. [NEW] Add social sharing meta tags (Open Graph + Twitter Card) for blog post promotion
 30. [NEW] Integrate customer review system (Trustpilot or self-hosted)
 31. [NEW] Add structured data (JSON-LD for FAQPage) on faq.html
@@ -118,7 +118,7 @@
 48. [NEW] Add "Recently viewed" or "Customers also viewed" section on product page
 49. [NEW] Create /certyfikaty page with downloadable GMP certificate and lab test PDFs
 50. [DONE] ~~Add trust bar to blog pages — "CogniCit — 3 synergistyczne składniki, GMP certified" banner with CTA~~ ✅ — Added to all 5 blog pages (cytykolina, antyoksydanty, beta-cyklodekstryna, suplement-vs-lek, blog index)
-51. [NEW] Add breadcrumb navigation to all subpages (produkt, faq, nauka, o-nas, jak-stosowac, etc.)
+51. [DONE] ~~Add breadcrumb navigation to all subpages (produkt, faq, nauka, o-nas, jak-stosowac, etc.)~~ ✅ — Added breadcrumb CSS + HTML to jak-czytac-etykiety.html and potwierdzenie.html (only 2 pages missing them besides 404/homepage). All content pages now have breadcrumb navigation. Power Cycle #11.
 52. [NEW] Add "Share this article" social buttons to blog post pages (Facebook, Twitter/X, LinkedIn)
 53. [DONE] ~~Create "Jak wybrać suplement?" consumer guide page — checklist-based, conversion-focused~~ ✅ — Created jak-wybrac-suplement.html: full checklist (safety, GMP, GIS, CoA, transparency), red flags table, CogniCit example, JSON-LD Article schema, cross-links, email CTA
 54. [NEW] Add Product JSON-LD schema with Offer to produkt.html — DONE 2026-03-23 ✅
@@ -136,7 +136,7 @@
 66. [DONE] ~~Create "Jak zamówić?" interactive guide page — 5-step purchasing walkthrough, shipping/payment methods table, post-purchase timeline, FAQ, 30-day guarantee banner, HowTo JSON-LD schema~~ ✅ — Created jak-zamowic.html (22KB). Full 5-step guide with timeline, shipping table (InPost/DPD/Poczta), payment methods grid (PayU/BLIK/Przelewy24/przelew), post-purchase flow, 30-day guarantee banner, 5 FAQ items, cross-links. Added to sitemap.xml and index.html footer.
 67. [DONE] ~~Enhance scroll animations — staggered children, slide-left/right/scale-in variants, cubic-bezier easing, unobserve after reveal, prefers-reduced-motion support~~ ✅ — Updated index.html CSS with 4 animation classes (fade-in, slide-left, slide-right, scale-in), stagger delays for grid children, improved IntersectionObserver with rootMargin and unobserve, accessibility media query. Applied stagger-children to products-grid.
 68. [NEW] Add product zoom/lightbox on produkt.html — click product image to see enlarged view, swipeable on mobile
-69. [NEW] Create /certyfikaty page with GMP certificate mockup, lab test results template, GIS registration number — builds institutional trust
+69. [DONE] ~~Create /certyfikaty page with GMP certificate mockup, lab test results template, GIS registration number — builds institutional trust~~ ✅ — Done as item #28. See certyfikaty.html. Power Cycle #11.
 70. [DONE] ~~Add "Ile kapsułek potrzebujesz?" calculator on produkt.html~~ ✅ — Interactive calculator: input months (1-12), output boxes/capsules/total price with bulk discount (5% for 3+, 10% for 6+), add-to-cart button, responsive grid display. Power Cycle #10.
 71. [DONE] ~~Add lazy-loading for below-fold sections via content-visibility: auto~~ ✅ — Added CSS `content-visibility: auto` with `contain-intrinsic-size: auto 500px` to 12 pages: index.html (8 sections), produkt.html (all non-hero sections), all 4 blog posts, nauka, faq, jak-stosowac, jak-wybrac-suplement, jak-czytac-etykiety, jak-zamowic. Reduces initial paint cost for off-screen content.
 72. [NEW] Create "Skutki uboczne" safety page — detailed contraindications, drug interactions, pregnancy warnings — builds trust and covers regulatory requirement
@@ -144,3 +144,6 @@
 74. [NEW] Add "Nowości na blogu" section to index.html — show latest 2-3 blog post cards below FAQ, drives traffic to content pages
 75. [NEW] Implement dark mode toggle — respect prefers-color-scheme, add manual toggle in header, update CSS variables for dark palette
 76. [NEW] Add newsletter welcome email sequence page — /dziekuje-za-zapis with what to expect, email frequency, value proposition, unsubscribe info
+77. [NEW] Add "Gwarancja satysfakcji" satisfaction guarantee section to produkt.html — prominent 30-day money-back badge with conditions, reduces purchase anxiety
+78. [NEW] Create /skladniki landing page — overview of all 3 ingredients with links to individual pages, comparison table, visual infographic-style layout
+79. [NEW] Add progress bar to certyfikaty.html showing GIS/GMP/CoA status — visual "transparency dashboard" that updates as milestones are reached, builds anticipation for pre-launch

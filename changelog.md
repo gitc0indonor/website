@@ -339,4 +339,44 @@
 
 **Queue:** ~30 completed + ~44 active = 76 total
 
+---
+
+### 2026-03-23 — Power Cycle #11 (12:53 UTC)
+**Implemented:**
+- ✅ Item #28 — Created /certyfikaty.html (18.2 KB) — trust-building certificates page
+  - 4 trust badge cards (GMP, EU Compliant, Lab Tested, GIS Registered)
+  - GMP certificate section: description, verification details grid, download placeholder
+  - Lab results section (CoA): analysis categories list, detail grid, pending status badge
+  - GIS registration section: legal basis, what was submitted, status details
+  - EU compliance section: 4 EU regulations referenced
+  - CTA section with email contact link
+  - Breadcrumb navigation + BreadcrumbList JSON-LD schema
+  - WebPage JSON-LD schema with Product/Certification entity
+  - Canonical URL, hreflang="pl", OG meta tags
+  - Responsive design (2-col badges on mobile)
+  - Added to sitemap.xml and index.html footer (Informacje column)
+- ✅ Item #51 — Breadcrumb navigation added to remaining pages
+  - jak-czytac-etykiety.html: added breadcrumb CSS + HTML nav (was missing styles and nav element)
+  - potwierdzenie.html: added breadcrumb CSS + HTML nav (order confirmation page)
+  - 404.html and index.html intentionally excluded (error page + homepage don't need breadcrumbs)
+  - All 27 HTML files validated — zero errors
+- ✅ Item #69 — Merged with #28 (certyfikaty page)
+- ✅ Blog post outline added to content_calendar.md — "Dlaczego przejrzystość składu ma znaczenie?"
+- ✅ 3 new improvement ideas added to queue (#77-79)
+- ✅ Improvement queue updated — items #28, #51, #69 marked DONE
+
+**Files changed:**
+- `certyfikaty.html` — NEW (18.2 KB)
+- `jak-czytac-etykiety.html` — breadcrumb CSS added
+- `potwierdzenie.html` — breadcrumb CSS + HTML added
+- `index.html` — footer link to certyfikaty.html added
+- `sitemap.xml` — certyfikaty.html URL added
+- `improvement_queue.md` — 3 items done, 3 new added
+- `content_calendar.md` — new blog outline added
+- `changelog.md` — this entry
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~33 completed + ~44 active = 79 total
+
 **Site verification:** DNS unreachable from this environment (cognivia.eu not resolving). Local file integrity verified: all 26 HTML files valid, style tags balanced, no missing hreflang/canonical on blog pages.

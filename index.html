@@ -836,6 +836,126 @@
       .email-form input { border-right: 1px solid rgba(42,42,40,0.2); }
       .footer-links { flex-direction: column; gap: 12px; }
     }
+
+    /* === BLOG SECTION ON HOMEPAGE === */
+    .blog-section {
+      background: var(--white);
+      padding: 80px 24px;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      max-width: 1000px;
+      margin: 40px auto 0;
+    }
+    .blog-card {
+      background: var(--cream);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    .blog-card-img {
+      height: 160px;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+    }
+    .blog-card-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card-tag {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .blog-card-title {
+      font-family: 'EB Garamond', serif;
+      font-size: 20px;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+    .blog-card-excerpt {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      flex: 1;
+    }
+    .blog-card-link {
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 600;
+      margin-top: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .blog-card-link::after { content: '→'; }
+
+    /* === FLOATING MOBILE CTA === */
+    .floating-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 900;
+      background: var(--white);
+      border-top: 2px solid var(--gold);
+      padding: 12px 16px;
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.12);
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      transform: translateY(100%);
+      transition: transform 0.35s ease;
+    }
+    .floating-cta.visible { transform: translateY(0); }
+    .floating-cta-price {
+      font-family: 'EB Garamond', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--charcoal);
+    }
+    .floating-cta-price small {
+      font-size: 12px;
+      font-family: 'Inter', sans-serif;
+      color: var(--text-muted);
+      display: block;
+      font-weight: 400;
+    }
+    .floating-cta-btn {
+      background: var(--gold);
+      color: var(--charcoal);
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .floating-cta-btn:hover { background: var(--gold-dark); }
+    @media (max-width: 768px) {
+      .floating-cta { display: flex; }
+    }
   </style>
   <link rel="stylesheet" href="css/cart.css">
   
@@ -1312,6 +1432,56 @@
     <p class="form-note fade-in">Twoje dane będą przetwarzane zgodnie z <a href="polityka-prywatnosci.html" style="color: var(--gold);">polityką prywatności</a>.</p>
   </section>
 
+  <!-- BLOG PREVIEW -->
+  <section class="blog-section">
+    <div style="text-align:center;">
+      <div class="section-overline fade-in">Z bloga Cognivia</div>
+      <div class="section-title fade-in">Nowości na blogu</div>
+      <p class="section-text fade-in" style="margin: 0 auto;">Poznaj naukę stojącą za CogniCit. Artykuły o suplementacji, składnikach i zdrowiu poznawczym.</p>
+    </div>
+    <div class="blog-grid">
+      <a href="blog/cytykolina.html" class="blog-card fade-in">
+        <div class="blog-card-img">🧠</div>
+        <div class="blog-card-body">
+          <div class="blog-card-tag">Nauka</div>
+          <div class="blog-card-title">Cytykolina — kluczowy składnik CogniCit</div>
+          <p class="blog-card-excerpt">Czym jest CDP-cholina i jak wpływa na funkcje poznawcze? Przegląd badań naukowych i zastosowań.</p>
+          <span class="blog-card-link">Czytaj więcej</span>
+        </div>
+      </a>
+      <a href="blog/antyoksydanty.html" class="blog-card fade-in">
+        <div class="blog-card-img">🛡️</div>
+        <div class="blog-card-body">
+          <div class="blog-card-tag">Zdrowie</div>
+          <div class="blog-card-title">Antyoksydanty a zdrowie mózgu — co mówią badania?</div>
+          <p class="blog-card-excerpt">Jak stres oksydacyjny wpływa na neurony i dlaczego ochrona antyoksydacyjna ma znaczenie.</p>
+          <span class="blog-card-link">Czytaj więcej</span>
+        </div>
+      </a>
+      <a href="blog/beta-cyklodekstryna.html" class="blog-card fade-in">
+        <div class="blog-card-img">🔬</div>
+        <div class="blog-card-body">
+          <div class="blog-card-tag">Technologia</div>
+          <div class="blog-card-title">Beta-cyklodekstryna — inteligentny nośnik</div>
+          <p class="blog-card-excerpt">Jak β-CD zwiększa biodostępność składników aktywnych i dlaczego dodaliśmy ją do formuły.</p>
+          <span class="blog-card-link">Czytaj więcej</span>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="blog/index.html" class="blog-card-link fade-in" style="font-size:15px;">Wszystkie artykuły na blogu</a>
+    </div>
+  </section>
+
+  <!-- FLOATING MOBILE CTA -->
+  <div class="floating-cta" id="floatingCta">
+    <div class="floating-cta-price">
+      79,00 zł
+      <small>30 kapsułek · CogniCit</small>
+    </div>
+    <button class="floating-cta-btn" onclick="CogniviaCart.addItem('cognicit')">Dodaj do koszyka</button>
+  </div>
+
   <!-- ENTITY -->
   <section class="entity">
     <div class="entity-inner fade-in">
@@ -1365,6 +1535,7 @@
         <a href="zwroty.html">Zwroty</a>
         <a href="jak-stosowac.html">Jak stosować</a>
         <a href="jak-zamowic.html">Jak zamówić?</a>
+        <a href="certyfikaty.html">Certyfikaty</a>
         <a href="blog/">Blog</a>
       </div>
       <div class="footer-col">
@@ -1421,6 +1592,14 @@
       btt.classList.toggle('visible', window.scrollY > 400);
     });
     btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    // Floating mobile CTA — show after scrolling past hero
+    const fCta = document.getElementById('floatingCta');
+    if (fCta && window.innerWidth <= 768) {
+      const heroH = document.querySelector('.hero')?.offsetHeight || 600;
+      window.addEventListener('scroll', () => {
+        fCta.classList.toggle('visible', window.scrollY > heroH);
+      }, { passive: true });
+    }
   </script>
   <script>
     const hamb = document.getElementById('hamburgerBtn');
