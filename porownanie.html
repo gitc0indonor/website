@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porównanie suplementów nootropowych — CogniCit vs inne | Cognivia</title>
+  <meta name="description" content="Porównanie CogniCit z popularnymi suplementami nootropowymi w Polsce. Sprawdź skład, dawkowanie, certyfikaty i przejrzystość składu.">
+  <link rel="canonical" href="https://cognivia.eu/porownanie.html">
+  <link rel="alternate" hreflang="pl" href="https://cognivia.eu/porownanie.html">
+  <meta property="og:title" content="Porównanie suplementów nootropowych — CogniCit vs inne | Cognivia">
+  <meta property="og:description" content="Przejrzyste porównanie składników, dawek i certyfikatów popularnych suplementów na koncentrację dostępnych w Polsce.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://cognivia.eu/porownanie.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cognivia-green: #2D6642;
+      --cognivia-pink: #C8327A;
+      --cognivia-beige: #f5f0e8;
+      --cognivia-charcoal: #2a2a28;
+      --cognivia-text: #4a4a48;
+      --cognivia-gold: #c9a96e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--cognivia-text);
+      background: var(--cognivia-beige);
+      line-height: 1.7;
+    }
+    .legal-bar {
+      background: #f9f5ef;
+      border-bottom: 1px solid #e0dcd4;
+      padding: 8px 5%;
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+    }
+    .legal-bar strong { color: #c0392b; }
+    header {
+      position: fixed;
+      top: 38px;
+      width: 100%;
+      background: rgba(245,240,232,0.95);
+      backdrop-filter: blur(10px);
+      padding: 16px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      transition: box-shadow 0.3s;
+    }
+    header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .logo { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 600; color: var(--cognivia-green); text-decoration: none; }
+    nav a { margin-left: 28px; text-decoration: none; color: var(--cognivia-charcoal); font-size: 14px; font-weight: 400; transition: color 0.3s; }
+    nav a:hover { color: var(--cognivia-pink); }
+    .hamburger { display: none; cursor: pointer; font-size: 24px; }
+    .mobile-nav { display: none; }
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hamburger { display: block; }
+      .mobile-nav { display: none; position: fixed; top: 90px; left: 0; width: 100%; background: rgba(245,240,232,0.98); padding: 20px 5%; z-index: 999; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+      .mobile-nav.open { display: block; }
+      .mobile-nav a { display: block; padding: 12px 0; text-decoration: none; color: var(--cognivia-charcoal); font-size: 16px; border-bottom: 1px solid #e0dcd4; }
+    }
+    .hero {
+      padding: 140px 5% 80px;
+      text-align: center;
+      background: linear-gradient(180deg, #f5f0e8 0%, #ebe5d9 100%);
+    }
+    .hero h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 44px;
+      color: var(--cognivia-green);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .hero p { font-size: 17px; color: #666; max-width: 650px; margin: 0 auto 32px; }
+    .breadcrumb { padding: 10px 5%; font-size: 12px; color: #999; background: transparent; position: relative; top: 100px; }
+    .breadcrumb a { color: var(--cognivia-green); text-decoration: none; }
+    .breadcrumb span { margin: 0 6px; }
+    section { padding: 60px 5%; max-width: 1100px; margin: 0 auto; }
+    h2 { font-family: 'EB Garamond', serif; font-size: 32px; color: var(--cognivia-green); margin-bottom: 24px; text-align: center; }
+    h3 { font-family: 'EB Garamond', serif; font-size: 22px; color: var(--cognivia-charcoal); margin: 32px 0 16px; }
+
+    /* Comparison Table */
+    .comparison-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 24px 0; }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 700px;
+    }
+    .comparison-table thead th {
+      background: var(--cognivia-charcoal);
+      color: white;
+      padding: 14px 16px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.3px;
+    }
+    .comparison-table thead th:first-child { border-radius: 8px 0 0 0; }
+    .comparison-table thead th:last-child { border-radius: 0 8px 0 0; }
+    .comparison-table thead th.cognicit-col {
+      background: var(--cognivia-green);
+      position: relative;
+    }
+    .comparison-table thead th.cognicit-col::after {
+      content: '⭐ Rekomendacja';
+      display: block;
+      font-size: 10px;
+      opacity: 0.8;
+      margin-top: 4px;
+    }
+    .comparison-table tbody td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e8e4dc;
+      vertical-align: top;
+    }
+    .comparison-table tbody tr:hover { background: rgba(45,102,66,0.03); }
+    .comparison-table .cognicit-cell {
+      background: rgba(45,102,66,0.06);
+      font-weight: 500;
+    }
+    .comparison-table .row-label {
+      font-weight: 500;
+      color: var(--cognivia-charcoal);
+      background: #faf7f2;
+      min-width: 140px;
+    }
+    .check { color: var(--cognivia-green); font-weight: 600; }
+    .cross { color: #c0392b; }
+    .partial { color: #e67e22; }
+
+    /* Product Cards */
+    .product-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin: 32px 0; }
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border: 1px solid #e8e4dc;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.1); }
+    .product-card.featured {
+      border: 2px solid var(--cognivia-green);
+      position: relative;
+    }
+    .product-card.featured::before {
+      content: '⭐ Rekomendacja';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--cognivia-green);
+      color: white;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .product-card h3 { margin-top: 16px; text-align: center; }
+    .product-card .price { text-align: center; font-size: 24px; font-weight: 600; color: var(--cognivia-green); margin: 8px 0 16px; }
+    .product-card ul { list-style: none; padding: 0; }
+    .product-card li { padding: 8px 0; border-bottom: 1px solid #f0ece4; font-size: 14px; display: flex; align-items: flex-start; gap: 8px; }
+    .product-card li:last-child { border-bottom: none; }
+    .product-card .tag { font-size: 11px; padding: 2px 8px; border-radius: 4px; display: inline-block; margin: 2px; }
+    .tag-good { background: rgba(45,102,66,0.1); color: var(--cognivia-green); }
+    .tag-warn { background: rgba(230,126,34,0.1); color: #e67e22; }
+    .tag-bad { background: rgba(192,50,43,0.1); color: #c0392b; }
+
+    /* Why Section */
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin: 24px 0; }
+    .why-card {
+      background: white;
+      border-radius: 10px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .why-card .emoji { font-size: 36px; margin-bottom: 12px; }
+    .why-card h4 { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--cognivia-charcoal); margin-bottom: 8px; }
+    .why-card p { font-size: 13px; color: #666; }
+
+    /* Trust Bar */
+    .trust-bar {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      flex-wrap: wrap;
+      margin: 40px auto;
+      max-width: 800px;
+    }
+    .trust-badge { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: var(--cognivia-charcoal); }
+    .trust-badge .icon { width: 28px; height: 28px; background: var(--cognivia-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      padding: 60px 5%;
+      background: linear-gradient(135deg, var(--cognivia-green), #1a4a2e);
+      color: white;
+      margin-top: 40px;
+    }
+    .cta-section h2 { color: white; }
+    .cta-section p { color: rgba(255,255,255,0.8); margin-bottom: 24px; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .cta-btn {
+      display: inline-block;
+      background: var(--cognivia-gold);
+      color: var(--cognivia-charcoal);
+      padding: 14px 36px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    footer { background: var(--cognivia-charcoal); color: rgba(255,255,255,0.7); padding: 60px 5%; font-size: 14px; }
+    footer a { color: var(--cognivia-pink); }
+    .footer-legal { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 11px; color: rgba(255,255,255,0.4); line-height: 1.6; }
+
+    .disclaimer {
+      background: #fff8e1;
+      border-left: 4px solid var(--cognivia-gold);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      font-size: 13px;
+      color: #666;
+      margin: 24px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 30px; }
+      .hero p { font-size: 15px; }
+      section { padding: 40px 5%; }
+      .trust-bar { gap: 16px; }
+    }
+
+    /* Scroll animations */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { .fade-in { opacity: 1; transform: none; transition: none; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Porównanie suplementów nootropowych — CogniCit vs inne",
+    "description": "Przejrzyste porównanie składników, dawek i certyfikatów popularnych suplementów na koncentrację dostępnych w Polsce.",
+    "author": { "@type": "Organization", "name": "Cognivia" },
+    "publisher": { "@type": "Organization", "name": "Cognivia", "url": "https://cognivia.eu" },
+    "mainEntityOfPage": "https://cognivia.eu/porownanie.html",
+    "datePublished": "2026-03-23",
+    "dateModified": "2026-03-23"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://cognivia.eu" },
+      { "@type": "ListItem", "position": 2, "name": "Porównanie suplementów", "item": "https://cognivia.eu/porownanie.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<div class="legal-bar">
+  <strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia.
+</div>
+
+<header id="main-header">
+  <a href="/" class="logo">Cognivia</a>
+  <nav>
+    <a href="/produkt.html">Produkt</a>
+    <a href="/nauka.html">Nauka</a>
+    <a href="/skladniki.html">Składniki</a>
+    <a href="/porownanie.html" style="color: var(--cognivia-green); font-weight: 500;">Porównanie</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+  <div class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('open')">☰</div>
+</header>
+<div class="mobile-nav">
+  <a href="/produkt.html">Produkt</a>
+  <a href="/nauka.html">Nauka</a>
+  <a href="/skladniki.html">Składniki</a>
+  <a href="/porownanie.html">Porównanie</a>
+  <a href="/faq.html">FAQ</a>
+  <a href="/blog/">Blog</a>
+</div>
+
+<nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+  <a href="/">Strona główna</a><span>›</span><span>Porównanie suplementów</span>
+</nav>
+
+<section class="hero">
+  <h1>Porównanie suplementów nootropowych</h1>
+  <p>Sprawdź, jak CogniCit wypada na tle popularnych suplementów na koncentrację dostępnych w Polsce. Porównujemy skład, dawki, certyfikaty i przejrzystość.</p>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar fade-in">
+  <div class="trust-badge"><div class="icon">🏭</div> GMP Certified</div>
+  <div class="trust-badge"><div class="icon">🇪🇺</div> EU Compliant</div>
+  <div class="trust-badge"><div class="icon">🔬</div> Lab Tested</div>
+  <div class="trust-badge"><div class="icon">📋</div> GIS Registered</div>
+</div>
+
+<!-- DISCLAIMER -->
+<section>
+  <div class="disclaimer">
+    <strong>Uwaga:</strong> To porównanie dotyczy wyłącznie suplementów diety — nie leków. Dane o konkurencyjnych produktach pochodzą z publicznie dostępnych etykiet i stron internetowych (stan na marzec 2026). Nie stanowi porady medycznej. Przed rozpoczęciem suplementacji skonsultuj się z lekarzem.
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section>
+  <h2>Składniki i dawki — porównanie</h2>
+  <p style="text-align: center; color: #888; font-size: 14px; margin-bottom: 24px;">Porównanie z popularnymi suplementami nootropowymi dostępnymi w Polsce</p>
+
+  <div class="comparison-table-wrap fade-in">
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Kryterium</th>
+          <th class="cognicit-col">CogniCit</th>
+          <th>Typowy suplement z choliną</th>
+          <th>Suplement „multi-nootropowy"</th>
+          <th>Suplement z kofeiną</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-label">Główny składnik aktywny</td>
+          <td class="cognicit-cell">Cytykolina 300 mg</td>
+          <td>Cholina (bitartrate) 250–500 mg</td>
+          <td>Mieszanka 8–15 składników (często proprietary blend)</td>
+          <td>Kofeina 100–200 mg + L-teanina</td>
+        </tr>
+        <tr>
+          <td class="row-label">Wsparcie antyoksydacyjne</td>
+          <td class="cognicit-cell"><span class="check">✓</span> ALA 250 mg</td>
+          <td><span class="cross">✗</span> Brak</td>
+          <td><span class="partial">~</span> Często w małej dawce</td>
+          <td><span class="cross">✗</span> Brak</td>
+        </tr>
+        <tr>
+          <td class="row-label">Wzmacniacz biodostępności</td>
+          <td class="cognicit-cell"><span class="check">✓</span> β-cyklodekstryna 250 mg</td>
+          <td><span class="cross">✗</span> Brak</td>
+          <td><span class="cross">✗</span> Brak</td>
+          <td><span class="cross">✗</span> Brak</td>
+        </tr>
+        <tr>
+          <td class="row-label">Liczba kapsułek / dzień</td>
+          <td class="cognicit-cell">1</td>
+          <td>1–2</td>
+          <td>2–4</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td class="row-label">Przejrzysty skład (pełna dawka)</td>
+          <td class="cognicit-cell"><span class="check">✓</span> Każdy składnik z dawką</td>
+          <td><span class="check">✓</span> Zwykle tak</td>
+          <td><span class="cross">✗</span> Często „proprietary blend"</td>
+          <td><span class="check">✓</span> Zwykle tak</td>
+        </tr>
+        <tr>
+          <td class="row-label">Certyfikat GMP</td>
+          <td class="cognicit-cell"><span class="check">✓</span></td>
+          <td><span class="partial">~</span> Różnie</td>
+          <td><span class="partial">~</span> Różnie</td>
+          <td><span class="partial">~</span> Różnie</td>
+        </tr>
+        <tr>
+          <td class="row-label">Zgłoszenie do GIS</td>
+          <td class="cognicit-cell"><span class="check">✓</span></td>
+          <td><span class="partial">~</span> Różnie</td>
+          <td><span class="partial">~</span> Różnie</td>
+          <td><span class="partial">~</span> Różnie</td>
+        </tr>
+        <tr>
+          <td class="row-label">CoA (wyniki badań partii)</td>
+          <td class="cognicit-cell"><span class="check">✓</span> Dostępne na życzenie</td>
+          <td><span class="cross">✗</span> Rzadko</td>
+          <td><span class="cross">✗</span> Rzadko</td>
+          <td><span class="cross">✗</span> Rzadko</td>
+        </tr>
+        <tr>
+          <td class="row-label">Potencjał uzależnienia</td>
+          <td class="cognicit-cell"><span class="check">✓</span> Brak</td>
+          <td><span class="check">✓</span> Brak</td>
+          <td><span class="partial">~</span> Zależy od składników</td>
+          <td><span class="cross">✗</span> Kofeina — tak</td>
+        </tr>
+        <tr>
+          <td class="row-label">Efekt „crash"</td>
+          <td class="cognicit-cell"><span class="check">✓</span> Brak</td>
+          <td><span class="check">✓</span> Brak</td>
+          <td><span class="partial">~</span> Możliwy</td>
+          <td><span class="cross">✗</span> Typowy</td>
+        </tr>
+        <tr>
+          <td class="row-label">Cena / miesiąc</td>
+          <td class="cognicit-cell">79 zł</td>
+          <td>40–90 zł</td>
+          <td>80–200 zł</td>
+          <td>30–70 zł</td>
+        </tr>
+        <tr>
+          <td class="row-label">Stosunek wartości do ceny</td>
+          <td class="cognicit-cell"><span class="check">✓</span> Wysoki — 3 synergiczne składniki</td>
+          <td><span class="partial">~</span> Średni — 1 składnik</td>
+          <td><span class="partial">~</span> Niski — małe dawki wielu składników</td>
+          <td><span class="cross">✗</span> Niski — głównie stymulacja</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- WHY COGNICIT -->
+<section>
+  <h2>Dlaczego CogniCit?</h2>
+  <div class="why-grid fade-in">
+    <div class="why-card">
+      <div class="emoji">🧪</div>
+      <h4>3 synergiczne składniki</h4>
+      <p>Nie „15 składników po trochu". Każdy składnik ma określoną, przebadaną dawkę i konkretne działanie.</p>
+    </div>
+    <div class="why-card">
+      <div class="emoji">📊</div>
+      <h4>Pełna przejrzystość</h4>
+      <p>Żadnych proprietary blends. Dokładnie wiesz, co i ile bierzesz. Wyniki badań dostępne na życzenie.</p>
+    </div>
+    <div class="why-card">
+      <div class="emoji">🔬</div>
+      <h4>Opublikowane badania</h4>
+      <p>Każdy składnik ma wsparcie naukowe — łącznie ponad 1500 publikacji w PubMed dla trzech składników.</p>
+    </div>
+    <div class="why-card">
+      <div class="emoji">🛡️</div>
+      <h4>Certyfikowana produkcja</h4>
+      <p>GMP, zgłoszenie do GIS, zgodność z rozporządzeniami UE. Każda partia badana laboratoryjnie.</p>
+    </div>
+    <div class="why-card">
+      <div class="emoji">💎</div>
+      <h4>β-cyklodekstryna</h4>
+      <p>Unikalny składnik zwiększający biodostępność ALA i cytykoliny. Rzadko spotykany w suplementach konkurencji.</p>
+    </div>
+    <div class="why-card">
+      <div class="emoji">🇵🇱</div>
+      <h4>Polska firma</h4>
+      <p>Cognivia to polska firma z Gdańska. Bezpośredni kontakt, szybka dostawa, polskojęzyczna obsługa.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section>
+  <h2>Na co zwrócić uwagę przy wyborze?</h2>
+  <p style="text-align: center; color: #888; font-size: 14px; margin-bottom: 24px;">Sprawdź te kryteria przed zakupem dowolnego suplementu nootropowego</p>
+  <div style="max-width: 700px; margin: 0 auto;">
+    <div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #e0dcd4; align-items: flex-start;" class="fade-in">
+      <span style="color: var(--cognivia-green); font-size: 18px;">✓</span>
+      <div><strong>Pełna deklaracja składników z dawkami</strong> — unikaj „proprietary blend" gdzie nie wiesz, ile każdego składnika dostajesz</div>
+    </div>
+    <div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #e0dcd4; align-items: flex-start;" class="fade-in">
+      <span style="color: var(--cognivia-green); font-size: 18px;">✓</span>
+      <div><strong>Certyfikat GMP</strong> — Good Manufacturing Practice to minimum jakości w produkcji suplementów</div>
+    </div>
+    <div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #e0dcd4; align-items: flex-start;" class="fade-in">
+      <span style="color: var(--cognivia-green); font-size: 18px;">✓</span>
+      <div><strong>Zgłoszenie do GIS</strong> — legalna sprzedaż suplementów w Polsce wymaga zgłoszenia do Głównego Inspektora Sanitarnego</div>
+    </div>
+    <div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #e0dcd4; align-items: flex-start;" class="fade-in">
+      <span style="color: var(--cognivia-green); font-size: 18px;">✓</span>
+      <div><strong>Dostępność CoA (Certificate of Analysis)</strong> — producent powinien udostępniać wyniki badań laboratoryjnych partii</div>
+    </div>
+    <div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #e0dcd4; align-items: flex-start;" class="fade-in">
+      <span style="color: var(--cognivia-green); font-size: 18px;">✓</span>
+      <div><strong>Dawki zgodne z badaniami</strong> — składnik w dawce 10% zalecanej to składnik de facto nieobecny</div>
+    </div>
+    <div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #e0dcd4; align-items: flex-start;" class="fade-in">
+      <span style="color: var(--cognivia-green); font-size: 18px;">✓</span>
+      <div><strong>Brak niepotrzebnych stymulantów</strong> — kofeina daje krótkotrwały efekt, ale nie buduje trwałej jakości funkcji poznawczych</div>
+    </div>
+    <div style="display: flex; gap: 12px; padding: 14px 0; align-items: flex-start;" class="fade-in">
+      <span style="color: var(--cognivia-green); font-size: 18px;">✓</span>
+      <div><strong>Przejrzysta firma</strong> — czy wiesz, kto produkuje, gdzie i w jakich warunkach?</div>
+    </div>
+  </div>
+</section>
+
+<!-- CROSS LINKS -->
+<section style="text-align: center;">
+  <h2>Dowiedz się więcej</h2>
+  <p style="color: #888; font-size: 14px; margin-bottom: 24px;">Poznaj szczegóły składników, naukę i zastosowanie CogniCit</p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+    <a href="/skladniki.html" style="display: inline-block; padding: 10px 20px; background: white; border: 1px solid #e0dcd4; border-radius: 8px; text-decoration: none; color: var(--cognivia-charcoal); font-size: 14px; transition: all 0.3s;">🧪 Składniki</a>
+    <a href="/nauka.html" style="display: inline-block; padding: 10px 20px; background: white; border: 1px solid #e0dcd4; border-radius: 8px; text-decoration: none; color: var(--cognivia-charcoal); font-size: 14px; transition: all 0.3s;">🔬 Nauka</a>
+    <a href="/jak-wybrac-suplement.html" style="display: inline-block; padding: 10px 20px; background: white; border: 1px solid #e0dcd4; border-radius: 8px; text-decoration: none; color: var(--cognivia-charcoal); font-size: 14px; transition: all 0.3s;">📋 Jak wybrać suplement?</a>
+    <a href="/certyfikaty.html" style="display: inline-block; padding: 10px 20px; background: white; border: 1px solid #e0dcd4; border-radius: 8px; text-decoration: none; color: var(--cognivia-charcoal); font-size: 14px; transition: all 0.3s;">🛡️ Certyfikaty</a>
+    <a href="/faq.html" style="display: inline-block; padding: 10px 20px; background: white; border: 1px solid #e0dcd4; border-radius: 8px; text-decoration: none; color: var(--cognivia-charcoal); font-size: 14px; transition: all 0.3s;">❓ FAQ</a>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Sprawdź CogniCit</h2>
+  <p>3 synergiczne składniki. Pełna przejrzystość. Certyfikowana produkcja. 30-dniowa gwarancja satysfakcji.</p>
+  <a href="/produkt.html" class="cta-btn">Zobacz produkt → 79,00 zł</a>
+  <p style="margin-top: 16px; font-size: 12px; color: rgba(255,255,255,0.5);">🚚 Darmowa dostawa od 120 zł · 30-dniowa gwarancja</p>
+</div>
+
+<footer>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 40px; max-width: 1100px; margin: 0 auto;">
+    <div>
+      <div style="font-family: 'EB Garamond', serif; font-size: 22px; color: white; margin-bottom: 12px;">Cognivia</div>
+      <p style="font-size: 13px; line-height: 1.6;">Polska firma z Gdańska, tworząca suplementy diety oparte na nauce i przejrzystości.</p>
+    </div>
+    <div>
+      <div style="font-weight: 500; margin-bottom: 12px; color: white;">Produkt</div>
+      <a href="/produkt.html" style="display: block; margin-bottom: 8px;">CogniCit</a>
+      <a href="/skladniki.html" style="display: block; margin-bottom: 8px;">Składniki</a>
+      <a href="/nauka.html" style="display: block; margin-bottom: 8px;">Nauka</a>
+      <a href="/porownanie.html" style="display: block; margin-bottom: 8px;">Porównanie</a>
+    </div>
+    <div>
+      <div style="font-weight: 500; margin-bottom: 12px; color: white;">Informacje</div>
+      <a href="/faq.html" style="display: block; margin-bottom: 8px;">FAQ</a>
+      <a href="/dostawa.html" style="display: block; margin-bottom: 8px;">Dostawa</a>
+      <a href="/zwroty.html" style="display: block; margin-bottom: 8px;">Zwroty</a>
+      <a href="/certyfikaty.html" style="display: block; margin-bottom: 8px;">Certyfikaty</a>
+      <a href="/kontakt.html" style="display: block; margin-bottom: 8px;">Kontakt</a>
+    </div>
+    <div>
+      <div style="font-weight: 500; margin-bottom: 12px; color: white;">Blog</div>
+      <a href="/blog/cytykolina.html" style="display: block; margin-bottom: 8px;">Cytykolina</a>
+      <a href="/blog/antyoksydanty.html" style="display: block; margin-bottom: 8px;">Antyoksydanty</a>
+      <a href="/blog/beta-cyklodekstryna.html" style="display: block; margin-bottom: 8px;">Beta-cyklodekstryna</a>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone. CogniCit to suplement diety. Nie jest lekiem ani nie zastępuje zróżnicowanej diety.</p>
+    <p style="margin-top: 8px;"><a href="/polityka-prywatnosci.html">Polityka prywatności</a> · <a href="/polityka-cookies.html">Polityka cookies</a> · <a href="/regulamin.html">Regulamin</a></p>
+  </div>
+</footer>
+
+<script>
+  // Header scroll effect
+  window.addEventListener('scroll', function() {
+    document.getElementById('main-header').classList.toggle('scrolled', window.scrollY > 10);
+  });
+
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

@@ -592,3 +592,44 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
 
 **Queue:** ~59 completed + ~52 active = 111 total
+
+### 2026-03-23 — Power Cycle #18 (19:59 UTC)
+**Implemented:**
+- ✅ Item #110 — Product FAQ section + FAQPage JSON-LD on produkt.html
+  - Added FAQPage JSON-LD schema to head with 8 product-specific Q&As (Czym jest, Jak stosować, Bezpieczeństwo, Cena, β-CD, Płatności, Dostawa, Czy jest lekiem)
+  - Created visible FAQ accordion section before buy section with 7 expandable Q&As
+  - Smooth max-height transitions with icon rotation on open
+  - Cross-links to ingredient pages, certyfikaty.html, faq.html, jak-stosowac.html, dostawa.html
+  - Enables Google rich results (FAQ snippets) directly on product page
+  - Captures queries: "CogniCit skład", "CogniCit dawkowanie", "CogniCit cena"
+- ✅ Item #111 — Created /porownanie.html (27KB) — comparison table page
+  - Full comparison table: CogniCit vs cholina solo vs multi-nootropic vs kofeinowy
+  - 11 criteria: main ingredient, antioxidant support, bioavailability enhancer, daily capsules, transparency, GMP, GIS, CoA, dependency potential, crash effect, price, value ratio
+  - Color-coded checkmarks (green), crosses (red), partials (orange)
+  - CogniCit column highlighted with green background + star badge
+  - 6 "Why CogniCit?" cards (synergy, transparency, research, certification, β-CD, Polish company)
+  - 7-point buyer checklist with explanations
+  - Article + BreadcrumbList JSON-LD schemas
+  - Canonical URL, hreflang="pl", OG meta, Twitter Card
+  - Trust bar (GMP, EU, Lab, GIS), CTA section with pricing
+  - Responsive: horizontal scroll on mobile for table
+  - Added to sitemap.xml (priority 0.7)
+  - Added to index.html footer (Informacje column)
+- ✅ Blog post outline #25 added to content_calendar.md — "Ranking suplementów nootropowych w Polsce"
+- ✅ 3 new improvement ideas added to queue (#112-114)
+- ✅ Items #110 and #111 marked DONE in improvement queue
+
+**Files changed:**
+- `produkt.html` — FAQPage JSON-LD added to head; visible FAQ accordion section (7 Q&As) added before buy section
+- `porownanie.html` — NEW (27.2 KB) — full comparison page with table, cards, checklist
+- `sitemap.xml` — porownanie.html URL added
+- `index.html` — footer Informacje column: porownanie.html link added
+- `improvement_queue.md` — items #110, #111 marked DONE; 3 new items added (#112-114)
+- `content_calendar.md` — blog post outline #25 added (ranking nootropiki)
+- `changelog.md` — this entry
+
+**Site verification:** All new/modified HTML files validated — DOCTYPE, balanced tags, canonical, hreflang present. FAQ accordion CSS transitions confirmed. Comparison table responsive on mobile. Sitemap validates.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~63 completed + ~54 active = 114 total (renumbered to 114)

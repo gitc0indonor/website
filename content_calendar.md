@@ -499,3 +499,26 @@
 **CTA:** Poznaj nasz suplement — link do produkt.html
 **Internal links:** polityka-cookies.html, polityka-prywatnosci.html, regulamin.html, kontakt.html
 **Status:** Outline ready, needs writing
+
+---
+
+### Blog Post #25 (Power Cycle #18)
+**Title:** Ranking suplementów nootropowych w Polsce — co wybrać na koncentrację?
+**Target:** Polish consumers, SEO / comparison / conversion
+**Word count:** 2000-2500
+**Keywords:** ranking suplementów nootropowych, suplement na koncentrację ranking, najlepszy suplement na pamięć, nootropiki Polska, porównanie suplementów mózg
+
+**Outline:**
+1. **Wstęp** — Rynek suplementów nootropowych w Polsce rośnie. Jak wybrać ten właściwy?
+2. **Kryteria oceny** — Na co zwrócić uwagę: skład, dawki, certyfikaty, przejrzystość, cena
+3. **Typ 1: Suplementy z choliną** — Zalety (prosty skład) i wady (jeden składnik, brak synergii)
+4. **Typ 2: Multi-nootropiki** — 15+ składników po trochu. Proprietary blends. Czy więcej = lepiej?
+5. **Typ 3: Stymulanty z kofeiną** — Szybki efekt, ale crash i ryzyko uzależnienia
+6. **CogniCit — nasze podejście** — 3 synergiczne składniki, precyzyjne dawki, β-CD jako wzmacniacz
+7. **Tabela porównawcza** — CogniCit vs konkurencja (składniki, dawki, GMP, GIS, CoA, cena)
+8. **Jak samodzielnie ocenić suplement?** — 7-punktowa checklista do wydrukowania
+9. **Podsumowanie** — Przejrzystość i synergia > ilość składników
+
+**CTA:** Sprawdź CogniCit — link do produkt.html (79 zł, 30-dniowa gwarancja)
+**Internal links:** porownanie.html, skladniki.html, jak-wybrac-suplement.html, certyfikaty.html, produkt.html
+**Status:** Outline ready, needs writing
