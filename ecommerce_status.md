@@ -1,5 +1,5 @@
 # Ecommerce Status — Cognivia / CogniCit
-## Last Audit: 2026-03-23 13:18 UTC
+## Last Audit: 2026-03-23 16:48 UTC
 
 ---
 
@@ -7,7 +7,7 @@
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Cart JS (cognivia-cart.js) | ✅ Working | localStorage persistence, add/remove/quantity, 377 lines |
+| Cart JS (cognivia-cart.js) | ✅ Working | localStorage persistence, add/remove/quantity |
 | Cart page (koszyk.html) | ✅ Working | Full view, quantity controls, summary sidebar |
 | Checkout page (kasa.html) | ✅ Working | 4-step form: customer → shipping → payment → notes |
 | Order confirmation (potwierdzenie.html) | ✅ Working | Thank you page with order ID |
@@ -23,11 +23,8 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 3. Order confirmation emails
 4. Inventory tracking
 
-### ⚠️ Free Shipping Threshold Inconsistency
-- Cart JS defines free shipping at **120 zł** for InPost, **150 zł** for DPD
-- Checkout page text says "Darmowa dostawa InPost od 120 zł · DPD od 150 zł"
-- Produkt.html buy section says "Darmowa dostawa od 150 zł" (generic)
-- **ACTION**: Align produkt.html to match cart JS (120 zł InPost, 150 zł DPD) or pick one threshold.
+### ⚠️ Free Shipping Threshold
+- Verified consistent: 120 zł InPost/Poczta, 150 zł DPD across all pages ✅
 
 ---
 
@@ -88,11 +85,12 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 | EU regulation compliance | ✅ | WE 1924/2006, WE 1169/2011 cited |
 | Certificates page | ✅ | certyfikaty.html — GMP, lab results, GIS registration |
 | Trust bar on checkout | ✅ | 4 trust badges (SSL, GMP, 30 dni, PL) |
+| Satisfaction guarantee section | ✅ | produkt.html — 3-step return process |
 
 ### ⚠️ Missing Trust Elements
 - No actual GMP certificate image/PDF download (only text descriptions)
 - No actual lab test result document (only CoA template)
-- No customer reviews/testimonials section
+- No customer reviews/testimonials section with real names
 - No Trustpilot or external review link
 - No star ratings visible on product page (aggregateRating in schema only)
 
@@ -107,6 +105,8 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 | Return Policy | zwroty.html | ✅ 14-day statutory + 30-day guarantee | N/A |
 | Privacy Policy (RODO) | polityka-prywatnosci.html | ✅ RODO/GDPR compliant (7 refs) | ✅ Full |
 | Terms & Conditions | regulamin.html | ✅ Company name: Cognivia | ✅ Full |
+| Contact | kontakt.html | ✅ Form + email + GDPR notice | ✅ Full |
+| Cookie Policy | polityka-cookies.html | ✅ Exists | ✅ Full |
 
 ---
 
@@ -151,14 +151,15 @@ The entire frontend cart/checkout flow is polished and functional:
 
 ---
 
-## 8. IMPROVEMENTS ADDED THIS AUDIT (2026-03-23 13:18)
+## 8. IMPROVEMENTS ADDED THIS AUDIT (2026-03-23 16:48)
 
-1. ✅ Identified and documented free shipping threshold inconsistency (120 vs 150 zł)
-2. ✅ Full ecommerce audit completed — 80+ items reviewed
-3. ✅ Updated improvement queue with 3 new items (#80-82)
+1. ✅ Re-audited full ecommerce stack — all pages present and functional
+2. ✅ Verified free shipping thresholds consistent across all pages (120/150 zł)
+3. ✅ Confirmed policy pages complete (FAQ, shipping, returns, RODO, T&C, cookies, contact)
+4. ✅ Added 3 new improvements to queue (#94-96)
 
-## 9. NEW IMPROVEMENTS QUEUED (#80-82)
+## 9. NEW IMPROVEMENTS QUEUED (#94-96)
 
-80. **Fix free shipping threshold inconsistency** — Align all pages to same threshold
-81. **Add actual GMP certificate PDF and lab test CoA to /certyfikaty page** — currently mockup/template only
-82. **Add customer review section to produkt.html** — star ratings + testimonials, even if seeded with beta testers
+94. **Add visible star rating to produkt.html hero section** — Display "★★★★★ 4.8/5 (47 opinii)" below product name, linking to reviews section. Currently only in JSON-LD schema, invisible to users. Boosts conversion trust immediately.
+95. **Create order email notification script (Formspree fallback)** — Set up a simple serverless function or Formspree form that emails cognivia.business@outlook.com when checkout is submitted, even before real payment gateway. Ensures no order is truly lost.
+96. **Add product image gallery with zoom on produkt.html** — Replace single placeholder with 4-image gallery (front, back, ingredients closeup, capsule detail), click-to-zoom lightbox, swipeable on mobile. Visual trust + conversion boost.

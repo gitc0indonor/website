@@ -633,3 +633,39 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
 
 **Queue:** ~63 completed + ~54 active = 114 total (renumbered to 114)
+
+### 2026-03-23 — Power Cycle #19 (20:29 UTC)
+**Implemented:**
+- ✅ Item #29 — Open Graph + Twitter Card meta tags on all 5 blog pages
+  - Added to blog/cytykolina.html, blog/antyoksydanty.html, blog/beta-cyklodekstryna.html, blog/suplement-vs-lek.html, blog/index.html
+  - OG tags: og:type (article/website), og:title, og:description, og:url, og:site_name, og:locale (pl_PL), og:image
+  - Twitter: twitter:card (summary_large_image), twitter:title, twitter:description, twitter:image
+  - Blog posts now generate rich previews when shared on Facebook, Twitter/X, LinkedIn, and messaging apps
+  - Image URLs point to /assets/blog/ paths (placeholder — replace with actual OG images when available)
+- ✅ Item #21 — Improved mobile hamburger menu animation on index.html
+  - Hamburger icon: cubic-bezier eased transitions, scaleX on middle span, hover background ripple
+  - Nav dropdown: slide-down animation via translateY + opacity transition (replaced instant display:none/flex)
+  - Staggered link animations: each nav link slides in with 50ms delay via navSlideIn keyframes
+  - Added dark overlay backdrop (rgba + backdrop-filter blur) behind menu
+  - Body scroll lock when menu is open (overflow:hidden)
+  - Click overlay to close menu
+  - Nav links get hover padding-left shift + gold color
+- ✅ Blog post outline #26 added to content_calendar.md — "Jak media społecznościowe wpływają na koncentrację?"
+- ✅ 3 new improvement ideas added to queue (#115-117)
+
+**Files changed:**
+- blog/cytykolina.html — OG + Twitter meta tags added after hreflang
+- blog/antyoksydanty.html — OG + Twitter meta tags added after hreflang
+- blog/beta-cyklodekstryna.html — OG + Twitter meta tags added after hreflang
+- blog/suplement-vs-lek.html — OG + Twitter meta tags added after hreflang
+- blog/index.html — OG + Twitter meta tags added after hreflang
+- index.html — hamburger CSS + JS enhanced (overlay, scroll lock, staggered animations)
+- content_calendar.md — blog outline #26 added
+- improvement_queue.md — items #21, #29 marked DONE; 3 new items added (#115-117)
+- changelog.md — this entry
+
+**Site verification:** All 5 blog HTML files validated — OG + Twitter meta present. index.html hamburger nav CSS + JS verified — no broken tags (14 sections, 157 divs balanced). Cart system unaffected.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Multiple buy buttons on produkt.html. Payment gateway (PayU/Przelewy24) needs merchant account.
+
+**Queue:** ~65 completed + ~52 active = 117 total

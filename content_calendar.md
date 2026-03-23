@@ -522,3 +522,25 @@
 **CTA:** Sprawdź CogniCit — link do produkt.html (79 zł, 30-dniowa gwarancja)
 **Internal links:** porownanie.html, skladniki.html, jak-wybrac-suplement.html, certyfikaty.html, produkt.html
 **Status:** Outline ready, needs writing
+
+---
+
+### Blog Post #26 (Power Cycle #19 — NEW)
+**Title:** Jak media społecznościowe wpływają na koncentrację? I jak suplementacja może pomóc
+**Target:** Polish audience, SEO / digital wellness / trending topic
+**Word count:** 1500-2000
+**Keywords:** social media koncentracja, suplement na koncentrację, cyfrowe zmęczenie, skupienie uwagi, suplementacja mózg
+
+**Outline:**
+1. **Wstęp** — Przeciętny Polak spędza 2h+ dziennie na social mediach. Co to robi z mózgiem?
+2. **Jak social media wpływają na mózg?** — Dopamina, krótkie cykle uwagi, FOMO, przeciążenie sensoryczne
+3. **Nauka o uwadze** — Badania nad "attention residue" (Sophie Leroy), koszt przełączania zadań
+4. **Cyfrowe zmęczenie** — Zmęczenie oczu, ból głowy, spadek produktywności — objawy i mechanizmy
+5. **Co możesz zrobić?** — Cyfrowy detoks, technika Pomodoro, ograniczenie powiadomień — praktyczne wskazówki
+6. **Rola suplementacji** — Cytykolina i acetylocholina (neuroprzekaźnik uwagi), ALA jako ochrona mitochondriów
+7. **CogniCit — wsparcie dla cyfrowego mózgu** — Jak 3 składniki wspierają koncentrację w erze scrollowania
+8. **Podsumowanie** — Suplementacja + cyfrowa higiena = lepsza koncentracja
+
+**CTA:** Zamów CogniCit — link do produkt.html
+**Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, nauka.html
+**Status:** Outline ready, needs writing

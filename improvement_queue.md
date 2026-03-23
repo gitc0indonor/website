@@ -65,7 +65,7 @@
 18. Add breadcrumb navigation to subpages
 19. Polish footer with newsletter signup
 20. Add loading animations for scroll-triggered elements
-21. Improve mobile hamburger menu animation
+21. [DONE] ~~Improve mobile hamburger menu animation~~ ✅ — Enhanced hamburger: smooth CSS transitions with cubic-bezier easing, scaleX animation on middle span, hover background. Nav dropdown: slide-down with translateY + opacity transition, staggered link animations (navSlideIn keyframes with 50ms delays), hover padding-left shift. Added overlay backdrop (blur+dark tint), body scroll lock when open, click-outside-to-close. Power Cycle #19.
 22. [DONE] ~~Add exit-intent popup with email capture~~ ✅ — Exit-intent popup on index.html: triggers on mouse leave (desktop) or 45s timer (mobile), 15% discount CTA, localStorage persistence, dismissible, responsive
 23. Add Google PageSpeed optimization (lazy loading, preloading)
 24. Create Polish-language blog post: "Czym jest cytykolina?"
@@ -73,7 +73,7 @@
 26. [NEW] Set up Google Analytics / Plausible for conversion tracking
 27. [NEW] Add order confirmation email template
 28. [DONE] ~~Create /certyfikaty page showing GMP certificate, lab results, GIS registration proof~~ ✅ — Full page with GMP cert details, lab results section (CoA), GIS registration info, EU compliance section, trust badge cards, breadcrumbs, JSON-LD schemas, responsive. Added to sitemap.xml and index.html footer. Power Cycle #11.
-29. [NEW] Add social sharing meta tags (Open Graph + Twitter Card) for blog post promotion
+29. [DONE] ~~Add social sharing meta tags (Open Graph + Twitter Card) for blog post promotion~~ ✅ — Added full OG (og:type, og:title, og:description, og:url, og:site_name, og:locale, og:image) + Twitter Card (twitter:card, twitter:title, twitter:description, twitter:image) meta tags to all 5 blog pages (cytykolina, antyoksydanty, beta-cyklodekstryna, suplement-vs-lek, blog/index). summary_large_image format. Power Cycle #19.
 30. [NEW] Integrate customer review system (Trustpilot or self-hosted)
 31. [NEW] Add structured data (JSON-LD for FAQPage) on faq.html
 32. [NEW] Add canonical URLs and hreflang tags to all pages
@@ -159,3 +159,6 @@
 112. [NEW] Add porownanie.html link to index.html footer and navigation — currently only on sitemap, needs visible placement
 113. [NEW] Create "Skutki uboczne suplementów nootropowych" safety page (/skutki-uboczne-nootropiki) — SEO-targeted, covers common side effects of choline, ALA, caffeine supplements, positions CogniCit as the safe alternative
 114. [NEW] Add pre-launch email countdown widget to index.html hero — "Zapisz się, aby otrzymać 15% zniżki w dniu premiery" with animated counter showing days until launch
+115. [NEW] Add "Zaufali nam" section with logos of certification bodies (GMP, GIS, EU) — visual trust transfer from institutions to brand, clickable links to certificate pages
+116. [NEW] Create "Suplementy a praca zdalna" blog post — target remote workers searching for focus supplements, trending keyword in Poland
+117. [NEW] Add scroll-triggered testimonial cards to produkt.html — reviews slide in from sides as user scrolls down product page, subtle animation + social proof at decision point
