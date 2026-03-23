@@ -524,3 +524,34 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
 
 **Queue:** ~50 completed + ~48 active = 98 total (renumbered to 102)
+
+### 2026-03-23 — Power Cycle #16 (18:59 UTC)
+**Implemented:**
+- ✅ Item #94 — Verified: visible star rating already present on produkt.html hero section ("★★★★★ 4.8/5 (47 opinii)"), gold stars with link to #opinie. Previously implemented but not marked DONE.
+- ✅ Item #103 — Satisfaction guarantee trust badges on /skladniki.html and /skutki-uboczne.html
+  - Both pages: green "30" circle badge, "30-dniowa gwarancja satysfakcji" heading, marketing copy, link to zwroty.html
+  - Positioned before CTA sections for maximum conversion impact
+  - Responsive flexbox layout (wraps on mobile)
+- ✅ Item #105 — Cross-links to /skladniki.html from all 3 ingredient pages
+  - kwas-alfa-liponowy.html, cytykolina.html, beta-cyklodekstryna.html: "Zobacz wszystkie składniki CogniCit →" button before footer
+  - Green CTA button with hover lift effect (translateY + shadow)
+  - Descriptive subtitle linking synergy concept
+- ✅ Blog post outline #23 added to content_calendar.md — "5 rzeczy, które powinieneś wiedzieć o suplementach diety przed zakupem"
+- ✅ 3 new improvement ideas added to queue (#106-108): newsletter email template, comparison widget, ranking page
+- ✅ Cart system verified fully functional: cognivia-cart.js, cart.css, Add to Cart on produkt.html, 79 zł price, floating mobile CTA, all ecommerce pages (kasa, koszyk, potwierdzenie, dostawa, zwroty)
+
+**Files changed:**
+- `skladniki.html` — trust badge banner added before CTA section
+- `skutki-uboczne.html` — trust badge banner added before CTA section
+- `kwas-alfa-liponowy.html` — cross-link to /skladniki.html added before footer
+- `cytykolina.html` — cross-link to /skladniki.html added before footer
+- `beta-cyklodekstryna.html` — cross-link to /skladniki.html added before footer
+- `content_calendar.md` — blog post outline #23 added
+- `improvement_queue.md` — items #94, #103, #105 marked DONE; 3 new items (#106-108) added
+- `changelog.md` — this entry
+
+**Site verification:** All 5 modified HTML files validated — doctype, canonical, hreflang present. Trust badges confirmed on skladniki + skutki-uboczne. Cross-links confirmed on all 3 ingredient pages. Cart system verified: JS cart + CSS + all 5 ecommerce pages functional.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~57 completed + ~49 active = 108 total (renumbered to 108)

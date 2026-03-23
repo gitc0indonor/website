@@ -435,3 +435,46 @@
 **Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, faq.html  
 **Status:** Outline ready, needs writing
 
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #16)
+**Title:** 3 składniki CogniCit — dlaczego wybraliśmy właśnie te substancje?  
+**Target:** Polish audience, SEO / brand storytelling / trust  
+**Word count:** 1500-2000  
+**Keywords:** składniki CogniCit, kwas alfa-liponowy cytykolina, suplement synergia, beta-cyklodekstryna suplement, formuła nootropowa  
+
+**Outline:**
+1. **Wstęp** — Rynek suplementów oferuje setki produktów z 20+ składnikami. My wybraliśmy 3. Dlaczego?
+2. **Filozofia minimalistycznej suplementacji** — Mniej składników = precyzyjne dawki, łatwiejsza weryfikacja, mniej interakcji
+3. **Składnik 1: Kwas alfa-liponowy (250 mg)** — Ochrona antyoksydacyjna mitochondriów, podwójna rozpuszczalność, regeneracja witamin C i E
+4. **Składnik 2: Cytykolina (300 mg)** — Prekursor acetylocholiny, wsparcie błon neuronowych, biodostępność >95%
+5. **Składnik 3: Beta-cyklodekstryna (250 mg)** — Inteligentny nośnik, kompleksy inkluzji, ochrona ALA i cytykoliny przed degradacją
+6. **Synergia — jak 3 składniki działają razem?** — β-CD wzmacnia wchłanianie obu składników aktywnych, ALA chroni neurony, cytykolina wspiera ich pracę
+7. **Porównanie z innymi podejściami** — Tabela: nasze 3 składniki vs. suplementy z 20+ składnikami (dawki, weryfikowalność, interakcje)
+8. **Jak sprawdziliśmy nasz skład?** — PubMed, badania kliniczne, konsultacje, odrzucone składniki
+9. **Podsumowanie** — Precyzja > ilość. 3 dobrze dobrane składniki tworzą formułę, której możesz zaufać.
+
+**CTA:** Poznaj skład CogniCit — link do skladniki.html  
+**Internal links:** skladniki.html, produkt.html, nauka.html, blog/suplement-vs-lek.html, jak-czytac-etykiety.html  
+**Status:** Outline ready, needs writing
+
+---
+
+### Blog Post #23 (Power Cycle #16)
+**Title:** 5 rzeczy, które powinieneś wiedzieć o suplementach diety przed zakupem
+**Target:** Polish consumers, trust-building / conversion
+**Word count:** 1800-2200
+**Keywords:** suplement diety bezpieczeństwo, jak wybrać suplement, suplementy diety Polska, certyfikaty suplementów, GMP suplement
+
+**Outline:**
+1. **Wstęp** — Rynek suplementów w Polsce rośnie, ale nie każdy produkt jest wart zaufania
+2. **1. Sprawdź zgłoszenie GIS** — Każdy suplement w Polsce musi być zgłoszony do GIS. Jak to zweryfikować?
+3. **2. Szukaj GMP** — Dobra Praktyka Produkcyjna = kontrola jakości na każdym etapie
+4. **3. Czytaj skład — naprawdę** — Proprietary blends ukrywają dawki, „naturalne" nie zawsze znaczy bezpieczne
+5. **4. Sprawdź badania** — Czy składniki mają publikacje naukowe? PubMed jako narzędzie weryfikacji
+6. **5. Poznaj zasady zwrotów** — Serio-producent oferuje gwarancję satysfakcji, bo wierzy w swój produkt
+7. **Bonus: Czym Cognivia różni się od innych?** — 3 składniki, precyzyjne dawki, pełna przejrzystość
+8. **Podsumowanie** — Checklist do wydrukowania przed zakupem suplementu
+
+**CTA:** Zapisz się na listę — 15% zniżki + checklist PDF
+**Internal links:** jak-wybrac-suplement.html, certyfikaty.html, skladniki.html, produkt.html, faq.html
+**Status:** Outline ready, needs writing

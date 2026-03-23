@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23 (Power Cycle #15)
+## Last Updated: 2026-03-23 (Power Cycle #16)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -159,7 +159,7 @@
 89. ~~[DONE] Add "Nowości na blogu" section to index.html — show latest 3 blog post cards (cytykolina, antyoksydanty, beta-CD) below comparison section, drives traffic to content pages. Includes emoji heroes, category tags, excerpts, hover effects, "Wszystkie artykuły" CTA button. Responsive grid. Power Cycle #14.~~ ✅
 90. ~~[DONE] Add floating "Napisz do nas" contact button on mobile — small chat icon bottom-right (fixed, z-index 998), expands on click to show popup with email link, form link, FAQ link. Glassmorphism-free clean design matching site palette. Mobile only (<768px). Dismisses on outside click. Power Cycle #14.~~ ✅
 91. [NEW] Add breadcrumb navigation to blog post pages (blog/cytykolina.html etc.) — currently missing, improves SEO and UX
-92. [NEW] Create /skladniki landing page — overview of all 3 ingredients with comparison table, links to individual pages, infographic-style layout
+92. ~~[DONE] Create /skladniki landing page — overview of all 3 ingredients with comparison table, links to individual pages, infographic-style layout~~ ✅ — Created skladniki.html (23KB). Synergy diagram, 3 ingredient cards with stats, comparison table, "why 3 ingredients" section. Power Cycle #16.
 93. [NEW] Add pre-launch countdown timer — "Pierwsze partie dostępne za X dni" on index.html hero, creates urgency with email capture gate
 94. [NEW] Add visible star rating to produkt.html hero section — Display "★★★★★ 4.8/5 (47 opinii)" below product name, linking to reviews section. Currently only in JSON-LD schema, invisible to users. Boosts conversion trust immediately.
 95. [NEW] Create order email notification script (Formspree fallback) — Set up a simple serverless function or Formspree form that emails cognivia.business@outlook.com when checkout is submitted, even before real payment gateway. Ensures no order is truly lost.
@@ -170,3 +170,9 @@
 100. [NEW] Add "Ostatnio kupowane" social proof popup — show "Ktoś z Warszawy kupił CogniCit 3 min temu" notification on produkt.html, creates urgency and social proof (requires backend or simulated data)
 101. [NEW] Create /polityka-cookies page with GDPR cookie consent banner — required for EU compliance, show on first visit, allow granular consent (analytics, marketing, functional)
 102. [NEW] Add "Często kupowane razem" bundle suggestion on produkt.html — suggest buying 2-3 boxes with discount (10% off for 2, 15% off for 3), increases AOV before launch
+103. [NEW] Add "Gwarancja satysfakcji" trust badge to /skladniki.html and /skutki-uboczne.html — 30-day money-back banner with link to zwroty.html, builds conversion trust on informational pages
+104. [NEW] Create "Skutki uboczne" blog post version — shorter 1200-word version of skutki-uboczne.html as a blog article for social media promotion and SEO (blog/skutki-uboczne.html)
+105. ~~[DONE] Add cross-links to /skladniki.html from all ingredient pages~~ ✅ — "Zobacz wszystkie składniki CogniCit →" button added to kwas-alfa-liponowy.html, cytykolina.html, and beta-cyklodekstryna.html before footer. Green CTA with hover effects. Power Cycle #16.
+106. [NEW] Add "Newsletter welcome" email template — create a branded HTML email template for Formspree/GetResponse welcome sequence with Cognivia branding, 15% discount code, product overview, ingredient links
+107. [NEW] Add "Łatwe porównanie" comparison widget to /jak-wybrac-suplement.html — interactive toggle showing CogniCit vs competitor A vs competitor B, dynamic highlighting of advantages
+108. [NEW] Create "Ranking suplementów na koncentrację" comparison page — SEO-targeted landing page comparing top Polish cognitive supplements, positioning CogniCit as the transparent choice
