@@ -27,6 +27,18 @@
       overflow-x: hidden;
     }
 
+    /* === SCROLL PROGRESS === */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--gold);
+      z-index: 9999;
+      width: 0%;
+      transition: width 0.1s linear;
+    }
+
     /* === LEGAL BAR === */
     .legal-bar {
       background: var(--charcoal);
@@ -569,6 +581,60 @@
       border-top: 1px solid rgba(255,255,255,0.08);
     }
 
+    /* === COMPARISON TABLE === */
+    .comparison {
+      background: var(--beige);
+      position: relative;
+    }
+    .comparison-table {
+      max-width: 900px;
+      margin: 60px auto 0;
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+    }
+    .comparison-table th {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 14px 16px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+    .comparison-table th:first-child {
+      text-align: left;
+    }
+    .comparison-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(42,42,40,0.08);
+      text-align: center;
+      font-size: 14px;
+    }
+    .comparison-table td:first-child {
+      text-align: left;
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+    .comparison-table tr:nth-child(even) td { background: rgba(245,240,232,0.5); }
+    .comparison-table .highlight-col {
+      background: rgba(201,169,110,0.08) !important;
+    }
+    .comparison-table .check { color: var(--gold); font-size: 16px; }
+    .comparison-table .cross { color: #bbb; font-size: 14px; }
+    .comparison-note {
+      max-width: 900px;
+      margin: 16px auto 0;
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+    }
+    .comparison-table th.highlight-col {
+      background: var(--gold);
+      color: var(--charcoal);
+      font-weight: 500;
+    }
+
     /* === DIVIDER LINE ART === */
     .divider {
       text-align: center;
@@ -578,6 +644,35 @@
       width: 120px;
       height: 40px;
       opacity: 0.2;
+    }
+
+    /* === BACK TO TOP === */
+    .back-to-top {
+      position: fixed;
+      bottom: 80px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      background: var(--charcoal);
+      color: var(--gold);
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.4s ease;
+      z-index: 998;
+      pointer-events: none;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .back-to-top:hover {
+      background: var(--gold);
+      color: var(--charcoal);
     }
 
     /* === FADE IN === */
@@ -941,6 +1036,76 @@
     </div>
   </section>
 
+  <!-- COMPARISON -->
+  <section class="comparison">
+    <div style="text-align:center;">
+      <div class="section-overline fade-in">Dlaczego CogniCit?</div>
+      <div class="section-title fade-in">Porównanie z suplementami dostępnymi na rynku</div>
+      <p class="section-text fade-in" style="margin: 0 auto;">CogniCit to nie kolejny suplement z jedną substancją. To precyzyjnie skomponowany preparat z trzema synergistycznymi składnikami.</p>
+    </div>
+    <table class="comparison-table fade-in">
+      <thead>
+        <tr>
+          <th>Cecha</th>
+          <th class="highlight-col">CogniCit</th>
+          <th>Typowy suplement ALA</th>
+          <th>Typowy suplement z choliną</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kwas alfa-liponowy</td>
+          <td class="highlight-col"><span class="check">✓</span> 250 mg</td>
+          <td><span class="check">✓</span> 200–600 mg</td>
+          <td><span class="cross">—</span></td>
+        </tr>
+        <tr>
+          <td>Cytykolina (CDP-cholina)</td>
+          <td class="highlight-col"><span class="check">✓</span> 300 mg</td>
+          <td><span class="cross">—</span></td>
+          <td><span class="check">✓</span> zmienna</td>
+        </tr>
+        <tr>
+          <td>Beta-cyklodekstryna (nośnik)</td>
+          <td class="highlight-col"><span class="check">✓</span> 250 mg</td>
+          <td><span class="cross">—</span></td>
+          <td><span class="cross">—</span></td>
+        </tr>
+        <tr>
+          <td>3 składniki w 1 kapsułce</td>
+          <td class="highlight-col"><span class="check">✓</span></td>
+          <td><span class="cross">—</span></td>
+          <td><span class="cross">—</span></td>
+        </tr>
+        <tr>
+          <td>Nośnik zwiększający biodostępność</td>
+          <td class="highlight-col"><span class="check">✓</span></td>
+          <td><span class="cross">—</span></td>
+          <td><span class="cross">—</span></td>
+        </tr>
+        <tr>
+          <td>Produkcja zgodna z GMP</td>
+          <td class="highlight-col"><span class="check">✓</span></td>
+          <td>zależnie od producenta</td>
+          <td>zależnie od producenta</td>
+        </tr>
+        <tr>
+          <td>Zgłoszenie do GIS (Polska)</td>
+          <td class="highlight-col"><span class="check">✓</span></td>
+          <td>zależnie od producenta</td>
+          <td>zależnie od producenta</td>
+        </tr>
+        <tr>
+          <td>1 kapsułka dziennie</td>
+          <td class="highlight-col"><span class="check">✓</span></td>
+          <td>zależnie od dawki</td>
+          <td>zależnie od dawki</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="comparison-note fade-in">Dane porównawcze oparte na analizie suplementów dostępnych na polskim rynku (marzec 2026). Informacje o konkurencyjnych produktach mają charakter orientacyjny.</p>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section" id="kontakt">
     <div class="section-title fade-in">Bądź pierwszy</div>
@@ -1002,12 +1167,23 @@
     // Header scroll
     window.addEventListener('scroll', () => {
       document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+      // Scroll progress bar
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      document.getElementById('scrollProgress').style.width = progress + '%';
     });
     // Fade-in on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    // Back to top button
+    const btt = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      btt.classList.toggle('visible', window.scrollY > 400);
+    });
+    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   </script>
   <button class="back-to-top" id="backToTop" aria-label="Powrót do góry">↑</button>
 </body>

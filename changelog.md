@@ -55,3 +55,35 @@
 - Formspree form IDs still placeholder
 - No WooCommerce/cart — site is static pre-launch, no purchase flow yet
 - Queue now has 20 active items + 7 completed = 27 total
+
+---
+
+### 2026-03-23 — Power Cycle #3 (01:35 UTC)
+**Implemented:**
+- ✅ Product comparison table — CogniCit vs typical ALA supplement vs typical choline supplement, 8 criteria (ingredients, dosing, GMP, GIS, bioavailability enhancer)
+  - Highlighted CogniCit column with gold accent
+  - Checkmark/cross indicators for quick scanning
+  - Responsive — scrolls horizontally on very small screens
+  - Positioned between FAQ and CTA sections for maximum conversion impact
+- ✅ Scroll progress indicator — gold bar at top of page, tracks scroll position
+  - Already had HTML element and CSS class but no styling or JS — now fully functional
+- ✅ Back-to-top button — fixed position, appears after 400px scroll, smooth scroll to top
+  - Was in HTML but had no CSS — now styled with gold hover state
+  - JS handler added for visibility toggle and click-to-top
+- ✅ SVG optimization — chamomile and ingredient illustrations simplified (removed redundant attributes, added shape-rendering where beneficial)
+- ✅ Blog post outline #3 added to content_calendar.md — "Porównanie CogniCit z innymi suplementami" (conversion-focused comparison article)
+- ✅ 3 new improvement ideas added to queue (#24-26: infographic, certificates page, OG tags)
+- ✅ Improvement queue updated — items #8, #9, #10 marked DONE
+
+**Files changed:**
+- `index.html` — comparison section CSS + HTML, scroll-progress CSS, back-to-top CSS + JS, scroll progress JS
+- `improvement_queue.md` — 3 items completed, 3 new items added
+- `content_calendar.md` — new blog post outline added
+- `changelog.md` — this entry
+
+**Git:** Pending commit
+
+**Notes:**
+- Formspree form IDs still placeholder
+- Site is static pre-launch — no WooCommerce/cart yet
+- Queue now has 18 active items + 10 completed = 28 total

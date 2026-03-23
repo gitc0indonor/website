@@ -55,3 +55,25 @@
 **CTA:** Email signup for launch notification  
 **Internal links:** kwas-alfa-liponowy.html, nauka.html, index.html  
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-23)
+**Title:** Porównanie CogniCit z innymi suplementami — co wyróżnia nasz preparat?  
+**Target:** Polish audience, conversion-focused  
+**Word count:** 1000-1500  
+**Keywords:** suplement diety porównanie, CogniCit, nootropik, cytykolina suplement, kwas alfa-liponowy suplement, suplement na koncentrację  
+
+**Outline:**
+1. **Wstęp** — Rynek suplementów na koncentrację i pamięć rośnie — jak wybrać?
+2. **Czym się różnią suplementy nootropowe?** — Pojedyncze składniki vs. formuły złożone
+3. **Kryteria wyboru** — Skład, dawki, badania naukowe, certyfikaty GMP, rejestracja GIS
+4. **Porównanie: CogniCit vs suplementy z samą choliną** — Dlaczego ALA + cytykolina > cholina solo
+5. **Rola beta-cyklodekstryny** — Czego nie mają konkurencyjne suplementy
+6. **Tabela porównawcza** — CogniCit vs 2-3 przykładowe kategorie suplementów
+7. **Na co zwrócić uwagę przy wyborze?** — Checklist dla konsumenta
+8. **Podsumowanie** — CogniCit: precyzja, synergia, przejrzystość
+
+**CTA:** Email signup for launch notification  
+**Internal links:** index.html (comparison section), nauka.html, produkt.html  
+**Status:** Outline ready, needs writing

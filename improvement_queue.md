@@ -8,9 +8,9 @@
 5. ~~Add sticky bottom email signup bar~~ ✅ DONE
 6. ~~Create detailed ingredient pages (ALA, Citicoline, β-CD)~~ ✅ DONE
 7. ~~Improve FAQ section with smooth accordion animations~~ ✅ DONE
-8. Add product comparison table (vs competitors)
-9. Optimize SVG illustrations for faster rendering
-10. Add smooth scroll progress indicator
+8. ~~Add product comparison table (vs competitors)~~ ✅ DONE
+9. ~~Optimize SVG illustrations for faster rendering~~ ✅ DONE
+10. ~~Add smooth scroll progress indicator~~ ✅ DONE (done alongside #9)
 11. Create "How to Order" section
 12. Add breadcrumb navigation to subpages
 13. Polish footer with newsletter signup
@@ -24,3 +24,6 @@
 21. [NEW] Add "Why CogniCit?" comparison section — side-by-side with generic supplements
 22. [NEW] Create shipping & delivery info page (/dostawa) for pre-launch transparency
 23. [NEW] Add micro-interactions to CTA buttons (hover pulse, ripple effect on click)
+24. [NEW] Add "Ingredients Explained" interactive infographic — visual dose breakdown with animated fills
+25. [NEW] Create /certyfikaty page showing GMP certificate, lab results, GIS registration proof
+26. [NEW] Add social sharing meta tags (Open Graph + Twitter Card) for blog post promotion
