@@ -10,6 +10,7 @@
   <meta property="og:description" content="Dawkowanie, timing i praktyczne wskazówki dotyczące suplementacji CogniCit.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://cognivia.eu/jak-stosowac.html">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -93,14 +94,53 @@
       .timing-table th, .timing-table td { padding: 8px 10px; }
       .trust-bar { flex-direction: column; text-align: center; }
     }
-  </style>
+  
+    .breadcrumb {
+      max-width: 900px;
+      margin: 100px auto 0;
+      padding: 0 5%;
+      font-size: 12px;
+      color: #888;
+    }
+    .breadcrumb a { color: var(--cognivia-green); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://cognivia.eu"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Jak stosować",
+      "item": "https://cognivia.eu/jak-stosowac.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+<a href="/">Strona główna</a>
+<span>›</span>
+<span>Jak stosować</span>
+</nav>
   <div class="scroll-progress" id="scrollProgress"></div>
   <div class="legal-bar"><strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.</div>
   <header id="header">
     <a href="index.html" class="logo">C O G N I V I A</a>
-    <nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
       <a href="index.html">Strona główna</a>
       <a href="produkt.html">Produkt</a>
       <a href="nauka.html">Nauka</a>

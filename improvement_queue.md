@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23
+## Last Updated: 2026-03-23 (Power Cycle #8)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -110,7 +110,7 @@
 40. [NEW] Create /blog/ directory with first published post
 41. [DONE] ~~Add breadcrumb JSON-LD schema to ingredient pages~~ ✅ — BreadcrumbList added to all 3 ingredient pages
 42. [DONE] ~~Implement lazy loading for images site-wide~~ ✅ — only 2 images on site, both already optimized
-43. [NEW] Add Google PageSpeed optimization (preloading critical CSS, defer non-critical JS)
+43. [DONE] ~~Add Google PageSpeed optimization (preloading critical CSS, defer non-critical JS)~~ ✅ — Added `<link rel="preload">` for Google Fonts to 11 key pages (index, produkt, nauka, jak-stosowac, jak-wybrac-suplement, faq, all 5 blog pages). Added `defer` to cognivia-cart.js on index.html. Added missing preconnect to faq.html.
 44. [NEW] Create customer testimonial collection form/page
 45. [DONE] ~~Add internal linking strategy — cross-link blog posts, ingredient pages, FAQ, and product page more aggressively~~ ✅ — Added cross-link sections to all 4 blog posts, all 3 ingredient pages, and FAQ page
 46. [DONE] ~~Create "Jak stosować CogniCit?" usage guide page with dosage, timing, stacking info~~ ✅ — Full guide page with dosage, timing table, stacking advice, contraindications, storage, FAQ. Added to jak-stosowac.html
@@ -128,5 +128,8 @@
 58. [NEW] Add product images — currently only 1 placeholder, need 4-6 professional product photos (front, back, ingredients closeup, lifestyle)
 59. [NEW] Create /certyfikaty page with downloadable GMP certificate PDF and lab test results — builds trust, currently only mentioned as text badge
 60. [NEW] Add live chat widget (Tidio/Crisp) for pre-launch questions — capture leads from visitors with questions
-61. [NEW] Create "Jak czytać etykiety suplementów?" educational page — builds authority, SEO opportunity
+61. [DONE] ~~Create "Jak czytać etykiety suplementów?" educational page~~ ✅ — Created jak-czytac-etykiety.html (27KB): 7-element label anatomy diagram, 5 label traps (proprietary blends, doses, fillers, forms, certifications), red/green flag comparisons, 10-point purchase checklist, CogniCit comparison table, Article + BreadcrumbList JSON-LD, cross-links, email CTA, trust bar, responsive. Added to sitemap.xml.
 62. [NEW] Add A/B test variants for hero CTA text — test "Powiadom mnie" vs "Chcę zniżkę" vs "Zapisz się"
+63. [NEW] Add "Co mówią klienci?" section to produkt.html — embed Trustpilot widget or self-hosted star ratings, builds conversion trust
+64. [NEW] Create /kalkulator-dawkowania interactive page — user inputs weight/age/goal, gets personalized dosage recommendation, lead capture via email gate
+65. [NEW] Add hreflang + canonical to jak-czytac-etykiety.html and all newer pages missing them (jak-stosowac, jak-wybrac-suplement)

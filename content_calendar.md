@@ -228,3 +228,25 @@
 **CTA:** Email signup for launch notification  
 **Internal links:** jak-wybrac-suplement.html, produkt.html, faq.html, blog/suplement-vs-lek.html  
 **Status:** Outline ready, needs writing  
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #8)
+**Title:** Jak czytać etykiety suplementów? Praktyczny przewodnik  
+**Target:** Polish audience, SEO / consumer education / authority  
+**Word count:** 1500-2000  
+**Keywords:** jak czytać etykiety suplementów, suplement diety etykieta, dobry suplement, etykieta suplementu co sprawdzać  
+
+**Outline:**
+1. **Wstęp** — 30 000 suplementów na rynku — etykieta to jedyne źródło prawdy
+2. **7 elementów obowiązkowych** — co MUSI być na etykiecie suplementu diety w Polsce
+3. **Pułapka #1: Mieszanka zastrzeżona** — dlaczego „proprietary blend" to czerwona flaga
+4. **Pułapka #2: Dawki symboliczne** — składnik ≠ dawka terapeutyczna, jak sprawdzać w PubMed
+5. **Pułapka #3: Wypełniacze i barwniki** — co jest OK, co jest problemem
+6. **Pułapka #4: Forma składnika** — tabela: tlenek vs cytrynian, siarczan vs bisglicynian
+7. **Pułapka #5: Certyfikaty** — GMP, CoA, GIS — co oznaczają i jak weryfikować
+8. **Checklist 10 pytań** — do wydrukowania przed zakupem
+9. **CogniCit jako przykład** — jak wypada na tle checklisty
+10. **Podsumowanie** — Wiedza = bezpieczeństwo
+
+**CTA:** Email signup for launch notification  
+**Internal links:** jak-czytac-etykiety.html, jak-wybrac-suplement.html, produkt.html, faq.html, blog/suplement-vs-lek.html  
+**Status:** Outline ready, needs writing

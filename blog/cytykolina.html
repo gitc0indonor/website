@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cytykolina — naturalny składnik organizmu | Blog Cognivia</title>
   <meta name="description" content="Cytykolina (CDP-cholina) jest naturalnym składnikiem występującym w organizmie człowieka. Suplement diety — nie lek.">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -32,9 +33,92 @@
     .back-link { display: inline-block; color: var(--gold); text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px; }
     footer { background: var(--charcoal); color: rgba(255,255,255,0.6); padding: 40px 8%; text-align: center; font-size: 13px; }
     footer a { color: var(--gold); }
-  </style>
+  
+    .breadcrumb {
+      max-width: 900px;
+      margin: 100px auto 0;
+      padding: 0 6%;
+      font-size: 12px;
+      color: var(--soft-text, #5a5a58);
+    }
+    .breadcrumb a { color: var(--gold, #c9a96e); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+
+    .share-section {
+      max-width: 800px;
+      margin: 48px auto;
+      padding: 24px 0;
+      border-top: 1px solid rgba(26,26,26,0.08);
+      border-bottom: 1px solid rgba(26,26,26,0.08);
+      text-align: center;
+    }
+    .share-section p {
+      font-size: 13px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 16px;
+    }
+    .share-buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      color: white;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .share-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .share-btn.fb { background: #1877F2; }
+    .share-btn.tw { background: #1a1a1a; }
+    .share-btn.li { background: #0A66C2; }
+    .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://cognivia.eu"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://cognivia.eu/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cytykolina",
+      "item": "https://cognivia.eu/blog/cytykolina.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+<a href="/">Strona główna</a>
+<span>›</span>
+<a href="/blog/">Blog</a>
+<span>›</span>
+<span>Cytykolina</span>
+</nav>
   <div class="legal-bar"><strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.</div>
   <header>
     <a href="index.html" class="logo">Cogni<span>via</span></a>
@@ -94,7 +178,25 @@
     </div>
     <a href="../produkt.html" style="display: inline-block; background: var(--gold); color: var(--forest); padding: 10px 24px; text-decoration: none; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Dowiedz się więcej →</a>
   </div>
-  <footer>
+      <div class="share-section">
+      <p>Udostępnij artykuł</p>
+      <div class="share-buttons">
+        <a class="share-btn fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcognivia.eu%2Fblog%2Fcytykolina.html" target="_blank" rel="noopener" aria-label="Udostępnij na Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a class="share-btn tw" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcognivia.eu%2Fblog%2Fcytykolina.html&text=Cytykolina%20%E2%80%94%20naturalny%20sk%C5%82adnik%20organizmu%20%7C%20Blog%20Cognivia" target="_blank" rel="noopener" aria-label="Udostępnij na X/Twitter">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          X / Twitter
+        </a>
+        <a class="share-btn li" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcognivia.eu%2Fblog%2Fcytykolina.html" target="_blank" rel="noopener" aria-label="Udostępnij na LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+<footer>
     <p>© 2026 Cognivia. <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a> | <a href="../polityka-prywatnosci.html">Polityka prywatności</a></p>
   </footer>
 </body>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jak czytać etykiety suplementów diety? — Przewodnik | Cognivia</title>
+  <meta name="description" content="Naucz się czytać etykiety suplementów diety. Praktyczny przewodnik: na co zwrócić uwagę, jak rozpoznać dobry suplement, na co uważać.">
+  <link rel="canonical" href="https://cognivia.eu/jak-czytac-etykiety.html">
+  <meta property="og:title" content="Jak czytać etykiety suplementów diety? — Przewodnik">
+  <meta property="og:description" content="Praktyczny przewodnik po etykietach suplementów: co oznacza każdy element, na co zwrócić uwagę, jak uniknąć pułapek.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://cognivia.eu/jak-czytac-etykiety.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --beige: #f5f0e8;
+      --cream: #faf7f0;
+      --white: #fdfcf8;
+      --charcoal: #2a2a28;
+      --soft: #5a5a58;
+      --gold: #c9a96e;
+      --green: #2D6642;
+      --red: #c44;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--beige); line-height: 1.8; }
+
+    .scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--gold); z-index: 9999; transition: width 0.1s; }
+    .legal-bar { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 6px 5%; font-size: 10px; text-align: center; letter-spacing: 0.3px; }
+    .legal-bar strong { color: var(--gold); }
+    header { position: fixed; top: 30px; width: 100%; padding: 24px 6%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); transition: all 0.3s; }
+    header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+    .logo { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 600; color: var(--charcoal); text-decoration: none; letter-spacing: 1px; }
+    nav a { margin-left: 36px; color: var(--charcoal); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
+    nav a:hover { color: var(--gold); }
+
+    .page-hero { padding: 140px 8% 60px; text-align: center; background: var(--beige); }
+    .page-hero .tag { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 16px; }
+    .page-hero h1 { font-family: 'EB Garamond', serif; font-size: 48px; font-weight: 400; color: var(--charcoal); margin-bottom: 16px; line-height: 1.2; }
+    .page-hero p { font-size: 15px; color: var(--soft); max-width: 600px; margin: 0 auto; }
+
+    .content { max-width: 740px; margin: 0 auto; padding: 60px 6% 80px; }
+    .content h2 { font-family: 'EB Garamond', serif; font-size: 32px; font-weight: 500; color: var(--charcoal); margin: 48px 0 16px; padding-top: 16px; }
+    .content h3 { font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 500; color: var(--charcoal); margin: 32px 0 12px; }
+    .content p { font-size: 15px; color: var(--soft); margin-bottom: 16px; }
+    .content ul, .content ol { padding-left: 24px; margin-bottom: 16px; }
+    .content li { margin-bottom: 10px; font-size: 15px; color: var(--soft); }
+
+    .tip-box { background: var(--white); border-left: 3px solid var(--gold); padding: 20px 24px; margin: 24px 0; }
+    .tip-box p { margin-bottom: 0; }
+    .tip-box strong { color: var(--charcoal); }
+
+    .warning-box { background: #fef9f0; border-left: 3px solid #d4956a; padding: 20px 24px; margin: 24px 0; }
+    .warning-box p { margin-bottom: 0; color: #7a5a3a; }
+    .warning-box strong { color: #5a3a1a; }
+
+    .red-flag { background: #fef2f2; border-left: 3px solid var(--red); padding: 20px 24px; margin: 24px 0; }
+    .red-flag p { margin-bottom: 0; color: #7a3333; }
+    .red-flag strong { color: #5a1a1a; }
+
+    .green-flag { background: #f0faf4; border-left: 3px solid var(--green); padding: 20px 24px; margin: 24px 0; }
+    .green-flag p { margin-bottom: 0; color: #2a5a3a; }
+    .green-flag strong { color: #1a4a2a; }
+
+    .label-diagram { background: var(--white); border: 1px solid #e0ddd5; padding: 32px; margin: 32px 0; position: relative; }
+    .label-diagram h4 { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--charcoal); margin-bottom: 20px; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
+    .label-field { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px dashed #e0ddd5; }
+    .label-field:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .label-num { background: var(--gold); color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+    .label-text strong { display: block; font-size: 14px; color: var(--charcoal); margin-bottom: 2px; }
+    .label-text span { font-size: 13px; color: var(--soft); }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; }
+    .comparison-table th { background: var(--charcoal); color: white; padding: 12px 16px; text-align: left; font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+    .comparison-table td { padding: 12px 16px; border-bottom: 1px solid #e0ddd5; color: var(--soft); }
+    .comparison-table tr:nth-child(even) td { background: rgba(255,255,255,0.5); }
+    .comparison-table .good { color: var(--green); font-weight: 500; }
+    .comparison-table .bad { color: var(--red); font-weight: 500; }
+
+    .checklist { background: var(--white); padding: 32px; margin: 32px 0; }
+    .checklist h3 { margin-top: 0; }
+    .check-item { display: flex; gap: 12px; margin-bottom: 16px; align-items: flex-start; }
+    .check-icon { font-size: 18px; line-height: 1.5; }
+    .check-item p { margin-bottom: 0; font-size: 14px; }
+
+    .cta-section { background: var(--charcoal); color: white; padding: 64px 8%; text-align: center; }
+    .cta-section h2 { font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 400; margin-bottom: 16px; }
+    .cta-section p { color: rgba(255,255,255,0.7); font-size: 15px; max-width: 500px; margin: 0 auto 24px; }
+    .cta-form { display: flex; gap: 12px; max-width: 420px; margin: 0 auto; }
+    .cta-form input { flex: 1; padding: 14px 20px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.08); color: white; font-size: 14px; border-radius: 6px; font-family: 'Inter', sans-serif; }
+    .cta-form input::placeholder { color: rgba(255,255,255,0.4); }
+    .cta-form button { padding: 14px 28px; background: var(--gold); color: white; border: none; font-size: 14px; font-weight: 500; letter-spacing: 0.5px; cursor: pointer; border-radius: 6px; font-family: 'Inter', sans-serif; transition: background 0.3s; white-space: nowrap; }
+    .cta-form button:hover { background: #b8943d; }
+    .cta-note { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 12px; }
+
+    .trust-bar { background: var(--charcoal); color: rgba(255,255,255,0.8); padding: 14px 6%; display: flex; justify-content: center; align-items: center; gap: 24px; font-size: 12px; letter-spacing: 0.5px; flex-wrap: wrap; }
+    .trust-bar .divider { color: rgba(255,255,255,0.2); }
+    .trust-bar .cta-gold { color: var(--gold); text-decoration: none; font-weight: 500; border: 1px solid var(--gold); padding: 4px 14px; border-radius: 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s; }
+    .trust-bar .cta-gold:hover { background: var(--gold); color: white; }
+
+    .related-links { max-width: 740px; margin: 0 auto; padding: 40px 6%; }
+    .related-links h3 { font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 500; margin-bottom: 16px; color: var(--charcoal); }
+    .related-links a { display: block; padding: 8px 0; color: var(--gold); text-decoration: none; font-size: 14px; border-bottom: 1px solid #e8e4dc; }
+    .related-links a:hover { color: var(--charcoal); }
+
+    footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 48px 6% 24px; font-size: 12px; }
+    .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; max-width: 900px; margin: 0 auto 32px; }
+    .footer-grid h4 { color: rgba(255,255,255,0.8); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+    .footer-grid a { display: block; color: rgba(255,255,255,0.5); text-decoration: none; margin-bottom: 8px; font-size: 12px; }
+    .footer-grid a:hover { color: var(--gold); }
+    .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); }
+
+    .back-to-top { position: fixed; bottom: 30px; right: 30px; width: 44px; height: 44px; background: var(--gold); color: white; border: none; border-radius: 50%; font-size: 18px; cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.3s; z-index: 999; display: flex; align-items: center; justify-content: center; }
+    .back-to-top.visible { opacity: 1; visibility: visible; }
+    .back-to-top:hover { background: #b8943d; transform: translateY(-2px); }
+
+    @media (max-width: 768px) {
+      .page-hero h1 { font-size: 32px; }
+      .content h2 { font-size: 26px; }
+      nav { display: none; }
+      .cta-form { flex-direction: column; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .label-field { flex-direction: column; gap: 8px; }
+      .comparison-table { font-size: 12px; }
+      .comparison-table th, .comparison-table td { padding: 8px 10px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Jak czytać etykiety suplementów diety? Praktyczny przewodnik",
+    "description": "Kompletny przewodnik po czytaniu etykiet suplementów diety — co oznacza każdy element, na co zwrócić uwagę.",
+    "author": { "@type": "Organization", "name": "Cognivia" },
+    "publisher": { "@type": "Organization", "name": "Cognivia", "url": "https://cognivia.eu" },
+    "mainEntityOfPage": "https://cognivia.eu/jak-czytac-etykiety.html",
+    "datePublished": "2026-03-23",
+    "inLanguage": "pl"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://cognivia.eu/" },
+      { "@type": "ListItem", "position": 2, "name": "Jak czytać etykiety", "item": "https://cognivia.eu/jak-czytac-etykiety.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <div class="legal-bar">
+    <strong>Suplement diety.</strong> CogniCit nie jest lekiem. Nie zastępuje zróżnicowanej diety.
+  </div>
+
+  <header id="header">
+    <a href="/" class="logo">Cognivia</a>
+    <nav>
+      <a href="/produkt.html">Produkt</a>
+      <a href="/nauka.html">Nauka</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/blog/">Blog</a>
+      <a href="/o-nas.html">O nas</a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+    <a href="/">Strona główna</a>
+    <span>›</span>
+    <span>Jak czytać etykiety</span>
+  </nav>
+
+  <section class="page-hero">
+    <div class="tag">Przewodnik konsumencki</div>
+    <h1>Jak czytać etykiety suplementów diety?</h1>
+    <p>7 elementów etykiety, które mówią Ci więcej niż marketing. Praktyczny przewodnik dla świadomego konsumenta.</p>
+  </section>
+
+  <article class="content">
+
+    <p>Na polskim rynku jest ponad 30 000 suplementów diety. Reklamy obiecują cuda, ale etykieta nigdy nie kłamie — <strong>o ile wiesz, jak ją czytać</strong>. Ten przewodnik pokaże Ci, na co zwrócić uwagę, kupując suplement.</p>
+
+    <h2>Anatomia etykiety — co musi się na niej znaleźć</h2>
+
+    <p>Zgodnie z rozporządzeniem UE nr 1169/2011 oraz polskim prawem, etykieta suplementu diety <strong>musi</strong> zawierać konkretne informacje. Oto diagram z 7 kluczowymi elementami:</p>
+
+    <div class="label-diagram">
+      <h4>📋 Elementy obowiązkowe etykiety</h4>
+
+      <div class="label-field">
+        <div class="label-num">1</div>
+        <div class="label-text">
+          <strong>Nazwa produktu + „suplement diety"</strong>
+          <span>Każdy suplement MUSI mieć na opakowaniu napis „suplement diety". Jeśli go nie ma — nie jest legalnie zgłoszonym suplementem.</span>
+        </div>
+      </div>
+
+      <div class="label-field">
+        <div class="label-num">2</div>
+        <div class="label-text">
+          <strong>Składniki aktywne z ilościami w dziennej porcji</strong>
+          <span>Nie wystarczy wymienić składników — musi być podana dokładna ilość w zalecanej porcji dziennej (np. „Kwas alfa-liponowy — 250 mg").</span>
+        </div>
+      </div>
+
+      <div class="label-field">
+        <div class="label-num">3</div>
+        <div class="label-text">
+          <strong>Zalecana dzienna porcja do spożycia</strong>
+          <span>Ile kapsułek/tablet, jak często. Musi być jasno określone (np. „1 kapsułka dziennie").</span>
+        </div>
+      </div>
+
+      <div class="label-field">
+        <div class="label-num">4</div>
+        <div class="label-text">
+          <strong>Ostrzeżenie o nieprzekraczaniu zalecanej porcji</strong>
+          <span>Standardowy tekst: „Nie przekraczać zalecanej dziennej porcji. Suplement diety nie może być stosowany jako substytut zróżnicowanej diety."</span>
+        </div>
+      </div>
+
+      <div class="label-field">
+        <div class="label-num">5</div>
+        <div class="label-text">
+          <strong>Warunki przechowywania</strong>
+          <span>Temperatura, wilgotność, dostępność dla dzieci. Często pomijane, ale wymagane prawem.</span>
+        </div>
+      </div>
+
+      <div class="label-field">
+        <div class="label-num">6</div>
+        <div class="label-text">
+          <strong>Producent / podmiot odpowiedzialny z adresem</strong>
+          <span>Nazwa firmy + adres. W Polsce: podmiot zgłaszający do GIS. Musisz wiedzieć, kto odpowiada za produkt.</span>
+        </div>
+      </div>
+
+      <div class="label-field">
+        <div class="label-num">7</div>
+        <div class="label-text">
+          <strong>Data minimalnej trwałości / numer partii</strong>
+          <span>„Najlepiej spożyć przed" + numer partii produkcyjnej. Pozwala śledzić produkt w razie problemów z jakością.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <p><strong>💡 Zasada:</strong> Jeśli którakolwiek z tych 7 informacji brakuje — to czerwona flaga. Prawny suplement diety w Polsce MUSI je wszystkie mieć.</p>
+    </div>
+
+    <h2>Na co zwrócić uwagę — 5 pułapek na etykietach</h2>
+
+    <h3>1. „Mieszanka zastrzeżona" (proprietary blend)</h3>
+    <p>Niektóre suplementy podają składniki w formie „mieszanki zastrzeżonej" z łączną wagą, ale <strong>bez rozbicia na poszczególne składniki</strong>. To oznacza, że producent nie chce Ci powiedzieć, ile każdego składnika naprawdę jest w kapsułce.</p>
+
+    <div class="red-flag">
+      <p><strong>🚩 Czerwona flaga:</strong> „Mieszanka nootropowa — 500 mg (cytykolina, L-teanina, Bacopa monnieri, Rhodiola rosea...)" — ile z tego to cytykolina? 10 mg? 200 mg? Nie wiesz.</p>
+    </div>
+
+    <div class="green-flag">
+      <p><strong>✅ Zielona flaga:</strong> „Cytykolina (CDP-cholina) — 300 mg, Kwas alfa-liponowy — 250 mg, Beta-cyklodekstryna — 250 mg" — każda dawka jawna, policzalna.</p>
+    </div>
+
+    <h3>2. Dawki „na papierze" vs. dawki z badań</h3>
+    <p>Składnik obecny w suplemencie ≠ składnik w dawce terapeutycznej. Przykład: ashwagandha w badaniach działała w dawkach 300-600 mg ekstraktu KSM-66. Jeśli suplement ma 50 mg ashwagandhy — składnik jest, ale dawka jest symboliczna.</p>
+
+    <div class="tip-box">
+      <p><strong>💡 Wskazówka:</strong> Wyszukaj „[składnik] clinical dose" — PubMed lub Examine.com pokażą Ci, jaka dawka była użyta w badaniach. Porównaj z etykietą.</p>
+    </div>
+
+    <h3>3. Substancje pomocnicze i wypełniacze</h3>
+    <p>Lista „pozostałe składniki" (substancje wypełniające, przeciwzbrylające, barwniki) mówi dużo o jakości produktu. Powszechne i akceptowalne: stearynian magnezu, dwutlenek krzemu, celuloza mikrokrystaliczna. Budzące wątpliwości: sztuczne barwniki (E102, E110), titanium dioxide (E171 — zakazany w UE od 2022).</p>
+
+    <h3>4. Forma składnika — nie wszystkie formy są równe</h3>
+    <p>Ten sam składnik może występować w różnych formach chemicznych o różnej biodostępności:</p>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Składnik</th>
+          <th>Forma słabsza</th>
+          <th>Forma lepsza</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Magnez</td>
+          <td class="bad">tlenek magnezu (słaba wchłanialność)</td>
+          <td class="good">cytrynian, glicynian, treonian</td>
+        </tr>
+        <tr>
+          <td>Żelazo</td>
+          <td class="bad">siarczan żelaza (problemy żołądkowe)</td>
+          <td class="good">bisglicynian żelaza, fumaran</td>
+        </tr>
+        <tr>
+          <td>Kurkumina</td>
+          <td class="bad">kurkumina bez nośnika (słaba biodostępność)</td>
+          <td class="good">z piperyną lub fosfolipidami (Meriva)</td>
+        </tr>
+        <tr>
+          <td>Cholina</td>
+          <td class="bad">winian choliny (podstawowa forma)</td>
+          <td class="good">cytykolina / CDP-cholina (forma nootropowa)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>5. Certyfikaty i oświadczenia — co oznaczają?</h3>
+    <p>Na etykiecie mogą pojawić się różne symbole i oznaczenia:</p>
+    <ul>
+      <li><strong>GMP (Good Manufacturing Practice)</strong> — producent przestrzega standardów jakości produkcji. Wiarygodne, jeśli certyfikat jest aktualny.</li>
+      <li><strong>Zgłoszenie do GIS</strong> — legalny wymóg w Polsce. Numer zgłoszenia w Głównym Inspektoracie Sanitarnym.</li>
+      <li><strong>CoA (Certificate of Analysis)</strong> — certyfikat analizy partii. Oznacza, że każda partia jest testowana. Zapytaj producenta — dobry producent udostępni CoA.</li>
+      <li><strong>Health claims (oświadczenia zdrowotne)</strong> — regulowane przez WE 1924/2006. Suplement MOŻE używać tylko zatwierdzonych oświadczeń. „Wspiera funkcje poznawcze" jest dozwolone (dla choliny). „Leczy depresję" — NIE.</li>
+      <li><strong>Bez GMO</strong> — deklaracja, że produkt nie zawiera genetycznie modyfikowanych organizmów.</li>
+    </ul>
+
+    <div class="warning-box">
+      <p><strong>⚠️ Uwaga:</strong> Obecność napisu „GMP" na opakowaniu nie oznacza automatycznie, że producent ma certyfikat GMP. Poproś o numer certyfikatu lub raport z audytu. Serio — poproś.</p>
+    </div>
+
+    <h2>Checklist: 10 pytań przed zakupem</h2>
+
+    <div class="checklist">
+      <h3>✅ Sprawdź przed zakupem</h3>
+
+      <div class="check-item">
+        <span class="check-icon">☐</span>
+        <p>Czy na opakowaniu jest napis „suplement diety"?</p>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">☐</span>
+        <p>Czy składniki aktywne mają podane dokładne ilości?</p>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">☐</span>
+        <p>Czy dawki odpowiadają dawkom z badań naukowych?</p>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">☐</span>
+        <p>Czy jest podana nazwa i adres producenta/podmiotu odpowiedzialnego?</p>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">☐</span>
+        <p>Czy są ostrzeżenia (przeciwwskazania, ciąża, interakcje)?</p>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">☐</span>
+        <p>Czy forma składników jest optymalna (nie najtańsza)?</p>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">☐</span>
+        <p>Czy jest informacja o warunkach przechowywania?</p>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">☐</span>
+        <p>Czy jest numer partii / data trwałości?</p>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">☐</span>
+        <p>Czy producent deklaruje GMP lub inne standardy jakości?</p>
+      </div>
+      <div class="check-item">
+        <span class="check-icon">☐</span>
+        <p>Czy oświadczenia zdrowotne są zgodne z rozporządzeniem WE 1924/2006 (żadnych cudownych obietnic)?</p>
+      </div>
+    </div>
+
+    <h2>Jak CogniCit wypada na tle tej checklisty?</h2>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Kryterium</th>
+          <th>Wiele suplementów</th>
+          <th style="color: var(--gold);">CogniCit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dokładne dawki składników</td>
+          <td class="bad">„Mieszanka 500 mg"</td>
+          <td class="good">Każdy składnik z dokładną dawką</td>
+        </tr>
+        <tr>
+          <td>Dawki z badań naukowych</td>
+          <td class="bad">Często symboliczne</td>
+          <td class="good">250 mg ALA, 300 mg cytykolina — zgodne z badaniami</td>
+        </tr>
+        <tr>
+          <td>Optymalne formy składników</td>
+          <td class="bad">Tanie formy</td>
+          <td class="good">CDP-cholina (cytykolina), β-CD jako nośnik</td>
+        </tr>
+        <tr>
+          <td>Produkcja GMP</td>
+          <td class="bad">Różnie bywa</td>
+          <td class="good">Certyfikowany zakład GMP</td>
+        </tr>
+        <tr>
+          <td>Zgłoszenie GIS</td>
+          <td class="bad">Często brak informacji</td>
+          <td class="good">Zgłoszony zgodnie z prawem</td>
+        </tr>
+        <tr>
+          <td>Transparentność składu</td>
+          <td class="bad">Wypełniacze, ukryte składniki</td>
+          <td class="good">3 składniki, zero zbędnych dodatków</td>
+        </tr>
+        <tr>
+          <td>Rozsądne oświadczenia</td>
+          <td class="bad">„Supermózg!", „IQ +50"</td>
+          <td class="good">Zgodne z WE 1924/2006</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Podsumowanie</h2>
+
+    <p>Czytanie etykiety suplementu to <strong>najważniejsza umiejętność świadomego konsumenta</strong>. Marketing mówi jedno — etykieta mówi drugie. Naucz się czytać tę drugą.</p>
+
+    <p>Krótkie podsumowanie:</p>
+    <ul>
+      <li>Szukaj dokładnych dawek, nie „mieszanki zastrzeżonej"</li>
+      <li>Porównuj dawki z badaniami klinicznymi</li>
+      <li>Sprawdzaj formę składników (biodostępność ma znaczenie)</li>
+      <li>Weryfikuj certyfikaty — poproś o dokumenty</li>
+      <li>Uważaj na cudowne obietnice — suplement nie leczy</li>
+    </ul>
+
+    <p>Jeśli szukasz suplementu, który przechodzi tę checklistę — sprawdź <a href="/produkt.html" style="color: var(--gold);">CogniCit</a>. 3 składniki, jawne dawki, produkcja GMP, zgłoszenie do GIS.</p>
+
+  </article>
+
+  <div class="related-links">
+    <h3>Powiązane strony</h3>
+    <a href="/produkt.html">→ CogniCit — składniki, dawki i zamawianie</a>
+    <a href="/nauka.html">→ Nauka — badania nad składnikami CogniCit</a>
+    <a href="/jak-wybrac-suplement.html">→ Jak wybrać suplement? 7 pytań do zadania</a>
+    <a href="/faq.html">→ FAQ — najczęstsze pytania o CogniCit</a>
+    <a href="/blog/suplement-vs-lek.html">→ Suplement diety vs lek — co musisz wiedzieć</a>
+  </div>
+
+  <div class="trust-bar">
+    <span>CogniCit — 3 synergistyczne składniki</span>
+    <span class="divider">·</span>
+    <span>GMP Certified</span>
+    <span class="divider">·</span>
+    <span>EU Compliant</span>
+    <span class="divider">·</span>
+    <a href="/produkt.html" class="cta-gold">Sprawdź CogniCit →</a>
+  </div>
+
+  <section class="cta-section">
+    <h2>Bądź pierwszy, który dowie się o starcie</h2>
+    <p>Zapisz się na listę oczekujących. Otrzymasz powiadomienie o premierze i ekskluzywną zniżkę.</p>
+    <form class="cta-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="email" name="email" placeholder="Twój adres e-mail" required>
+      <input type="hidden" name="source" value="jak-czytac-etykiety">
+      <button type="submit">Powiadom mnie</button>
+    </form>
+    <p class="cta-note">Bez spamu. Tylko powiadomienie o starcie CogniCit.</p>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>Produkt</h4>
+        <a href="/produkt.html">CogniCit</a>
+        <a href="/nauka.html">Nauka</a>
+        <a href="/kwas-alfa-liponowy.html">Kwas alfa-liponowy</a>
+        <a href="/cytykolina.html">Cytykolina</a>
+        <a href="/beta-cyklodekstryna.html">Beta-cyklodekstryna</a>
+      </div>
+      <div>
+        <h4>Informacje</h4>
+        <a href="/faq.html">FAQ</a>
+        <a href="/jak-stosowac.html">Jak stosować</a>
+        <a href="/dostawa.html">Dostawa i płatność</a>
+        <a href="/zwroty.html">Zwroty i reklamacje</a>
+      </div>
+      <div>
+        <h4>Firma</h4>
+        <a href="/o-nas.html">O nas</a>
+        <a href="/blog/">Blog</a>
+        <a href="/regulamin.html">Regulamin</a>
+        <a href="/polityka-prywatnosci.html">Polityka prywatności</a>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Cognivia. Wszelkie prawa zastrzeżone.
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Powrót na górę">↑</button>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      document.getElementById('scrollProgress').style.width = progress + '%';
+    });
+    const btt = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => { btt.classList.toggle('visible', window.scrollY > 400); });
+    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+
+</body>
+</html>

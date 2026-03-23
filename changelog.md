@@ -182,6 +182,50 @@
 - WooCommerce status: NOT present — site uses custom JS cart (cognivia-cart.js). Cart/checkout/payment flow is client-side only. Real payment gateway integration still needs merchant account.
 - Formspree placeholder ID still needs replacement
 
+### 2026-03-23 — Power Cycle #8 (07:47 UTC)
+**Implemented:**
+- ✅ PageSpeed optimization — added `<link rel="preload" as="style">` for Google Fonts CSS to 11 key pages (index, produkt, nauka, jak-stosowac, jak-wybrac-suplement, faq, all 5 blog pages). Added `defer` to cognivia-cart.js on index.html. Added missing `preconnect` to faq.html. Preconnect for fonts.googleapis.com and fonts.gstatic.com already present on most pages.
+- ✅ "Jak czytać etykiety suplementów?" educational page (jak-czytac-etykiety.html) — 27 KB
+  - 7-element label anatomy diagram with numbered visual layout
+  - 5 common label traps: proprietary blends, symbolic doses, fillers, ingredient forms, certifications
+  - Red flag / green flag comparison boxes
+  - Full comparison table: good vs bad ingredient forms (magnesium, iron, curcumin, choline)
+  - Certification explanation: GMP, GIS, CoA, health claims (WE 1924/2006)
+  - 10-point purchase checklist (interactive check-boxes)
+  - CogniCit comparison table showing how it passes all criteria
+  - Article + BreadcrumbList JSON-LD schemas
+  - Cross-links to produkt, nauka, jak-wybrac-suplement, FAQ, blog/suplement-vs-lek
+  - Email CTA section, trust bar, responsive design
+- ✅ Sitemap updated with new page URL
+- ✅ Blog post outline added to content_calendar.md — "Jak czytać etykiety suplementów?"
+- ✅ Improvement queue updated — items #43 and #61 marked DONE, 3 new items added (#63-65)
+
+**Files changed:**
+- `index.html` — font preload + defer cart script
+- `produkt.html` — font preload added
+- `nauka.html` — font preload added
+- `jak-stosowac.html` — font preload added
+- `jak-wybrac-suplement.html` — font preload added
+- `faq.html` — preconnect + preload added (was missing)
+- `blog/cytykolina.html` — font preload added
+- `blog/antyoksydanty.html` — font preload added
+- `blog/beta-cyklodekstryna.html` — font preload added
+- `blog/suplement-vs-lek.html` — font preload added
+- `blog/index.html` — font preload added
+- `jak-czytac-etykiety.html` — NEW (27 KB)
+- `sitemap.xml` — new URL added
+- `content_calendar.md` — new blog outline added
+- `improvement_queue.md` — 2 completed, 3 new items
+- `changelog.md` — this entry
+
+**Git:** Pending commit
+
+**Cart status:** Full client-side cart functional. 79 zł price displayed. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~24 completed + ~27 active = 51 total
+
+---
+
 ### 2026-03-23 — Power Cycle #7 (06:38 UTC)
 **Implemented:**
 - ✅ Consumer guide page "Jak wybrać suplement?" (jak-wybrac-suplement.html) — 17.7 KB

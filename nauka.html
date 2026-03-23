@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nauka — Badania nad składnikami CogniCit | Cognivia</title>
   <meta name="description" content="Przegląd badań naukowych nad składnikami CogniCit: kwas alfa-liponowy, cytykolina, beta-cyklodekstryna. Suplement diety — nie lek.">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -34,15 +35,54 @@
     .warnings-section h3 { color: #c0392b; margin-top: 0; }
     footer { background: var(--charcoal); color: rgba(255,255,255,0.6); padding: 40px 8%; text-align: center; font-size: 13px; }
     footer a { color: var(--gold); }
-  </style>
+  
+    .breadcrumb {
+      max-width: 900px;
+      margin: 100px auto 0;
+      padding: 0 6%;
+      font-size: 12px;
+      color: var(--soft-text, #5a5a58);
+    }
+    .breadcrumb a { color: var(--gold, #c9a96e); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+</style>
   <link rel="alternate" hreflang="pl" href="https://cognivia.eu/nauka.html">
   <link rel="canonical" href="https://cognivia.eu/nauka.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://cognivia.eu"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Nauka",
+      "item": "https://cognivia.eu/nauka.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+<a href="/">Strona główna</a>
+<span>›</span>
+<span>Nauka</span>
+</nav>
   <div class="legal-bar"><strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.</div>
   <header>
     <a href="index.html" class="logo">Cogni<span>via</span></a>
-    <nav><a href="index.html">Strona główna</a><a href="produkt.html">Produkt</a><a href="blog/">Blog</a><a href="o-nas.html">O nas</a></nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav"><a href="index.html">Strona główna</a><a href="produkt.html">Produkt</a><a href="blog/">Blog</a><a href="o-nas.html">O nas</a></nav>
   </header>
   <section class="page-hero">
     <h1>Nauka</h1>
