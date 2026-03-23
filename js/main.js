@@ -63,3 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
       progressBar.style.width = docHeight > 0 ? (scrollTop / docHeight * 100) + '%' : '0%';
     }, { passive: true });
   }
+
+// Scroll Progress Bar
+const scrollProgress = document.getElementById('scrollProgress');
+if (scrollProgress) {
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    scrollProgress.style.width = progress + '%';
+  }, { passive: true });
+}
