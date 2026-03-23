@@ -776,3 +776,43 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Multiple buy buttons on produkt.html. Payment gateway (PayU/Przelewy24) needs merchant account.
 
 **Queue:** ~68 completed + ~55 active = 123 total
+
+### 2026-03-23 — Power Cycle #23 (23:00 UTC)
+**Implemented:**
+- ✅ Item #124 — "Oczekiwania vs rzeczywistość" infographic section on index.html
+  - 6-card grid: 3 myths (red) vs 3 facts (green)
+  - Myth/Fact pairs: (1) "Suplement działa jak lek" vs "Suplement wspiera, nie leczy", (2) "Więcej składników = lepszy efekt" vs "3 składniki, precyzyjne dawki", (3) "Naturalne = zawsze bezpieczne" vs "GMP + GIS + CoA = zaufanie"
+  - Color-coded MIT/FAKT badges (red/green), card design with emoji icons
+  - Bottom CTA bar: "Realistyczne podejście do suplementacji" with link to produkt.html
+  - Responsive grid (auto-fit minmax 300px), content-visibility: auto for below-fold cards
+  - Positioned between "Zaufali nam" certification logos and blog section
+- ✅ Item #125 — Email capture popup for blog pages
+  - Slide-up popup on all 4 blog posts (cytykolina, antyoksydanty, beta-cyklodekstryna, suplement-vs-lek)
+  - Trigger: 60% scroll depth (engaged readers only)
+  - Design: "Podoba Ci się artykuł?" with 📬 icon, 15% discount CTA, email input + submit
+  - Smooth translateY animation (cubic-bezier easing), dismissible with X button
+  - localStorage persistence (blogPopupDismissed) — won't re-show after close
+  - Formspree integration (placeholder form ID, source=blog-popup hidden field)
+  - Clean responsive layout, doesn't interfere with reading
+- ✅ 3 blog post outlines added to content_calendar.md:
+  - "Suplementy dla programistów" — tech demographic, SEO for developer supplements
+  - "Beta-cyklodekstryna a leki" — science/authority, explains β-CD mechanism
+  - "Suplementy na koncentrację przed egzaminem" — seasonal/student, exam prep
+- ✅ 3 new improvement ideas added to queue (#127-129)
+- ✅ Items #124 and #125 marked DONE in improvement queue
+
+**Files changed:**
+- `index.html` — "Oczekiwania vs rzeczywistość" section (6 cards + CTA) between Zaufali nam and blog
+- `blog/cytykolina.html` — email capture popup + scroll trigger JS
+- `blog/antyoksydanty.html` — email capture popup + scroll trigger JS
+- `blog/beta-cyklodekstryna.html` — email capture popup + scroll trigger JS
+- `blog/suplement-vs-lek.html` — email capture popup + scroll trigger JS
+- `improvement_queue.md` — 2 items done, 3 new items, timestamp updated
+- `content_calendar.md` — 3 new blog outlines (#31-33)
+- `changelog.md` — this entry
+
+**Site verification:** All 5 modified files validated — balanced tags (index: 17 sections, 219 divs, all matched). Blog popups trigger at 60% scroll. localStorage dismissal working. Cart system unaffected (CogniviaCart.addItem calls verified on produkt.html).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Multiple buy buttons on produkt.html + sticky sidebar + floating mobile CTA. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~72 completed + 57 active = 129 total

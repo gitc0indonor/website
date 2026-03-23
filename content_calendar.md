@@ -587,6 +587,72 @@
 **Internal links:** skutki-uboczne-nootropiki.html, skutki-uboczne.html, produkt.html, faq.html, jak-stosowac.html, certyfikaty.html
 **Status:** Outline ready, needs writing
 
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #23)
+**Title:** Suplementy dla programistów — jak zadbać o mózg przy 8h przed ekranem?  
+**Target:** Polish audience, SEO / tech demographic / trending  
+**Word count:** 1500-2000  
+**Keywords:** suplementy dla programistów, suplement na koncentrację praca, nootropik programista, zmęczenie umysłowe suplement, zdrowie mózgu IT  
+
+**Outline:**
+1. **Wstęp** — Polscy programiści spędzają 8-12h dziennie przed ekranem. Jak to wpływa na mózg?
+2. **Mózg programisty** — Intensywna praca umysłowa, ciągłe przełączanie kontekstu, stres deadlinów — co dzieje się z neuronami?
+3. **Cyfrowe zmęczenie poznawcze** — "Attention residue", spadek acetylocholiny, stres oksydacyjny mitochondriów
+4. **Popularne rozwiązania i ich ograniczenia** — Kofeina (crash), energetyki (cukier), modafinil (recepta) — za i przeciw
+5. **Naukowo udokumentowane składniki** — Cytykolina (acetylocholina), ALA (ochrona mitochondriów), β-CD (biodostępność) — PubMed evidence
+6. **CogniCit — precyzyjne wsparcie** — 3 składniki, 1 kapsułka, brak zjazdu, brak uzależnienia
+7. **Higiena cyfrowa + suplementacja** — Przerwy, światło niebieskie, sen, ruch — checklist dla developera
+8. **Podsumowanie** — Zdrowy mózg = lepszy kod. Inwestuj w siebie.
+
+**CTA:** Zamów CogniCit — link do produkt.html  
+**Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, nauka.html, porownanie.html  
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #23)
+**Title:** Beta-cyklodekstryna a leki — dlaczego nośnik ma znaczenie w suplementacji?  
+**Target:** Polish audience, SEO / science / authority  
+**Word count:** 1200-1600  
+**Keywords:** beta-cyklodekstryna leki, cyklodekstryna suplement, biodostępność suplement, kompleks inkluzji, nośnik suplement diety  
+
+**Outline:**
+1. **Wstęp** — β-CD jest stosowana w farmacji od dekad. Co może dać suplementom?
+2. **Czym jest kompleks inkluzji?** — Proste wyjaśnienie: β-CD "otula" cząsteczkę aktywną, chroniąc ją przed degradacją
+3. **Zastosowania w farmacji** — Ketoprofen, itraconazol — przykłady leków z β-CD poprawiającymi biodostępność
+4. **Przejście do suplementów** — Dlaczego β-CD jest coraz częściej używana w suplementach diety
+5. **β-CD w CogniCit** — Jak chroni ALA i cytykolinę przed degradacją w żołądku
+6. **Bezpieczeństwo** — Status GRAS FDA, dopuszczenie UE, dawki do 12 g/dzień — przegląd
+7. **Porównanie z innymi nośnikami** — β-CD vs HPMC vs bez nośnika — dane z badań
+8. **Podsumowanie** — Inteligentny nośnik = lepsze wchłanianie = lepsza suplementacja
+
+**CTA:** Poznaj formułę CogniCit — link do produkt.html  
+**Internal links:** beta-cyklodekstryna.html, skladniki.html, nauka.html, produkt.html  
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #23)
+**Title:** Suplementy na koncentrację przed egzaminem — co naprawdę działa?  
+**Target:** Polish audience, SEO / seasonal / student  
+**Word count:** 1200-1600  
+**Keywords:** suplement na egzamin, suplement na koncentrację nauka, nootropik przed sesją, cytykolina nauka, suplement na pamięć egzamin  
+
+**Outline:**
+1. **Wstęp** — Sesja egzaminacyjna za pasem — czy suplementy naprawdę pomagają w nauce?
+2. **Co nauka mówi o nauce?** — Hipokamp, powtarzanie, sen — neurobiologia zapamiętywania
+3. **Co NIE działa** — Czytanie pod kreską, zarywanie nocy, kofeina w nadmiarze — mity o nauce
+4. **Co MOŻE pomóc** — Cytykolina (acetylocholina), sen 7-8h, przerwy Pomodoro, ruch — evidence-based
+5. **CogniCit jako wsparcie** — 3 składniki, dawki z badań, brak efektu zjazdu — dlaczego warto rozważyć
+6. **Plan nauki + suplementacja** — Praktyczny harmonogram: kiedy brać CogniCit, kiedy uczyć się, kiedy odpoczywać
+7. **Ostrzeżenie** — Suplement nie zastąpi nauki. Studium minimum obowiązuje.
+8. **Podsumowanie** — Zdrowy mózg + systematyczna nauka = zdany egzamin
+
+**CTA:** Zamów CogniCit — link do produkt.html  
+**Internal links:** produkt.html, blog/cytykolina.html, jak-stosowac.html, blog/suplementy-studenci (future)  
+**Status:** Outline ready, needs writing
+
+---
+
 ### New Blog Post Outline (Added 2026-03-23 — Power Cycle #22)
 **Title:** Czy suplementy na koncentrację naprawdę działają? Naukowa ocena
 **Target:** Polish audience, SEO / debunking / conversion

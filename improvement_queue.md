@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23 (Power Cycle #22)
+## Last Updated: 2026-03-23 (Power Cycle #23)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -168,6 +168,9 @@
 121. ~~[NEW] Add "Porównanie CogniCit" link to mobile nav on all pages — currently only in desktop footer, needs visible placement on mobile hamburger menu~~ ✅ — (already done in previous cycle)
 122. ~~[DONE] Create /praca-zdalna blog post — "Suplementy a praca zdalna" targeting remote workers searching for focus supplements, trending keyword in Poland, includes CogniCit positioning~~ ✅
 123. ~~[NEW] Add "Gwarancja satysfakcji" trust badge to /skutki-uboczne-nootropiki.html — 30-day money-back banner matching other informational pages for conversion consistency~~ ✅
-124. [NEW] Add pre-launch "Oczekiwania vs rzeczywistość" comparison infographic section to index.html — visual before/after showing what people expect from supplements vs what CogniCit actually delivers (realistic claims, science-backed), builds trust through honesty
-125. [NEW] Create email capture popup specifically for blog pages — "Podoba Ci się artykuł? Zapisz się po więcej" triggered after 60% scroll on blog posts, captures engaged readers
+124. ~~[NEW] Add pre-launch "Oczekiwania vs rzeczywistość" comparison infographic section to index.html~~ ✅ — Power Cycle #23. 6-card grid (3 myths in red, 3 facts in green): "Suplement działa jak lek" vs "Suplement wspiera, nie leczy", "Więcej składników = lepszy" vs "3 składniki, precyzyjne dawki", "Naturalne = bezpieczne" vs "GMP + GIS + CoA = zaufanie". Color-coded badges (MIT/FAKT), clean card design, CTA to produkt.html. Responsive grid. Inserted between "Zaufali nam" certification logos and blog section on index.html.
+125. ~~[NEW] Create email capture popup specifically for blog pages~~ ✅ — Power Cycle #23. Slide-up popup on all 4 blog posts (cytykolina, antyoksydanty, beta-cyklodekstryna, suplement-vs-lek). Triggers after 60% scroll depth, captures engaged readers. "Podoba Ci się artykuł?" CTA with 15% discount offer. Smooth translateY animation with cubic-bezier easing, dismissible with X button, localStorage persistence. Formspree integration (placeholder form ID). Clean responsive layout with email input + submit button.
 126. [NEW] Add "Powiązane pytania" (Related Questions) section to faq-produkt.html — "Ludzie pytają też..." with 3-4 additional Q&As linking to other pages, mimics Google's "People also ask" for SEO
+127. [NEW] Add "Ile kapsułek kupić?" calculator on index.html — interactive months selector (1-12), calculates total capsules needed, shows bulk discount tiers (5%/10%/15%), links to product page — drives higher AOV
+128. [NEW] Create "Poranne nawyki programisty" blog post — targeting Polish developers searching for productivity tips, positions CogniCit as part of dev morning routine, high-traffic tech demographic
+129. [NEW] Add "Aktualności" timeline section to index.html — show company milestones (GIS registration, GMP certification, launch date) as a vertical timeline, builds brand narrative and anticipation

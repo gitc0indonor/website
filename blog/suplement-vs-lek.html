@@ -248,5 +248,52 @@
 <footer>
     <p>© 2026 Cognivia. <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a> | <a href="../polityka-prywatnosci.html">Polityka prywatności</a></p>
   </footer>
+
+  <!-- Blog Email Capture Popup — #125 -->
+  <div id="blogEmailPopup" style="display:none; position:fixed; bottom:0; left:0; right:0; z-index:9990; padding: 20px 5%;">
+    <div style="max-width: 560px; margin: 0 auto; background: white; border-radius: 16px 16px 0 0; box-shadow: 0 -8px 40px rgba(0,0,0,0.15); padding: 32px 28px; position: relative; transform: translateY(100%); transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);" id="blogEmailInner">
+      <button id="blogEmailClose" style="position:absolute; top:12px; right:16px; background:none; border:none; font-size:20px; cursor:pointer; color: var(--soft-text); line-height:1;">✕</button>
+      <div style="display: flex; align-items: flex-start; gap: 16px;">
+        <div style="font-size: 36px; flex-shrink: 0;">📬</div>
+        <div>
+          <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 6px; color: var(--charcoal);">Podoba Ci się artykuł?</h3>
+          <p style="font-size: 13px; color: var(--soft-text); margin-bottom: 14px; line-height: 1.5;">Zapisz się, aby otrzymywać więcej artykułów o suplementacji i zdrowiu mózgu. <strong style="color: var(--gold);">15% zniżki</strong> w dniu premiery CogniCit.</p>
+          <form action="https://formspree.io/f/your-form-id" method="POST" style="display:flex; gap:8px; flex-wrap: wrap;">
+            <input type="email" name="email" required placeholder="Twój email" style="flex:1; min-width: 200px; padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 13px; font-family: inherit;">
+            <input type="hidden" name="source" value="blog-popup">
+            <button type="submit" style="padding: 10px 20px; background: var(--gold); color: white; border: none; border-radius: 8px; font-weight: 600; font-size: 13px; cursor: pointer; white-space: nowrap; transition: opacity 0.2s;">Zapisz się →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      const popup = document.getElementById('blogEmailPopup');
+      const inner = document.getElementById('blogEmailInner');
+      const closeBtn = document.getElementById('blogEmailClose');
+      if (!popup || !inner) return;
+      if (localStorage.getItem('blogPopupDismissed')) return;
+      let triggered = false;
+      function checkScroll() {
+        if (triggered) return;
+        const scrollPct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        if (scrollPct >= 0.6) {
+          triggered = true;
+          popup.style.display = 'block';
+          requestAnimationFrame(() => { inner.style.transform = 'translateY(0)'; });
+          window.removeEventListener('scroll', checkScroll);
+        }
+      }
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          inner.style.transform = 'translateY(100%)';
+          setTimeout(() => { popup.style.display = 'none'; }, 500);
+          localStorage.setItem('blogPopupDismissed', '1');
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
