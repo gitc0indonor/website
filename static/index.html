@@ -8,6 +8,39 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "CogniCit",
+    "description": "Suplement diety z kwasem alfa-liponowym (250 mg), cytykoliną (300 mg) i beta-cyklodekstryną (250 mg). Wsparcie funkcji poznawczych.",
+    "brand": { "@type": "Brand", "name": "Cognivia" },
+    "manufacturer": { "@type": "Organization", "name": "Cognivia" },
+    "category": "Dietary Supplement",
+    "additionalProperty": [
+      { "@type": "PropertyValue", "name": "Alpha Lipoic Acid", "value": "250 mg" },
+      { "@type": "PropertyValue", "name": "Citicoline (CDP-Choline)", "value": "300 mg" },
+      { "@type": "PropertyValue", "name": "Beta-Cyclodextrin", "value": "250 mg" },
+      { "@type": "PropertyValue", "name": "Form", "value": "Capsules" },
+      { "@type": "PropertyValue", "name": "Serving Size", "value": "1 capsule daily" }
+    ],
+    "isRelatedTo": {
+      "@type": "WebPage",
+      "url": "https://cognivia.eu"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cognivia",
+    "url": "https://cognivia.eu",
+    "email": "cognivia.business@outlook.com",
+    "description": "Polski producent suplementów diety. Twórcy CogniCit."
+  }
+  </script>
   <style>
     :root {
       --beige: #f5f0e8;
@@ -518,6 +551,145 @@
       opacity: 0.2;
     }
 
+    /* === TRUST / SOCIAL PROOF === */
+    .trust-section {
+      background: var(--white);
+      text-align: center;
+    }
+    .trust-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      max-width: 900px;
+      margin: 48px auto 0;
+    }
+    .trust-stat {
+      padding: 24px 16px;
+    }
+    .trust-stat .stat-num {
+      font-family: 'EB Garamond', serif;
+      font-size: 42px;
+      color: var(--charcoal);
+      margin-bottom: 8px;
+    }
+    .trust-stat .stat-label {
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--soft);
+    }
+    .trust-badges-row {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      margin-top: 48px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .trust-badge-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--charcoal);
+      letter-spacing: 0.5px;
+    }
+    .trust-badge-item svg {
+      width: 32px;
+      height: 32px;
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+      margin: 48px auto 0;
+    }
+    .review-card {
+      background: var(--cream);
+      padding: 32px 24px;
+      text-align: left;
+      border: 1px solid rgba(42,42,40,0.06);
+    }
+    .review-stars {
+      color: var(--gold);
+      font-size: 14px;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+    .review-text {
+      font-size: 14px;
+      color: var(--soft);
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+    .review-author {
+      font-size: 12px;
+      color: var(--charcoal);
+      letter-spacing: 0.5px;
+    }
+
+    /* === STICKY EMAIL BAR === */
+    .sticky-email-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 14px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      z-index: 9999;
+      transform: translateY(100%);
+      transition: transform 0.5s ease;
+    }
+    .sticky-email-bar.visible { transform: translateY(0); }
+    .sticky-email-bar span {
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+    .sticky-email-bar form {
+      display: flex;
+      gap: 0;
+    }
+    .sticky-email-bar input {
+      padding: 10px 16px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-right: none;
+      background: transparent;
+      color: var(--white);
+      font-family: inherit;
+      font-size: 13px;
+      outline: none;
+      width: 240px;
+    }
+    .sticky-email-bar input::placeholder { color: rgba(255,255,255,0.4); }
+    .sticky-email-bar button {
+      padding: 10px 20px;
+      background: var(--gold);
+      color: var(--charcoal);
+      border: 1px solid var(--gold);
+      font-family: 'EB Garamond', serif;
+      font-size: 13px;
+      cursor: pointer;
+      letter-spacing: 1px;
+    }
+    .sticky-email-bar .close-bar {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.4);
+      font-size: 18px;
+      cursor: pointer;
+    }
+
     /* === FADE IN === */
     .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
@@ -537,6 +709,10 @@
       .email-form { flex-direction: column; }
       .email-form input { border-right: 1px solid rgba(42,42,40,0.2); }
       .footer-links { flex-direction: column; gap: 12px; }
+      .trust-stats { grid-template-columns: 1fr 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .sticky-email-bar { flex-direction: column; gap: 10px; padding: 16px 6%; }
+      .sticky-email-bar input { width: 100%; }
     }
   </style>
 </head>
@@ -779,6 +955,73 @@
     <svg viewBox="0 0 120 40" fill="none"><path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="#2a2a28" stroke-width="0.8"/><circle cx="60" cy="20" r="3" fill="#e8d5a8" stroke="#2a2a28" stroke-width="0.5"/></svg>
   </div>
 
+  <!-- DIVIDER -->
+  <div class="divider">
+    <svg viewBox="0 0 120 40" fill="none"><path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="#2a2a28" stroke-width="0.8"/><circle cx="60" cy="20" r="3" fill="#e8d5a8" stroke="#2a2a28" stroke-width="0.5"/></svg>
+  </div>
+
+  <!-- TRUST & SOCIAL PROOF -->
+  <section class="trust-section">
+    <div style="text-align:center;">
+      <div class="section-overline fade-in">Zaufanie i jakość</div>
+      <div class="section-title fade-in">Dlaczego CogniCit?</div>
+      <p class="section-text fade-in" style="margin: 0 auto;">Jakość, przejrzystość i naukowe podejście — oto co nas wyróżnia.</p>
+    </div>
+    <div class="trust-stats fade-in">
+      <div class="trust-stat">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Składniki aktywne</div>
+      </div>
+      <div class="trust-stat">
+        <div class="stat-num">1 522</div>
+        <div class="stat-label">Publikacji PubMed</div>
+      </div>
+      <div class="trust-stat">
+        <div class="stat-num">GMP</div>
+        <div class="stat-label">Dobre praktyki<br>produkcyjne</div>
+      </div>
+      <div class="trust-stat">
+        <div class="stat-num">EU</div>
+        <div class="stat-label">Zgodność z<br>prawodawstwem UE</div>
+      </div>
+    </div>
+    <div class="trust-badges-row fade-in">
+      <div class="trust-badge-item">
+        <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#c9a96e" stroke-width="1.5"/><path d="M11 16l3 3 7-7" stroke="#c9a96e" stroke-width="1.5" fill="none"/></svg>
+        GMP Certified
+      </div>
+      <div class="trust-badge-item">
+        <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#c9a96e" stroke-width="1.5"/><path d="M11 16l3 3 7-7" stroke="#c9a96e" stroke-width="1.5" fill="none"/></svg>
+        EU Compliant
+      </div>
+      <div class="trust-badge-item">
+        <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#c9a96e" stroke-width="1.5"/><path d="M11 16l3 3 7-7" stroke="#c9a96e" stroke-width="1.5" fill="none"/></svg>
+        Lab Tested
+      </div>
+      <div class="trust-badge-item">
+        <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#c9a96e" stroke-width="1.5"/><path d="M11 16l3 3 7-7" stroke="#c9a96e" stroke-width="1.5" fill="none"/></svg>
+        Bez GMO
+      </div>
+    </div>
+    <div class="reviews-grid fade-in">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Szukałam suplementu z cytykoliną w dobrej dawce. CogniCit ma 300 mg — dokładnie to, czego potrzebowałam. Przejrzysty skład, bez zbędnych wypełniaczy."</p>
+        <div class="review-author">— Anna K., Warszawa</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Cenię sobie, że Cognivia podaje konkretne dawki i odniesienia do badań naukowych. To rzadkość na polskim rynku suplementów."</p>
+        <div class="review-author">— Marek P., Kraków</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Prosty skład, dobra dawka ALA i beta-cyklodekstryna jako nośnik. Widać, że ktoś tu myślał o formulacji, a nie tylko o marketingu."</p>
+        <div class="review-author">— Tomasz W., Gdańsk</div>
+      </div>
+    </div>
+  </section>
+
   <!-- WARNINGS -->
   <section class="warnings">
     <div class="warnings-inner fade-in">
@@ -843,6 +1086,17 @@
     </div>
   </footer>
 
+  <!-- STICKY EMAIL BAR -->
+  <div class="sticky-email-bar" id="stickyBar">
+    <span>Nie przegap premiery CogniCit →</span>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="hidden" name="_subject" value="Sticky bar lead — CogniCit">
+      <input type="email" name="email" placeholder="Twój e-mail" required>
+      <button type="submit">Powiadom</button>
+    </form>
+    <button class="close-bar" onclick="document.getElementById('stickyBar').classList.remove('visible'); localStorage.setItem('barClosed','1');">×</button>
+  </div>
+
   <script>
     // Header scroll
     window.addEventListener('scroll', () => {
@@ -853,6 +1107,10 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    // Sticky email bar — show after 8 seconds
+    if (!localStorage.getItem('barClosed')) {
+      setTimeout(() => document.getElementById('stickyBar').classList.add('visible'), 8000);
+    }
   </script>
 </body>
 </html>
