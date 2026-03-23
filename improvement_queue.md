@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23 (Power Cycle #13)
+## Last Updated: 2026-03-23 (Power Cycle #14)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -141,7 +141,7 @@
 71. [DONE] ~~Add lazy-loading for below-fold sections via content-visibility: auto~~ ✅ — Added CSS `content-visibility: auto` with `contain-intrinsic-size: auto 500px` to 12 pages: index.html (8 sections), produkt.html (all non-hero sections), all 4 blog posts, nauka, faq, jak-stosowac, jak-wybrac-suplement, jak-czytac-etykiety, jak-zamowic. Reduces initial paint cost for off-screen content.
 72. [NEW] Create "Skutki uboczne" safety page — detailed contraindications, drug interactions, pregnancy warnings — builds trust and covers regulatory requirement
 73. [DONE] ~~Add floating "Zamów teraz" CTA button on mobile~~ ✅ — Fixed bottom bar on produkt.html for mobile (<768px): price + "Zamów teraz" button with cart icon, glassmorphism backdrop, gold/green branding, adds 1 item to cart directly. Disappears on desktop. Power Cycle #12.
-74. [NEW] Add "Nowości na blogu" section to index.html — show latest 2-3 blog post cards below FAQ, drives traffic to content pages
+74. ~~[DONE] Add "Nowości na blogu" section to index.html — show latest 2-3 blog post cards below FAQ, drives traffic to content pages~~ ✅ — Power Cycle #14
 75. [NEW] Implement dark mode toggle — respect prefers-color-scheme, add manual toggle in header, update CSS variables for dark palette
 76. [NEW] Add newsletter welcome email sequence page — /dziekuje-za-zapis with what to expect, email frequency, value proposition, unsubscribe info
 77. [DONE] ~~Add "Gwarancja satysfakcji" satisfaction guarantee section to produkt.html~~ ✅ — 30-day money-back guarantee section with badge, 3-step return process (email → return → refund), link to zwroty.html policy. Power Cycle #12.
@@ -153,6 +153,11 @@
 83. [DONE] ~~Add "Polecane artykuły" section to produkt.html~~ ✅ — 3 blog post cards (cytykolina, antyoksydanty, beta-CD) with emojis, tags, excerpts, links. Positioned between satisfaction guarantee and buy section. Grid layout responsive. Power Cycle #13.
 84. [NEW] Add countdown timer for pre-launch — "Pierwsze partie dostępne za X dni" creates urgency, email capture gate
 85. [DONE] ~~Create /kontakt page — dedicated contact form, email, business hours, GDPR-compliant data processing info~~ ✅ — Full contact page with email card, response time card, location card, contact form (Formspree, subject dropdown), FAQ quick-links section, GDPR notice, BreadcrumbList + ContactPage JSON-LD schemas, canonical/hreflang/OG meta, responsive. Added to sitemap.xml and index.html footer. Power Cycle #13.
-86. [NEW] Add "Napisz do nas" floating contact button on mobile — small chat icon bottom-right, expands to show email + form link
+86. ~~[DONE] Add "Napisz do nas" floating contact button on mobile — small chat icon bottom-right, expands to show email + form link~~ ✅ — Power Cycle #14
 87. [NEW] Create /polityka-cookies page — GDPR cookie consent banner + detailed cookie policy, required for EU compliance
-88. [NEW] Add "Ostatnio przeglądane" section — track last 3 product/content pages in localStorage, display at bottom of pages
+88. ~~[DONE] Add "Ostatnio przeglądane" section — track last 3 product/content pages in localStorage, display at bottom of pages~~
+89. ~~[DONE] Add "Nowości na blogu" section to index.html — show latest 3 blog post cards (cytykolina, antyoksydanty, beta-CD) below comparison section, drives traffic to content pages. Includes emoji heroes, category tags, excerpts, hover effects, "Wszystkie artykuły" CTA button. Responsive grid. Power Cycle #14.~~ ✅
+90. ~~[DONE] Add floating "Napisz do nas" contact button on mobile — small chat icon bottom-right (fixed, z-index 998), expands on click to show popup with email link, form link, FAQ link. Glassmorphism-free clean design matching site palette. Mobile only (<768px). Dismisses on outside click. Power Cycle #14.~~ ✅
+91. [NEW] Add breadcrumb navigation to blog post pages (blog/cytykolina.html etc.) — currently missing, improves SEO and UX
+92. [NEW] Create /skladniki landing page — overview of all 3 ingredients with comparison table, links to individual pages, infographic-style layout
+93. [NEW] Add pre-launch countdown timer — "Pierwsze partie dostępne za X dni" on index.html hero, creates urgency with email capture gate

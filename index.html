@@ -483,6 +483,143 @@
       line-height: 1.8;
     }
 
+    /* === Blog Latest === */
+    .blog-latest {
+      padding: 80px 24px;
+      background: var(--white);
+    }
+    .blog-latest-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 960px;
+      margin: 40px auto 0;
+    }
+    .blog-latest-card {
+      display: block;
+      background: var(--cream);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-decoration: none;
+      color: var(--text-dark);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid var(--border);
+    }
+    .blog-latest-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    }
+    .blog-latest-emoji {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+    .blog-latest-tag {
+      display: inline-block;
+      background: var(--gold-light);
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      font-family: 'Inter', sans-serif;
+    }
+    .blog-latest-card h3 {
+      font-family: 'EB Garamond', serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 8px;
+      line-height: 1.3;
+      color: var(--charcoal);
+    }
+    .blog-latest-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin: 0 0 16px;
+    }
+    .blog-latest-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.3px;
+    }
+    @media (max-width: 768px) {
+      .blog-latest { padding: 60px 20px; }
+      .blog-latest-grid { grid-template-columns: 1fr; }
+    }
+
+    /* === Floating Contact Button === */
+    .floating-contact {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      right: 16px;
+      z-index: 998;
+    }
+    .floating-contact-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--white);
+      border: none;
+      box-shadow: 0 4px 16px rgba(184,142,74,0.4);
+      cursor: pointer;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .floating-contact-btn:hover { background: var(--gold-dark); transform: scale(1.08); }
+    .floating-contact-popup {
+      position: absolute;
+      bottom: 64px;
+      right: 0;
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+      padding: 20px;
+      width: 240px;
+      opacity: 0;
+      transform: translateY(8px) scale(0.95);
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .floating-contact-popup.open {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+    .floating-contact-popup h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: var(--charcoal);
+    }
+    .floating-contact-popup a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.2s;
+    }
+    .floating-contact-popup a:hover { background: var(--cream); }
+    .floating-contact-popup a .fc-icon { font-size: 18px; }
+    @media (max-width: 768px) {
+      .floating-contact { display: block; }
+    }
+
     /* === CTA === */
     .cta-section {
       background: var(--cream);
@@ -1407,6 +1544,38 @@
     <p class="comparison-note fade-in">Dane porównawcze oparte na analizie suplementów dostępnych na polskim rynku (marzec 2026). Informacje o konkurencyjnych produktach mają charakter orientacyjny.</p>
   </section>
 
+  <!-- Latest Blog Posts -->
+  <section class="blog-latest" id="blog">
+    <div class="section-title fade-in">Najnowsze artykuły na blogu</div>
+    <p class="section-text fade-in">Poznaj naukę stojącą za CogniCit — artykuły o składnikach, suplementacji i zdrowiu mózgu.</p>
+    <div class="blog-latest-grid">
+      <a href="blog/cytykolina.html" class="blog-latest-card fade-in">
+        <div class="blog-latest-emoji">🧠</div>
+        <div class="blog-latest-tag">Nauka</div>
+        <h3>Czym jest cytykolina? Przewodnik po CDP-cholinie</h3>
+        <p>Prekursor acetylocholiny — kluczowego neuroprzekaźnika odpowiedzialnego za koncentrację i pamięć.</p>
+        <span class="blog-latest-link">Czytaj więcej →</span>
+      </a>
+      <a href="blog/antyoksydanty.html" class="blog-latest-card fade-in">
+        <div class="blog-latest-emoji">🛡️</div>
+        <div class="blog-latest-tag">Zdrowie</div>
+        <h3>Antyoksydanty a zdrowie mózgu</h3>
+        <p>Jak stres oksydacyjny wpływa na neurony i dlaczego ochrona antyoksydacyjna ma znaczenie.</p>
+        <span class="blog-latest-link">Czytaj więcej →</span>
+      </a>
+      <a href="blog/beta-cyklodekstryna.html" class="blog-latest-card fade-in">
+        <div class="blog-latest-emoji">🔬</div>
+        <div class="blog-latest-tag">Technologia</div>
+        <h3>Beta-cyklodekstryna — inteligentny nośnik</h3>
+        <p>Jak β-CD poprawia wchłanianie składników aktywnych i chroni je przed degradacją.</p>
+        <span class="blog-latest-link">Czytaj więcej →</span>
+      </a>
+    </div>
+    <div style="text-align: center; margin-top: 32px;">
+      <a href="blog/index.html" class="btn-add-cart btn-add-cart-secondary fade-in" style="text-decoration:none; display: inline-block;">Wszystkie artykuły na blogu →</a>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section" id="kontakt">
     <div class="section-title fade-in">Zamów CogniCit</div>
@@ -1689,6 +1858,28 @@
       if ('ontouchstart' in window) {
         setTimeout(() => { if (!overlay.classList.contains('visible')) showPopup(); }, 45000);
       }
+    })();
+  </script>
+
+  <!-- Floating Contact Button (mobile only) -->
+  <div class="floating-contact" id="floatingContact">
+    <div class="floating-contact-popup" id="fcPopup">
+      <h4>Skontaktuj się z nami</h4>
+      <a href="mailto:cognivia.business@outlook.com"><span class="fc-icon">✉️</span> cognivia.business@outlook.com</a>
+      <a href="kontakt.html"><span class="fc-icon">📝</span> Formularz kontaktowy</a>
+      <a href="faq.html"><span class="fc-icon">❓</span> Najczęstsze pytania</a>
+    </div>
+    <button class="floating-contact-btn" id="fcBtn" aria-label="Kontakt">💬</button>
+  </div>
+  <script>
+    (function() {
+      const btn = document.getElementById('fcBtn');
+      const popup = document.getElementById('fcPopup');
+      if (!btn || !popup) return;
+      btn.addEventListener('click', () => { popup.classList.toggle('open'); });
+      document.addEventListener('click', (e) => {
+        if (!document.getElementById('floatingContact').contains(e.target)) popup.classList.remove('open');
+      });
     })();
   </script>
 </body>

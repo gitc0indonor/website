@@ -394,3 +394,23 @@
 **CTA:** Email signup for launch notification  
 **Internal links:** produkt.html, nauka.html, jak-wybrac-suplement.html, blog/cytykolina.html, blog/antyoksydanty.html  
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #14)
+**Title:** Jak kofeina wpływa na mózg? I dlaczego CogniCit to coś więcej niż energetyk  
+**Target:** Polish audience, SEO / coffee culture / conversion  
+**Word count:** 1200-1600  
+**Keywords:** kofeina a mózg, suplement zamiast kawy, cytykolina kofeina, nootropik zamiast kawy, koncentracja bez kawy  
+
+**Outline:**
+1. **Wstęp** — Polacy piją 3-4 filiżanki kawy dziennie — ale czy kofeina naprawdę poprawia pracę mózgu?
+2. **Jak działa kofeina?** — Blokada receptorów adenozynowych, krótkotrwały efekt pobudzenia, tolerancja
+3. **Ciemna strona kofeiny** — Nerwowość, bezsenność, zjazd po odstawieniu, brak wpływu na pamięć długotrwałą
+4. **Cytykolina vs kofeina** — Porównanie mechanizmów: adenozyna vs acetylocholina — zupełnie różne ścieżki
+5. **Czy można łączyć?** — Kofeina + cytykolina — synergia czy konflikt? Co mówią badania
+6. **ALA — ochrona której kofeina nie daje** — Antyoksydacja mitochondriów, regeneracja neuronów
+7. **CogniCit — inteligentna alternatywa** — 3 składniki, trwały efekt, brak zjazdu, 1 kapsułka dziennie
+8. **Podsumowanie** — Kofeina daje kopa. CogniCit daje fundament.
+
+**CTA:** Zamów CogniCit — link do produkt.html  
+**Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, nauka.html  
+**Status:** Outline ready, needs writing

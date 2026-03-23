@@ -459,3 +459,36 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
 
 **Queue:** ~40 completed + ~47 active = 87 total
+
+---
+
+### 2026-03-23 — Power Cycle #14 (14:53 UTC)
+**Implemented:**
+- ✅ Item #74 — "Najnowsze artykuły na blogu" section on index.html
+  - 3 blog post cards (cytykolina 🧠, antyoksydanty 🛡️, beta-CD 🔬) with inline styled grid
+  - Each card: emoji hero, category tag (Nauka/Zdrowie/Technologia), title, excerpt, "Czytaj więcej →" link
+  - Hover effect: translateY(-4px) + shadow lift
+  - "Wszystkie artykuły na blogu →" CTA button linking to blog/index.html
+  - Responsive grid (auto-fit minmax 280px), stacked on mobile
+  - Positioned between comparison table and CTA section for conversion flow
+- ✅ Item #86 — Floating "Napisz do nas" contact button (mobile only)
+  - Fixed position bottom-right (bottom: 80px, right: 16px), z-index 998
+  - 52px circular gold button with 💬 icon
+  - Click toggles popup: email link, form link, FAQ link
+  - Popup: 240px wide, rounded card, smooth scale/fade animation
+  - Mobile only (<768px display: block, desktop hidden)
+  - Dismisses on outside click
+- ✅ Blog post outline added to content_calendar.md — "Jak kofeina wpływa na mózg?"
+- ✅ 3 new improvement ideas added to queue (#91-93): breadcrumb nav on blog, /skladniki landing page, countdown timer
+
+**Files changed:**
+- `index.html` — blog section CSS + HTML (3 blog cards + CTA), floating contact button CSS + HTML + JS
+- `improvement_queue.md` — items #74, #86 marked DONE; 3 new items added (#91-93)
+- `content_calendar.md` — new blog outline: kofeina vs CogniCit
+- `changelog.md` — this entry
+
+**Site verification:** HTML validated — zero structural errors. Blog section responsive grid confirmed. Floating contact button mobile-only confirmed. All links to blog posts verified (cytykolina, antyoksydanty, beta-cyklodekstryna).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~42 completed + ~48 active = 93 total
