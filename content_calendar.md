@@ -206,3 +206,25 @@
 **CTA:** Email signup for launch notification  
 **Internal links:** o-nas.html, nauka.html, produkt.html, faq.html  
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23)
+**Title:** Jak wybrać suplement diety? 7 pytań, które musisz zadać  
+**Target:** Polish audience, SEO / consumer education / conversion  
+**Word count:** 1200-1600  
+**Keywords:** jak wybrać suplement, suplement diety ranking, bezpieczny suplement, suplement GMP, dobry suplement diety  
+
+**Outline:**
+1. **Wstęp** — Na rynku jest 30 000+ suplementów. Jak wybrać ten jeden?
+2. **Pytanie 1: Czy jest zgłoszony do GIS?** — Legalność jako fundament
+3. **Pytanie 2: Czy producent ma GMP?** — Standard jakości produkcji
+4. **Pytanie 3: Czy dawki odpowiadają badaniom?** — Substancja vs. dawka terapeutyczna
+5. **Pytanie 4: Ile składników ma kapsułka?** — Problem suplementów-kombajnów
+6. **Pytanie 5: Czy producent podaje źródła naukowe?** — Marketing vs. nauka
+7. **Pytanie 6: Czy skład jest transparentny?** — Mieszanka zastrzeżona jako red flag
+8. **Pytanie 7: Czy obietnice są rozsądne?** — Suplement nie leczy
+9. **CogniCit — nasz odpowiedź** — Jak spełniamy wszystkie 7 kryteriów
+10. **Podsumowanie** — Checklist do wydrukowania
+
+**CTA:** Email signup for launch notification  
+**Internal links:** jak-wybrac-suplement.html, produkt.html, faq.html, blog/suplement-vs-lek.html  
+**Status:** Outline ready, needs writing  

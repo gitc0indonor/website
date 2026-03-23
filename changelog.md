@@ -181,3 +181,39 @@
 - Queue: 16 completed + ~37 active = 53 total
 - WooCommerce status: NOT present — site uses custom JS cart (cognivia-cart.js). Cart/checkout/payment flow is client-side only. Real payment gateway integration still needs merchant account.
 - Formspree placeholder ID still needs replacement
+
+### 2026-03-23 — Power Cycle #7 (06:38 UTC)
+**Implemented:**
+- ✅ Consumer guide page "Jak wybrać suplement?" (jak-wybrac-suplement.html) — 17.7 KB
+  - Full 7-point checklist: GIS registration, GMP, CoA, ingredient transparency, science-backed dosing, reasonable claims, clear sourcing
+  - Red flags comparison table (7 warning signs vs healthy indicators)
+  - CogniCit positioning as exemplar product
+  - Article JSON-LD schema for SEO
+  - Cross-links to product, science, FAQ, blog, and existing consumer guide
+  - Email CTA section with Formspree integration
+  - Breadcrumb navigation, responsive design
+- ✅ Exit-intent popup on index.html
+  - Desktop: triggers on mouse leaving viewport from top edge
+  - Mobile: triggers after 45 seconds on page
+  - Dismissible via X button or clicking overlay
+  - localStorage persistence — won't show again after close
+  - 15% discount CTA for email signup
+  - Smooth slide-up animation, responsive layout
+- ✅ Sitemap updated — added jak-stosowac.html and jak-wybrac-suplement.html
+- ✅ Blog post outline #11 added to content_calendar.md — "Jak wybrać suplement diety?"
+- ✅ Improvement queue updated — items #22 and #53 marked DONE
+- ✅ 3 new improvement ideas added (#60-62): live chat widget, label-reading guide, A/B test hero CTAs
+
+**Files changed:**
+- `jak-wybrac-suplement.html` — NEW (17.7 KB)
+- `index.html` — exit-intent popup CSS + HTML + JS
+- `sitemap.xml` — 2 new URLs added
+- `improvement_queue.md` — 2 items completed, 3 new items added
+- `content_calendar.md` — new blog outline added
+- `changelog.md` — this entry
+
+**Git:** Pending commit
+
+**Cart status:** Client-side JS cart fully functional. No WooCommerce. Payment gateway still needs merchant account (PayU/Przelewy24). Formspree placeholder ID still needs replacement.
+
+**Queue:** ~20 completed + ~22 active = 62 total

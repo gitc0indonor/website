@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jak wybrać suplement diety? — Poradnik konsumenta | Cognivia</title>
+    <meta name="description" content="Praktyczny poradnik: jak wybrać bezpieczny i skuteczny suplement diety. Checklist dla konsumenta — GMP, GIS, skład, dawki, przejrzystość.">
+    <link rel="canonical" href="https://cognivia.eu/jak-wybrac-suplement.html">
+    <meta property="og:title" content="Jak wybrać suplement diety? — Poradnik konsumenta | Cognivia">
+    <meta property="og:description" content="Praktyczny poradnik z checklistą: jak wybrać bezpieczny suplement diety w Polsce.">
+    <meta property="og:url" content="https://cognivia.eu/jak-wybrac-suplement.html">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #C9A96E;
+            --gold-dark: #B8943D;
+            --charcoal: #2D2D2D;
+            --beige: #F5F0E8;
+            --cream: #FAFAF7;
+            --gray-light: #E8E4DD;
+            --gray-mid: #9A9590;
+            --white: #FFFFFF;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'EB Garamond', Georgia, serif; color: var(--charcoal); background: var(--cream); line-height: 1.7; }
+
+        /* Header */
+        header { background: var(--white); border-bottom: 1px solid var(--gray-light); padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+        .header-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--charcoal); text-decoration: none; letter-spacing: 0.05em; }
+        nav a { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--gray-mid); text-decoration: none; margin-left: 1.5rem; transition: color 0.3s; }
+        nav a:hover { color: var(--gold); }
+
+        /* Article */
+        .article-container { max-width: 780px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+        .breadcrumb { font-family: 'Inter', sans-serif; font-size: 0.8rem; color: var(--gray-mid); margin-bottom: 2rem; }
+        .breadcrumb a { color: var(--gray-mid); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--gold); }
+
+        .article-title { font-size: 2.4rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.75rem; }
+        .article-meta { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--gray-mid); margin-bottom: 2.5rem; }
+        .article-body h2 { font-size: 1.6rem; font-weight: 600; margin: 2.5rem 0 1rem; color: var(--charcoal); }
+        .article-body h3 { font-size: 1.25rem; font-weight: 600; margin: 1.8rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.2rem; font-size: 1.1rem; }
+        .article-body ul, .article-body ol { margin: 1rem 0 1.5rem 1.5rem; font-size: 1.05rem; }
+        .article-body li { margin-bottom: 0.5rem; }
+        .article-body strong { color: var(--charcoal); }
+
+        /* Checklist */
+        .checklist { background: var(--beige); border-radius: 12px; padding: 2rem; margin: 2rem 0; }
+        .checklist h3 { margin-top: 0; color: var(--gold-dark); }
+        .check-item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-light); }
+        .check-item:last-child { border-bottom: none; }
+        .check-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 0.1rem; }
+        .check-text { font-family: 'Inter', sans-serif; font-size: 0.95rem; line-height: 1.5; }
+        .check-text strong { display: block; margin-bottom: 0.2rem; }
+
+        /* Warning box */
+        .warning-box { background: #FFF8F0; border-left: 4px solid #E8A838; padding: 1.25rem 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; }
+        .warning-box p { margin-bottom: 0; font-size: 1rem; }
+
+        /* Comparison mini */
+        .comparison-mini { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-family: 'Inter', sans-serif; font-size: 0.9rem; }
+        .comparison-mini th { background: var(--charcoal); color: var(--white); padding: 0.75rem 1rem; text-align: left; font-weight: 500; }
+        .comparison-mini td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--gray-light); }
+        .comparison-mini tr:nth-child(even) { background: var(--beige); }
+        .comparison-mini .highlight { background: rgba(201, 169, 110, 0.15); }
+
+        /* CTA section */
+        .cta-section { background: var(--charcoal); color: var(--white); padding: 3rem 2rem; text-align: center; margin-top: 3rem; }
+        .cta-section h2 { font-size: 1.8rem; margin-bottom: 0.75rem; color: var(--gold); }
+        .cta-section p { font-family: 'Inter', sans-serif; font-size: 0.95rem; color: #ccc; max-width: 500px; margin: 0 auto 1.5rem; }
+        .cta-form { display: flex; gap: 0.5rem; max-width: 420px; margin: 0 auto; }
+        .cta-form input { flex: 1; padding: 0.75rem 1rem; border: 1px solid #555; background: #3D3D3D; color: var(--white); border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 0.9rem; }
+        .cta-form input::placeholder { color: #888; }
+        .cta-form button { padding: 0.75rem 1.5rem; background: var(--gold); color: var(--white); border: none; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: background 0.3s; white-space: nowrap; }
+        .cta-form button:hover { background: var(--gold-dark); }
+
+        /* Cross-links */
+        .cross-links { background: var(--beige); border-radius: 12px; padding: 1.5rem 2rem; margin: 2.5rem 0; }
+        .cross-links h4 { font-size: 1rem; margin-bottom: 0.75rem; color: var(--gold-dark); }
+        .cross-links a { display: inline-block; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--charcoal); text-decoration: none; margin-right: 1.2rem; margin-bottom: 0.4rem; border-bottom: 1px solid var(--gray-light); transition: border-color 0.3s; }
+        .cross-links a:hover { border-color: var(--gold); color: var(--gold); }
+
+        /* Footer */
+        footer { background: var(--charcoal); color: #999; padding: 2rem; text-align: center; font-family: 'Inter', sans-serif; font-size: 0.8rem; }
+        footer a { color: var(--gold); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .article-title { font-size: 1.8rem; }
+            .cta-form { flex-direction: column; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">COGNIVIA</a>
+            <nav>
+                <a href="produkt.html">Produkt</a>
+                <a href="nauka.html">Nauka</a>
+                <a href="jak-stosowac.html">Jak stosować</a>
+                <a href="faq.html">FAQ</a>
+                <a href="blog/">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="article-container">
+        <div class="breadcrumb">
+            <a href="index.html">Strona główna</a> → <a href="blog/">Blog</a> → Jak wybrać suplement
+        </div>
+
+        <h1 class="article-title">Jak wybrać suplement diety? Praktyczny przewodnik konsumenta</h1>
+        <p class="article-meta">Czas czytania: 7 min · Ostatnia aktualizacja: marzec 2026</p>
+
+        <div class="article-body">
+            <p>Na polskim rynku jest ponad 30 000 suplementów diety. Każdy obiecuje lepsze zdrowie, więcej energii, lepszą koncentrację. Jak wybrać ten, który naprawdę działa — i jest bezpieczny? Ten poradnik daje Ci konkretną checklistę.</p>
+
+            <h2>1. Suplement diety ≠ lek — zrozum różnicę</h2>
+            <p>Zanim zaczniesz porównywać produkty, musisz wiedzieć jedną rzecz: <strong>suplement diety to żywność, nie lek</strong>. Nie leczy, nie diagnozuje, nie zastępuje terapii farmakologicznej. To ważne — bo jeśli producent sugeruje coś innego, to czerwona flaga.</p>
+
+            <div class="warning-box">
+                <p>⚠️ <strong>Prawo UE (rozporządzenie 2002/46/WE):</strong> Suplement diety to skoncentrowane źródło witamin, minerałów lub innych substancji o działaniu odżywczym lub fizjologicznym. Produkt musi być oznakowany jako „suplement diety".</p>
+            </div>
+
+            <h2>2. Checklist — na co zwrócić uwagę</h2>
+
+            <div class="checklist">
+                <h3>✅ Bezpieczeństwo i legalność</h3>
+                <div class="check-item">
+                    <span class="check-icon">☑️</span>
+                    <div class="check-text">
+                        <strong>Zgłoszenie do GIS</strong>
+                        Każdy suplement diety sprzedawany w Polsce musi być zgłoszony do Głównego Inspektoratu Sanitarnego. Zapytaj producenta o numer zgłoszenia — jeśli nie chce podać, nie kupuj.
+                    </div>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon">☑️</span>
+                    <div class="check-text">
+                        <strong>Produkcja w standardzie GMP</strong>
+                        Good Manufacturing Practice to międzynarodowy standard jakości produkcji. GMP oznacza kontrolowane warunki, dokumentację każdej partii, regularne audyty. To minimum, które powinien spełniać każdy suplement.
+                    </div>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon">☑️</span>
+                    <div class="check-text">
+                        <strong>Certyfikaty analizy (CoA)</strong>
+                        Certificate of Analysis to dokument potwierdzający, że każda partia produktu została przebadana. Chodzi o czystość składników, brak metali ciężkich, mikrobiologię. Zapytaj o CoA — renomowany producent udostępni go bez problemu.
+                    </div>
+                </div>
+            </div>
+
+            <div class="checklist">
+                <h3>✅ Skład i dawkowanie</h3>
+                <div class="check-item">
+                    <span class="check-icon">☑️</span>
+                    <div class="check-text">
+                        <strong>Pełna deklaracja składników z dawkami</strong>
+                        „Mieszanka zastrzeżona" (proprietary blend) to często sposób na ukrycie zbyt małych dawek. Każdy składnik powinien mieć podaną dokładną ilość.
+                    </div>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon">☑️</span>
+                    <div class="check-text">
+                        <strong>Dawki z badań naukowych</strong>
+                        Dawkowanie składnika powinno odpowiadać ilościom stosowanym w badaniach klinicznych. 50 mg substancji, która w badaniach działała w dawce 300 mg, to dekoracja, nie suplementacja.
+                    </div>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon">☑️</span>
+                    <div class="check-text">
+                        <strong>Rozsądna liczba składników</strong>
+                        Suplement z 25 składnikami w kapsułce to „kombajn" — często każdy składnik jest w zbyt małej dawce. Lepiej mieć 3-5 składników w dawkach terapeutycznych niż 25 w homeopatycznych.
+                    </div>
+                </div>
+            </div>
+
+            <div class="checklist">
+                <h3>✅ Przejrzystość i zaufanie</h3>
+                <div class="check-item">
+                    <span class="check-icon">☑️</span>
+                    <div class="check-text">
+                        <strong>Podany producent i kraj pochodzenia</strong>
+                        Na opakowaniu musi być nazwa i adres odpowiedzialnego podmiotu. „Wyprodukowano w UE" to za mało — chcesz wiedzieć kto i gdzie.
+                    </div>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon">☑️</span>
+                    <div class="check-text">
+                        <strong>Poparte nauką, nie marketingiem</strong>
+                        Renomowane suplementy cytują badania. Sprawdź, czy producent podaje konkretne publikacje (PubMed, DOI) — nie tylko ogólniki w stylu „badania potwierdzają".
+                    </div>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon">☑️</span>
+                    <div class="check-text">
+                        <strong>Rozsądne obietnice</strong>
+                        Suplement nie obiecuje wyleczenia, nie mówi „gwarantowane efekty". Mówi: „wspomaga", „przyczynia się do", „pomaga w utrzymaniu". To język zgodny z rozporządzeniem o oświadczeniach zdrowotnych (WE 1924/2006).
+                    </div>
+                </div>
+            </div>
+
+            <h2>3. Czerwone flagi — czego unikać</h2>
+            <table class="comparison-mini">
+                <thead>
+                    <tr><th>🚩 Czerwona flaga</th><th>✅ Czego szukać</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Brak informacji o producencie</td><td>Pełna nazwa i adres na opakowaniu</td></tr>
+                    <tr><td>„Mieszanka zastrzeżona" bez dawek</td><td>Każdy składnik z dokładną ilością</td></tr>
+                    <tr><td>Obietnice leczenia chorób</td><td>Oświadczenia zgodne z WE 1924/2006</td></tr>
+                    <tr><td>Brak certyfikatu GMP</td><td>Produkcja w standardzie GMP</td></tr>
+                    <tr><td>Suplement z 20+ składnikami</td><td>Skoncentrowana formuła 3-8 składników</td></tr>
+                    <tr><td>Brak badań naukowych</td><td>Cytowane publikacje z PubMed</td></tr>
+                    <tr><td>Brak zgłoszenia do GIS</td><td>Rejestracja w Głównym Inspektoracie Sanitarnym</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Jak CogniCit wypada na tej checkliście?</h2>
+            <p>Nie piszemy tego poradnika bez powodu. CogniCit został zaprojektowany zgodnie z każdą z powyższych zasad:</p>
+            <ul>
+                <li><strong>3 składniki</strong> — cytykolina (300 mg), kwas alfa-liponowy (250 mg), beta-cyklodekstryna (250 mg). Każdy w dawce z badań.</li>
+                <li><strong>GMP</strong> — produkcja w certyfikowanym zakładzie zgodnym z zasadami Dobrej Praktyki Produkcyjnej.</li>
+                <li><strong>Zgłoszenie do GIS</strong> — suplement zarejestrowany zgodnie z polskim prawem.</li>
+                <li><strong>Przejrzystość</strong> — pełna deklaracja składników, opis mechanizmu działania, linki do badań na naszej stronie.</li>
+                <li><strong>Rozsądne obietnice</strong> — wspieramy funkcje poznawcze, nie leczymy chorób.</li>
+            </ul>
+
+            <h2>5. Podsumowanie — Twoja checklist w 30 sekund</h2>
+            <ol>
+                <li>Sprawdź zgłoszenie do GIS ✅</li>
+                <li>Szukaj certyfikatu GMP ✅</li>
+                <li>Przeczytaj pełną deklarację składników z dawkami ✅</li>
+                <li>Sprawdź, czy dawki odpowiadają badaniom naukowym ✅</li>
+                <li>Unikaj „kombajnów" z 20+ składnikami ✅</li>
+                <li>Szukaj konkretnych publikacji naukowych ✅</li>
+                <li>Oceniaj przejrzystość — producent, kraj, kontakt ✅</li>
+            </ol>
+            <p>Jeśli suplement spełnia te kryteria, masz solidną podstawę, by mu zaufać. CogniCit spełnia je wszystkie.</p>
+        </div>
+
+        <div class="cross-links">
+            <h4>Powiązane strony</h4>
+            <a href="produkt.html">→ CogniCit — skład i działanie</a>
+            <a href="nauka.html">→ Podstawy naukowe</a>
+            <a href="faq.html">→ FAQ — najczęstsze pytania</a>
+            <a href="blog/suplement-vs-lek.html">→ Blog: Suplement diety vs lek</a>
+            <a href="blog/">→ Wszystkie artykuły</a>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2>CogniCit — 3 synergistyczne składniki</h2>
+        <p>Zapisz się na listę oczekujących i otrzymaj powiadomienie o premierze z ekskluzywną zniżką.</p>
+        <form class="cta-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="email" name="email" placeholder="Twój adres email" required>
+            <button type="submit">Powiadom mnie</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2026 Cognivia · <a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a></p>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Jak wybrać suplement diety? Praktyczny przewodnik konsumenta",
+        "description": "Praktyczny poradnik z checklistą: jak wybrać bezpieczny i skuteczny suplement diety w Polsce.",
+        "author": {"@type": "Organization", "name": "Cognivia"},
+        "publisher": {"@type": "Organization", "name": "Cognivia", "url": "https://cognivia.eu"},
+        "datePublished": "2026-03-23",
+        "dateModified": "2026-03-23",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cognivia.eu/jak-wybrac-suplement.html"}
+    }
+    </script>
+</body>
+</html>

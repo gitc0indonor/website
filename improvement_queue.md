@@ -89,7 +89,7 @@
 19. Polish footer with newsletter signup
 20. Add loading animations for scroll-triggered elements
 21. Improve mobile hamburger menu animation
-22. Add exit-intent popup with email capture
+22. [DONE] ~~Add exit-intent popup with email capture~~ ✅ — Exit-intent popup on index.html: triggers on mouse leave (desktop) or 45s timer (mobile), 15% discount CTA, localStorage persistence, dismissible, responsive
 23. Add Google PageSpeed optimization (lazy loading, preloading)
 24. Create Polish-language blog post: "Czym jest cytykolina?"
 25. Add real photos of product/packaging
@@ -120,4 +120,13 @@
 50. [DONE] ~~Add trust bar to blog pages — "CogniCit — 3 synergistyczne składniki, GMP certified" banner with CTA~~ ✅ — Added to all 5 blog pages (cytykolina, antyoksydanty, beta-cyklodekstryna, suplement-vs-lek, blog index)
 51. [NEW] Add breadcrumb navigation to all subpages (produkt, faq, nauka, o-nas, jak-stosowac, etc.)
 52. [NEW] Add "Share this article" social buttons to blog post pages (Facebook, Twitter/X, LinkedIn)
-53. [NEW] Create "Jak wybrać suplement?" consumer guide page — checklist-based, conversion-focused
+53. [DONE] ~~Create "Jak wybrać suplement?" consumer guide page — checklist-based, conversion-focused~~ ✅ — Created jak-wybrac-suplement.html: full checklist (safety, GMP, GIS, CoA, transparency), red flags table, CogniCit example, JSON-LD Article schema, cross-links, email CTA
+54. [NEW] Add Product JSON-LD schema with Offer to produkt.html — DONE 2026-03-23 ✅
+55. [NEW] Add 5 korzyści (benefits) section to produkt.html — DONE 2026-03-23 ✅
+56. [NEW] Add przechowywanie (storage) section to produkt.html — DONE 2026-03-23 ✅
+57. [NEW] Replace localStorage order submission with Formspree or backend API — URGENT, orders currently lost on page refresh
+58. [NEW] Add product images — currently only 1 placeholder, need 4-6 professional product photos (front, back, ingredients closeup, lifestyle)
+59. [NEW] Create /certyfikaty page with downloadable GMP certificate PDF and lab test results — builds trust, currently only mentioned as text badge
+60. [NEW] Add live chat widget (Tidio/Crisp) for pre-launch questions — capture leads from visitors with questions
+61. [NEW] Create "Jak czytać etykiety suplementów?" educational page — builds authority, SEO opportunity
+62. [NEW] Add A/B test variants for hero CTA text — test "Powiadom mnie" vs "Chcę zniżkę" vs "Zapisz się"
