@@ -76,14 +76,6 @@ if (scrollProgress) {
 }
 
   // Scroll progress bar
-  const progressBar = document.getElementById('scrollProgress');
-  if (progressBar) {
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      progressBar.style.width = (scrollTop / docHeight * 100) + '%';
-    }, { passive: true });
-  }
 
   // Scroll progress bar
   const scrollProgress = document.getElementById('scrollProgress');
