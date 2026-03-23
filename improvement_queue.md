@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23 (Power Cycle #8)
+## Last Updated: 2026-03-23 (Power Cycle #9)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -133,3 +133,8 @@
 63. [NEW] Add "Co mówią klienci?" section to produkt.html — embed Trustpilot widget or self-hosted star ratings, builds conversion trust
 64. [NEW] Create /kalkulator-dawkowania interactive page — user inputs weight/age/goal, gets personalized dosage recommendation, lead capture via email gate
 65. [NEW] Add hreflang + canonical to jak-czytac-etykiety.html and all newer pages missing them (jak-stosowac, jak-wybrac-suplement)
+66. [DONE] ~~Create "Jak zamówić?" interactive guide page — 5-step purchasing walkthrough, shipping/payment methods table, post-purchase timeline, FAQ, 30-day guarantee banner, HowTo JSON-LD schema~~ ✅ — Created jak-zamowic.html (22KB). Full 5-step guide with timeline, shipping table (InPost/DPD/Poczta), payment methods grid (PayU/BLIK/Przelewy24/przelew), post-purchase flow, 30-day guarantee banner, 5 FAQ items, cross-links. Added to sitemap.xml and index.html footer.
+67. [DONE] ~~Enhance scroll animations — staggered children, slide-left/right/scale-in variants, cubic-bezier easing, unobserve after reveal, prefers-reduced-motion support~~ ✅ — Updated index.html CSS with 4 animation classes (fade-in, slide-left, slide-right, scale-in), stagger delays for grid children, improved IntersectionObserver with rootMargin and unobserve, accessibility media query. Applied stagger-children to products-grid.
+68. [NEW] Add product zoom/lightbox on produkt.html — click product image to see enlarged view, swipeable on mobile
+69. [NEW] Create /certyfikaty page with GMP certificate mockup, lab test results template, GIS registration number — builds institutional trust
+70. [NEW] Add "Ile kapsułek potrzebujesz?" calculator on produkt.html — input months of use, output quantity + total price with bulk discount

@@ -226,6 +226,48 @@
 
 ---
 
+### 2026-03-23 — Power Cycle #9 (09:35 UTC)
+**Implemented:**
+- ✅ "Jak zamówić CogniCit?" purchasing guide page (jak-zamowic.html) — 22 KB
+  - 5-step visual timeline with numbered circles and connecting line
+  - Shipping methods table (InPost 12.99 zł, DPD 15.99 zł, Poczta 9.99 zł, free from 149 zł)
+  - Payment methods info grid (PayU, BLIK, Przelewy24, przelew tradycyjny)
+  - Post-purchase flow: email confirmation → packing → delivery → enjoy
+  - 30-day satisfaction guarantee banner with gold number display
+  - 5 expandable FAQ items (payment security, bulk orders, VAT invoices, order tracking, international shipping)
+  - HowTo JSON-LD schema for Google rich results
+  - BreadcrumbList JSON-LD schema
+  - Canonical URL, OG meta tags, hreflang="pl"
+  - Cross-links to produkt, nauka, jak-stosowac, dostawa, zwroty, faq
+  - Trust bar (4 badges), CTA section with 79 zł price, responsive design
+- ✅ Enhanced scroll animations on index.html
+  - 4 animation classes: fade-in, slide-left, slide-right, scale-in
+  - Cubic-bezier easing for smoother motion
+  - Staggered delays for grid children (0s–0.4s)
+  - IntersectionObserver enhanced: rootMargin, unobserve after reveal
+  - prefers-reduced-motion accessibility support
+  - Applied stagger-children to products-grid
+- ✅ Sitemap updated — jak-zamowic.html added
+- ✅ Footer updated — "Jak zamówić?" link added to Informacje column
+- ✅ Blog post outline added to content_calendar.md — "Jak zamówić suplement online?"
+- ✅ Improvement queue updated — items #17 and #66-67 marked DONE, 3 new items added (#68-70)
+
+**Files changed:**
+- `jak-zamowic.html` — NEW (22 KB)
+- `index.html` — enhanced scroll animations CSS + JS, footer link added
+- `sitemap.xml` — new URL added
+- `content_calendar.md` — new blog outline added
+- `improvement_queue.md` — 2 completed, 3 new items
+- `changelog.md` — this entry
+
+**Git:** Pending commit
+
+**Cart status:** Full client-side cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~26 completed + ~30 active = 56 total
+
+---
+
 ### 2026-03-23 — Power Cycle #7 (06:38 UTC)
 **Implemented:**
 - ✅ Consumer guide page "Jak wybrać suplement?" (jak-wybrac-suplement.html) — 17.7 KB

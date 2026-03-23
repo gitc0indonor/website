@@ -553,42 +553,132 @@
     }
 
     /* === FOOTER === */
+    /* === FOOTER NEWSLETTER === */
+    .footer-newsletter {
+      background: linear-gradient(135deg, var(--green), #1a4a2e);
+      padding: 48px 6%;
+    }
+    .footer-newsletter-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .footer-newsletter-text { flex: 1; }
+    .footer-newsletter-text h3 {
+      font-family: 'EB Garamond', serif;
+      font-size: 26px;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .footer-newsletter-text p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.6;
+    }
+    .footer-newsletter-text strong { color: var(--gold); }
+    .footer-newsletter-form {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .footer-newsletter-form input {
+      padding: 12px 16px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 6px;
+      background: rgba(255,255,255,0.1);
+      color: var(--white);
+      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+      width: 260px;
+      transition: border-color 0.3s;
+    }
+    .footer-newsletter-form input::placeholder { color: rgba(255,255,255,0.4); }
+    .footer-newsletter-form input:focus { outline: none; border-color: var(--gold); }
+    .footer-newsletter-form button {
+      padding: 12px 24px;
+      background: var(--gold);
+      color: var(--charcoal);
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: background 0.3s;
+      white-space: nowrap;
+    }
+    .footer-newsletter-form button:hover { background: #d4b76a; }
+
+    /* === ENHANCED FOOTER === */
     footer {
       background: var(--charcoal);
       color: rgba(255,255,255,0.5);
-      padding: 60px 6%;
-      text-align: center;
+      padding: 48px 6% 32px;
     }
-    footer .footer-logo {
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto 40px;
+    }
+    .footer-col .footer-logo {
       font-family: 'EB Garamond', serif;
-      font-size: 28px;
+      font-size: 24px;
       color: var(--white);
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       letter-spacing: 2px;
     }
-    footer a {
-      color: var(--gold);
-      text-decoration: none;
+    .footer-col .footer-desc {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.7;
     }
-    .footer-links {
-      display: flex;
-      gap: 24px;
-      justify-content: center;
-      margin-bottom: 24px;
-    }
-    .footer-links a {
+    .footer-col h4 {
       font-size: 12px;
-      letter-spacing: 1px;
       text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+    .footer-col a {
+      display: block;
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      font-size: 13px;
+      margin-bottom: 10px;
+      transition: color 0.3s;
+    }
+    .footer-col a:hover { color: var(--gold); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-bottom p { font-size: 13px; }
+    .footer-badges { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-badge {
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.05);
+      padding: 4px 10px;
+      border-radius: 4px;
     }
     .footer-legal {
       font-size: 11px;
-      color: rgba(255,255,255,0.3);
+      color: rgba(255,255,255,0.25);
       line-height: 1.8;
-      max-width: 700px;
+      max-width: 1100px;
       margin: 24px auto 0;
-      padding-top: 24px;
-      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
     }
 
     /* === COMPARISON TABLE === */
@@ -685,9 +775,26 @@
       color: var(--charcoal);
     }
 
-    /* === FADE IN === */
-    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
+    /* === SCROLL ANIMATIONS === */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .slide-left { opacity: 0; transform: translateX(-30px); transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
+    .slide-left.visible { opacity: 1; transform: translateX(0); }
+    .slide-right { opacity: 0; transform: translateX(30px); transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
+    .slide-right.visible { opacity: 1; transform: translateX(0); }
+    .scale-in { opacity: 0; transform: scale(0.92); transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
+    .scale-in.visible { opacity: 1; transform: scale(1); }
+    /* Staggered delays for child elements */
+    .stagger-children .fade-in:nth-child(1) { transition-delay: 0s; }
+    .stagger-children .fade-in:nth-child(2) { transition-delay: 0.1s; }
+    .stagger-children .fade-in:nth-child(3) { transition-delay: 0.2s; }
+    .stagger-children .fade-in:nth-child(4) { transition-delay: 0.3s; }
+    .stagger-children .fade-in:nth-child(5) { transition-delay: 0.35s; }
+    .stagger-children .fade-in:nth-child(6) { transition-delay: 0.4s; }
+    /* Reduce motion for accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in, .slide-left, .slide-right, .scale-in { opacity: 1; transform: none; transition: none; }
+    }
 
     /* === RESPONSIVE === */
       .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
@@ -838,7 +945,7 @@
       <div class="section-title fade-in">Trzy starannie dobrane składniki</div>
       <p class="section-text fade-in" style="margin: 0 auto;">Każdy składnik jest precyzyjnie dobrany i występuje w określonej dawce.</p>
     </div>
-    <div class="products-grid">
+    <div class="products-grid stagger-children">
       <div class="product-card fade-in">
         <div class="amount">250 mg</div>
         <h3>Kwas Alfa‑Liponowy</h3>
@@ -1212,22 +1319,61 @@
     </div>
   </section>
 
+  <!-- FOOTER NEWSLETTER -->
+  <section class="footer-newsletter">
+    <div class="footer-newsletter-inner">
+      <div class="footer-newsletter-text">
+        <h3>Nie przegap premiery CogniCit</h3>
+        <p>Zapisz się i otrzymaj <strong>15% zniżki</strong> na pierwsze zamówienie. Zero spamu — tylko premiera i wartościowe treści o suplementacji.</p>
+      </div>
+      <form class="footer-newsletter-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="email" name="email" placeholder="Twój adres email" required>
+        <button type="submit">Zapisz się →</button>
+      </form>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
-    <div class="footer-logo">C O G N I V I A</div>
-    <div class="footer-links">
-      <a href="produkt.html">Produkt</a>
-      <a href="faq.html">FAQ</a>
-      <a href="dostawa.html">Dostawa</a>
-      <a href="zwroty.html">Zwroty</a>
-      <a href="nauka.html">Nauka</a>
-      <a href="blog/">Blog</a>
-      <a href="o-nas.html">O nas</a>
-      <a href="regulamin.html">Regulamin</a>
-      <a href="polityka-prywatnosci.html">Prywatność</a>
-      <a href="mailto:cognivia.business@outlook.com">Kontakt</a>
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="footer-logo">C O G N I V I A</div>
+        <p class="footer-desc">Tworzymy suplementy diety oparte na nauce. CogniCit — 3 synergistyczne składniki, certyfikat GMP, zgłoszenie GIS.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produkt</h4>
+        <a href="produkt.html">O CogniCit</a>
+        <a href="nauka.html">Nauka</a>
+        <a href="kwas-alfa-liponowy.html">Kwas alfa-liponowy</a>
+        <a href="cytykolina.html">Cytykolina</a>
+        <a href="beta-cyklodekstryna.html">Beta-cyklodekstryna</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informacje</h4>
+        <a href="faq.html">FAQ</a>
+        <a href="dostawa.html">Dostawa</a>
+        <a href="zwroty.html">Zwroty</a>
+        <a href="jak-stosowac.html">Jak stosować</a>
+        <a href="jak-zamowic.html">Jak zamówić?</a>
+        <a href="blog/">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Firma</h4>
+        <a href="o-nas.html">O nas</a>
+        <a href="regulamin.html">Regulamin</a>
+        <a href="polityka-prywatnosci.html">Prywatność</a>
+        <a href="mailto:cognivia.business@outlook.com">Kontakt</a>
+      </div>
     </div>
-    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
+    <div class="footer-bottom">
+      <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
+      <div class="footer-badges">
+        <span class="footer-badge">✓ GMP Certified</span>
+        <span class="footer-badge">✓ EU Compliant</span>
+        <span class="footer-badge">✓ Lab Tested</span>
+        <span class="footer-badge">✓ Zgłoszone GIS</span>
+      </div>
+    </div>
     <div class="footer-legal">
       <strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. Nie przekraczać zalecanej dziennej porcji. Przechowywać w sposób niedostępny dla małych dzieci.<br><br>
       Strona zawiera oświadczenia żywieniowe i zdrowotne zgodne z Rozporządzeniem (WE) nr 1924/2006 oraz informacje zgodne z Rozporządzeniem (WE) nr 1169/2011.
@@ -1256,9 +1402,9 @@
     });
     // Fade-in on scroll
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-in, .slide-left, .slide-right, .scale-in').forEach(el => observer.observe(el));
     // Back to top button
     const btt = document.getElementById('backToTop');
     window.addEventListener('scroll', () => {

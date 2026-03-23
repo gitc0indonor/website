@@ -250,3 +250,23 @@
 **CTA:** Email signup for launch notification  
 **Internal links:** jak-czytac-etykiety.html, jak-wybrac-suplement.html, produkt.html, faq.html, blog/suplement-vs-lek.html  
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #9)
+**Title:** Jak zamówić suplement online? Poradnik bezpiecznych zakupów  
+**Target:** Polish audience, conversion-focused / post-purchase  
+**Word count:** 1000-1400  
+**Keywords:** jak zamówić suplement, bezpieczne zakupy suplementów, płatność online suplement, dostawa suplementów Polska  
+
+**Outline:**
+1. **Wstęp** — Zakupy suplementów online — wygoda, ale czy bezpieczeństwo?
+2. **Na co zwrócić uwagę przy zakupie?** — Certyfikaty, regulamin, polityka zwrotów, dane firmy
+3. **Bezpieczna płatność** — Szyfrowanie SSL, PayU, BLIK — jak rozpoznać bezpieczną bramkę
+4. **Dostawa i opakowanie** — Dlaczego dyskretne opakowanie ma znaczenie, śledzenie przesyłki
+5. **Co po zakupie?** — Email z potwierdzeniem, instrukcja dawkowania, kontakt z obsługą
+6. **Zwroty i reklamacje** — 14 dni ustawowe + 30 dni gwarancji satysfakcji — co to oznacza w praktyce
+7. **CogniCit — jak u nas wygląda proces zakupu** — 5 kroków, metody płatności, darmowa dostawa od 149 zł
+8. **Podsumowanie** — Checklist: co sprawdzić przed zakupem suplementu online
+
+**CTA:** Zamów CogniCit — link do produkt.html  
+**Internal links:** jak-zamowic.html, dostawa.html, zwroty.html, produkt.html, regulamin.html  
+**Status:** Outline ready, needs writing
