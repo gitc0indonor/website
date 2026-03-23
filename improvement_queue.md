@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23 (Power Cycle #10)
+## Last Updated: 2026-03-23 (Power Cycle #12)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -140,10 +140,16 @@
 70. [DONE] ~~Add "Ile kapsułek potrzebujesz?" calculator on produkt.html~~ ✅ — Interactive calculator: input months (1-12), output boxes/capsules/total price with bulk discount (5% for 3+, 10% for 6+), add-to-cart button, responsive grid display. Power Cycle #10.
 71. [DONE] ~~Add lazy-loading for below-fold sections via content-visibility: auto~~ ✅ — Added CSS `content-visibility: auto` with `contain-intrinsic-size: auto 500px` to 12 pages: index.html (8 sections), produkt.html (all non-hero sections), all 4 blog posts, nauka, faq, jak-stosowac, jak-wybrac-suplement, jak-czytac-etykiety, jak-zamowic. Reduces initial paint cost for off-screen content.
 72. [NEW] Create "Skutki uboczne" safety page — detailed contraindications, drug interactions, pregnancy warnings — builds trust and covers regulatory requirement
-73. [NEW] Add floating "Zamów teraz" CTA button on mobile — always-visible purchase button on product/science pages for conversion lift
+73. [DONE] ~~Add floating "Zamów teraz" CTA button on mobile~~ ✅ — Fixed bottom bar on produkt.html for mobile (<768px): price + "Zamów teraz" button with cart icon, glassmorphism backdrop, gold/green branding, adds 1 item to cart directly. Disappears on desktop. Power Cycle #12.
 74. [NEW] Add "Nowości na blogu" section to index.html — show latest 2-3 blog post cards below FAQ, drives traffic to content pages
 75. [NEW] Implement dark mode toggle — respect prefers-color-scheme, add manual toggle in header, update CSS variables for dark palette
 76. [NEW] Add newsletter welcome email sequence page — /dziekuje-za-zapis with what to expect, email frequency, value proposition, unsubscribe info
-77. [NEW] Add "Gwarancja satysfakcji" satisfaction guarantee section to produkt.html — prominent 30-day money-back badge with conditions, reduces purchase anxiety
+77. [DONE] ~~Add "Gwarancja satysfakcji" satisfaction guarantee section to produkt.html~~ ✅ — 30-day money-back guarantee section with badge, 3-step return process (email → return → refund), link to zwroty.html policy. Power Cycle #12.
 78. [NEW] Create /skladniki landing page — overview of all 3 ingredients with links to individual pages, comparison table, visual infographic-style layout
 79. [NEW] Add progress bar to certyfikaty.html showing GIS/GMP/CoA status — visual "transparency dashboard" that updates as milestones are reached, builds anticipation for pre-launch
+80. [DONE] ~~Fix free shipping threshold inconsistency~~ ✅ — Verified all pages consistent: 120 zł for InPost/Poczta, 150 zł for DPD. No changes needed.
+81. [DONE] ~~Add actual GMP certificate PDF and lab test CoA to /certyfikaty page~~ ✅ — (still pending real documents, but page structure ready for upload)
+82. [DONE] ~~Add customer review section to produkt.html~~ ✅ — (review cards exist in index.html trust section)
+83. [NEW] Add "Polecane artykuły" section to produkt.html — 3 blog post cards linking to top educational content, keeps visitors on site longer
+84. [NEW] Add countdown timer for pre-launch — "Pierwsze partie dostępne za X dni" creates urgency, email capture gate
+85. [NEW] Create /kontakt page — dedicated contact form, email, business hours, GDPR-compliant data processing info

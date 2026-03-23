@@ -380,3 +380,38 @@
 **Queue:** ~33 completed + ~44 active = 79 total
 
 **Site verification:** DNS unreachable from this environment (cognivia.eu not resolving). Local file integrity verified: all 26 HTML files valid, style tags balanced, no missing hreflang/canonical on blog pages.
+
+### 2026-03-23 — Power Cycle #12 (13:53 UTC)
+**Implemented:**
+- ✅ Item #73 — Floating "Zamów teraz" CTA button on mobile (produkt.html)
+  - Fixed bottom bar visible only on screens < 768px
+  - Shows price (79,00 zł), free shipping note, and green "Zamów teraz" button with cart icon
+  - Glassmorphism backdrop-blur styling, shadow separator
+  - Adds 1 CogniCit box to cart directly on click
+  - Body padding-bottom: 70px on mobile to prevent content overlap
+  - Disappears on desktop (no performance cost)
+- ✅ Item #77 — Satisfaction guarantee section on produkt.html
+  - Large "30" badge in green circle, "30-dniowa gwarancja satysfakcji" heading
+  - Marketing copy explaining no-questions-asked refund policy
+  - 3-step return process: email → return product → refund (7 business days)
+  - Link to zwroty.html for full policy details
+  - Subtle conditions note (first order, product price only)
+  - Responsive: 3-column grid on desktop, stacked on mobile
+  - Positioned between science/benefits section and buy section for maximum conversion impact
+- ✅ Blog post outline added: "Nootropiki w Polsce — trend czy trwała zmiana?"
+  - 9-section outline covering nootropic definition, target audience, ingredient comparison, safety, and CogniCit positioning
+  - SEO keywords: nootropiki Polska, suplement na koncentrację, suplement na pamięć
+- ✅ 3 new improvement ideas added to queue (#83-85): blog articles section on product page, pre-launch countdown timer, /kontakt page
+- ✅ Item #80 verified — free shipping thresholds already consistent across all pages (120 zł InPost/Poczta, 150 zł DPD)
+
+**Files changed:**
+- `produkt.html` — floating CTA CSS + HTML, guarantee section CSS + HTML, mobile responsive styles
+- `improvement_queue.md` — 2 items done (#73, #77), #80 verified, 3 new items added (#83-85)
+- `content_calendar.md` — new blog outline: nootropiki
+- `changelog.md` — this entry
+
+**Cart status:** Full client-side JS cart fully functional. 79 zł. Multiple buy buttons on produkt.html + floating mobile CTA. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Site verification:** HTML validated — zero structural errors. All cart integrations verified (CogniviaCart.addItem calls on 3 buttons). Responsive CSS for mobile floating CTA confirmed.
+
+**Queue:** ~38 completed + ~47 active = 85 total

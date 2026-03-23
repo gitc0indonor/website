@@ -311,3 +311,24 @@
 **CTA:** Email signup for launch notification + link to certyfikaty.html  
 **Internal links:** certyfikaty.html, produkt.html, faq.html, jak-czytac-etykiety.html, blog/suplement-vs-lek.html  
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #12)
+**Title:** Nootropiki w Polsce — trend czy trwała zmiana? Przewodnik po suplementach na koncentrację  
+**Target:** Polish audience, SEO / trend capture / awareness  
+**Word count:** 1500-2000  
+**Keywords:** nootropiki Polska, suplement na koncentrację, suplement na pamięć, nootropik co to, suplementy dla studentów, suplementy dla programistów  
+
+**Outline:**
+1. **Wstęp** — Nootropiki to jedno z najszybciej rosnących słów kluczowych w polskim rynku suplementów — skąd ta popularność?
+2. **Czym są nootropiki?** — Definicja (Corneliu Giurgea, 1972), ewolucja pojęcia od leków na receptę do suplementów diety
+3. **Kto sięga po nootropiki?** — Studenci, programiści, przedsiębiorcy, osoby 45+ — profil polskiego konsumenta
+4. **Popularne składniki nootropowe** — Tabela: cytykolina, L-teanina, kofeina, bakopa, ALA — mechanizm działania, dawki z badań
+5. **Nootropiki vs kofeina** — Porównanie: filiżanka kawy vs. przemyślana formuła — co daje lepsze efekty długoterminowe?
+6. **Bezpieczeństwo suplementów nootropowych** — Kiedy suplement nie wystarczy, kiedy potrzebny jest lek, interakcje
+7. **Jak wybrać nootropik?** — 5 kryteriów: skład przejrzysty, dawki z badań, GMP, zgłoszenie GIS, brak pseudo-nauki w marketingu
+8. **CogniCit — nasze podejście** — 3 składniki, synergia ALA + cytykolina + β-CD, zero "magicznych mieszanków"
+9. **Podsumowanie** — Nootropiki to nie magia — to nauka. Wybieraj mądrze.
+
+**CTA:** Email signup for launch notification  
+**Internal links:** produkt.html, nauka.html, jak-wybrac-suplement.html, blog/cytykolina.html, blog/antyoksydanty.html  
+**Status:** Outline ready, needs writing
