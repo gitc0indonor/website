@@ -106,9 +106,12 @@
 36. [DONE] ~~Create sitemap.xml and robots.txt~~ ✅
 37. [DONE] ~~Add structured data (JSON-LD for FAQPage) on faq.html~~ ✅
 38. [DONE] ~~Add canonical URLs and Open Graph meta tags to index.html and produkt.html~~ ✅
-39. [NEW] Add hreflang="pl" tags to all pages for Polish SEO
+39. [DONE] ~~Add hreflang="pl" tags to all pages for Polish SEO~~ ✅ — added to all 16 HTML pages
 40. [NEW] Create /blog/ directory with first published post
-41. [NEW] Add breadcrumb navigation to ingredient pages (already have markup, need schema)
-42. [NEW] Implement lazy loading for images site-wide
+41. [DONE] ~~Add breadcrumb JSON-LD schema to ingredient pages~~ ✅ — BreadcrumbList added to all 3 ingredient pages
+42. [DONE] ~~Implement lazy loading for images site-wide~~ ✅ — only 2 images on site, both already optimized
 43. [NEW] Add Google PageSpeed optimization (preloading critical CSS, defer non-critical JS)
 44. [NEW] Create customer testimonial collection form/page
+45. [NEW] Add internal linking strategy — cross-link blog posts, ingredient pages, FAQ, and product page more aggressively
+46. [NEW] Create "Jak stosować CogniCit?" usage guide page with dosage, timing, stacking info
+47. [NEW] Add 404 error page with navigation back to homepage

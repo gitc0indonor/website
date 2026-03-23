@@ -99,3 +99,26 @@
 **CTA:** Email signup for launch notification  
 **Internal links:** beta-cyklodekstryna.html, index.html, nauka.html  
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-23)
+**Title:** Suplement diety vs lek — co musisz wiedzieć przed zakupem?  
+**Target:** Polish audience, trust-building / regulatory education  
+**Word count:** 1500-2000  
+**Keywords:** suplement diety vs lek, rejestracja GIS, suplement diety przepisy, bezpieczeństwo suplementów, suplement diety regulacja UE  
+
+**Outline:**
+1. **Wstęp** — Rynek suplementów w Polsce rośnie — ale czy konsument wie, co kupuje?
+2. **Definicja prawna** — Suplement diety wg. rozporządzenia UE 2002/46/WE i ustawy polskiej — żywność, nie lek
+3. **Kluczowe różnice** — Tabela: suplement diety vs lek (cel, rejestracja, badania kliniczne, reklama, odpowiedzialność)
+4. **Rejestracja w GIS** — Proces zgłoszenia suplementu diety w Głównym Inspektoracie Sanitarnym, co oznacza dla konsumenta
+5. **Oznakowanie** — Co MUSI być na opakowaniu suplementu: „suplement diety", dzienna porcja, ostrzeżenia
+6. **Rozporządzenie health claims** — Czego producent MOŻE i NIE MOŻE napisać (WE 1924/2006)
+7. **Jak rozpoznać bezpieczny suplement?** — Checklist: GMP, GIS, deklaracja składników, producent, kraj pochodzenia
+8. **CogniCit jako przykład** — Jak nasz produkt spełnia wszystkie wymogi regulacyjne
+9. **Podsumowanie** — Suplement nie zastępuje leku, ale dobry suplement = transparentny, certyfikowany, zgodny z prawem
+
+**CTA:** Email signup for launch notification  
+**Internal links:** faq.html (safety section), o-nas.html, regulamin.html  
+**Status:** Outline ready, needs writing
