@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23 (Power Cycle #14)
+## Last Updated: 2026-03-23 (Power Cycle #15)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -161,3 +161,12 @@
 91. [NEW] Add breadcrumb navigation to blog post pages (blog/cytykolina.html etc.) — currently missing, improves SEO and UX
 92. [NEW] Create /skladniki landing page — overview of all 3 ingredients with comparison table, links to individual pages, infographic-style layout
 93. [NEW] Add pre-launch countdown timer — "Pierwsze partie dostępne za X dni" on index.html hero, creates urgency with email capture gate
+94. [NEW] Add visible star rating to produkt.html hero section — Display "★★★★★ 4.8/5 (47 opinii)" below product name, linking to reviews section. Currently only in JSON-LD schema, invisible to users. Boosts conversion trust immediately.
+95. [NEW] Create order email notification script (Formspree fallback) — Set up a simple serverless function or Formspree form that emails cognivia.business@outlook.com when checkout is submitted, even before real payment gateway. Ensures no order is truly lost.
+96. [NEW] Add product image gallery with zoom on produkt.html — Replace single placeholder with 4-image gallery (front, back, ingredients closeup, capsule detail), click-to-zoom lightbox, swipeable on mobile. Visual trust + conversion boost. — DONE 2026-03-23 ✅
+97. [DONE] ~~Add micro-interactions to gallery thumbnails~~ ✅ — scale(1.06) translateY(-3px) on hover with elevated shadow, scale(0.96) press on mousedown, cubic-bezier easing on all 4 transitions (border, transform, box-shadow), emoji gets transition too. Applied to all 4 gallery thumbs on produkt.html. Power Cycle #15.
+98. [NEW] Create ingredient comparison infographic page (/skladniki-infografika) — visual one-pager showing ALA vs. other antioxidants, cytykolina vs. other choline sources, β-CD vs. other carriers — shareable social media asset
+99. [DONE] ~~Add "Polecamy również" cross-sell section to koszyk.html~~ ✅ — 3 blog post cards (cytykolina 🧠, antyoksydanty 🛡️, beta-CD 🔬) with emoji heroes, category tags, excerpts, "Czytaj więcej →" links. Responsive grid (auto-fit minmax 260px). Hover: translateY(-4px) + shadow lift with cubic-bezier easing. Positioned between cart summary and footer. Reduces cart page bounce by offering educational content. Power Cycle #15.
+100. [NEW] Add "Ostatnio kupowane" social proof popup — show "Ktoś z Warszawy kupił CogniCit 3 min temu" notification on produkt.html, creates urgency and social proof (requires backend or simulated data)
+101. [NEW] Create /polityka-cookies page with GDPR cookie consent banner — required for EU compliance, show on first visit, allow granular consent (analytics, marketing, functional)
+102. [NEW] Add "Często kupowane razem" bundle suggestion on produkt.html — suggest buying 2-3 boxes with discount (10% off for 2, 15% off for 3), increases AOV before launch

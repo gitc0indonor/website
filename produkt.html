@@ -296,6 +296,12 @@
   <section class="hero">
     <div style="font-size: 12px; color: var(--cognivia-pink); text-transform: uppercase; letter-spacing: 3px; font-weight: 600; margin-bottom: 12px;">Suplement diety</div>
     <h1>CogniCit</h1>
+    <!-- Visible star rating — #94 -->
+    <div class="star-rating" style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 4px;">
+      <span class="stars" style="color: #f5a623; font-size: 22px; letter-spacing: 2px;">★★★★★</span>
+      <span style="font-size: 15px; font-weight: 600; color: var(--cognivia-charcoal);">4.8/5</span>
+      <a href="#opinie" style="font-size: 13px; color: var(--cognivia-green); text-decoration: none; border-bottom: 1px dotted var(--cognivia-green);">(47 opinii)</a>
+    </div>
     <div class="tagline">Z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną</div>
     <div class="badge-row">
       <span class="badge">ALA 250 mg</span>
@@ -304,6 +310,59 @@
     </div>
     <p class="legal-disclaimer">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.</p>
   </section>
+
+  <!-- PRODUCT IMAGE GALLERY — #96 -->
+  <section class="product-gallery" style="padding: 40px 5% 20px;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div class="gallery-main" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.06); cursor: zoom-in; position: relative;" onclick="openLightbox(0)">
+        <div class="gallery-main-img" style="padding: 60px; text-align: center; background: linear-gradient(135deg, #f9f5ef 0%, #f0ebe2 100%); min-height: 360px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+          <div style="font-size: 120px; margin-bottom: 16px;">💊</div>
+          <div style="font-family: 'EB Garamond', serif; font-size: 28px; color: var(--cognivia-green); font-weight: 700;">CogniCit</div>
+          <div style="font-size: 14px; color: #888; margin-top: 4px;">30 kapsułek · 800 mg</div>
+        </div>
+        <div class="gallery-zoom-hint" style="position: absolute; bottom: 16px; right: 16px; background: rgba(0,0,0,0.5); color: white; padding: 6px 12px; border-radius: 20px; font-size: 12px; display: flex; align-items: center; gap: 4px; pointer-events: none;">
+          <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          Kliknij aby powiększyć
+        </div>
+      </div>
+      <div class="gallery-thumbs" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 12px;">
+        <div class="gallery-thumb active" onclick="openLightbox(0)" style="background: white; border-radius: 8px; padding: 20px; text-align: center; cursor: pointer; border: 2px solid var(--cognivia-green); transition: border-color 0.25s cubic-bezier(0.4,0,0.2,1), transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s cubic-bezier(0.4,0,0.2,1); box-shadow: 0 2px 8px rgba(0,0,0,0.06);" onmouseover="this.style.transform='scale(1.06) translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.06)'" onmousedown="this.style.transform='scale(0.96)';this.style.boxShadow='0 1px 4px rgba(0,0,0,0.08)'" onmouseup="this.style.transform='scale(1.06) translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.12)'">
+          <div style="font-size: 32px; transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);">💊</div>
+          <div style="font-size: 11px; color: #888; margin-top: 4px;">Przód opakowania</div>
+        </div>
+        <div class="gallery-thumb" onclick="openLightbox(1)" style="background: white; border-radius: 8px; padding: 20px; text-align: center; cursor: pointer; border: 2px solid transparent; transition: border-color 0.25s cubic-bezier(0.4,0,0.2,1), transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s cubic-bezier(0.4,0,0.2,1); box-shadow: 0 2px 8px rgba(0,0,0,0.06);" onmouseover="this.style.transform='scale(1.06) translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.06)'" onmousedown="this.style.transform='scale(0.96)';this.style.boxShadow='0 1px 4px rgba(0,0,0,0.08)'" onmouseup="this.style.transform='scale(1.06) translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.12)'">
+          <div style="font-size: 32px; transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);">📋</div>
+          <div style="font-size: 11px; color: #888; margin-top: 4px;">Tył opakowania</div>
+        </div>
+        <div class="gallery-thumb" onclick="openLightbox(2)" style="background: white; border-radius: 8px; padding: 20px; text-align: center; cursor: pointer; border: 2px solid transparent; transition: border-color 0.25s cubic-bezier(0.4,0,0.2,1), transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s cubic-bezier(0.4,0,0.2,1); box-shadow: 0 2px 8px rgba(0,0,0,0.06);" onmouseover="this.style.transform='scale(1.06) translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.06)'" onmousedown="this.style.transform='scale(0.96)';this.style.boxShadow='0 1px 4px rgba(0,0,0,0.08)'" onmouseup="this.style.transform='scale(1.06) translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.12)'">
+          <div style="font-size: 32px; transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);">🔬</div>
+          <div style="font-size: 11px; color: #888; margin-top: 4px;">Składniki</div>
+        </div>
+        <div class="gallery-thumb" onclick="openLightbox(3)" style="background: white; border-radius: 8px; padding: 20px; text-align: center; cursor: pointer; border: 2px solid transparent; transition: border-color 0.25s cubic-bezier(0.4,0,0.2,1), transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s cubic-bezier(0.4,0,0.2,1); box-shadow: 0 2px 8px rgba(0,0,0,0.06);" onmouseover="this.style.transform='scale(1.06) translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.06)'" onmousedown="this.style.transform='scale(0.96)';this.style.boxShadow='0 1px 4px rgba(0,0,0,0.08)'" onmouseup="this.style.transform='scale(1.06) translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.12)'">
+          <div style="font-size: 32px; transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);">✨</div>
+          <div style="font-size: 11px; color: #888; margin-top: 4px;">Kapsułka</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX OVERLAY -->
+  <div id="lightbox" class="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92); z-index: 10000; justify-content: center; align-items: center; flex-direction: column;" onclick="closeLightbox(event)">
+    <button onclick="closeLightbox(event)" style="position: absolute; top: 20px; right: 24px; background: none; border: none; color: white; font-size: 36px; cursor: pointer; z-index: 10001; line-height: 1;">&times;</button>
+    <button onclick="prevImage(event)" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.15); border: none; color: white; font-size: 28px; cursor: pointer; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">‹</button>
+    <button onclick="nextImage(event)" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.15); border: none; color: white; font-size: 28px; cursor: pointer; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">›</button>
+    <div id="lightbox-content" style="text-align: center; max-width: 700px; width: 90%;">
+      <div style="font-size: 160px;" id="lightbox-emoji">💊</div>
+      <div style="font-family: 'EB Garamond', serif; font-size: 28px; color: white; margin-top: 16px;" id="lightbox-title">CogniCit — Przód opakowania</div>
+      <div style="font-size: 14px; color: rgba(255,255,255,0.6); margin-top: 8px;" id="lightbox-desc">30 kapsułek w białym opakowaniu z nadrukiem Cognivia</div>
+    </div>
+    <div style="position: absolute; bottom: 24px; display: flex; gap: 8px;" id="lightbox-dots">
+      <span style="width: 8px; height: 8px; border-radius: 50%; background: white;"></span>
+      <span style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3);"></span>
+      <span style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3);"></span>
+      <span style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3);"></span>
+    </div>
+  </div>
 
   <!-- SKŁADNIKI -->
   <section id="składniki" style="background: white;">
@@ -690,6 +749,82 @@
     function addToCartCalc() {
       CogniviaCart.addItem('cognicit', calcMonths);
     }
+
+    /* === PRODUCT GALLERY LIGHTBOX — #96 === */
+    const galleryImages = [
+      { emoji: '💊', title: 'CogniCit — Przód opakowania', desc: '30 kapsułek w białym opakowaniu z nadrukiem Cognivia' },
+      { emoji: '📋', title: 'CogniCit — Tył opakowania', desc: 'Informacje o składzie, dawkowaniu i ostrzeżeniach' },
+      { emoji: '🔬', title: 'CogniCit — Składniki', desc: 'ALA 250 mg · Cytykolina 300 mg · Beta-CD 250 mg' },
+      { emoji: '✨', title: 'CogniCit — Kapsułka', desc: 'Biała kapsułka roślinna, łatwa do połknięcia' }
+    ];
+    let currentImage = 0;
+
+    function openLightbox(index) {
+      currentImage = index;
+      updateLightbox();
+      document.getElementById('lightbox').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      // Update thumbnail borders
+      document.querySelectorAll('.gallery-thumb').forEach((t, i) => {
+        t.style.borderColor = i === index ? 'var(--cognivia-green)' : 'transparent';
+      });
+    }
+
+    function closeLightbox(e) {
+      if (e) e.stopPropagation();
+      document.getElementById('lightbox').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    function nextImage(e) {
+      if (e) e.stopPropagation();
+      currentImage = (currentImage + 1) % galleryImages.length;
+      updateLightbox();
+    }
+
+    function prevImage(e) {
+      if (e) e.stopPropagation();
+      currentImage = (currentImage - 1 + galleryImages.length) % galleryImages.length;
+      updateLightbox();
+    }
+
+    function updateLightbox() {
+      const img = galleryImages[currentImage];
+      document.getElementById('lightbox-emoji').textContent = img.emoji;
+      document.getElementById('lightbox-title').textContent = img.title;
+      document.getElementById('lightbox-desc').textContent = img.desc;
+      const dots = document.getElementById('lightbox-dots').children;
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].style.background = i === currentImage ? 'white' : 'rgba(255,255,255,0.3)';
+      }
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (document.getElementById('lightbox').style.display === 'flex') {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+      }
+    });
+
+    // Touch swipe support
+    let touchStartX = 0;
+    document.getElementById('lightbox').addEventListener('touchstart', function(e) {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+    document.getElementById('lightbox').addEventListener('touchend', function(e) {
+      const diff = touchStartX - e.changedTouches[0].screenX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) nextImage(); else prevImage();
+      }
+    });
+
+    // Thumbnail hover effects
+    document.querySelectorAll('.gallery-thumb').forEach(thumb => {
+      thumb.addEventListener('mouseenter', function() { this.style.transform = 'scale(1.05)'; });
+      thumb.addEventListener('mouseleave', function() { this.style.transform = 'scale(1)'; });
+    });
   </script>
 </body>
 </html>

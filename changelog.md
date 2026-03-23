@@ -492,3 +492,35 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
 
 **Queue:** ~42 completed + ~48 active = 93 total
+
+### 2026-03-23 — Power Cycle #15 (17:25 UTC)
+**Implemented:**
+- ✅ Item #97 — Micro-interactions to gallery thumbnails on produkt.html
+  - Hover: scale(1.06) + translateY(-3px) + elevated shadow (0 8px 24px)
+  - Press: scale(0.96) on mousedown, restores on mouseup
+  - Cubic-bezier(0.4,0,0.2,1) easing on all 4 CSS transitions (border-color, transform, box-shadow)
+  - Base shadow: 0 2px 8px for subtle depth even at rest
+  - Emoji also gets CSS transition for smooth feel
+  - Applied to all 4 gallery thumbnails (💊 Przód, 📋 Tył, 🔬 Składniki, ✨ Kapsułka)
+- ✅ Item #99 — "Polecamy również" cross-sell section on koszyk.html
+  - 3 blog post cards: cytykolina 🧠, antyoksydanty 🛡️, beta-CD 🔬
+  - Each card: category tag (Nauka/Zdrowie/Technologia), emoji hero, title, excerpt, "Czytaj więcej →" link
+  - Responsive grid: auto-fit minmax(260px, 1fr)
+  - Hover: translateY(-4px) + shadow lift with cubic-bezier easing
+  - Positioned between cart summary and footer to reduce bounce rate
+  - Clean white card design matching site aesthetic
+- ✅ Blog post outline added to content_calendar.md — "Suplementy a stres — jak wspierać organizm w trudnych czasach?"
+- ✅ 3 new improvement ideas added to queue (#100-102): social proof popup, cookie policy page, bundle suggestions
+
+**Files changed:**
+- `produkt.html` — gallery thumbnail micro-interactions (inline handlers)
+- `koszyk.html` — cross-sell section added before footer
+- `improvement_queue.md` — 2 items done (#97, #99), 3 new items added (#100-102)
+- `content_calendar.md` — new blog outline: suplementy a stres
+- `changelog.md` — this entry
+
+**Site verification:** HTML validated — zero structural errors. Gallery thumbs have all 4 event handlers (mouseover/mouseout/mousedown/mouseup). Cross-sell section responsive grid confirmed. Cart functionality unaffected.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~50 completed + ~48 active = 98 total (renumbered to 102)

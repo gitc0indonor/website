@@ -414,3 +414,24 @@
 **CTA:** Zamów CogniCit — link do produkt.html  
 **Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, nauka.html  
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #15)
+**Title:** Suplementy a stres — jak wspierać organizm w trudnych czasach?  
+**Target:** Polish audience, SEO / stress management / lifestyle  
+**Word count:** 1200-1600  
+**Keywords:** suplementy na stres, suplement na koncentrację stres, kortyzol suplement, adaptogeny, suplementacja w stresie, wsparcie mózgu  
+
+**Outline:**
+1. **Wstęp** — Stres chroniczny to problem milionów Polaków — praca, finanse, zdrowie. Czy suplementy mogą pomóc?
+2. **Co stres robi z mózgiem?** — Kortyzol, neuroprzekaźniki, stres oksydacyjny, spadek acetylocholiny — naukowe spojrzenie
+3. **Popularne „adaptogeny" i ich ograniczenia** — Ashwagandha, rhodiola, dziurawiec — obiecujące, ale nie zawsze udokumentowane
+4. **Co naprawdę działa? Przegląd badań** — Cytykolina (neuroprotekcja), ALA (antyoksydacja mitochondriów), L-teanina — PubMed evidence
+5. **CogniCit w kontekście stresu** — Jak 3 składniki formuły wspierają organizm: ochrona neuronów, energia komórkowa, wsparcie acetylocholiny
+6. **Stres ≠ suplement — podejście holistyczne** — Sen, ruch, dieta, terapia — suplementacja jako dodatek, nie zamiennik
+7. **Kiedy suplementacja nie wystarczy?** — Granica między suplementem a pomocą psychologiczną/lekarską — odpowiedzialna komunikacja
+8. **Podsumowanie** — Suplementacja w stresie = wsparcie, nie rozwiązanie. Wybieraj świadomie.
+
+**CTA:** Zamów CogniCit — link do produkt.html  
+**Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, faq.html  
+**Status:** Outline ready, needs writing
+
