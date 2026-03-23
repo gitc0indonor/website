@@ -415,3 +415,47 @@
 **Site verification:** HTML validated — zero structural errors. All cart integrations verified (CogniviaCart.addItem calls on 3 buttons). Responsive CSS for mobile floating CTA confirmed.
 
 **Queue:** ~38 completed + ~47 active = 85 total
+
+---
+
+### 2026-03-23 — Power Cycle #13 (14:23 UTC)
+**Implemented:**
+- ✅ Item #83 — "Polecane artykuły" section on produkt.html
+  - 3 blog post cards (cytykolina 🧠, antyoksydanty 🛡️, beta-CD 🔬) with inline styles
+  - Each card: emoji hero, category tag, title, excerpt, "Czytaj więcej →" link
+  - Responsive grid (auto-fit minmax 280px), hover effects
+  - Positioned between satisfaction guarantee and buy section for conversion flow
+  - "Wszystkie artykuły na blogu →" link to blog/index.html
+- ✅ Item #85 — Created /kontakt.html (13.3 KB) — full contact page
+  - Header with Cognivia logo + nav matching site design
+  - Hero section with response time promise
+  - 3 contact cards: Email (cognivia.business@outlook.com), Response time (24h), Location (Gdańsk)
+  - Response time highlight box (green accent)
+  - Full contact form with Formspree integration, subject dropdown (6 categories)
+  - 3 quick-link cards to FAQ, Dostawa, Zwroty for self-service
+  - GDPR/RODO data processing notice with legal basis reference
+  - ContactPage + BreadcrumbList JSON-LD schemas
+  - Canonical URL, hreflang="pl", OG meta tags
+  - Responsive design (single column on mobile)
+- ✅ Sitemap updated — kontakt.html added
+- ✅ Footer updated on index.html — "Kontakt" now links to kontakt.html instead of mailto:
+- ✅ 3 blog post outlines added to content_calendar.md:
+  - "Jak skontaktować się z producentem suplementów?" — trust/conversion
+  - "Suplementy dla studentów — jak wspierać koncentrację w sesji?" — seasonal/SEO
+  - "Dlaczego 3 składniki zamiast 20? Filozofia minimalistycznej suplementacji" — brand differentiation
+- ✅ 3 new improvement ideas added to queue (#86-88): floating contact button, cookie policy page, recently viewed section
+
+**Files changed:**
+- `kontakt.html` — NEW (13.3 KB)
+- `produkt.html — blog articles section added between guarantee and buy sections
+- `sitemap.xml` — kontakt.html URL added
+- `index.html` — footer "Kontakt" link updated to kontakt.html
+- `content_calendar.md` — 3 new blog outlines added
+- `improvement_queue.md` — 2 items done (#83, #85), 3 new items added (#86-88)
+- `changelog.md` — this entry
+
+**Site verification:** All 28 HTML files structurally validated (balanced tags). New kontakt.html passes all schema/meta checks. Blog section on produkt.html responsive across breakpoints.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~40 completed + ~47 active = 87 total

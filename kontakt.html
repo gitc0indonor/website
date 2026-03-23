@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt — Cognivia | Skontaktuj się z nami</title>
+  <meta name="description" content="Skontaktuj się z Cognivia. Pytania o CogniCit, zamówienia, zwroty, współpraca. Odpowiadamy w ciągu 24h.">
+  <link rel="canonical" href="https://cognivia.eu/kontakt.html">
+  <link rel="alternate" hreflang="pl" href="https://cognivia.eu/kontakt.html">
+  <meta property="og:title" content="Kontakt — Cognivia">
+  <meta property="og:description" content="Skontaktuj się z Cognivia. Pytania o CogniCit, zamówienia, zwroty, współpraca.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cognivia.eu/kontakt.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kontakt — Cognivia">
+  <meta name="twitter:description" content="Skontaktuj się z Cognivia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --beige: #f5f0e8;
+      --cream: #faf7f0;
+      --white: #fdfcf8;
+      --charcoal: #2a2a28;
+      --soft: #5a5a58;
+      --gold: #c9a96e;
+      --green: #4a7c59;
+      --green-light: #e8f0eb;
+      --line: #e8e4dc;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--beige); line-height: 1.7; }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+
+    /* HEADER */
+    header { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: var(--white); border-bottom: 1px solid var(--line); }
+    .logo { font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 600; letter-spacing: 3px; text-decoration: none; color: var(--charcoal); }
+    nav a { font-size: 13px; color: var(--soft); text-decoration: none; margin-left: 24px; letter-spacing: 0.5px; }
+    nav a:hover { color: var(--charcoal); }
+
+    /* BREADCRUMBS */
+    .breadcrumbs { padding: 16px 5%; font-size: 12px; color: var(--soft); }
+    .breadcrumbs a { color: var(--gold); text-decoration: none; }
+    .breadcrumbs span { margin: 0 8px; color: var(--line); }
+
+    /* HERO */
+    .hero { text-align: center; padding: 60px 5% 40px; }
+    .hero h1 { font-family: 'EB Garamond', serif; font-size: 42px; font-weight: 600; margin-bottom: 12px; }
+    .hero p { font-size: 16px; color: var(--soft); max-width: 500px; margin: 0 auto; }
+
+    /* CONTACT CARDS */
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin: 40px 0; }
+    .contact-card { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 32px 24px; text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
+    .contact-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+    .contact-card-icon { font-size: 36px; margin-bottom: 16px; }
+    .contact-card h3 { font-family: 'EB Garamond', serif; font-size: 20px; margin-bottom: 8px; }
+    .contact-card p { font-size: 14px; color: var(--soft); line-height: 1.6; }
+    .contact-card a { color: var(--green); text-decoration: none; font-weight: 500; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* FORM SECTION */
+    .form-section { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 48px 40px; margin: 40px 0; }
+    .form-section h2 { font-family: 'EB Garamond', serif; font-size: 28px; text-align: center; margin-bottom: 8px; }
+    .form-section > p { text-align: center; color: var(--soft); font-size: 14px; margin-bottom: 32px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 6px; color: var(--charcoal); }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px 16px; border: 1px solid var(--line); border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 14px; background: var(--cream); transition: border-color 0.2s; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--green); }
+    .form-group textarea { min-height: 120px; resize: vertical; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .btn-submit { display: inline-block; background: var(--green); color: white; border: none; padding: 14px 40px; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 500; border-radius: 8px; cursor: pointer; transition: background 0.2s; width: 100%; }
+    .btn-submit:hover { background: #3d6b4a; }
+    .form-note { font-size: 12px; color: #999; text-align: center; margin-top: 16px; }
+
+    /* RESPONSE TIME */
+    .response-box { background: var(--green-light); border-radius: 12px; padding: 24px 32px; margin: 40px 0; display: flex; align-items: center; gap: 16px; }
+    .response-box-icon { font-size: 32px; }
+    .response-box-text h4 { font-size: 15px; margin-bottom: 4px; }
+    .response-box-text p { font-size: 13px; color: var(--soft); }
+
+    /* GDPR */
+    .gdpr-note { font-size: 13px; color: var(--soft); line-height: 1.7; margin: 24px 0; padding: 20px; background: var(--cream); border-radius: 8px; border-left: 3px solid var(--gold); }
+
+    /* FOOTER */
+    footer { background: var(--charcoal); color: #ccc; padding: 40px 5%; text-align: center; font-size: 13px; margin-top: 60px; }
+    footer a { color: var(--gold); text-decoration: none; }
+    .footer-badges { display: flex; justify-content: center; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+    .footer-badge { font-size: 11px; background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 20px; letter-spacing: 0.5px; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 32px; }
+      .form-section { padding: 32px 20px; }
+      .form-row { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .response-box { flex-direction: column; text-align: center; }
+      nav { display: none; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Kontakt — Cognivia",
+    "description": "Skontaktuj się z Cognivia. Pytania o CogniCit, zamówienia, zwroty, współpraca.",
+    "url": "https://cognivia.eu/kontakt.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Cognivia",
+      "email": "cognivia.business@outlook.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PL"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "cognivia.business@outlook.com",
+        "contactType": "customer service",
+        "availableLanguage": "Polish"
+      }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://cognivia.eu/" },
+      { "@type": "ListItem", "position": 2, "name": "Kontakt", "item": "https://cognivia.eu/kontakt.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">C O G N I V I A</a>
+    <nav>
+      <a href="produkt.html">Produkt</a>
+      <a href="nauka.html">Nauka</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog/">Blog</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumbs">
+    <a href="index.html">Strona główna</a> <span>›</span> Kontakt
+  </div>
+
+  <section class="hero">
+    <h1>Skontaktuj się z nami</h1>
+    <p>Masz pytania o CogniCit, zamówienie lub współpracę? Odpowiadamy w ciągu 24 godzin w dni robocze.</p>
+  </section>
+
+  <div class="container">
+
+    <!-- CONTACT CARDS -->
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card-icon">✉️</div>
+        <h3>Email</h3>
+        <p>Najszybszy sposób kontaktu</p>
+        <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">🕐</div>
+        <h3>Czas odpowiedzi</h3>
+        <p>Odpowiadamy w ciągu <strong>24 godzin</strong> w dni robocze (pon–pt)</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">📍</div>
+        <h3>Siedziba</h3>
+        <p>Cognivia<br>Gdańsk, Polska</p>
+      </div>
+    </div>
+
+    <!-- RESPONSE TIME BOX -->
+    <div class="response-box">
+      <div class="response-box-icon">⚡</div>
+      <div class="response-box-text">
+        <h4>Szybka odpowiedź gwarantowana</h4>
+        <p>Większość wiadomości odpowiadamy w ciągu kilku godzin. W pilnych sprawach (zamówienia, zwroty) — jeszcze tego samego dnia.</p>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="form-section">
+      <h2>Napisz do nas</h2>
+      <p>Wypełnij formularz — odpowiemy na Twój email</p>
+
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Imię</label>
+            <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="twoj@email.pl" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Temat</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Wybierz temat...</option>
+            <option value="product">Pytanie o produkt CogniCit</option>
+            <option value="order">Pytanie o zamówienie</option>
+            <option value="return">Zwrot lub reklamacja</option>
+            <option value="cooperation">Współpraca biznesowa</option>
+            <option value="media">Media i prasa</option>
+            <option value="other">Inne</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Wiadomość</label>
+          <textarea id="message" name="message" placeholder="Opisz swoją sprawę..." required></textarea>
+        </div>
+
+        <input type="hidden" name="_subject" value="Nowa wiadomość z formularza kontaktowego — cognivia.eu">
+        <button type="submit" class="btn-submit">Wyślij wiadomość →</button>
+
+        <p class="form-note">Wysyłając formularz zgadzasz się z naszą <a href="polityka-prywatnosci.html">polityką prywatności</a>. Twoje dane są bezpieczne — nie udostępniamy ich osobom trzecim.</p>
+      </form>
+    </div>
+
+    <!-- TOPICS -->
+    <div style="margin: 40px 0;">
+      <h2 style="font-family: 'EB Garamond', serif; font-size: 28px; text-align: center; margin-bottom: 24px;">Najczęstsze pytania</h2>
+      <p style="text-align: center; font-size: 14px; color: var(--soft); margin-bottom: 24px;">Zanim napiszesz — sprawdź, czy odpowiedź nie jest już na stronie:</p>
+      <div class="contact-grid">
+        <a href="faq.html" class="contact-card" style="text-decoration: none; color: inherit;">
+          <div class="contact-card-icon">❓</div>
+          <h3>FAQ</h3>
+          <p>Najczęściej zadawane pytania o CogniCit, składniki, dawkowanie</p>
+        </a>
+        <a href="dostawa.html" class="contact-card" style="text-decoration: none; color: inherit;">
+          <div class="contact-card-icon">📦</div>
+          <h3>Dostawa</h3>
+          <p>Metody wysyłki, czasy dostawy, śledzenie paczki</p>
+        </a>
+        <a href="zwroty.html" class="contact-card" style="text-decoration: none; color: inherit;">
+          <div class="contact-card-icon">↩️</div>
+          <h3>Zwroty</h3>
+          <p>Procedura zwrotu, 30-dniowa gwarancja satysfakcji</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- GDPR NOTE -->
+    <div class="gdpr-note">
+      <strong>Informacja o przetwarzaniu danych osobowych (RODO)</strong><br>
+      Administratorem danych osobowych jest Cognivia. Dane podane w formularzu kontaktowym są przetwarzane w celu udzielenia odpowiedzi na Twoją wiadomość (art. 6 ust. 1 lit. f RODO — prawnie uzasadniony interes administratora). Dane będą przechowywane przez okres niezbędny do obsługi zapytania. Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz wniesienia sprzeciwu. Szczegóły w <a href="polityka-prywatnosci.html" style="color: var(--green);">polityce prywatności</a>.
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-badges">
+      <span class="footer-badge">✓ GMP Certified</span>
+      <span class="footer-badge">✓ EU Compliant</span>
+      <span class="footer-badge">✓ Lab Tested</span>
+      <span class="footer-badge">✓ Zgłoszone GIS</span>
+    </div>
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
+    <p style="margin-top: 8px;">
+      <a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Prywatność</a> · <a href="index.html">Strona główna</a>
+    </p>
+  </footer>
+
+</body>
+</html>

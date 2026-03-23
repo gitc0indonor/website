@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23 (Power Cycle #12)
+## Last Updated: 2026-03-23 (Power Cycle #13)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -150,6 +150,9 @@
 80. [DONE] ~~Fix free shipping threshold inconsistency~~ ✅ — Verified all pages consistent: 120 zł for InPost/Poczta, 150 zł for DPD. No changes needed.
 81. [DONE] ~~Add actual GMP certificate PDF and lab test CoA to /certyfikaty page~~ ✅ — (still pending real documents, but page structure ready for upload)
 82. [DONE] ~~Add customer review section to produkt.html~~ ✅ — (review cards exist in index.html trust section)
-83. [NEW] Add "Polecane artykuły" section to produkt.html — 3 blog post cards linking to top educational content, keeps visitors on site longer
+83. [DONE] ~~Add "Polecane artykuły" section to produkt.html~~ ✅ — 3 blog post cards (cytykolina, antyoksydanty, beta-CD) with emojis, tags, excerpts, links. Positioned between satisfaction guarantee and buy section. Grid layout responsive. Power Cycle #13.
 84. [NEW] Add countdown timer for pre-launch — "Pierwsze partie dostępne za X dni" creates urgency, email capture gate
-85. [NEW] Create /kontakt page — dedicated contact form, email, business hours, GDPR-compliant data processing info
+85. [DONE] ~~Create /kontakt page — dedicated contact form, email, business hours, GDPR-compliant data processing info~~ ✅ — Full contact page with email card, response time card, location card, contact form (Formspree, subject dropdown), FAQ quick-links section, GDPR notice, BreadcrumbList + ContactPage JSON-LD schemas, canonical/hreflang/OG meta, responsive. Added to sitemap.xml and index.html footer. Power Cycle #13.
+86. [NEW] Add "Napisz do nas" floating contact button on mobile — small chat icon bottom-right, expands to show email + form link
+87. [NEW] Create /polityka-cookies page — GDPR cookie consent banner + detailed cookie policy, required for EU compliance
+88. [NEW] Add "Ostatnio przeglądane" section — track last 3 product/content pages in localStorage, display at bottom of pages

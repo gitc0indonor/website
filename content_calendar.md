@@ -312,6 +312,68 @@
 **Internal links:** certyfikaty.html, produkt.html, faq.html, jak-czytac-etykiety.html, blog/suplement-vs-lek.html  
 **Status:** Outline ready, needs writing
 
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #13)
+**Title:** Jak skontaktować się z producentem suplementów? Przewodnik dla kupujących  
+**Target:** Polish audience, trust-building / conversion  
+**Word count:** 1000-1400  
+**Keywords:** kontakt producent suplement, jak wybrać suplement, obsługa klienta suplement, zwroty suplement diety, zaufany suplement  
+
+**Outline:**
+1. **Wstęp** — Dlaczego łatwość kontaktu z producentem świadczy o jakości produktu?
+2. **Czerwone flagi** — Brak kontaktu, ukryty adres, brak regulaminu — co powinno niepokoić?
+3. **Jak sprawdzić producenta przed zakupem?** — Adres siedziby, NIP, formularz kontaktowy, czas odpowiedzi
+4. **Co pytać producenta suplementów?** — Certyfikaty GMP, wyniki CoA, rejestracja GIS, skład i dawki
+5. **Obsługa posprzedażowa** — Zwroty, reklamacje, gwarancja satysfakcji — na co zwrócić uwagę
+6. **Cognivia — jak u nas wygląda kontakt** — Formularz, email, 24h odpowiedź, 30-dniowa gwarancja
+7. **Checklist przed zakupem** — 5 pytań do producenta, które warto zadać
+
+**CTA:** Napisz do nas — link do kontakt.html  
+**Internal links:** kontakt.html, faq.html, zwroty.html, certyfikaty.html, produkt.html  
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #13)
+**Title:** Suplementy dla studentów — jak wspierać koncentrację w sesji?  
+**Target:** Polish audience, SEO / seasonal / student demographic  
+**Word count:** 1200-1600  
+**Keywords:** suplementy dla studentów, suplement na koncentrację sesja, nootropik student, cytykolina nauka, suplement na pamięć egzamin  
+
+**Outline:**
+1. **Wstęp** — Sesja egzaminacyjna = stres, mało snu, dużo kofeiny — czy suplementy mogą pomóc?
+2. **Mózg pod obciążeniem** — Co dzieje się z mózgiem podczas intensywnej nauki (kortyzol, acetylocholina, stres oksydacyjny)
+3. **Popularne „wspomagacze" studentów** — Kofeina, energetyki, modafinil — zalety i ryzyka
+4. **Bezpieczne alternatywy** — Cytykolina, L-teanina, ALA — naukowo udokumentowane składniki
+5. **CogniCit dla studentów** — Jak 3 składniki wspierają koncentrację bez „zjazdu" jak po kofeinie
+6. **Poranna rutyna na sesję** — Sen, nawodnienie, ruch, suplementacja — praktyczne wskazówki
+7. **Czego NIE brać** — Substancje na receptę, „nootropiki" z nieznanych źródeł, stacking bez wiedzy
+8. **Podsumowanie** — Suplementacja to wsparcie, nie zastępstwo dla snu i nauki
+
+**CTA:** Zamów CogniCit — link do produkt.html  
+**Internal links:** produkt.html, blog/cytykolina.html, jak-stosowac.html, jak-wybrac-suplement.html  
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #13)
+**Title:** Dlaczego 3 składniki zamiast 20? Filozofia minimalistycznej suplementacji  
+**Target:** Polish audience, brand differentiation / trust  
+**Word count:** 1200-1600  
+**Keywords:** minimalistyczna suplementacja, dobry suplement diety, mniej składników suplement, suplement bez wypełniaczy, prosty skład suplement  
+
+**Outline:**
+1. **Wstęp** — Na rynku dominują suplementy z 15-30 składnikami. Czy więcej = lepiej?
+2. **Problem suplementów „kombajnów"** — Mikrodawki, interakcje między składnikami, trudna kontrola jakości
+3. **Zalety minimalistycznego podejścia** — Dokładne dawki, łatwa weryfikacja, mniej interakcji, przejrzystość
+4. **Jak działają synergiczne formuły?** — ALA + cytykolina + β-CD — jak 3 składniki uzupełniają się lepiej niż 20
+5. **Co mówią badania?** — Pojedyncze składniki vs. kompleksy — przegląd literatury
+6. **Jak Cognivia wybrała skład?** — Proces decyzyjny, odrzucone składniki, kryteria naukowe
+7. **Checklist: jak ocenić skład suplementu?** — Ile składników? Jakie dawki? Czy synergia czy chaos?
+8. **Podsumowanie** — Precyzja > ilość. 3 dobrze dobrane składniki > 20 w mikrodawkach.
+
+**CTA:** Email signup for launch notification  
+**Internal links:** nauka.html, produkt.html, blog/suplement-vs-lek.html, jak-czytac-etykiety.html  
+**Status:** Outline ready, needs writing
 ### New Blog Post Outline (Added 2026-03-23 — Power Cycle #12)
 **Title:** Nootropiki w Polsce — trend czy trwała zmiana? Przewodnik po suplementach na koncentrację  
 **Target:** Polish audience, SEO / trend capture / awareness  
