@@ -113,8 +113,11 @@
 43. [NEW] Add Google PageSpeed optimization (preloading critical CSS, defer non-critical JS)
 44. [NEW] Create customer testimonial collection form/page
 45. [DONE] ~~Add internal linking strategy — cross-link blog posts, ingredient pages, FAQ, and product page more aggressively~~ ✅ — Added cross-link sections to all 4 blog posts, all 3 ingredient pages, and FAQ page
-46. [NEW] Create "Jak stosować CogniCit?" usage guide page with dosage, timing, stacking info
+46. [DONE] ~~Create "Jak stosować CogniCit?" usage guide page with dosage, timing, stacking info~~ ✅ — Full guide page with dosage, timing table, stacking advice, contraindications, storage, FAQ. Added to jak-stosowac.html
 47. [DONE] ~~Add 404 error page with navigation back to homepage~~ ✅ — Created 404.html with popular page links and navigation
 48. [NEW] Add "Recently viewed" or "Customers also viewed" section on product page
 49. [NEW] Create /certyfikaty page with downloadable GMP certificate and lab test PDFs
-50. [NEW] Add trust bar to blog pages — "CogniCit — 3 synergistyczne składniki, GMP certified" banner with CTA
+50. [DONE] ~~Add trust bar to blog pages — "CogniCit — 3 synergistyczne składniki, GMP certified" banner with CTA~~ ✅ — Added to all 5 blog pages (cytykolina, antyoksydanty, beta-cyklodekstryna, suplement-vs-lek, blog index)
+51. [NEW] Add breadcrumb navigation to all subpages (produkt, faq, nauka, o-nas, jak-stosowac, etc.)
+52. [NEW] Add "Share this article" social buttons to blog post pages (Facebook, Twitter/X, LinkedIn)
+53. [NEW] Create "Jak wybrać suplement?" consumer guide page — checklist-based, conversion-focused

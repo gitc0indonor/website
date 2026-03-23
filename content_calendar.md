@@ -143,4 +143,66 @@
 
 **CTA:** Email signup for launch notification  
 **Internal links:** produkt.html, faq.html, nauka.html  
+**Status:** Outline ready, needs writing  
+
+---
+
+### New Blog Post Outline (Added 2026-03-23)
+**Title:** 5 mitów o suplementach diety — co mówią przepisy UE?  
+**Target:** Polish audience, trust-building / debunking  
+**Word count:** 1200-1600  
+**Keywords:** suplementy diety mity, suplementy diety regulacja, bezpieczne suplementy, suplementy UE, suplementy Polska  
+
+**Outline:**
+1. **Wstęp** — Suplementy diety budzą emocje — ile z tego jest prawdą?
+2. **Mit 1: „Suplementy nie są regulowane"** — Fakty: zgłoszenie GIS, rozporządzenie WE 2002/46/WE, kontrole Inspekcji Sanitarnej
+3. **Mit 2: „Naturalne = bezpieczne"** — Naturalne składniki też mają interakcje i przeciwwskazania
+4. **Mit 3: „Więcej składników = lepszy suplement"** — Problem suplementów „kombajnów" z 20+ składnikami w mikrodawkach
+5. **Mit 4: „Suplement zastępi lek"** — Twarda granica prawna: suplement nie leczy
+6. **Mit 5: „Wszystkie suplementy są takie same"** — GMP, certyfikaty, przejrzystość składu — co odróżnia dobry suplement
+7. **Jak rozpoznać wartościowy suplement?** — Checklist dla konsumenta
+8. **CogniCit jako przykład** — Transparentność, 3 składniki, dawki z badań, GMP, zgłoszenie GIS
+9. **Podsumowanie** — Wiedza = bezpieczeństwo
+
+**CTA:** Email signup for launch notification  
+**Internal links:** faq.html, suplement-vs-lek.html (blog), produkt.html  
+**Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23)
+**Title:** Poranny rytuał — jak suplementacja wpływa na produktywność?  
+**Target:** Polish audience, lifestyle / productivity  
+**Word count:** 1000-1400  
+**Keywords:** poranna rutyna, produktywność, suplementacja rano, koncentracja, kiedy brać suplement  
+
+**Outline:**
+1. **Wstęp** — Poranny rytuał determinuje resztę dnia
+2. **Dlaczego rano?** — Kortyzol, cykl dobowy, optymalne okno na suplementację
+3. **Kawa + suplement = synergia?** — Kofeina + cytykolina — czy to działa?
+4. **CogniCit w porannej rutynie** — 1 kapsułka ze śniadaniem — prostota
+5. **Inne elementy porannej rutyny** — Światło słoneczne, woda, ruch, unikanie telefonu
+6. **Realistyczne oczekiwania** — Suplement to nie magiczna pigułka
+7. **Podsumowanie** — Małe kroki = duże zmiany
+
+**CTA:** Email signup for launch notification  
+**Internal links:** jak-stosowac.html, produkt.html, blog/cytykolina.html  
+**Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23)
+**Title:** Skąd biorą się składniki CogniCit? — droga od surowca do kapsułki  
+**Target:** Polish audience, transparency / behind-the-scenes  
+**Word count:** 1200-1600  
+**Keywords:** produkcja suplementów, składniki suplementów, GMP, kontrola jakości, skąd suplementy  
+
+**Outline:**
+1. **Wstęp** — Konsument ma prawo wiedzieć, co jest w kapsułce
+2. **ALA — kwas alfa-liponowy** — Synteza chemiczna vs naturalna produkcja, standaryzacja
+3. **Cytykolina (CDP-cholina)** — Proces produkcji, jakość farmaceutyczna
+4. **Beta-cyklodekstryna** — Z tapioki/ziemniaków → enzymatyczna degradacja → oczyszczony produkt
+5. **Kontrola jakości** — Co oznacza GMP? Testy CoA, metale ciężkie, mikrobiologia
+6. **Od surowca do kapsułki** — Mieszanie, kapsułkowanie, pakowanie, magazynowanie
+7. **Zgłoszenie do GIS** — Proces rejestracji suplementu w Polsce
+8. **Podsumowanie** — Transparentność to podstawa zaufania
+
+**CTA:** Email signup for launch notification  
+**Internal links:** o-nas.html, nauka.html, produkt.html, faq.html  
 **Status:** Outline ready, needs writing

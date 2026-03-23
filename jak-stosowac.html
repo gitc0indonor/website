@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jak stosować CogniCit? — Praktyczny przewodnik | Cognivia</title>
+  <meta name="description" content="Jak stosować suplement CogniCit? Dawkowanie, timing, przechowywanie i praktyczne wskazówki dotyczące codziennej suplementacji.">
+  <link rel="canonical" href="https://cognivia.eu/jak-stosowac.html">
+  <meta property="og:title" content="Jak stosować CogniCit? — Praktyczny przewodnik">
+  <meta property="og:description" content="Dawkowanie, timing i praktyczne wskazówki dotyczące suplementacji CogniCit.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://cognivia.eu/jak-stosowac.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --beige: #f5f0e8;
+      --cream: #faf7f0;
+      --white: #fdfcf8;
+      --charcoal: #2a2a28;
+      --soft: #5a5a58;
+      --gold: #c9a96e;
+      --botanical-yellow: #e8d5a8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--beige); line-height: 1.8; }
+    
+    .scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--gold); z-index: 9999; transition: width 0.1s; }
+    .legal-bar { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 6px 5%; font-size: 10px; text-align: center; letter-spacing: 0.3px; }
+    .legal-bar strong { color: var(--gold); }
+    header { position: fixed; top: 30px; width: 100%; padding: 24px 6%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); transition: all 0.3s; }
+    header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+    .logo { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 600; color: var(--charcoal); text-decoration: none; letter-spacing: 1px; }
+    nav a { margin-left: 36px; color: var(--charcoal); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
+
+    .page-hero { padding: 140px 8% 60px; text-align: center; background: var(--beige); }
+    .page-hero .tag { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 16px; }
+    .page-hero h1 { font-family: 'EB Garamond', serif; font-size: 48px; font-weight: 400; color: var(--charcoal); margin-bottom: 16px; line-height: 1.2; }
+    .page-hero p { font-size: 15px; color: var(--soft); max-width: 600px; margin: 0 auto; }
+
+    .content { max-width: 740px; margin: 0 auto; padding: 60px 6% 80px; }
+    .content h2 { font-family: 'EB Garamond', serif; font-size: 32px; font-weight: 500; color: var(--charcoal); margin: 48px 0 16px; padding-top: 16px; }
+    .content h3 { font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 500; color: var(--charcoal); margin: 32px 0 12px; }
+    .content p { font-size: 15px; color: var(--soft); margin-bottom: 16px; }
+    .content ul, .content ol { padding-left: 24px; margin-bottom: 16px; }
+    .content li { margin-bottom: 10px; font-size: 15px; color: var(--soft); }
+
+    .tip-box { background: var(--white); border-left: 3px solid var(--gold); padding: 20px 24px; margin: 24px 0; }
+    .tip-box p { margin-bottom: 0; }
+    .tip-box strong { color: var(--charcoal); }
+
+    .warning-box { background: #fef9f0; border-left: 3px solid #d4956a; padding: 20px 24px; margin: 24px 0; }
+    .warning-box p { margin-bottom: 0; color: #7a5a3a; }
+    .warning-box strong { color: #5a3a1a; }
+
+    .step-card { display: flex; gap: 20px; background: var(--white); padding: 24px; margin: 16px 0; align-items: flex-start; }
+    .step-num { font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 600; color: var(--gold); line-height: 1; min-width: 48px; }
+    .step-content h3 { margin-top: 0; }
+    .step-content p { margin-bottom: 0; }
+
+    .timing-table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+    .timing-table th { text-align: left; padding: 12px 16px; background: var(--charcoal); color: var(--white); font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .timing-table td { padding: 12px 16px; border-bottom: 1px solid rgba(42,42,40,0.1); font-size: 14px; color: var(--soft); }
+    .timing-table tr:nth-child(even) td { background: rgba(245,240,232,0.5); }
+    .timing-table .recommended { background: rgba(201,169,110,0.1); }
+
+    .cross-links { margin-top: 40px; padding: 24px; background: var(--white); border-left: 3px solid var(--gold); }
+    .cross-links h3 { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--charcoal); margin-bottom: 12px; margin-top: 0; }
+    .cross-links p { font-size: 14px; margin-bottom: 8px; }
+    .cross-links a { color: var(--gold); text-decoration: none; }
+
+    .legal-note { font-size: 12px; color: #888; background: rgba(245,240,232,0.5); padding: 20px; margin: 24px 0; border-left: 3px solid var(--gold); }
+
+    .cta-section { background: var(--charcoal); color: var(--white); text-align: center; padding: 80px 8%; }
+    .cta-section h2 { font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 400; margin-bottom: 16px; color: var(--white); }
+    .cta-section p { color: rgba(255,255,255,0.7); margin-bottom: 24px; }
+    .cta-btn { display: inline-block; background: var(--gold); color: var(--charcoal); padding: 14px 36px; text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; transition: all 0.3s; }
+    .cta-btn:hover { background: #d4b57a; }
+
+    footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 40px 6%; text-align: center; font-size: 13px; }
+    footer a { color: var(--gold); }
+
+    .trust-bar { background: var(--charcoal); color: rgba(255,255,255,0.9); padding: 24px 6%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .trust-bar .brand { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--gold); }
+    .trust-bar .features { font-size: 13px; margin-left: 8px; color: rgba(255,255,255,0.7); }
+    .trust-bar .cta { display: inline-block; background: var(--gold); color: var(--charcoal); padding: 10px 24px; text-decoration: none; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+
+    @media (max-width: 768px) {
+      .page-hero h1 { font-size: 36px; }
+      .step-card { flex-direction: column; gap: 8px; }
+      .timing-table { font-size: 13px; }
+      .timing-table th, .timing-table td { padding: 8px 10px; }
+      .trust-bar { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="legal-bar"><strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.</div>
+  <header id="header">
+    <a href="index.html" class="logo">C O G N I V I A</a>
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <a href="produkt.html">Produkt</a>
+      <a href="nauka.html">Nauka</a>
+      <a href="o-nas.html">O nas</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="tag">Przewodnik</div>
+    <h1>Jak stosować CogniCit?</h1>
+    <p>Prosty przewodnik po dawkowaniu, najlepszym czasie przyjmowania i praktycznych wskazówkach dotyczących codziennej suplementacji.</p>
+  </section>
+
+  <div class="content">
+    <div class="legal-note">
+      <strong>Uwaga:</strong> CogniCit jest suplementem diety, nie lekiem. Nie leczy i nie zapobiega chorobom. Przed zastosowaniem skonsultuj się z lekarzem, szczególnie jeśli przyjmujesz leki.
+    </div>
+
+    <h2>Zalecane dawkowanie</h2>
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h3>Jedna kapsułka dziennie</h3>
+        <p>Przyjmuj <strong>1 kapsułkę CogniCit dziennie</strong>. To pełna porcja dzienna zawierająca 250 mg kwasu alfa-liponowego (ALA), 300 mg cytykoliny (CDP-choliny) i 250 mg beta-cyklodekstryny.</p>
+      </div>
+    </div>
+    <div class="tip-box">
+      <p><strong>💡 Tip:</strong> Nie przekraczaj zalecanej porcji. Więcej nie znaczy lepiej — dawki w CogniCit są precyzyjnie dobrane na podstawie badań naukowych.</p>
+    </div>
+
+    <h2>Kiedy najlepiej przyjmować?</h2>
+    <table class="timing-table">
+      <thead>
+        <tr>
+          <th>Pora dnia</th>
+          <th>Rekomendacja</th>
+          <th>Uwagi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="recommended">
+          <td><strong>Rano, z posiłkiem</strong></td>
+          <td>✅ Zalecane</td>
+          <td>Najlepsza opcja. Posiłek pomaga w absorpcji.</td>
+        </tr>
+        <tr>
+          <td>Rano, na czczo</td>
+          <td>⚠️ Możliwe</td>
+          <td>ALA dobrze wchłania się na czczo, ale posiłek jest bezpieczniejszy dla żołądka.</td>
+        </tr>
+        <tr>
+          <td>Wieczorem</td>
+          <td>⚠️ Opcjonalnie</td>
+          <td>Cytykolina może lekko pobudzać — jeśli masz wrażliwy sen, unikaj wieczornego przyjmowania.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tip-box">
+      <p><strong>💡 Tip:</strong> Najprostszy sposób — kapsułka CogniCit przy śniadaniu. Rutyna = regularność = efekty.</p>
+    </div>
+
+    <h2>Czy brać na czczo czy po posiłku?</h2>
+    <p>Zalecamy przyjmowanie CogniCit <strong>z posiłkiem</strong>. Dlaczego?</p>
+    <ul>
+      <li><strong>Kwas alfa-liponowy (ALA)</strong> — lepiej wchłania się na czczo, ale posiłek nie zaburza absorpcji znacząco</li>
+      <li><strong>Cytykolina</strong> — dobrze wchłania się niezależnie od posiłku (biodoustność oralna ~95%)</li>
+      <li><strong>Beta-cyklodekstryna</strong> — działa jako nośnik, chroniąc składniki przed degradacją w przewodzie pokarmowym</li>
+      <li><strong>Żołądek</strong> — posiłek zmniejsza ryzyko łagodnych dolegliwości żołądkowych</li>
+    </ul>
+
+    <h2>Kiedy spodziewać się efektów?</h2>
+    <p>Suplementacja to proces, nie jednorazowe wydarzenie. Oto realistyczne oczekiwania:</p>
+    <div class="step-card">
+      <div class="step-num">7</div>
+      <div class="step-content">
+        <h3>Pierwszy tydzień</h3>
+        <p>Większość osób nie zauważa zmian w pierwszych dniach. To normalne. Składniki akumulują się w organizmie.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">14</div>
+      <div class="step-content">
+        <h3>2 tygodnie</h3>
+        <p>Niektórzy użytkownicy zgłaszają subiektywną poprawę koncentracji i jasności myślenia po 2 tygodniach regularnego stosowania.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">30</div>
+      <div class="step-content">
+        <h3>30 dni</h3>
+        <p>Optymalny czas na ocenę efektów. Pełne opakowanie = pełen miesiąc suplementacji. Wtedy możesz świadomie ocenić, czy CogniCit działa dla Ciebie.</p>
+      </div>
+    </div>
+    <div class="warning-box">
+      <p><strong>⚠️ Ważne:</strong> CogniCit jest suplementem diety, nie lekiem. Nie gwarantujemy konkretnych efektów. Każdy organizm reaguje inaczej. Jeśli nie zauważysz różnic po 30 dniach, suplementacja może po prostu nie być dla Ciebie potrzebna — i to też jest OK.</p>
+    </div>
+
+    <h2>Łączenie z innymi suplementami</h2>
+    <p>CogniCit można łączyć z większością popularnych suplementów:</p>
+    <h3>Bezpieczne połączenia</h3>
+    <ul>
+      <li><strong>Witamina D</strong> — brak interakcji, można przyjmować razem</li>
+      <li><strong>Omega-3 (DHA/EPA)</strong> — komplementarne działanie, synergia z ALA</li>
+      <li><strong>Magnez</strong> — brak znanych interakcji</li>
+      <li><strong>Witaminy z grupy B</strong> — brak konfliktu</li>
+      <li><strong>Kawa / kofeina</strong> — brak przeciwwskazań, synergia z cytykoliną w kontekście koncentracji</li>
+    </ul>
+    <h3>Skonsultuj z lekarzem</h3>
+    <ul>
+      <li><strong>Leki na cukrzycę</strong> — ALA może wpływać na poziom glukozy</li>
+      <li><strong>Leki na tarczycę</strong> — ALA może wchodzić w interakcje z lewotyroksyną</li>
+      <li><strong>Leki rozrzedzające krew</strong> — ostrożność z suplementami wpływającymi na krzepnięcie</li>
+      <li><strong>Inne suplementy nootropowe</strong> — unikaj dublowania składników (np. osobna cytykolina + CogniCit)</li>
+    </ul>
+
+    <h2>Kto powinien zachować ostrożność?</h2>
+    <ul>
+      <li><strong>Kobiety w ciąży i karmiące</strong> — brak wystarczających danych, skonsultuj z lekarzem</li>
+      <li><strong>Osoby poniżej 18. roku życia</strong> — suplement przeznaczony dla dorosłych</li>
+      <li><strong>Osoby z chorobami przewlekłymi</strong> — szczególnie cukrzyca, choroby tarczycy, padaczka</li>
+      <li><strong>Osoby po operacjach</strong> — skonsultuj z lekarzem przed rozpoczęciem suplementacji</li>
+      <li><strong>Alergicy</strong> — kapsułka zawiera żelatynę — nieodpowiednia dla wegetarian/wegan</li>
+    </ul>
+
+    <h2>Przechowywanie</h2>
+    <ul>
+      <li>Przechowuj w <strong>suchym miejscu</strong>, w temperaturze pokojowej (15–25°C)</li>
+      <li>Chronić przed <strong>bezpośrednim światłem słonecznym</strong></li>
+      <li>Przechowywać w <strong>oryginalnym opakowaniu</strong> — blister chroni kapsułki przed wilgocią</li>
+      <li>Trzymać <strong>poza zasięgiem dzieci</strong></li>
+      <li>Nie stosować po <strong>upływie daty ważności</strong> (24 miesiące od daty produkcji)</li>
+    </ul>
+
+    <h2>Najczęstsze pytania o dawkowanie</h2>
+    <h3>Czy mogę przyjmować 2 kapsułki dziennie?</h3>
+    <p>Nie. Zalecana porcja to 1 kapsułka dziennie. Przekraczanie zalecanej dawki nie jest zalecane i nie zostało przebadane pod kątem bezpieczeństwa.</p>
+
+    <h3>Co jeśli zapomnę przyjąć kapsułkę?</h3>
+    <p>Pomiń zapomnianą dawkę i przyjmij następną w regularnym terminie. Nie podwajaj dawki następnego dnia.</p>
+
+    <h3>Czy mogę otworzyć kapsułkę i wysypać proszek?</h3>
+    <p>Kapsułka jest zaprojektowana tak, aby uwalniać składniki w odpowiednim miejscu przewodu pokarmowego. Nie zalecamy otwierania kapsułek.</p>
+
+    <h3>Czy CogniCit uzależnia?</h3>
+    <p>Nie. CogniCit zawiera składniki naturalnie występujące w organizmie lub pochodzenia roślinnego. Nie wywołuje uzależnienia i nie wymaga „odstawienia".</p>
+
+    <div class="cross-links">
+      <h3>Dowiedz się więcej</h3>
+      <p><a href="produkt.html">→ Produkt CogniCit — skład i szczegóły</a></p>
+      <p><a href="faq.html">→ FAQ — najczęściej zadawane pytania</a></p>
+      <p><a href="nauka.html">→ Nauka — badania i składniki</a></p>
+      <p><a href="kwas-alfa-liponowy.html">→ Kwas alfa-liponowy — szczegółowy opis</a></p>
+      <p><a href="cytykolina.html">→ Cytykolina — szczegółowy opis</a></p>
+      <p><a href="beta-cyklodekstryna.html">→ Beta-cyklodekstryna — szczegółowy opis</a></p>
+    </div>
+  </div>
+
+  <section class="cta-section">
+    <h2>Gotowy na start?</h2>
+    <p>30 kapsułek · 79,00 zł · Darmowa dostawa od 120 zł</p>
+    <a href="produkt.html" class="cta-btn">Zamów CogniCit →</a>
+  </section>
+
+  <div class="trust-bar">
+    <div>
+      <strong class="brand">CogniCit</strong>
+      <span class="features">3 synergistyczne składniki · GMP Certified · EU Compliant</span>
+    </div>
+    <a href="produkt.html" class="cta">Dowiedz się więcej →</a>
+  </div>
+  <footer>
+    <p>© 2026 Cognivia. <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a> | <a href="polityka-prywatnosci.html">Polityka prywatności</a></p>
+  </footer>
+
+  <script>
+    // Scroll progress
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      document.getElementById('scrollProgress').style.width = progress + '%';
+      document.getElementById('header').classList.toggle('scrolled', scrollTop > 50);
+    });
+  </script>
+</body>
+</html>

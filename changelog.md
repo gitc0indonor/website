@@ -149,3 +149,35 @@
 - Site now has strong internal link mesh — every page cross-links to related content
 - 404 page provides helpful navigation instead of dead end
 - Queue now has ~35 active items + 14 completed = 49 total
+
+---
+
+### 2026-03-23 — Power Cycle #6 (05:19 UTC)
+**Implemented:**
+- ✅ Trust bar on all blog pages — "CogniCit — 3 synergistyczne składniki · GMP Certified · EU Compliant" banner with gold CTA button linking to produkt.html. Added to all 5 blog pages (cytykolina.html, antyoksydanty.html, beta-cyklodekstryna.html, suplement-vs-lek.html, blog/index.html). Styled to match each blog's design system (Playfair Display or EB Garamond variants).
+- ✅ Usage guide page — jak-stosowac.html created (16KB). Full practical guide covering: recommended dosage (1 capsule/day), timing table (morning with meal = recommended), food vs fasting analysis, realistic timeline (7/14/30 days), stacking with other supplements, contraindications, storage instructions, 4 FAQ items. Scroll progress bar, header scroll effect, trust bar, CTA section. Canonical URL + OG meta tags included.
+- ✅ 3 new blog post outlines added to content_calendar.md:
+  - "5 mitów o suplementach diety — co mówią przepisy UE?" — trust-building/debunking
+  - "Poranny rytuał — jak suplementacja wpływa na produktywność?" — lifestyle/productivity
+  - "Skąd biorą się składniki CogniCit?" — transparency/behind-the-scenes
+- ✅ 3 new improvement ideas added to queue (#51-53): breadcrumb navigation, social share buttons, consumer guide page
+
+**Files changed:**
+- `blog/cytykolina.html` — trust bar added before footer
+- `blog/antyoksydanty.html` — trust bar added before footer
+- `blog/beta-cyklodekstryna.html` — trust bar added before footer (EB Garamond style)
+- `blog/suplement-vs-lek.html` — trust bar added before footer (EB Garamond style)
+- `blog/index.html` — trust bar added between legal note and footer
+- `jak-stosowac.html` — NEW (16.2 KB) — full usage guide page
+- `content_calendar.md` — 3 new blog outlines added
+- `improvement_queue.md` — items #46, #50 marked DONE, 3 new items added (#51-53)
+- `changelog.md` — this entry
+
+**Git:** Pending commit
+
+**Notes:**
+- Site now has 17 HTML pages total (including 404.html and jak-stosowac.html)
+- Blog has 4 posts + index, all with trust bars
+- Queue: 16 completed + ~37 active = 53 total
+- WooCommerce status: NOT present — site uses custom JS cart (cognivia-cart.js). Cart/checkout/payment flow is client-side only. Real payment gateway integration still needs merchant account.
+- Formspree placeholder ID still needs replacement
