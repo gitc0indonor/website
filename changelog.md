@@ -555,3 +555,40 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
 
 **Queue:** ~57 completed + ~49 active = 108 total (renumbered to 108)
+
+---
+
+### 2026-03-23 — Power Cycle #17 (19:29 UTC)
+**Implemented:**
+- ✅ Item #101 — Created /polityka-cookies.html (23.4 KB) — GDPR-compliant cookie policy page
+  - 12 sections: cookie definition, 4 categories table (necessary/functional/analytics/marketing), details per category, third-party providers (Google Fonts, Formspree), management options (banner + browser settings + reset button), RODO data subject rights, data retention, contact info
+  - Interactive cookie consent banner: 3-button layout (Accept all / Necessary only / Customize)
+  - Settings panel with toggle switches per cookie category (functional toggleable, analytics+marketing disabled for now)
+  - Reset consent button with alert confirmation
+  - Cookie + localStorage persistence (cookie_consent for 365 days, cookie_functional preference)
+  - Responsive design: banner stacks vertically on mobile, settings panel full-height scrollable
+  - Added to sitemap.xml (already present from earlier cycle)
+  - Breadcrumb navigation + header matching site design
+- ✅ Item #107 — Interactive comparison widget on /jak-wybrac-suplement.html
+  - 3-tab switcher: "Cholina solo" / "Multi-suplement" / "Kofeina/Energetyk"
+  - Each tab shows side-by-side comparison table: CogniCit (gold accent, green background) vs competitor category
+  - 7 criteria per comparison: ingredients, dosing, transparency, GMP, verification, interactions, β-CD
+  - Tab buttons with hover/active states (gold border, beige background when active)
+  - JavaScript tab switcher with showComparison() function
+  - Responsive: tabs wrap on mobile, tables scroll horizontally if needed
+- ✅ Blog post outline #24 added to content_calendar.md — "Polityka cookies — dlaczego przejrzystość wobec użytkownika ma znaczenie?"
+- ✅ 3 new improvement ideas added to queue (#109-111): skutki uboczne safety page, Product FAQ JSON-LD on produkt.html, comparison table page (/porownanie.html)
+- ✅ Items #101 and #107 marked DONE in improvement queue
+
+**Files changed:**
+- `polityka-cookies.html` — NEW (23.4 KB)
+- `jak-wybrac-suplement.html` — comparison widget CSS + HTML + JS added (section 5)
+- `content_calendar.md` — blog post outline #24 added
+- `improvement_queue.md` — items #101, #107 marked DONE; 3 new items (#109-111) added
+- `changelog.md` — this entry
+
+**Site verification:** Both new/modified files validated — DOCTYPE, balanced tags, canonical, hreflang present. Cookie banner JS tested (show/hide/settings/reset logic). Comparison widget tabs switch correctly.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~59 completed + ~52 active = 111 total

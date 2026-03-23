@@ -251,7 +251,88 @@
                 <li><strong>Rozsądne obietnice</strong> — wspieramy funkcje poznawcze, nie leczymy chorób.</li>
             </ul>
 
-            <h2>5. Podsumowanie — Twoja checklist w 30 sekund</h2>
+            <h2>5. Interaktywne porównanie</h2>
+            <p>Wybierz typ suplementu i zobacz, jak CogniCit wypada na tle konkurencji:</p>
+
+            <div style="margin: 24px 0;">
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px;">
+                    <button onclick="showComparison('cholina')" class="cmp-tab" id="tab-cholina">Cholina solo</button>
+                    <button onclick="showComparison('multi')" class="cmp-tab active" id="tab-multi">Multi-suplement</button>
+                    <button onclick="showComparison('kofeina')" class="cmp-tab" id="tab-kofeina">Kofeina/Energetyk</button>
+                </div>
+
+                <div id="cmp-multi" class="cmp-panel" style="display:none;">
+                    <table class="comparison-mini" style="font-size:14px;">
+                        <thead><tr><th>Kryterium</th><th style="color:var(--gold-dark);">CogniCit</th><th>Multi-suplement (20+ składników)</th></tr></thead>
+                        <tbody>
+                            <tr><td>Liczba składników</td><td style="background:#f0f8f0;">3 synergiczne</td><td>20-30 (często w mikrodawkach)</td></tr>
+                            <tr><td>Dawki z badań</td><td style="background:#f0f8f0;">✅ Każdy składnik w dawce terapeutycznej</td><td>❌ Często poniżej progu skuteczności</td></tr>
+                            <tr><td>Przejrzystość składu</td><td style="background:#f0f8f0;">✅ Pełna deklaracja z dawkami</td><td>⚠️ Często „mieszanka zastrzeżona"</td></tr>
+                            <tr><td>Certyfikat GMP</td><td style="background:#f0f8f0;">✅ Tak</td><td>⚠️ Różnie bywa</td></tr>
+                            <tr><td>Weryfikowalność</td><td style="background:#f0f8f0;">✅ Łatwa (3 składniki do sprawdzenia)</td><td>❌ Bardzo trudna (20+ składników)</td></tr>
+                            <tr><td>Ryzyko interakcji</td><td style="background:#f0f8f0;">✅ Minimalne (3 składniki)</td><td>❌ Wysokie (wiele interakcji)</td></tr>
+                            <tr><td>Nośnik β-CD</td><td style="background:#f0f8f0;">✅ Tak — ochrona biodostępności</td><td>❌ Zwykle brak</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="cmp-cholina" class="cmp-panel">
+                    <table class="comparison-mini" style="font-size:14px;">
+                        <thead><tr><th>Kryterium</th><th style="color:var(--gold-dark);">CogniCit</th><th>Suplement z samą choliną</th></tr></thead>
+                        <tbody>
+                            <tr><td>Składnik nootropowy</td><td style="background:#f0f8f0;">Cytykolina (CDP-cholina) — 300 mg</td><td>Cholina / Alpha-GPC / inna forma</td></tr>
+                            <tr><td>Ochrona antyoksydacyjna</td><td style="background:#f0f8f0;">✅ ALA 250 mg — ochrona mitochondriów</td><td>❌ Brak</td></tr>
+                            <tr><td>Biodostępność</td><td style="background:#f0f8f0;">✅ β-CD chroni składniki przed degradacją</td><td>⚠️ Zależy od formy choliny</td></tr>
+                            <tr><td>Synergia składników</td><td style="background:#f0f8f0;">✅ ALA + cytykolina + β-CD</td><td>❌ Pojedynczy składnik</td></tr>
+                            <tr><td>Certyfikat GMP</td><td style="background:#f0f8f0;">✅ Tak</td><td>⚠️ Różnie bywa</td></tr>
+                            <tr><td>Zgłoszenie GIS</td><td style="background:#f0f8f0;">✅ Tak</td><td>⚠️ Warto sprawdzić</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="cmp-kofeina" class="cmp-panel">
+                    <table class="comparison-mini" style="font-size:14px;">
+                        <thead><tr><th>Kryterium</th><th style="color:var(--gold-dark);">CogniCit</th><th>Kofeina / Energetyk</th></tr></thead>
+                        <tbody>
+                            <tr><td>Mechanizm działania</td><td style="background:#f0f8f0;">Wsparcie acetylocholiny + ochrona antyoksydacyjna</td><td>Blokada receptorów adenozynowych</td></tr>
+                            <tr><td>Czas działania</td><td style="background:#f0f8f0;">Trwały — wsparcie neuroprzekaźników</td><td>Krótki — 2-4h, potem „zjazd"</td></tr>
+                            <tr><td>Wpływ na sen</td><td style="background:#f0f8f0;">✅ Brak negatywnego wpływu</td><td>❌ Bezsenność, jeśli za późno</td></tr>
+                            <tr><td>Tolerancja</td><td style="background:#f0f8f0;">✅ Brak budowania tolerancji</td><td>❌ Rosnąca tolerancja = więcej kawy</td></tr>
+                            <tr><td>Skutki uboczne</td><td style="background:#f0f8f0;">✅ Dobrze udokumentowany profil bezpieczeństwa</td><td>❌ Nerwowość, kołatanie serca, zjazd</td></tr>
+                            <tr><td>Ochrona neuronów</td><td style="background:#f0f8f0;">✅ ALA chroni mitochondria</td><td>❌ Brak</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <script>
+            function showComparison(type) {
+                document.querySelectorAll('.cmp-panel').forEach(p => p.style.display = 'none');
+                document.querySelectorAll('.cmp-tab').forEach(t => t.classList.remove('active'));
+                document.getElementById('cmp-' + type).style.display = 'block';
+                document.getElementById('tab-' + type).classList.add('active');
+            }
+            showComparison('cholina');
+            </script>
+
+            <style>
+            .cmp-tab {
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                padding: 10px 20px;
+                border: 2px solid var(--gray-light);
+                border-radius: 8px;
+                background: var(--white);
+                color: var(--charcoal);
+                cursor: pointer;
+                transition: all 0.2s;
+            }
+            .cmp-tab:hover { border-color: var(--gold); color: var(--gold-dark); }
+            .cmp-tab.active { border-color: var(--gold); background: var(--beige); color: var(--gold-dark); }
+            </style>
+
+            <h2>6. Podsumowanie — Twoja checklist w 30 sekund</h2>
             <ol>
                 <li>Sprawdź zgłoszenie do GIS ✅</li>
                 <li>Szukaj certyfikatu GMP ✅</li>

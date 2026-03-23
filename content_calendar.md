@@ -478,3 +478,24 @@
 **CTA:** Zapisz się na listę — 15% zniżki + checklist PDF
 **Internal links:** jak-wybrac-suplement.html, certyfikaty.html, skladniki.html, produkt.html, faq.html
 **Status:** Outline ready, needs writing
+
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #17)
+**Title:** Polityka cookies — dlaczego przejrzystość wobec użytkownika ma znaczenie?
+**Target:** Polish audience, trust-building / legal compliance
+**Word count:** 1000-1400
+**Keywords:** polityka cookies RODO, cookies suplementy, GDPR cookies strona, zgoda na cookies
+
+**Outline:**
+1. **Wstęp** — Każda strona używa cookies — ale czy każda informuje o tym uczciwie?
+2. **Co to są cookies?** — Proste wyjaśnienie techniczne dla konsumenta
+3. **Prawne wymagania w Polsce** — Art. 173 Prawa telekomunikacyjnego, RODO, zgoda użytkownika
+4. **Rodzaje cookies** — Niezbędne, funkcjonalne, analityczne, marketingowe — różnice
+5. **Dlaczego to ważne dla kupujących suplementy?** — Bezpieczeństwo danych, zaufanie do marki
+6. **Jak Cognivia podchodzi do cookies?** — Pełna przejrzystość, baner zgody, granularna kontrola
+7. **Co możesz zrobić jako użytkownik?** — Zarządzanie cookies w przeglądarce, prawa RODO
+8. **Podsumowanie** — Przejrzystość to nie tylko obowiązek — to filozofia marki
+
+**CTA:** Poznaj nasz suplement — link do produkt.html
+**Internal links:** polityka-cookies.html, polityka-prywatnosci.html, regulamin.html, kontakt.html
+**Status:** Outline ready, needs writing

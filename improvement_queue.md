@@ -4,76 +4,53 @@
 ### ✅ Completed (this session — ecommerce build)
 
 1. ~~Build JavaScript cart system (cognivia-cart.js)~~ ✅
-   - Full cart with localStorage persistence
-   - Add/remove/update quantities
-   - Shipping options (InPost, DPD, Poczta Polska)
-   - Payment methods (PayU, Przelewy24, BLIK, PayPal, przelew, pobranie)
-   - VAT calculation (23%)
-   - Order submission & confirmation
-   - Cart notification toasts
-   - Mini cart UI
-
 2. ~~Create checkout page (kasa.html)~~ ✅
-   - 4-step checkout: customer data → shipping → payment → notes
-   - Form validation
-   - Invoice fields (optional VAT invoice)
-   - Terms acceptance checkbox
-   - Trust badges sidebar
-   - Order summary with live totals
-
 3. ~~Create cart page (koszyk.html)~~ ✅
-   - Full cart view with quantity controls
-   - Order summary sidebar
-   - Empty state with CTA back to product
-
 4. ~~Create order confirmation page (potwierdzenie.html)~~ ✅
-   - Thank you page with order ID
-   - Next steps info
-   - Contact information
-
 5. ~~Create shipping & delivery page (dostawa.html)~~ ✅
-   - All shipping methods with prices
-   - Free shipping thresholds
-   - Payment methods table
-   - Tracking information
-   - Delivery times
-
 6. ~~Create return policy page (zwroty.html)~~ ✅
-   - 14-day statutory right of withdrawal
-   - 30-day satisfaction guarantee
-   - Return process instructions
-   - Refund timeline
-   - Complaint procedure
-
 7. ~~Create FAQ page (faq.html)~~ ✅
-   - 15 Q&As organized by category
-   - Smooth accordion animations
-   - Navigation pills by topic
-   - Product, ingredients, usage, purchase, safety sections
-
 8. ~~Update index.html with ecommerce~~ ✅
-   - Added cart icon to header navigation
-   - Updated CTA section with "Dodaj do koszyka" button
-   - Added price display (79,00 zł)
-   - Added trust indicators (secure payment, free shipping, 30-day return)
-   - Added cart CSS and JS
-   - Added footer links to new pages
-
 9. ~~Update produkt.html with buy section~~ ✅
-   - Added buy section with price, quantity selector, add-to-cart button
-   - Payment methods display
-   - Shipping methods display
-   - Trust features (GMP, lab-tested, 30-day return)
-
 10. ~~Fix company name in policies~~ ✅
-    - Changed "Przedwiośnie" → "Cognivia" in regulamin.html and polityka-prywatnosci.html
-
 11. ~~Create cart CSS (css/cart.css)~~ ✅
-    - Cart icon, mini cart, notifications
-    - Cart page layout
-    - Checkout page layout
-    - Buy section
-    - Responsive design
+12. ~~[DONE] Add exit-intent popup with email capture~~ ✅
+13. ~~[DONE] Create /certyfikaty page~~ ✅
+14. ~~[DONE] Fix js/main.js~~ ✅
+15. ~~[DONE] Create sitemap.xml and robots.txt~~ ✅
+16. ~~[DONE] Add structured data (JSON-LD for FAQPage)~~ ✅
+17. ~~[DONE] Add canonical URLs and Open Graph meta tags~~ ✅
+18. ~~[DONE] Add hreflang="pl" tags to all pages~~ ✅
+19. ~~[DONE] Add breadcrumb JSON-LD schema to ingredient pages~~ ✅
+20. ~~[DONE] Implement lazy loading for images site-wide~~ ✅
+21. ~~[DONE] Add Google PageSpeed optimization (preloading)~~ ✅
+22. ~~[DONE] Add internal linking strategy~~ ✅
+23. ~~[DONE] Create "Jak stosować CogniCit?" usage guide~~ ✅
+24. ~~[DONE] Add 404 error page~~ ✅
+25. ~~[DONE] Add trust bar to blog pages~~ ✅
+26. ~~[DONE] Add breadcrumb navigation to all subpages~~ ✅
+27. ~~[DONE] Create "Jak wybrać suplement?" guide~~ ✅
+28. ~~[DONE] Add Product JSON-LD schema with Offer~~ ✅
+29. ~~[DONE] Add 5 korzyści section to produkt.html~~ ✅
+30. ~~[DONE] Add przechowywanie section to produkt.html~~ ✅
+31. ~~[DONE] Create "Jak czytać etykiety?" educational page~~ ✅
+32. ~~[DONE] Add hreflang + canonical to blog pages~~ ✅
+33. ~~[DONE] Create "Jak zamówić?" interactive guide~~ ✅
+34. ~~[DONE] Enhance scroll animations~~ ✅
+35. ~~[DONE] Add lazy-loading via content-visibility: auto~~ ✅
+36. ~~[DONE] Add floating "Zamów teraz" CTA on mobile~~ ✅
+37. ~~[DONE] Add "Nowości na blogu" section to index.html~~ ✅
+38. ~~[DONE] Create /kontakt page~~ ✅
+39. ~~[DONE] Add floating "Napisz do nas" contact button on mobile~~ ✅
+40. ~~[DONE] Add "Gwarancja satysfakcji" to produkt.html~~ ✅
+41. ~~[DONE] Create /skladniki landing page~~ ✅
+42. ~~[DONE] Add cross-links to /skladniki from ingredient pages~~ ✅
+43. ~~[DONE] Add micro-interactions to gallery thumbnails~~ ✅
+44. ~~[DONE] Add cross-sell section to koszyk.html~~ ✅
+45. ~~[DONE] Verified: visible star rating on produkt.html~~ ✅
+46. ~~[DONE] Satisfaction guarantee on skladniki + skutki-uboczne~~ ✅
+47. ~~[DONE] Create /polityka-cookies page with GDPR cookie consent banner~~ ✅ — Power Cycle #17
+48. ~~[DONE] Add interactive comparison widget to /jak-wybrac-suplement.html~~ ✅ — Power Cycle #17
 
 ---
 
@@ -168,11 +145,14 @@
 98. [NEW] Create ingredient comparison infographic page (/skladniki-infografika) — visual one-pager showing ALA vs. other antioxidants, cytykolina vs. other choline sources, β-CD vs. other carriers — shareable social media asset
 99. [DONE] ~~Add "Polecamy również" cross-sell section to koszyk.html~~ ✅ — 3 blog post cards (cytykolina 🧠, antyoksydanty 🛡️, beta-CD 🔬) with emoji heroes, category tags, excerpts, "Czytaj więcej →" links. Responsive grid (auto-fit minmax 260px). Hover: translateY(-4px) + shadow lift with cubic-bezier easing. Positioned between cart summary and footer. Reduces cart page bounce by offering educational content. Power Cycle #15.
 100. [NEW] Add "Ostatnio kupowane" social proof popup — show "Ktoś z Warszawy kupił CogniCit 3 min temu" notification on produkt.html, creates urgency and social proof (requires backend or simulated data)
-101. [NEW] Create /polityka-cookies page with GDPR cookie consent banner — required for EU compliance, show on first visit, allow granular consent (analytics, marketing, functional)
+101. ~~[DONE] Create /polityka-cookies page with GDPR cookie consent banner — required for EU compliance, show on first visit, allow granular consent (analytics, marketing, functional)~~ ✅ — Power Cycle #17. Full page with 12 sections: what are cookies, 4 categories table (necessary/functional/analytics/marketing), details per category, third-party providers (Google Fonts, Formspree), management options (banner + browser + reset button), RODO rights, data retention. Interactive cookie consent banner: 3 buttons (accept all / necessary only / customize). Settings panel with toggle switches per category. Reset consent button. localStorage/cookie persistence. Added to sitemap.xml. 23KB.
 102. [NEW] Add "Często kupowane razem" bundle suggestion on produkt.html — suggest buying 2-3 boxes with discount (10% off for 2, 15% off for 3), increases AOV before launch
 103. [NEW] Add "Gwarancja satysfakcji" trust badge to /skladniki.html and /skutki-uboczne.html — 30-day money-back banner with link to zwroty.html, builds conversion trust on informational pages
 104. [NEW] Create "Skutki uboczne" blog post version — shorter 1200-word version of skutki-uboczne.html as a blog article for social media promotion and SEO (blog/skutki-uboczne.html)
 105. ~~[DONE] Add cross-links to /skladniki.html from all ingredient pages~~ ✅ — "Zobacz wszystkie składniki CogniCit →" button added to kwas-alfa-liponowy.html, cytykolina.html, and beta-cyklodekstryna.html before footer. Green CTA with hover effects. Power Cycle #16.
 106. [NEW] Add "Newsletter welcome" email template — create a branded HTML email template for Formspree/GetResponse welcome sequence with Cognivia branding, 15% discount code, product overview, ingredient links
-107. [NEW] Add "Łatwe porównanie" comparison widget to /jak-wybrac-suplement.html — interactive toggle showing CogniCit vs competitor A vs competitor B, dynamic highlighting of advantages
+107. ~~[DONE] Add "Łatwe porównanie" comparison widget to /jak-wybrac-suplement.html — interactive toggle showing CogniCit vs competitor A vs competitor B, dynamic highlighting of advantages~~ ✅ — Power Cycle #17. 3-tab widget (Cholina solo / Multi-suplement / Kofeina) with side-by-side comparison tables, gold accent for CogniCit column, tab switcher with hover/active states. 
 108. [NEW] Create "Ranking suplementów na koncentrację" comparison page — SEO-targeted landing page comparing top Polish cognitive supplements, positioning CogniCit as the transparent choice
+109. [NEW] Add "Skutki uboczne" safety page — detailed contraindications, drug interactions, pregnancy warnings — builds trust and covers regulatory requirement (separate from blog version #104)
+110. [NEW] Add product FAQ structured data (FAQPage JSON-LD) to produkt.html — enables Google rich results directly on product page, captures "CogniCit skład" and "CogniCit dawkowanie" queries
+111. [NEW] Create "Porównanie suplementów nootropowych" comparison table page (/porownanie.html) — SEO-targeted: CogniCit vs 4-5 popular Polish nootropic supplements with transparent ingredient-by-ingredient breakdown, GMP/CoA/GIS verification columns

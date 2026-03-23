@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka Cookies — Cognivia</title>
+    <meta name="description" content="Polityka cookies strony cognivia.eu — informacje o wykorzystaniu plików cookies, zgoda, zarządzanie preferencjami. Zgodne z RODO/GDPR.">
+    <link rel="canonical" href="https://cognivia.eu/polityka-cookies.html">
+    <link rel="alternate" hreflang="pl" href="https://cognivia.eu/polityka-cookies.html">
+    <meta property="og:title" content="Polityka Cookies — Cognivia">
+    <meta property="og:description" content="Informacje o wykorzystaniu plików cookies na stronie cognivia.eu.">
+    <meta property="og:url" content="https://cognivia.eu/polityka-cookies.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #C9A96E;
+            --gold-dark: #B8943D;
+            --charcoal: #2D2D2D;
+            --beige: #F5F0E8;
+            --cream: #FAFAF7;
+            --gray-light: #E8E4DD;
+            --gray-mid: #9A9590;
+            --white: #FFFFFF;
+            --green: #2d5a3d;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'EB Garamond', Georgia, serif; color: var(--charcoal); background: var(--cream); line-height: 1.7; }
+
+        /* Header */
+        header { background: var(--white); border-bottom: 1px solid var(--gray-light); padding: 16px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 700; color: var(--charcoal); text-decoration: none; }
+        .logo span { color: var(--gold); }
+        nav a { margin-left: 24px; color: var(--charcoal); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+        nav a:hover { color: var(--gold); }
+
+        /* Breadcrumb */
+        .breadcrumb { max-width: 800px; margin: 0 auto; padding: 20px 5% 0; font-family: 'Inter', sans-serif; font-size: 12px; color: var(--gray-mid); }
+        .breadcrumb a { color: var(--gold); text-decoration: none; }
+        .breadcrumb span { margin: 0 8px; }
+
+        /* Main */
+        main { max-width: 800px; margin: 0 auto; padding: 40px 5% 80px; }
+        main h1 { font-family: 'EB Garamond', serif; font-size: 38px; font-weight: 700; color: var(--charcoal); margin-bottom: 8px; }
+        main .subtitle { font-family: 'Inter', sans-serif; font-size: 14px; color: var(--gray-mid); margin-bottom: 40px; }
+        main h2 { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 600; color: var(--charcoal); margin: 40px 0 16px; border-bottom: 2px solid var(--gold); padding-bottom: 8px; }
+        main h3 { font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 600; color: var(--charcoal); margin: 24px 0 12px; }
+        main p { font-size: 16px; line-height: 1.8; margin-bottom: 16px; color: #3a3a3a; }
+        main ul, main ol { margin: 12px 0 20px 24px; font-size: 16px; color: #3a3a3a; }
+        main li { margin-bottom: 8px; line-height: 1.6; }
+        main table { width: 100%; border-collapse: collapse; margin: 20px 0 30px; font-family: 'Inter', sans-serif; font-size: 14px; }
+        main th { background: var(--charcoal); color: white; padding: 12px 16px; text-align: left; font-weight: 500; }
+        main td { padding: 12px 16px; border-bottom: 1px solid var(--gray-light); }
+        main tr:nth-child(even) td { background: var(--beige); }
+        .highlight-box { background: var(--beige); border-left: 4px solid var(--gold); padding: 20px 24px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+        .highlight-box p { margin-bottom: 8px; }
+
+        /* Cookie consent banner */
+        .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: var(--charcoal); color: rgba(255,255,255,0.9); padding: 20px 5%; z-index: 9999; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; box-shadow: 0 -4px 20px rgba(0,0,0,0.2); }
+        .cookie-banner.hidden { display: none; }
+        .cookie-banner p { font-family: 'Inter', sans-serif; font-size: 13px; line-height: 1.5; flex: 1; min-width: 280px; margin: 0; }
+        .cookie-banner p a { color: var(--gold); }
+        .cookie-buttons { display: flex; gap: 10px; flex-shrink: 0; }
+        .cookie-btn { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 6px; border: none; cursor: pointer; transition: all 0.2s; }
+        .cookie-btn-accept { background: var(--gold); color: var(--charcoal); }
+        .cookie-btn-accept:hover { background: var(--gold-dark); }
+        .cookie-btn-necessary { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); }
+        .cookie-btn-necessary:hover { border-color: white; }
+        .cookie-btn-settings { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+        .cookie-btn-settings:hover { background: rgba(201,169,110,0.1); }
+
+        /* Cookie settings panel */
+        .cookie-settings { position: fixed; bottom: 0; left: 0; right: 0; background: var(--white); padding: 30px 5%; z-index: 10000; box-shadow: 0 -4px 30px rgba(0,0,0,0.15); max-height: 70vh; overflow-y: auto; display: none; }
+        .cookie-settings.visible { display: block; }
+        .cookie-settings h3 { font-family: 'EB Garamond', serif; font-size: 24px; margin-bottom: 20px; }
+        .cookie-category { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--gray-light); }
+        .cookie-category-info h4 { font-family: 'EB Garamond', serif; font-size: 18px; margin-bottom: 4px; }
+        .cookie-category-info p { font-family: 'Inter', sans-serif; font-size: 12px; color: var(--gray-mid); margin: 0; }
+        .toggle-switch { position: relative; width: 48px; height: 26px; flex-shrink: 0; margin-left: 20px; }
+        .toggle-switch input { opacity: 0; width: 0; height: 0; }
+        .toggle-slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: var(--gray-light); border-radius: 26px; transition: 0.3s; }
+        .toggle-slider:before { content: ""; position: absolute; height: 20px; width: 20px; left: 3px; bottom: 3px; background: white; border-radius: 50%; transition: 0.3s; }
+        .toggle-switch input:checked + .toggle-slider { background: var(--gold); }
+        .toggle-switch input:checked + .toggle-slider:before { transform: translateX(22px); }
+        .toggle-switch input:disabled + .toggle-slider { opacity: 0.5; cursor: not-allowed; }
+        .cookie-settings-actions { display: flex; gap: 12px; margin-top: 24px; justify-content: flex-end; }
+
+        /* Footer */
+        footer { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 60px 5% 40px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; max-width: 1200px; margin: 0 auto; }
+        .footer-grid h4 { font-family: 'EB Garamond', serif; font-size: 18px; color: white; margin-bottom: 16px; }
+        .footer-grid p, .footer-grid a { font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.6); text-decoration: none; display: block; margin-bottom: 8px; }
+        .footer-grid a:hover { color: var(--gold); }
+        .footer-bottom { max-width: 1200px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-family: 'Inter', sans-serif; font-size: 12px; }
+
+        @media (max-width: 768px) {
+            main h1 { font-size: 28px; }
+            main h2 { font-size: 22px; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .cookie-banner { flex-direction: column; align-items: stretch; }
+            .cookie-buttons { justify-content: stretch; }
+            .cookie-btn { flex: 1; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Cogni<span>Cit</span></a>
+    <nav>
+        <a href="produkt.html">Produkt</a>
+        <a href="nauka.html">Nauka</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<div class="breadcrumb">
+    <a href="index.html">Strona główna</a>
+    <span>›</span>
+    Polityka Cookies
+</div>
+
+<main>
+    <h1>Polityka Cookies</h1>
+    <p class="subtitle">Ostatnia aktualizacja: 23 marca 2026 r.</p>
+
+    <p>Niniejsza Polityka Cookies wyjaśnia, czym są pliki cookies, jak ich używamy na stronie <strong>cognivia.eu</strong>, jakie rodzaje cookies stosujemy oraz jak możesz zarządzać swoimi preferencjami.</p>
+
+    <h2>1. Czym są pliki cookies?</h2>
+    <p>Pliki cookies to małe pliki tekstowe zapisywane na Twoim urządzeniu (komputerze, tablecie, smartfonie) podczas odwiedzania stron internetowych. Cookies pomagają stronie zapamiętać Twoje preferencje i działania, aby kolejne wizyty były wygodniejsze i bardziej spersonalizowane.</p>
+    <p>Podstawą prawną stosowania cookies w Polsce jest <strong>art. 173 ustawy Prawo telekomunikacyjne</strong> oraz <strong>Rozporządzenie UE o ochronie danych osobowych (RODO/GDPR)</strong>.</p>
+
+    <h2>2. Jakich cookies używamy?</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Kategoria</th>
+                <th>Cel</th>
+                <th>Podstawa prawna</th>
+                <th>Wymagane?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Niezbędne</strong></td>
+                <td>Zapewnienie podstawowego funkcjonowania strony (nawigacja, koszyk, bezpieczeństwo)</td>
+                <td>Art. 173 ust. 3 PT — uzasadniony interes</td>
+                <td>Tak — nie można wyłączyć</td>
+            </tr>
+            <tr>
+                <td><strong>Funkcjonalne</strong></td>
+                <td>Zapamiętywanie preferencji (język, region, zamknięte banery)</td>
+                <td>Zgoda użytkownika (art. 173 ust. 1 PT)</td>
+                <td>Opcjonalne</td>
+            </tr>
+            <tr>
+                <td><strong>Analityczne</strong></td>
+                <td>Analiza ruchu na stronie, optymalizacja treści i UX</td>
+                <td>Zgoda użytkownika (art. 173 ust. 1 PT)</td>
+                <td>Opcjonalne</td>
+            </tr>
+            <tr>
+                <td><strong>Marketingowe</strong></td>
+                <td>Spersonalizowane reklamy i remarketing</td>
+                <td>Zgoda użytkownika (art. 173 ust. 1 PT)</td>
+                <td>Opcjonalne</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Cookies niezbędne</h2>
+    <p>Te pliki cookies są absolutnie konieczne do prawidłowego działania strony internetowej. Obejmują:</p>
+    <ul>
+        <li><strong>session_id</strong> — identyfikator sesji użytkownika (ważny do zamknięcia przeglądarki)</li>
+        <li><strong>cart_data</strong> — dane koszyka zakupowego (localStorage, trwałe do wyczyszczenia)</li>
+        <li><strong>cookie_consent</strong> — informacja o wyrażeniu zgody na cookies (ważny 12 miesięcy)</li>
+        <li><strong>csrf_token</strong> — token bezpieczeństwa formularzy (ważny do zamknięcia sesji)</li>
+    </ul>
+    <p>Bez tych plików strona nie może działać prawidłowo — nie wymagają one zgody użytkownika na podstawie art. 173 ust. 3 Prawa telekomunikacyjnego.</p>
+
+    <h2>4. Cookies funkcjonalne</h2>
+    <p>Te pliki umożliwiają stronie zapamiętywanie wyborów użytkownika i zapewnianie ulepszonych, spersonalizowanych funkcji:</p>
+    <ul>
+        <li><strong>exit_popup_dismissed</strong> — zapamiętuje zamknięcie popup'u z ofertą (localStorage)</li>
+        <li><strong>sticky_bar_closed</strong> — zapamiętuje zamknięcie baneru z zapisem do newslettera (localStorage)</li>
+        <li><strong>recently_viewed</strong> — historia ostatnio przeglądanych stron (localStorage)</li>
+    </ul>
+
+    <h2>5. Cookies analityczne</h2>
+    <p>Obecnie <strong>nie stosujemy cookies analitycznych</strong> (Google Analytics, Plausible ani innych). Planujemy wdrożenie narzędzia analitycznego po uruchomieniu sprzedaży — użytkownicy zostaną o tym poinformowani i będą mogli wyrazić lub odmówić zgody.</p>
+    <div class="highlight-box">
+        <p><strong>Planowane:</strong> Wdrożenie zanonimizowanego narzędzia analitycznego (Plausible Analytics lub podobne, zgodne z RODO) nastąpi po uruchomieniu sprzedaży produktu. Narzędzie to nie będzie wymagać cookies stron trzecich ani przekazywać danych do USA.</p>
+    </div>
+
+    <h2>6. Cookies marketingowe</h2>
+    <p>Obecnie <strong>nie stosujemy cookies marketingowych</strong>. Nie prowadzimy kampanii remarketingowych ani nie udostępniamy danych użytkowników sieciom reklamowym.</p>
+    <p>W przyszłości, jeśli zdecydujemy się na kampanie reklamowe (np. Facebook Ads, Google Ads), użytkownicy zostaną poproszeni o wyrażenie wyraźnej zgody przed aktywacją takich cookies.</p>
+
+    <h2>7. Cookies stron trzecich</h2>
+    <p>Na stronie mogą być osadzone elementy pochodzące od dostawców zewnętrznych, którzy mogą zapisywać własne pliki cookies:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Dostawca</th>
+                <th>Cel</th>
+                <th>Polityka prywatności</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Google Fonts</td>
+                <td>Ładowanie fontów (webfonts)</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
+            </tr>
+            <tr>
+                <td>Formspree</td>
+                <td>Obsługa formularzy kontaktowych</td>
+                <td><a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">formspree.io/legal/privacy-policy</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>8. Zarządzanie cookies</h2>
+    <p>Masz prawo do zarządzania swoimi preferencjami dotyczącymi cookies na kilka sposobów:</p>
+
+    <h3>8.1. Baner zgody na stronie</h3>
+    <p>Przy pierwszej wizycie wyświetlamy baner z prośbą o zgodę na cookies. Możesz:</p>
+    <ul>
+        <li><strong>Zaakceptować wszystkie</strong> — włącza wszystkie kategorie cookies</li>
+        <li><strong>Tylko niezbędne</strong> — aktywuje wyłącznie cookies wymagane do działania strony</li>
+        <li><strong>Dostosować</strong> — wybrać konkretne kategorie cookies</li>
+    </ul>
+
+    <h3>8.2. Ustawienia przeglądarki</h3>
+    <p>Większość przeglądarek pozwala na zarządzanie cookies poprzez ustawienia:</p>
+    <ul>
+        <li><strong>Chrome:</strong> Ustawienia → Prywatność i bezpieczeństwo → Cookies</li>
+        <li><strong>Firefox:</strong> Ustawienia → Prywatność i bezpieczeństwo → Cookies i dane stron</li>
+        <li><strong>Safari:</strong> Preferencje → Prywatność → Zarządzaj danymi stron</li>
+        <li><strong>Edge:</strong> Ustawienia → Pliki cookie i uprawnienia witryny</li>
+    </ul>
+    <p>Uwaga: wyłączenie cookies niezbędnych może uniemożliwić korzystanie z niektórych funkcji strony (np. koszyk zakupowy).</p>
+
+    <h3>8.3. Wycofanie zgody</h3>
+    <p>Zgodę na cookies możesz wycofać w dowolnym momencie, usuwając pliki cookies z przeglądarki lub klikając poniższy przycisk:</p>
+    <div class="highlight-box">
+        <p><button onclick="resetCookieConsent()" style="font-family:'Inter',sans-serif;font-size:14px;font-weight:600;padding:10px 24px;background:var(--gold);color:var(--charcoal);border:none;border-radius:6px;cursor:pointer;">🗑️ Resetuj zgodę na cookies</button></p>
+        <p style="font-size:13px;color:var(--gray-mid);margin-top:8px;">Spowoduje to ponowne wyświetlenie banera zgody przy następnej wizycie.</p>
+    </div>
+
+    <h2>9. Przechowywanie danych</h2>
+    <p>Dane zapisane w plikach cookies nie są przekazywane do podmiotów trzecich (z wyjątkiem dostawców wymienionych w punkcie 7). Cookies sesyjne są usuwane po zamknięciu przeglądarki. Cookies trwałe mają okres ważności od 30 dni do 12 miesięcy.</p>
+
+    <h2>10. Twoje prawa (RODO)</h2>
+    <p>Zgodnie z Rozporządzeniem UE 2016/679 (RODO) masz prawo do:</p>
+    <ul>
+        <li>Dostępu do swoich danych osobowych</li>
+        <li>Sprostowania nieprawidłowych danych</li>
+        <li>Usunięcia danych („prawo do bycia zapomnianym")</li>
+        <li>Ograniczenia przetwarzania danych</li>
+        <li>Przenoszenia danych</li>
+        <li>Sprzeciwu wobec przetwarzania danych</li>
+        <li>Wycofania zgody w dowolnym momencie</li>
+    </ul>
+    <p>W sprawach związanych z danymi osobowymi skontaktuj się z nami: <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a></p>
+    <p>Masz również prawo do złożenia skargi do <strong>Prezesa Urzędu Ochrony Danych Osobowych (UODO)</strong>.</p>
+
+    <h2>11. Zmiany polityki</h2>
+    <p>Zastrzegamy sobie prawo do aktualizacji niniejszej Polityki Cookies. O wszelkich zmianach poinformujemy poprzez aktualizację daty „ostatniej aktualizacji" na górze tej strony oraz, w przypadku istotnych zmian, poprzez baner na stronie.</p>
+
+    <h2>12. Kontakt</h2>
+    <p>W razie pytań dotyczących polityki cookies skontaktuj się z nami:</p>
+    <ul>
+        <li>Email: <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a></li>
+        <li>Formularz kontaktowy: <a href="kontakt.html">cognivia.eu/kontakt</a></li>
+        <li>Siedziba: Gdańsk, Polska</li>
+    </ul>
+</main>
+
+<!-- Cookie consent banner -->
+<div class="cookie-banner" id="cookieBanner">
+    <p>Ta strona używa plików cookies, aby zapewnić najlepszą jakość korzystania z naszej witryny. <a href="polityka-cookies.html">Dowiedz się więcej</a>.</p>
+    <div class="cookie-buttons">
+        <button class="cookie-btn cookie-btn-necessary" onclick="acceptNecessary()">Tylko niezbędne</button>
+        <button class="cookie-btn cookie-btn-settings" onclick="toggleSettings()">Dostosuj</button>
+        <button class="cookie-btn cookie-btn-accept" onclick="acceptAll()">Akceptuję wszystkie</button>
+    </div>
+</div>
+
+<!-- Cookie settings panel -->
+<div class="cookie-settings" id="cookieSettings">
+    <h3>Ustawienia cookies</h3>
+    <div class="cookie-category">
+        <div class="cookie-category-info">
+            <h4>🔒 Cookies niezbędne</h4>
+            <p>Wymagane do działania strony — nawigacja, koszyk, bezpieczeństwo. Nie można wyłączyć.</p>
+        </div>
+        <label class="toggle-switch">
+            <input type="checkbox" checked disabled>
+            <span class="toggle-slider"></span>
+        </label>
+    </div>
+    <div class="cookie-category">
+        <div class="cookie-category-info">
+            <h4>⚙️ Cookies funkcjonalne</h4>
+            <p>Zapamiętują Twoje preferencje i ustawienia (zamknięte banery, historia przeglądania).</p>
+        </div>
+        <label class="toggle-switch">
+            <input type="checkbox" id="consentFunctional">
+            <span class="toggle-slider"></span>
+        </label>
+    </div>
+    <div class="cookie-category">
+        <div class="cookie-category-info">
+            <h4>📊 Cookies analityczne</h4>
+            <p>Pomagają nam zrozumieć, jak odwiedzający korzystają ze strony (obecnie nieaktywne).</p>
+        </div>
+        <label class="toggle-switch">
+            <input type="checkbox" id="consentAnalytics" disabled>
+            <span class="toggle-slider"></span>
+        </label>
+    </div>
+    <div class="cookie-category">
+        <div class="cookie-category-info">
+            <h4>📢 Cookies marketingowe</h4>
+            <p>Służą do wyświetlania spersonalizowanych reklam (obecnie nieaktywne).</p>
+        </div>
+        <label class="toggle-switch">
+            <input type="checkbox" id="consentMarketing" disabled>
+            <span class="toggle-slider"></span>
+        </label>
+    </div>
+    <div class="cookie-settings-actions">
+        <button class="cookie-btn cookie-btn-necessary" onclick="toggleSettings()">Anuluj</button>
+        <button class="cookie-btn cookie-btn-accept" onclick="savePreferences()">Zapisz preferencje</button>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h4>Cogni<span style="color:var(--gold)">Cit</span></h4>
+            <p>Precyzja. Synergia. Przejrzystość.</p>
+            <p>Suplement diety z 3 synergistycznymi składnikami, produkowany w standardzie GMP.</p>
+        </div>
+        <div>
+            <h4>Produkt</h4>
+            <a href="produkt.html">CogniCit</a>
+            <a href="nauka.html">Nauka</a>
+            <a href="skladniki.html">Składniki</a>
+            <a href="certyfikaty.html">Certyfikaty</a>
+        </div>
+        <div>
+            <h4>Informacje</h4>
+            <a href="faq.html">FAQ</a>
+            <a href="dostawa.html">Dostawa</a>
+            <a href="zwroty.html">Zwroty</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div>
+            <h4>Prawne</h4>
+            <a href="regulamin.html">Regulamin</a>
+            <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+            <a href="polityka-cookies.html">Polityka cookies</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone. Suplement diety — nie zastępuje zróżnicowanej diety.</p>
+    </div>
+</footer>
+
+<script>
+// Cookie consent logic
+function getCookie(name) {
+    const v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+    return v ? v[2] : null;
+}
+
+function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+    document.cookie = name + '=' + value + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+}
+
+function showBanner() {
+    document.getElementById('cookieBanner').classList.remove('hidden');
+}
+
+function hideBanner() {
+    document.getElementById('cookieBanner').classList.add('hidden');
+    document.getElementById('cookieSettings').classList.remove('visible');
+}
+
+function acceptAll() {
+    setCookie('cookie_consent', 'all', 365);
+    localStorage.setItem('cookie_functional', 'true');
+    hideBanner();
+}
+
+function acceptNecessary() {
+    setCookie('cookie_consent', 'necessary', 365);
+    localStorage.setItem('cookie_functional', 'false');
+    hideBanner();
+}
+
+function toggleSettings() {
+    const panel = document.getElementById('cookieSettings');
+    panel.classList.toggle('visible');
+}
+
+function savePreferences() {
+    const functional = document.getElementById('consentFunctional').checked;
+    setCookie('cookie_consent', 'custom', 365);
+    localStorage.setItem('cookie_functional', functional.toString());
+    hideBanner();
+}
+
+function resetCookieConsent() {
+    document.cookie = 'cookie_consent=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;';
+    localStorage.removeItem('cookie_functional');
+    showBanner();
+    alert('Zgoda na cookies została zresetowana. Baner pojawi się ponownie.');
+}
+
+// Show banner if no consent recorded
+if (!getCookie('cookie_consent')) {
+    showBanner();
+}
+</script>
+
+</body>
+</html>
