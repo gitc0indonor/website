@@ -54,3 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 });
+  // Scroll progress bar
+  const progressBar = document.getElementById('scrollProgress');
+  if (progressBar) {
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = docHeight > 0 ? (scrollTop / docHeight * 100) + '%' : '0%';
+    }, { passive: true });
+  }

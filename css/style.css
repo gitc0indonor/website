@@ -477,6 +477,14 @@ a:hover {
 .philosophy-card {
   text-align: center;
   padding: 32px 16px;
+  border-radius: var(--radius);
+  transition: background 0.4s var(--ease), box-shadow 0.4s var(--ease), transform 0.4s var(--ease);
+}
+
+.philosophy-card:hover {
+  background: var(--white);
+  box-shadow: 0 6px 32px rgba(26, 26, 26, 0.05);
+  transform: translateY(-3px);
 }
 
 .philosophy-icon {
@@ -484,6 +492,11 @@ a:hover {
   height: 48px;
   margin: 0 auto 24px;
   opacity: 0.6;
+  transition: opacity 0.4s var(--ease);
+}
+
+.philosophy-card:hover .philosophy-icon {
+  opacity: 0.85;
 }
 
 .philosophy-card h3 {
@@ -683,4 +696,15 @@ a:hover {
   .products, .ingredients, .philosophy, .cta { padding: 80px 0; }
   .form-group { flex-direction: column; }
   .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+}
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #1a1a1a;
+  z-index: 1001;
+  transition: width 0.1s linear;
+  width: 0%;
 }
