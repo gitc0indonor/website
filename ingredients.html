@@ -12,12 +12,52 @@
     <link rel="stylesheet" href="assets/css/style.css">
   <link rel="alternate" hreflang="pl" href="https://cognivia.eu/ingredients.html">
   <link rel="canonical" href="https://cognivia.eu/ingredients.html">
+<style>
+    .breadcrumb {
+      max-width: 900px;
+      margin: 100px auto 0;
+      padding: 0 5%;
+      font-size: 12px;
+      color: #888;
+    }
+    .breadcrumb a { color: #2D6642; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://cognivia.eu"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Składniki",
+      "item": "https://cognivia.eu/ingredients.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+<a href="/">Strona główna</a>
+<span>›</span>
+<span>Składniki</span>
+</nav>
     <header>
         <div class="container">
             <img src="assets/logo.jpg" alt="CogniCit logo" class="logo">
-            <nav>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
                 <a href="index.html">Strona główna</a>
                 <a href="ingredients.html">Składniki aktywne</a>
             </nav>

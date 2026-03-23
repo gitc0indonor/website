@@ -14,11 +14,47 @@ a { color: #1a1a1a; border-bottom: 1px solid #1a1a1a; padding-bottom: 1px; text-
 .highlight { background: #f0f7f2; padding: 16px; border-radius: 6px; margin: 16px 0; font-size: 14px; }
 .warning { background: #fef5f5; border-left: 4px solid #c0392b; padding: 16px; margin: 16px 0; font-size: 14px; }
 .back-link { display: inline-block; margin-top: 32px; font-size: 14px; color: #6b6560; }
+
+    .breadcrumb {
+      max-width: 900px;
+      margin: 100px auto 0;
+      padding: 0 5%;
+      font-size: 12px;
+      color: #888;
+    }
+    .breadcrumb a { color: var(--cognivia-green); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: 0.4; }
 </style>
   <link rel="alternate" hreflang="pl" href="https://cognivia.eu/zwroty.html">
   <link rel="canonical" href="https://cognivia.eu/zwroty.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://cognivia.eu"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Zwroty i reklamacje",
+      "item": "https://cognivia.eu/zwroty.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+<a href="/">Strona główna</a>
+<span>›</span>
+<span>Zwroty i reklamacje</span>
+</nav>
 <span class="badge">Cognivia</span>
 <h1>Zwroty i reklamacje</h1>
 <p>Ostatnia aktualizacja: marzec 2026</p>

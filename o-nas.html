@@ -44,15 +44,54 @@
       .hero-section { grid-template-columns: 1fr; }
       .values-grid { grid-template-columns: 1fr; }
     }
-  </style>
+  
+    .breadcrumb {
+      max-width: 900px;
+      margin: 100px auto 0;
+      padding: 0 6%;
+      font-size: 12px;
+      color: var(--soft-text, #5a5a58);
+    }
+    .breadcrumb a { color: var(--gold, #c9a96e); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+</style>
   <link rel="alternate" hreflang="pl" href="https://cognivia.eu/o-nas.html">
   <link rel="canonical" href="https://cognivia.eu/o-nas.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://cognivia.eu"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "O nas",
+      "item": "https://cognivia.eu/o-nas.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+<a href="/">Strona główna</a>
+<span>›</span>
+<span>O nas</span>
+</nav>
   <div class="legal-bar"><strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.</div>
   <header>
     <a href="index.html" class="logo">Cogni<span>via</span></a>
-    <nav><a href="index.html">Strona główna</a><a href="produkt.html">Produkt</a><a href="nauka.html">Nauka</a><a href="blog/">Blog</a></nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav"><a href="index.html">Strona główna</a><a href="produkt.html">Produkt</a><a href="nauka.html">Nauka</a><a href="blog/">Blog</a></nav>
   </header>
   <section class="hero-section">
     <div>

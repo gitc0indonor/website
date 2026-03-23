@@ -45,7 +45,17 @@
     .nav-card p { font-size: 13px; color: var(--soft); margin-bottom: 0; }
     footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 40px 6%; text-align: center; font-size: 12px; }
     footer a { color: var(--gold); text-decoration: none; }
-    @media (max-width: 768px) { nav { display: none; } .nav-ingredients { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) {       .hamburger { display: flex; }
+      nav { 
+        display: none; 
+        position: absolute; top: 60px; left: 0; right: 0;
+        background: var(--cream); flex-direction: column;
+        padding: 20px; gap: 16px; border-bottom: 1px solid var(--line);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      nav.open { display: flex; }
+      nav a { padding: 8px 0; border-bottom: 1px solid rgba(42,42,40,0.1); }
+ .nav-ingredients { grid-template-columns: 1fr; } }
   </style>
   <link rel="alternate" hreflang="pl" href="https://cognivia.eu/beta-cyklodekstryna.html">
   <link rel="canonical" href="https://cognivia.eu/beta-cyklodekstryna.html">
@@ -64,7 +74,10 @@
 <body>
   <header>
     <a href="index.html" class="logo">C O G N I V I A</a>
-    <nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
       <a href="produkt.html">Produkt</a>
       <a href="index.html#składniki">Składniki</a>
       <a href="index.html#stosowanie">Stosowanie</a>
