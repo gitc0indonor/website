@@ -61,6 +61,11 @@ a { color: #1a1a1a; border-bottom: 1px solid #1a1a1a; padding-bottom: 1px; text-
     .breadcrumb a { color: var(--cognivia-green); text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+    /* Lazy-load below-fold content */
+    article section:not(:first-child), section:not(.hero):not(.trust-bar-wrap) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
 </style>
   <link rel="alternate" hreflang="pl" href="https://cognivia.eu/faq.html">
   <link rel="canonical" href="https://cognivia.eu/faq.html">

@@ -270,3 +270,24 @@
 **CTA:** Zamów CogniCit — link do produkt.html  
 **Internal links:** jak-zamowic.html, dostawa.html, zwroty.html, produkt.html, regulamin.html  
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #10)
+**Title:** Skutki uboczne suplementów diety — fakty i mity  
+**Target:** Polish audience, trust-building / safety / SEO  
+**Word count:** 1500-2000  
+**Keywords:** skutki uboczne suplementów, bezpieczeństwo suplementów, suplement diety działania niepożądane, suplement diety interakcje, bezpieczna suplementacja  
+
+**Outline:**
+1. **Wstęp** — Suplementy diety powszechnie uważane za "bezpieczne bo naturalne" — czy słusznie?
+2. **Prawna definicja bezpieczeństwa** — Suplement = żywność, ale podlega regulacjom UE 2002/46/WE i zgłoszeniu GIS
+3. **Najczęstsze działania niepożądane** — Problemy żołądkowe, interakcje z lekami, reakcje alergiczne — statystyki GIF
+4. **Kto jest najbardziej narażony?** — Kobiety w ciąży, osoby przyjmujące leki, dzieci, osoby z chorobami przewlekłymi
+5. **Interakcje suplement-lek** — Tabela: najczęstsze interakcje (np. dziurawiec, witamina K + warfaryna, żelazo + antybiotyki)
+6. **Jak Cognivia podchodzi do bezpieczeństwa?** — 3 składniki o dobrze udokumentowanym profilu, dawki z badań, brak "kombajnu" z 20 składnikami
+7. **7 zasad bezpiecznej suplementacji** — Konsultacja z lekarzem, nie przekraczanie dawki, sprawdzanie interakcji, kupowanie od certyfikowanych producentów
+8. **Kiedy zgłosić działanie niepożądane?** — Procedura GIF, formularz zgłoszeniowy, prawa konsumenta
+9. **Podsumowanie** — Suplementacja = odpowiedzialność. Wiedza chroni.
+
+**CTA:** Email signup for launch notification  
+**Internal links:** faq.html, jak-stosowac.html, produkt.html, regulamin.html, blog/suplement-vs-lek.html  
+**Status:** Outline ready, needs writing

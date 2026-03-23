@@ -796,6 +796,16 @@
       .fade-in, .slide-left, .slide-right, .scale-in { opacity: 1; transform: none; transition: none; }
     }
 
+    /* === LAZY-LOAD BELOW-FOLD SECTIONS === */
+    /* content-visibility: auto tells the browser to skip rendering work
+       for off-screen sections, reducing initial paint cost */
+    .products, .ingredients-detail, .composition, .how-to-use,
+    .philosophy, .warnings, .faq, .cta {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
+    /* Hero stays eager-loaded (above the fold) */
+
     /* === RESPONSIVE === */
       .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
       .hamburger span { display: block; width: 24px; height: 2px; background: var(--charcoal); transition: 0.3s; }

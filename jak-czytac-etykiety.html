@@ -6,6 +6,7 @@
   <title>Jak czytać etykiety suplementów diety? — Przewodnik | Cognivia</title>
   <meta name="description" content="Naucz się czytać etykiety suplementów diety. Praktyczny przewodnik: na co zwrócić uwagę, jak rozpoznać dobry suplement, na co uważać.">
   <link rel="canonical" href="https://cognivia.eu/jak-czytac-etykiety.html">
+  <link rel="alternate" hreflang="pl" href="https://cognivia.eu/jak-czytac-etykiety.html">
   <meta property="og:title" content="Jak czytać etykiety suplementów diety? — Przewodnik">
   <meta property="og:description" content="Praktyczny przewodnik po etykietach suplementów: co oznacza każdy element, na co zwrócić uwagę, jak uniknąć pułapek.">
   <meta property="og:type" content="article">
@@ -127,7 +128,12 @@
       .comparison-table { font-size: 12px; }
       .comparison-table th, .comparison-table td { padding: 8px 10px; }
     }
-  </style>
+      /* Lazy-load below-fold content */
+    article section:not(:first-child), section:not(.hero):not(.trust-bar-wrap) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
+</style>
 
   <script type="application/ld+json">
   {

@@ -46,6 +46,11 @@
     .breadcrumb a { color: var(--gold, #c9a96e); text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+    /* Lazy-load below-fold content */
+    article section:not(:first-child), section:not(.hero):not(.trust-bar-wrap) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
 </style>
   <link rel="alternate" hreflang="pl" href="https://cognivia.eu/nauka.html">
   <link rel="canonical" href="https://cognivia.eu/nauka.html">

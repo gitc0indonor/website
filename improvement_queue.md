@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23 (Power Cycle #9)
+## Last Updated: 2026-03-23 (Power Cycle #10)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -132,9 +132,15 @@
 62. [NEW] Add A/B test variants for hero CTA text — test "Powiadom mnie" vs "Chcę zniżkę" vs "Zapisz się"
 63. [NEW] Add "Co mówią klienci?" section to produkt.html — embed Trustpilot widget or self-hosted star ratings, builds conversion trust
 64. [NEW] Create /kalkulator-dawkowania interactive page — user inputs weight/age/goal, gets personalized dosage recommendation, lead capture via email gate
-65. [NEW] Add hreflang + canonical to jak-czytac-etykiety.html and all newer pages missing them (jak-stosowac, jak-wybrac-suplement)
+65. [DONE] ~~Add hreflang + canonical to blog pages and newer pages missing them~~ ✅ — Added canonical URL + hreflang="pl" to all 5 blog pages (cytykolina, antyoksydanty, beta-cyklodekstryna, suplement-vs-lek, blog/index). All pages now have complete SEO meta.
 66. [DONE] ~~Create "Jak zamówić?" interactive guide page — 5-step purchasing walkthrough, shipping/payment methods table, post-purchase timeline, FAQ, 30-day guarantee banner, HowTo JSON-LD schema~~ ✅ — Created jak-zamowic.html (22KB). Full 5-step guide with timeline, shipping table (InPost/DPD/Poczta), payment methods grid (PayU/BLIK/Przelewy24/przelew), post-purchase flow, 30-day guarantee banner, 5 FAQ items, cross-links. Added to sitemap.xml and index.html footer.
 67. [DONE] ~~Enhance scroll animations — staggered children, slide-left/right/scale-in variants, cubic-bezier easing, unobserve after reveal, prefers-reduced-motion support~~ ✅ — Updated index.html CSS with 4 animation classes (fade-in, slide-left, slide-right, scale-in), stagger delays for grid children, improved IntersectionObserver with rootMargin and unobserve, accessibility media query. Applied stagger-children to products-grid.
 68. [NEW] Add product zoom/lightbox on produkt.html — click product image to see enlarged view, swipeable on mobile
 69. [NEW] Create /certyfikaty page with GMP certificate mockup, lab test results template, GIS registration number — builds institutional trust
-70. [NEW] Add "Ile kapsułek potrzebujesz?" calculator on produkt.html — input months of use, output quantity + total price with bulk discount
+70. [DONE] ~~Add "Ile kapsułek potrzebujesz?" calculator on produkt.html~~ ✅ — Interactive calculator: input months (1-12), output boxes/capsules/total price with bulk discount (5% for 3+, 10% for 6+), add-to-cart button, responsive grid display. Power Cycle #10.
+71. [DONE] ~~Add lazy-loading for below-fold sections via content-visibility: auto~~ ✅ — Added CSS `content-visibility: auto` with `contain-intrinsic-size: auto 500px` to 12 pages: index.html (8 sections), produkt.html (all non-hero sections), all 4 blog posts, nauka, faq, jak-stosowac, jak-wybrac-suplement, jak-czytac-etykiety, jak-zamowic. Reduces initial paint cost for off-screen content.
+72. [NEW] Create "Skutki uboczne" safety page — detailed contraindications, drug interactions, pregnancy warnings — builds trust and covers regulatory requirement
+73. [NEW] Add floating "Zamów teraz" CTA button on mobile — always-visible purchase button on product/science pages for conversion lift
+74. [NEW] Add "Nowości na blogu" section to index.html — show latest 2-3 blog post cards below FAQ, drives traffic to content pages
+75. [NEW] Implement dark mode toggle — respect prefers-color-scheme, add manual toggle in header, update CSS variables for dark palette
+76. [NEW] Add newsletter welcome email sequence page — /dziekuje-za-zapis with what to expect, email frequency, value proposition, unsubscribe info

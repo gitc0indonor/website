@@ -6,6 +6,7 @@
   <title>Jak stosować CogniCit? — Praktyczny przewodnik | Cognivia</title>
   <meta name="description" content="Jak stosować suplement CogniCit? Dawkowanie, timing, przechowywanie i praktyczne wskazówki dotyczące codziennej suplementacji.">
   <link rel="canonical" href="https://cognivia.eu/jak-stosowac.html">
+  <link rel="alternate" hreflang="pl" href="https://cognivia.eu/jak-stosowac.html">
   <meta property="og:title" content="Jak stosować CogniCit? — Praktyczny przewodnik">
   <meta property="og:description" content="Dawkowanie, timing i praktyczne wskazówki dotyczące suplementacji CogniCit.">
   <meta property="og:type" content="article">
@@ -105,6 +106,11 @@
     .breadcrumb a { color: var(--cognivia-green); text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+    /* Lazy-load below-fold content */
+    article section:not(:first-child), section:not(.hero):not(.trust-bar-wrap) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
 </style>
 <script type="application/ld+json">
 {

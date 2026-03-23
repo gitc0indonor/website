@@ -118,7 +118,12 @@
       .trust-bar { flex-direction: column; gap: 12px; align-items: center; }
       nav a { margin-left: 16px; font-size: 11px; }
     }
-  </style>
+      /* Lazy-load below-fold content */
+    article section:not(:first-child), section:not(.hero):not(.trust-bar-wrap) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
+</style>
   <link rel="alternate" hreflang="pl" href="https://cognivia.eu/jak-zamowic.html">
   <script type="application/ld+json">
   {

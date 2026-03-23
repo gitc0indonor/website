@@ -98,6 +98,11 @@
     .breadcrumb a { color: var(--cognivia-green); text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+    /* Lazy-load below-fold sections */
+    section:not(.hero) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
 </style>
   <link rel="stylesheet" href="css/cart.css">
   
@@ -357,6 +362,44 @@
     </div>
   </section>
 
+  <!-- KALKULATOR DAWKOWANIA -->
+  <section style="background: white;">
+    <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+      <h2 style="font-family: 'EB Garamond', serif; font-size: 32px; color: var(--cognivia-green); margin-bottom: 8px;">Ile kapsułek potrzebujesz?</h2>
+      <p style="font-size: 14px; color: #888; margin-bottom: 32px;">1 kapsułka dziennie · 30 kapsułek w opakowaniu</p>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;">
+        <label for="calc-months" style="font-size: 15px; font-weight: 500;">Na ile miesięcy chcesz zamówić?</label>
+        <div class="qty-control" style="display: inline-flex;">
+          <button onclick="calcDec()" id="calc-minus">−</button>
+          <span class="qty-display" id="calc-months">1</span>
+          <button onclick="calcInc()" id="calc-plus">+</button>
+        </div>
+      </div>
+      <div id="calc-result" style="background: var(--cognivia-beige); border-radius: 8px; padding: 24px; margin-bottom: 16px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px;">
+          <div>
+            <div style="font-size: 28px; font-weight: 700; color: var(--cognivia-green);" id="calc-boxes">1</div>
+            <div style="font-size: 13px; color: #888;">opakowań</div>
+          </div>
+          <div>
+            <div style="font-size: 28px; font-weight: 700; color: var(--cognivia-green);" id="calc-capsules">30</div>
+            <div style="font-size: 13px; color: #888;">kapsułek</div>
+          </div>
+          <div>
+            <div style="font-size: 28px; font-weight: 700; color: var(--cognivia-pink);" id="calc-price">79,00 zł</div>
+            <div style="font-size: 13px; color: #888;">cena</div>
+          </div>
+        </div>
+        <div id="calc-savings" style="margin-top: 12px; font-size: 13px; color: var(--cognivia-green); font-weight: 500; display: none;"></div>
+      </div>
+      <button class="btn-add-cart" onclick="addToCartCalc()" style="margin: 0 auto;">
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Dodaj do koszyka
+      </button>
+      <p style="font-size: 11px; color: #aaa; margin-top: 8px;">Darmowa dostawa od 149 zł · Przy 2+ opakowaniach oszczędzasz na wysyłce</p>
+    </div>
+  </section>
+
   <!-- BUY SECTION -->
   <section style="padding: 60px 5%;">
     <div class="buy-section">
@@ -414,6 +457,10 @@
   <script src="js/cognivia-cart.js"></script>
   <script>
     let buyQty = 1;
+    let calcMonths = 1;
+    const PRICE_PER_BOX = 79;
+    const BULK_DISCOUNT = { 3: 0.05, 6: 0.10 }; // 5% for 3+, 10% for 6+
+
     function updateQtyDisplay() {
       document.getElementById('buy-qty').textContent = buyQty;
     }
@@ -421,6 +468,32 @@
     function decrementQty() { if (buyQty > 1) { buyQty--; updateQtyDisplay(); } }
     function addToCartFromProduct() {
       CogniviaCart.addItem('cognicit', buyQty);
+    }
+
+    function updateCalc() {
+      document.getElementById('calc-months').textContent = calcMonths;
+      document.getElementById('calc-boxes').textContent = calcMonths;
+      document.getElementById('calc-capsules').textContent = calcMonths * 30;
+      let total = calcMonths * PRICE_PER_BOX;
+      let discount = 0;
+      for (const [threshold, rate] of Object.entries(BULK_DISCOUNT).sort((a,b) => b[0]-a[0])) {
+        if (calcMonths >= parseInt(threshold)) { discount = rate; break; }
+      }
+      const finalPrice = total * (1 - discount);
+      document.getElementById('calc-price').textContent = finalPrice.toFixed(2).replace('.', ',') + ' zł';
+      const savingsEl = document.getElementById('calc-savings');
+      if (discount > 0) {
+        const saved = total - finalPrice;
+        savingsEl.style.display = 'block';
+        savingsEl.textContent = '💰 Oszczędzasz ' + saved.toFixed(2).replace('.', ',') + ' zł (' + (discount*100) + '% rabatu)';
+      } else {
+        savingsEl.style.display = 'none';
+      }
+    }
+    function calcInc() { if (calcMonths < 12) { calcMonths++; updateCalc(); } }
+    function calcDec() { if (calcMonths > 1) { calcMonths--; updateCalc(); } }
+    function addToCartCalc() {
+      CogniviaCart.addItem('cognicit', calcMonths);
     }
   </script>
 </body>

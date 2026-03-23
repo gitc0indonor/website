@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cytykolina — naturalny składnik organizmu | Blog Cognivia</title>
   <meta name="description" content="Cytykolina (CDP-cholina) jest naturalnym składnikiem występującym w organizmie człowieka. Suplement diety — nie lek.">
+  <link rel="canonical" href="https://cognivia.eu/blog/cytykolina.html">
+  <link rel="alternate" hreflang="pl" href="https://cognivia.eu/blog/cytykolina.html">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,6 +85,11 @@
     .share-btn.tw { background: #1a1a1a; }
     .share-btn.li { background: #0A66C2; }
     .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
+    /* Lazy-load below-fold content */
+    article section:not(:first-child), section:not(.hero):not(.trust-bar-wrap) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
 </style>
 <script type="application/ld+json">
 {

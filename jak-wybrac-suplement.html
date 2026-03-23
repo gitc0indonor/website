@@ -6,6 +6,7 @@
     <title>Jak wybrać suplement diety? — Poradnik konsumenta | Cognivia</title>
     <meta name="description" content="Praktyczny poradnik: jak wybrać bezpieczny i skuteczny suplement diety. Checklist dla konsumenta — GMP, GIS, skład, dawki, przejrzystość.">
     <link rel="canonical" href="https://cognivia.eu/jak-wybrac-suplement.html">
+  <link rel="alternate" hreflang="pl" href="https://cognivia.eu/jak-wybrac-suplement.html">
     <meta property="og:title" content="Jak wybrać suplement diety? — Poradnik konsumenta | Cognivia">
     <meta property="og:description" content="Praktyczny poradnik z checklistą: jak wybrać bezpieczny suplement diety w Polsce.">
     <meta property="og:url" content="https://cognivia.eu/jak-wybrac-suplement.html">
@@ -105,7 +106,12 @@
       nav a { padding: 8px 0; border-bottom: 1px solid rgba(42,42,40,0.1); }
 
         }
-    </style>
+        /* Lazy-load below-fold content */
+    article section:not(:first-child), section:not(.hero):not(.trust-bar-wrap) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
+</style>
 </head>
 <body>
     <header>

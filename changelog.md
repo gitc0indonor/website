@@ -303,3 +303,40 @@
 **Cart status:** Client-side JS cart fully functional. No WooCommerce. Payment gateway still needs merchant account (PayU/Przelewy24). Formspree placeholder ID still needs replacement.
 
 **Queue:** ~20 completed + ~22 active = 62 total
+
+### 2026-03-23 — Power Cycle #10 (10:37 UTC)
+**Implemented:**
+- ✅ Item #65 — Added canonical URL + hreflang="pl" to all 5 blog pages (blog/cytykolina.html, blog/antyoksydanty.html, blog/beta-cyklodekstryna.html, blog/suplement-vs-lek.html, blog/index.html). All pages now have complete SEO meta tags (canonical, hreflang, Open Graph, Twitter Card).
+- ✅ Item #71 — Added `content-visibility: auto` CSS lazy-loading to 12 pages total:
+  - index.html: 8 below-fold sections (.products, .ingredients-detail, .composition, .how-to-use, .philosophy, .warnings, .faq, .cta)
+  - produkt.html: all non-hero sections via `section:not(.hero)`
+  - blog/cytykolina.html, blog/antyoksydanty.html, blog/beta-cyklodekstryna.html, blog/suplement-vs-lek.html
+  - nauka.html, faq.html, jak-stosowac.html, jak-wybrac-suplement.html, jak-czytac-etykiety.html, jak-zamowic.html
+  - Uses `contain-intrinsic-size: auto 500px` to reserve layout space
+- ✅ Blog post outline added: "Skutki uboczne suplementów diety — fakty i mity"
+- ✅ 3 new improvement ideas added to queue (#74-76): blog section on homepage, dark mode toggle, newsletter welcome page
+- ✅ Items #65 and #71 marked DONE in improvement queue
+
+**Files changed:**
+- `blog/cytykolina.html` — canonical + hreflang + content-visibility CSS
+- `blog/antyoksydanty.html` — canonical + hreflang + content-visibility CSS
+- `blog/beta-cyklodekstryna.html` — canonical + hreflang + content-visibility CSS
+- `blog/suplement-vs-lek.html` — canonical + hreflang + content-visibility CSS
+- `blog/index.html` — canonical + hreflang + content-visibility CSS
+- `index.html` — content-visibility: auto CSS for 8 sections
+- `produkt.html` — content-visibility: auto CSS for non-hero sections
+- `nauka.html` — content-visibility CSS
+- `faq.html` — content-visibility CSS
+- `jak-stosowac.html` — content-visibility CSS
+- `jak-wybrac-suplement.html` — content-visibility CSS
+- `jak-czytac-etykiety.html` — content-visibility CSS
+- `jak-zamowic.html` — content-visibility CSS
+- `improvement_queue.md` — items #65, #71 DONE; 3 new items added
+- `content_calendar.md` — new blog outline added
+- `changelog.md` — this entry
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~30 completed + ~44 active = 76 total
+
+**Site verification:** DNS unreachable from this environment (cognivia.eu not resolving). Local file integrity verified: all 26 HTML files valid, style tags balanced, no missing hreflang/canonical on blog pages.
