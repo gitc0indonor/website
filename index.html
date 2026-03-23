@@ -1735,6 +1735,69 @@
     <p class="comparison-note fade-in">Dane porównawcze oparte na analizie suplementów dostępnych na polskim rynku (marzec 2026). Informacje o konkurencyjnych produktach mają charakter orientacyjny.</p>
   </section>
 
+  <!-- SKŁADNIKI W LICZBACH — Animated Counters — #118 -->
+  <section class="counter-section" style="padding: 60px 5%; background: linear-gradient(135deg, #f8f5ee 0%, #f0ebe0 100%); text-align: center;">
+    <div class="section-title fade-in" style="margin-bottom: 8px;">Składniki w liczbach</div>
+    <p class="fade-in" style="font-size: 15px; color: var(--charcoal-light); margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto;">Dane oparte na publikacjach naukowych i badaniach klinicznych — nie marketingu.</p>
+    <div class="counter-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; max-width: 900px; margin: 0 auto;">
+      <div class="counter-card fade-in" style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+        <div style="font-size: 42px; margin-bottom: 8px;">📚</div>
+        <div class="counter-value" data-target="1522" data-suffix="" style="font-size: 48px; font-weight: 700; color: var(--gold); font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+        <div style="font-size: 14px; color: var(--charcoal); font-weight: 600; margin-top: 8px;">publikacji w PubMed</div>
+        <div style="font-size: 12px; color: var(--charcoal-light); margin-top: 4px;">ALA + cytykolina + β-CD</div>
+      </div>
+      <div class="counter-card fade-in" style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+        <div style="font-size: 42px; margin-bottom: 8px;">💊</div>
+        <div class="counter-value" data-target="800" data-suffix=" mg" style="font-size: 48px; font-weight: 700; color: var(--gold); font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+        <div style="font-size: 14px; color: var(--charcoal); font-weight: 600; margin-top: 8px;">aktywnych składników</div>
+        <div style="font-size: 12px; color: var(--charcoal-light); margin-top: 4px;">250 + 300 + 250 mg w 1 kapsułce</div>
+      </div>
+      <div class="counter-card fade-in" style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+        <div style="font-size: 42px; margin-bottom: 8px;">🔬</div>
+        <div class="counter-value" data-target="30" data-suffix=" dni" style="font-size: 48px; font-weight: 700; color: var(--gold); font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+        <div style="font-size: 14px; color: var(--charcoal); font-weight: 600; margin-top: 8px;">gwarancji satysfakcji</div>
+        <div style="font-size: 12px; color: var(--charcoal-light); margin-top: 4px;">Bez pytań, bez warunków</div>
+      </div>
+      <div class="counter-card fade-in" style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+        <div style="font-size: 42px; margin-bottom: 8px;">1️⃣</div>
+        <div class="counter-value" data-target="1" data-suffix="" style="font-size: 48px; font-weight: 700; color: var(--gold); font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+        <div style="font-size: 14px; color: var(--charcoal); font-weight: 600; margin-top: 8px;">kapsułka dziennie</div>
+        <div style="font-size: 12px; color: var(--charcoal-light); margin-top: 4px;">Prostota, nie polifarmacja</div>
+      </div>
+    </div>
+  </section>
+  <script>
+  // Animated counters — intersection observer + requestAnimationFrame
+  (function() {
+    var counters = document.querySelectorAll('.counter-value');
+    var animated = new Set();
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !animated.has(entry.target)) {
+          animated.add(entry.target);
+          animateCounter(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    counters.forEach(function(c) { obs.observe(c); });
+    function animateCounter(el) {
+      var target = parseInt(el.getAttribute('data-target'), 10);
+      var suffix = el.getAttribute('data-suffix') || '';
+      var duration = 2000;
+      var start = null;
+      function step(ts) {
+        if (!start) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+        var current = Math.round(eased * target);
+        el.textContent = current.toLocaleString('pl-PL') + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+  })();
+  </script>
+
   <!-- ZAUFALI NAM — Certification Trust Logos — #115 -->
   <section class="zaufali-nam" style="padding: 60px 5%; background: var(--forest); color: rgba(255,255,255,0.9); text-align: center;">
     <div class="section-title fade-in" style="color: var(--gold); margin-bottom: 8px;">Zaufali nam</div>
@@ -1930,6 +1993,7 @@
         <a href="certyfikaty.html">Certyfikaty</a>
         <a href="skladniki.html">Składniki</a>
         <a href="skutki-uboczne.html">Skutki uboczne</a>
+        <a href="skutki-uboczne-nootropiki.html">Skutki uboczne nootropików</a>
         <a href="porownanie.html">Porównanie</a>
         <a href="blog/">Blog</a>
       </div>

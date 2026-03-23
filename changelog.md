@@ -701,3 +701,42 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Multiple buy buttons on produkt.html. Payment gateway (PayU/Przelewy24) needs merchant account.
 
 **Queue:** ~66 completed + ~54 active = 120 total
+
+### 2026-03-23 — Power Cycle #21 (22:00 UTC)
+**Implemented:**
+- ✅ Item #118 — "Składniki w liczbach" animated counter section on index.html
+  - 4 counter cards: 1522 PubMed publications, 800 mg active ingredients, 30-day guarantee, 1 capsule/day
+  - IntersectionObserver triggers counter animation when scrolled into view
+  - requestAnimationFrame with cubic ease-out easing, 2000ms duration
+  - Polish locale number formatting (1 522)
+  - Responsive grid (auto-fit minmax 200px), white cards with gold accents
+  - Positioned between comparison table and "Zaufali nam" section
+- ✅ Item #113 — Created /skutki-uboczne-nootropiki.html (21.6 KB)
+  - SEO-targeted safety page: "Skutki uboczne suplementów nootropowych"
+  - Detailed profiles for 5 ingredients: cytykolina, ALA, kofeina, L-teanina, Bacopa monnieri
+  - Drug interaction comparison table (5 ingredients × 3 risk columns)
+  - 5 high-risk groups listed (pregnancy, chronic diseases, medications, minors, pre-surgery)
+  - 7 safety rules checklist
+  - CogniCit safety positioning: 3 ingredients, no caffeine, research-backed doses, GMP
+  - Adverse effect reporting section (GIS, GIF procedures)
+  - Article + BreadcrumbList JSON-LD schemas
+  - Canonical URL, hreflang="pl", OG + Twitter Card meta tags
+  - Trust bar, responsive design, matching site aesthetic
+  - Added to sitemap.xml and index.html footer
+- ✅ Blog post outline #28 added to content_calendar.md
+- ✅ 3 new improvement ideas added to queue (#121-123)
+- ✅ Items #113 and #118 marked DONE in improvement queue
+
+**Files changed:**
+- `index.html` — animated counter section (CSS + HTML + JS) between comparison and "Zaufali nam"; footer link to new page
+- `skutki-uboczne-nootropiki.html` — NEW (21.6 KB) — full safety page
+- `sitemap.xml` — new URL added
+- `improvement_queue.md` — 2 items done, 3 new added
+- `content_calendar.md` — blog outline #28 added
+- `changelog.md` — this entry
+
+**Site verification:** Both HTML files validated — zero structural errors. Counter animation JS confirmed working (IntersectionObserver + requestAnimationFrame). New page has all required meta tags and schemas. Sitemap validates.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Multiple buy buttons on produkt.html. Payment gateway (PayU/Przelewy24) needs merchant account.
+
+**Queue:** ~68 completed + ~55 active = 123 total

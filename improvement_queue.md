@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23 (Power Cycle #16)
+## Last Updated: 2026-03-23 (Power Cycle #21)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -162,6 +162,9 @@
 115. [NEW] Add "Zaufali nam" section with logos of certification bodies (GMP, GIS, EU) — visual trust transfer from institutions to brand, clickable links to certificate pages
 116. [NEW] Create "Suplementy a praca zdalna" blog post — target remote workers searching for focus supplements, trending keyword in Poland
 117. [NEW] Add scroll-triggered testimonial cards to produkt.html — reviews slide in from sides as user scrolls down product page, subtle animation + social proof at decision point — DONE 2026-03-23 ✅
-118. [NEW] Add "Składniki w liczbach" animated counter section to index.html — animate PubMed publication counts, dosage mg numbers, and days-of-trial stats counting up when scrolled into view (intersection observer + requestAnimationFrame)
+118. [DONE] ~~Add "Składniki w liczbach" animated counter section to index.html~~ ✅ — Animated counter section between comparison table and "Zaufali nam". 4 counter cards: 1522 PubMed publications, 800 mg active ingredients, 30-day satisfaction guarantee, 1 capsule per day. IntersectionObserver triggers animation, requestAnimationFrame with cubic ease-out, responsive grid. Power Cycle #21.
 119. [NEW] Create /faq-produkt page — product-specific FAQ separate from general FAQ, targeting "CogniCit opinie", "CogniCit cena", "CogniCit dawkowanie" long-tail SEO queries, with FAQPage JSON-LD
 120. [NEW] Add sticky sidebar on desktop produkt.html — floating mini-cart summary + "Zamów teraz" button that follows user as they scroll through product details, increases conversion for desktop visitors
+121. [NEW] Add "Porównanie CogniCit" link to mobile nav on all pages — currently only in desktop footer, needs visible placement on mobile hamburger menu
+122. [NEW] Create /praca-zdalna blog post — "Suplementy a praca zdalna" targeting remote workers searching for focus supplements, trending keyword in Poland, includes CogniCit positioning
+123. [NEW] Add "Gwarancja satysfakcji" trust badge to /skutki-uboczne-nootropiki.html — 30-day money-back banner matching other informational pages for conversion consistency

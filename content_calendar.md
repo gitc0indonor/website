@@ -565,3 +565,24 @@
 **CTA:** Zamów CogniCit — link do produkt.html
 **Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, nauka.html, jak-stosowac.html, skladniki.html
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #21)
+**Title:** Skutki uboczne nootropików — co musisz wiedzieć przed suplementacją?
+**Target:** Polish audience, SEO / safety / trust-building
+**Word count:** 1500-2000
+**Keywords:** skutki uboczne nootropików, bezpieczeństwo suplementów nootropowych, nootropiki działania niepożądane, suplement na koncentrację skutki uboczne, cytykolina bezpieczeństwo
+
+**Outline:**
+1. **Wstęp** — Nootropiki zyskują popularność, ale czy konsumenci znają ryzyka?
+2. **Najczęstsze składniki nootropowe** — Cytykolina, ALA, kofeina, L-teanina, Bacopa — przegląd mechanizmów
+3. **Skutki uboczne cholinergików** — Cytykolina: bóle głowy, bezsenność (przy wysokich dawkach), interakcje z lewodopą
+4. **Skutki uboczne antyoksydantów** — ALA: problemy żołądkowe, wpływ na glukozę, interakcje z lekami tarczycowymi
+5. **Problem kofeiny jako „nootropiku"** — Tolerancja, zjazd, bezsenność, interakcje — dlaczego CogniCit jej nie zawiera
+6. **Tabela interakcji suplement-lek** — Kto powinien konsultować z lekarzem
+7. **7 zasad bezpiecznej suplementacji nootropowej** — Praktyczny checklist
+8. **CogniCit — bezpieczeństwo jako filozofia** — 3 składniki, dawki z badań, brak stymulantów, GMP
+9. **Podsumowanie** — Wiedza = bezpieczeństwo. Wybieraj świadomie.
+
+**CTA:** Poznaj CogniCit — link do produkt.html
+**Internal links:** skutki-uboczne-nootropiki.html, skutki-uboczne.html, produkt.html, faq.html, jak-stosowac.html, certyfikaty.html
+**Status:** Outline ready, needs writing
