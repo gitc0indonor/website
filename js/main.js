@@ -87,3 +87,13 @@ if (scrollProgress) {
       scrollProgress.style.width = progress + '%';
     }, { passive: true });
   }
+
+  // Scroll progress bar
+  const scrollProgress = document.getElementById('scrollProgress');
+  if (scrollProgress) {
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      scrollProgress.style.width = (scrollTop / docHeight * 100) + '%';
+    }, { passive: true });
+  }
