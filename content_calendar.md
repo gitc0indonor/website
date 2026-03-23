@@ -586,3 +586,24 @@
 **CTA:** Poznaj CogniCit — link do produkt.html
 **Internal links:** skutki-uboczne-nootropiki.html, skutki-uboczne.html, produkt.html, faq.html, jak-stosowac.html, certyfikaty.html
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #22)
+**Title:** Czy suplementy na koncentrację naprawdę działają? Naukowa ocena
+**Target:** Polish audience, SEO / debunking / conversion
+**Word count:** 1500-2000
+**Keywords:** suplementy na koncentrację opinie, czy suplementy działają, suplement na pamięć badania, cytykolina efekty, nootropiki nauka
+
+**Outline:**
+1. **Wstęp** — Suplementy na koncentrację to miliardowy rynek — ale czy konsument dostaje to, za co płaci?
+2. **Co mówi nauka?** — Różnica między badaniami in vitro, na zwierzętach i klinicznymi — dlaczego to ważne
+3. **Składniki z potwierdzonym działaniem** — Cytykolina (233 publikacje PubMed), ALA (113 publikacji), L-teanina — mechanizmy i dawki z badań
+4. **Składniki bez potwierdzenia** — Popularne „nootropiki" bez badań klinicznych: lion's mane w mikrodawkach, „nootropic blends" z nieznanymi dawkami
+5. **Jak odróżnić marketing od nauki?** — 5 pytań do zadania przed zakupem suplementu na koncentrację
+6. **Dlaczego dawka ma znaczenie** — Substancja ≠ dawka terapeutyczna. Przykład: cytykolina 300 mg (dawka z badań) vs. 50 mg w multi-nootropiku
+7. **CogniCit — nasze podejście** — 3 składniki, dawki z badań, transparentność, zero magii marketingowej
+8. **Realistyczne oczekiwania** — Suplement to nie lek, ale dobrze dobrana formuła może wspierać organizm
+9. **Podsumowanie** — Wiedza > marketing. Sprawdzaj badania, nie slogany.
+
+**CTA:** Poznaj CogniCit — link do produkt.html (79 zł, 30-dniowa gwarancja)
+**Internal links:** produkt.html, nauka.html, faq-produkt.html, blog/cytykolina.html, jak-wybrac-suplement.html, porownanie.html
+**Status:** Outline ready, needs writing

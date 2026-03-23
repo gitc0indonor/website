@@ -286,6 +286,23 @@
 </script>
 </head>
 <body>
+
+  <!-- STICKY SIDEBAR — #120 -->
+  <div class="sticky-sidebar" id="stickySidebar">
+    <div class="sidebar-stars">★★★★★</div>
+    <div style="font-size: 11px; color: #999; margin-bottom: 8px;">4.8/5 (47 opinii)</div>
+    <div class="sidebar-price">79 zł</div>
+    <div class="sidebar-subtitle">30 kapsułek · 1 miesiąc</div>
+    <button class="sidebar-buy-btn" onclick="CogniviaCart.addItem('cognicit', 1)">
+      Zamów teraz
+    </button>
+    <div style="font-size: 11px; color: var(--cognivia-green); font-weight: 500; margin-bottom: 12px;">✓ Darmowa dostawa od 120 zł</div>
+    <div style="font-size: 11px; color: var(--cognivia-green); font-weight: 500; margin-bottom: 12px;">✓ 30-dniowa gwarancja</div>
+    <div class="sidebar-trust">
+      GMP Certified · EU Compliant<br>
+      Zgłoszony do GIS
+    </div>
+  </div>
 <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
 <a href="/">Strona główna</a>
 <span>›</span>
@@ -802,7 +819,68 @@
     <style>
       .faq-item.open .faq-answer { max-height: 300px; }
       .faq-item.open .faq-icon { transform: rotate(45deg); }
-    </style>
+      /* Sticky sidebar — #120 */
+    .sticky-sidebar {
+      position: fixed;
+      top: 140px;
+      right: 20px;
+      width: 220px;
+      background: white;
+      border: 1px solid #e0dcd4;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      z-index: 50;
+      text-align: center;
+      opacity: 0;
+      transform: translateX(20px);
+      transition: opacity 0.4s, transform 0.4s;
+    }
+    .sticky-sidebar.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .sticky-sidebar .sidebar-price {
+      font-family: 'EB Garamond', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--cognivia-green);
+      margin-bottom: 4px;
+    }
+    .sticky-sidebar .sidebar-subtitle {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 16px;
+    }
+    .sticky-sidebar .sidebar-stars {
+      color: #c9a96e;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    .sidebar-buy-btn {
+      display: block;
+      width: 100%;
+      background: var(--cognivia-green);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-bottom: 8px;
+    }
+    .sidebar-buy-btn:hover { background: #245535; }
+    .sidebar-trust {
+      font-size: 10px;
+      color: #aaa;
+      line-height: 1.5;
+    }
+    @media (max-width: 1100px) {
+      .sticky-sidebar { display: none; }
+    }
+  </style>
   </section>
 
   <!-- BUY SECTION -->
@@ -1005,6 +1083,26 @@
         });
       }, { rootMargin: '0px 0px -60px 0px', threshold: 0.15 });
       testimonials.forEach(function(el) { observer.observe(el); });
+    })();
+
+    // Sticky sidebar — show after scrolling 400px (#120)
+    (function() {
+      var sidebar = document.getElementById('stickySidebar');
+      if (!sidebar) return;
+      var sidebarVisible = false;
+      var heroSection = document.querySelector('section.hero');
+      function checkSidebar() {
+        var scrollY = window.scrollY || window.pageYOffset;
+        var showAfter = 400;
+        var hideNearFooter = document.body.scrollHeight - scrollY - window.innerHeight < 300;
+        if (scrollY > showAfter && !hideNearFooter) {
+          if (!sidebarVisible) { sidebar.classList.add('visible'); sidebarVisible = true; }
+        } else {
+          if (sidebarVisible) { sidebar.classList.remove('visible'); sidebarVisible = false; }
+        }
+      }
+      window.addEventListener('scroll', checkSidebar, { passive: true });
+      checkSidebar();
     })();
   </script>
 </body>

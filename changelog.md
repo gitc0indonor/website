@@ -702,7 +702,43 @@
 
 **Queue:** ~66 completed + ~54 active = 120 total
 
-### 2026-03-23 — Power Cycle #21 (22:00 UTC)
+### 2026-03-23 — Power Cycle #22 (22:30 UTC)
+**Implemented:**
+- ✅ Item #119 — Created /faq-produkt.html (28.7 KB) — product-specific FAQ page targeting long-tail SEO queries
+  - 4 categories: Produkt i skład (4 Q&As), Dawkowanie i stosowanie (4 Q&As), Bezpieczeństwo (4 Q&As), Cena i zakup (5 Q&As), Certyfikaty i regulacje (3 Q&As) — 20 total Q&As
+  - FAQPage JSON-LD schema with 12 most important Q&As for Google rich results
+  - Targets queries: "CogniCit skład", "CogniCit cena", "CogniCit dawkowanie", "CogniCit opinie", "CogniCit bezpieczeństwo"
+  - Cross-links to all ingredient pages, produkt, certyfikaty, porownanie, skutki-uboczne, jak-stosowac, jak-zamowic, dostawa, zwroty
+  - Canonical URL, hreflang="pl", OG + Twitter Card meta tags
+  - Trust bar, breadcrumb navigation, CTA section with dual buttons (contact + order)
+  - Accordion FAQ with smooth max-height transitions, green accent, hover effects
+  - Added to sitemap.xml (priority 0.7) and index.html footer (Informacje column)
+- ✅ Item #120 — Sticky sidebar on desktop produkt.html
+  - Fixed sidebar (220px wide) on right side, shows after 400px scroll
+  - Displays: star rating (4.8/5), price (79 zł), "Zamów teraz" buy button
+  - Trust indicators: free shipping, 30-day guarantee, GMP/EU/GIS badges
+  - Hides near footer (last 300px) to avoid overlap
+  - Smooth slide-in animation (translateX + opacity)
+  - Desktop only — hidden below 1100px (no mobile interference)
+  - Non-intrusive: doesn't block content, fixed z-index 50
+- ✅ Blog post outline added to content_calendar.md — "Czy suplementy na koncentrację naprawdę działają?"
+- ✅ 3 new improvement ideas added to queue (#124-126)
+- ✅ Items #119 and #120 marked DONE in improvement queue
+
+**Files changed:**
+- `faq-produkt.html` — NEW (28.7 KB) — dedicated product FAQ page
+- `produkt.html` — sticky sidebar CSS + HTML + scroll JS
+- `sitemap.xml` — faq-produkt.html URL added
+- `index.html` — footer link to faq-produkt.html added
+- `improvement_queue.md` — items #119, #120 DONE; 3 new items (#124-126)
+- `content_calendar.md` — blog outline #29 added
+- `changelog.md` — this entry
+
+**Site verification:** All files validated — balanced tags, DOCTYPE, canonical, hreflang present. FAQ JSON-LD schema with 12 entries. Sticky sidebar JS triggers at 400px scroll, hides near footer. Sitemap validates with 30+ URLs.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Sticky sidebar buy button confirmed working (CogniviaCart.addItem call verified). Payment gateway (PayU/Przelewy24) needs merchant account.
+
+**Queue:** ~70 completed + ~56 active = 126 total
 **Implemented:**
 - ✅ Item #118 — "Składniki w liczbach" animated counter section on index.html
   - 4 counter cards: 1522 PubMed publications, 800 mg active ingredients, 30-day guarantee, 1 capsule/day

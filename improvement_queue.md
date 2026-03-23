@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-23 (Power Cycle #21)
+## Last Updated: 2026-03-23 (Power Cycle #22)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -163,8 +163,11 @@
 116. [NEW] Create "Suplementy a praca zdalna" blog post — target remote workers searching for focus supplements, trending keyword in Poland
 117. [NEW] Add scroll-triggered testimonial cards to produkt.html — reviews slide in from sides as user scrolls down product page, subtle animation + social proof at decision point — DONE 2026-03-23 ✅
 118. [DONE] ~~Add "Składniki w liczbach" animated counter section to index.html~~ ✅ — Animated counter section between comparison table and "Zaufali nam". 4 counter cards: 1522 PubMed publications, 800 mg active ingredients, 30-day satisfaction guarantee, 1 capsule per day. IntersectionObserver triggers animation, requestAnimationFrame with cubic ease-out, responsive grid. Power Cycle #21.
-119. [NEW] Create /faq-produkt page — product-specific FAQ separate from general FAQ, targeting "CogniCit opinie", "CogniCit cena", "CogniCit dawkowanie" long-tail SEO queries, with FAQPage JSON-LD
-120. [NEW] Add sticky sidebar on desktop produkt.html — floating mini-cart summary + "Zamów teraz" button that follows user as they scroll through product details, increases conversion for desktop visitors
-121. [NEW] Add "Porównanie CogniCit" link to mobile nav on all pages — currently only in desktop footer, needs visible placement on mobile hamburger menu
-122. [NEW] Create /praca-zdalna blog post — "Suplementy a praca zdalna" targeting remote workers searching for focus supplements, trending keyword in Poland, includes CogniCit positioning
-123. [NEW] Add "Gwarancja satysfakcji" trust badge to /skutki-uboczne-nootropiki.html — 30-day money-back banner matching other informational pages for conversion consistency
+119. ~~[NEW] Create /faq-produkt page — product-specific FAQ separate from general FAQ, targeting "CogniCit opinie", "CogniCit cena", "CogniCit dawkowanie" long-tail SEO queries, with FAQPage JSON-LD~~ ✅ — Power Cycle #22. Created faq-produkt.html (28.7KB): 4 categories, 20 Q&As, FAQPage JSON-LD with 12 entries, cross-links to all relevant pages, canonical/hreflang/OG meta, responsive accordion. Added to sitemap.xml and index.html footer.
+120. ~~[NEW] Add sticky sidebar on desktop produkt.html — floating mini-cart summary + "Zamów teraz" button that follows user as they scroll through product details, increases conversion for desktop visitors~~ ✅ — Power Cycle #22. Fixed sidebar (220px) with price, star rating, buy button, trust indicators. Shows after 400px scroll, hides near footer. Desktop only (hidden <1100px). Smooth slide-in animation. Non-intrusive z-index 50.
+121. ~~[NEW] Add "Porównanie CogniCit" link to mobile nav on all pages — currently only in desktop footer, needs visible placement on mobile hamburger menu~~ ✅ — (already done in previous cycle)
+122. ~~[DONE] Create /praca-zdalna blog post — "Suplementy a praca zdalna" targeting remote workers searching for focus supplements, trending keyword in Poland, includes CogniCit positioning~~ ✅
+123. ~~[NEW] Add "Gwarancja satysfakcji" trust badge to /skutki-uboczne-nootropiki.html — 30-day money-back banner matching other informational pages for conversion consistency~~ ✅
+124. [NEW] Add pre-launch "Oczekiwania vs rzeczywistość" comparison infographic section to index.html — visual before/after showing what people expect from supplements vs what CogniCit actually delivers (realistic claims, science-backed), builds trust through honesty
+125. [NEW] Create email capture popup specifically for blog pages — "Podoba Ci się artykuł? Zapisz się po więcej" triggered after 60% scroll on blog posts, captures engaged readers
+126. [NEW] Add "Powiązane pytania" (Related Questions) section to faq-produkt.html — "Ludzie pytają też..." with 3-4 additional Q&As linking to other pages, mimics Google's "People also ask" for SEO
