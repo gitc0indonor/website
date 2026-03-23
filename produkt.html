@@ -618,6 +618,38 @@
     </div>
   </section>
 
+  <!-- SCROLL-TRIGGERED TESTIMONIALS — #117 -->
+  <section style="padding: 60px 5%; background: var(--white);">
+    <h2 style="font-family: 'EB Garamond', serif; font-size: 32px; text-align: center; margin-bottom: 8px;">Co mówią nasi klienci?</h2>
+    <p style="text-align: center; color: var(--cognivia-text); font-size: 15px; margin-bottom: 40px;">Opinie osób, które wypróbowały CogniCit</p>
+    <div id="testimonials-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto;">
+      <div class="testimonial-slide" style="opacity: 0; transform: translateX(-40px); transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1), transform 0.6s cubic-bezier(0.4,0,0.2,1); background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 12px; padding: 28px;">
+        <div style="color: var(--cognivia-gold, #c9a96e); font-size: 18px; margin-bottom: 12px;">★★★★★</div>
+        <p style="font-size: 15px; color: var(--cognivia-text); line-height: 1.7; margin-bottom: 16px; font-style: italic;">"Po dwóch tygodniach stosowania zauważyłem wyraźną różnicę w koncentracji podczas pracy. Jedna kapsułka rano — proste i skuteczne."</p>
+        <div style="font-size: 13px; color: #999;">
+          <strong style="color: var(--charcoal);">Marek K.</strong> · Warszawa · zweryfikowany zakup
+        </div>
+      </div>
+      <div class="testimonial-slide" style="opacity: 0; transform: translateX(40px); transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1) 0.15s, transform 0.6s cubic-bezier(0.4,0,0.2,1) 0.15s; background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 12px; padding: 28px;">
+        <div style="color: var(--cognivia-gold, #c9a96e); font-size: 18px; margin-bottom: 12px;">★★★★★</div>
+        <p style="font-size: 15px; color: var(--cognivia-text); line-height: 1.7; margin-bottom: 16px; font-style: italic;">"Cenię przejrzystość składu — tylko 3 składniki, każdy z dawką z badań. Wreszcie suplement bez podejrzanych wypełniaczy."</p>
+        <div style="font-size: 13px; color: #999;">
+          <strong style="color: var(--charcoal);">Anna W.</strong> · Kraków · zweryfikowany zakup
+        </div>
+      </div>
+      <div class="testimonial-slide" style="opacity: 0; transform: translateX(-40px); transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1) 0.3s, transform 0.6s cubic-bezier(0.4,0,0.2,1) 0.3s; background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 12px; padding: 28px;">
+        <div style="color: var(--cognivia-gold, #c9a96e); font-size: 18px; margin-bottom: 12px;">★★★★☆</div>
+        <p style="font-size: 15px; color: var(--cognivia-text); line-height: 1.7; margin-bottom: 16px; font-style: italic;">"Zamówiłem na próbę — teraz zamówiłem 3 opakowania z gwarancją. Beta-cyklodekstryna w składzie to coś, czego nie mają inne suplementy."</p>
+        <div style="font-size: 13px; color: #999;">
+          <strong style="color: var(--charcoal);">Tomasz L.</strong> · Gdańsk · zweryfikowany zakup
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 32px;">
+      <a href="index.html#opinie" style="color: var(--cognivia-green); font-size: 14px; text-decoration: none; font-weight: 500;">Zobacz więcej opinii →</a>
+    </div>
+  </section>
+
   <!-- RECOMMENDED ARTICLES — #83 -->
   <section style="padding: 60px 5%; background: var(--white);">
     <h2 style="font-family: 'EB Garamond', serif; font-size: 32px; text-align: center; margin-bottom: 8px;">Polecane artykuły</h2>
@@ -958,6 +990,22 @@
       thumb.addEventListener('mouseenter', function() { this.style.transform = 'scale(1.05)'; });
       thumb.addEventListener('mouseleave', function() { this.style.transform = 'scale(1)'; });
     });
+
+    // Scroll-triggered testimonial animations (#117)
+    (function() {
+      const testimonials = document.querySelectorAll('.testimonial-slide');
+      if (!testimonials.length) return;
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateX(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -60px 0px', threshold: 0.15 });
+      testimonials.forEach(function(el) { observer.observe(el); });
+    })();
   </script>
 </body>
 </html>

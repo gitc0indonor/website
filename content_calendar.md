@@ -544,3 +544,24 @@
 **CTA:** Zamów CogniCit — link do produkt.html
 **Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, nauka.html
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-23 — Power Cycle #20)
+**Title:** Jak suplementy wpływają na pamięć? Naukowe spojrzenie na cytykolinę i ALA
+**Target:** Polish audience, SEO / science-backed / conversion
+**Word count:** 1500-2000
+**Keywords:** suplement na pamięć, cytykolina pamięć, kwas alfa-liponowy mózg, suplement poprawiający pamięć, nootropik na pamięć
+
+**Outline:**
+1. **Wstęp** — Problemy z pamięcią dotyczą nie tylko osób starszych — studenci, pracownicy umysłowi, każdy odczuwa przeciążenie poznawcze
+2. **Jak działa pamięć?** — Krótki przegląd neurobiologii: hipokamp, synapsy, acetylocholina jako kluczowy neuroprzekaźnik
+3. **Cytykolina a pamięć** — Mechanizm: CDP-cholina → acetylocholina + fosfatydylocholina. Przegląd badań klinicznych (poprawa pamięci roboczej u osób 50+)
+4. **Kwas alfa-liponowy a ochrona neuronów** — Antyoksydacja mitochondriów, rola w zapobieganiu degeneracji neuronalnej, badania nad starzeniem mózgu
+5. **Synergia ALA + cytykolina** — Dlaczego połączenie działa lepiej niż pojedynczy składnik — ochrona + stymulacja neurotransmisji
+6. **Rola beta-cyklodekstryny** — Jak β-CD chroni oba składniki przed degradacją w przewodzie pokarmowym
+7. **Realistyczne oczekiwania** — Suplement ≠ lek. Kiedy suplementacja pomaga, kiedy potrzebna jest konsultacja lekarska
+8. **CogniCit — precyzyjna formuła na pamięć** — 250 mg ALA + 300 mg cytykoliny + 250 mg β-CD, dawki z badań
+9. **Podsumowanie** — Pamięć można wspierać świadomie — nauka, nie marketing
+
+**CTA:** Zamów CogniCit — link do produkt.html
+**Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, nauka.html, jak-stosowac.html, skladniki.html
+**Status:** Outline ready, needs writing

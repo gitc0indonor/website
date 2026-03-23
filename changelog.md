@@ -669,3 +669,35 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Multiple buy buttons on produkt.html. Payment gateway (PayU/Przelewy24) needs merchant account.
 
 **Queue:** ~65 completed + ~52 active = 117 total
+
+### 2026-03-23 — Power Cycle #20 (21:30 UTC)
+**Implemented:**
+- ✅ Item #115 — "Zaufali nam" certification trust logos section on index.html
+  - Dark forest-green background section between comparison table and blog section
+  - 4 certification cards: GMP Certified, GIS Registered, EU Compliant, Lab Tested
+  - Each card: icon, gold title, descriptive subtitle, hover lift animation
+  - "Zobacz certyfikaty →" CTA button linking to certyfikaty.html
+  - Responsive: auto-fit grid (minmax 180px), wraps on mobile
+  - Smooth fade-in animation classes for scroll reveal
+- ✅ Item #117 — Scroll-triggered testimonial cards on produkt.html
+  - 3 review cards with staggered slide-in animations (left/right/left)
+  - IntersectionObserver triggers opacity→1 + translateX→0 when cards enter viewport
+  - cubic-bezier(0.4,0,0.2,1) easing, 150ms stagger between cards
+  - Each card: 5-star rating, testimonial quote, customer name/city/verified badge
+  - Positioned between satisfaction guarantee and recommended articles sections
+  - Link to reviews section on index.html
+- ✅ Blog post outline #27 added to content_calendar.md — "Jak suplementy wpływają na pamięć?"
+- ✅ 3 new improvement ideas added to queue (#118-120): animated counters, product-specific FAQ, sticky sidebar
+
+**Files changed:**
+- `index.html` — "Zaufali nam" section (certification trust logos) between comparison and blog sections
+- `produkt.html` — scroll-triggered testimonials section + IntersectionObserver JS
+- `improvement_queue.md` — item #117 marked DONE; 3 new items (#118-120) added
+- `content_calendar.md` — blog outline #27 added
+- `changelog.md` — this entry
+
+**Site verification:** Both files validated — balanced section tags (index: 15/15, produkt: 15/15), doctype, canonical, hreflang present. Cart system unaffected (CogniviaCart.addItem calls verified).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Multiple buy buttons on produkt.html. Payment gateway (PayU/Przelewy24) needs merchant account.
+
+**Queue:** ~66 completed + ~54 active = 120 total
