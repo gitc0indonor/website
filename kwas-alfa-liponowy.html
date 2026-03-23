@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kwas Alfa-Liponowy (ALA) — Cognivia</title>
+  <meta name="description" content="Kwas alfa-liponowy (ALA) — naturalny antyoksydant rozpuszczalny w wodzie i tłuszczach. Właściwości, badania naukowe, rola w CogniCit.">
+  <meta name="keywords" content="kwas alfa-liponowy, ALA, antyoksydant, suplement diety, neuroprotekcja">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --beige: #f5f0e8;
+      --cream: #faf7f0;
+      --white: #fdfcf8;
+      --charcoal: #2a2a28;
+      --soft: #5a5a58;
+      --gold: #c9a96e;
+      --line: #2a2a28;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--charcoal);
+      background: var(--beige);
+      overflow-x: hidden;
+    }
+    header {
+      position: fixed; top: 0; width: 100%; z-index: 1000;
+      padding: 24px 6%;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(245,240,232,0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 rgba(42,42,40,0.08);
+    }
+    .logo {
+      font-family: 'EB Garamond', serif;
+      font-size: 26px; font-weight: 600;
+      color: var(--charcoal);
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+    nav { display: flex; gap: 36px; align-items: center; }
+    nav a {
+      color: var(--charcoal);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: opacity 0.3s;
+    }
+    nav a:hover { opacity: 0.5; }
+    .breadcrumb {
+      max-width: 900px;
+      margin: 100px auto 0;
+      padding: 0 6%;
+      font-size: 12px;
+      color: var(--soft);
+    }
+    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    .breadcrumb span { margin: 0 8px; opacity: 0.4; }
+    .page-hero {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 6%;
+    }
+    .page-hero .overline {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .page-hero h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .page-hero .subtitle {
+      font-size: 16px;
+      color: var(--soft);
+      line-height: 1.8;
+      max-width: 600px;
+    }
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 6% 80px;
+    }
+    .content h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin: 48px 0 16px;
+    }
+    .content p {
+      font-size: 15px;
+      color: var(--soft);
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+    .content ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+    .content li {
+      font-size: 15px;
+      color: var(--soft);
+      line-height: 1.8;
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background: var(--cream);
+      border-left: 3px solid var(--gold);
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    .highlight-box h3 {
+      font-family: 'EB Garamond', serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 8px;
+    }
+    .highlight-box p {
+      font-size: 14px;
+      color: var(--soft);
+      margin-bottom: 0;
+    }
+    .pub-badge {
+      display: inline-block;
+      background: var(--charcoal);
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 1px;
+      padding: 6px 16px;
+      margin: 16px 0;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      text-decoration: none;
+      border-bottom: 1px solid var(--charcoal);
+      padding-bottom: 4px;
+    }
+    .nav-ingredients {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 60px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(42,42,40,0.1);
+    }
+    .nav-card {
+      text-decoration: none;
+      padding: 24px;
+      border: 1px solid rgba(42,42,40,0.08);
+      background: var(--white);
+      transition: box-shadow 0.3s;
+    }
+    .nav-card:hover { box-shadow: 0 10px 30px rgba(42,42,40,0.06); }
+    .nav-card h4 {
+      font-family: 'EB Garamond', serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 8px;
+    }
+    .nav-card p {
+      font-size: 13px;
+      color: var(--soft);
+      margin-bottom: 0;
+    }
+    footer {
+      background: var(--charcoal);
+      color: rgba(255,255,255,0.5);
+      padding: 40px 6%;
+      text-align: center;
+      font-size: 12px;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .nav-ingredients { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">C O G N I V I A</a>
+    <nav>
+      <a href="produkt.html">Produkt</a>
+      <a href="index.html#składniki">Składniki</a>
+      <a href="index.html#stosowanie">Stosowanie</a>
+      <a href="blog/">Blog</a>
+      <a href="o-nas.html">O nas</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Strona główna</a>
+    <span>›</span>
+    <a href="index.html#składniki">Składniki</a>
+    <span>›</span>
+    Kwas Alfa-Liponowy
+  </div>
+
+  <div class="page-hero">
+    <div class="overline">Składnik CogniCit</div>
+    <h1>Kwas Alfa‑Liponowy</h1>
+    <p class="subtitle">Naturalny antyoksydant — jeden z niewielu związków rozpuszczalnych zarówno w wodzie, jak i w tłuszczach. 250 mg w każdej kapsułce CogniCit.</p>
+    <span class="pub-badge">113 publikacji naukowych w PubMed</span>
+  </div>
+
+  <div class="content">
+    <h2>Czym jest kwas alfa-liponowy?</h2>
+    <p>Kwas alfa-liponowy (ALA, kwas tiooktanowy) jest naturalnie występującym związkiem organicznym syntetyzowanym w mitochondriach komórek. Pełni kluczową rolę jako kofaktor w kompleksach dehydrogenazowych — enzymach uczestniczących w metabolizmie energetycznym.</p>
+    <p>To co wyróżnia ALA spośród innych antyoksydantów, to jej podwójna rozpuszczalność — zarówno w wodzie, jak i w tłuszczach. Dzięki temu może działać w różnych środowiskach komórkowych, w tym w błonach komórkowych, cytoplazmie i przestrzeni pozakomórkowej.</p>
+
+    <div class="highlight-box">
+      <h3>Kluczowa właściwość</h3>
+      <p>ALA jest jednym z nielicznych antyoksydantów, które mogą działać zarówno w środowisku wodnym, jak i lipidowym komórki. To nadaje jej unikalny profil działania ochronnego.</p>
+    </div>
+
+    <h2>Właściwości i rola biologiczna</h2>
+    <ul>
+      <li><strong>Ochrona antyoksydacyjna</strong> — ALA pomaga chronić komórki przed stresem oksydacyjnym wywołanym przez wolne rodniki</li>
+      <li><strong>Regeneracja innych antyoksydantów</strong> — uczestniczy w cyklu redoks, pomagając odzyskiwać aktywną formę witamin C i E</li>
+      <li><strong>Metabolizm energetyczny</strong> — jako kofaktor kompleksów dehydrogenazowych, ALA uczestniczy w przemianach metabolicznych mitochondriów</li>
+      <li><strong>Chelatacja metali</strong> — może wiązać jony metali przejściowych (żelazo, miedź), co redukuje ich prooksydacyjne działanie</li>
+    </ul>
+
+    <h2>Biodostępność</h2>
+    <p>Po podaniu doustnym, ALA jest szybko wchłaniana z przewodu pokarmowego. Jej biodostępność jest większa na czczo niż po posiłku (badania wskazują na biodostępność rzędu 20–40% na czczo i ~20% po posiłku).</p>
+    <p>W CogniCit, kwas alfa-liponowy występuje w dawce 250 mg — zgodnej z dawkami stosowanymi w badaniach suplementacyjnych.</p>
+
+    <h2>Badania naukowe</h2>
+    <p>W bazie PubMed odnotowano ponad 113 publikacji naukowych dotyczących kwasu alfa-liponowego. Badania obejmują:</p>
+    <ul>
+      <li>Modele neuroprotekcyjne — ALA wykazała działanie ochronne w modelach niedokrwiennych (PMID: 41469453)</li>
+      <li>Wpływ na metabolizm energetyczny mitochondriów</li>
+      <li>Potencjalną rolę w ochronie komórek nerwowych przed stresem oksydacyjnym</li>
+      <li>Badania biodostępności i farmakokinetyki</li>
+    </ul>
+
+    <div class="highlight-box">
+      <h3>W CogniCit</h3>
+      <p>Każda kapsułka CogniCit zawiera 250 mg kwasu alfa-liponowego, połączonego z cytykoliną (300 mg) i beta-cyklodekstryną (250 mg). Kompozycja ta jest zaprojektowana z myślą o synergii składników.</p>
+    </div>
+
+    <h2>Bezpieczeństwo</h2>
+    <p>ALA jest ogólnie uznawana za bezpieczną substancję w dawkach suplementacyjnych. Mogą wystąpić łagodne objawy żołądkowo-jelitowe. Osoby przyjmujące leki (zwłaszcza przeciwcukrzycowe) powinny skonsultować stosowanie z lekarzem.</p>
+
+    <a href="index.html" class="back-link">← Powrót do strony głównej</a>
+
+    <div class="nav-ingredients">
+      <a href="cytykolina.html" class="nav-card">
+        <h4>Następny: Cytykolina →</h4>
+        <p>Prekursor fosfatydylocholiny i acetylocholiny. 300 mg w CogniCit.</p>
+      </a>
+      <a href="beta-cyklodekstryna.html" class="nav-card">
+        <h4>Beta-Cyklodekstryna →</h4>
+        <p>Naturalny nośnik zwiększający biodostępność. 250 mg w CogniCit.</p>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Cognivia. <a href="index.html">Strona główna</a> · <a href="produkt.html">Produkt</a> · <a href="polityka-prywatnosci.html">Prywatność</a></p>
+  </footer>
+</body>
+</html>

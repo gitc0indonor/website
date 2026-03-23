@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beta-Cyklodekstryna — Cognivia</title>
+  <meta name="description" content="Beta-cyklodekstryna (β-CD) — naturalny oligosacharyd zwiększający biodostępność składników aktywnych. Właściwości, mechanizm działania, rola w CogniCit.">
+  <meta name="keywords" content="beta-cyklodekstryna, β-cyklodekstryna, biodostępność, suplement diety, nośnik">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --beige: #f5f0e8; --cream: #faf7f0; --white: #fdfcf8;
+      --charcoal: #2a2a28; --soft: #5a5a58; --gold: #c9a96e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--beige); overflow-x: hidden; }
+    header { position: fixed; top: 0; width: 100%; z-index: 1000; padding: 24px 6%; display: flex; justify-content: space-between; align-items: center; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(42,42,40,0.08); }
+    .logo { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 600; color: var(--charcoal); text-decoration: none; letter-spacing: 1px; }
+    nav { display: flex; gap: 36px; align-items: center; }
+    nav a { color: var(--charcoal); text-decoration: none; font-size: 13px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; transition: opacity 0.3s; }
+    nav a:hover { opacity: 0.5; }
+    .breadcrumb { max-width: 900px; margin: 100px auto 0; padding: 0 6%; font-size: 12px; color: var(--soft); }
+    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    .breadcrumb span { margin: 0 8px; opacity: 0.4; }
+    .page-hero { max-width: 900px; margin: 40px auto; padding: 0 6%; }
+    .page-hero .overline { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .page-hero h1 { font-family: 'EB Garamond', serif; font-size: clamp(36px, 5vw, 56px); font-weight: 400; color: var(--charcoal); line-height: 1.15; margin-bottom: 20px; }
+    .page-hero .subtitle { font-size: 16px; color: var(--soft); line-height: 1.8; max-width: 600px; }
+    .content { max-width: 900px; margin: 0 auto; padding: 40px 6% 80px; }
+    .content h2 { font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 500; color: var(--charcoal); margin: 48px 0 16px; }
+    .content p { font-size: 15px; color: var(--soft); line-height: 1.9; margin-bottom: 16px; }
+    .content ul { padding-left: 20px; margin-bottom: 16px; }
+    .content li { font-size: 15px; color: var(--soft); line-height: 1.8; margin-bottom: 8px; }
+    .highlight-box { background: var(--cream); border-left: 3px solid var(--gold); padding: 24px 28px; margin: 32px 0; }
+    .highlight-box h3 { font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 500; color: var(--charcoal); margin-bottom: 8px; }
+    .highlight-box p { font-size: 14px; color: var(--soft); margin-bottom: 0; }
+    .pub-badge { display: inline-block; background: var(--charcoal); color: var(--gold); font-size: 12px; letter-spacing: 1px; padding: 6px 16px; margin: 16px 0; }
+    .back-link { display: inline-block; margin-top: 40px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--charcoal); text-decoration: none; border-bottom: 1px solid var(--charcoal); padding-bottom: 4px; }
+    .nav-ingredients { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(42,42,40,0.1); }
+    .nav-card { text-decoration: none; padding: 24px; border: 1px solid rgba(42,42,40,0.08); background: var(--white); transition: box-shadow 0.3s; }
+    .nav-card:hover { box-shadow: 0 10px 30px rgba(42,42,40,0.06); }
+    .nav-card h4 { font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 500; color: var(--charcoal); margin-bottom: 8px; }
+    .nav-card p { font-size: 13px; color: var(--soft); margin-bottom: 0; }
+    footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 40px 6%; text-align: center; font-size: 12px; }
+    footer a { color: var(--gold); text-decoration: none; }
+    @media (max-width: 768px) { nav { display: none; } .nav-ingredients { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">C O G N I V I A</a>
+    <nav>
+      <a href="produkt.html">Produkt</a>
+      <a href="index.html#składniki">Składniki</a>
+      <a href="index.html#stosowanie">Stosowanie</a>
+      <a href="blog/">Blog</a>
+      <a href="o-nas.html">O nas</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Strona główna</a><span>›</span><a href="index.html#składniki">Składniki</a><span>›</span>Beta-Cyklodekstryna
+  </div>
+
+  <div class="page-hero">
+    <div class="overline">Składnik CogniCit</div>
+    <h1>Beta‑Cyklodekstryna</h1>
+    <p class="subtitle">Naturalny oligosacharyd o unikalnej strukturze molekularnej — „kubek" zwiększający biodostępność składników aktywnych. 250 mg w CogniCit.</p>
+    <span class="pub-badge">1 176 publikacji naukowych w PubMed</span>
+  </div>
+
+  <div class="content">
+    <h2>Czym jest beta-cyklodekstryna?</h2>
+    <p>Beta-cyklodekstryna (β-CD) jest naturalnym oligosacharydem składającym się z 7 jednostek glukozy, połączonych wiązaniami α-1,4-glukozydowymi. Jest otrzymywana w wyniku enzymatycznej degradacji skrobi za pomocą cyklodekstrynotransferazy bakteryjnej.</p>
+    <p>Struktura β-CD przypomina ścięty stożek — zewnętrzną hydrofilową powierzchnię (hydroksyle) i wewnętrzną hydrofobową wnękę. Ta unikalna geometria pozwala na tworzenie <strong>kompleksów inklusyjnych</strong> z różnymi związkami organicznymi.</p>
+
+    <div class="highlight-box">
+      <h3>Struktura „kubka"</h3>
+      <p>Wnęka β-CD o średnicy ~6,0–6,5 Å może pomieścić cząsteczki o odpowiednich rozmiarach. To jak kieszonka molekularna — zamyka aktywny składnik, chroni go i ułatwia transport.</p>
+    </div>
+
+    <h2>Mechanizm działania</h2>
+    <p>Beta-cyklodekstryna działa jako nośnik molekularny poprzez tworzenie kompleksów inklusyjnych:</p>
+    <ul>
+      <li><strong>Ochrona składników</strong> — cząsteczka aktywna jest „zamknięta" we wnęce β-CD, co chroni ją przed degradacją termiczną, utlenianiem i rozkładem enzymatycznym</li>
+      <li><strong>Poprawa rozpuszczalności</strong> — hydrofilowa powierzchnia β-CD zwiększa rozpuszczalność związków słabo rozpuszczalnych w wodzie</li>
+      <li><strong>Maskowanie smaku i zapachu</strong> — inkluzja zmienia wrażenia sensoryczne</li>
+      <li><strong>Kontrolowane uwalnianie</strong> — kompleks rozkłada się w środowisku jelitowym, uwalniając składnik aktywny</li>
+    </ul>
+
+    <h2>W suplementacji</h2>
+    <p>W preparatach suplementacyjnych, beta-cyklodekstryna jest stosowana przede wszystkim jako:</p>
+    <ul>
+      <li><strong>Nośnik zwiększający biodostępność</strong> — poprawia absorpcję składników aktywnych</li>
+      <li><strong>Stabilizator</strong> — chroni wrażliwe składniki przed degradacją podczas przechowywania</li>
+      <li><strong>Substancja poprawiająca tolerancję</strong> — β-CD jest w dużej mierze nie metabolizowana w przewodzie pokarmowym (słaba strawność), co minimalizuje jej wpływ metaboliczny</li>
+    </ul>
+
+    <h2>Badania naukowe</h2>
+    <p>W bazie PubMed odnotowano ponad 1 176 publikacji naukowych dotyczących cyklodekstryn i ich zastosowań. Tematy obejmują:</p>
+    <ul>
+      <li>Technologię tworzenia kompleksów inklusyjnych</li>
+      <li>Badania farmakokinetyczne — poprawa biodostępności leków i suplementów</li>
+      <li>Bezpieczeństwo — β-CD jest uznawana za GRAS (Generally Recognized as Safe) przez FDA</li>
+      <li>Zastosowania w przemyśle farmaceutycznym i spożywczym</li>
+    </ul>
+
+    <div class="highlight-box">
+      <h3>W CogniCit</h3>
+      <p>Każda kapsułka CogniCit zawiera 250 mg beta-cyklodekstryny — pełniąc rolę nośnika, który chroni i stabilizuje kwas alfa-liponowy i cytykolinę. Połączone z ALA (250 mg) i cytykoliną (300 mg).</p>
+    </div>
+
+    <h2>Bezpieczeństwo</h2>
+    <p>Beta-cyklodekstryna jest ogólnie uznawana za bezpieczną. FDA nadała jej status GRAS. W dawkach suplementacyjnych nie obserwuje się istotnych działań niepożądanych. Ze względu na słabe wchłanianie, β-CD przechodzi przez przewód pokarmowy w dużej mierze niezmieniona.</p>
+
+    <a href="index.html" class="back-link">← Powrót do strony głównej</a>
+
+    <div class="nav-ingredients">
+      <a href="kwas-alfa-liponowy.html" class="nav-card">
+        <h4>← Kwas Alfa-Liponowy</h4>
+        <p>Naturalny antyoksydant. 250 mg w CogniCit.</p>
+      </a>
+      <a href="cytykolina.html" class="nav-card">
+        <h4>← Cytykolina</h4>
+        <p>Prekursor fosfatydylocholiny. 300 mg w CogniCit.</p>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Cognivia. <a href="index.html">Strona główna</a> · <a href="produkt.html">Produkt</a> · <a href="polityka-prywatnosci.html">Prywatność</a></p>
+  </footer>
+</body>
+</html>

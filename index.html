@@ -399,6 +399,68 @@
       color: var(--soft);
     }
 
+    /* === FAQ === */
+    .faq { background: var(--white); }
+    .faq-list { max-width: 800px; margin: 60px auto 0; }
+    .faq-item {
+      border-bottom: 1px solid rgba(42,42,40,0.08);
+      overflow: hidden;
+    }
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.3s;
+    }
+    .faq-question:hover { color: var(--gold); }
+    .faq-question h4 {
+      font-family: 'EB Garamond', serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--charcoal);
+      flex: 1;
+      padding-right: 24px;
+      transition: color 0.3s;
+    }
+    .faq-question:hover h4 { color: var(--gold); }
+    .faq-icon {
+      width: 28px;
+      height: 28px;
+      border: 1px solid rgba(42,42,40,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: var(--soft);
+      transition: all 0.4s ease;
+      flex-shrink: 0;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+      background: var(--charcoal);
+      color: var(--gold);
+      border-color: var(--charcoal);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s ease;
+      padding: 0 0 0 0;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding: 0 0 28px 0;
+    }
+    .faq-answer p {
+      font-size: 15px;
+      color: var(--soft);
+      line-height: 1.8;
+    }
+
     /* === CTA === */
     .cta-section {
       background: var(--cream);
@@ -697,7 +759,7 @@
         </svg>
       </div>
       <div class="ing-info">
-        <h3>Beta‑Cyklodekstryna</h3>
+        <h3><a href="beta-cyklodekstryna.html" style="color:inherit;text-decoration:none;">Beta‑Cyklodekstryna →</a></h3>
         <p>Beta-cyklodekstryna jest naturalnym oligosacharydem otrzymywanym z enzymatycznej degradacji skrobi. Posiada unikalną strukturę molekularną — kształt „kubka" — pozwalający na tworzenie kompleksów inclusionnych.</p>
         <p>W suplementacji jest stosowana jako nośnik — pomaga zwiększyć stabilność i biodostępność składników aktywnych preparatu.</p>
         <div class="pub-count">→ 1 176 publikacji PubMed</div>
@@ -796,6 +858,89 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="faq">
+    <div style="text-align:center;">
+      <div class="section-overline fade-in">Najczęściej zadawane pytania</div>
+      <div class="section-title fade-in">FAQ</div>
+      <p class="section-text fade-in" style="margin: 0 auto;">Odpowiedzi na najczęstsze pytania dotyczące CogniCit i jego składników.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Czym jest CogniCit?</h4>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>CogniCit to suplement diety zawierający trzy składniki aktywne: kwas alfa-liponowy (250 mg), cytykolinę (300 mg) i beta-cyklodekstrynę (250 mg) w jednej kapsułce. Preparat jest w fazie przygotowania do premiery.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Jak stosować CogniCit?</h4>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Zalecana porcja to 1 kapsułka dziennie, najlepiej rano z posiłkiem, popić wodą. Nie należy przekraczać zalecanej dziennej porcji.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Czy CogniCit jest bezpieczny?</h4>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Tak. Wszystkie składniki CogniCit mają udokumentowany profil bezpieczeństwa. Produkt jest produkowany zgodnie z dobrymi praktykami produkcyjnymi (GMP). Osoby przyjmujące leki lub kobiety w ciąży powinny skonsultować stosowanie z lekarzem.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Co to jest beta-cyklodekstryna i dlaczego jest w składzie?</h4>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Beta-cyklodekstryna to naturalny oligosacharyd, który działa jako nośnik molekularny — chroni składniki aktywne i pomaga zwiększyć ich biodostępność. Więcej informacji na <a href="beta-cyklodekstryna.html" style="color:var(--gold)">stronie składnika</a>.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Kiedy CogniCit będzie dostępny?</h4>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Pracujemy nad premierą CogniCit. Zostaw swój adres e-mail w formularzu na dole strony, a powiadomimy Cię jako pierwszą osobę o dostępności produktu.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Jakie są składniki CogniCit?</h4>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Każda kapsułka zawiera: kwas alfa-liponowy (250 mg), cytykolinę/CDP-cholinę (300 mg) i beta-cyklodekstrynę (250 mg). Szczegółowe informacje o każdym składniku znajdziesz na dedykowanych stronach: <a href="kwas-alfa-liponowy.html" style="color:var(--gold)">ALA</a>, <a href="cytykolina.html" style="color:var(--gold)">cytykolina</a>, <a href="beta-cyklodekstryna.html" style="color:var(--gold)">beta-CD</a>.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Czy CogniCit jest zarejestrowany w GIS?</h4>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Tak. CogniCit jest zgłoszony do Głównego Inspektora Sanitarnego (GIS) zgodnie z ustawą o bezpieczeństwie żywności i żywienia, zgodnie z wymogami prawa polskiego i unijnego.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h4>Gdzie można kupić CogniCit?</h4>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Produkt nie jest jeszcze dostępny w sprzedaży. Planujemy sprzedaż online na naszej stronie internetowej. Zapisz się na listę mailingową, aby otrzymać powiadomienie o premierze.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section" id="kontakt">
     <div class="section-title fade-in">Bądź pierwszy</div>
@@ -845,6 +990,15 @@
   </footer>
 
   <script>
+    // FAQ accordion
+    function toggleFaq(el) {
+      const item = el.parentElement;
+      const wasActive = item.classList.contains('active');
+      // Close all other FAQ items
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      // Toggle current
+      if (!wasActive) item.classList.add('active');
+    }
     // Header scroll
     window.addEventListener('scroll', () => {
       document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
