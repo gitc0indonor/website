@@ -116,3 +116,36 @@
 - Formspree form IDs still placeholder
 - Site is static pre-launch — no WooCommerce/cart yet
 - Queue now has 18 active items + 10 completed = 28 total
+
+### 2026-03-23 — Power Cycle #5 (04:49 UTC)
+**Implemented:**
+- ✅ 404 error page — clean design matching site aesthetic, 404 code, helpful text, 2 CTA buttons (homepage + product), 6 popular page links, responsive mobile layout, noindex/nofollow meta tag
+- ✅ Internal linking strategy — comprehensive cross-links added across site:
+  - All 4 blog posts now have "Powiązane strony" sections linking to ingredient pages, other blog posts, FAQ, and product page
+  - All 3 ingredient pages now have "Przeczytaj również na blogu" sections linking to relevant blog posts
+  - FAQ page now has "Dowiedz się więcej" section linking to all ingredient pages, blog, and product
+- ✅ Blog post outline added to content_calendar.md — "Jak stosować CogniCit?" usage guide
+- ✅ 3 new improvement ideas added to queue (#48-50)
+- ✅ Items #45 (internal linking) and #47 (404 page) marked DONE
+
+**Files changed:**
+- `404.html` — NEW (5.9 KB)
+- `blog/cytykolina.html` — added cross-link section
+- `blog/antyoksydanty.html` — added cross-link section
+- `blog/beta-cyklodekstryna.html` — added cross-link section
+- `blog/suplement-vs-lek.html` — added cross-link section
+- `cytykolina.html` — added blog cross-link section
+- `kwas-alfa-liponowy.html` — added blog cross-link section
+- `beta-cyklodekstryna.html` — added blog cross-link section
+- `faq.html` — added "Dowiedz się więcej" cross-link section
+- `content_calendar.md` — new blog outline added
+- `improvement_queue.md` — 2 items completed, 3 new added
+
+**Git:** Committed & pushed to master (d39e9fd)
+
+**Cart status:** Client-side JS cart fully functional. No WooCommerce. Payment gateway still needs merchant account (PayU/Przelewy24). Formspree placeholder ID still needs replacement.
+
+**Notes:**
+- Site now has strong internal link mesh — every page cross-links to related content
+- 404 page provides helpful navigation instead of dead end
+- Queue now has ~35 active items + 14 completed = 49 total

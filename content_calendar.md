@@ -122,3 +122,25 @@
 **CTA:** Email signup for launch notification  
 **Internal links:** faq.html (safety section), o-nas.html, regulamin.html  
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-23)
+**Title:** Jak stosować CogniCit? Praktyczny przewodnik dawkowania  
+**Target:** Polish audience, conversion-focused / post-purchase education  
+**Word count:** 1000-1500  
+**Keywords:** CogniCit dawkowanie, jak stosować suplement nootropowy, suplement na koncentrację dawkowanie, kiedy brać cytykolinę  
+
+**Outline:**
+1. **Wstęp** — CogniCit to suplement diety — jak go prawidłowo stosować?
+2. **Zalecane dawkowanie** — 1 kapsułka dziennie, najlepiej rano z posiłkiem
+3. **Czy brać na czczo czy po posiłku?** — Rola β-cyklodekstryny w ochronie składników
+4. **Kiedy spodziewać się efektów?** — Realistyczne oczekiwania (nie lek, suplement)
+5. **Stacking** — Czy można łączyć z innymi suplementami? Kawa? Witaminy?
+6. **Kto powinien uważać?** — Przeciwwskazania, interakcje, ciąża, leki
+7. **Przechowywanie** — Warunki, trwałość, oryginalne opakowanie
+8. **Podsumowanie** — Prostota 1 kapsułka dziennie
+
+**CTA:** Email signup for launch notification  
+**Internal links:** produkt.html, faq.html, nauka.html  
+**Status:** Outline ready, needs writing
