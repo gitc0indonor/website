@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cognivia.eu/sitemap.xml
+
+# Block checkout/cart from indexing
+Disallow: /kasa.html
+Disallow: /potwierdzenie.html

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Koszyk — CogniCit | Cognivia</title>
+  <meta name="description" content="Twój koszyk — CogniCit suplement diety na koncentrację i funkcje poznawcze.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <a href="index.html" class="logo">Cognivia</a>
+    <nav id="nav">
+      <a href="produkt.html" class="nav-link">Produkt</a>
+      <a href="nauka.html" class="nav-link">Nauka</a>
+      <a href="o-nas.html" class="nav-link">O nas</a>
+      <a href="blog/" class="nav-link">Blog</a>
+      <a href="index.html#kontakt" class="nav-link">Kontakt</a>
+      <div class="cart-icon-wrapper" onclick="window.location.href='koszyk.html'">
+        <svg class="cart-icon-svg" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count">0</span>
+      </div>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <!-- Cart Content -->
+  <main class="cart-page">
+    <h1>Twój koszyk</h1>
+    <div id="cart-page-items">
+      <!-- Populated by cognivia-cart.js -->
+    </div>
+    <div class="cart-summary" id="cart-summary" style="display:none;">
+      <h3>Podsumowanie</h3>
+      <div class="summary-line"><span>Produkty</span><span id="cart-subtotal">0,00 zł</span></div>
+      <div class="summary-line"><span>Dostawa</span><span id="cart-shipping">Obliczane w kasie</span></div>
+      <div class="summary-line total"><span>Razem</span><span class="cart-total">0,00 zł</span></div>
+      <a href="kasa.html" class="btn-checkout">Przejdź do kasy</a>
+      <a href="produkt.html" class="cart-continue-link">← Kontynuuj zakupy</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">C O G N I V I A</div>
+    <div class="footer-links">
+      <a href="produkt.html">Produkt</a>
+      <a href="nauka.html">Nauka</a>
+      <a href="blog/">Blog</a>
+      <a href="o-nas.html">O nas</a>
+      <a href="regulamin.html">Regulamin</a>
+      <a href="polityka-prywatnosci.html">Prywatność</a>
+      <a href="mailto:cognivia.business@outlook.com">Kontakt</a>
+    </div>
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
+    <div class="footer-legal">
+      <strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.
+    </div>
+  </footer>
+
+  <script src="js/cognivia-cart.js"></script>
+  <script>
+    // Show/hide summary based on cart contents
+    const checkCart = setInterval(() => {
+      const cart = CogniviaCart.getCart();
+      const summary = document.getElementById('cart-summary');
+      if (cart.items.length > 0 && summary) {
+        summary.style.display = 'block';
+        document.getElementById('cart-subtotal').textContent = CogniviaCart.formatPrice(CogniviaCart.getSubtotal());
+      } else if (summary) {
+        summary.style.display = 'none';
+      }
+    }, 500);
+  </script>
+</body>
+</html>

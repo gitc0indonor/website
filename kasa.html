@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kasa — CogniCit | Cognivia</title>
+  <meta name="description" content="Zamów CogniCit — suplement diety na koncentrację. Szybka płatność, darmowa dostawa od 120 zł.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <a href="index.html" class="logo">Cognivia</a>
+    <nav id="nav">
+      <a href="produkt.html" class="nav-link">Produkt</a>
+      <a href="koszyk.html" class="nav-link">Koszyk</a>
+      <div class="cart-icon-wrapper" onclick="window.location.href='koszyk.html'">
+        <svg class="cart-icon-svg" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count">0</span>
+      </div>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <!-- Checkout Content -->
+  <main class="checkout-page">
+    <h1>Kasa</h1>
+    <p class="checkout-subtitle">Bezpieczna płatność — Twoje dane są chronione szyfrowaniem SSL</p>
+
+    <div class="checkout-grid">
+      <!-- Left: Forms -->
+      <div class="checkout-forms">
+
+        <!-- Step 1: Customer Data -->
+        <div class="checkout-section">
+          <h2><span class="step-num">1</span> Dane do zamówienia</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Imię <span class="required">*</span></label>
+              <input type="text" id="customer-firstname" placeholder="Jan" required>
+            </div>
+            <div class="form-group">
+              <label>Nazwisko <span class="required">*</span></label>
+              <input type="text" id="customer-lastname" placeholder="Kowalski" required>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label>Adres e-mail <span class="required">*</span></label>
+              <input type="email" id="customer-email" placeholder="jan@example.com" required>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label>Numer telefonu <span class="required">*</span></label>
+              <input type="tel" id="customer-phone" placeholder="+48 500 000 000" required>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label>Ulica i numer <span class="required">*</span></label>
+              <input type="text" id="customer-street" placeholder="ul. Przykładowa 12/3" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Kod pocztowy <span class="required">*</span></label>
+              <input type="text" id="customer-postal" placeholder="80-000" required>
+            </div>
+            <div class="form-group">
+              <label>Miasto <span class="required">*</span></label>
+              <input type="text" id="customer-city" placeholder="Gdańsk" required>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label>Faktura VAT?</label>
+              <select id="customer-invoice">
+                <option value="no">Nie, paragon</option>
+                <option value="yes">Tak, faktura VAT</option>
+              </select>
+            </div>
+          </div>
+          <div id="invoice-fields" style="display:none;">
+            <div class="form-row full">
+              <div class="form-group">
+                <label>Nazwa firmy</label>
+                <input type="text" id="company-name" placeholder="Nazwa firmy Sp. z o.o.">
+              </div>
+            </div>
+            <div class="form-row full">
+              <div class="form-group">
+                <label>NIP</label>
+                <input type="text" id="company-nip" placeholder="1234567890">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Shipping -->
+        <div class="checkout-section">
+          <h2><span class="step-num">2</span> Sposób dostawy</h2>
+          <div id="shipping-options">
+            <!-- Populated by cognivia-cart.js -->
+          </div>
+          <p style="font-size: 12px; color: var(--text-muted); margin-top: 12px;">
+            📦 Darmowa dostawa InPost od 120 zł · DPD od 150 zł · Wysyłka w ciągu 24h
+          </p>
+        </div>
+
+        <!-- Step 3: Payment -->
+        <div class="checkout-section">
+          <h2><span class="step-num">3</span> Sposób płatności</h2>
+          <div id="payment-options">
+            <!-- Populated by cognivia-cart.js -->
+          </div>
+          <p style="font-size: 12px; color: var(--text-muted); margin-top: 12px;">
+            💳 Wszystkie płatności są zabezpieczone szyfrowaniem SSL/TLS
+          </p>
+        </div>
+
+        <!-- Notes -->
+        <div class="checkout-section">
+          <h2><span class="step-num">4</span> Uwagi do zamówienia</h2>
+          <div class="form-row full">
+            <div class="form-group">
+              <label>Notatka (opcjonalnie)</label>
+              <textarea id="order-notes" style="padding: 12px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; font-family: var(--font-body); background: var(--cream); min-height: 80px; resize: vertical;" placeholder="Np. preferowana godzina dostawy, kod do bramki..."></textarea>
+            </div>
+          </div>
+          <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; cursor: pointer; margin-top: 12px;">
+            <input type="checkbox" id="terms-agree" required style="margin-top: 3px;">
+            <span>Akceptuję <a href="regulamin.html" style="color: var(--gold); text-decoration: underline;">regulamin</a> oraz <a href="polityka-prywatnosci.html" style="color: var(--gold); text-decoration: underline;">politykę prywatności</a> i wyrażam zgodę na przetwarzanie danych w celu realizacji zamówienia.</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Right: Order Summary Sidebar -->
+      <div class="checkout-sidebar">
+        <div class="order-summary">
+          <h3>Podsumowanie zamówienia</h3>
+          <div id="checkout-summary">
+            <!-- Populated by cognivia-cart.js -->
+          </div>
+          <hr class="summary-divider">
+          <div class="summary-row"><span>Produkty</span><span id="summary-subtotal">0,00 zł</span></div>
+          <div class="summary-row"><span>Dostawa</span><span id="summary-shipping">—</span></div>
+          <div class="summary-row total"><span>Razem</span><span id="summary-total">0,00 zł</span></div>
+          <div class="vat-note">W tym VAT: <span id="summary-vat">0,00 zł</span> (23%)</div>
+          <button class="btn-place-order" id="place-order-btn" onclick="handleCheckout()">
+            Zamów i zapłać
+          </button>
+          <div class="secure-checkout">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Bezpieczne zamówienie — SSL
+          </div>
+          <div class="checkout-trust">
+            <div class="checkout-trust-item"><span class="icon">🔒</span>SSL</div>
+            <div class="checkout-trust-item"><span class="icon">✓</span>GMP</div>
+            <div class="checkout-trust-item"><span class="icon">↩️</span>30 dni</div>
+            <div class="checkout-trust-item"><span class="icon">🇵🇱</span>PL</div>
+          </div>
+        </div>
+
+        <!-- Trust Bar -->
+        <div style="margin-top: 20px; background: var(--white); border-radius: 8px; padding: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
+          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 13px; color: var(--charcoal-light);">
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <span style="font-size: 18px;">🏭</span>
+              <div><strong>Produkcja GMP</strong><br><span style="font-size: 11px; color: var(--text-muted);">Certyfikat Dobrej Praktyki Produkcyjnej</span></div>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <span style="font-size: 18px;">🔬</span>
+              <div><strong>Testowane laboratoryjnie</strong><br><span style="font-size: 11px; color: var(--text-muted);">Każda partia badana pod kątem czystości</span></div>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <span style="font-size: 18px;">💰</span>
+              <div><strong>Gwarancja zwrotu 30 dni</strong><br><span style="font-size: 11px; color: var(--text-muted);">Bez pytań, bez warunków</span></div>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <span style="font-size: 18px;">🇵🇱</span>
+              <div><strong>Wysyłka z Polski</strong><br><span style="font-size: 11px; color: var(--text-muted);">Szybka dostawa InPost, DPD, Poczta</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">C O G N I V I A</div>
+    <div class="footer-links">
+      <a href="produkt.html">Produkt</a>
+      <a href="regulamin.html">Regulamin</a>
+      <a href="polityka-prywatnosci.html">Prywatność</a>
+      <a href="mailto:cognivia.business@outlook.com">Kontakt</a>
+    </div>
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+
+  <script src="js/cognivia-cart.js"></script>
+  <script>
+    // Show invoice fields toggle
+    document.getElementById('customer-invoice').addEventListener('change', function() {
+      document.getElementById('invoice-fields').style.display = this.value === 'yes' ? 'block' : 'none';
+    });
+
+    // Checkout submission
+    function handleCheckout() {
+      const terms = document.getElementById('terms-agree');
+      if (!terms.checked) {
+        CogniviaCart.showNotification('Zaakceptuj regulamin, aby kontynuować');
+        return;
+      }
+
+      const fields = ['customer-firstname','customer-lastname','customer-email','customer-phone','customer-street','customer-postal','customer-city'];
+      const formData = {};
+      let valid = true;
+      fields.forEach(id => {
+        const el = document.getElementById(id);
+        formData[id.replace('customer-','')] = el.value.trim();
+        if (!el.value.trim()) { el.style.borderColor = '#c0392b'; valid = false; }
+        else { el.style.borderColor = ''; }
+      });
+
+      if (!valid) {
+        CogniviaCart.showNotification('Wypełnij wszystkie wymagane pola');
+        return;
+      }
+
+      const invoice = document.getElementById('customer-invoice').value;
+      if (invoice === 'yes') {
+        formData.company = document.getElementById('company-name').value;
+        formData.nip = document.getElementById('company-nip').value;
+      }
+
+      formData.notes = document.getElementById('order-notes').value;
+
+      CogniviaCart.submitOrder(formData);
+    }
+  </script>
+</body>
+</html>

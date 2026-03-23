@@ -77,3 +77,25 @@
 **CTA:** Email signup for launch notification  
 **Internal links:** index.html (comparison section), nauka.html, produkt.html  
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-23)
+**Title:** Beta-cyklodekstryna — jak poprawia wchłanianie suplementów?  
+**Target:** Polish audience, SEO-focused  
+**Word count:** 1200-1600  
+**Keywords:** beta-cyklodekstryna, cyklodekstryna, biodostępność, suplement diety, kompleks inkluzji, nośnik  
+
+**Outline:**
+1. **Wstęp** — Czym jest beta-cyklodekstryna i skąd się bierze?
+2. **Struktura chemiczna** — Pierścień oligosacharydowy, hydrofilowy z zewnątrz, hydrofobowy wewnątrz
+3. **Kompleksy inkluzji** — Jak β-CD "otula" cząsteczki aktywne i chroni je przed degradacją
+4. **Zastosowania** — Farmacja, żywność, suplementy diety
+5. **β-CD w CogniCit** — Dlaczego dodaliśmy ją do formuły, jak działa z ALA i cytykoliną
+6. **Badania naukowe** — Przegląd publikacji, poprawa biodostępności w liczbach
+7. **Bezpieczeństwo** — Status GRAS, dopuszczenie w UE, dawki
+8. **Podsumowanie** — β-CD jako "inteligentny nośnik" w suplementach
+
+**CTA:** Email signup for launch notification  
+**Internal links:** beta-cyklodekstryna.html, index.html, nauka.html  
+**Status:** Outline ready, needs writing

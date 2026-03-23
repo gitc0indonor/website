@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zamówienie przyjęte — Cognivia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <header id="header">
+    <a href="index.html" class="logo">Cognivia</a>
+    <nav id="nav">
+      <a href="produkt.html" class="nav-link">Produkt</a>
+      <a href="index.html#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <main class="confirmation-page">
+    <div class="confirmation-icon">✓</div>
+    <h1>Dziękujemy za zamówienie!</h1>
+    <p>Twoje zamówienie zostało przyjęte do realizacji.</p>
+    <p id="order-id-display" style="font-weight: 600; font-size: 18px; margin-top: 8px;"></p>
+
+    <div class="confirmation-details">
+      <h3 style="font-family: var(--font-heading); font-size: 20px; margin-bottom: 16px;">Co dalej?</h3>
+      <ol style="padding-left: 20px; line-height: 2; font-size: 14px; color: var(--charcoal-light);">
+        <li>Otrzymasz e-mail z potwierdzeniem zamówienia na podany adres.</li>
+        <li>Po zaksięgowaniu płatności przygotujemy Twoją przesyłkę.</li>
+        <li>Wyślemy numer przesyłki do śledzenia.</li>
+        <li>CogniCit dotrze do Ciebie w ciągu 1-3 dni roboczych.</li>
+      </ol>
+      <div style="margin-top: 24px; padding: 16px; background: #f0f7f2; border-radius: 6px; font-size: 13px;">
+        <strong>Masz pytania?</strong><br>
+        Napisz na <a href="mailto:cognivia.business@outlook.com" style="color: var(--gold);">cognivia.business@outlook.com</a> — odpowiadamy w ciągu 24h.
+      </div>
+    </div>
+
+    <a href="index.html" class="btn-primary" style="margin-top: 16px;">Powrót do strony głównej</a>
+  </main>
+
+  <footer>
+    <div class="footer-logo">C O G N I V I A</div>
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+
+  <script>
+    // Display order ID from URL
+    const params = new URLSearchParams(window.location.search);
+    const orderId = params.get('order');
+    if (orderId) {
+      document.getElementById('order-id-display').textContent = 'Nr zamówienia: ' + orderId;
+    }
+  </script>
+</body>
+</html>

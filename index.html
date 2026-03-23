@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CogniCit — Dokładnie to czego ci trzeba | Cognivia</title>
   <meta name="description" content="CogniCit — suplement diety z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną. Preparat w przygotowaniu.">
+  <link rel="canonical" href="https://cognivia.eu/">
+  <meta property="og:title" content="CogniCit — Dokładnie to czego ci trzeba | Cognivia">
+  <meta property="og:description" content="Suplement diety z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną. Wspiera funkcje poznawcze.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cognivia.eu/">
+  <meta property="og:image" content="https://cognivia.eu/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CogniCit — Dokładnie to czego ci trzeba">
+  <meta name="twitter:description" content="Suplement diety wspierający funkcje poznawcze.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -696,6 +705,7 @@
       .footer-links { flex-direction: column; gap: 12px; }
     }
   </style>
+  <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
   <div class="scroll-progress" id="scrollProgress"></div>
@@ -714,6 +724,10 @@
       <a href="blog/">Blog</a>
       <a href="o-nas.html">O nas</a>
       <a href="#kontakt">Kontakt</a>
+      <div class="cart-icon-wrapper" onclick="window.location.href='koszyk.html'" title="Koszyk">
+        <svg class="cart-icon-svg" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count">0</span>
+      </div>
     </nav>
   </header>
 
@@ -1108,8 +1122,21 @@
 
   <!-- CTA -->
   <section class="cta-section" id="kontakt">
-    <div class="section-title fade-in">Bądź pierwszy</div>
-    <p class="section-text fade-in">Zostaw swój e-mail, a powiadomimy Cię o premierze CogniCit.</p>
+    <div class="section-title fade-in">Zamów CogniCit</div>
+    <p class="section-text fade-in">30 kapsułek · 79,00 zł · Darmowa dostawa od 120 zł</p>
+    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 24px 0;">
+      <button class="btn-add-cart fade-in" onclick="CogniviaCart.addItem('cognicit')">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Dodaj do koszyka — 79,00 zł
+      </button>
+      <a href="kasa.html" class="btn-add-cart btn-add-cart-secondary fade-in" style="text-decoration:none;">Kup teraz</a>
+    </div>
+    <div style="display: flex; gap: 24px; justify-content: center; font-size: 12px; color: var(--text-muted); margin-top: 12px; flex-wrap: wrap;">
+      <span>🔒 Bezpieczna płatność</span>
+      <span>📦 Darmowa dostawa od 120 zł</span>
+      <span>↩️ 30 dni na zwrot</span>
+    </div>
+    <p class="form-note fade-in" style="margin-top: 24px;">Chcesz być informowany o nowościach? Zostaw swój e-mail:</p>
     <form class="email-form fade-in" action="https://formspree.io/f/your-form-id" method="POST">
       <input type="hidden" name="_subject" value="Nowy lead CogniCit">
       <input type="email" name="email" placeholder="Twój adres e-mail" required>
@@ -1140,6 +1167,9 @@
     <div class="footer-logo">C O G N I V I A</div>
     <div class="footer-links">
       <a href="produkt.html">Produkt</a>
+      <a href="faq.html">FAQ</a>
+      <a href="dostawa.html">Dostawa</a>
+      <a href="zwroty.html">Zwroty</a>
       <a href="nauka.html">Nauka</a>
       <a href="blog/">Blog</a>
       <a href="o-nas.html">O nas</a>
@@ -1154,6 +1184,7 @@
     </div>
   </footer>
 
+  <script src="js/cognivia-cart.js"></script>
   <script>
     // FAQ accordion
     function toggleFaq(el) {

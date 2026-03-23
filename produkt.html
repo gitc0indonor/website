@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CogniCit — Suplement diety | Składniki i zastosowanie | Cognivia</title>
   <meta name="description" content="CogniCit suplement diety — kwas alfa-liponowy 250mg, cytykolina 300mg, beta-cyklodekstryna 250mg. Składniki naturalnie wspierające organizm.">
+  <link rel="canonical" href="https://cognivia.eu/produkt.html">
+  <meta property="og:title" content="CogniCit — Składniki i zastosowanie | Cognivia">
+  <meta property="og:description" content="Kwas alfa-liponowy 250mg, cytykolina 300mg, beta-cyklodekstryna 250mg. Poznaj skład CogniCit.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://cognivia.eu/produkt.html">
+  <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -81,6 +87,7 @@
     .footer-legal { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 11px; color: rgba(255,255,255,0.4); line-height: 1.6; }
     @media (max-width: 768px) { .hero h1 { font-size: 36px; } .ingredients-grid { grid-template-columns: 1fr; } .science-section { padding: 24px; } }
   </style>
+  <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
   <div class="legal-bar">
@@ -234,6 +241,45 @@
     </div>
   </section>
 
+  <!-- BUY SECTION -->
+  <section style="padding: 60px 5%;">
+    <div class="buy-section">
+      <div style="text-align: center;">
+        <h2 style="font-family: 'EB Garamond', serif; font-size: 32px; color: var(--cognivia-green); margin-bottom: 8px;">Zamów CogniCit</h2>
+        <p style="font-size: 14px; color: #888; margin-bottom: 20px;">30 kapsułek · 1 miesiąc stosowania</p>
+        <div class="price">79,00 zł</div>
+        <div class="price-note">Cena brutto (z VAT 23%)</div>
+      </div>
+      <div class="qty-row" style="justify-content: center;">
+        <div class="qty-control">
+          <button onclick="decrementQty()" id="qty-minus">−</button>
+          <span class="qty-display" id="buy-qty">1</span>
+          <button onclick="incrementQty()" id="qty-plus">+</button>
+        </div>
+      </div>
+      <div style="text-align: center; margin: 20px 0;">
+        <button class="btn-add-cart" onclick="addToCartFromProduct()" style="width: 100%; justify-content: center;">
+          <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Dodaj do koszyka
+        </button>
+      </div>
+      <div class="buy-features">
+        <span>Bezpieczna płatność SSL</span>
+        <span>Darmowa dostawa od 120 zł</span>
+        <span>30 dni na zwrot</span>
+        <span>Wysyłka w 24h z Polski</span>
+        <span>Certyfikat GMP</span>
+        <span>Testowane laboratoryjnie</span>
+      </div>
+      <div style="text-align: center; margin-top: 16px; font-size: 12px; color: var(--cognivia-text);">
+        <strong>Sposoby płatności:</strong> PayU · Przelewy24 · BLIK · PayPal · Przelew · Pobranie
+      </div>
+      <div style="text-align: center; margin-top: 8px; font-size: 12px; color: var(--cognivia-text);">
+        <strong>Dostawa:</strong> InPost Paczkomat (12,99 zł) · InPost Kurier (15,99 zł) · DPD (16,99 zł) · Poczta (11,99 zł)
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer id="kontakt">
     <p style="font-family: 'EB Garamond', serif; font-size: 24px; color: white; margin-bottom: 16px;">Cognivia</p>
@@ -249,5 +295,17 @@
       Strona zawiera oświadczenia żywieniowe i zdrowotne zgodne z Rozporządzeniem (WE) nr 1924/2006 oraz informacje zgodne z Rozporządzeniem (WE) nr 1169/2011.
     </div>
   </footer>
+  <script src="js/cognivia-cart.js"></script>
+  <script>
+    let buyQty = 1;
+    function updateQtyDisplay() {
+      document.getElementById('buy-qty').textContent = buyQty;
+    }
+    function incrementQty() { if (buyQty < 10) { buyQty++; updateQtyDisplay(); } }
+    function decrementQty() { if (buyQty > 1) { buyQty--; updateQtyDisplay(); } }
+    function addToCartFromProduct() {
+      CogniviaCart.addItem('cognicit', buyQty);
+    }
+  </script>
 </body>
 </html>

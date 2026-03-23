@@ -81,7 +81,36 @@
 - `content_calendar.md` — new blog post outline added
 - `changelog.md` — this entry
 
+### 2026-03-23 — Power Cycle #4 (02:44 UTC)
+**Implemented:**
+- ✅ Fixed js/main.js — completely rewritten, removed ~20 duplicated scroll progress bar blocks with broken braces; clean 80-line file with proper structure
+- ✅ Created sitemap.xml — 14 URLs with priorities, changefreq, lastmod
+- ✅ Created robots.txt — allows all crawlers, blocks checkout/confirmation pages from indexing, points to sitemap
+- ✅ Added JSON-LD FAQPage schema to faq.html — all 15 Q&As structured for Google rich results
+- ✅ Added canonical URLs to index.html and produkt.html
+- ✅ Added Open Graph + Twitter Card meta tags to index.html and produkt.html
+- ✅ Blog post outline #4 added to content_calendar.md — "Beta-cyklodekstryna — jak poprawia wchłanianie suplementów?"
+- ✅ 3 new improvement ideas added to queue (#41-44: hreflang tags, blog directory, lazy loading, PageSpeed, testimonial form)
+
+**Files changed:**
+- `js/main.js` — complete rewrite (was catastrophically broken)
+- `sitemap.xml` — NEW
+- `robots.txt` — NEW
+- `faq.html` — JSON-LD FAQPage schema added to head
+- `index.html` — canonical URL + OG/Twitter meta tags
+- `produkt.html` — canonical URL + OG/Twitter meta tags
+- `improvement_queue.md` — 4 items completed, 5 new items added
+- `content_calendar.md` — new blog post outline added
+- `changelog.md` — this entry
+
 **Git:** Pending commit
+
+**Notes:**
+- Formspree form IDs still placeholder
+- Ecommerce fully functional (cart, checkout, order confirmation)
+- Queue now has ~30 active items
+
+**Git:** Committed & pushed to master
 
 **Notes:**
 - Formspree form IDs still placeholder
