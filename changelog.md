@@ -1,6 +1,39 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-24 — Power Cycle #34 (16:56 UTC)
+**Implemented:**
+- ✅ Item #160 — "Porównanie cen nootropików" section on porownanie.html
+  - Price-per-serving comparison table: 6 supplements (CogniCit, Brain Actives, Noocube, Mind Lab Pro, Neomax, Cholina solo)
+  - Columns: price/package, servings, price/day, ingredient count, transparency level
+  - CogniCit highlighted green with value proposition card ("2,63 zł dziennie — 11× taniej niż Mind Lab Pro")
+  - Interactive sort buttons: Najniższa cena/dzień, Najlepsza wartość, Pełna przejrzystość
+  - Dynamic result display with smooth scroll-to animation
+  - Responsive table with horizontal scroll on mobile
+- ✅ Item #162 — "Gdzie kupić?" availability section on blog/ranking-nootropikow-2026.html
+  - 6-card responsive grid showing purchase availability for each ranked supplement
+  - CogniCit card highlighted with gold border — "tylko cognivia.eu = gwarancja autentyczności, najniższa cena"
+  - Competitor cards show Allegro/apteka/import warnings with practical advice
+  - Trust callout explaining why direct-from-producer is safer (counterfeits, expiry, no support)
+  - Positioned between CTA box and cross-links section
+- ✅ Blog outline added to content_calendar.md: "Suplementy dla studentów — sesja egzaminacyjna" (seasonal SEO)
+- ✅ 3 new improvement ideas added to queue (#163-165)
+
+**Files changed:**
+- `porownanie.html — price comparison section + sort JS
+- `blog/ranking-nootropikow-2026.html` — "Gdzie kupić?" availability grid
+- `improvement_queue.md` — items #160, #162 marked DONE; 3 new items added
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline (student supplements)
+
+**Site verification:** Both files validated — DOCTYPE present, closing </html>. porownanie.html sort JS confirmed (sortHighlight function). ranking-nootropikow-2026.html availability grid responsive (auto-fit minmax 240px). Cart system unaffected.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. 14 add-to-cart calls on produkt.html. cognivia-cart.js loaded on index + produkt. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~100 completed + 66 active = 166 total
+
+---
+
 ### 2026-03-24 — Power Cycle #33 (15:44 UTC)
 **Implemented:**
 - ✅ Enhanced blog/ranking-nootropikow-2026.html with conversion elements

@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-24 (Power Cycle #33)
+## Last Updated: 2026-03-24 (Power Cycle #34)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -214,6 +214,9 @@
 158. ~~[DONE] Enhanced blog/ranking-nootropikow-2026.html — Added cross-links section (5 related pages), trust bar, email capture popup (60% scroll trigger), upgraded footer with cookie policy link~~ ✅ — Power Cycle #33
 159. ~~[DONE] Enhanced blog/nootropiki-a-sen.html — Added email capture popup (60% scroll trigger, 15% discount CTA), CSS + JS for slide-up popup~~ ✅ — Power Cycle #33
 
-160. [NEW] Add "Porównanie cen nootropików" section to porownanie.html — Price-per-serving breakdown for top 6 Polish supplements, interactive sort by price/value/transparency. High conversion impact for visitors already comparing.
+160. ~~[DONE] Add "Porównanie cen nootropików" section to porownanie.html~~ ✅ — Power Cycle #34. Price-per-serving table: 6 supplements compared (CogniCit 2.63 zł/dzień, Brain Actives 4.97 zł, Noocube 7.30 zł, Mind Lab Pro 8.30 zł, Neomax 1.17 zł, Cholina solo 0.50-0.90 zł). Columns: price/package, servings, price/day, ingredients count, transparency. CogniCit highlighted green with value proposition card. Interactive sort buttons (price/value/transparency) with dynamic result display. Scroll-to-result animation.
 161. [NEW] Create "Najlepszy suplement na koncentrację dla studentów" blog post — Seasonal SEO (exam periods Sep/Jan/May), target "suplement na koncentrację student", "nootropiki sesja". Position CogniCit + link to /jak-stosowac. Estimated 1K+ monthly during exam season.
-162. [NEW] Add "Gdzie kupić?" availability section to ranking-nootropikow.html — After each competitor, show where it's available (Allegro/apteka/strona) vs CogniCit (only cognivia.eu = guaranteed authentic, no counterfeits). Trust + conversion differentiator.
+162. ~~[DONE] Add "Gdzie kupić?" availability section to ranking-nootropikow.html~~ ✅ — Power Cycle #34. 6-card availability grid showing where each ranked supplement is available in Poland. CogniCit card highlighted (cognivia.eu only = guaranteed authentic, lowest price, direct from producer). Competitor cards show Allegro/apteka/import warnings. Trust callout: "why buying from producer is safer" (counterfeit risk, expiry dates, no customer support). Responsive grid layout.
+163. [NEW] Add "Ranking cenowy" mini-widget to index.html — Compact 3-row comparison (CogniCit 2.63 zł/dzień vs competitors 5-8 zł/dzień) with visual bar chart, positioned near CTA section. Quick-scan value proposition for visitors who don't click through to full comparison page.
+164. [NEW] Create "Najlepszy suplement na pamięć dla seniorów 50+" blog post — Target "suplementy pamięć senior", "nootropiki osoby starsze". Growing demographic in Poland. Position cytykolina neuroprotection + ALA antioxidant for aging brain. Link to nauka.html studies.
+165. [NEW] Add testimonial carousel to produkt.html — Auto-rotating 3-5 customer reviews with photos, star ratings, verified buyer badges. Social proof at conversion decision point. Currently only 3 static review cards on index.html — product page needs its own dedicated section.

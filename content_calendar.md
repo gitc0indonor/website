@@ -909,3 +909,40 @@
 **Internal links:** jak-czytac-etykiety.html, jak-wybrac-suplement.html, porownanie.html, certyfikaty.html, ranking-nootropikow.html
 **SEO angle:** "błędy suplementy" — wyszukiwane przez świadomych konsumentów, idealne do budowania zaufania marki
 **Status:** Outline ready, needs writing
+
+---
+
+### Blog Post Outline — Power Cycle #34
+**Title:** Suplementy dla studentów — jak wspierać koncentrację w sesji egzaminacyjnej?
+**Target:** Polish university students, seasonal SEO (exam periods: Jan, Jun, Sep)
+**Word count:** 1800-2200
+**Keywords:** suplement na koncentrację student, nootropiki sesja, suplementy egzamin, koncentracja nauka
+
+**Outline:**
+1. **Wstęp:** Sesja egzaminacyjna — dlaczego mózg potrzebuje wsparcia?
+   - Stress, sleep deprivation, information overload
+   - Difference between stimulants and true cognitive support
+2. **Jak działają nootropiki?** Krótki mechanizm
+   - Cytykolina → acetylcholine → memory formation
+   - ALA → neuroprotection under stress
+   - β-CD → enhanced absorption (key differentiator)
+3. **Czego unikać przed egzaminem?**
+   - Kofeina crash during exam
+   - Energy drinks = anxiety + crash
+   - "Stacking" 10 supplements = unpredictable interactions
+4. **Jak stosować CogniCit w sesji?**
+   - Start 2 weeks before exams (not the day before)
+   - 1 capsule morning with breakfast
+   - Combine with sleep hygiene + study breaks
+5. **Porównanie: CogniCit vs popularne "studenckie" suplementy**
+   - vs kofeina tabletek (crash, dependency)
+   - vs energy drinks (sugar, anxiety)
+   - vs multi-nootropic blends (proprietary, unpredictable)
+6. **FAQ dla studentów**
+   - Czy mogę łączyć z kawą? (tak, ale monitoruj dawkę)
+   - Czy działa od razu? (efekty po 7-14 dniach)
+   - Czy jest bezpieczny dla osób 18+? (tak)
+7. **CTA:** Zamów CogniCit przed sesją — 79 zł, 30-dniowa gwarancja
+**Internal links:** jak-stosowac.html, suplementy-a-kofeina.html, porownanie.html, produkt.html, cytykolina.html
+**SEO angle:** Seasonal peak (Jan/Feb, May/Jun, Sep) — high-volume queries "suplement na koncentrację student", "nootropiki sesja". Estimated 1K+ monthly during exam periods.
+**Status:** Outline ready, needs writing
