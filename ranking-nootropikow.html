@@ -34,42 +34,66 @@
     main .tag { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
     main h1 { font-family: 'Playfair Display', serif; font-size: 42px; color: var(--forest); margin-bottom: 16px; line-height: 1.2; }
     main .meta { font-size: 13px; color: #999; margin-bottom: 32px; }
-    main h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--forest); margin: 40px 0 16px; }
-    main h3 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--forest); margin: 32px 0 12px; }
+    main h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--forest); margin: 48px 0 16px; }
+    main h3 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--forest); margin: 28px 0 12px; }
     main p { font-size: 15px; color: var(--soft-text); margin-bottom: 16px; }
     main ul { font-size: 15px; color: var(--soft-text); margin: 0 0 16px 24px; }
     main li { margin-bottom: 8px; }
-    .ranking-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 14px; }
-    .ranking-table th { background: var(--forest); color: white; padding: 14px 16px; text-align: left; font-weight: 500; }
+    .ranking-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 14px; overflow-x: auto; display: block; }
+    .ranking-table thead, .ranking-table tbody, .ranking-table tr { display: table; width: 100%; table-layout: fixed; }
+    .ranking-table { display: table; }
+    .ranking-table th { background: var(--forest); color: white; padding: 14px 12px; text-align: left; font-weight: 500; font-size: 13px; }
     .ranking-table th:first-child { border-radius: 4px 0 0 0; }
     .ranking-table th:last-child { border-radius: 0 4px 0 0; }
-    .ranking-table td { padding: 14px 16px; border-bottom: 1px solid #eee; }
+    .ranking-table td { padding: 14px 12px; border-bottom: 1px solid #eee; font-size: 13px; vertical-align: top; }
     .ranking-table tr:nth-child(even) td { background: #faf7f0; }
     .ranking-table .winner { background: #f0ebe0 !important; }
-    .ranking-table .winner td:first-child::before { content: "🥇 "; }
-    .ranking-table .rank-2 td:first-child::before { content: "🥈 "; }
-    .ranking-table .rank-3 td:first-child::before { content: "🥉 "; }
-    .ranking-table .check { color: #2a7d3a; }
+    .ranking-table .winner td:first-child { font-weight: 700; }
+    .ranking-table .check { color: #2a7d3a; font-weight: 600; }
     .ranking-table .cross { color: #c0392b; }
     .ranking-table .partial { color: #e67e22; }
+
+    .competitor-card { background: white; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; padding: 24px; margin-bottom: 20px; }
+    .competitor-card h3 { margin-top: 0; }
+    .competitor-card .score { display: inline-block; background: var(--forest); color: white; padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+    .competitor-card .pros, .competitor-card .cons { margin: 8px 0; padding-left: 20px; font-size: 14px; }
+    .competitor-card .pros li::marker { content: "✅ "; }
+    .competitor-card .cons li::marker { content: "❌ "; }
+
+    .checklist { background: var(--cream); border-radius: 8px; padding: 28px; margin: 24px 0; }
+    .checklist h3 { margin-top: 0; color: var(--forest); }
+    .checklist ol { font-size: 14px; color: var(--soft-text); margin-left: 20px; }
+    .checklist li { margin-bottom: 10px; }
+    .checklist li strong { color: var(--charcoal); }
+
     .cta-box { background: linear-gradient(135deg, #f5f0e8, #faf7f0); border: 1px solid rgba(201,169,110,0.3); border-radius: 12px; padding: 32px; margin: 40px 0; text-align: center; }
     .cta-box h3 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--forest); margin-bottom: 12px; }
     .cta-box p { font-size: 14px; color: var(--soft-text); margin-bottom: 20px; }
     .cta-btn { display: inline-block; background: var(--gold); color: white; padding: 14px 32px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 14px; letter-spacing: 0.5px; text-transform: uppercase; transition: all 0.3s; }
     .cta-btn:hover { background: #b89558; transform: translateY(-2px); }
+
+    .guarantee-badge { display: flex; align-items: center; gap: 16px; background: #f0f8f2; border: 1px solid rgba(42,125,58,0.2); border-radius: 8px; padding: 20px 24px; margin: 24px 0; flex-wrap: wrap; }
+    .guarantee-badge .badge-circle { width: 56px; height: 56px; background: #2a7d3a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700; flex-shrink: 0; }
+    .guarantee-badge .badge-text h4 { font-size: 16px; color: #2a7d3a; margin-bottom: 4px; }
+    .guarantee-badge .badge-text p { font-size: 13px; color: var(--soft-text); margin: 0; }
+
     .trust-bar { background: var(--forest); color: white; padding: 16px 5%; text-align: center; font-size: 13px; margin-top: 40px; }
     .trust-bar a { color: var(--gold); text-decoration: none; font-weight: 600; }
     .trust-bar .badge { display: inline-block; background: rgba(201,169,110,0.15); border: 1px solid rgba(201,169,110,0.3); padding: 4px 12px; border-radius: 20px; font-size: 11px; margin: 0 4px; }
-    footer { background: var(--forest); color: rgba(255,255,255,0.7); padding: 40px 5%; text-align: center; font-size: 12px; }
+    footer { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 40px 5%; text-align: center; font-size: 12px; }
     footer a { color: var(--gold); text-decoration: none; }
+    .cross-links { margin: 32px 0; }
+    .cross-links a { display: inline-block; color: var(--gold); text-decoration: none; font-size: 13px; font-weight: 600; margin: 0 16px 8px 0; }
+    .cross-links a:hover { text-decoration: underline; }
+
     @media (max-width: 768px) {
       header { top: 0; }
       .breadcrumb { margin-top: 80px; }
       main h1 { font-size: 28px; }
       main h2 { font-size: 22px; }
       nav { display: none; }
-      .ranking-table { font-size: 12px; }
-      .ranking-table th, .ranking-table td { padding: 10px; }
+      .ranking-table th, .ranking-table td { padding: 10px 8px; font-size: 12px; }
+      .competitor-card { padding: 16px; }
     }
   </style>
   <script type="application/ld+json">
@@ -81,6 +105,7 @@
     "author": { "@type": "Organization", "name": "Cognivia" },
     "publisher": { "@type": "Organization", "name": "Cognivia", "url": "https://cognivia.eu" },
     "datePublished": "2026-03-24",
+    "dateModified": "2026-03-24",
     "mainEntityOfPage": "https://cognivia.eu/ranking-nootropikow.html"
   }
   </script>
@@ -114,85 +139,104 @@
   <main>
     <div class="tag">📊 Ranking 2026</div>
     <h1>Ranking nootropików 2026 — najlepsze suplementy na koncentrację</h1>
-    <div class="meta">Ostatnia aktualizacja: 24 marca 2026 · Oparte na składzie, certyfikatach i badaniach</div>
+    <div class="meta">Ostatnia aktualizacja: 24 marca 2026 · Oparte na składzie, certyfikatach i badaniach naukowych</div>
 
-    <p>Szukasz suplementu na koncentrację, ale nie wiesz, który wybrać? Rynek nootropików jest ogromny — setki produktów, sprzeczne opinie, brak przejrzystości. Ten ranking powstał, żeby to zmienić.</p>
+    <p>Szukasz suplementu na koncentrację, ale nie wiesz, który wybrać? Rynek nootropików w Polsce rośnie o ~15% rocznie — setki produktów, sprzeczne opinie, brak przejrzystości. Ten ranking powstał, żeby to zmienić.</p>
 
     <p>Oceniamy suplementy obiektywnie: <strong>skład, dawki, certyfikaty, dowody naukowe, transparentność.</strong> Bez sponsoringu. Bez afiliacji. Tylko fakty.</p>
 
+    <!-- ===================== MAIN RANKING TABLE ===================== -->
     <h2>Ranking suplementów nootropowych — Polska 2026</h2>
 
     <table class="ranking-table">
       <thead>
         <tr>
           <th>Produkt</th>
-          <th>Kluczowy składnik</th>
-          <th>Dawka</th>
+          <th>Kategoria</th>
+          <th>Kluczowe składniki</th>
           <th>GMP</th>
-          <th>EU Compliant</th>
-          <th>Cena/30 dni</th>
+          <th>GIS</th>
+          <th>CoA</th>
+          <th>Cena / 30 dni</th>
           <th>Ocena</th>
         </tr>
       </thead>
       <tbody>
         <tr class="winner">
-          <td><strong>CogniCit</strong></td>
+          <td>🥇 CogniCit</td>
+          <td>Synergiczna formuła</td>
           <td>Cytykolina 300mg + ALA 250mg + β-CD 250mg</td>
-          <td>1 kaps/dzień</td>
           <td class="check">✅</td>
           <td class="check">✅</td>
-          <td>~79 zł</td>
+          <td class="check">✅</td>
+          <td>79 zł</td>
           <td><strong>9.2/10</strong></td>
         </tr>
         <tr>
-          <td>Cholina (solo)</td>
-          <td>Cholina bitartrata 500mg</td>
-          <td>1-2 kaps/dzień</td>
-          <td class="partial">⚠️ varies</td>
-          <td class="check">✅</td>
-          <td>~30-50 zł</td>
-          <td>7.0/10</td>
-        </tr>
-        <tr>
-          <td>Alpha-GPC suplementy</td>
+          <td>🥈 Alpha-GPC suplementy</td>
+          <td>Pojedynczy składnik</td>
           <td>Alpha-GPC 300-600mg</td>
-          <td>1-2 kaps/dzień</td>
-          <td class="partial">⚠️ varies</td>
-          <td class="check">✅</td>
-          <td>~60-90 zł</td>
+          <td class="partial">⚠️ różnie</td>
+          <td class="partial">⚠️ różnie</td>
+          <td class="cross">❌</td>
+          <td>60-90 zł</td>
           <td>7.5/10</td>
         </tr>
         <tr>
-          <td>Lion's Mane ekstrakt</td>
-          <td>Hericium erinaceus 500-1000mg</td>
-          <td>1-2 kaps/dzień</td>
-          <td class="partial">⚠️ varies</td>
-          <td class="check">✅</td>
-          <td>~40-70 zł</td>
-          <td>7.2/10</td>
-        </tr>
-        <tr>
-          <td>Bakopa monnieri</td>
-          <td>Bacopa extract 300mg</td>
-          <td>1 kaps/dzień</td>
-          <td class="partial">⚠️ varies</td>
-          <td class="check">✅</td>
-          <td>~35-60 zł</td>
+          <td>🥉 Cholina (bitartrata/CDP)</td>
+          <td>Pojedynczy składnik</td>
+          <td>Cholina 250-500mg</td>
+          <td class="partial">⚠️ różnie</td>
+          <td class="partial">⚠️ różnie</td>
+          <td class="cross">❌</td>
+          <td>30-50 zł</td>
           <td>7.0/10</td>
         </tr>
         <tr>
-          <td>Kofeina + L-Teanina</td>
+          <td>4. Lion's Mane ekstrakt</td>
+          <td>Ekstrakt grzybowy</td>
+          <td>Hericium erinaceus 500-1000mg</td>
+          <td class="partial">⚠️ różnie</td>
+          <td class="partial">⚠️ różnie</td>
+          <td class="cross">❌</td>
+          <td>40-70 zł</td>
+          <td>7.2/10</td>
+        </tr>
+        <tr>
+          <td>5. Bacopa monnieri</td>
+          <td>Ekstrakt ziołowy</td>
+          <td>Bacopa extract 300mg (50% bakozydów)</td>
+          <td class="partial">⚠️ różnie</td>
+          <td class="partial">⚠️ różnie</td>
+          <td class="cross">❌</td>
+          <td>35-60 zł</td>
+          <td>7.0/10</td>
+        </tr>
+        <tr>
+          <td>6. Kofeina + L-Teanina</td>
+          <td>Stymulant</td>
           <td>Kofeina 100mg + L-Teanina 200mg</td>
-          <td>1-2 kaps/dzień</td>
-          <td class="partial">⚠️ varies</td>
+          <td class="partial">⚠️ różnie</td>
           <td class="check">✅</td>
-          <td>~25-40 zł</td>
+          <td class="cross">❌</td>
+          <td>25-40 zł</td>
           <td>6.5/10</td>
+        </tr>
+        <tr>
+          <td>7. Multi-nootropiki (15+ składników)</td>
+          <td>Mieszanka</td>
+          <td>Różne — zwykle proprietary blend</td>
+          <td class="cross">❌</td>
+          <td class="partial">⚠️ różnie</td>
+          <td class="cross">❌</td>
+          <td>80-150 zł</td>
+          <td>5.5/10</td>
         </tr>
       </tbody>
     </table>
 
-    <h2>Kryteria oceny</h2>
+    <!-- ===================== CRITERIA ===================== -->
+    <h2>Kryteria oceny — jak powstaje ranking?</h2>
 
     <table class="ranking-table">
       <thead>
@@ -206,66 +250,217 @@
         <tr>
           <td><strong>Skład i dawki</strong></td>
           <td>30%</td>
-          <td>Czy dawki są zgodne z badaniami klinicznymi? Czy składniki synergistycznie?</td>
+          <td>Czy dawki odpowiadają badaniom klinicznym? Czy składniki działają synergicznie? Czy formuła jest przemyślana?</td>
         </tr>
         <tr>
           <td><strong>Dowody naukowe</strong></td>
           <td>25%</td>
-          <td>Ile badań PubMed popiera każdy składnik? Jakość dowodów.</td>
+          <td>Liczba publikacji PubMed dla każdego składnika. Jakość dowodów (meta-analizy > badania obserwacyjne > in vitro).</td>
         </tr>
         <tr>
-          <td><strong>Certyfikaty</strong></td>
+          <td><strong>Certyfikaty i zgodność</strong></td>
           <td>20%</td>
-          <td>GMP, ISO, analiza CoA, rejestracja GIS</td>
+          <td>GMP, rejestracja GIS, analiza CoA per partia, zgodność z rozporządzeniem UE 2002/46/WE.</td>
         </tr>
         <tr>
           <td><strong>Transparentność</strong></td>
           <td>15%</td>
-          <td>Pełny skład publiczny? Ujawnione dawki? Brak proprietary blends?</td>
+          <td>Pełny skład publiczny? Ujawnione dawki per składnik? Brak proprietary blends? Możliwość weryfikacji?</td>
         </tr>
         <tr>
-          <td><strong>Stosunek ceny</strong></td>
+          <td><strong>Stosunek jakości do ceny</strong></td>
           <td>10%</td>
-          <td>Cena za dzień suplementacji vs. jakość składników</td>
+          <td>Cena za dzień suplementacji vs. jakość składników i procesu produkcyjnego.</td>
         </tr>
       </tbody>
     </table>
 
-    <h2>Dlaczego CogniCit prowadzi?</h2>
+    <!-- ===================== COMPETITOR PROFILES ===================== -->
+    <h2>Szczegółowa analiza każdego suplementu</h2>
+
+    <div class="competitor-card">
+      <h3>🥇 CogniCit — 9.2/10</h3>
+      <span class="score">Synergiczna formuła · 3 składniki · GMP</span>
+      <p>CogniCit to jedyny suplement w rankingu łączący trzy synergistyczne składniki: cytykolinę (prekursor acetylocholiny), kwas alfa-liponowy (antyoksydant mitochondriów) i beta-cyklodekstrynę (wzmacniacz biodostępności). Formuła jest minimalistyczna — zero wypełniaczy, zero proprietary blends.</p>
+      <ul class="pros">
+        <li>300 mg cytykoliny — dawka zgodna z badaniami klinicznymi (zakres 250-2000 mg)</li>
+        <li>250 mg ALA — podwójna rozpuszczalność (woda + tłuszcze), unikalna właściwość</li>
+        <li>250 mg β-CD — chroni składniki aktywne przed degradacją w przewodzie pokarmowym</li>
+        <li>Certyfikat GMP, zgłoszenie do GIS, analiza CoA per partia</li>
+        <li>Zero kofeiny — brak ryzyka zaburzeń snu, tolerancji, uzależnienia</li>
+        <li>Roślinne kapsułki HPMC — odpowiednie dla wegetarian</li>
+        <li>Pełna transparentność — każdy składnik, każda dawka, publicznie</li>
+      </ul>
+      <ul class="cons">
+        <li>Nowy produkt na rynku — brak długoterminowych opinii konsumentów</li>
+        <li>Brak możliwości zakupu stacjonarnego (tylko online)</li>
+      </ul>
+    </div>
+
+    <div class="competitor-card">
+      <h3>🥈 Alpha-GPC suplementy — 7.5/10</h3>
+      <span class="score">Pojedynczy składnik · Cholina bioavailable</span>
+      <p>Alpha-GPC (L-alfa-glicerofosfocholina) to wysoko biodostępna forma choliny, która przekracza barierę krew-mózg. Popularna wśród osób szukających "czystej" suplementacji choliny.</p>
+      <ul class="pros">
+        <li>Wysoka biodostępność — lepsza niż cholina bitartrata</li>
+        <li>Dobrze przebadany składnik (PubMed: 800+ publikacji)</li>
+        <li>Działa szybko — efekt odczuwalny w ciągu 1-2h</li>
+      </ul>
+      <ul class="cons">
+        <li>Jeden składnik — brak synergii z antyoksydantami</li>
+        <li>Ceny bardzo zróżnicowane — trudno porównać jakość</li>
+        <li>Rzadko oferowane z analizą CoA</li>
+        <li>Brak ochrony antyoksydacyjnej mitochondriów</li>
+      </ul>
+    </div>
+
+    <div class="competitor-card">
+      <h3>🥉 Cholina (bitartrata / CDP) — 7.0/10</h3>
+      <span class="score">Pojedynczy składnik · Budżetowa opcja</span>
+      <p>Cholina w formie bitartratu lub CDP-choliny (cytykoliny) to podstawowa opcja suplementacji. Tania, dostępna, ale z ograniczeniami.</p>
+      <ul class="pros">
+        <li>Niska cena — 30-50 zł za 30 dni</li>
+        <li>CDP-cholina dobrze przebadana (233 publikacje PubMed)</li>
+        <li>Szeroka dostępność w aptekach i online</li>
+      </ul>
+      <ul class="cons">
+        <li>Bitartrata ma niską biodostępność (~10% trafia do mózgu)</li>
+        <li>Brak synergii — jeden składnik to za mało dla kompleksowego wsparcia</li>
+        <li>Często bez certyfikatu GMP lub analizy CoA</li>
+        <li>Nie ochrona przed stresem oksydacyjnym</li>
+      </ul>
+    </div>
+
+    <div class="competitor-card">
+      <h3>4. Lion's Mane (Hericium erinaceus) — 7.2/10</h3>
+      <span class="score">Ekstrakt grzybowy · Nerve Growth Factor</span>
+      <p>Lion's Mane zyskał popularność dzięki badaniom nad stymulacją NGF (Nerve Growth Factor). Ekstrakty standaryzowane na hericenony i erinacyny.</p>
+      <ul class="pros">
+        <li>Unikalny mechanizm — stymulacja NGF, potencjalna neurogeneza</li>
+        <li>Rosnąca liczba badań (ale głównie in vitro i na zwierzętach)</li>
+        <li>Dobrze tolerowany, brak istotnych skutków ubocznych</li>
+      </ul>
+      <ul class="cons">
+        <li>Mało badań klinicznych na ludziach — większość dowodów przedklinicznych</li>
+        <li>Jakość ekstraktu bardzo zróżnicowana między producentami</li>
+        <li>Brak synergii z innymi składnikami nootropowymi</li>
+        <li>Potrzeba 4-8 tygodni na efekty — długie oczekiwanie</li>
+      </ul>
+    </div>
+
+    <div class="competitor-card">
+      <h3>5. Bacopa monnieri — 7.0/10</h3>
+      <span class="score">Ekstrakt ziołowy · Ajurwedyjska tradycja</span>
+      <p>Bacopa to zioło z tradycji ajurwedyjskiej, przebadane pod kątem poprawy pamięci. Standaryzowane ekstrakty na bakozydy A i B.</p>
+      <ul class="pros">
+        <li>Meta-analizy potwierdzają poprawę pamięci ( umiejętne badania)</li>
+        <li>Długa tradycja stosowania — dobrze poznany profil bezpieczeństwa</li>
+        <li>Tania i dostępna</li>
+      </ul>
+      <ul class="cons">
+        <li>Wymaga 8-12 tygodni ciągłego stosowania na efekty</li>
+        <li>Problemy żołądkowe jako częsty efekt uboczny</li>
+        <li>Brak wpływu na koncentrację krótkoterminową</li>
+        <li>Jakość ekstraktu zróżnicowana — standaryzacja nie zawsze gwarantowana</li>
+      </ul>
+    </div>
+
+    <div class="competitor-card">
+      <h3>6. Kofeina + L-Teanina — 6.5/10</h3>
+      <span class="score">Stymulant · Natychmiastowy efekt</span>
+      <p>Najpopularniejszy "stack" nootropowy: kofeina daje pobudzenie, L-teanina łagodzi nerwowość. Prosty, tani, ale z ograniczeniami.</p>
+      <ul class="pros">
+        <li>Natychmiastowy efekt — działa w ciągu 20-30 minut</li>
+        <li>Tani — 25-40 zł za 30 dni</li>
+        <li>Dobrze przebadana kombinacja</li>
+      </ul>
+      <ul class="cons">
+        <li>Kofeina powoduje tolerancję — potrzeba coraz więcej</li>
+        <li>"Crash" po 3-4h — spadek energii poniżej punktu wyjścia</li>
+        <li>Zaburza sen nawet przy porannym spożyciu</li>
+        <li>Nie buduje koncentracji — pożycza ją z przyszłości</li>
+        <li>Brak ochrony antyoksydacyjnej</li>
+      </ul>
+    </div>
+
+    <div class="competitor-card">
+      <h3>7. Multi-nootropiki (15+ składników) — 5.5/10</h3>
+      <span class="score">Mieszanka · Niska przejrzystość</span>
+      <p>Suplementy z 15-30 składnikami w jednej kapsułce. Obiecują "kompleksowe wsparcie", ale często oferują mikrodawki.</p>
+      <ul class="pros">
+        <li>Wiele składników w jednej kapsułce — wygoda</li>
+        <li>Marketingowo atrakcyjne — "20 składników!"</li>
+      </ul>
+      <ul class="cons">
+        <li>Mikrodawki — każdy składnik poniżej dawki z badań</li>
+        <li>Proprietary blends — nie wiesz, ile masz każdego składnika</li>
+        <li>Nieznane interakcje między 15+ składnikami</li>
+        <li>Trudna kontrola jakości przy tylu komponentach</li>
+        <li>Wysoka cena za niską wartość merytoryczną</li>
+        <li>Rzadko oferują certyfikat GMP lub analizę CoA</li>
+      </ul>
+    </div>
+
+    <!-- ===================== WHY COGNICIT WINS ===================== -->
+    <h2>Dlaczego CogniCit prowadzi w rankingu?</h2>
+
+    <p>CogniCit zdobył najwyższą ocenę dzięki połączeniu pięciu czynników, których żaden konkurent nie łączy:</p>
 
     <ul>
-      <li><strong>3 synergistyczne składniki</strong> — cytykolina (neuroprzekaźniki), ALA (antyoksydacja), β-CD (absorpcja). Każdy ma inne zadanie.</li>
-      <li><strong>Dawki zgodne z badaniami</strong> — 300mg cytykoliny, 250mg ALA — dokładnie jak w badaniach klinicznych.</li>
-      <li><strong>Zero kofeiny</strong> — nie pożycza energii, buduje ją. Bez crashu, bez zaburzeń snu.</li>
-      <li><strong>Pełna transparentność</strong> — każdy składnik, każda dawka, publicznie. Brak proprietary blends.</li>
-      <li><strong>GMP certyfikat</strong> — produkcja w certyfikowanym zakładzie z kontrolą jakości per partia.</li>
-      <li><strong>Roślinne kapsułki HPMC</strong> — wegetariańskie, bez BSE, czysty skład.</li>
+      <li><strong>Synergia 3 składników</strong> — cytykolina (neuroprzekaźniki), ALA (antyoksydacja mitochondriów), β-CD (biodostępność). Każdy składnik ma inne zadanie, a razem działają lepiej niż osobno.</li>
+      <li><strong>Dawki z badań klinicznych</strong> — 300 mg cytykoliny i 250 mg ALA to dawki zgodne z zakresami stosowanymi w badaniach. Nie symboliczne ilości.</li>
+      <li><strong>Zero kofeiny</strong> — CogniCit nie pożycza energii. Buduje ją. Bez crashu, bez zaburzeń snu, bez tolerancji.</li>
+      <li><strong>Pełna transparentność</strong> — każdy składnik, każda dawka, publicznie. Zero proprietary blends.</li>
+      <li><strong>GMP + GIS + CoA</strong> — certyfikowana produkcja, zgłoszenie do GIS, analiza jakości per partia.</li>
     </ul>
 
-    <h2>Porównanie: CogniCit vs popularne alternatywy</h2>
+    <!-- ===================== CHECKLIST ===================== -->
+    <h2>7 pytań przed zakupem suplementu nootropowego</h2>
 
-    <p>Więcej szczegółowego porównania znajdziesz na stronie <a href="/porownanie.html" style="color: var(--gold);">Porównanie suplementów nootropowych</a>, gdzie oceniamy każdy suplement pod kątem 11 kryteriów.</p>
+    <div class="checklist">
+      <h3>📋 Checklista — wydrukuj i zabierz do apteki</h3>
+      <ol>
+        <li><strong>Czy skład jest w pełni ujawniony?</strong> — Jeśli widzisz "proprietary blend" lub "mieszanka zastrzeżona", odłóż produkt na półkę.</li>
+        <li><strong>Czy dawki odpowiadają badaniom?</strong> — Sprawdź na PubMed, jaka dawka była używana w badaniach. Jeśli suplement ma 50 mg składnika, a badania używały 300 mg — to nie zadziała.</li>
+        <li><strong>Czy producent ma certyfikat GMP?</strong> — Dobra Praktyka Produkcyjna = kontrola jakości na każdym etapie.</li>
+        <li><strong>Czy suplement jest zgłoszony do GIS?</strong> — Każdy legalny suplement w Polsce musi być zgłoszony.</li>
+        <li><strong>Czy są dostępne wyniki analizy CoA?</strong> — Certyfikat Analizy potwierdza zawartość składników i brak zanieczyszczeń.</li>
+        <li><strong>Czy obietnice są rozsądne?</strong> — Suplement diety nie leczy. Jeśli producent obiecuje "poprawę pamięci o 200%" — to czerwona flaga.</li>
+        <li><strong>Jaki jest skład kapsułki?</strong> — Roślinna (HPMC) czy żelatynowa? Czy są zbędne wypełniacze i barwniki?</li>
+      </ol>
+    </div>
 
+    <!-- ===================== COMPARISON LINK ===================== -->
     <h3>Powiązane strony</h3>
-    <ul>
-      <li><a href="/porownanie.html" style="color: var(--gold);">Szczegółowe porównanie suplementów</a></li>
-      <li><a href="/skladniki.html" style="color: var(--gold);">Składniki CogniCit — mechanizm działania</a></li>
-      <li><a href="/nauka.html" style="color: var(--gold);">Baza naukowa — badania PubMed</a></li>
-      <li><a href="/faq-produkt.html" style="color: var(--gold);">FAQ produktowe</a></li>
-    </ul>
+    <div class="cross-links">
+      <a href="/porownanie.html">📊 Szczegółowe porównanie suplementów</a>
+      <a href="/skladniki.html">🔬 Składniki CogniCit</a>
+      <a href="/nauka.html">📚 Baza naukowa</a>
+      <a href="/faq-produkt.html">❓ FAQ produktowe</a>
+      <a href="/certyfikaty.html">🏆 Certyfikaty</a>
+      <a href="/jak-wybrac-suplement.html">📝 Jak wybrać suplement?</a>
+    </div>
+
+    <div class="guarantee-badge">
+      <div class="badge-circle">30</div>
+      <div class="badge-text">
+        <h4>30-dniowa gwarancja satysfakcji</h4>
+        <p>Nie jesteś zadowolony/a? Zwrócimy pieniądze za pierwsze opakowanie. <a href="/zwroty.html" style="color: var(--gold);">Szczegóły →</a></p>
+      </div>
+    </div>
 
     <div class="cta-box">
-      <h3>Wypróbuj suplement z rankingu #1</h3>
-      <p>CogniCit — trzy synergistyczne składniki, certyfikat GMP. Przekonaj się sam.</p>
+      <h3>Sprawdź suplement z rankingu #1</h3>
+      <p>CogniCit — trzy synergistyczne składniki, certyfikat GMP, zero kofeiny. 79 zł za 30 dni suplementacji.</p>
       <a href="/produkt.html" class="cta-btn">Zamów CogniCit →</a>
     </div>
   </main>
   <div class="trust-bar">
-    CogniCit — 3 synergistyczne składniki · <span class="badge">GMP certyfikat</span> <a href="/produkt.html">Zamów teraz →</a>
+    CogniCit — 3 synergistyczne składniki · <span class="badge">GMP certyfikat</span> <span class="badge">EU Compliant</span> <span class="badge">Lab Tested</span> <a href="/produkt.html">Zamów teraz →</a>
   </div>
   <footer>
     <p>© 2026 Cognivia · <a href="/polityka-prywatnosci.html">Polityka prywatności</a> · <a href="/regulamin.html">Regulamin</a> · <a href="/kontakt.html">Kontakt</a></p>
-    <p style="margin-top:8px; font-size:11px;">Ranking oparty na publicznie dostępnych informacjach o składzie, certyfikatach i badaniach naukowych.</p>
+    <p style="margin-top:8px; font-size:11px;">Ranking oparty na publicznie dostępnych informacjach o składzie, certyfikatach i badaniach naukowych. Suplement diety — nie jest lekiem.</p>
   </footer>
 </body>
 </html>

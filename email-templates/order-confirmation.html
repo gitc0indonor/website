@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potwierdzenie zamówienia — Cognivia</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f5f3ef; font-family: 'Helvetica Neue', Arial, sans-serif;">
+
+  <!-- Preheader (hidden) -->
+  <div style="display: none; max-height: 0; overflow: hidden; font-size: 1px; color: #f5f3ef;">
+    Twoje zamówienie CogniCit zostało przyjęte! Numer zamówienia: {{ORDER_ID}}
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #f5f3ef;">
+    <tr>
+      <td align="center" style="padding: 32px 16px;">
+
+        <!-- Main container -->
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(42,42,40,0.06);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #2a2a28; padding: 32px 40px; text-align: center;">
+              <div style="font-family: Georgia, 'Times New Roman', serif; font-size: 22px; letter-spacing: 6px; color: #ffffff; margin-bottom: 8px;">C O G N I V I A</div>
+              <div style="font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 2px;">SUPLEMENTY DIETY</div>
+            </td>
+          </tr>
+
+          <!-- Success banner -->
+          <tr>
+            <td style="background-color: #d4edda; padding: 20px 40px; text-align: center;">
+              <div style="font-size: 32px; margin-bottom: 8px;">✅</div>
+              <div style="font-size: 18px; font-weight: 600; color: #2d6a4f;">Zamówienie przyjęte!</div>
+              <div style="font-size: 14px; color: #3a7d5c; margin-top: 4px;">Dziękujemy za zaufanie, {{CUSTOMER_NAME}}.</div>
+            </td>
+          </tr>
+
+          <!-- Order details -->
+          <tr>
+            <td style="padding: 32px 40px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding-bottom: 24px;">
+                    <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #6b6b66; margin-bottom: 4px;">Numer zamówienia</div>
+                    <div style="font-size: 18px; font-weight: 600; color: #2a2a28;">{{ORDER_ID}}</div>
+                  </td>
+                  <td style="padding-bottom: 24px; text-align: right;">
+                    <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #6b6b66; margin-bottom: 4px;">Data zamówienia</div>
+                    <div style="font-size: 16px; color: #2a2a28;">{{ORDER_DATE}}</div>
+                  </td>
+                </tr>
+              </table>
+
+              <div style="border-top: 1px solid #e8e4dc; padding-top: 24px;">
+                <div style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #6b6b66; margin-bottom: 16px;">Szczegóły zamówienia</div>
+
+                <!-- Product row -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 16px;">
+                  <tr>
+                    <td style="padding: 12px 0; border-bottom: 1px solid #f0ece4;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td width="60" style="vertical-align: top;">
+                            <div style="width: 50px; height: 50px; background-color: #f5ecd3; border-radius: 8px; text-align: center; line-height: 50px; font-size: 24px;">💊</div>
+                          </td>
+                          <td style="vertical-align: top; padding-right: 16px;">
+                            <div style="font-size: 15px; font-weight: 600; color: #2a2a28;">CogniCit</div>
+                            <div style="font-size: 13px; color: #6b6b66; margin-top: 2px;">Suplement diety · 30 kapsułek</div>
+                            <div style="font-size: 12px; color: #6b6b66; margin-top: 2px;">ALA 250 mg · Cytykolina 300 mg · β-CD 250 mg</div>
+                          </td>
+                          <td style="vertical-align: top; text-align: right; white-space: nowrap;">
+                            <div style="font-size: 13px; color: #6b6b66;">{{QUANTITY}} × 79,00 zł</div>
+                            <div style="font-size: 15px; font-weight: 600; color: #2a2a28;">{{SUBTOTAL}} zł</div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Summary -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="padding: 8px 0; font-size: 14px; color: #6b6b66;">Produkty</td>
+                    <td style="padding: 8px 0; font-size: 14px; color: #2a2a28; text-align: right;">{{SUBTOTAL}} zł</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px 0; font-size: 14px; color: #6b6b66;">Dostawa ({{SHIPPING_METHOD}})</td>
+                    <td style="padding: 8px 0; font-size: 14px; color: #2a2a28; text-align: right;">{{SHIPPING_COST}} zł</td>
+                  </tr>
+                  {{#if DISCOUNT}}
+                  <tr>
+                    <td style="padding: 8px 0; font-size: 14px; color: #2d6a4f;">Zniżka ({{DISCOUNT_CODE}})</td>
+                    <td style="padding: 8px 0; font-size: 14px; color: #2d6a4f; text-align: right;">-{{DISCOUNT}} zł</td>
+                  </tr>
+                  {{/if}}
+                  <tr>
+                    <td style="padding: 16px 0 8px; border-top: 2px solid #2a2a28; font-size: 16px; font-weight: 600; color: #2a2a28;">Razem</td>
+                    <td style="padding: 16px 0 8px; border-top: 2px solid #2a2a28; font-size: 18px; font-weight: 600; color: #2a2a28; text-align: right;">{{TOTAL}} zł</td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Shipping info -->
+          <tr>
+            <td style="padding: 0 40px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="50%" style="vertical-align: top; padding-right: 16px;">
+                    <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #6b6b66; margin-bottom: 8px;">Adres dostawy</div>
+                    <div style="font-size: 14px; color: #2a2a28; line-height: 1.6;">
+                      {{CUSTOMER_NAME}}<br>
+                      {{STREET}}<br>
+                      {{POSTAL_CODE}} {{CITY}}<br>
+                      {{PHONE}}
+                    </div>
+                  </td>
+                  <td width="50%" style="vertical-align: top; padding-left: 16px;">
+                    <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #6b6b66; margin-bottom: 8px;">Metoda dostawy</div>
+                    <div style="font-size: 14px; color: #2a2a28; line-height: 1.6;">
+                      {{SHIPPING_METHOD}}<br>
+                      Szacowany czas: {{DELIVERY_ESTIMATE}}<br>
+                      <span style="font-size: 12px; color: #6b6b66;">Numer śledzenia zostanie wysłany osobnym e-mailem.</span>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Timeline -->
+          <tr>
+            <td style="padding: 0 40px 32px;">
+              <div style="background-color: #faf8f4; border-radius: 8px; padding: 24px;">
+                <div style="font-size: 14px; font-weight: 600; color: #2a2a28; margin-bottom: 16px;">Co dalej?</div>
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="padding-bottom: 12px;">
+                      <table role="presentation" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td style="width: 28px; vertical-align: top;">
+                            <div style="width: 20px; height: 20px; background-color: #2d6a4f; border-radius: 50%; text-align: center; line-height: 20px; font-size: 11px; color: white;">✓</div>
+                          </td>
+                          <td>
+                            <div style="font-size: 14px; color: #2a2a28; font-weight: 500;">Zamówienie przyjęte</div>
+                            <div style="font-size: 12px; color: #6b6b66;">Twoja płatność została przetworzona</div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 12px;">
+                      <table role="presentation" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td style="width: 28px; vertical-align: top;">
+                            <div style="width: 20px; height: 20px; background-color: #c9a84c; border-radius: 50%; text-align: center; line-height: 20px; font-size: 11px; color: white;">2</div>
+                          </td>
+                          <td>
+                            <div style="font-size: 14px; color: #2a2a28; font-weight: 500;">Pakowanie zamówienia</div>
+                            <div style="font-size: 12px; color: #6b6b66;">Przygotowujemy Twoje opakowanie CogniCit</div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 12px;">
+                      <table role="presentation" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td style="width: 28px; vertical-align: top;">
+                            <div style="width: 20px; height: 20px; background-color: #e8e4dc; border-radius: 50%; text-align: center; line-height: 20px; font-size: 11px; color: #6b6b66;">3</div>
+                          </td>
+                          <td>
+                            <div style="font-size: 14px; color: #6b6b66;">Wysyłka</div>
+                            <div style="font-size: 12px; color: #6b6b66;">Otrzymasz numer śledzenia e-mailem</div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table role="presentation" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td style="width: 28px; vertical-align: top;">
+                            <div style="width: 20px; height: 20px; background-color: #e8e4dc; border-radius: 50%; text-align: center; line-height: 20px; font-size: 11px; color: #6b6b66;">4</div>
+                          </td>
+                          <td>
+                            <div style="font-size: 14px; color: #6b6b66;">Dostawa</div>
+                            <div style="font-size: 12px; color: #6b6b66;">{{DELIVERY_ESTIMATE}}</div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+
+          <!-- How to use CTA -->
+          <tr>
+            <td style="padding: 0 40px 32px;">
+              <div style="background: linear-gradient(135deg, #f5ecd3, #e8d5a8); border-radius: 8px; padding: 24px; text-align: center;">
+                <div style="font-size: 16px; font-weight: 600; color: #2a2a28; margin-bottom: 8px;">💊 Jak stosować CogniCit?</div>
+                <div style="font-size: 14px; color: #6b6b66; margin-bottom: 16px;">1 kapsułka dziennie, najlepiej rano z posiłkiem. Pierwsze efekty po 7-14 dniach.</div>
+                <a href="https://cognivia.eu/jak-stosowac.html" style="display: inline-block; padding: 10px 24px; background-color: #2a2a28; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">Przeczytaj pełny przewodnik →</a>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Guarantee -->
+          <tr>
+            <td style="padding: 0 40px 32px; text-align: center;">
+              <div style="border: 1px solid #d4edda; border-radius: 8px; padding: 20px;">
+                <div style="font-size: 24px; margin-bottom: 8px;">🛡️</div>
+                <div style="font-size: 14px; font-weight: 600; color: #2d6a4f; margin-bottom: 4px;">30-dniowa gwarancja satysfakcji</div>
+                <div style="font-size: 13px; color: #6b6b66;">Nie jesteś zadowolony? Zwrócimy pieniądze za pierwsze opakowanie. Bez pytań.</div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Contact -->
+          <tr>
+            <td style="padding: 0 40px 32px; text-align: center;">
+              <div style="font-size: 13px; color: #6b6b66; line-height: 1.6;">
+                Masz pytania dotyczące zamówienia?<br>
+                Skontaktuj się z nami: <a href="mailto:cognivia.business@outlook.com" style="color: #c9a84c; text-decoration: none;">cognivia.business@outlook.com</a><br>
+                Odpowiadamy w ciągu 24 godzin.
+              </div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #faf8f4; padding: 24px 40px; border-top: 1px solid #e8e4dc;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="text-align: center;">
+                    <div style="font-family: Georgia, 'Times New Roman', serif; font-size: 14px; letter-spacing: 4px; color: #2a2a28; margin-bottom: 8px;">C O G N I V I A</div>
+                    <div style="font-size: 11px; color: #6b6b66; line-height: 1.5;">
+                      Cognivia · Gdańsk, Polska<br>
+                      <a href="https://cognivia.eu" style="color: #6b6b66; text-decoration: none;">cognivia.eu</a> ·
+                      <a href="https://cognivia.eu/polityka-prywatnosci.html" style="color: #6b6b66; text-decoration: none;">Prywatność</a> ·
+                      <a href="https://cognivia.eu/regulamin.html" style="color: #6b6b66; text-decoration: none;">Regulamin</a>
+                    </div>
+                    <div style="font-size: 10px; color: #999; margin-top: 12px;">
+                      Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.<br>
+                      © 2026 Cognivia. Wszelkie prawa zastrzeżone.
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /Main container -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
