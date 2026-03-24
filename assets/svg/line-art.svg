@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- Hand-drawn botanical line: organic curve -->
+  <symbol id="art-curve" viewBox="0 0 800 300">
+    <path d="M50,250 C120,240 180,80 280,120 C380,160 420,50 520,90 C620,130 680,60 750,80" fill="none" stroke="#0d0f14" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+    <path d="M100,280 C160,270 200,180 300,200 C400,220 450,140 550,170 C650,200 700,130 780,150" fill="none" stroke="#0d0f14" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+    <circle cx="280" cy="120" r="30" fill="#f1f0eb" opacity="0.5"/>
+    <circle cx="520" cy="90" r="22" fill="#f1f0eb" opacity="0.4"/>
+    <rect x="600" y="160" width="80" height="80" rx="8" fill="#f1f0eb" opacity="0.3"/>
+  </symbol>
+
+  <!-- Hand-drawn botanical line: leaf/stem -->
+  <symbol id="art-leaf" viewBox="0 0 800 300">
+    <path d="M80,260 C120,200 160,100 240,80 C280,70 320,120 340,180" fill="none" stroke="#0d0f14" stroke-width="11" stroke-linecap="round" opacity="0.85"/>
+    <path d="M340,180 C360,140 400,60 480,50 C520,45 560,80 580,140" fill="none" stroke="#0d0f14" stroke-width="9" stroke-linecap="round" opacity="0.7"/>
+    <path d="M580,140 C600,100 640,40 720,30" fill="none" stroke="#0d0f14" stroke-width="7" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="240" cy="80" r="24" fill="#f1f0eb" opacity="0.4"/>
+    <circle cx="480" cy="50" r="18" fill="#f1f0eb" opacity="0.35"/>
+    <rect x="360" y="200" width="60" height="60" rx="6" fill="#f1f0eb" opacity="0.25"/>
+  </symbol>
+
+  <!-- Hand-drawn botanical line: wave -->
+  <symbol id="art-wave" viewBox="0 0 800 300">
+    <path d="M30,150 Q120,50 220,150 Q320,250 420,150 Q520,50 620,150 Q720,250 780,150" fill="none" stroke="#0d0f14" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+    <path d="M60,200 Q150,100 260,200 Q370,300 480,200 Q590,100 700,200" fill="none" stroke="#0d0f14" stroke-width="7" stroke-linecap="round" opacity="0.4"/>
+    <circle cx="220" cy="150" r="28" fill="#f1f0eb" opacity="0.4"/>
+    <circle cx="620" cy="150" r="20" fill="#f1f0eb" opacity="0.35"/>
+  </symbol>
+
+  <!-- Hand-drawn botanical line: spiral -->
+  <symbol id="art-spiral" viewBox="0 0 800 300">
+    <path d="M100,250 C140,240 160,200 150,160 C140,120 100,100 80,130 C60,160 80,190 110,180 C140,170 145,145 130,140" fill="none" stroke="#0d0f14" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+    <path d="M400,220 C440,210 460,170 450,130 C440,90 400,70 380,100 C360,130 380,160 410,150 C440,140 445,115 430,110" fill="none" stroke="#0d0f14" stroke-width="9" stroke-linecap="round" opacity="0.7"/>
+    <path d="M650,200 C690,190 710,150 700,110 C690,70 650,50 630,80 C610,110 630,140 660,130" fill="none" stroke="#0d0f14" stroke-width="8" stroke-linecap="round" opacity="0.55"/>
+    <circle cx="150" cy="160" r="20" fill="#f1f0eb" opacity="0.3"/>
+    <rect x="550" y="220" width="50" height="50" rx="4" fill="#f1f0eb" opacity="0.2"/>
+  </symbol>
+</svg>

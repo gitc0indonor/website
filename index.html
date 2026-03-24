@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CogniCit — Dokładnie to czego ci trzeba | Cognivia</title>
   <meta name="description" content="CogniCit — suplement na koncentrację i pracę umysłową. Cytykolina 300mg, kwas alfa-liponowy 250mg, beta-cyklodekstryna 250mg. Certyfikat GMP, bez kofeiny, kapsułki roślinne. Wsparcie pamięci i funkcji poznawczych.">
-  <link rel="canonical" href="https://cognivia.eu/">
+  <link rel="canonical" href="https://gitc0indonor.github.io/">
   <meta property="og:title" content="CogniCit — Dokładnie to czego ci trzeba | Cognivia">
   <meta property="og:description" content="Suplement diety z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną. Wspiera funkcje poznawcze.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cognivia.eu/">
-  <meta property="og:image" content="https://cognivia.eu/assets/og-image.png">
+  <meta property="og:url" content="https://gitc0indonor.github.io/">
+  <meta property="og:image" content="https://gitc0indonor.github.io/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="CogniCit — Dokładnie to czego ci trzeba">
   <meta name="twitter:description" content="Suplement diety wspierający funkcje poznawcze.">
@@ -1246,9 +1246,10 @@
       .floating-cta { display: flex; }
     }
   </style>
+  <link rel="stylesheet" href="assets/css/cognivia-v2.css">
   <link rel="stylesheet" href="css/cart.css">
   
-  <link rel="alternate" hreflang="pl" href="https://cognivia.eu/index.html">
+  <link rel="alternate" hreflang="pl" href="https://gitc0indonor.github.io/index.html">
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
@@ -1263,7 +1264,7 @@
     "manufacturer": {
       "@type": "Organization",
       "name": "Cognivia",
-      "url": "https://cognivia.eu"
+      "url": "https://gitc0indonor.github.io"
     },
     "category": "Dietary Supplement",
     "additionalProperty": [
@@ -1275,7 +1276,7 @@
       "@type": "Offer",
       "availability": "https://schema.org/PreOrder",
       "priceCurrency": "PLN",
-      "url": "https://cognivia.eu/"
+      "url": "https://gitc0indonor.github.io/"
     }
   }
   </script>
@@ -1449,6 +1450,23 @@
   <!-- DIVIDER -->
   <div class="divider">
     <svg viewBox="0 0 120 40" fill="none"><path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="#2a2a28" stroke-width="0.8"/><circle cx="60" cy="20" r="3" fill="#e8d5a8" stroke="#2a2a28" stroke-width="0.5"/></svg>
+  </div>
+
+  <!-- DECORATIVE ART: Botanical curve -->
+  <div class="art-block beige" style="margin: 0;">
+    <svg viewBox="0 0 800 300" preserveAspectRatio="none">
+      <path d="M50,250 C120,240 180,80 280,120 C380,160 420,50 520,90 C620,130 680,60 750,80" fill="none" stroke="#0d0f14" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+      <path d="M100,280 C160,270 200,180 300,200 C400,220 450,140 550,170 C650,200 700,130 780,150" fill="none" stroke="#0d0f14" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+      <circle cx="280" cy="120" r="30" fill="#f1f0eb" opacity="0.5"/>
+      <circle cx="520" cy="90" r="22" fill="#f1f0eb" opacity="0.4"/>
+      <rect x="600" y="160" width="80" height="80" rx="8" fill="#f1f0eb" opacity="0.3"/>
+    </svg>
+    <div class="content">
+      <div>
+        <p class="kicker" style="color: rgba(255,255,255,0.7);">Natura & Nauka</p>
+        <h3 style="color: var(--white); margin-top: 8px;">Każdy składnik ma potwierdzone działanie</h3>
+      </div>
+    </div>
   </div>
 
   <!-- PRODUCTS -->
@@ -2541,6 +2559,22 @@
     </div>
   </section>
 
+  <!-- DECORATIVE ART: Wave pattern -->
+  <div class="art-block pink">
+    <svg viewBox="0 0 800 300" preserveAspectRatio="none">
+      <path d="M30,150 Q120,50 220,150 Q320,250 420,150 Q520,50 620,150 Q720,250 780,150" fill="none" stroke="#0d0f14" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+      <path d="M60,200 Q150,100 260,200 Q370,300 480,200 Q590,100 700,200" fill="none" stroke="#0d0f14" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+      <circle cx="220" cy="150" r="28" fill="#f1f0eb" opacity="0.4"/>
+      <circle cx="620" cy="150" r="20" fill="#f1f0eb" opacity="0.35"/>
+    </svg>
+    <div class="content">
+      <div>
+        <p class="kicker" style="color: rgba(255,255,255,0.7);">Cognivia</p>
+        <h3 style="color: var(--white); margin-top: 8px;">Zdrowy umysł zaczyna się od świadomej suplementacji</h3>
+      </div>
+    </div>
+  </div>
+
   <!-- FOOTER NEWSLETTER -->
   <section class="footer-newsletter">
     <div class="footer-newsletter-inner">
@@ -3018,6 +3052,33 @@
         if (!document.getElementById('floatingContact').contains(e.target)) popup.classList.remove('open');
       });
     })();
+  </script>
+  <!-- Reveal animation observer -->
+  <script>
+  (function(){
+    // Scroll progress
+    var bar = document.getElementById('scrollProgress');
+    if(bar) window.addEventListener('scroll', function(){
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+    });
+
+    // Reveal on scroll
+    if('IntersectionObserver' in window){
+      var obs = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); }
+        });
+      },{threshold:0.08});
+      document.querySelectorAll('.fade-in').forEach(function(el){ obs.observe(el); });
+    }
+
+    // Header scroll effect
+    var hdr = document.getElementById('header');
+    if(hdr) window.addEventListener('scroll', function(){
+      hdr.classList.toggle('scrolled', window.scrollY > 40);
+    });
+  })();
   </script>
 </body>
 </html>
