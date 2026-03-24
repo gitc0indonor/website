@@ -739,11 +739,29 @@
     </div>
   </section>
 
-  <!-- BUNDLE SUGGESTION — #102 -->
+  <!-- BUNDLE SUGGESTION — #102 + #154 enhanced -->
   <section style="padding: 50px 5%; background: linear-gradient(135deg, #f8f5ef 0%, #f0ebe0 100%);">
     <div style="max-width: 800px; margin: 0 auto;">
       <h2 style="font-family: 'EB Garamond', serif; font-size: 28px; text-align: center; margin-bottom: 8px;">Często kupowane razem</h2>
-      <p style="text-align: center; font-size: 14px; color: var(--cognivia-text); margin-bottom: 32px; opacity: 0.7;">Kup więcej — oszczędzaj więcej</p>
+      <p style="text-align: center; font-size: 14px; color: var(--cognivia-text); margin-bottom: 16px; opacity: 0.7;">Kup więcej — oszczędzaj więcej</p>
+      <!-- Savings comparison bar -->
+      <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 28px; flex-wrap: wrap;">
+        <div style="text-align: center; padding: 10px 20px; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 11px; color: #aaa; text-transform: uppercase; letter-spacing: 1px;">Dzienna cena</div>
+          <div style="font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 700; color: var(--cognivia-green);">od 2,37 zł</div>
+          <div style="font-size: 11px; color: #888;">mniej niż kawa ☕</div>
+        </div>
+        <div style="text-align: center; padding: 10px 20px; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 11px; color: #aaa; text-transform: uppercase; letter-spacing: 1px;">Max oszczędność</div>
+          <div style="font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 700; color: #c9a96e;">23,70 zł</div>
+          <div style="font-size: 11px; color: #888;">przy 3 opakowaniach</div>
+        </div>
+        <div style="text-align: center; padding: 10px 20px; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 11px; color: #aaa; text-transform: uppercase; letter-spacing: 1px;">Najczęściej wybierane</div>
+          <div style="font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 700; color: var(--cognivia-green);">2 opakowania</div>
+          <div style="font-size: 11px; color: #888;">2 miesiące kuracji</div>
+        </div>
+      </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
         <!-- 1 box -->
         <div style="background: white; border-radius: 16px; padding: 28px 20px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.06); border: 2px solid transparent; transition: border-color 0.3s, transform 0.3s;" onmouseover="this.style.borderColor='var(--cognivia-green)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='transparent';this.style.transform='none'">

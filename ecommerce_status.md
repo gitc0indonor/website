@@ -1,5 +1,5 @@
 # Ecommerce Status — Cognivia / CogniCit
-## Last Audit: 2026-03-24 03:21 UTC
+## Last Audit: 2026-03-24 06:53 UTC
 
 ---
 
@@ -17,7 +17,7 @@
 | **Payment gateway** | ❌ **NOT INTEGRATED** | PayU/Przelewy24/BLIK/PayPal listed in UI but no real gateway connection |
 
 ### 🔴 CRITICAL: NOT TRULY BUYABLE
-The cart and checkout work as a UI demo. Orders go to `localStorage` and are never sent to a server. No Formspree endpoint, no fetch() calls, no XMLHttpRequest. `submitOrder()` saves to localStorage and redirects to confirmation — that's it.
+The cart and checkout work as a UI demo. Orders go to `localStorage` and are never sent to a server. No Formspree endpoint, no fetch() calls, no XMLHttpRequest. `submitOrder()` saves to localStorage and redirects to confirmation — that's it. **Unchanged since 2026-03-24 03:21 UTC audit.**
 
 **Current flow:** User fills form → JS creates order object → saves to localStorage → redirects to confirmation page. **Nobody receives the order.**
 
@@ -116,69 +116,27 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 
 ---
 
-## 6. CONTENT & SEO PAGES
+## 6. IMPROVEMENTS QUEUE STATUS
 
-| Page | Status | Notes |
-|------|--------|-------|
-| /produkt (main product) | ✅ Full | Gallery, calculator, FAQ, sticky sidebar, mobile CTA |
-| /skladniki (ingredients hub) | ✅ | 3 ingredient cards, comparison table |
-| /kwas-alfa-liponowy | ✅ | Individual ingredient page |
-| /cytykolina | ✅ | Individual ingredient page |
-| /beta-cyklodekstryna | ✅ | Individual ingredient page |
-| /skutki-uboczne | ✅ | Safety/contraindications |
-| /skutki-uboczne-nootropiki | ✅ | Broader nootropic safety |
-| /porownanie | ✅ | Comparison widget, 3 tabs |
-| /jak-stosowac | ✅ | Usage guide |
-| /jak-wybrac-suplement | ✅ | Buyer checklist |
-| /jak-czytac-etykiety | ✅ | Label reading guide |
-| /jak-zamowic | ✅ | How to order guide |
-| /certyfikaty | ✅ | GMP, lab, GIS, EU compliance |
-| /kontakt | ✅ | Contact form |
-| /blog/ (index) | ✅ | 6 blog posts |
-| /blog/cytykolina | ✅ | Blog article |
-| /blog/antyoksydanty | ✅ | Blog article |
-| /blog/beta-cyklodekstryna | ✅ | Blog article |
-| /blog/suplement-vs-lek | ✅ | Blog article |
-| /blog/praca-zdalna | ✅ | Blog article |
-| /blog/suplementy-a-kofeina | ✅ | Blog article (newest) |
-| /faq-produkt | ✅ | Product-specific FAQ |
+- Total items: 154 (last item #154)
+- DONE: ~55 items
+- NEW/active: ~99 items
+- Items #142, #143, #144 remain the highest-priority BLOCKERS from previous audit
 
 ---
 
-## 7. SUMMARY — IS COGNICIT BUYABLE?
+## 7. AUDIT CHANGES THIS RUN (2026-03-24 06:53 UTC)
 
-**NO — ⚠️ FRONTEND DEMO ONLY (unchanged since last audit)**
+1. ✅ Re-verified submitOrder() — still localStorage-only, no fetch/POST/endpoint added
+2. ✅ Confirmed all policy pages intact and RODO-compliant
+3. ✅ Confirmed shipping/payment UI unchanged since last audit
+4. ✅ Cart/checkout functional as frontend demo — not buyable for real customers
+5. ✅ Added 3 new improvements to queue (#155-#157)
 
-The entire frontend cart/checkout flow is polished:
-- ✅ Adding to cart, quantity management
-- ✅ Shipping selection with free thresholds
-- ✅ Payment method selection
-- ✅ VAT calculation (23%)
-- ✅ Order form with validation
-- ✅ Confirmation page
+## 8. NEW IMPROVEMENTS QUEUED (#155-157)
 
-**But orders are NOT processed:**
-- ❌ `submitOrder()` saves to localStorage only — no fetch(), no API call, no email
-- ❌ No Formspree endpoint configured (placeholder noted in previous audit, never integrated)
-- ❌ No payment gateway connected
-- ❌ No email confirmation sent to customer or business
-- ❌ Orders lost on browser data clear
+155. **CRITICAL: Set up Formspree account and wire order notification** — CEO action required: create free Formspree account (formspree.io), create a form endpoint for cognivia.business@outlook.com, provide the form ID. Then update submitOrder() in cognivia-cart.js to POST order JSON to the endpoint. This sends order details to the business email. Minimum viable path to receive orders without building a backend. Blocks all real sales.
 
----
+156. **Add order email confirmation to customer** — After Formspree integration (#155), add a second endpoint or use Formspree autoresponder to send order confirmation email to customer. Include order ID, items, total, shipping method, estimated delivery. Polish language template. Builds trust and reduces "did my order go through?" anxiety.
 
-## 8. IMPROVEMENTS ADDED THIS AUDIT (2026-03-24 03:21)
-
-1. ✅ Full re-audited ecommerce stack — all pages present and functional
-2. ✅ Verified cart JS: shipping, payment, VAT all consistent
-3. ✅ Confirmed submitOrder() is localStorage-only (no backend change since last audit)
-4. ✅ Confirmed all policy pages exist and are RODO-compliant
-5. ✅ Verified improvement queue has 141 items, ~40 still active/NEW
-6. ✅ Added 3 new improvements to queue (#142-144)
-
-## 9. NEW IMPROVEMENTS QUEUED (#142-144)
-
-142. **CRITICAL: Wire submitOrder() to Formspree endpoint** — Replace localStorage-only order save with actual Formspree POST to cognivia.business@outlook.com. Minimal change: add fetch('https://formspree.io/f/REAL_FORM_ID', {method:'POST', body:JSON.stringify(order)}) before localStorage save. This is the single biggest conversion blocker — orders currently vanish into the void. CEO must create Formspree account and provide form ID.
-
-143. **Add real product photos to gallery** — Replace 4 emoji placeholders (📦💊🧬🔬) with actual product photography. Even smartphone photos of the box/capsules would massively improve conversion trust. Current gallery has lightbox/zoom JS ready, just needs real image files in /assets/.
-
-144. **Create "Ranking nootropików 2026" SEO landing page** — Target high-volume Polish keyword "ranking suplementów na koncentrację" / "najlepszy nootropik Polska". Comparison table positioning CogniCit as the transparent, GMP-certified, EU-compliant choice vs competitors. Drives organic traffic to the product page. Estimated 2-3K monthly searches in Poland.
+157. **Create product comparison with Polish competitors on /ranking-nootropikow** — Build ranking page targeting "najlepszy nootropik Polska 2026" and "ranking suplementów koncentrację". Include 5-6 products (CogniCit + real Polish market competitors like Brain Actives, Noocube, Mind Lab Pro, Neomax). Score on: transparency (full ingredient disclosure), GMP certification, EU compliance, price per serving, third-party testing. CogniCit wins on transparency + GMP + EU registration. Schema.org Article + BreadcrumbList. Estimated 2-4K monthly organic visits in Poland.
