@@ -64,6 +64,23 @@
     .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 20px; }
     .cta-box a { display: inline-block; background: var(--gold); color: var(--forest); padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; }
     footer { text-align: center; padding: 40px 5%; font-size: 12px; color: #999; border-top: 1px solid #e8e4db; }
+    .cross-links { max-width: 800px; margin: 0 auto 40px; padding: 0 8%; }
+    .cross-links h3 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--forest); margin-bottom: 16px; }
+    .cross-links a { display: inline-block; color: var(--gold); text-decoration: none; font-size: 14px; margin-right: 24px; margin-bottom: 8px; }
+    .cross-links a:hover { text-decoration: underline; }
+    .trust-bar-wrap { margin: 40px 0 0; }
+    .trust-bar { background: var(--forest); color: white; padding: 16px 5%; text-align: center; font-size: 13px; display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    .trust-bar a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    .trust-bar a:hover { text-decoration: underline; }
+    .blog-email-popup { position: fixed; bottom: -300px; right: 24px; width: 340px; background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); z-index: 999; padding: 28px 24px; transition: bottom 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .blog-email-popup.show { bottom: 24px; }
+    .blog-email-popup .popup-x { position: absolute; top: 12px; right: 14px; background: none; border: none; font-size: 20px; color: #999; cursor: pointer; }
+    .blog-email-popup h4 { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--forest); margin-bottom: 8px; }
+    .blog-email-popup p { font-size: 13px; color: var(--soft-text); margin-bottom: 16px; }
+    .blog-email-popup form { display: flex; gap: 8px; }
+    .blog-email-popup input[type="email"] { flex: 1; padding: 10px 14px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; }
+    .blog-email-popup button[type="submit"] { background: var(--gold); color: white; border: none; padding: 10px 18px; border-radius: 4px; font-weight: 600; cursor: pointer; font-size: 13px; }
+    @media (max-width: 768px) { .blog-email-popup { width: calc(100% - 32px); right: 16px; } }
   </style>
   <script type="application/ld+json">
   {
@@ -342,10 +359,60 @@
 
 </article>
 
+<div class="cross-links">
+  <h3>Przeczytaj również</h3>
+  <a href="/blog/cytykolina.html">→ Cytykolina — przewodnik po CDP-cholinie</a>
+  <a href="/blog/suplementy-a-kofeina.html">→ Suplementy a kofeina — porównanie</a>
+  <a href="/porownanie.html">→ Porównanie suplementów nootropowych</a>
+  <a href="/stres-oksydacyjny.html">→ Stres oksydacyjny a suplementy</a>
+  <a href="/produkt.html">→ Poznaj CogniCit</a>
+</div>
+
+<div class="trust-bar-wrap">
+  <div class="trust-bar">
+    <span>🧪 3 synergistyczne składniki</span>
+    <span>✓ GMP Certified</span>
+    <span>✓ EU Compliant</span>
+    <a href="/produkt.html">Poznaj CogniCit →</a>
+  </div>
+</div>
+
 <footer>
   <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
-  <p><a href="/polityka-prywatnosci.html">Polityka prywatności</a> · <a href="/regulamin.html">Regulamin</a></p>
+  <p><a href="/polityka-prywatnosci.html">Polityka prywatności</a> · <a href="/regulamin.html">Regulamin</a> · <a href="/polityka-cookies.html">Cookies</a></p>
 </footer>
+
+<div class="blog-email-popup" id="blogEmailPopup">
+  <button class="popup-x" onclick="closeBlogPopup()">×</button>
+  <h4>📬 Podoba Ci się artykuł?</h4>
+  <p>Zapisz się na newsletter i otrzymaj <strong>15% zniżki</strong> na pierwsze zamówienie CogniCit.</p>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="email" name="email" placeholder="Twój email" required>
+    <input type="hidden" name="source" value="blog-ranking-popup">
+    <button type="submit">Zapisz się</button>
+  </form>
+</div>
+
+<script>
+// Email popup — 60% scroll trigger
+(function() {
+  if (localStorage.getItem('blogPopupDismissed')) return;
+  var popup = document.getElementById('blogEmailPopup');
+  var triggered = false;
+  window.addEventListener('scroll', function() {
+    if (triggered) return;
+    var scrollPct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    if (scrollPct > 0.6) {
+      popup.classList.add('show');
+      triggered = true;
+    }
+  });
+})();
+function closeBlogPopup() {
+  document.getElementById('blogEmailPopup').classList.remove('show');
+  localStorage.setItem('blogPopupDismissed', '1');
+}
+</script>
 
 </body>
 </html>

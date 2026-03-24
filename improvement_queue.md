@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-24 (Power Cycle #32)
+## Last Updated: 2026-03-24 (Power Cycle #33)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -210,3 +210,10 @@
 156. **Add order email confirmation to customer** — After Formspree integration (#155), add a second endpoint or use Formspree autoresponder to send order confirmation email to customer. Include order ID, items, total, shipping method, estimated delivery. Polish language template. Builds trust and reduces "did my order go through?" anxiety.
 
 157. **Create product comparison with Polish competitors on /ranking-nootropikow** — Build ranking page targeting "najlepszy nootropik Polska 2026" and "ranking suplementów koncentrację". Include 5-6 products (CogniCit + real Polish market competitors like Brain Actives, Noocube, Mind Lab Pro, Neomax). Score on: transparency (full ingredient disclosure), GMP certification, EU compliance, price per serving, third-party testing. CogniCit wins on transparency + GMP + EU registration. Schema.org Article + BreadcrumbList. Estimated 2-4K monthly organic visits in Poland.
+
+158. ~~[DONE] Enhanced blog/ranking-nootropikow-2026.html — Added cross-links section (5 related pages), trust bar, email capture popup (60% scroll trigger), upgraded footer with cookie policy link~~ ✅ — Power Cycle #33
+159. ~~[DONE] Enhanced blog/nootropiki-a-sen.html — Added email capture popup (60% scroll trigger, 15% discount CTA), CSS + JS for slide-up popup~~ ✅ — Power Cycle #33
+
+160. [NEW] Add "Porównanie cen nootropików" section to porownanie.html — Price-per-serving breakdown for top 6 Polish supplements, interactive sort by price/value/transparency. High conversion impact for visitors already comparing.
+161. [NEW] Create "Najlepszy suplement na koncentrację dla studentów" blog post — Seasonal SEO (exam periods Sep/Jan/May), target "suplement na koncentrację student", "nootropiki sesja". Position CogniCit + link to /jak-stosowac. Estimated 1K+ monthly during exam season.
+162. [NEW] Add "Gdzie kupić?" availability section to ranking-nootropikow.html — After each competitor, show where it's available (Allegro/apteka/strona) vs CogniCit (only cognivia.eu = guaranteed authentic, no counterfeits). Trust + conversion differentiator.

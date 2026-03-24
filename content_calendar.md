@@ -884,3 +884,28 @@
 **SEO angle:** "ranking nootropików" — high-volume, low-competition in Polish market. Positions Cognivia as the transparent authority.
 **Target platforms:** Google (SEO), Wykop, grupy Facebook o suplementacji
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #33)
+**Title:** 7 najczęstszych błędów przy kupowaniu suplementów diety — jak ich uniknąć  
+**Target:** Polish audience, SEO + trust-building  
+**Word count:** 1500-2000  
+**Keywords:** błędy suplementy, jak kupić suplement, kupowanie suplementów poradnik, suplement diety na co uważać, ranking suplementów Polska
+
+**Outline:**
+1. **Wstęp** — Polacy wydają 5+ mld zł rocznie na suplementy. Ile z tego to pieniądze wyrzucone w błoto?
+2. **Błąd #1: Kupujesz "wszystko w jednym"** — 20 składników × mikrodawki = placebo. Tabela: ile naprawdę potrzebujesz.
+3. **Błąd #2: Nie sprawdzasz certyfikatów** — GMP, GIS, CoA — co oznaczają i dlaczego bez nich suplement to ryzyko.
+4. **Błąd #3: Ufasz "proprietary blend"** — Ukryte dawki to czerwona flaga. Jak czytać etykiety (link do /jak-czytac-etykiety.html).
+5. **Błąd #4: Wybierasz najtańszy na Allegro** — Fałszywki, przeterminowane partie, brak gwarancji. Porównanie: apteka vs. Allegro vs. strona producenta.
+6. **Błąd #5: Nie czytasz badań** — "Na podstawie badań" ≠ "potwierdzone badaniami". Jak weryfikować (PubMed, Cochrane).
+7. **Błąd #6: Oczekujesz efektów w 3 dni** — Suplementacja wymaga czasu. Realistyczna oś czasu (7/14/30 dni).
+8. **Błąd #7: Kupujesz bez gwarancji zwrotu** — 30-dniowa gwarancja satysfakcji jako standard.
+9. **Checklista kupującego** — 7 pytań zadaj przed każdym zakupem suplementu.
+10. **Podsumowanie** — CogniCit jako przykład suplementu, który przechodzi każdy test z checklisty.
+
+**CTA:** Sprawdź CogniCit — 79 zł, GMP, GIS, 30-dniowa gwarancja → produkt.html
+**Internal links:** jak-czytac-etykiety.html, jak-wybrac-suplement.html, porownanie.html, certyfikaty.html, ranking-nootropikow.html
+**SEO angle:** "błędy suplementy" — wyszukiwane przez świadomych konsumentów, idealne do budowania zaufania marki
+**Status:** Outline ready, needs writing

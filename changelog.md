@@ -1,6 +1,36 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-24 — Power Cycle #33 (15:44 UTC)
+**Implemented:**
+- ✅ Enhanced blog/ranking-nootropikow-2026.html with conversion elements
+  - Added cross-links section (5 related pages: cytykolina, suplementy-a-kofeina, porownanie, stres-oksydacyjny, produkt)
+  - Added trust bar (3 synergistyczne składniki · GMP · EU Compliant) with CTA to produkt.html
+  - Added email capture popup (60% scroll trigger, 15% discount CTA, localStorage persistence, Formspree integration)
+  - Upgraded footer with cookies link
+  - All CSS (cross-links, trust-bar, blog-email-popup) added to <style>
+  - JS: scroll-triggered popup with closeBlogPopup() function
+- ✅ Enhanced blog/nootropiki-a-sen.html with email capture popup
+  - Added blog-email-popup CSS (slide-up animation, cubic-bezier easing, responsive)
+  - Added popup HTML: "Podoba Ci się artykuł?" + 15% discount + email input + Formspree
+  - Added JS: 60% scroll depth trigger, localStorage persistence, closeBlogPopup()
+  - Popup source: "blog-sen-popup" for tracking
+
+**Files changed:**
+- `blog/ranking-nootropikow-2026.html` — cross-links, trust bar, email popup, CSS, JS
+- `blog/nootropiki-a-sen.html` — email popup CSS, HTML, JS
+- `improvement_queue.md` — items #158-159 marked DONE; 3 new items (#160-162) added
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline: "7 najczęstszych błędów przy kupowaniu suplementów"
+
+**Site verification:** Both files validated — DOCTYPE present, closing </html>, popup JS confirmed. ranking-nootropikow-2026.html cross-links verified (5 links). nootropiki-a-sen.html popup triggers at 60% scroll. Cart system unaffected.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. 18 buy buttons on produkt.html. cognivia-cart.js (377 lines) with submitOrder(). Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~160 items (97 completed + 63 active)
+
+---
+
 ### 2026-03-24 — Power Cycle #30 (05:40 UTC)
 **Implemented:**
 - ✅ Item #139 — "Ile kofeiny pijesz?" interactive caffeine calculator on index.html
