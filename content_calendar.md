@@ -673,3 +673,31 @@
 **CTA:** Poznaj CogniCit — link do produkt.html (79 zł, 30-dniowa gwarancja)
 **Internal links:** produkt.html, nauka.html, faq-produkt.html, blog/cytykolina.html, jak-wybrac-suplement.html, porownanie.html
 **Status:** Outline ready, needs writing
+
+
+---
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #24)
+**Title:** Poranne nawyki programisty — jak zacząć dzień produktywnie?
+**Target:** Polish audience, SEO / tech demographic / developer lifestyle
+**Word count:** 1500-2000
+**Keywords:** poranne nawyki programista, produktywność developer, suplement programista, poranna rutyna IT, koncentracja praca umysłowa
+
+**Outline:**
+1. **Wstęp** — 6:00, budzik, laptop. Czy tak wygląda poranek developera? Jak zmienić ten wzorzec.
+2. **Dlaczego poranek ma znaczenie?** — Kortyzol, cykl dobowy, "decision fatigue" — nauka za poranną rutyną
+3. **5 kroków porannej rutyny developera:**
+   - ☀️ Światło słoneczne (10 min) — regulacja kortyzolu, serotoninina
+   - 💧 Szklanka wody — rehydratacja po nocy
+   - 💊 CogniCit — 1 kapsułka ze śniadaniem, wsparcie acetylocholiny na cały dzień
+   - 🍳 Białkowe śniadanie — stała glukoza, nie spike+crash
+   - 🚶 10-minutowy spacer — ruch przed siedzeniem 8h
+4. **Kofeina — tak czy nie?** — Czy łączyć z CogniCit? Optymalna pora, unikanie po 14:00
+5. **Czego unikać rano?** — Telefon w łóżku, Slack przed śniadaniem, pomijanie posiłku
+6. **CogniCit w kontekście pracy umysłowej** — Jak ALA + cytykolina + β-CD wspierają 8h kodowania
+7. **Przykładowy harmonogram** — 6:00-9:00 minute-by-minute schedule
+8. **Podsumowanie** — Małe zmiany, duże efekty. Zdrowy mózg = lepszy kod.
+
+**CTA:** Zamów CogniCit — link do produkt.html
+**Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, nauka.html, porownanie.html
+**Status:** Outline ready, needs writing

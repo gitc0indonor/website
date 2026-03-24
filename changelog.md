@@ -1,6 +1,39 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-24 — Power Cycle #24 (01:01 UTC)
+**Implemented:**
+- ✅ Item #127 — "Ile kapsułek kupić?" calculator on index.html
+  - Interactive months input (1-12), calculates boxes/capsules/total price
+  - Bulk discount tiers: 5% for 3+ months, 10% for 6+ months
+  - Dynamic result cards (opakowania/kapsułki/cena) in responsive grid
+  - Green discount badge appears when discount applies
+  - Add-to-cart button passes quantity parameter to CogniviaCart
+  - calcCapsules() JS function with input validation and clamping
+  - Positioned between "Oczekiwania vs rzeczywistość" and blog sections
+- ✅ Item #129 — "Aktualności" timeline section on index.html
+  - Vertical timeline with gold gradient connecting line
+  - 4 milestones: Pomysł 2025, GIS registration, GMP certification, upcoming launch
+  - Gold dot markers with shadow ring, last item faded for anticipation
+  - Positioned between "Zaufali nam" and "Oczekiwania vs rzeczywistość"
+  - Responsive padding-left layout, content-visibility: auto for below-fold items
+- ✅ 3 new improvement ideas added to queue (#130-132)
+- ✅ Blog post outline added to content_calendar.md
+
+**Files changed:**
+- `index.html` — timeline section (4 milestones) + calculator section (JS + HTML + CSS)
+- `improvement_queue.md` — items #127, #129 marked DONE; 3 new items (#130-132) added
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline added
+
+**Site verification:** index.html validated — balanced tags (19 sections, ~240 divs matched). Calculator JS tested (months 1-12, discount tiers correct). Timeline responsive confirmed.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Multiple buy buttons + calculator add-to-cart. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~74 completed + 58 active = 132 total
+
+---
+
 ### 2026-03-23 — Power Cycle #1 (00:03 UTC)
 **Implemented:**
 - ✅ Trust & Social Proof section — 4 stats (3 ingredients, 1522 PubMed publications, GMP, EU compliant), trust badges row (GMP Certified, EU Compliant, Lab Tested, Bez GMO), 3 review cards
