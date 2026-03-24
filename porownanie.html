@@ -556,6 +556,95 @@
   }
 </script>
 
+<!-- PORÓWNANIE CEN -->
+<section>
+  <h2>Porównanie cen nootropików</h2>
+  <p style="text-align: center; color: #888; font-size: 14px; margin-bottom: 24px;">Ile tak naprawdę płacisz za miesięczną suplementację? Porównanie cena na porcję dzienną</p>
+  <div class="comparison-table-wrap fade-in">
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Produkt</th>
+          <th>Cena / opak.</th>
+          <th>Porcji</th>
+          <th>Cena / dzień</th>
+          <th>Składników</th>
+          <th>Transparentność</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-label cognicit-cell"><strong>CogniCit</strong></td>
+          <td class="cognicit-cell">79 zł</td>
+          <td class="cognicit-cell">30</td>
+          <td class="cognicit-cell"><strong>2,63 zł</strong></td>
+          <td class="cognicit-cell">3 (pełne dawki)</td>
+          <td class="cognicit-cell"><span class="check">✓ Pełna</span></td>
+        </tr>
+        <tr>
+          <td class="row-label">Brain Actives</td>
+          <td>149 zł</td>
+          <td>30</td>
+          <td>4,97 zł</td>
+          <td>9 (proprietary blend)</td>
+          <td><span class="partial">~ Częściowa</span></td>
+        </tr>
+        <tr>
+          <td class="row-label">Noocube</td>
+          <td>219 zł</td>
+          <td>60 (2/dzień)</td>
+          <td>7,30 zł</td>
+          <td>7 (proprietary blend)</td>
+          <td><span class="cross">✗ Niska</span></td>
+        </tr>
+        <tr>
+          <td class="row-label">Mind Lab Pro</td>
+          <td>249 zł</td>
+          <td>30</td>
+          <td>8,30 zł</td>
+          <td>11 (NutriGenesis®)</td>
+          <td><span class="check">✓ Pełna</span></td>
+        </tr>
+        <tr>
+          <td class="row-label">Neomax (Neofuraginum)</td>
+          <td>35 zł</td>
+          <td>30</td>
+          <td>1,17 zł</td>
+          <td>1 (kofeina)</td>
+          <td><span class="check">✓ Pełna</span></td>
+        </tr>
+        <tr>
+          <td class="row-label">Cholina (bitartrate) solo</td>
+          <td>40–60 zł</td>
+          <td>60–90</td>
+          <td>0,50–0,90 zł</td>
+          <td>1</td>
+          <td><span class="check">✓ Pełna</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="max-width: 700px; margin: 24px auto 0; background: rgba(45,102,66,0.06); border-radius: 12px; padding: 24px; text-align: center;">
+    <div style="font-family: 'EB Garamond', serif; font-size: 20px; color: var(--cognivia-green); margin-bottom: 8px;">💰 CogniCit — najlepszy stosunek wartości do ceny</div>
+    <p style="font-size: 14px; color: var(--cognivia-text); line-height: 1.6; margin: 0;">Za <strong>2,63 zł dziennie</strong> dostajesz 3 synergiczne składniki w pełnych dawkach, z certyfikatem GMP i pełną przejrzystością składu. Większość droższych suplementów oferuje proprietary blendy z niewiadomymi dawkami.</p>
+  </div>
+</section>
+
+<!-- SORTOWANIE -->
+<section>
+  <h2>Sortuj wg priorytetu</h2>
+  <p style="text-align: center; color: #888; font-size: 14px; margin-bottom: 24px;">Kliknij kryterium, aby zobaczyć, jak CogniCit wypada na tle konkurencji</p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 24px;">
+    <button onclick="sortHighlight('price')" style="padding: 8px 20px; border: 2px solid var(--cognivia-green); background: white; color: var(--cognivia-green); border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.3s;">💰 Najniższa cena/dzień</button>
+    <button onclick="sortHighlight('value')" style="padding: 8px 20px; border: 2px solid var(--cognivia-gold); background: white; color: var(--cognivia-charcoal); border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.3s;">📊 Najlepsza wartość</button>
+    <button onclick="sortHighlight('transparency')" style="padding: 8px 20px; border: 2px solid var(--cognivia-gold); background: white; color: var(--cognivia-charcoal); border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.3s;">🔍 Pełna przejrzystość</button>
+  </div>
+  <div id="sortResult" style="max-width: 600px; margin: 0 auto; text-align: center; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: none;">
+    <p id="sortText" style="font-size: 15px; color: var(--cognivia-text); line-height: 1.6;"></p>
+    <a href="/produkt.html" class="cta-btn" style="display: inline-block; margin-top: 16px; padding: 12px 28px; background: var(--cognivia-green); color: white; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 14px;">Zamów CogniCit → 79 zł</a>
+  </div>
+</section>
+
 <!-- Gwarancja satysfakcji -->
 <section style="padding: 48px 5%; background: white; text-align: center;">
   <div style="max-width: 700px; margin: 0 auto; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; justify-content: center;">
@@ -627,6 +716,21 @@
   }, { rootMargin: '0px 0px -50px 0px' });
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Price sort highlight
+  function sortHighlight(type) {
+    var el = document.getElementById('sortResult');
+    var txt = document.getElementById('sortText');
+    el.style.display = 'block';
+    if (type === 'price') {
+      txt.innerHTML = '<strong>Cena za dzień:</strong> Cholina solo (0,50 zł) → CogniCit (2,63 zł) → Brain Actives (4,97 zł) → Noocube (7,30 zł) → Mind Lab Pro (8,30 zł).<br><br><strong>Wybór:</strong> Cholina solo jest najtańsza, ale oferuje tylko 1 składnik. CogniCit za 2,63 zł/dzień daje 3 synergiczne składniki z certyfikatem GMP — <strong>11× taniej niż Mind Lab Pro</strong> przy porównywalnej jakości.';
+    } else if (type === 'value') {
+      txt.innerHTML = '<strong>Wartość za złotówkę:</strong> CogniCit oferuje 3 składniki w pełnych dawkach za 2,63 zł/dzień. Mind Lab Pro za 8,30 zł/dzień ma więcej składników, ale większość w niskich dawkach. Brain Actives za 4,97 zł/dzień używa proprietary blend.<br><br><strong>CogniCit wygrywa</strong> na stosunku: pełna dawka × przejrzystość × cena.';
+    } else {
+      txt.innerHTML = '<strong>Pełna przejrzystość składu:</strong> Tylko CogniCit, Mind Lab Pro i cholina solo podają dokładne dawki każdego składnika. Brain Actives i Noocube używają proprietary blendów — nie wiesz, ile dostajesz każdego składnika.<br><br><strong>CogniCit = pełna przejrzystość + najniższa cena wśród produktów wieloskładnikowych.</strong>';
+    }
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
 </script>
 
 </body>
