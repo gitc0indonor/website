@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-24 (Power Cycle #29)
+## Last Updated: 2026-03-24 (Power Cycle #30)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -195,4 +195,8 @@
 147. ~~[DONE] Add "Czy suplementy naprawdę działają?" FAQ entry to faq-produkt.html~~ ✅ — Power Cycle #29. New accordion entry in "Powiązane pytania" section. Addresses skeptic visitors: "suplement nie jest lekiem, ale składniki w odpowiednich dawkach poparte badaniami mogą wspierać". Cites evidence-based dosing (cytykolina 300 mg, ALA 250 mg), CoA testing, links to nauka.html for full PubMed review.
 148. [NEW] Add real YouTube video ID to nauka.html embed — Replace placeholder `dQw4w9WgXcQ` with actual educational video about cyclodextrin mechanism or supplement science. Search YouTube for "cyclodextrin mechanism" or "beta cyclodextrin bioavailability" educational content.
 149. [NEW] Create "Suplementy dla programistów" blog post — SEO for "suplementy programista", "nootropik developer". Target Polish tech community on Wykop/LinkedIn. Include CogniCit morning routine positioning, caffeine alternative angle.
-150. [NEW] Add "Co zyskujesz?" benefit calculator to index.html — Interactive: user selects goals (focus, memory, energy, sleep), calculator shows which CogniCit ingredients address each goal + how. Gamified lead capture.
+150. [DONE] ~~Add "Co zyskujesz?" benefit calculator to index.html~~ ✅ — Power Cycle #30. Interactive goal selector: 4 toggle buttons (Koncentracja 🎯, Pamięć 🧠, Energia ⚡, Ochrona mózgu 🛡️). Each goal maps to specific CogniCit ingredients with mechanism explanations + PubMed citations. Multi-select: users can combine goals to see full ingredient overlap. Dynamic result cards with gold accent borders. CTA button linking to produkt.html. Responsive grid layout. JS: selectedGoals object + renderGoals() with dynamic DOM creation. Positioned before blog section.
+151. [DONE] ~~Add "Ile kofeiny pijesz?" interactive calculator on index.html~~ ✅ — Power Cycle #30. 4 input fields (espresso 80mg, coffee 95mg, tea 50mg, energy drink 120mg). Real-time calculation with visual progress bar. 3-tier result: green (≤200mg safe), orange (201-400mg moderate with warning), red (>400mg over EFSA limit). Each tier links to CogniCit as caffeine-free alternative. EFSA citation footer. Responsive card layout. JS: calcCaffeine() with bar fill animation. Positioned after "Poranne nawyki" section.
+152. [NEW] Add share buttons to blog/nootropiki-a-sen.html and blog/suplementy-dla-programistow.html — these 2 blog posts are missing social share buttons (Facebook, Twitter/X, LinkedIn)
+153. [NEW] Create "Ranking nootropików 2026" SEO landing page (/ranking-nootropikow) — Target high-volume keyword "najlepszy nootropik Polska" / "ranking suplementów koncentracja". Comparison table positioning CogniCit vs competitors. Drives organic traffic.
+154. [NEW] Add "Często kupowane razem" bundle suggestion on produkt.html — suggest buying 2-3 boxes with tiered discount (5% for 2, 10% for 3), increases AOV before launch.

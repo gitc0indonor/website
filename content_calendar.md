@@ -836,3 +836,27 @@
 **Internal links:** nauka.html, produkt.html, cytykolina.html, kwas-alfa-liponowy.html, certyfikaty.html, porownanie.html
 **SEO angle:** "czy suplementy działają" — high-volume skeptic query. Positions Cognivia as the transparent, evidence-based brand. Converts skeptics by meeting them where they are.
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #30)
+**Title:** Ile kofeiny pijesz? Sprawdź, czy nie przekraczasz bezpiecznej dawki
+**Target:** Polish audience, SEO for "ile kofeiny dziennie", "przedawkowanie kofeiny", "kofeina bezpieczna dawka"
+**Word count:** 1200-1600
+**Keywords:** ile kofeiny w kawie, dzienna dawka kofeiny, przedawkowanie kofeiny, kofeina bezpieczna dawka, alternatywa dla kawy
+
+**Outline:**
+1. **Wstęp** — Polacy piją średnio 3-4 filiżanki kawy dziennie. Ale ile to mg kofeiny? Większość nie wie.
+2. **Kofeina w popularnych napojach** — Tabela: espresso (80 mg), kawa filtrowana (95 mg), czarna herbata (50 mg), energetyk (80-160 mg), cola (35 mg), yerba mate (85 mg)
+3. **Bezpieczna dawka wg EFSA** — 400 mg/dobę dla dorosłych, 200 mg pojedyncza porcja, 3 mg/kg masy ciała dla młodzieży
+4. **Kalkulator kofeiny** — Interaktywna sekcja na stronie (embedded iframe lub link do cognivia.eu/kofeina)
+5. **Objawy przedawkowania** — Drżenie, tachykardia, lęk, bezsenność, problemy żołądkowe — co się dzieje powyżej 400 mg
+6. **Długoterminowe skutki nadmiaru kofeiny** — Tolerancja, uzależnienie, wpływ na sen, kortyzol, ciśnienie krwi
+7. **Czy kofeina poprawia koncentrację?** — Mechanizm blokowania adenozyny — krótkotrwały efekt, nie buduje koncentracji
+8. **Alternatywy** — Cytykolina (acetylocholina), L-teanina (relaksacja bez sedacji), ALA (ochrona mitochondriów) — naukowe podejście
+9. **CogniCit — zero kofeiny, trwała koncentracja** — 3 składniki, synergia, brak zjazdu, brak uzależnienia
+10. **Podsumowanie** — Kawa jest OK, ale nie powinna być jedynym narzędziem na koncentrację
+
+**CTA:** Poznaj CogniCit — koncentracja bez kofeiny → produkt.html
+**Internal links:** produkt.html, blog/cytykolina.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, nauka.html, porownanie.html
+**SEO angle:** "ile kofeiny dziennie" — 2K+ monthly searches in Poland. "Przedawkowanie kofeiny" — rising trend. Positions CogniCit as the science-backed, caffeine-free alternative.
+**Target platforms:** Google (SEO), Wykop, grupy Facebook o zdrowiu
+**Status:** Outline ready, needs writing

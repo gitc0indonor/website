@@ -1,6 +1,41 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-24 — Power Cycle #30 (05:40 UTC)
+**Implemented:**
+- ✅ Item #139 — "Ile kofeiny pijesz?" interactive caffeine calculator on index.html
+  - 4 input fields: espresso (80mg), coffee (95mg), tea (50mg), energy drink (120mg)
+  - Real-time calculation with animated progress bar (EFSA 400mg threshold)
+  - 3-tier result: green (≤200mg safe), orange (201-400mg moderate + warning), red (>400mg over EFSA)
+  - Each tier includes CogniCit link as caffeine-free alternative
+  - EFSA citation footer, responsive card layout
+  - JS: calcCaffeine() function with bar fill animation and color transitions
+  - Positioned after "Poranne nawyki" section, before "Jak stosować"
+- ✅ Item #63 — "Co zyskujesz?" benefit calculator on index.html
+  - 4 toggle goal buttons: Koncentracja 🎯, Pamięć 🧠, Energia ⚡, Ochrona mózgu 🛡️
+  - Multi-select: users combine goals to see full ingredient coverage
+  - Each goal maps to specific CogniCit ingredients with mechanism + PubMed citations
+  - Dynamic result cards with gold accent borders, animated show/hide
+  - CTA button to produkt.html
+  - JS: selectedGoals object, toggleGoal(), renderGoals() with DOM creation
+  - Positioned before blog section
+- ✅ 3 new improvement ideas added to queue (#152-154)
+- ✅ Blog post outline added to content_calendar.md
+
+**Files changed:**
+- `index.html` — caffeine calculator section + benefit calculator section + inline JS
+- `improvement_queue.md` — items #63, #139 marked DONE; 3 new items (#152-154)
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline (kofeina article)
+
+**Site verification:** index.html validated — 23 sections open/closed (balanced). Both calculator JS functions present (calcCaffeine, toggleGoal, renderGoals). Cart system unaffected (3 CogniviaCart.addItem calls verified). No broken tags.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~96 completed + 58 active = 154 total
+
+---
+
 ### 2026-03-24 — Power Cycle #29 (05:10 UTC)
 **Implemented:**
 - ✅ Item #146 — Lazy-loading YouTube embed on nauka.html

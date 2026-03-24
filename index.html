@@ -1623,6 +1623,80 @@
     </div>
   </section>
 
+  <!-- CAFFEINE CALCULATOR -->
+  <section style="padding: 80px 24px; background: linear-gradient(180deg, #faf8f4, #f5f0e8);" id="kofeina">
+    <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+      <div class="section-overline fade-in">☕ Ciekawostka</div>
+      <div class="section-title fade-in" style="margin-bottom: 8px;">Ile kofeiny pijesz dziennie?</div>
+      <p style="font-size: 16px; color: var(--soft); line-height: 1.7; margin-bottom: 40px;" class="fade-in">Sprawdź, czy nie przekraczasz bezpiecznej dawki. EFSA zaleca max <strong>400 mg kofeiny dziennie</strong> dla dorosłych.</p>
+
+      <div style="background: white; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); text-align: left;" class="fade-in">
+        <div style="display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; margin-bottom: 16px;" class="caf-row">
+          <label style="font-size: 15px; color: var(--charcoal);">☕ Espresso (1 porcja = ~80 mg)</label>
+          <input type="number" id="caf-espresso" min="0" max="10" value="0" style="width: 64px; padding: 8px 12px; border: 2px solid #e8e0d0; border-radius: 8px; font-size: 16px; text-align: center; font-family: 'Inter', sans-serif;" onchange="calcCaffeine()">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; margin-bottom: 16px;" class="caf-row">
+          <label style="font-size: 15px; color: var(--charcoal);">☕ Czarna kawa filtrowana (1 kubek = ~95 mg)</label>
+          <input type="number" id="caf-coffee" min="0" max="10" value="0" style="width: 64px; padding: 8px 12px; border: 2px solid #e8e0d0; border-radius: 8px; font-size: 16px; text-align: center; font-family: 'Inter', sans-serif;" onchange="calcCaffeine()">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; margin-bottom: 16px;" class="caf-row">
+          <label style="font-size: 15px; color: var(--charcoal);">🍵 Czarna herbata (1 kubek = ~50 mg)</label>
+          <input type="number" id="caf-tea" min="0" max="10" value="0" style="width: 64px; padding: 8px 12px; border: 2px solid #e8e0d0; border-radius: 8px; font-size: 16px; text-align: center; font-family: 'Inter', sans-serif;" onchange="calcCaffeine()">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; margin-bottom: 24px;" class="caf-row">
+          <label style="font-size: 15px; color: var(--charcoal);">⚡ Energetyk (1 puszka = ~120 mg)</label>
+          <input type="number" id="caf-energy" min="0" max="10" value="0" style="width: 64px; padding: 8px 12px; border: 2px solid #e8e0d0; border-radius: 8px; font-size: 16px; text-align: center; font-family: 'Inter', sans-serif;" onchange="calcCaffeine()">
+        </div>
+
+        <div id="caf-result" style="display: none; padding: 24px; border-radius: 12px; text-align: center; transition: all 0.3s ease;">
+          <div style="font-size: 48px; font-weight: 700; font-family: 'EB Garamond', serif;" id="caf-total">0</div>
+          <div style="font-size: 14px; color: var(--soft); margin-bottom: 12px;">mg kofeiny dziennie</div>
+          <div id="caf-bar" style="height: 8px; background: #e8e0d0; border-radius: 4px; overflow: hidden; margin-bottom: 12px;">
+            <div id="caf-bar-fill" style="height: 100%; border-radius: 4px; transition: width 0.5s ease, background 0.5s ease; width: 0%;"></div>
+          </div>
+          <div id="caf-message" style="font-size: 15px; line-height: 1.6;"></div>
+        </div>
+      </div>
+
+      <p style="font-size: 13px; color: var(--soft); margin-top: 20px;" class="fade-in">Źródło: EFSA Journal 2015;13(11):4102. CogniCit nie zawiera kofeiny.</p>
+    </div>
+  </section>
+
+  <script>
+  function calcCaffeine() {
+    var esp = parseInt(document.getElementById('caf-espresso').value) || 0;
+    var cof = parseInt(document.getElementById('caf-coffee').value) || 0;
+    var tea = parseInt(document.getElementById('caf-tea').value) || 0;
+    var eng = parseInt(document.getElementById('caf-energy').value) || 0;
+    var total = esp * 80 + cof * 95 + tea * 50 + eng * 120;
+    var box = document.getElementById('caf-result');
+    var bar = document.getElementById('caf-bar-fill');
+    var msg = document.getElementById('caf-message');
+    var num = document.getElementById('caf-total');
+
+    if (total === 0) { box.style.display = 'none'; return; }
+    box.style.display = 'block';
+    num.textContent = total;
+
+    var pct = Math.min(total / 400 * 100, 100);
+    bar.style.width = pct + '%';
+
+    if (total <= 200) {
+      box.style.background = 'rgba(46,125,50,0.06)';
+      bar.style.background = '#2e7d32';
+      msg.innerHTML = '✅ <strong>Bezpieczny poziom.</strong> Twoje spożycie kofeiny jest w normie.';
+    } else if (total <= 400) {
+      box.style.background = 'rgba(245,166,35,0.06)';
+      bar.style.background = '#f5a623';
+      msg.innerHTML = '⚠️ <strong>Umiarkowany poziom.</strong> Jesteś blisko zalecanej dawki. Rozważ alternatywę dla ostatniej kawy — <a href="produkt.html" style="color: var(--gold);">CogniCit nie zawiera kofeiny</a>.';
+    } else {
+      box.style.background = 'rgba(229,57,53,0.06)';
+      bar.style.background = '#e53935';
+      msg.innerHTML = '🚨 <strong>Przekroczona dawka!</strong> ' + total + ' mg to powyżej limitu EFSA (400 mg). Objawy: drżenie, bezsenność, lęk. <a href="produkt.html" style="color: var(--gold);">CogniCit — koncentracja bez kofeiny →</a>';
+    }
+  }
+  </script>
+
   <!-- HOW TO USE -->
   <section class="how-to-use" id="stosowanie">
     <div style="text-align:center;">
@@ -2071,6 +2145,100 @@
     } else {
       dEl.style.display = 'none';
     }
+  }
+  </script>
+
+  <!-- BENEFIT CALCULATOR -->
+  <section style="padding: 80px 24px; background: linear-gradient(180deg, #f5f0e8, #faf8f4);" id="korzysci">
+    <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+      <div class="section-overline fade-in">🎯 Twój cel</div>
+      <div class="section-title fade-in" style="margin-bottom: 8px;">Co zyskujesz z CogniCit?</div>
+      <p style="font-size: 16px; color: var(--soft); line-height: 1.7; margin-bottom: 40px;" class="fade-in">Wybierz swoje cele — pokażemy, jak każdy składnik CogniCit na nie pracuje.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 32px;" class="fade-in">
+        <button onclick="toggleGoal(this,'focus')" data-goal="focus" style="padding: 20px 12px; border: 2px solid #e8e0d0; border-radius: 12px; background: white; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.3s ease;">
+          <div style="font-size: 28px; margin-bottom: 8px;">🎯</div>
+          <div style="font-size: 14px; font-weight: 600; color: var(--charcoal);">Koncentracja</div>
+        </button>
+        <button onclick="toggleGoal(this,'memory')" data-goal="memory" style="padding: 20px 12px; border: 2px solid #e8e0d0; border-radius: 12px; background: white; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.3s ease;">
+          <div style="font-size: 28px; margin-bottom: 8px;">🧠</div>
+          <div style="font-size: 14px; font-weight: 600; color: var(--charcoal);">Pamięć</div>
+        </button>
+        <button onclick="toggleGoal(this,'energy')" data-goal="energy" style="padding: 20px 12px; border: 2px solid #e8e0d0; border-radius: 12px; background: white; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.3s ease;">
+          <div style="font-size: 28px; margin-bottom: 8px;">⚡</div>
+          <div style="font-size: 14px; font-weight: 600; color: var(--charcoal);">Energia</div>
+        </button>
+        <button onclick="toggleGoal(this,'protect')" data-goal="protect" style="padding: 20px 12px; border: 2px solid #e8e0d0; border-radius: 12px; background: white; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.3s ease;">
+          <div style="font-size: 28px; margin-bottom: 8px;">🛡️</div>
+          <div style="font-size: 14px; font-weight: 600; color: var(--charcoal);">Ochrona mózgu</div>
+        </button>
+      </div>
+
+      <div id="goal-results" style="display: none; text-align: left;">
+        <div style="background: white; border-radius: 16px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);" class="fade-in">
+          <h4 style="font-family: 'EB Garamond', serif; font-size: 22px; color: var(--charcoal); margin-bottom: 20px; text-align: center;">Jak CogniCit wspiera Twoje cele</h4>
+          <div id="goal-list" style="display: flex; flex-direction: column; gap: 16px;"></div>
+          <div style="margin-top: 24px; text-align: center;">
+            <a href="produkt.html" class="cta-btn" style="display: inline-block; padding: 14px 32px; background: var(--green); color: white; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px;">Sprawdź CogniCit — 79 zł →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  var selectedGoals = {};
+  var goalData = {
+    focus: { label: 'Koncentracja', icon: '🎯', items: [
+      { ing: 'Cytykolina 300 mg', why: 'Prekursor acetylocholiny — neuroprzekaźnika odpowiedzialnego za skupienie uwagi i szybkość reakcji.', src: '233 publikacje w PubMed' },
+      { ing: 'Beta-cyklodekstryna 250 mg', why: 'Chroni cytykolinę przed degradacją w żołądku — więcej składnika dociera do mózgu.', src: 'Potwierdzona poprawa biodostępności' }
+    ]},
+    memory: { label: 'Pamięć', icon: '🧠', items: [
+      { ing: 'Cytykolina 300 mg', why: 'Wspiera syntezę fosfatydylocholiny — głównego budulca błon neuronalnych. Lepsze błony = lepsza komunikacja między neuronami.', src: 'Badania kliniczne: poprawa pamięci roboczej' },
+      { ing: 'Kwas alfa-liponowy 250 mg', why: 'Silny antyoksydant chroniący neurony przed stresem oksydacyjnym — głównym wrogiem pamięci długotrwałej.', src: '113 publikacji w PubMed' }
+    ]},
+    energy: { label: 'Energia komórkowa', icon: '⚡', items: [
+      { ing: 'Kwas alfa-liponowy 250 mg', why: 'Wspomaga metabolizm mitochondrialny — więcej ATP = więcej energii dla mózgu. Podwójna rozpuszczalność (woda + tłuszcze).', src: 'Rola w cyklu Krebsa potwierdzona' },
+      { ing: 'Beta-cyklodekstryna 250 mg', why: 'Zwiększa biodostępność ALA — więcej składnika aktywnego dociera do mitochondriów.', src: 'Kompleksy inkluzji — farmaceutyczna technologia' }
+    ]},
+    protect: { label: 'Ochrona neuronów', icon: '🛡️', items: [
+      { ing: 'Kwas alfa-liponowy 250 mg', why: 'Jedyny antyoksydant rozpuszczalny w wodzie i tłuszczach — chroni komórki mózgowe z obu stron. Regeneruje witaminy C i E.', src: 'Neuroprotekcja — kluczowy mechanizm ALA' },
+      { ing: 'Cytykolina 300 mg', why: 'Wspiera naprawę błon neuronalnych uszkodzonych przez stres oksydacyjny. Działanie neuroprotekcyjne.', src: 'Badania nad neurodegeneracją' },
+      { ing: 'Beta-cyklodekstryna 250 mg', why: 'Ochrania oba składniki aktywne przed degradacją — synergia ochronna.', src: 'Technologia nośnikowa' }
+    ]}
+  };
+
+  function toggleGoal(btn, key) {
+    if (selectedGoals[key]) {
+      delete selectedGoals[key];
+      btn.style.borderColor = '#e8e0d0';
+      btn.style.background = 'white';
+    } else {
+      selectedGoals[key] = true;
+      btn.style.borderColor = 'var(--gold)';
+      btn.style.background = 'rgba(201,169,110,0.08)';
+    }
+    renderGoals();
+  }
+
+  function renderGoals() {
+    var box = document.getElementById('goal-results');
+    var list = document.getElementById('goal-list');
+    var keys = Object.keys(selectedGoals);
+    if (keys.length === 0) { box.style.display = 'none'; return; }
+    box.style.display = 'block';
+    list.innerHTML = '';
+    keys.forEach(function(k) {
+      var g = goalData[k];
+      g.items.forEach(function(item) {
+        var div = document.createElement('div');
+        div.style.cssText = 'padding: 16px; background: rgba(201,169,110,0.05); border-radius: 10px; border-left: 3px solid var(--gold);';
+        div.innerHTML = '<div style="font-weight: 600; color: var(--charcoal); margin-bottom: 4px;">' + g.icon + ' ' + item.ing + ' → ' + g.label + '</div>' +
+          '<div style="font-size: 14px; color: var(--soft); line-height: 1.5;">' + item.why + '</div>' +
+          '<div style="font-size: 12px; color: var(--gold); margin-top: 4px;">📖 ' + item.src + '</div>';
+        list.appendChild(div);
+      });
+    });
   }
   </script>
 
