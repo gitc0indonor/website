@@ -1,6 +1,129 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-24 — Power Cycle #39 (20:15 UTC)
+**Implemented:**
+- ✅ Item #177 — Created blog/jak-budowac-rutyne-suplementacji.html (21KB)
+  - Practical habit-building guide: habit stacking (4-step flow with James Clear technique)
+  - 5 morning routine schemes (światło+kawa, kawowy, jogowy, biurkowy, śniadaniowy)
+  - Organizer alternatives: pill organizer, phone alarm, blister marking, accountability partner
+  - 7/14/30-day tracking timeline with expected milestones
+  - Common mistakes section (dose changes, early abandonment, alcohol mixing)
+  - CogniCit positioning: 1 capsule/day = simplest regimen
+  - Article + BreadcrumbList JSON-LD schemas, OG/Twitter Card meta
+  - Email capture popup (60% scroll, 15% discount, Formspree integration)
+  - Trust bar, cross-links (4 pages), share buttons (FB/Twitter/LinkedIn)
+  - Added to sitemap.xml, index.html blog section (8th card), blog/index.html
+- ✅ Item #179 — Created /matura.html (24KB) — seasonal landing page
+  - Hero: season tag "🎓 Sezon maturalny 2026", trust row (GMP/GIS/no caffeine/30-day)
+  - 3 problem cards (przeciążenie/stres/caffeine trap) with red accent
+  - Safety box for parents: GMP, GIS, no stimulants, 18+, PubMed citations
+  - 3 ingredient mechanism cards (cytykolina/ALA/β-CD)
+  - Full 9-row comparison table: CogniCit vs energy drinks vs caffeine vs multi-nootropic
+  - 4-step protocol (CogniCit morning + sleep + movement + screen breaks)
+  - 3 audience cards (rodzice/maturzyści/uczniowie szkół średnich)
+  - CTA: 79 zł + free shipping 120 zł + 30-day guarantee
+  - Email capture popup (50% scroll, "Matura15" discount code)
+  - Article + BreadcrumbList JSON-LD schemas, canonical/hreflang/OG meta
+  - Added to sitemap.xml (priority 0.8), index.html footer Informacje section
+- ✅ Blog outline added to content_calendar.md: "Jak uczyć się efektywnie? 5 technik zapamiętywania"
+- ✅ 3 new improvement ideas added to queue (#180-182)
+
+**Files changed:**
+- `blog/jak-budowac-rutyne-suplementacji.html` — NEW (21.3KB)
+- `matura.html` — NEW (24.3KB)
+- `sitemap.xml` — 2 new URLs added (blog post + matura page)
+- `index.html` — blog card added to blog section; footer link to matura page added
+- `blog/index.html` — new blog card in grid
+- `improvement_queue.md` — items #177, #179 marked DONE; 3 new items (#180-182)
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline (study techniques)
+
+**Site verification:** Both new files validated — DOCTYPE present, balanced h2/h3 tags, closing </html>. Blog post: 7 h2 sections balanced. Matura page: 8 sections, comparison table validated. Sitemap valid XML with new URLs. Index blog section responsive (8 cards).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~117 completed + 68 active = 185 total
+
+---
+
+### 2026-03-24 — Power Cycle #38 (19:44 UTC)
+**Implemented:**
+- ✅ Item #172 — "Ile kosztuje suplementacja mózgu?" ROI calculator on index.html
+  - 3 interactive inputs: coffee cups/day (5 zł each), energy drinks/week (8 zł each), other supplements/month (zł)
+  - Real-time monthly cost calculation with side-by-side comparison vs CogniCit (79 zł/month)
+  - Dynamic messaging: savings amount + annual projection, investment framing, or equivalence
+  - Green gradient result card with CTA to produkt.html
+  - Responsive grid (auto-fit minmax 200px), positioned after caffeine calculator
+  - calcROI() JS function with input validation
+- ✅ Item #175 — Created blog/suplementy-dla-seniorow-50-plus.html (18KB)
+  - Full blog post: brain changes after 50 (acetylcholine decline, oxidative stress stats)
+  - Cytykolina section: neuroprotection, acetylcholine synthesis, membrane repair, ATP support. Meta-analysis citation (Clinical Interventions in Aging, 2014)
+  - ALA section: dual antioxidant mechanism, mitochondrial support, metal chelation. Hager et al. 2007 study (600 mg/day, 12 months)
+  - β-CD section: role in absorption enhancement for older adults (40-200% bioavailability improvement)
+  - CogniCit positioning: 300 mg cytykolina + 250 mg ALA + 250 mg β-CD, 1 capsule/day, GMP, no caffeine
+  - Contraindications: BP meds, anticoagulants, pregnancy, pre-surgery (2-week pause)
+  - 5 lifestyle tips: exercise, sleep, mental stimulation, diet, social contacts
+  - Article + BreadcrumbList JSON-LD schemas, OG/Twitter Card meta
+  - Email capture popup (60% scroll, 15% discount, localStorage persistence)
+  - Trust bar, cross-links section (6 related pages), CTA box
+  - Added to sitemap.xml, index.html blog section (7th card), blog/index.html
+- ✅ Blog outline added to content_calendar.md: "Nootropiki a praca umysłowa — jak suplementacja wpływa na wydajność?"
+- ✅ 3 new improvement ideas added to queue (#177-179)
+
+**Files changed:**
+- `index.html` — ROI calculator section (CSS + HTML + JS calcROI function) between caffeine calculator and "Jak stosować" section; blog card for senior post added to blog section
+- `blog/suplementy-dla-seniorow-50-plus.html` — NEW (18.2KB)
+- `blog/index.html` — new blog card in grid
+- `sitemap.xml` — new blog URL added
+- `improvement_queue.md` — items #172, #175 marked DONE; 3 new items added (#177-179)
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline
+
+**Site verification:** All 3 modified HTML files validated (DOCTYPE, balanced tags). ROI calculator JS confirmed (calcROI function, 3 onchange handlers). Blog post HTML validated (18KB, proper schema/meta). Sitemap valid XML with new URL. Index blog section responsive (7 cards).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). CEO must create formspree.io account and swap form ID. Payment gateway (PayU/Przelewy24) needs merchant account.
+
+**Queue:** ~115 completed + 68 active = 183 total
+
+---
+
+### 2026-03-24 — Power Cycle #37 (19:10 UTC)
+**Implemented:**
+- ✅ Enhanced blog/nootropiki-dla-studentow.html with conversion elements
+  - Added share buttons: Facebook, Twitter/X, LinkedIn (colored rounded buttons, hover effects)
+  - Added cross-links section: 3 related articles (cytykolina, suplementy-a-kofeina, poranne-nawyki-programisty)
+  - Added trust bar: "CogniCit — 3 synergistyczne składniki · GMP · EU Compliant" with CTA
+  - Added email capture popup: 60% scroll trigger, 15% discount CTA, localStorage persistence, Formspree integration
+  - Blog post grown from 242 → 323 lines (+81 lines of conversion infrastructure)
+  - Added to sitemap.xml (was missing)
+  - Added to index.html blog section (was missing — now 4th card)
+- ✅ Created email-templates/order-notification-business.html (8.3KB)
+  - Business notification email template for cognivia.business@outlook.com
+  - Customer details card (name, email, phone, address)
+  - Order details table (product, quantity, price, shipping, total)
+  - Payment method + order date cards
+  - "Action required" banner: 4-step fulfillment checklist
+  - Customer notes field (conditional)
+  - Clean HTML email template compatible with all major email clients
+- ✅ Blog post outline added to content_calendar.md: "Suplementy dla seniorów 50+"
+- ✅ 3 new improvement ideas added to queue (#174-176)
+
+**Files changed:**
+- `blog/nootropiki-dla-studentow.html` — share buttons, cross-links, trust bar, email popup
+- `email-templates/order-notification-business.html` — NEW (8.3KB)
+- `sitemap.xml` — nootropiki-dla-studentow.html URL added
+- `index.html` — student blog card added to blog section
+- `improvement_queue.md` — item #161 marked DONE; 3 new items added (#174-176)
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline (senior supplements)
+
+**Site verification:** All files validated — DOCTYPE present, closing </html>. Blog email popup JS confirmed (60% scroll trigger, localStorage key unique per page). Share buttons functional (correct URL encoding). Sitemap valid XML with new URL. Index blog section responsive (4 cards + "see all" CTA).
+
+**Cart status:** Formspree integration wired in cognivia-cart.js (placeholder ID 'xpwzgryv'). CEO must: create formspree.io account → get real form ID → swap in cognivia-cart.js. ~1 min dev time.
+
+**Queue:** ~113 completed + 68 active = 181 total
+
 ### 2026-03-24 — Power Cycle #36 (18:40 UTC)
 **Implemented:**
 - ✅ Item #203 — Wired Formspree order notification in cognivia-cart.js

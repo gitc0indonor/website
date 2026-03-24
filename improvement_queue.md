@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-24 (Power Cycle #36)
+## Last Updated: 2026-03-24 (Power Cycle #38)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -215,7 +215,7 @@
 159. ~~[DONE] Enhanced blog/nootropiki-a-sen.html — Added email capture popup (60% scroll trigger, 15% discount CTA), CSS + JS for slide-up popup~~ ✅ — Power Cycle #33
 
 160. ~~[DONE] Add "Porównanie cen nootropików" section to porownanie.html~~ ✅ — Power Cycle #34. Price-per-serving table: 6 supplements compared (CogniCit 2.63 zł/dzień, Brain Actives 4.97 zł, Noocube 7.30 zł, Mind Lab Pro 8.30 zł, Neomax 1.17 zł, Cholina solo 0.50-0.90 zł). Columns: price/package, servings, price/day, ingredients count, transparency. CogniCit highlighted green with value proposition card. Interactive sort buttons (price/value/transparency) with dynamic result display. Scroll-to-result animation.
-161. [NEW] Create "Najlepszy suplement na koncentrację dla studentów" blog post — Seasonal SEO (exam periods Sep/Jan/May), target "suplement na koncentrację student", "nootropiki sesja". Position CogniCit + link to /jak-stosowac. Estimated 1K+ monthly during exam season.
+161. ~~[DONE] Create "Najlepszy suplement na koncentrację dla studentów" blog post~~ ✅ — Blog existed from earlier cycles. Power Cycle #37 enhanced with conversion elements: share buttons (Facebook/Twitter/LinkedIn), cross-links section (3 related articles), trust bar with CTA, email capture popup (60% scroll trigger, 15% discount, localStorage persistence, Formspree integration). Added to sitemap.xml and index.html blog section. Seasonal SEO peak: Sep/Jan/May exam periods.
 162. ~~[DONE] Add "Gdzie kupić?" availability section to ranking-nootropikow.html~~ ✅ — Power Cycle #34. 6-card availability grid showing where each ranked supplement is available in Poland. CogniCit card highlighted (cognivia.eu only = guaranteed authentic, lowest price, direct from producer). Competitor cards show Allegro/apteka/import warnings. Trust callout: "why buying from producer is safer" (counterfeit risk, expiry dates, no customer support). Responsive grid layout.
 163. [NEW] Add "Ranking cenowy" mini-widget to index.html — Compact 3-row comparison (CogniCit 2.63 zł/dzień vs competitors 5-8 zł/dzień) with visual bar chart, positioned near CTA section. Quick-scan value proposition for visitors who don't click through to full comparison page.
 164. [NEW] Create "Najlepszy suplement na pamięć dla seniorów 50+" blog post — Target "suplementy pamięć senior", "nootropiki osoby starsze". Growing demographic in Poland. Position cytykolina neuroprotection + ALA antioxidant for aging brain. Link to nauka.html studies.
@@ -241,6 +241,24 @@
 
 171. [NEW] Create "Suplementy przed egzaminem maturalnym" landing page (/matura) — Target parents buying supplements for matura students (May season). Trust signals: GMP, GIS, no stimulants, 30-day guarantee. Position cytykolina for memory consolidation during intense study period. Seasonal SEO peak: Feb-May.
 
-172. [NEW] Add "Ile kosztuje suplementacja mózgu?" ROI calculator on index.html — Interactive widget: input monthly supplement spend, calculate cost-per-day, compare to coffee/energy drinks spending. Show CogniCit (2.63 zł/dzień = 79 zł/miesiąc) vs daily coffee habit (4-6 zł/dzień = 120-180 zł/miesiąc). Converts budget-conscious visitors.
+172. ~~[DONE] Add "Ile kosztuje suplementacja mózgu?" ROI calculator on index.html~~ ✅ — Power Cycle #38. Interactive 3-input calculator: coffee cups/day (5 zł each), energy drinks/week (8 zł each), other supplements/month (zł). Real-time monthly cost calculation. Side-by-side comparison: user's spend vs CogniCit 79 zł. Dynamic messaging: savings (if cheaper), investment framing (if more expensive), equivalence (if equal). Annual savings calculation. Green gradient result card with CTA to produkt.html. Responsive grid (auto-fit minmax 200px). Positioned after caffeine calculator, before "Jak stosować" section.
 
 173. [NEW] Create "Jak budować rutynę suplementacji?" educational blog post — Practical habit-building guide (habit stacking, morning anchors, pill organizers). Target "jak przyjmować suplementy regularnie" SEO. Positions CogniCit (1 capsule/day simplicity) as easiest regimen. Link to jak-stosowac.html.
+
+174. [NEW] Add "Opinie klientów" page (/opinie.html) — dedicated reviews page with all testimonials, star rating breakdown, filtering by product aspect (concentration, memory, energy). Schema.org Product with aggregateRating. SEO target: "CogniCit opinie", "CogniCit recenzje".
+
+175. ~~[DONE] Create "Suplementy dla seniorów 50+" blog post~~ ✅ — Power Cycle #38. Created blog/suplementy-dla-seniorow-50-plus.html (18KB). Covers: brain changes after 50 (acetylcholine decline, oxidative stress), cytykolina neuroprotection with PubMed citations (meta-analysis, 500-2000 mg doses), ALA dual antioxidant mechanism + Hager et al. 2007 study, β-CD role in absorption for older adults. CogniCit positioning (300 mg cytykolina + 250 mg ALA + 250 mg β-CD). Contraindications section (BP meds, anticoagulants, pre-surgery). Lifestyle tips (exercise, sleep, mental stimulation, diet, social contacts). Article + BreadcrumbList JSON-LD. OG/Twitter Card meta. Email popup (60% scroll). Trust bar. Cross-links (6 related pages). Added to sitemap.xml, index.html blog section, blog/index.html.
+
+176. [NEW] Add lazy-loading YouTube video placeholder to porownanie.html — educational comparison video, click-to-load pattern matching nauka.html implementation. Shows supplement comparison explained visually.
+
+177. ~~[DONE] Create "Jak budować rutynę suplementacji?" blog post~~ ✅ — Power Cycle #39. Created blog/jak-budowac-rutyne-suplementacji.html (21KB). Practical habit-building guide: habit stacking technique (4-step flow), 5 morning routine schemes, organizer alternatives, 7/14/30-day tracking timeline, common mistakes. CogniCit positioning (1 capsule/day simplicity). Article + BreadcrumbList JSON-LD. OG/Twitter Card meta. Email popup (60% scroll). Trust bar. Cross-links (4 pages). Share buttons. Added to sitemap.xml, index.html blog section, blog/index.html.
+
+178. [NEW] Add "Aktualności medyczne" section to nauka.html — Monthly-updated section showing latest PubMed publications related to cytykolina, ALA, or β-CD. Positions Cognivia as science-driven brand. Manual update or automated RSS feed from PubMed API for relevant keywords.
+
+179. ~~[DONE] Create /matura landing page for May exam season~~ ✅ — Power Cycle #39. Created matura.html (24KB). Seasonal landing page targeting parents buying supplements for matura students. Hero with season tag, trust row (GMP/GIS/no caffeine/30-day). 3 problem cards (overload/stress/caffeine trap). Safety box for parents (GMP/GIS/18+/PubMed). 3 ingredient mechanism cards. Full comparison table (CogniCit vs energy drinks vs caffeine vs multi-nootropic). 4-step protocol. 3 audience cards (parents/students/high school). CTA with 79 zł price. Email popup (50% scroll, Matura15 discount code). Article + BreadcrumbList JSON-LD. Added to sitemap.xml, index.html footer.
+
+180. [NEW] Add "Matura15" discount code tracking — Set up UTM parameters or Formspree hidden field to track how many orders use the Matura15 code from the /matura page. Measure seasonal campaign ROI. Update code to track conversions from each landing page source.
+
+181. [NEW] Create "Jak uczyć się efektywnie? Techniki zapamiętywania" blog post — SEO for "jak się uczyć", "techniki zapamiętywania", "metody nauki". Practical study techniques (spaced repetition, active recall, Feynman method). Position CogniCit as cognitive support during intensive learning. Link to matura page and blog/student post. Seasonal peak: Jan-May exam preparation.
+
+182. [NEW] Add breadcrumb navigation to /matura page — Currently missing proper <nav> breadcrumb element. Add breadcrumb CSS + HTML nav matching other landing pages for SEO consistency. Already has BreadcrumbList JSON-LD but needs visible breadcrumb nav.

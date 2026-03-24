@@ -968,3 +968,73 @@
 **Internal links:** porownanie.html, produkt.html, ranking-nootropikow.html, blog/ranking-nootropikow-2026.html
 **SEO angle:** "ceny suplementów nootropowych" — price-comparison queries convert well. Positions CogniCit as best value.
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #37)
+**Title:** Suplementy dla seniorów 50+ — jak dbać o mózg po pięćdziesiątce?
+**Target:** Polish audience, SEO for "suplementy dla seniorów", "nootropiki 50+", "suplementy pamięć osoby starsze", "jak poprawić pamięć po 50"
+**Word count:** 1500-2000
+**Keywords:** suplementy dla seniorów, suplementy pamięć po 50, nootropiki osoby starsze, jak poprawić pamięć, cytykolina senior, kwas alfa-liponowy starzenie
+
+**Outline:**
+1. **Wstęp** — Z wiekiem spada produkcja acetylocholiny i rośnie stres oksydacyjny. To normalne, ale można z tym pracować.
+2. **Co się dzieje z mózgiem po 50?** — Ubytek neuroprzekaźników, wolniejsza regeneracja neuronów, rosnący stres oksydacyjny. Proste wyjaśnienie bez medycznego żargonu.
+3. **Cytykolina — budulec neuroprzekaźników** — 300 mg CDP-choliny = prekursor acetylocholiny. 233 publikacje PubMed. Mechanizm działania w uproszczeniu.
+4. **Kwas alfa-liponowy — tarcza antyoksydacyjna** — Podwójna rozpuszczalność (jedyny taki antyoksydant). 1522 publikacje. Ochrona mitochondriów.
+5. **Beta-cyklodekstryna — transporter** — Dlaczego sam składnik nie wystarczy? β-CD zwiększa biodostępność o 40-80%.
+6. **Bezpieczeństwo na pierwszym miejscu** — Brak kofeiny, brak stymulantów, GMP, GIS, EU compliant. Ważne dla osób przyjmujących leki na stałe.
+7. **Protokół suplementacji dla seniorów** — 1 kapsułka dziennie z posiłkiem. Realistyczny timeline: 7/14/30 dni.
+8. **Co jeszcze robić?** — Sen 7-8h, spacer 30 min/dzień, dieta bogata w choliny (jajka, ryby), aktywność społeczna.
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja satysfakcji → produkt.html
+**Internal links:** nauka.html, jak-stosowac.html, kwas-alfa-liponowy.html, cytykolina.html, certyfikaty.html
+**SEO angle:** Growing demographic (aging population in Poland). Low competition keyword. High commercial intent — families buying for parents.
+**Season:** Evergreen, slight peak before holidays (gift-giving for parents/grandparents).
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-24)
+**Title:** Nootropiki a praca umysłowa — jak suplementacja wpływa na wydajność?
+**Target:** Polish professionals, SEO-focused
+**Word count:** 1500-2000
+**Keywords:** nootropiki praca umysłowa, suplement na koncentrację praca, cytykolina wydajność, suplementacja praca biurowa
+
+**Outline:**
+1. **Wstęp** — Praca umysłowa wymaga ciągłej koncentracji — mózg zużywa 20% energii ciała przy 2% masy
+2. **Dlaczego mózg "się męczy"?** — Spadek acetylocholiny, stres oksydacyjny, przeciążenie glutaminianem
+3. **Cytykolina w kontekście pracy** — Wsparcie syntezy acetylocholiny, poprawa funkcji wykonawczych, badania nad koncentracją u dorosłych
+4. **ALA jako ochrona przed stresem zawodowym** — Wolne rodniki generowane przez stres, chroniczne napięcie, siedzący tryb
+5. **Porównanie strategii** — Kofeina (maskowanie) vs. cytykolina (budowanie), suplementy "na szybko" vs. systematyczna suplementacja
+6. **Protokół dla pracownika umysłowego** — Rano: CogniCit + światło + nawodnienie. Po południu: spacer + przerwa od ekranu. Wieczór: wyłączanie ekranów
+7. **Kto skorzysta najbardziej?** — Programiści, analitycy, nauczyciele, lekarze, tłumacze, menedżerowie
+8. **Podsumowanie** — 1 kapsułka dziennie, zero kofeiny, synergia 3 składników
+
+**CTA:** Zamów CogniCit — 79 zł → produkt.html
+**Internal links:** produkt.html, blog/poranne-nawyki-programisty.html, blog/suplementy-dla-programistow.html, blog/suplementy-a-kofeina.html, jak-stosowac.html
+**SEO angle:** Growing remote/hybrid work trend in Poland. "Praca umysłowa suplement" = medium-competition keyword. Cross-promote with programmer posts.
+**Season:** Evergreen, slight peak in Sep (back to office) and Jan (new year resolutions).
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #39)
+**Title:** "Jak uczyć się efektywnie? 5 technik zapamiętywania, które naprawdę działają"
+**Target:** Polish students preparing for exams (matura, sesja, egzaminy)
+**SEO keywords:** jak się uczyć, techniki zapamiętywania, metody nauki, efektywna nauka, spaced repetition
+**Estimated volume:** 1500-2500 monthly searches in Poland (seasonal peak: Jan-May)
+
+**Outline:**
+1. **Dlaczego tradycyjne "wkuwanie" nie działa?** — Zasada zapominania Ebbinghausa, efekt spacing, dlaczego czytanie podręcznika 5× to strata czasu
+2. **Spaced repetition (powtórki rozłożone w czasie)** — Anki, system kart, optymalne interwały powtórek, jak zbudować własny deck
+3. **Aktywne przywoływanie (active recall)** — Testowanie siebie zamiast ponownego czytania, technika "blank page", dlaczego błędy uczą lepiej niż poprawne odpowiedzi
+4. **Metoda Feynmana** — Wyjaśnianie tematu "jak dziecku", identyfikacja luk w zrozumieniu, prostota jako test wiedzy
+5. **Interleaving (przeplatanie tematów)** — Zamiast bloków "3h matematyki" → przeplatane: matma → polski → matma. Jak działa na mózg?
+6. **Mind mapping + notatki Cornell** — Wizualne organizowanie informacji, struktura notatek, dlaczego pisanie ręczne > laptop
+7. **CogniCit jako wsparcie** — Cytykolina i ALA jako fundament, na którym techniki nauki działają lepiej. Bez koncentracji nawet najlepsza metoda nie zadziała.
+8. **Protokół naukowy** — 1 kapsułka CogniCit → 25 min aktywnego recall → 5 min przerwy → kolejna sesja. Połączenie suplementacji z technikami = podwójny efekt.
+
+**CTA:** Zamów CogniCit na sezon egzaminacyjny → produkt.html
+**Internal links:** matura, blog/suplementy-dla-studentow.html, blog/jak-budowac-rutyne-suplementacji.html, jak-stosowac.html, nauka.html
+**SEO angle:** High-volume educational query + seasonal (Jan-May exam prep). Positions Cognivia as science + practicality brand. Cross-promote with matura landing page.
+**Season:** Peak January-May (matura preparation). Evergreen for university students (Oct-Jan sesja).
+**Status:** Outline ready, needs writing
