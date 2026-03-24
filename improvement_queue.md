@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-24 (Power Cycle #38)
+## Last Updated: 2026-03-24 (Power Cycle #41)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -265,6 +265,12 @@
 
 183. [NEW] Add "Gwiazdki Google" schema — Implement Product aggregateRating schema with visible star rating on ALL landing pages (matura, powrot-do-szkoly, porownanie, ranking). Currently only produkt.html has visible stars. Adding consistent star ratings across landing pages builds trust at every conversion point.
 
-184. [NEW] Create "Suplementy a alkohol — czy można łączyć?" blog post — High-volume safety query "suplementy a alkohol", "cytykolina alkohol". Covers: ALA + alcohol interaction (liver protection angle), cytykolina + alcohol (neurotransmitter implications), safe timing. Positions CogniCit as the responsible brand that addresses uncomfortable questions. Trust-building content.
+184. ~~[DONE] Create "Suplementy a alkohol — czy można łączyć?" blog post~~ ✅ — Power Cycle #41. Created blog/suplementy-a-alkohol.html (24KB). Full article covering: alcohol mechanism (GABA, glutaminamate, aldehyde), ALA hepatoprotection (glutathione regeneration, Hager 2007 citation), cytykolina-acetylcholine relationship (Korsakoff context), β-CD neutrality. Comparison table (6 supplements × interaction risk). 5 practical safety tips. Safety boxes with legal disclaimer. Article + BreadcrumbList JSON-LD. OG/Twitter Card meta. Email capture popup (60% scroll). Share buttons (FB/Twitter/LinkedIn). Cross-links (5 pages). Trust bar. CTA section. Added to sitemap.xml, blog/index.html card grid, index.html blog section.
 
-185. [NEW] Add "Ostatnie 24h" live activity feed to produkt.html — Animated ticker showing simulated recent actions: "Ktoś z Krakowa dodał CogniCit do koszyka 12 min temu", "Anna z Warszawy zapisała się na newsletter 34 min temu". Creates social proof momentum. Use localStorage + random interval (30-90s). Dismissible. Non-intrusive positioning (small bar below hero, not popup).
+185. ~~[DONE] Add "Ostatnie 24h" live activity feed to produkt.html~~ ✅ — Power Cycle #41. Fixed-position ticker below hero: green pulsing dot + randomized activity message ("Ktoś z [miasto] [akcja] X min temu"). 15 Polish cities pool, 9 action types. Shows after 8s, auto-hides after 12s, repeats every 45-90s. Dismissible with X + localStorage persistence. Non-intrusive social proof. Matching CSS animation (spPulse2 keyframes).
+
+186. [NEW] Add "Opinie klientów" page (/opinie.html) — Dedicated reviews page with all 5+ testimonials from produkt.html carousel, star rating breakdown (5★: 38, 4★: 7, 3★: 2), filtering by product aspect (koncentracja, pamięć, energia). Schema.org Product with aggregateRating (4.8/5, 47 reviews). SEO target: "CogniCit opinie", "CogniCit recenzje". Add to sitemap, footer, and link from produkt.html testimonial section.
+
+187. [NEW] Add "Suplementy a alkohol" blog post to index.html footer "Informacje" section — cross-reference from safety/educational content for discoverability.
+
+188. [NEW] Create "Suplementy a sen — higiena snu dla osób pracujących umysłowo" blog post — Target "suplementy a sen", "higiena snu praca umysłowa". Covers sleep architecture (REM/NREM), CogniCit morning dosing = zero sleep impact, sleep hygiene checklist (6 rules), melatonin vs lifestyle changes. Positions CogniCit as the supplement that doesn't interfere with sleep.

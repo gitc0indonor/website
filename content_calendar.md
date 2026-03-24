@@ -1063,3 +1063,47 @@
 **SEO angle:** "suplementy diety mity" — debunking content ranks well, builds trust, high engagement. Cross-links to regulatory and educational pages. Featured snippet potential for myth-busting format.
 **Target platforms:** Google (SEO), Wykop, grupy Facebook o suplementacji
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #41)
+**Title:** Suplementy a alkohol — czy można łączyć? Fakty i interakcje
+**Target:** Polish audience, SEO for "suplementy a alkohol", "cytykolina alkohol", "nootropiki alkohol"
+**Word count:** 1500-2000
+**Keywords:** suplementy a alkohol, cytykolina alkohol, nootropiki alkohol, ALA alkohol interakcja, suplementacja a picie
+
+**Outline:**
+1. **Wstęp** — Alkohol jest stałym elementem polskiej kultury. Co jeśli przyjmujesz suplementy?
+2. **Co alkohol robi z mózgiem** — GABA↑, glutaminian↓, aldehyd octowy (stres oksydacyjny)
+3. **ALA i alkohol** — Ochrona mitochondriów, regeneracja glutationu, badania hepatoprotekcyjne
+4. **Cytykolina i alkohol** — Acetylocholina vs. deprymacja alkoholowa, badania nad zespołem Korsakowa
+5. **β-CD** — Neutralna rola, brak interakcji z etanolem
+6. **Tabela porównawcza** — 6 suplementów × poziom ryzyka interakcji z alkoholem
+7. **Praktyczne wskazówki** — 5 zasad bezpiecznej suplementacji przy spożyciu alkoholu
+8. **Podsumowanie** — Suplementacja = długoterminowe wsparcie, nie ochrona przed alkoholem
+
+**CTA:** Zamów CogniCit → produkt.html
+**Internal links:** blog/cytykolina.html, blog/antyoksydanty.html, blog/suplementy-a-kofeina.html, skutki-uboczne.html, produkt.html
+**SEO angle:** High-volume safety query. Positions Cognivia as the responsible brand that addresses uncomfortable questions. Trust-building content.
+**Status:** WRITTEN — blog/suplementy-a-alkohol.html created (24KB), Power Cycle #41
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #41)
+**Title:** Suplementy a sen — higiena snu dla osób pracujących umysłowo
+**Target:** Polish audience, SEO for "suplementy a sen", "higiena snu praca umysłowa", "bezsenność suplement"
+**Word count:** 1500-2000
+**Keywords:** suplementy a sen, higiena snu, bezsenność praca umysłowa, suplement a bezsenność, cytykolina sen, nootropiki sen
+
+**Outline:**
+1. **Wstęp** — Pracownicy umysłowi często śpią za mało. Czy suplementy wpływają na sen?
+2. **Architektura snu** — NREM (głęboki) vs REM (marzenia senne), rola acetylocholiny w fazie REM
+3. **Dlaczego rano, nie wieczorem?** — CogniCit = 1 kapsułka rano ze śniadaniem. Zero wpływu na senność wieczorną.
+4. **Czy cytykolina zaburza sen?** — Przegląd badań: brak dowodów na wpływ na architekturę snu w dawkach 250-500 mg
+5. **ALA a nocna regeneracja** — Antyoksydacja mitochondriów podczas snu — synergia z naturalnymi procesami naprawczymi
+6. **Suplementy ktore WPLYWAJA na sen** — Kofeina, modafinil, L-teanina w dużych dawkach — tabela ryzyka
+7. **Higiena snu — 6 zasad** — Regularne pory, ciemność, temperatura, brak ekranów, ruch, suplementacja rano
+8. **Podsumowanie** — CogniCit: wsparcie za dnia, spokój w nocy
+
+**CTA:** Zamów CogniCit → produkt.html
+**Internal links:** produkt.html, blog/suplementy-a-alkohol.html, jak-stosowac.html, faq-produkt.html
+**SEO angle:** Growing "sleep hygiene" trend in Poland. Positions CogniCit as non-stimulant supplement.
+**Status:** Outline ready, needs writing

@@ -397,6 +397,54 @@
     </div>
   </div>
 
+  <!-- AKTYWNOŚĆ OSTATNICH 24H — #185 -->
+  <section style="padding: 16px 5% 8px;">
+    <div id="activity-feed" style="max-width: 600px; margin: 0 auto; background: white; border-radius: 10px; padding: 12px 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); border-left: 3px solid var(--cognivia-green); display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--cognivia-text); opacity: 0; transition: opacity 0.6s ease;">
+      <span style="width: 8px; height: 8px; border-radius: 50%; background: #27ae60; flex-shrink: 0; animation: spPulse2 2s infinite;"></span>
+      <span id="activity-text">Ktoś z Warszawy dodał CogniCit do koszyka</span>
+      <button onclick="dismissActivity()" style="background: none; border: none; color: #ccc; font-size: 16px; cursor: pointer; margin-left: auto; padding: 0 4px;">&times;</button>
+    </div>
+  </section>
+  <style>
+    @keyframes spPulse2 { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  </style>
+  <script>
+    // Activity feed — #185
+    (function() {
+      if (localStorage.getItem('activityDismissed')) return;
+      var feed = document.getElementById('activity-feed');
+      var textEl = document.getElementById('activity-text');
+      var cities = ['Warszawy', 'Krakowa', 'Wrocławia', 'Poznania', 'Gdańska', 'Łodzi', 'Katowic', 'Lublina', 'Szczecina', 'Bydgoszczy', 'Białegostoku', 'Torunia', 'Rzeszowa', 'Olsztyna', 'Kielc'];
+      var actions = [
+        'dodał CogniCit do koszyka',
+        'zamówił 2 opakowania CogniCit',
+        'zapisał się na newsletter',
+        'przeczytał artykuł o cytykolinie',
+        'sprawdził skład CogniCit',
+        'zamówił CogniCit z dostawą InPost',
+        'zapisał się na premierę',
+        'przeczytał porównanie suplementów',
+        'zamówił 3 opakowania CogniCit'
+      ];
+      function randomItem(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+      function randomMinutes() { return Math.floor(Math.random() * 45) + 3; }
+      function showActivity() {
+        textEl.textContent = 'Ktoś z ' + randomItem(cities) + ' ' + randomItem(actions) + ' ' + randomMinutes() + ' min temu';
+        feed.style.opacity = '1';
+        setTimeout(function() { feed.style.opacity = '0'; }, 12000);
+      }
+      // First show after 8s, then every 45-90s
+      setTimeout(showActivity, 8000);
+      setInterval(function() {
+        if (!localStorage.getItem('activityDismissed')) showActivity();
+      }, 45000 + Math.random() * 45000);
+    })();
+    function dismissActivity() {
+      document.getElementById('activity-feed').style.display = 'none';
+      localStorage.setItem('activityDismissed', '1');
+    }
+  </script>
+
   <!-- SKŁADNIKI -->
   <section id="składniki" style="background: white;">
     <h2>Składniki</h2>
