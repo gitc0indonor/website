@@ -860,3 +860,27 @@
 **SEO angle:** "ile kofeiny dziennie" — 2K+ monthly searches in Poland. "Przedawkowanie kofeiny" — rising trend. Positions CogniCit as the science-backed, caffeine-free alternative.
 **Target platforms:** Google (SEO), Wykop, grupy Facebook o zdrowiu
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #31)
+**Title:** Ranking nootropików 2026 — który suplement na koncentrację wybrać?
+**Target:** Polish audience, SEO for "ranking nootropików 2026", "najlepszy suplement na koncentrację Polska"
+**Word count:** 2000-2500
+**Keywords:** ranking nootropików 2026, najlepszy suplement na koncentrację, suplement na pamięć ranking, nootropiki Polska, porównanie suplementów mózg
+
+**Outline:**
+1. **Wstęp** — Rynek nootropików w Polsce rośnie 15% rocznie. Jak wybrać suplement w 2026 roku?
+2. **Jak ocenialiśmy?** — 5 kryteriów: przejrzystość składu, dawki z badań, certyfikaty GMP/GIS, cena za porcję, dostępność w Polsce
+3. **Kategoria 1: Suplementy z choliną (solo)** — Prosty skład, ale brak synergii. Plusy i minusy.
+4. **Kategoria 2: Multi-nootropiki (15+ składników)** — Mikrodawki, proprietary blends, trudna weryfikacja. Red flags.
+5. **Kategoria 3: Stymulanty kofeinowe** — Szybki efekt, ale crash, tolerancja, wpływ na sen.
+6. **Kategoria 4: Synergiczne formuły (3-5 składników)** — CogniCit jako przykład: ALA + cytykolina + β-CD. Precyzja vs. ilość.
+7. **Tabela porównawcza** — CogniCit vs. 5 konkurencyjnych produktów (anonymized): składniki, dawki, GMP, GIS, CoA, cena
+8. **Zwycięzca w każdej kategorii** — Przejrzystość, bezpieczeństwo, wartość, nauka
+9. **Checklist dla kupującego** — 7 pytań przed zakupem nootropiku w 2026
+10. **Podsumowanie** — Ranking + jasna rekomendacja
+
+**CTA:** Sprawdź CogniCit — link do produkt.html (79 zł, 30-dniowa gwarancja)
+**Internal links:** porownanie.html, skladniki.html, produkt.html, jak-wybrac-suplement.html, certyfikaty.html
+**SEO angle:** "ranking nootropików" — high-volume, low-competition in Polish market. Positions Cognivia as the transparent authority.
+**Target platforms:** Google (SEO), Wykop, grupy Facebook o suplementacji
+**Status:** Outline ready, needs writing

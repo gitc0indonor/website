@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-24 (Power Cycle #30)
+## Last Updated: 2026-03-24 (Power Cycle #31)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -197,9 +197,13 @@
 149. [NEW] Create "Suplementy dla programistów" blog post — SEO for "suplementy programista", "nootropik developer". Target Polish tech community on Wykop/LinkedIn. Include CogniCit morning routine positioning, caffeine alternative angle.
 150. [DONE] ~~Add "Co zyskujesz?" benefit calculator to index.html~~ ✅ — Power Cycle #30. Interactive goal selector: 4 toggle buttons (Koncentracja 🎯, Pamięć 🧠, Energia ⚡, Ochrona mózgu 🛡️). Each goal maps to specific CogniCit ingredients with mechanism explanations + PubMed citations. Multi-select: users can combine goals to see full ingredient overlap. Dynamic result cards with gold accent borders. CTA button linking to produkt.html. Responsive grid layout. JS: selectedGoals object + renderGoals() with dynamic DOM creation. Positioned before blog section.
 151. [DONE] ~~Add "Ile kofeiny pijesz?" interactive calculator on index.html~~ ✅ — Power Cycle #30. 4 input fields (espresso 80mg, coffee 95mg, tea 50mg, energy drink 120mg). Real-time calculation with visual progress bar. 3-tier result: green (≤200mg safe), orange (201-400mg moderate with warning), red (>400mg over EFSA limit). Each tier links to CogniCit as caffeine-free alternative. EFSA citation footer. Responsive card layout. JS: calcCaffeine() with bar fill animation. Positioned after "Poranne nawyki" section.
-152. [NEW] Add share buttons to blog/nootropiki-a-sen.html and blog/suplementy-dla-programistow.html — these 2 blog posts are missing social share buttons (Facebook, Twitter/X, LinkedIn)
+152. ~~[DONE] Add share buttons to blog/cytykolina-przewodnik.html and blog/suplementy-dla-programistow.html~~ ✅ — Power Cycle #31. Both posts now have Facebook, Twitter/X, LinkedIn share buttons matching site style (colored rounded buttons, hover lift). cytykolina-przewodnik got full CSS class styles; suplementy-dla-programistow uses inline styles since it already had .share-buttons CSS.
 153. [NEW] Create "Ranking nootropików 2026" SEO landing page (/ranking-nootropikow) — Target high-volume keyword "najlepszy nootropik Polska" / "ranking suplementów koncentracja". Comparison table positioning CogniCit vs competitors. Drives organic traffic.
-154. [NEW] Add "Często kupowane razem" bundle suggestion on produkt.html — suggest buying 2-3 boxes with tiered discount (5% for 2, 10% for 3), increases AOV before launch.
+154. ~~[DONE] Add "Często kupowane razem" bundle suggestion on produkt.html~~ ✅ — Power Cycle #31. 3-column bundle grid (1 box 79 zł / 2 boxes 150 zł with 5% discount + "Popularne" badge / 3 boxes 213 zł with 10% discount). Each card has: emoji icon, duration label, strikethrough original price, discounted price, savings badge, add-to-cart button with quantity parameter. Positioned between price guarantee and testimonials sections. Trust line at bottom (free shipping, 30-day guarantee, GMP).
+
+155. [NEW] Add "Skutki uboczne suplementów diety" blog post — write the existing outline from content_calendar (#10, Power Cycle #10). Target: "skutki uboczne suplementów" — high-volume safety query.
+156. [NEW] Add lazy-loading YouTube video placeholder to porownanie.html — educational comparison video, click-to-load pattern matching nauka.html implementation.
+157. [NEW] Create "Najczęstsze błędy przy kupowaniu suplementów" educational blog post — SEO for "błędy suplementy", "jak kupić suplement". 7 common mistakes checklist format.
 
 155. **CRITICAL: Set up Formspree account and wire order notification** — CEO action required: create free Formspree account (formspree.io), create a form endpoint for cognivia.business@outlook.com, provide the form ID. Then update submitOrder() in cognivia-cart.js to POST order JSON to the endpoint. This sends order details to the business email. Minimum viable path to receive orders without building a backend. Blocks all real sales.
 

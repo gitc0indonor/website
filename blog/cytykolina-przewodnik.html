@@ -56,6 +56,14 @@
     .trust-bar { background: var(--forest); color: white; padding: 16px 5%; text-align: center; font-size: 14px; margin: 40px 0 0; }
     .trust-bar strong { color: var(--gold); }
     .trust-bar a { color: var(--gold); text-decoration: none; margin-left: 12px; font-weight: 500; }
+    .share-wrap { max-width: 800px; margin: 32px auto; padding: 0 8%; text-align: center; }
+    .share-wrap p { font-size: 14px; color: var(--soft-text); margin-bottom: 12px; }
+    .share-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .share-btn { display: inline-block; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 600; transition: transform 0.2s, box-shadow 0.2s; }
+    .share-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .share-btn.fb { background: #1877f2; color: white; }
+    .share-btn.tw { background: #1da1f2; color: white; }
+    .share-btn.li { background: #0a66c2; color: white; }
     .cta-section { text-align: center; padding: 60px 5%; background: linear-gradient(135deg, var(--forest), #2d5a3f); color: white; margin: 40px 0 0; }
     .cta-section h2 { font-family: 'Playfair Display', serif; color: white; margin-bottom: 16px; }
     .cta-section p { color: rgba(255,255,255,0.8); margin-bottom: 24px; max-width: 500px; margin-left: auto; margin-right: auto; }
@@ -302,6 +310,15 @@
     </div>
 
   </article>
+
+  <div class="share-wrap">
+    <p>Udostępnij artykuł</p>
+    <div class="share-buttons">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://cognivia.eu/blog/cytykolina-przewodnik.html" target="_blank" rel="noopener" class="share-btn fb">📘 Facebook</a>
+      <a href="https://twitter.com/intent/tweet?url=https://cognivia.eu/blog/cytykolina-przewodnik.html&text=Cytykolina%20%E2%80%94%20kompletny%20przewodnik%20po%20CDP-cholinie" target="_blank" rel="noopener" class="share-btn tw">🐦 Twitter/X</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://cognivia.eu/blog/cytykolina-przewodnik.html" target="_blank" rel="noopener" class="share-btn li">💼 LinkedIn</a>
+    </div>
+  </div>
 
   <!-- Trust Bar -->
   <div class="trust-bar">
