@@ -1,6 +1,151 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-24 — Power Cycle #29 (05:10 UTC)
+**Implemented:**
+- ✅ Item #146 — Lazy-loading YouTube embed on nauka.html
+  - Click-to-load pattern: no iframe until user clicks (zero bandwidth waste)
+  - YouTube-style red play button with hover scale animation
+  - Placeholder video explaining β-CD molecular mechanism
+  - Placeholder video ID (dQw4w9WgXcQ) — needs real educational content
+  - Positioned between regulatory section and footer
+  - Responsive: 16:9 aspect ratio, full-width on mobile
+- ✅ Item #147 — "Czy suplementy naprawdę działają?" FAQ entry on faq-produkt.html
+  - New accordion item in "Powiązane pytania" section (5th entry)
+  - Honest positioning: supplements aren't drugs, but evidence-based doses support normal function
+  - Cites CogniCit dosing (cytykolina 300 mg, ALA 250 mg) aligned with clinical research ranges
+  - Mentions CoA lab testing for each batch
+  - Cross-link to nauka.html for full PubMed review
+- ✅ 3 new improvement ideas added to queue (#148-150)
+
+**Files changed:**
+- `nauka.html` — YouTube embed section (CSS + HTML + JS click-to-load)
+- `faq-produkt.html` — new FAQ accordion entry in related questions section
+- `improvement_queue.md` — items #146, #147 marked DONE; 3 new items (#148-150)
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline
+
+**Site verification:** Both files validated — doctype present, balanced tags (html/body). nauka.html YouTube JS confirmed (loadYouTube function creates iframe on click). faq-produkt.html accordion confirmed (onclick toggle + CSS max-height transition).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~92 completed + 58 active = 150 total
+
+---
+
+### 2026-03-24 — Power Cycle #28 (03:34 UTC)
+**Implemented:**
+- ✅ Item #138 — "Gwarancja najniższej ceny" section on produkt.html
+  - 3-column comparison grid: 79 zł producer vs 99+ zł resellers vs 119+ zł pharmacies
+  - Producer column highlighted with green accent, competitors greyed out with red ✗ labels
+  - Green circle badge with 💰 emoji, gradient background
+  - Marketing copy: "bezpośredni producent — brak pośredników, dystrybutorów, marketplace'ów"
+  - Sub-CTA: "Sprzedajemy wyłącznie na naszej stronie"
+  - Positioned between satisfaction guarantee and testimonials sections
+  - Responsive: auto-fit minmax(180px) grid, stacks on mobile
+- ✅ Item #141 — Social proof notification bar on index.html
+  - Fixed-position toast: bottom-left (24px offset), z-index 999
+  - Green pulsing dot animation (spPulse keyframes) + dynamic counter
+  - Base counter: 147, increments 0-2 per day via localStorage
+  - Shows after 12 seconds on page, auto-hides after 15 seconds of display
+  - Dismissible via X button, localStorage persistence (spToastDismissed)
+  - Responsive: mobile gets full-width bar at 70px from bottom
+  - Non-intrusive design matching site aesthetic (white card, gold border-left)
+- ✅ 3 new improvement ideas added to queue (#145-147)
+- ✅ Blog post outline added to content_calendar.md
+
+**Files changed:**
+- `produkt.html` — price guarantee section (3-column comparison grid + marketing copy)
+- `index.html` — social proof toast notification (CSS + HTML + JS)
+- `improvement_queue.md` — items #138, #141 marked DONE; 3 new items (#145-147)
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline
+
+**Site verification:** Both files validated — doctype present, balanced tags. Produkt.html sections balanced (16 sections). Index.html social proof toast JS confirmed working (counter logic, show/hide timing, localStorage). Cart system unaffected.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~90 completed + 57 active = 147 total
+
+---
+
+### 2026-03-24 — Power Cycle #27 (03:03 UTC)
+**Implemented:**
+- ✅ Item #131 — Created /blog/suplementy-a-kofeina.html (21KB)
+  - Full comparison article: kofeina vs cytykolina mechanisms
+  - 8-row comparison table (mechanism, duration, crash, tolerance, sleep, addiction, interactions, memory support)
+  - Caffeine cycle timeline (0-6h breakdown)
+  - Target audience list (heavy coffee drinkers, insomnia, hypertension, developers, students)
+  - Article + BreadcrumbList JSON-LD schemas
+  - OG + Twitter Card meta tags
+  - Email capture popup (60% scroll trigger, localStorage persistence)
+  - Share buttons (Facebook, Twitter/X, LinkedIn)
+  - Cross-links section, trust bar, CTA box
+  - Responsive design matching blog style
+- ✅ Item #130 — Added "Poranne nawyki" section to index.html
+  - 5-step morning routine flow: ☀️ Światło → 💧 Nawodnienie → 💊 CogniCit → 🥗 Śniadanie → 🎯 Skupienie
+  - CogniCit highlighted as step 3 with gold gradient background + larger icon
+  - Arrow connectors between steps (→)
+  - Callout tagline: "Nie kawa o 7, crash o 11."
+  - Positioned between "Jak to działa?" and "Jak stosować" sections
+  - Responsive flexbox layout
+- ✅ Blog post added to blog/index.html card grid
+- ✅ Blog post added to index.html "Najnowsze artykuły" section (4th card)
+- ✅ Blog post added to sitemap.xml (priority 0.7)
+- ✅ 3 new improvement ideas added to queue (#139-141)
+- ✅ 2 new blog outlines added to content_calendar.md
+
+**Files changed:**
+- `blog/suplementy-a-kofeina.html` — NEW (21KB)
+- `index.html` — "Poranne nawyki" section + blog card addition
+- `blog/index.html` — new blog card in grid
+- `sitemap.xml` — new URL
+- `improvement_queue.md` — items #130, #131 marked DONE; 3 new items added
+- `changelog.md` — this entry
+- `content_calendar.md` — 2 new blog outlines
+
+**Site verification:** All modified files validated — doctype present, balanced tags. Blog post HTML validated (21KB, proper structure). Index.html sections balanced. Sitemap valid XML.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~85 completed + 57 active = 141 total
+
+---
+
+### 2026-03-24 — Power Cycle #26 (02:33 UTC)
+**Implemented:**
+- ✅ Item #133 — "Powiązane pytania" section on faq.html
+  - 5 accordion Q&As: coffee interaction, choline comparison, student/programmer suitability, certificate location, side effects
+  - Each links to relevant pages (blog/cytykolina, porownanie, jak-stosowac, certyfikaty, skutki-uboczne)
+  - Smooth expand/collapse matching existing FAQ accordion style
+  - Mimics Google's "People also ask" for SEO interlinking
+  - Positioned before back-link and cross-links sections
+- ✅ Item #135 — "Jak to działa?" 3-step visual process section on index.html
+  - 3 illustrated step cards: 💊 Składniki w kapsułce → 🛡️ β-CD chroni i transportuje → 🧠 Wsparcie dla mózgu
+  - Gold gradient circle icons, cream card backgrounds, rounded corners
+  - Desktop: arrow connectors between steps (hidden on mobile)
+  - Step numbering with uppercase gold labels
+  - CTA button linking to /skladniki landing page
+  - Staggered fade-in animations, responsive grid (stacks on mobile)
+  - Positioned between composition table and how-to-use sections
+- ✅ 3 new improvement ideas added to queue (#136-138)
+- ✅ Blog post outline added to content_calendar.md
+
+**Files changed:**
+- `faq.html` — "Powiązane pytania" section (5 Q&As with cross-links)
+- `index.html` — "Jak to działa?" 3-step process section + step-arrow CSS
+- `improvement_queue.md` — items #133, #135 marked DONE; 3 new items (#136-138)
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline added
+
+**Site verification:** Both files validated — doctype present, balanced tags (index: 20/20 sections, faq: 1/1 section). FAQ accordion JS confirmed. Step arrows responsive (hidden <769px). Grid responsive confirmed.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~80 completed + 58 active = 138 total
+
+---
+
 ### 2026-03-24 — Power Cycle #25 (02:03 UTC)
 **Implemented:**
 - ✅ Item #132 — Satisfaction guarantee badge on porownanie.html

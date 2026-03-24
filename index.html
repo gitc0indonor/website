@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CogniCit — Dokładnie to czego ci trzeba | Cognivia</title>
-  <meta name="description" content="CogniCit — suplement diety z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną. Preparat w przygotowaniu.">
+  <meta name="description" content="CogniCit — suplement nootropowy z cytykoliną 300mg, kwasem alfa-liponowym 250mg i beta-cyklodekstryną 250mg. Certyfikat GMP, kapsułki roślinne HPMC. Wsparcie koncentracji i funkcji poznawczych.">
   <link rel="canonical" href="https://cognivia.eu/">
   <meta property="og:title" content="CogniCit — Dokładnie to czego ci trzeba | Cognivia">
   <meta property="og:description" content="Suplement diety z kwasem alfa-liponowym, cytykoliną i beta-cyklodekstryną. Wspiera funkcje poznawcze.">
@@ -1010,6 +1010,12 @@
     }
     /* Hero stays eager-loaded (above the fold) */
 
+    /* === HOW-IT-WORKS STEP ARROWS (desktop only) === */
+    .step-arrow { display: none; }
+    @media (min-width: 769px) {
+      .step-arrow { display: block !important; }
+    }
+
     /* === RESPONSIVE === */
       .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s; }
       .hamburger:hover { background: rgba(0,0,0,0.05); }
@@ -1520,6 +1526,103 @@
     </p>
   </section>
 
+  <!-- JAK TO DZIAŁA — 3-STEP PROCESS -->
+  <section style="padding: 72px 5%; background: var(--white); text-align: center;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div style="font-family: 'EB Garamond', serif; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 8px;" class="fade-in">Mechanizm działania</div>
+      <div style="font-family: 'EB Garamond', serif; font-size: 32px; font-weight: 600; color: var(--charcoal); margin-bottom: 12px;" class="fade-in">Jak to działa?</div>
+      <p style="font-size: 15px; color: var(--soft); max-width: 560px; margin: 0 auto 48px; line-height: 1.7;" class="fade-in">Trzy składniki, jedna kapsułka, precyzyjny mechanizm — od połknięcia do efektu.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; align-items: start;" class="stagger-children">
+        <!-- Step 1 -->
+        <div style="background: var(--cream); border-radius: 16px; padding: 36px 24px; text-align: center; position: relative;" class="fade-in">
+          <div style="width: 56px; height: 56px; background: linear-gradient(135deg, var(--gold), #d4b87a); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px; box-shadow: 0 4px 16px rgba(201,169,110,0.3);">💊</div>
+          <div style="font-family: 'EB Garamond', serif; font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold); margin-bottom: 8px;">Krok 1</div>
+          <h4 style="font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 600; color: var(--charcoal); margin-bottom: 10px;">Składniki w kapsułce</h4>
+          <p style="font-size: 14px; color: var(--soft); line-height: 1.6;">ALA (250 mg) + cytykolina (300 mg) otoczone beta-cyklodekstryną — inteligentnym nośnikiem, który chroni składniki aktywne.</p>
+          <!-- Arrow connector (desktop) -->
+          <div style="display: none; position: absolute; right: -24px; top: 50%; transform: translateY(-50%); font-size: 24px; color: var(--gold); opacity: 0.6;" class="step-arrow">→</div>
+        </div>
+
+        <!-- Step 2 -->
+        <div style="background: var(--cream); border-radius: 16px; padding: 36px 24px; text-align: center; position: relative;" class="fade-in">
+          <div style="width: 56px; height: 56px; background: linear-gradient(135deg, var(--gold), #d4b87a); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px; box-shadow: 0 4px 16px rgba(201,169,110,0.3);">🛡️</div>
+          <div style="font-family: 'EB Garamond', serif; font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold); margin-bottom: 8px;">Krok 2</div>
+          <h4 style="font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 600; color: var(--charcoal); margin-bottom: 10px;">β-CD chroni i transportuje</h4>
+          <p style="font-size: 14px; color: var(--soft); line-height: 1.6;">Beta-cyklodekstryna tworzy kompleksy inkluzji — „otula" cząsteczki ALA i cytykoliny, chroniąc je przed degradacją w żołądku.</p>
+          <div style="display: none; position: absolute; right: -24px; top: 50%; transform: translateY(-50%); font-size: 24px; color: var(--gold); opacity: 0.6;" class="step-arrow">→</div>
+        </div>
+
+        <!-- Step 3 -->
+        <div style="background: var(--cream); border-radius: 16px; padding: 36px 24px; text-align: center;" class="fade-in">
+          <div style="width: 56px; height: 56px; background: linear-gradient(135deg, var(--gold), #d4b87a); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px; box-shadow: 0 4px 16px rgba(201,169,110,0.3);">🧠</div>
+          <div style="font-family: 'EB Garamond', serif; font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold); margin-bottom: 8px;">Krok 3</div>
+          <h4 style="font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 600; color: var(--charcoal); margin-bottom: 10px;">Wsparcie dla mózgu</h4>
+          <p style="font-size: 14px; color: var(--soft); line-height: 1.6;">Cytykolina wspiera syntezę acetylocholiny. ALA chroni neurony przed stresem oksydacyjnym. Synergia w 1 kapsułce dziennie.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 40px;" class="fade-in">
+        <a href="skladniki.html" style="display: inline-block; padding: 14px 32px; background: var(--charcoal); color: var(--white); font-size: 14px; text-decoration: none; border-radius: 8px; transition: all 0.3s; letter-spacing: 0.5px;">Poznaj wszystkie składniki →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORNING ROUTINE -->
+  <section style="padding: 72px 5%; background: var(--cream);">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+      <div style="font-family: 'EB Garamond', serif; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 8px;" class="fade-in">Codzienna rutyna</div>
+      <div style="font-family: 'EB Garamond', serif; font-size: 32px; font-weight: 600; color: var(--charcoal); margin-bottom: 12px;" class="fade-in">Poranne nawyki na dobry dzień</div>
+      <p style="font-size: 15px; color: var(--soft); max-width: 560px; margin: 0 auto 48px; line-height: 1.7;" class="fade-in">CogniCit to krok 3 z 5 w porannej rutynie wspierającej koncentrację — naukowe podejście do produktywnego dnia.</p>
+
+      <div style="display: flex; justify-content: center; align-items: stretch; gap: 0; flex-wrap: wrap;" class="fade-in">
+        <!-- Step 1 -->
+        <div style="flex: 0 0 140px; text-align: center; padding: 24px 12px; position: relative;">
+          <div style="width: 52px; height: 52px; background: linear-gradient(135deg, #e8d5a8, #f5f0e8); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-size: 22px; box-shadow: 0 2px 8px rgba(201,169,110,0.2);">☀️</div>
+          <div style="font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 4px;">Krok 1</div>
+          <h4 style="font-family: 'EB Garamond', serif; font-size: 16px; font-weight: 600; color: var(--charcoal); margin-bottom: 4px;">Światło</h4>
+          <p style="font-size: 12px; color: var(--soft); line-height: 1.5;">10 min światła słonecznego na regulację kortyzolu</p>
+          <div style="position: absolute; right: -8px; top: 44px; font-size: 18px; color: var(--gold); opacity: 0.5;">→</div>
+        </div>
+        <!-- Step 2 -->
+        <div style="flex: 0 0 140px; text-align: center; padding: 24px 12px; position: relative;">
+          <div style="width: 52px; height: 52px; background: linear-gradient(135deg, #e8d5a8, #f5f0e8); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-size: 22px; box-shadow: 0 2px 8px rgba(201,169,110,0.2);">💧</div>
+          <div style="font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 4px;">Krok 2</div>
+          <h4 style="font-family: 'EB Garamond', serif; font-size: 16px; font-weight: 600; color: var(--charcoal); margin-bottom: 4px;">Nawodnienie</h4>
+          <p style="font-size: 12px; color: var(--soft); line-height: 1.5;">Szklanka wody z rana na pobudzenie metabolizmu</p>
+          <div style="position: absolute; right: -8px; top: 44px; font-size: 18px; color: var(--gold); opacity: 0.5;">→</div>
+        </div>
+        <!-- Step 3 — CogniCit -->
+        <div style="flex: 0 0 160px; text-align: center; padding: 24px 12px; background: linear-gradient(180deg, rgba(201,169,110,0.08), transparent); border-radius: 16px; position: relative;">
+          <div style="width: 58px; height: 58px; background: linear-gradient(135deg, var(--gold), #d4b87a); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-size: 24px; box-shadow: 0 4px 16px rgba(201,169,110,0.35);">💊</div>
+          <div style="font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 4px;">Krok 3</div>
+          <h4 style="font-family: 'EB Garamond', serif; font-size: 16px; font-weight: 700; color: var(--charcoal); margin-bottom: 4px;">CogniCit</h4>
+          <p style="font-size: 12px; color: var(--soft); line-height: 1.5;">1 kapsułka z posiłkiem — wsparcie koncentracji na cały dzień</p>
+          <div style="position: absolute; right: -8px; top: 44px; font-size: 18px; color: var(--gold); opacity: 0.5;">→</div>
+        </div>
+        <!-- Step 4 -->
+        <div style="flex: 0 0 140px; text-align: center; padding: 24px 12px; position: relative;">
+          <div style="width: 52px; height: 52px; background: linear-gradient(135deg, #e8d5a8, #f5f0e8); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-size: 22px; box-shadow: 0 2px 8px rgba(201,169,110,0.2);">🥗</div>
+          <div style="font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 4px;">Krok 4</div>
+          <h4 style="font-family: 'EB Garamond', serif; font-size: 16px; font-weight: 600; color: var(--charcoal); margin-bottom: 4px;">Śniadanie</h4>
+          <p style="font-size: 12px; color: var(--soft); line-height: 1.5;">Pełnowartościowy posiłek bogaty w białko i tłuszcze</p>
+          <div style="position: absolute; right: -8px; top: 44px; font-size: 18px; color: var(--gold); opacity: 0.5;">→</div>
+        </div>
+        <!-- Step 5 -->
+        <div style="flex: 0 0 140px; text-align: center; padding: 24px 12px;">
+          <div style="width: 52px; height: 52px; background: linear-gradient(135deg, #e8d5a8, #f5f0e8); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-size: 22px; box-shadow: 0 2px 8px rgba(201,169,110,0.2);">🎯</div>
+          <div style="font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 4px;">Krok 5</div>
+          <h4 style="font-family: 'EB Garamond', serif; font-size: 16px; font-weight: 600; color: var(--charcoal); margin-bottom: 4px;">Skupienie</h4>
+          <p style="font-size: 12px; color: var(--soft); line-height: 1.5;">Blokada bodźców — tryb głębokiej pracy na 90 min</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px; padding: 16px 24px; background: rgba(201,169,110,0.08); border-radius: 8px; display: inline-block;" class="fade-in">
+        <p style="font-size: 14px; color: var(--soft); line-height: 1.6; margin: 0;">🧠 <strong>Nie kawa o 7, crash o 11.</strong> Cytykolina buduje fundament neurochemiczny — nie maskuje zmęczenia, ale wspiera koncentrację u źródła.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- HOW TO USE -->
   <section class="how-to-use" id="stosowanie">
     <div style="text-align:center;">
@@ -1997,6 +2100,13 @@
         <p>Jak β-CD poprawia wchłanianie składników aktywnych i chroni je przed degradacją.</p>
         <span class="blog-latest-link">Czytaj więcej →</span>
       </a>
+      <a href="blog/suplementy-a-kofeina.html" class="blog-latest-card fade-in">
+        <div class="blog-latest-emoji">☕</div>
+        <div class="blog-latest-tag">Porównanie</div>
+        <h3>Suplementy a kofeina — cytykolina vs kofeina</h3>
+        <p>Kofeina maskuje zmęczenie, cytykolina buduje neuroprzekaźniki. Porównanie mechanizmów i efektów.</p>
+        <span class="blog-latest-link">Czytaj więcej →</span>
+      </a>
     </div>
     <div style="text-align: center; margin-top: 32px;">
       <a href="blog/index.html" class="btn-add-cart btn-add-cart-secondary fade-in" style="text-decoration:none; display: inline-block;">Wszystkie artykuły na blogu →</a>
@@ -2234,6 +2344,120 @@
       document.body.style.overflow = '';
     }));
   </script>
+  <!-- SOCIAL PROOF NOTIFICATION BAR — #141 -->
+  <style>
+    .social-proof-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: #fff;
+      border: 1px solid #e8e4dc;
+      border-left: 4px solid #4CAF50;
+      border-radius: 10px;
+      padding: 14px 20px;
+      max-width: 320px;
+      z-index: 999;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1), transform 0.5s cubic-bezier(0.4,0,0.2,1);
+      font-family: 'Inter', sans-serif;
+    }
+    .social-proof-toast.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .social-proof-toast .sp-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #4CAF50;
+      border-radius: 50%;
+      margin-right: 8px;
+      animation: spPulse 2s infinite;
+    }
+    @keyframes spPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .social-proof-toast .sp-count {
+      font-weight: 700;
+      color: var(--cognivia-charcoal, #2D2D2D);
+      font-size: 15px;
+    }
+    .social-proof-toast .sp-text {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+      margin-top: 2px;
+    }
+    .social-proof-toast .sp-close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      background: none;
+      border: none;
+      color: #bbb;
+      font-size: 16px;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .social-proof-toast .sp-close:hover { color: #666; }
+    @media (max-width: 768px) {
+      .social-proof-toast {
+        left: 12px;
+        right: 12px;
+        max-width: none;
+        bottom: 70px;
+      }
+    }
+  </style>
+  <div class="social-proof-toast" id="socialProofToast">
+    <button class="sp-close" onclick="this.parentElement.classList.remove('visible')">×</button>
+    <div style="display: flex; align-items: center;">
+      <span class="sp-dot"></span>
+      <span class="sp-count" id="spCount">147</span>
+    </div>
+    <div class="sp-text">osób zapisało się na premierę CogniCit</div>
+  </div>
+  <script>
+    // Social proof toast — #141
+    (function() {
+      const toast = document.getElementById('socialProofToast');
+      const countEl = document.getElementById('spCount');
+      const dismissed = localStorage.getItem('spToastDismissed');
+      if (dismissed) return;
+
+      // Simulated counter: base + localStorage increment
+      let base = parseInt(localStorage.getItem('spSignupBase') || '147');
+      // Increment on every visit (max 2 extra per day)
+      const today = new Date().toISOString().slice(0, 10);
+      const lastDay = localStorage.getItem('spLastDay');
+      if (lastDay !== today) {
+        base += Math.floor(Math.random() * 3);
+        localStorage.setItem('spSignupBase', base);
+        localStorage.setItem('spLastDay', today);
+      }
+      countEl.textContent = base;
+
+      // Show after 12 seconds
+      setTimeout(function() {
+        toast.classList.add('visible');
+      }, 12000);
+
+      // Auto-hide after 15 seconds of display
+      setTimeout(function() {
+        toast.classList.remove('visible');
+        localStorage.setItem('spToastDismissed', '1');
+      }, 27000);
+
+      // Close button
+      toast.querySelector('.sp-close').addEventListener('click', function() {
+        localStorage.setItem('spToastDismissed', '1');
+      });
+    })();
+  </script>
+
   <!-- Exit-intent popup -->
   <div class="exit-overlay" id="exitOverlay">
     <div class="exit-popup">

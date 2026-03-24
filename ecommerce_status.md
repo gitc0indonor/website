@@ -1,5 +1,5 @@
 # Ecommerce Status — Cognivia / CogniCit
-## Last Audit: 2026-03-23 23:48 UTC
+## Last Audit: 2026-03-24 03:21 UTC
 
 ---
 
@@ -17,11 +17,9 @@
 | **Payment gateway** | ❌ **NOT INTEGRATED** | PayU/Przelewy24/BLIK/PayPal listed in UI but no real gateway connection |
 
 ### 🔴 CRITICAL: NOT TRULY BUYABLE
-The cart and checkout work as a UI demo. Orders go to `localStorage` and are never sent to a server. To become buyable, need:
-1. Formspree endpoint (quick fix — needs real form ID, current one is placeholder)
-2. Real payment gateway integration (PayU merchant account or Stripe/P24)
-3. Order confirmation emails
-4. Inventory tracking
+The cart and checkout work as a UI demo. Orders go to `localStorage` and are never sent to a server. No Formspree endpoint, no fetch() calls, no XMLHttpRequest. `submitOrder()` saves to localStorage and redirects to confirmation — that's it.
+
+**Current flow:** User fills form → JS creates order object → saves to localStorage → redirects to confirmation page. **Nobody receives the order.**
 
 ### ⚠️ Free Shipping Threshold
 - Verified consistent: 120 zł InPost/Poczta, 150 zł DPD across all pages ✅
@@ -39,10 +37,14 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 | Benefits (5+) | ✅ | 5 korzyści: funkcje poznawcze, antyoksydanty, energia, synergia, biodostępność |
 | Warnings / ostrzeżenia | ✅ | 7 warnings including pregnancy, medication interactions |
 | Storage instructions | ✅ | Temp 15-25°C, protect from light/moisture, use within 3 months |
-| Product images | ⚠️ PLACEHOLDER | Only 1 placeholder image path — need 4-6 real photos |
+| Product images | ⚠️ EMOJI PLACEHOLDERS | 4 gallery slots with emoji placeholders — no real product photos |
 | Category | ✅ | "Suplementy diety" in schema + meta |
 | Tags | ⚠️ PARTIAL | No explicit tag system, but ingredient pages cross-linked |
 | SEO (meta, OG, schema) | ✅ | Product JSON-LD with Offer, aggregateRating (4.8/5, 47 reviews), OG tags, canonical, hreflang |
+| FAQ on product page | ✅ | FAQPage JSON-LD + visible accordion (7 Q&As) |
+| Sticky sidebar (desktop) | ✅ | Floating mini-cart + buy button after 400px scroll |
+| Floating CTA (mobile) | ✅ | Fixed bottom bar with price + "Zamów teraz" |
+| Satisfaction guarantee | ✅ | 30-day money-back section with 3-step process |
 
 ---
 
@@ -77,22 +79,25 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 
 | Element | Status | Location |
 |---------|--------|----------|
-| GMP badge | ✅ Text mention | produkt.html, kasa.html, footer |
+| GMP badge | ✅ Text + page | produkt.html, kasa.html, footer, certyfikaty.html |
 | Lab-tested badge | ✅ Text mention | produkt.html, kasa.html |
 | Money-back guarantee (30 dni) | ✅ Text + page | produkt.html, zwroty.html |
-| Secure checkout (SSL) | ✅ Text mention | kasa.html header, buy section |
+| Secure checkout (SSL) | ✅ Text mention | kasa.html header |
 | Legal disclaimer | ✅ | Legal bar on produkt.html, footer |
 | EU regulation compliance | ✅ | WE 1924/2006, WE 1169/2011 cited |
-| Certificates page | ✅ | certyfikaty.html — GMP, lab results, GIS registration |
-| Trust bar on checkout | ✅ | 4 trust badges (SSL, GMP, 30 dni, PL) |
-| Satisfaction guarantee section | ✅ | produkt.html — 3-step return process |
+| Certificates page | ✅ | certyfikaty.html |
+| Trust bar on checkout | ✅ | 4 trust badges |
+| Satisfaction guarantee section | ✅ | produkt.html |
+| Star rating (visible) | ✅ | produkt.html hero section |
+| Review cards | ✅ | index.html trust section |
+| Certifications logos | ✅ | "Zaufali nam" section on index.html |
 
 ### ⚠️ Missing Trust Elements
-- No actual GMP certificate image/PDF download (only text descriptions)
-- No actual lab test result document (only CoA template)
-- No customer reviews/testimonials section with real names
-- No Trustpilot or external review link
-- No star ratings visible on product page (aggregateRating in schema only)
+- No actual GMP certificate PDF download (page structure ready)
+- No actual lab test result PDF (CoA template only)
+- No customer reviews with real names/photos
+- No Trustpilot or external review integration
+- No verified purchase badges
 
 ---
 
@@ -100,36 +105,51 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 
 | Page | File | Status | RODO/GDPR |
 |------|------|--------|-----------|
-| FAQ | faq.html | ✅ 15 Q&As, accordion, categorized | N/A |
-| Shipping Policy | dostawa.html | ✅ All methods, free thresholds, tracking | N/A |
+| FAQ (general) | faq.html | ✅ 15 Q&As + related questions | N/A |
+| FAQ (product) | faq-produkt.html | ✅ 20 Q&As, 4 categories | N/A |
+| Shipping Policy | dostawa.html | ✅ All methods, free thresholds | N/A |
 | Return Policy | zwroty.html | ✅ 14-day statutory + 30-day guarantee | N/A |
-| Privacy Policy (RODO) | polityka-prywatnosci.html | ✅ RODO/GDPR compliant (7 refs) | ✅ Full |
-| Terms & Conditions | regulamin.html | ✅ Company name: Cognivia | ✅ Full |
-| Contact | kontakt.html | ✅ Form + email + GDPR notice | ✅ Full |
-| Cookie Policy | polityka-cookies.html | ✅ Exists | ✅ Full |
+| Privacy Policy (RODO) | polityka-prywatnosci.html | ✅ Full RODO compliance | ✅ |
+| Terms & Conditions | regulamin.html | ✅ Cognivia company details | ✅ |
+| Contact | kontakt.html | ✅ Form + email + GDPR notice | ✅ |
+| Cookie Policy | polityka-cookies.html | ✅ 12 sections + interactive banner | ✅ |
 
 ---
 
-## 6. TECHNICAL SEO
+## 6. CONTENT & SEO PAGES
 
-| Element | Status |
-|---------|--------|
-| Canonical URLs | ✅ All pages |
-| hreflang="pl" | ✅ All pages |
-| JSON-LD schemas | ✅ Product, BreadcrumbList, FAQPage, Article, HowTo |
-| OG tags | ✅ Index + produkt |
-| Sitemap.xml | ✅ |
-| Robots.txt | ✅ |
-| Lazy loading | ✅ content-visibility: auto on 12 pages |
-| Preload fonts | ✅ 11 key pages |
+| Page | Status | Notes |
+|------|--------|-------|
+| /produkt (main product) | ✅ Full | Gallery, calculator, FAQ, sticky sidebar, mobile CTA |
+| /skladniki (ingredients hub) | ✅ | 3 ingredient cards, comparison table |
+| /kwas-alfa-liponowy | ✅ | Individual ingredient page |
+| /cytykolina | ✅ | Individual ingredient page |
+| /beta-cyklodekstryna | ✅ | Individual ingredient page |
+| /skutki-uboczne | ✅ | Safety/contraindications |
+| /skutki-uboczne-nootropiki | ✅ | Broader nootropic safety |
+| /porownanie | ✅ | Comparison widget, 3 tabs |
+| /jak-stosowac | ✅ | Usage guide |
+| /jak-wybrac-suplement | ✅ | Buyer checklist |
+| /jak-czytac-etykiety | ✅ | Label reading guide |
+| /jak-zamowic | ✅ | How to order guide |
+| /certyfikaty | ✅ | GMP, lab, GIS, EU compliance |
+| /kontakt | ✅ | Contact form |
+| /blog/ (index) | ✅ | 6 blog posts |
+| /blog/cytykolina | ✅ | Blog article |
+| /blog/antyoksydanty | ✅ | Blog article |
+| /blog/beta-cyklodekstryna | ✅ | Blog article |
+| /blog/suplement-vs-lek | ✅ | Blog article |
+| /blog/praca-zdalna | ✅ | Blog article |
+| /blog/suplementy-a-kofeina | ✅ | Blog article (newest) |
+| /faq-produkt | ✅ | Product-specific FAQ |
 
 ---
 
 ## 7. SUMMARY — IS COGNICIT BUYABLE?
 
-**NO — ⚠️ FRONTEND DEMO ONLY**
+**NO — ⚠️ FRONTEND DEMO ONLY (unchanged since last audit)**
 
-The entire frontend cart/checkout flow is polished and functional:
+The entire frontend cart/checkout flow is polished:
 - ✅ Adding to cart, quantity management
 - ✅ Shipping selection with free thresholds
 - ✅ Payment method selection
@@ -138,28 +158,27 @@ The entire frontend cart/checkout flow is polished and functional:
 - ✅ Confirmation page
 
 **But orders are NOT processed:**
-- ❌ Orders saved to browser localStorage only
-- ❌ No server receives order data
+- ❌ `submitOrder()` saves to localStorage only — no fetch(), no API call, no email
+- ❌ No Formspree endpoint configured (placeholder noted in previous audit, never integrated)
 - ❌ No payment gateway connected
-- ❌ No email confirmation sent
+- ❌ No email confirmation sent to customer or business
 - ❌ Orders lost on browser data clear
-
-**To make it truly buyable (minimum viable):**
-1. **Formspree integration** — Replace placeholder with real form endpoint to receive orders via email (~30 min work once account is created)
-2. **PayU or Przelewy24 merchant account** — Apply, integrate redirect (~1-2 weeks for approval + integration)
-3. **Order confirmation email** — Auto-send to customer after submission
 
 ---
 
-## 8. IMPROVEMENTS ADDED THIS AUDIT (2026-03-23 16:48)
+## 8. IMPROVEMENTS ADDED THIS AUDIT (2026-03-24 03:21)
 
-1. ✅ Re-audited full ecommerce stack — all pages present and functional
-2. ✅ Verified free shipping thresholds consistent across all pages (120/150 zł)
-3. ✅ Confirmed policy pages complete (FAQ, shipping, returns, RODO, T&C, cookies, contact)
-4. ✅ Added 3 new improvements to queue (#94-96)
+1. ✅ Full re-audited ecommerce stack — all pages present and functional
+2. ✅ Verified cart JS: shipping, payment, VAT all consistent
+3. ✅ Confirmed submitOrder() is localStorage-only (no backend change since last audit)
+4. ✅ Confirmed all policy pages exist and are RODO-compliant
+5. ✅ Verified improvement queue has 141 items, ~40 still active/NEW
+6. ✅ Added 3 new improvements to queue (#142-144)
 
-## 9. NEW IMPROVEMENTS QUEUED (#94-96)
+## 9. NEW IMPROVEMENTS QUEUED (#142-144)
 
-94. **Add visible star rating to produkt.html hero section** — Display "★★★★★ 4.8/5 (47 opinii)" below product name, linking to reviews section. Currently only in JSON-LD schema, invisible to users. Boosts conversion trust immediately.
-95. **Create order email notification script (Formspree fallback)** — Set up a simple serverless function or Formspree form that emails cognivia.business@outlook.com when checkout is submitted, even before real payment gateway. Ensures no order is truly lost.
-96. **Add product image gallery with zoom on produkt.html** — Replace single placeholder with 4-image gallery (front, back, ingredients closeup, capsule detail), click-to-zoom lightbox, swipeable on mobile. Visual trust + conversion boost.
+142. **CRITICAL: Wire submitOrder() to Formspree endpoint** — Replace localStorage-only order save with actual Formspree POST to cognivia.business@outlook.com. Minimal change: add fetch('https://formspree.io/f/REAL_FORM_ID', {method:'POST', body:JSON.stringify(order)}) before localStorage save. This is the single biggest conversion blocker — orders currently vanish into the void. CEO must create Formspree account and provide form ID.
+
+143. **Add real product photos to gallery** — Replace 4 emoji placeholders (📦💊🧬🔬) with actual product photography. Even smartphone photos of the box/capsules would massively improve conversion trust. Current gallery has lightbox/zoom JS ready, just needs real image files in /assets/.
+
+144. **Create "Ranking nootropików 2026" SEO landing page** — Target high-volume Polish keyword "ranking suplementów na koncentrację" / "najlepszy nootropik Polska". Comparison table positioning CogniCit as the transparent, GMP-certified, EU-compliant choice vs competitors. Drives organic traffic to the product page. Estimated 2-3K monthly searches in Poland.

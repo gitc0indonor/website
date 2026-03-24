@@ -702,6 +702,30 @@
 **Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, nauka.html, porownanie.html
 **Status:** Outline ready, needs writing
 
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #26)
+**Title:** Nootropiki a sen — jak suplementacja wpływa na jakość snu?
+**Target:** Polish audience, SEO / sleep / trust-building
+**Word count:** 1500-2000
+**Keywords:** nootropiki sen, suplementy a sen, suplement na koncentrację bezsenność, cytykolina sen, jak suplementy wpływają na sen
+
+**Outline:**
+1. **Wstęp** — Czy suplementy na koncentrację wpływają na sen? Popularny mit o nootropikach i bezsenności
+2. **Jak sen wpływa na funkcje poznawcze?** — Fazy snu, konsolidacja pamięci, oczyszczanie mózgu (glimfatyczny system), acetylocholina w REM
+3. **Stymulanty vs. nootropiki — kluczowa różnica** — Kofeina blokuje adenozynę → zakłóca sen. Cytykolina działa na inną ścieżkę → nie wpływa na senność
+4. **Czy cytykolina zaburza sen?** — Przegląd badań: brak dowodów na wpływ na architekturę snu w zalecanych dawkach
+5. **ALA a nocna regeneracja** — Antyoksydacja mitochondriów podczas snu — ochrona neuronów w fazie odpoczynku
+6. **CogniCit — dlaczego rano, nie wieczorem?** — Zalecenie porannego dawkowania, brak stymulantów, brak ryzyka bezsenności
+7. **Porównanie: suplementy na koncentrację a sen** — Tabela: CogniCit (rano, bez wpływu na sen) vs. kofeinowe nootropiki (ryzyko bezsenności) vs. multi-nootropiki (nieznane interakcje)
+8. **Jak zadbać o sen + suplementację?** — 5 zasad higieny snu, kiedy brać suplementy, kiedy konsultować z lekarzem
+9. **Podsumowanie** — CogniCit: wsparcie za dnia, spokój w nocy. Zero stymulantów = zero ryzyka dla snu.
+
+**CTA:** Zamów CogniCit — link do produkt.html (79 zł, 30-dniowa gwarancja)
+**Internal links:** produkt.html, blog/cytykolina.html, jak-stosowac.html, faq-produkt.html, skutki-uboczne-nootropiki.html
+**Target platforms:** Google (SEO), Wykop, grupy Facebook o suplementacji
+**Status:** Outline ready, needs writing
+
+---
+
 ### New Blog Post Outline (Added 2026-03-24 — Power Cycle #25)
 **Title:** Suplementy dla programistów — jak zadbać o mózg przy 8h przed ekranem?
 **Target:** Polish audience, SEO / tech community / developer lifestyle
@@ -722,4 +746,93 @@
 **CTA:** Zamów CogniCit — link do produkt.html (79 zł, 30-dniowa gwarancja)
 **Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, nauka.html, porownanie.html, skladniki.html
 **Target platforms:** Wykop, LinkedIn, dev.to (Polish), Twitter/X developer community
+**Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #27)
+**Title:** Suplementy a kofeina — cytykolina vs kofeina na koncentrację
+**Target:** Polish audience, SEO for "kofeina a suplementy", "cytykolina vs kofeina", "alternatywa dla kawy"
+**Word count:** 1800-2200
+**Keywords:** kofeina suplementy, cytykolina vs kofeina, alternatywa dla kawy, suplement na koncentrację bez kofeiny, nootropiki bez kofeiny
+
+**Outline:**
+1. **Wstęp** — Kultura picia kawy w Polsce (80% dorosłych), pytanie czy kofeina to jedyne narzędzie na koncentrację
+2. **Jak działa kofeina** — mechanizm blokowania adenozyny, cykl 0-6h, crash, tolerancja, wpływ na sen
+3. **Jak działa cytykolina** — mechanizm budowania acetylocholiny, podwójny efekt (cholina + cytydyna), kumulatywny efekt
+4. **Porównanie: tabela 8 kryteriów** — mechanizm, czas działania, crash, tolerancja, sen, uzależnienie, interakcje, pamięć
+5. **Nie chodzi o eliminację kawy** — kawa ma korzyści, ale nie powinna być jedynym narzędziem
+6. **Cytykolina w CogniCit** — 300 mg + synergia z ALA i β-CD
+7. **Dla kogo** — osoby pijące 3+ kaw, problemy ze snem, nadciśnienie, programiści, studenci
+8. **Podsumowanie** — kofeina = natychmiastowa energia, cytykolina = trwała koncentracja
+
+**CTA:** Poznaj CogniCit → produkt.html
+**Internal links:** blog/cytykolina.html, porownanie.html, produkt.html, blog/poranne-nawyki-programisty.html
+**Status:** WRITTEN — blog/suplementy-a-kofeina.html created (21KB), Power Cycle #27
+
+---
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #27)
+**Title:** Kofeina w liczbach — ile pijesz i czy to za dużo?
+**Target:** Polish audience, SEO for "ile kofeiny w kawie", "dzienna dawka kofeiny", "przedawkowanie kofeiny"
+**Word count:** 1200-1500
+**Keywords:** ile kofeiny w kawie, dzienna dawka kofeiny, przedawkowanie kofeiny, kofeina bezpieczna dawka
+
+**Outline:**
+1. **Wstęp** — Polacy piją ~3-4 filiżanki dziennie, ale nie wiedzą ile kofeiny to jest
+2. **Kofeina w popularnych napojach** — tabela: espresso (80mg), czarna herbata (50mg), energy drink (80-160mg), cola (35mg)
+3. **Bezpieczna dawka EFSA** — 400 mg/dobę dla dorosłych, 200 mg pojedyncza porcja
+4. **Kalkulator** — "ile kofeiny dziennie?" interaktywna sekcja (wyzwanie do zrobienia na stronie)
+5. **Objawy przedawkowania** — drżenie, tachykardia, lęk, bezsenność
+6. **Kiedy sięgnąć po alternatywę** — cytykolina jako wsparcie koncentracji bez stymulacji
+7. **CogniCit** — zero kofeiny, 3 synergistyczne składniki
+
+**CTA:** Sprawdź CogniCit — bez kofeiny, z naukowym wsparciem koncentracji
+**Status:** Outline ready
+
+---
+
+### New Blog Post Outline (Added 2026-03-24)
+**Title:** Suplementy dla seniorów — jak dbać o pamięć i koncentrację po 50-tce?  
+**Target:** Polish 50+ demographic, family members buying for parents  
+**Word count:** 1500-2000  
+**Keywords:** suplementy dla seniorów, suplementy pamięć po 50, nootropiki starsi, demencja profilaktyka suplementy, cytykolina senior  
+
+**Outline:**
+1. **Wstęp** — Zmiany poznawcze po 50. roku życia — normalne starzenie się vs. powód do niepokoju
+2. **Dlaczego pamięć się pogarsza?** — Spadek acetylocholiny, stres oksydacyjny, neuroplastyczność
+3. **3 składniki, które mają znaczenie**
+   - Cytykolina — prekursor acetylocholiny, neuroprotekcja (200+ publikacji PubMed)
+   - Kwas alfa-liponowy — antyoksydant chroniący neurony przed wolnymi rodnikami
+   - β-cyklodekstryna — zwiększa biodostępność obu składników
+4. **Co mówią badania?** — Wybrane meta-analizy i przeglądy kliniczne dot. cytykoliny u osób starszych
+5. **Czego unikać?** — Suplementy z kofeiną dla seniorów (interakcje z lekami, ciśnienie), podejrzane "cudowne" preparaty
+6. **Dlaczego CogniCit?** — 3 składniki, precyzyjne dawki, GMP, GIS, zero kofeiny, bezpieczny profil
+7. **Jak stosować?** — 1 kapsułka rano z posiłkiem, konsultacja z lekarzem przy lekach
+8. **Podsumowanie** — Prosty, bezpieczny sposób na wsparcie funkcji poznawczych
+
+**CTA:** Email signup / Sprawdź CogniCit — suplement oparty na nauce  
+**Internal links:** produkt.html, cytykolina.html, kwas-alfa-liponowy.html, nauka.html, faq-produkt.html  
+**SEO angle:** "suplementy dla seniorów" — 1K+ monthly searches in Poland, growing with aging population  
+**Status:** Outline ready, needs writing  
+
+### New Blog Post Outline (Added 2026-03-24)
+**Title:** Czy suplementy naprawdę działają? Fakty, mity i dowody naukowe
+**Target:** Skeptical Polish audience searching "czy suplementy działają", "suplementy diety opinie", "nootropiki prawda"
+**Word count:** 1800-2200
+**Keywords:** suplementy diety działają, czy suplementy pomagają, nootropiki opinie, suplementy dowody naukowe, cytykolina badania, suplement placebo
+
+**Outline:**
+1. **Wstęp** — Dlaczego warto krytycznie podchodzić do suplementów? Rynek suplementów w Polsce rośnie, ale nie każdy produkt jest wart zaufania
+2. **Skąd się bierze sceptycyzm?** — Nadużycia marketingowe, „cudowne" preparaty, brak regulacji w niektórych krajach
+3. **Co mówi prawo UE?** — Suplement diety ≠ lek. Rozporządzenie 1924/2006 — co wolno, a czego nie wolno twierdzić
+4. **Kiedy suplement ma sens?** — 3 warunki: (a) składnik z badaniami klinicznymi, (b) dawka zgodna z badaniami, (c) jakość potwierdzona (GMP, CoA)
+5. **Przykład: cytykolina** — 233 publikacji PubMed, dawki 250-2000 mg w badaniach, meta-analizy dotyczące funkcji poznawczych
+6. **Przykład: kwas alfa-liponowy** — 113 publikacji, unikalna podwójna rozpuszczalność, rola w mitochondriach
+7. **Placebo i oczekiwanie** — Uczciwe omówienie efektu placebo, dlaczego badania kontrolowane placebo są ważne
+8. **Jak odróżnić dobry suplement od złego?** — Checklist: GMP, GIS, CoA, transparentność składu, rozsądne oświadczenia
+9. **CogniCit — case study** — Jak CogniCit spełnia wszystkie 3 warunki: badane składniki, kliniczne dawki, certyfikowana produkcja
+10. **Podsumowanie** — Suplementy nie są magią. Mogą wspierać, jeśli są oparte na nauce. Wybieraj mądrze.
+
+**CTA:** Sprawdź skład CogniCit / Zapisz się na premierę
+**Internal links:** nauka.html, produkt.html, cytykolina.html, kwas-alfa-liponowy.html, certyfikaty.html, porownanie.html
+**SEO angle:** "czy suplementy działają" — high-volume skeptic query. Positions Cognivia as the transparent, evidence-based brand. Converts skeptics by meeting them where they are.
 **Status:** Outline ready, needs writing
