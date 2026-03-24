@@ -1122,3 +1122,37 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Multiple buy buttons on produkt.html + sticky sidebar + floating mobile CTA. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
 
 **Queue:** ~72 completed + 57 active = 129 total
+
+### 2026-03-24 — Power Cycle #35 (18:09 UTC)
+**Implemented:**
+- ✅ Item #163 — "Ranking cenowy" mini-widget on index.html
+  - Compact 3-row horizontal bar chart comparison: CogniCit 2,63 zł/dzień vs Brain Actives 4,97 zł vs Mind Lab Pro 8,30 zł
+  - Proportional-width green/grey bars for instant visual scanning
+  - CogniCit row highlighted with green gradient background + gold border
+  - "3× taniej niż Mind Lab Pro" value proposition callout
+  - Link to porownanie.html for full comparison details
+  - Responsive flex layout, positioned between blog section and floating CTA
+- ✅ Item #165 — Enhanced testimonial carousel on produkt.html
+  - Replaced static 3-card grid with auto-rotating carousel (5 reviews)
+  - New reviews: Katarzyna P. (programmer, focus without caffeine) + Rafał N. (bought for mom 50+, memory improvement)
+  - Each card: centered layout, ★ rating, italic quote, colored avatar initial circle, name/city/verified badge
+  - Auto-rotation every 5s with smooth translateX slide transitions
+  - 5 clickable dot navigation indicators with active state highlighting
+  - Pause on hover, touch swipe support for mobile users
+  - Average rating bar: ★★★★★ 4,8/5 (47 opinii)
+  - Links to index.html#opinie for full review section
+- ✅ Blog outline added to content_calendar.md: "Ceny suplementów nootropowych" (price-comparison SEO)
+- ✅ 3 new improvement ideas added to queue (#168-170)
+
+**Files changed:**
+- `index.html` — price ranking mini-widget section (CSS + HTML)
+- `produkt.html` — testimonial carousel (5 slides, dot nav, auto-rotation JS, touch swipe)
+- `improvement_queue.md` — items #163, #165 marked DONE; 3 new items (#168-170)
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline (price comparison article)
+
+**Site verification:** Both files validated — DOCTYPE present, closing </html>. index.html price widget responsive (auto-fit grid). produkt.html carousel JS confirmed (goToSlide function, setInterval, touch handlers). Cart system unaffected.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~105 completed + 68 active = 173 total

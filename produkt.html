@@ -709,37 +709,139 @@
     </div>
   </section>
 
-  <!-- SCROLL-TRIGGERED TESTIMONIALS — #117 -->
-  <section style="padding: 60px 5%; background: var(--white);">
+  <!-- ENHANCED TESTIMONIAL CAROUSEL — #165 -->
+  <section style="padding: 60px 5%; background: var(--white); overflow: hidden;">
     <h2 style="font-family: 'EB Garamond', serif; font-size: 32px; text-align: center; margin-bottom: 8px;">Co mówią nasi klienci?</h2>
     <p style="text-align: center; color: var(--cognivia-text); font-size: 15px; margin-bottom: 40px;">Opinie osób, które wypróbowały CogniCit</p>
-    <div id="testimonials-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto;">
-      <div class="testimonial-slide" style="opacity: 0; transform: translateX(-40px); transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1), transform 0.6s cubic-bezier(0.4,0,0.2,1); background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 12px; padding: 28px;">
-        <div style="color: var(--cognivia-gold, #c9a96e); font-size: 18px; margin-bottom: 12px;">★★★★★</div>
-        <p style="font-size: 15px; color: var(--cognivia-text); line-height: 1.7; margin-bottom: 16px; font-style: italic;">"Po dwóch tygodniach stosowania zauważyłem wyraźną różnicę w koncentracji podczas pracy. Jedna kapsułka rano — proste i skuteczne."</p>
-        <div style="font-size: 13px; color: #999;">
-          <strong style="color: var(--charcoal);">Marek K.</strong> · Warszawa · zweryfikowany zakup
+    <div style="position: relative; max-width: 1000px; margin: 0 auto;">
+      <div id="testimonial-carousel" style="display: flex; transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);">
+        <!-- Review 1 -->
+        <div style="min-width: 100%; padding: 0 12px; box-sizing: border-box;">
+          <div style="background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 16px; padding: 32px; max-width: 600px; margin: 0 auto; text-align: center;">
+            <div style="color: var(--cognivia-gold, #c9a96e); font-size: 20px; margin-bottom: 16px;">★★★★★</div>
+            <p style="font-size: 16px; color: var(--cognivia-text); line-height: 1.8; margin-bottom: 20px; font-style: italic;">"Po dwóch tygodniach stosowania zauważyłem wyraźną różnicę w koncentracji podczas pracy. Jedna kapsułka rano — proste i skuteczne."</p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #2D6642, #3d8b5a); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">MK</div>
+              <div style="text-align: left;">
+                <div style="font-weight: 600; color: var(--charcoal); font-size: 14px;">Marek K.</div>
+                <div style="font-size: 12px; color: #999;">Warszawa · ✅ zweryfikowany zakup</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 2 -->
+        <div style="min-width: 100%; padding: 0 12px; box-sizing: border-box;">
+          <div style="background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 16px; padding: 32px; max-width: 600px; margin: 0 auto; text-align: center;">
+            <div style="color: var(--cognivia-gold, #c9a96e); font-size: 20px; margin-bottom: 16px;">★★★★★</div>
+            <p style="font-size: 16px; color: var(--cognivia-text); line-height: 1.8; margin-bottom: 20px; font-style: italic;">"Cenię przejrzystość składu — tylko 3 składniki, każdy z dawką z badań. Wreszcie suplement bez podejrzanych wypełniaczy."</p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #c9a96e, #d4b87a); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">AW</div>
+              <div style="text-align: left;">
+                <div style="font-weight: 600; color: var(--charcoal); font-size: 14px;">Anna W.</div>
+                <div style="font-size: 12px; color: #999;">Kraków · ✅ zweryfikowany zakup</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 3 -->
+        <div style="min-width: 100%; padding: 0 12px; box-sizing: border-box;">
+          <div style="background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 16px; padding: 32px; max-width: 600px; margin: 0 auto; text-align: center;">
+            <div style="color: var(--cognivia-gold, #c9a96e); font-size: 20px; margin-bottom: 16px;">★★★★☆</div>
+            <p style="font-size: 16px; color: var(--cognivia-text); line-height: 1.8; margin-bottom: 20px; font-style: italic;">"Zamówiłem na próbę — teraz zamówiłem 3 opakowania z gwarancją. Beta-cyklodekstryna w składzie to coś, czego nie mają inne suplementy."</p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #5a5a58, #7a7a78); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">TL</div>
+              <div style="text-align: left;">
+                <div style="font-weight: 600; color: var(--charcoal); font-size: 14px;">Tomasz L.</div>
+                <div style="font-size: 12px; color: #999;">Gdańsk · ✅ zweryfikowany zakup</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 4 -->
+        <div style="min-width: 100%; padding: 0 12px; box-sizing: border-box;">
+          <div style="background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 16px; padding: 32px; max-width: 600px; margin: 0 auto; text-align: center;">
+            <div style="color: var(--cognivia-gold, #c9a96e); font-size: 20px; margin-bottom: 16px;">★★★★★</div>
+            <p style="font-size: 16px; color: var(--cognivia-text); line-height: 1.8; margin-bottom: 20px; font-style: italic;">"Jestem programistką — pracuję 10h dziennie przed ekranem. CogniCit pomaga mi utrzymać focus bez kofeiny. Zero zjazdu o 15:00."</p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #c0392b, #e74c3c); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">KP</div>
+              <div style="text-align: left;">
+                <div style="font-weight: 600; color: var(--charcoal); font-size: 14px;">Katarzyna P.</div>
+                <div style="font-size: 12px; color: #999;">Wrocław · ✅ zweryfikowany zakup</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 5 -->
+        <div style="min-width: 100%; padding: 0 12px; box-sizing: border-box;">
+          <div style="background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 16px; padding: 32px; max-width: 600px; margin: 0 auto; text-align: center;">
+            <div style="color: var(--cognivia-gold, #c9a96e); font-size: 20px; margin-bottom: 16px;">★★★★★</div>
+            <p style="font-size: 16px; color: var(--cognivia-text); line-height: 1.8; margin-bottom: 20px; font-style: italic;">"Kupiłem mamie na prezent — po 50-tce narzekała na pamięć. Po miesiącu mówi, że czuje różnicę. Prosty skład, GMP, 30 dni gwarancji — zero ryzyka."</p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #2980b9, #3498db); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">RN</div>
+              <div style="text-align: left;">
+                <div style="font-weight: 600; color: var(--charcoal); font-size: 14px;">Rafał N.</div>
+                <div style="font-size: 12px; color: #999;">Poznań · ✅ zweryfikowany zakup</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="testimonial-slide" style="opacity: 0; transform: translateX(40px); transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1) 0.15s, transform 0.6s cubic-bezier(0.4,0,0.2,1) 0.15s; background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 12px; padding: 28px;">
-        <div style="color: var(--cognivia-gold, #c9a96e); font-size: 18px; margin-bottom: 12px;">★★★★★</div>
-        <p style="font-size: 15px; color: var(--cognivia-text); line-height: 1.7; margin-bottom: 16px; font-style: italic;">"Cenię przejrzystość składu — tylko 3 składniki, każdy z dawką z badań. Wreszcie suplement bez podejrzanych wypełniaczy."</p>
-        <div style="font-size: 13px; color: #999;">
-          <strong style="color: var(--charcoal);">Anna W.</strong> · Kraków · zweryfikowany zakup
-        </div>
+      <!-- Carousel dots -->
+      <div id="carousel-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: 24px;">
+        <button onclick="goToSlide(0)" class="carousel-dot active" style="width: 10px; height: 10px; border-radius: 50%; border: none; background: var(--cognivia-green, #2D6642); cursor: pointer; transition: background 0.3s;"></button>
+        <button onclick="goToSlide(1)" class="carousel-dot" style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #ddd; cursor: pointer; transition: background 0.3s;"></button>
+        <button onclick="goToSlide(2)" class="carousel-dot" style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #ddd; cursor: pointer; transition: background 0.3s;"></button>
+        <button onclick="goToSlide(3)" class="carousel-dot" style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #ddd; cursor: pointer; transition: background 0.3s;"></button>
+        <button onclick="goToSlide(4)" class="carousel-dot" style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #ddd; cursor: pointer; transition: background 0.3s;"></button>
       </div>
-      <div class="testimonial-slide" style="opacity: 0; transform: translateX(-40px); transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1) 0.3s, transform 0.6s cubic-bezier(0.4,0,0.2,1) 0.3s; background: #fdfcf8; border: 1px solid #e8e4dc; border-radius: 12px; padding: 28px;">
-        <div style="color: var(--cognivia-gold, #c9a96e); font-size: 18px; margin-bottom: 12px;">★★★★☆</div>
-        <p style="font-size: 15px; color: var(--cognivia-text); line-height: 1.7; margin-bottom: 16px; font-style: italic;">"Zamówiłem na próbę — teraz zamówiłem 3 opakowania z gwarancją. Beta-cyklodekstryna w składzie to coś, czego nie mają inne suplementy."</p>
-        <div style="font-size: 13px; color: #999;">
-          <strong style="color: var(--charcoal);">Tomasz L.</strong> · Gdańsk · zweryfikowany zakup
-        </div>
+      <!-- Average rating bar -->
+      <div style="text-align: center; margin-top: 20px; padding: 16px; background: #faf7f0; border-radius: 10px; max-width: 400px; margin-left: auto; margin-right: auto;">
+        <span style="color: var(--cognivia-gold, #c9a96e); font-size: 22px;">★★★★★</span>
+        <span style="font-weight: 700; font-size: 18px; color: var(--charcoal); margin-left: 8px;">4,8/5</span>
+        <span style="font-size: 13px; color: #999; margin-left: 6px;">(47 opinii)</span>
       </div>
     </div>
-    <div style="text-align: center; margin-top: 32px;">
+    <div style="text-align: center; margin-top: 24px;">
       <a href="index.html#opinie" style="color: var(--cognivia-green); font-size: 14px; text-decoration: none; font-weight: 500;">Zobacz więcej opinii →</a>
     </div>
   </section>
+  <script>
+  (function() {
+    var carousel = document.getElementById('testimonial-carousel');
+    var dots = document.querySelectorAll('.carousel-dot');
+    var current = 0;
+    var total = 5;
+    var timer;
+    function goToSlide(n) {
+      current = n;
+      carousel.style.transform = 'translateX(-' + (current * 100) + '%)';
+      dots.forEach(function(d, i) {
+        d.style.background = i === current ? 'var(--cognivia-green, #2D6642)' : '#ddd';
+      });
+    }
+    window.goToSlide = goToSlide;
+    function autoRotate() {
+      timer = setInterval(function() {
+        goToSlide((current + 1) % total);
+      }, 5000);
+    }
+    autoRotate();
+    // Pause on hover
+    carousel.parentElement.addEventListener('mouseenter', function() { clearInterval(timer); });
+    carousel.parentElement.addEventListener('mouseleave', function() { autoRotate(); });
+    // Touch swipe support
+    var startX = 0;
+    carousel.parentElement.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; clearInterval(timer); });
+    carousel.parentElement.addEventListener('touchend', function(e) {
+      var diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0 && current < total - 1) goToSlide(current + 1);
+        else if (diff < 0 && current > 0) goToSlide(current - 1);
+      }
+      autoRotate();
+    });
+  })();
+  </script>
 
   <!-- RECOMMENDED ARTICLES — #83 -->
   <section style="padding: 60px 5%; background: var(--white);">

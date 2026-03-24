@@ -946,3 +946,25 @@
 **Internal links:** jak-stosowac.html, suplementy-a-kofeina.html, porownanie.html, produkt.html, cytykolina.html
 **SEO angle:** Seasonal peak (Jan/Feb, May/Jun, Sep) — high-volume queries "suplement na koncentrację student", "nootropiki sesja". Estimated 1K+ monthly during exam periods.
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #35)
+**Title:** Ceny suplementów nootropowych — ile naprawdę kosztuje suplementacja mózgu?
+**Target:** Polish audience, SEO for "ceny suplementów nootropowych", "ile kosztuje suplement na koncentrację", "nootropiki cena"
+**Word count:** 1200-1600
+**Keywords:** ceny suplementów nootropowych, ile kosztuje suplement na koncentrację, nootropiki cena, suplement na pamięć cena, porównanie cen suplementów
+
+**Outline:**
+1. **Wstęp** — Polacy wydają coraz więcej na suplementy na koncentrację. Ale czy droższy = lepszy?
+2. **Ceny popularnych nootropików w Polsce** — Tabela: CogniCit (2,63 zł/dzień), Brain Actives (4,97 zł), Noocube (7,30 zł), Mind Lab Pro (8,30 zł) — cena za dzienną porcję
+3. **Co wpływa na cenę?** — Składniki, dawki, certyfikaty GMP, marża pośredników, import — analiza kosztów
+4. **Cena vs wartość** — 3 składniki w klinicznych dawkach vs 20 składników w mikrodawkach — co daje więcej za mniej?
+5. **Jak nie przepłacać?** — Kupuj bezpośrednio od producenta, sprawdzaj cenę za porcję (nie za opakowanie), porównuj dawki
+6. **CogniCit — najniższa cena od producenta** — Brak pośredników = 79 zł vs 99+ zł u resellerów
+7. **Podsumowanie** — Cena to nie wszystko, ale wartość za złotówkę już tak
+
+**CTA:** Zamów CogniCit — 79 zł, najniższa cena producenta → produkt.html
+**Internal links:** porownanie.html, produkt.html, ranking-nootropikow.html, blog/ranking-nootropikow-2026.html
+**SEO angle:** "ceny suplementów nootropowych" — price-comparison queries convert well. Positions CogniCit as best value.
+**Status:** Outline ready, needs writing
