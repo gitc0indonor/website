@@ -520,6 +520,42 @@
   </div>
 </section>
 
+<!-- YouTube Video — Lazy Load -->
+<section style="padding: 56px 5%; background: linear-gradient(135deg, #f8f5ee, #faf7f0);">
+  <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+    <div style="font-family: 'EB Garamond', serif; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: var(--cognivia-gold); margin-bottom: 8px;">Zobacz porównanie</div>
+    <h2 style="font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 600; color: var(--cognivia-charcoal); margin-bottom: 12px;">Jak wybrać suplement na koncentrację?</h2>
+    <p style="font-size: 15px; color: var(--cognivia-text); line-height: 1.7; margin-bottom: 28px;">Krótki film o tym, na co zwrócić uwagę porównując suplementy nootropowe — skład, dawki, certyfikaty i przejrzystość.</p>
+    <div class="yt-embed" style="position: relative; width: 100%; padding-bottom: 56.25%; background: #1a1a1a; border-radius: 12px; overflow: hidden; cursor: pointer; box-shadow: 0 8px 32px rgba(0,0,0,0.15);" onclick="loadYouTube(this)" data-video-id="dQw4w9WgXcQ">
+      <div class="yt-placeholder" style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #1a1a1a, #2a2a2a);">
+        <div style="width: 68px; height: 48px; background: rgba(255,0,0,0.85); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; box-shadow: 0 4px 16px rgba(255,0,0,0.3); transition: transform 0.2s ease;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <span style="color: rgba(255,255,255,0.7); font-size: 14px; font-family: 'Inter', sans-serif;">Kliknij, aby obejrzeć film</span>
+      </div>
+    </div>
+    <p style="font-size: 12px; color: var(--cognivia-text); margin-top: 12px; opacity: 0.7;">Film wyjaśnia kryteria wyboru suplementów nootropowych. Zastąp prawdziwym filmem edukacyjnym gdy będzie dostępny.</p>
+  </div>
+</section>
+
+<style>
+  .yt-embed:hover .yt-placeholder div:first-child { transform: scale(1.08); }
+</style>
+<script>
+  function loadYouTube(el) {
+    var videoId = el.getAttribute('data-video-id');
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0');
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;border-radius:12px;';
+    el.innerHTML = '';
+    el.appendChild(iframe);
+    el.style.cursor = 'default';
+  }
+</script>
+
 <!-- Gwarancja satysfakcji -->
 <section style="padding: 48px 5%; background: white; text-align: center;">
   <div style="max-width: 700px; margin: 0 auto; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; justify-content: center;">
