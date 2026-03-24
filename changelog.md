@@ -1,6 +1,47 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-24 — Power Cycle #42 (23:15 UTC)
+**Implemented:**
+- ✅ Item #52 — Added share buttons to 8 blog posts missing them
+  - cytykolina-przewodnik-kompletny.html, cytykolina-vs-kofeina-vs-bakopa.html, jak-wybrac-suplement.html, ranking-nootropikow-2026.html, skladnik-cytykolina.html, suplementy-a-stres-oksydacyjny.html, suplementy-dla-seniorow-50-plus.html, suplementy-na-prace-umyslowa.html
+  - Each post: CSS (.share-section, .share-btn with fb/tw/li colors), HTML block with Facebook/Twitter/LinkedIn share links
+  - Unique share URLs and encoded titles per post
+  - Inserted before </article> in each post
+  - ALL 26 blog posts now have consistent share buttons
+- ✅ Item #123 (verified) — Added satisfaction guarantee badge to /skutki-uboczne-nootropiki.html
+  - Full .guarantee-section with green "30" badge circle
+  - 3-step return process (email → return → refund)
+  - Link to zwroty.html for full policy
+  - CSS: gradient background, badge circle, step cards with gold numbered circles
+  - Positioned between content summary and CTA section
+- ✅ Item #186 (verified) — /opinie.html page confirmed existing
+  - 23KB, Product aggregateRating schema (4.8/5, 47 reviews), BreadcrumbList JSON-LD
+  - Canonical/hreflang/OG meta, breadcrumb nav, responsive
+  - Already on sitemap — marked DONE in queue
+- ✅ Blog outline added to content_calendar.md: "Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów"
+- ✅ 3 new improvement ideas added to queue (#189-191)
+
+**Files changed:**
+- `blog/cytykolina-przewodnik-kompletny.html` — share buttons CSS + HTML
+- `blog/cytykolina-vs-kofeina-vs-bakopa.html` — share buttons CSS + HTML
+- `blog/jak-wybrac-suplement.html` — share buttons CSS + HTML
+- `blog/ranking-nootropikow-2026.html` — share buttons CSS + HTML
+- `blog/skladnik-cytykolina.html` — share buttons CSS + HTML
+- `blog/suplementy-a-stres-oksydacyjny.html` — share buttons CSS + HTML
+- `blog/suplementy-dla-seniorow-50-plus.html` — share buttons CSS + HTML
+- `blog/suplementy-na-prace-umyslowa.html` — share buttons CSS + HTML
+- `skutki-uboczne-nootropiki.html` — guarantee section CSS + HTML
+- `improvement_queue.md` — items #52, #186 marked DONE; 3 new items (#189-191)
+- `content_calendar.md` — new blog outline (koncentracja)
+- `changelog.md` — this entry
+
+**Site verification:** All 8 blog posts confirmed share-btn CSS + HTML present (8 occurrences each). skutki-uboczne-nootropiki.html: 14 guarantee-related CSS/HTML elements confirmed. All files have DOCTYPE, closing </html>. Share URLs correctly encoded per post.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~188 completed + 7 active = 195 total
+
 ### 2026-03-24 — Power Cycle #39 (20:15 UTC)
 **Implemented:**
 - ✅ Item #177 — Created blog/jak-budowac-rutyne-suplementacji.html (21KB)

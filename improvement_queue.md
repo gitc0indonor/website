@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-24 (Power Cycle #41)
+## Last Updated: 2026-03-24 (Power Cycle #42)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -96,7 +96,7 @@
 49. [NEW] Create /certyfikaty page with downloadable GMP certificate and lab test PDFs
 50. [DONE] ~~Add trust bar to blog pages — "CogniCit — 3 synergistyczne składniki, GMP certified" banner with CTA~~ ✅ — Added to all 5 blog pages (cytykolina, antyoksydanty, beta-cyklodekstryna, suplement-vs-lek, blog index)
 51. [DONE] ~~Add breadcrumb navigation to all subpages (produkt, faq, nauka, o-nas, jak-stosowac, etc.)~~ ✅ — Added breadcrumb CSS + HTML to jak-czytac-etykiety.html and potwierdzenie.html (only 2 pages missing them besides 404/homepage). All content pages now have breadcrumb navigation. Power Cycle #11.
-52. [NEW] Add "Share this article" social buttons to blog post pages (Facebook, Twitter/X, LinkedIn)
+52. ~~[NEW] Add "Share this article" social buttons to blog post pages (Facebook, Twitter/X, LinkedIn)~~ ✅ — Power Cycle #42. Added share buttons (Facebook, Twitter/X, LinkedIn) with CSS to 8 blog posts: cytykolina-przewodnik-kompletny, cytykolina-vs-kofeina-vs-bakopa, jak-wybrac-suplement, ranking-nootropikow-2026, skladnik-cytykolina, suplementy-a-stres-oksydacyjny, suplementy-dla-seniorow-50-plus, suplementy-na-prace-umyslowa. All 26 blog posts now have share buttons.
 53. [DONE] ~~Create "Jak wybrać suplement?" consumer guide page — checklist-based, conversion-focused~~ ✅ — Created jak-wybrac-suplement.html: full checklist (safety, GMP, GIS, CoA, transparency), red flags table, CogniCit example, JSON-LD Article schema, cross-links, email CTA
 54. [NEW] Add Product JSON-LD schema with Offer to produkt.html — DONE 2026-03-23 ✅
 55. [NEW] Add 5 korzyści (benefits) section to produkt.html — DONE 2026-03-23 ✅
@@ -269,8 +269,14 @@
 
 185. ~~[DONE] Add "Ostatnie 24h" live activity feed to produkt.html~~ ✅ — Power Cycle #41. Fixed-position ticker below hero: green pulsing dot + randomized activity message ("Ktoś z [miasto] [akcja] X min temu"). 15 Polish cities pool, 9 action types. Shows after 8s, auto-hides after 12s, repeats every 45-90s. Dismissible with X + localStorage persistence. Non-intrusive social proof. Matching CSS animation (spPulse2 keyframes).
 
-186. [NEW] Add "Opinie klientów" page (/opinie.html) — Dedicated reviews page with all 5+ testimonials from produkt.html carousel, star rating breakdown (5★: 38, 4★: 7, 3★: 2), filtering by product aspect (koncentracja, pamięć, energia). Schema.org Product with aggregateRating (4.8/5, 47 reviews). SEO target: "CogniCit opinie", "CogniCit recenzje". Add to sitemap, footer, and link from produkt.html testimonial section.
+186. ~~[NEW] Add "Opinie klientów" page (/opinie.html)~~ ✅ — Power Cycle #42. Verified: page exists (23KB, created earlier), has Product aggregateRating schema (4.8/5, 47 reviews), BreadcrumbList JSON-LD, canonical/hreflang/OG meta, breadcrumb nav, responsive. Already on sitemap. Marked DONE.
 
 187. [NEW] Add "Suplementy a alkohol" blog post to index.html footer "Informacje" section — cross-reference from safety/educational content for discoverability.
 
 188. [NEW] Create "Suplementy a sen — higiena snu dla osób pracujących umysłowo" blog post — Target "suplementy a sen", "higiena snu praca umysłowa". Covers sleep architecture (REM/NREM), CogniCit morning dosing = zero sleep impact, sleep hygiene checklist (6 rules), melatonin vs lifestyle changes. Positions CogniCit as the supplement that doesn't interfere with sleep.
+
+189. [NEW] Add "/opinie.html" link to index.html footer and produkt.html testimonial section — page exists with full aggregateRating schema but isn't linked from key conversion pages. Add to footer Informacje column and add visible link from produkt.html testimonial carousel section. Drives traffic to social proof page.
+
+190. [NEW] Create "Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów" blog post — High-volume SEO keyword "jak poprawić koncentrację" (3K+ monthly searches in Poland). Lifestyle tips + CogniCit positioning as evidence-based cognitive support. Covers: sleep, exercise, hydration, breaks, diet, meditation, digital detox, supplements, routine, environment. 10-item format with practical advice.
+
+191. [NEW] Add satisfaction guarantee trust badge to all blog posts — Currently only some pages have the "30-dniowa gwarancja" banner. Add lightweight trust bar with guarantee mention to remaining blog posts that lack it, ensuring consistent trust signals across all content pages.

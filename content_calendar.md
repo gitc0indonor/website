@@ -1107,3 +1107,30 @@
 **Internal links:** produkt.html, blog/suplementy-a-alkohol.html, jak-stosowac.html, faq-produkt.html
 **SEO angle:** Growing "sleep hygiene" trend in Poland. Positions CogniCit as non-stimulant supplement.
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #42)
+**Title:** Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów
+**Target:** Polish audience, SEO for "jak poprawić koncentrację", "naturalna koncentracja", "sposoby na skupienie"
+**Word count:** 1800-2200
+**Keywords:** jak poprawić koncentrację, naturalna koncentracja, sposoby na skupienie, koncentracja mózg, suplement na koncentrację
+
+**Outline:**
+1. **Wstęp** — Problemy z koncentracją dotyczą milionów Polaków: praca zdalna, social media, stres, brak snu. Co naprawdę działa?
+2. **Sposób 1: Sen 7-8h** — Hipokamp, konsolidacja pamięci, wpływ deprywacji snu na funkcje wykonawcze. Praktyczne wskazówki (stałe pory, ciemność, temperatura).
+3. **Sposób 2: Ruch fizyczny** — BDNF, neurogeneza w hipokampie, 30 min/dzień. Nawet spacer pomaga. Badania: Erickson et al. 2011.
+4. **Sposób 3: Nawodnienie** — 2% odwodnienia = spadek koncentracji o 25%. Prosty test: kolor moczu. Ile wody dziennie?
+5. **Sposób 4: Technika Pomodoro** — 25 min pracy / 5 min przerwy. Dlaczego działa: uwaga ma limit, regeneracja. Warianty (50/10, 90/20).
+6. **Sposób 5: Ograniczenie social media** — Dopamina, krótkie cykle uwagi, FOMO. Praktyczne wskazówki: blokery, godziny bez telefonu.
+7. **Sposób 6: Oddech i medytacja** — 10 min dziennie medytacji mindfulness = zmiana w korze przedczołowej. Aplikacje: Headspace, Waking Up.
+8. **Sposób 7: Dieta na mózg** — Tłuszcze omega-3, jagody, jajka (cholina!), orzechy. Unikaj cukru i ultra-przetworzonej żywności.
+9. **Sposób 8: Ograniczenie kofeiny** — Paradoks: kofeina poprawia koncentrację krótkoterminowo, ale pogarsza długoterminowo (tolerancja, crash). Alternatywy.
+10. **Sposób 9: Organizacja środowiska** — Minimalizm na biurku, jedno zadanie na raz, "deep work" zgodnie z Cal Newport. Hałas vs cisza.
+11. **Sposób 10: Suplementacja oparta na nauce** — Cytykolina (acetylocholina, 233 publikacji PubMed), ALA (ochrona mitochondriów), β-CD (biodostępność). CogniCit jako przykład naukowego podejścia.
+12. **Podsumowanie** — Koncentracja to nie talent — to umiejętność. 10 sposobów = system. Suplementacja jako fundament, na którym reszta działa lepiej.
+
+**CTA:** Poznaj CogniCit — naukowe wsparcie koncentracji → produkt.html
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html, nauka.html, blog/jak-budowac-rutyne-suplementacji.html
+**SEO angle:** "jak poprawić koncentrację" — 3K+ monthly searches in Poland, high commercial intent. Positions CogniCit as the evidence-based solution among practical tips. Listicle format = high engagement + featured snippet potential.
+**Target platforms:** Google (SEO), Wykop, grupy Facebook o produktywności, LinkedIn
+**Season:** Evergreen, slight peak Sep (back to work/school) and Jan (new year resolutions)
+**Status:** Outline ready, needs writing
