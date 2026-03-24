@@ -1038,3 +1038,28 @@
 **SEO angle:** High-volume educational query + seasonal (Jan-May exam prep). Positions Cognivia as science + practicality brand. Cross-promote with matura landing page.
 **Season:** Peak January-May (matura preparation). Evergreen for university students (Oct-Jan sesja).
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #40)
+**Title:** 5 mitów o suplementach diety — co mówią przepisy UE?
+**Target:** Polish audience, trust-building / debunking / SEO
+**Word count:** 1500-2000
+**Keywords:** suplementy diety mity, suplementy diety regulacja, bezpieczne suplementy, suplementy UE, suplementy Polska
+
+**Outline:**
+1. **Wstęp** — Suplementy diety budzą emocje — ile z tego jest prawdą? Polacy wydają 5+ mld zł rocznie, ale często nie wiedzą, czym suplement różni się od leku.
+2. **Mit 1: „Suplementy nie są regulowane"** — Fakty: zgłoszenie GIS, rozporządzenie WE 2002/46/WE, kontrole Inspekcji Sanitarnej, wymogi UE dotyczące składników i oznakowania
+3. **Mit 2: „Naturalne = bezpieczne"** — Naturalne składniki też mają interakcje i przeciwwskazania. Przykłady: dziurawiec + antydepresanty, witamina K + warfaryna
+4. **Mit 3: „Więcej składników = lepszy suplement"** — Problem suplementów „kombajnów" z 20+ składnikami w mikrodawkach. Dawka subterapeutyczna = placebo
+5. **Mit 4: „Suplement zastąpi lek"** — Twarda granica prawna: suplement nie leczy, nie diagnozuje, nie zapobiega chorobom. Rozporządzenie WE 1924/2006 o oświadczeniach zdrowotnych
+6. **Mit 5: „Wszystkie suplementy są takie same"** — GMP, certyfikaty, przejrzystość składu, CoA — co odróżnia dobry suplement od ryzykownego
+7. **Jak rozpoznać wartościowy suplement?** — Checklist: GIS, GMP, skład z dawkami, rozsądne oświadczenia, producent z danymi kontaktowymi
+8. **CogniCit jako przykład** — 3 składniki, dawki z badań, GMP, zgłoszenie GIS, pełna przejrzystość
+9. **Podsumowanie** — Wiedza = bezpieczeństwo. Krytyczne myślenie chroni portfel i zdrowie.
+
+**CTA:** Poznaj CogniCit — transparentny suplement oparty na nauce → produkt.html
+**Internal links:** blog/suplement-vs-lek.html, faq.html, certyfikaty.html, jak-czytac-etykiety.html, jak-wybrac-suplement.html, porownanie.html
+**SEO angle:** "suplementy diety mity" — debunking content ranks well, builds trust, high engagement. Cross-links to regulatory and educational pages. Featured snippet potential for myth-busting format.
+**Target platforms:** Google (SEO), Wykop, grupy Facebook o suplementacji
+**Status:** Outline ready, needs writing

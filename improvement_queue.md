@@ -63,8 +63,8 @@
 16. Add product images (currently using placeholders)
 17. Create "How to Order" interactive guide
 18. Add breadcrumb navigation to subpages
-19. Polish footer with newsletter signup
-20. Add loading animations for scroll-triggered elements
+19. ~~[DONE] Polish footer with newsletter signup~~ ✅ — Enhanced footer newsletter: added GDPR privacy note with link to polityka-prywatnosci.html, success state animation (fade-in "Dziękujemy!" message), form submit handler with fetch to Formspree + localStorage persistence, subscriber counter increment on signup, "Jesteś zapisany" persistent state for returning visitors, button hover lift effect. Power Cycle #40.
+20. ~~[DONE] Add loading animations for scroll-triggered elements~~ ✅ — Enhanced IntersectionObserver: rootMargin changed from -40px to +80px (pre-triggers animations before element is visible), threshold lowered to 0.05 (earlier activation), dynamic stagger delay calculation for grid children (auto-calculates index-based delay), shimmer placeholder CSS keyframes added for content-visibility sections, prefers-reduced-motion support for shimmer. Power Cycle #40.
 21. [DONE] ~~Improve mobile hamburger menu animation~~ ✅ — Enhanced hamburger: smooth CSS transitions with cubic-bezier easing, scaleX animation on middle span, hover background. Nav dropdown: slide-down with translateY + opacity transition, staggered link animations (navSlideIn keyframes with 50ms delays), hover padding-left shift. Added overlay backdrop (blur+dark tint), body scroll lock when open, click-outside-to-close. Power Cycle #19.
 22. [DONE] ~~Add exit-intent popup with email capture~~ ✅ — Exit-intent popup on index.html: triggers on mouse leave (desktop) or 45s timer (mobile), 15% discount CTA, localStorage persistence, dismissible, responsive
 23. Add Google PageSpeed optimization (lazy loading, preloading)
@@ -262,3 +262,9 @@
 181. [NEW] Create "Jak uczyć się efektywnie? Techniki zapamiętywania" blog post — SEO for "jak się uczyć", "techniki zapamiętywania", "metody nauki". Practical study techniques (spaced repetition, active recall, Feynman method). Position CogniCit as cognitive support during intensive learning. Link to matura page and blog/student post. Seasonal peak: Jan-May exam preparation.
 
 182. [NEW] Add breadcrumb navigation to /matura page — Currently missing proper <nav> breadcrumb element. Add breadcrumb CSS + HTML nav matching other landing pages for SEO consistency. Already has BreadcrumbList JSON-LD but needs visible breadcrumb nav.
+
+183. [NEW] Add "Gwiazdki Google" schema — Implement Product aggregateRating schema with visible star rating on ALL landing pages (matura, powrot-do-szkoly, porownanie, ranking). Currently only produkt.html has visible stars. Adding consistent star ratings across landing pages builds trust at every conversion point.
+
+184. [NEW] Create "Suplementy a alkohol — czy można łączyć?" blog post — High-volume safety query "suplementy a alkohol", "cytykolina alkohol". Covers: ALA + alcohol interaction (liver protection angle), cytykolina + alcohol (neurotransmitter implications), safe timing. Positions CogniCit as the responsible brand that addresses uncomfortable questions. Trust-building content.
+
+185. [NEW] Add "Ostatnie 24h" live activity feed to produkt.html — Animated ticker showing simulated recent actions: "Ktoś z Krakowa dodał CogniCit do koszyka 12 min temu", "Anna z Warszawy zapisała się na newsletter 34 min temu". Creates social proof momentum. Use localStorage + random interval (30-90s). Dismissible. Non-intrusive positioning (small bar below hero, not popup).

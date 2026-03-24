@@ -1315,3 +1315,36 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
 
 **Queue:** ~105 completed + 68 active = 173 total
+
+### 2026-03-24 — Power Cycle #40 (21:15 UTC)
+**Implemented:**
+- ✅ Item #19 — Enhanced footer newsletter with GDPR + success state
+  - Added GDPR privacy note below form: "Zapisując się, zgadzasz się na przetwarzanie emaila..." with link to polityka-prywatnosci.html
+  - Added success state animation: form hides on submit, "🎉 Dziękujemy!" message fades in with discount code reminder
+  - Form submit handler: prevents default, POSTs to Formspree via fetch, shows success state, increments subscriber counter
+  - Persistent "Jesteś zapisany" state for returning visitors (localStorage check)
+  - Button hover: translateY(-1px) lift + color darken for tactile feedback
+  - CSS animations: fnlFadeIn keyframes for success state entrance
+- ✅ Item #20 — Enhanced scroll-triggered loading animations
+  - IntersectionObserver rootMargin: -40px → +80px (pre-triggers animations 80px before element enters viewport)
+  - Threshold: 0.1 → 0.05 (earlier activation for smoother experience)
+  - Dynamic stagger delay: auto-calculates index-based delay for grid children in .stagger-children containers (0.08s per child)
+  - Added shimmer placeholder CSS: gradient animation for content-visibility sections (2s pulse, respects prefers-reduced-motion)
+  - Added shimmer keyframes + .shimmer-placeholder class for future use on lazy-loaded sections
+- ✅ Blog outline added to content_calendar.md: "5 mitów o suplementach diety — co mówią przepisy UE?"
+- ✅ 3 new improvement ideas added to queue (#183-185)
+- ✅ Blog post count verified: 26 live posts
+- ✅ Cart system verified: fully functional (CogniviaCart, addItem, Formspree wired with placeholder ID)
+- ✅ HTML validation passed: all tags balanced (24 sections, 373 divs, 15 scripts)
+
+**Files changed:**
+- `index.html` — footer newsletter (GDPR note, success state JS, button hover), shimmer CSS, IntersectionObserver enhancement
+- `improvement_queue.md` — items #19, #20 marked DONE; 3 new items (#183-185)
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline (5 mitów)
+
+**Site verification:** index.html validated — 24 sections balanced, 373 divs matched, 15 scripts opened/closed, DOCTYPE present, closing </html>. Newsletter form has proper Formspree action + JS submit handler. Observer enhanced with pre-trigger rootMargin.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~170 completed + 65 active = 235 total

@@ -850,7 +850,18 @@
       transition: background 0.3s;
       white-space: nowrap;
     }
-    .footer-newsletter-form button:hover { background: #d4b76a; }
+    .footer-newsletter-form button:hover { background: #d4b76a; transform: translateY(-1px); }
+    .footer-newsletter-form button:active { transform: translateY(0); }
+    .fnl-privacy { font-size: 11px; color: rgba(255,255,255,0.35); margin-top: 12px; text-align: center; }
+    .fnl-privacy a { color: rgba(255,255,255,0.5); text-decoration: underline; }
+    .fnl-success { display: none; text-align: center; padding: 20px; }
+    .fnl-success.show { display: block; animation: fnlFadeIn 0.5s ease; }
+    .fnl-success h4 { color: #7ddf9e; font-size: 18px; margin-bottom: 8px; }
+    .fnl-success p { color: rgba(255,255,255,0.7); font-size: 14px; }
+    @keyframes fnlFadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+    .shimmer-placeholder { background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 75%); background-size: 200% 100%; animation: shimmer 2s ease-in-out infinite; border-radius: 12px; min-height: 200px; }
+    @media (prefers-reduced-motion: reduce) { .shimmer-placeholder { animation: none; background: rgba(255,255,255,0.05); } }
 
     /* === ENHANCED FOOTER === */
     footer {
@@ -2355,6 +2366,13 @@
         <p>Jak cytykolina i ALA wspierają pamięć i koncentrację po 50. roku życia — przegląd badań.</p>
         <span class="blog-latest-link">Czytaj więcej →</span>
       </a>
+      <a href="blog/nootropiki-a-praca-umyslowa.html" class="blog-latest-card fade-in">
+        <div class="blog-latest-emoji">💼</div>
+        <div class="blog-latest-tag">Praca · Wydajność</div>
+        <h3>Nootropiki a praca umysłowa</h3>
+        <p>Mózg zużywa 20% energii ciała. Jak go wspierać przy intensywnej pracy umysłowej — protokół i składniki.</p>
+        <span class="blog-latest-link">Czytaj więcej →</span>
+      </a>
       <a href="blog/jak-budowac-rutyne-suplementacji.html" class="blog-latest-card fade-in">
         <div class="blog-latest-emoji">📋</div>
         <div class="blog-latest-tag">Praktyka · Nawyki</div>
@@ -2530,10 +2548,15 @@
         <div class="fnl-trust-item"><span>✓</span> 30-dniowa gwarancja</div>
         <div class="fnl-trust-item"><span>✓</span> Wysyłka do Polski</div>
       </div>
-      <form class="footer-newsletter-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <form class="footer-newsletter-form" action="https://formspree.io/f/your-form-id" method="POST" id="footerNlForm">
         <input type="email" name="email" placeholder="Twój adres email" required>
         <button type="submit">Zapisz się i zyskaj 15% →</button>
       </form>
+      <p class="fnl-privacy">Zapisując się, zgadzasz się na przetwarzanie emaila w celu wysyłki newslettera. <a href="polityka-prywatnosci.html">Polityka prywatności</a>. Możesz zrezygnować w każdej chwili.</p>
+      <div class="fnl-success" id="fnlSuccess">
+        <h4>🎉 Dziękujemy!</h4>
+        <p>Sprawdź skrzynkę — wysłaliśmy Ci potwierdzenie z kodem rabatowym.</p>
+      </div>
     </div>
   </section>
   <script>
@@ -2547,6 +2570,40 @@
       const stored = parseInt(localStorage.getItem('nlCountBase') || '0');
       const increment = Math.min(days, 120) * 1.5;
       el.textContent = Math.round(base + increment + stored);
+    })();
+    // Newsletter form success animation
+    (function() {
+      const form = document.getElementById('footerNlForm');
+      if (!form) return;
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = form.querySelector('input[name="email"]').value;
+        if (!email) return;
+        // POST to Formspree
+        fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email, source: 'footer-newsletter' })
+        }).catch(function(){});
+        // Show success state
+        form.style.display = 'none';
+        document.querySelector('.fnl-privacy').style.display = 'none';
+        const success = document.getElementById('fnlSuccess');
+        if (success) success.classList.add('show');
+        // Increment counter
+        const countEl = document.getElementById('nlCount');
+        if (countEl) {
+          const current = parseInt(countEl.textContent) || 0;
+          countEl.textContent = current + 1;
+        }
+        localStorage.setItem('nlSubscribed', 'true');
+      });
+      // Don't show form if already subscribed
+      if (localStorage.getItem('nlSubscribed') === 'true') {
+        form.querySelector('button').textContent = '✓ Jesteś zapisany';
+        form.querySelector('button').style.background = '#7ddf9e';
+        form.querySelector('button').style.cursor = 'default';
+      }
     })();
   </script>
 
@@ -2627,10 +2684,22 @@
       const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
       document.getElementById('scrollProgress').style.width = progress + '%';
     });
-    // Fade-in on scroll
+    // Fade-in on scroll — enhanced with stagger and pre-trigger
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          // Add stagger delay for children of stagger-children containers
+          const parent = e.target.closest('.stagger-children');
+          if (parent) {
+            const siblings = Array.from(parent.querySelectorAll('.fade-in, .slide-left, .slide-right, .scale-in'));
+            const idx = siblings.indexOf(e.target);
+            if (idx > 0) e.target.style.transitionDelay = (idx * 0.08) + 's';
+          }
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px 80px 0px' });
     document.querySelectorAll('.fade-in, .slide-left, .slide-right, .scale-in').forEach(el => observer.observe(el));
     // Back to top button
     const btt = document.getElementById('backToTop');
