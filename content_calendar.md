@@ -701,3 +701,25 @@
 **CTA:** Zamów CogniCit — link do produkt.html
 **Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, nauka.html, porownanie.html
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-24 — Power Cycle #25)
+**Title:** Suplementy dla programistów — jak zadbać o mózg przy 8h przed ekranem?
+**Target:** Polish audience, SEO / tech community / developer lifestyle
+**Word count:** 1500-2000
+**Keywords:** suplementy dla programistów, suplement na koncentrację praca umysłowa, nootropik programista, zmęczenie umysłowe developer, zdrowie mózgu IT
+
+**Outline:**
+1. **Wstęp** — 8-12h przed ekranem, ciągły context switching, deadliny. Co to robi z mózgiem programisty?
+2. **Mózg developera** — Intensywna praca poznawcza: acetylocholina, pamięć robocza, stres oksydacyjny mitochondriów
+3. **Jak praca umysłowa drenuje neurony?** — "Attention residue" (Sophie Leroy), spadek koncentracji po przełączeniu zadań, efekt "wielozadaniowości"
+4. **Popularne wspomagacze w IT** — Kofeina (crash po 3h), energetyki (cukier), modafinil (recepta) — za i przeciw
+5. **Naukowo udokumentowane alternatywy** — Cytykolina (233 publikacje PubMed), ALA (ochrona mitochondriów), β-CD (biodostępność) — evidence-based
+6. **CogniCit — precyzyjne wsparcie** — 3 składniki, 1 kapsułka, zero stymulantów, brak efektu zjazdu
+7. **Higiena cyfrowa + suplementacja** — Checklist developera: przerwy 25/5, światło niebieskie, sen 7-8h, ruch, suplementacja rano
+8. **Poranny rytuał developera** — 6:00 ☀️ → 💧 woda → 💊 CogniCit ze śniadaniem → 🚶 spacer → 9:00 full focus
+9. **Podsumowanie** — Zdrowy mózg = lepszy kod. Inwestycja w siebie to inwestycja w karierę.
+
+**CTA:** Zamów CogniCit — link do produkt.html (79 zł, 30-dniowa gwarancja)
+**Internal links:** produkt.html, blog/cytykolina.html, blog/antyoksydanty.html, jak-stosowac.html, nauka.html, porownanie.html, skladniki.html
+**Target platforms:** Wykop, LinkedIn, dev.to (Polish), Twitter/X developer community
+**Status:** Outline ready, needs writing

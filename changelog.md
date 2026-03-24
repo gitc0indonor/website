@@ -1,6 +1,36 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-24 — Power Cycle #25 (02:03 UTC)
+**Implemented:**
+- ✅ Item #132 — Satisfaction guarantee badge on porownanie.html
+  - Green 30-day badge circle with gold shadow, flexbox layout
+  - Marketing copy: "Nie jesteś zadowolony? Zwrócimy pieniądze za pierwsze opakowanie"
+  - Link to zwroty.html for full policy details
+  - Positioned between cross-links and CTA sections for conversion consistency
+- ✅ Item #126 — "Powiązane pytania" section on faq-produkt.html
+  - 4 accordion Q&As: coffee interaction, choline comparison, student suitability, certificate location
+  - Each links to relevant pages (blog/cytykolina, porownanie, jak-stosowac, certyfikaty)
+  - Smooth expand/collapse with CSS transitions matching existing FAQ style
+  - Mimics Google's "People also ask" for SEO interlinking
+- ✅ 3 new improvement ideas added to queue (#133-135)
+- ✅ Blog post outline added to content_calendar.md
+
+**Files changed:**
+- `porownanie.html` — satisfaction guarantee section before CTA
+- `faq-produkt.html` — "Powiązane pytania" section before CTA
+- `improvement_queue.md` — items #126, #132 marked DONE; 3 new items (#133-135)
+- `changelog.md` — this entry
+- `content_calendar.md` — new blog outline added
+
+**Site verification:** Both files validated — doctype present, balanced tags. FAQ accordion JS confirmed (onclick toggle + CSS max-height transition). Guarantee badge responsive (flex-wrap on mobile).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Payment gateway (PayU/Przelewy24) needs merchant account. Formspree placeholder ID needs replacement.
+
+**Queue:** ~76 completed + 58 active = 135 total
+
+---
+
 ### 2026-03-24 — Power Cycle #24 (01:01 UTC)
 **Implemented:**
 - ✅ Item #127 — "Ile kapsułek kupić?" calculator on index.html
