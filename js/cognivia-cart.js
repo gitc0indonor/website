@@ -345,10 +345,60 @@ const CogniviaCart = {
       status: 'pending_payment'
     };
 
-    // Save order to localStorage (would be sent to backend in production)
+    // Save order to localStorage
     const orders = JSON.parse(localStorage.getItem('cognivia_orders') || '[]');
     orders.push(order);
     localStorage.setItem('cognivia_orders', JSON.stringify(orders));
+
+    // Send order notification via Formspree
+    const FORMSPREE_ORDER_ID = 'xpwzgryv'; // TODO: Replace with real Formspree form ID
+    if (FORMSPREE_ORDER_ID && FORMSPREE_ORDER_ID !== 'REPLACE_ME') {
+      const orderSummary = [
+        '=== NOWE ZAMÓWIENIE CogniCit ===',
+        'ID: ' + order.id,
+        'Data: ' + new Date(order.date).toLocaleString('pl-PL'),
+        '',
+        'ZAMAWIAJĄCY:',
+        'Imię: ' + (formData.firstName || '-') + ' ' + (formData.lastName || '-'),
+        'Email: ' + (formData.email || '-'),
+        'Telefon: ' + (formData.phone || '-'),
+        'Adres: ' + (formData.address || '-') + ', ' + (formData.city || '-') + ' ' + (formData.postalCode || '-'),
+        '',
+        'PRODUKTY:',
+        ...order.items.map(i => '- CogniCit × ' + i.quantity + ' szt. = ' + (i.quantity * 79).toFixed(2) + ' zł'),
+        '',
+        'DOSTAWA: ' + (order.shipping ? order.shipping.name : '-') + ' — ' + (order.shippingCost > 0 ? order.shippingCost.toFixed(2) + ' zł' : 'GRATIS'),
+        'PŁATNOŚĆ: ' + (order.payment ? order.payment.name : '-'),
+        '',
+        'SUMA: ' + order.total.toFixed(2) + ' zł (brutto, VAT 23%)'
+      ].join('\n');
+
+      fetch('https://formspree.io/f/' + FORMSPREE_ORDER_ID, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          _subject: '🛒 Nowe zamówienie ' + order.id + ' — CogniCit',
+          _replyto: formData.email || '',
+          order_id: order.id,
+          customer_name: (formData.firstName || '') + ' ' + (formData.lastName || ''),
+          customer_email: formData.email || '',
+          customer_phone: formData.phone || '',
+          shipping_address: (formData.address || '') + ', ' + (formData.city || '') + ' ' + (formData.postalCode || ''),
+          items: order.items.map(i => 'CogniCit × ' + i.quantity).join(', '),
+          shipping_method: order.shipping ? order.shipping.name : '-',
+          payment_method: order.payment ? order.payment.name : '-',
+          subtotal: order.subtotal.toFixed(2) + ' zł',
+          shipping_cost: order.shippingCost.toFixed(2) + ' zł',
+          total: order.total.toFixed(2) + ' zł',
+          order_summary: orderSummary
+        })
+      }).then(r => {
+        if (r.ok) console.log('[CogniviaCart] Order notification sent to cognivia.business@outlook.com');
+        else console.warn('[CogniviaCart] Formspree responded with', r.status);
+      }).catch(err => {
+        console.warn('[CogniviaCart] Formspree notification failed (order saved locally):', err.message);
+      });
+    }
 
     // Clear cart
     this.clearCart();

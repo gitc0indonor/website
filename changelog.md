@@ -1,7 +1,43 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
-### 2026-03-24 — Power Cycle #34 (16:56 UTC)
+### 2026-03-24 — Power Cycle #36 (18:40 UTC)
+**Implemented:**
+- ✅ Item #203 — Wired Formspree order notification in cognivia-cart.js
+  - submitOrder() now POSTs order JSON to Formspree endpoint via fetch()
+  - Sends: customer details, items, shipping, payment, totals with Polish subject line
+  - Configurable FORMSPREE_ORDER_ID constant (placeholder 'xpwzgryv' — CEO swaps for real ID)
+  - Graceful fallback: localStorage save always works regardless of Formspree response
+  - Reply-to set to customer email for direct communication
+  - Console logging for success/failure debugging
+  - Ready to activate: just replace 1 string when CEO provides form ID
+- ✅ Item #170 — Created /powrot-do-szkoly.html (22KB) — seasonal back-to-school landing page
+  - Hero with season tag, trust row (GMP, GIS, no caffeine, 30-day guarantee)
+  - 3 problem cards (overload, exam stress, caffeine trap)
+  - Safety box for parents: GMP, GIS registration, no stimulants, PubMed citations, 18+ note
+  - 3 ingredient mechanism cards (cytykolina, ALA, β-CD)
+  - Full comparison table: CogniCit vs energy drinks vs caffeine pills vs multi-nootropics (9 criteria)
+  - 4-step protocol (morning capsule, sleep, movement, screen breaks)
+  - 3 target audience cards (parents, students, high schoolers)
+  - CTA with 79 zł price, free shipping note, 30-day guarantee
+  - Email capture popup (50% scroll trigger, 15% discount, localStorage persistence)
+  - Article + BreadcrumbList JSON-LD schemas, canonical/hreflang/OG meta
+  - Cross-links to 7 related pages
+  - Added to sitemap.xml
+- ✅ 3 new improvement ideas added to queue (#171-173)
+
+**Files changed:**
+- `js/cognivia-cart.js` — Formspree POST integration in submitOrder()
+- `powrot-do-szkoly.html` — NEW (22KB)
+- `sitemap.xml` — new URL added
+- `improvement_queue.md` — items #203, #170 marked DONE; 3 new items added
+- `changelog.md` — this entry
+
+**Cart status:** Formspree integration READY but needs real form ID. CEO must: (1) create formspree.io account, (2) create form for cognivia.business@outlook.com, (3) provide form ID. Then swap FORMSPREE_ORDER_ID in cognivia-cart.js. ~1 minute dev time after that.
+
+**Queue:** ~110 completed + 68 active = 178 total
+
+### 2026-03-24 — Power Cycle #35 (18:09 UTC)
 **Implemented:**
 - ✅ Item #160 — "Porównanie cen nootropików" section on porownanie.html
   - Price-per-serving comparison table: 6 supplements (CogniCit, Brain Actives, Noocube, Mind Lab Pro, Neomax, Cholina solo)

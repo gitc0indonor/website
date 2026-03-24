@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-24 (Power Cycle #34)
+## Last Updated: 2026-03-24 (Power Cycle #36)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -235,4 +235,12 @@
 
 169. [NEW] Create "Suplementy a praca zdalna" blog post version for LinkedIn — repurpose existing blog content as LinkedIn article format (shorter, more conversational, with CTA to cognivia.eu). Target Polish LinkedIn tech/remote work community.
 
-170. [NEW] Add seasonal "Back to school" landing page (/powrot-do-szkoly) — September SEO campaign targeting parents buying supplements for students. Position CogniCit as safe, GMP-certified cognitive support for high school and university students. Include parent-focused trust signals (GIS, 30-day guarantee, no stimulants).
+170. ~~[DONE] Add seasonal "Back to school" landing page (/powrot-do-szkoly)~~ ✅ — Power Cycle #36. September SEO campaign targeting parents buying supplements for students. Full landing page: hero with season tag, 3 problem cards (overload, stress, caffeine trap), safety box for parents (GMP, GIS, no caffeine, PubMed citations), 3 ingredient cards, comparison table (CogniCit vs energy drinks vs caffeine vs multi-nootropics), 4-step protocol (morning capsule, sleep, movement, screen breaks), 3 target audience cards (parents, students, high schoolers), CTA with 79 zł price, email popup (50% scroll, 15% discount), cross-links section. Article + BreadcrumbList JSON-LD schemas, canonical/hreflang/OG meta. Added to sitemap.xml. Responsive design.
+
+203. ~~[DONE] Wire Formspree order notification endpoint in cognivia-cart.js~~ ✅ — Power Cycle #36. Updated submitOrder() to POST order JSON to Formspree endpoint via fetch(). Sends structured order data (customer name/email/phone/address, items, shipping, payment, totals) as JSON with Polish subject line. Graceful fallback: order always saves to localStorage regardless of Formspree response. Uses configurable FORMSPREE_ORDER_ID constant (currently placeholder 'xpwzgryv' — CEO must replace with real form ID from formspree.io account). Console logging for success/failure. Reply-to set to customer email. Ready to activate: just swap the form ID string.
+
+171. [NEW] Create "Suplementy przed egzaminem maturalnym" landing page (/matura) — Target parents buying supplements for matura students (May season). Trust signals: GMP, GIS, no stimulants, 30-day guarantee. Position cytykolina for memory consolidation during intense study period. Seasonal SEO peak: Feb-May.
+
+172. [NEW] Add "Ile kosztuje suplementacja mózgu?" ROI calculator on index.html — Interactive widget: input monthly supplement spend, calculate cost-per-day, compare to coffee/energy drinks spending. Show CogniCit (2.63 zł/dzień = 79 zł/miesiąc) vs daily coffee habit (4-6 zł/dzień = 120-180 zł/miesiąc). Converts budget-conscious visitors.
+
+173. [NEW] Create "Jak budować rutynę suplementacji?" educational blog post — Practical habit-building guide (habit stacking, morning anchors, pill organizers). Target "jak przyjmować suplementy regularnie" SEO. Positions CogniCit (1 capsule/day simplicity) as easiest regimen. Link to jak-stosowac.html.

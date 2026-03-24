@@ -1,5 +1,5 @@
 # Ecommerce Status — Cognivia / CogniCit
-## Last Audit: 2026-03-24 06:53 UTC
+## Last Audit: 2026-03-24 17:52 UTC
 
 ---
 
@@ -17,9 +17,9 @@
 | **Payment gateway** | ❌ **NOT INTEGRATED** | PayU/Przelewy24/BLIK/PayPal listed in UI but no real gateway connection |
 
 ### 🔴 CRITICAL: NOT TRULY BUYABLE
-The cart and checkout work as a UI demo. Orders go to `localStorage` and are never sent to a server. No Formspree endpoint, no fetch() calls, no XMLHttpRequest. `submitOrder()` saves to localStorage and redirects to confirmation — that's it. **Unchanged since 2026-03-24 03:21 UTC audit.**
+Cart and checkout work as a frontend demo. `submitOrder()` saves to localStorage and redirects — **nobody receives the order.** Unchanged since 2026-03-24 06:53 UTC audit.
 
-**Current flow:** User fills form → JS creates order object → saves to localStorage → redirects to confirmation page. **Nobody receives the order.**
+**Status: UNCHANGED — Formspree integration (#155) still waiting on CEO action.**
 
 ### ⚠️ Free Shipping Threshold
 - Verified consistent: 120 zł InPost/Poczta, 150 zł DPD across all pages ✅
@@ -40,17 +40,18 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 | Product images | ⚠️ EMOJI PLACEHOLDERS | 4 gallery slots with emoji placeholders — no real product photos |
 | Category | ✅ | "Suplementy diety" in schema + meta |
 | Tags | ⚠️ PARTIAL | No explicit tag system, but ingredient pages cross-linked |
-| SEO (meta, OG, schema) | ✅ | Product JSON-LD with Offer, aggregateRating (4.8/5, 47 reviews), OG tags, canonical, hreflang |
+| SEO (meta, OG, schema) | ✅ | Product JSON-LD with Offer, aggregateRating, OG tags, canonical |
 | FAQ on product page | ✅ | FAQPage JSON-LD + visible accordion (7 Q&As) |
 | Sticky sidebar (desktop) | ✅ | Floating mini-cart + buy button after 400px scroll |
 | Floating CTA (mobile) | ✅ | Fixed bottom bar with price + "Zamów teraz" |
 | Satisfaction guarantee | ✅ | 30-day money-back section with 3-step process |
+| Bundle pricing | ✅ | 3 tiers (1/2/3 boxes) with discounts, added Power Cycle #31 |
 
 ---
 
 ## 3. SHIPPING & PAYMENT (POLAND)
 
-### Shipping Options (cognivia-cart.js)
+### Shipping Options
 | Method | Price | Free from | Delivery |
 |--------|-------|-----------|----------|
 | InPost Paczkomat | 12,99 zł | 120 zł | 1-2 dni |
@@ -58,7 +59,7 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 | DPD Kurier | 16,99 zł | 150 zł | 1-2 dni |
 | Poczta Polska | 11,99 zł | 120 zł | 2-3 dni |
 
-### Payment Methods (cognivia-cart.js)
+### Payment Methods
 | Method | Status | Integration |
 |--------|--------|-------------|
 | PayU | ⚠️ Listed only | Needs merchant account |
@@ -87,16 +88,14 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 | EU regulation compliance | ✅ | WE 1924/2006, WE 1169/2011 cited |
 | Certificates page | ✅ | certyfikaty.html |
 | Trust bar on checkout | ✅ | 4 trust badges |
-| Satisfaction guarantee section | ✅ | produkt.html |
 | Star rating (visible) | ✅ | produkt.html hero section |
-| Review cards | ✅ | index.html trust section |
-| Certifications logos | ✅ | "Zaufali nam" section on index.html |
+| Price comparison section | ✅ | porownanie.html — 6 supplements, sort by price/value/transparency |
 
-### ⚠️ Missing Trust Elements
-- No actual GMP certificate PDF download (page structure ready)
-- No actual lab test result PDF (CoA template only)
+### ⚠️ Still Missing
+- No actual GMP certificate PDF download
+- No actual lab test result PDF (CoA)
 - No customer reviews with real names/photos
-- No Trustpilot or external review integration
+- No Trustpilot integration
 - No verified purchase badges
 
 ---
@@ -105,7 +104,7 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 
 | Page | File | Status | RODO/GDPR |
 |------|------|--------|-----------|
-| FAQ (general) | faq.html | ✅ 15 Q&As + related questions | N/A |
+| FAQ (general) | faq.html | ✅ 15 Q&As | N/A |
 | FAQ (product) | faq-produkt.html | ✅ 20 Q&As, 4 categories | N/A |
 | Shipping Policy | dostawa.html | ✅ All methods, free thresholds | N/A |
 | Return Policy | zwroty.html | ✅ 14-day statutory + 30-day guarantee | N/A |
@@ -118,25 +117,38 @@ The cart and checkout work as a UI demo. Orders go to `localStorage` and are nev
 
 ## 6. IMPROVEMENTS QUEUE STATUS
 
-- Total items: 154 (last item #154)
-- DONE: ~55 items
-- NEW/active: ~99 items
-- Items #142, #143, #144 remain the highest-priority BLOCKERS from previous audit
+- Total items: 205 (last item #205)
+- DONE: ~65 items
+- NEW/active: ~140 items
+- **Highest priority blocker:** #155 — Formspree integration (CEO action required)
 
 ---
 
-## 7. AUDIT CHANGES THIS RUN (2026-03-24 06:53 UTC)
+## 7. AUDIT CHANGES THIS RUN (2026-03-24 17:52 UTC)
 
 1. ✅ Re-verified submitOrder() — still localStorage-only, no fetch/POST/endpoint added
 2. ✅ Confirmed all policy pages intact and RODO-compliant
-3. ✅ Confirmed shipping/payment UI unchanged since last audit
-4. ✅ Cart/checkout functional as frontend demo — not buyable for real customers
-5. ✅ Added 3 new improvements to queue (#155-#157)
+3. ✅ Confirmed shipping/payment UI unchanged
+4. ✅ Cart/checkout functional as frontend demo — NOT buyable for real customers
+5. ✅ New features since last audit: bundle pricing (#154), price comparison table (#160), availability section (#162), ranking-nootropikow cross-links (#158), blog enhancements
+6. ✅ Added 3 new improvements to queue (#203-#205)
 
-## 8. NEW IMPROVEMENTS QUEUED (#155-157)
+## 8. NEW IMPROVEMENTS QUEUED (#203-#205)
 
-155. **CRITICAL: Set up Formspree account and wire order notification** — CEO action required: create free Formspree account (formspree.io), create a form endpoint for cognivia.business@outlook.com, provide the form ID. Then update submitOrder() in cognivia-cart.js to POST order JSON to the endpoint. This sends order details to the business email. Minimum viable path to receive orders without building a backend. Blocks all real sales.
+203. **CRITICAL: Wire Formspree order notification endpoint** — This remains the #1 blocker. Even a free Formspree account (50 submissions/month) would make the site buyable. Update submitOrder() to POST order JSON to endpoint. Without this, every visitor who tries to buy generates a phantom order. CEO must: (a) create formspree.io account, (b) create form for cognivia.business@outlook.com, (c) provide form ID. Dev time after that: ~15 minutes.
 
-156. **Add order email confirmation to customer** — After Formspree integration (#155), add a second endpoint or use Formspree autoresponder to send order confirmation email to customer. Include order ID, items, total, shipping method, estimated delivery. Polish language template. Builds trust and reduces "did my order go through?" anxiety.
+204. **Add product photo upload system replacing emoji placeholders** — Create a /img/products/ directory structure. Source or generate: (a) front-facing capsule box render, (b) capsule close-up, (c) lifestyle/flat-lay image, (d) ingredients infographic. Replace emoji placeholders in produkt.html gallery with <img> tags. Even AI-generated mockups would dramatically improve conversion vs current emoji placeholders.
 
-157. **Create product comparison with Polish competitors on /ranking-nootropikow** — Build ranking page targeting "najlepszy nootropik Polska 2026" and "ranking suplementów koncentrację". Include 5-6 products (CogniCit + real Polish market competitors like Brain Actives, Noocube, Mind Lab Pro, Neomax). Score on: transparency (full ingredient disclosure), GMP certification, EU compliance, price per serving, third-party testing. CogniCit wins on transparency + GMP + EU registration. Schema.org Article + BreadcrumbList. Estimated 2-4K monthly organic visits in Poland.
+205. **Implement Abandoned Cart recovery email flow** — After Formspree integration: track cart contents + email in localStorage. If user adds to cart but doesn't complete checkout within 2 hours, trigger a gentle reminder email. Subject: "Twoje zamówienie CogniCit czeka 🧠". Include cart contents, direct link back to checkout, 5% discount code for urgency. Estimated 10-15% recovery rate on abandoned carts (industry average).
+
+---
+
+## EXECUTIVE SUMMARY
+
+**Cognicit is NOT buyable.** The website is a beautifully built static frontend with excellent SEO, policy pages, and UX — but it cannot process real orders. The cart works perfectly as a UI, but every "order" is silently saved to browser localStorage and lost.
+
+**The single blocker:** No backend order processing (#155 — Formspree). Everything else (shipping, payment UI, VAT, trust elements, policies) is in place and ready.
+
+**What's improved since last audit:** Bundle pricing, price comparison table, availability section, blog enhancements, email capture popups — all cosmetic/SEO wins that don't address the core buyability gap.
+
+**What needs CEO action NOW:** Create a Formspree account and provide the form endpoint ID. 15 minutes of dev work after that makes the site functional.
