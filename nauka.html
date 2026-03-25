@@ -10,31 +10,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --gold: #c9a96e; --forest: #1a3a2a; --cream: #faf7f0; --charcoal: #2a2a28; --soft-text: #5a5a58; }
+    :root { --accent: #8f7a3d; --text: #2a2a27; --cream: #faf7f0; --text: #2a2a27; --soft-text: #5a5a58; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'DM Sans', sans-serif; color: var(--charcoal); background: #fdfcf8; line-height: 1.8; }
-    .legal-bar { background: var(--forest); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
-    .legal-bar strong { color: var(--gold); }
+    body { font-family: 'EB Garamond', Georgia, serif; color: var(--charcoal); background: #fdfcf8; line-height: 1.8; }
+    .legal-bar { background: var(--text, #2a2a27); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
+    .legal-bar strong { color: var(--accent, #8f7a3d); }
     header { position: fixed; top: 32px; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(253,252,248,0.95); backdrop-filter: blur(10px); }
-    .logo { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--forest); text-decoration: none; }
-    .logo span { color: var(--gold); }
+    .logo { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--text, #2a2a27); text-decoration: none; }
+    .logo span { color: var(--accent, #8f7a3d); }
     nav a { margin-left: 24px; color: var(--charcoal); text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
     .page-hero { padding: 140px 8% 60px; text-align: center; }
-    .page-hero h1 { font-family: 'Playfair Display', serif; font-size: 52px; color: var(--forest); margin-bottom: 16px; }
+    .page-hero h1 { font-family: 'Playfair Display', serif; font-size: 52px; color: var(--text, #2a2a27); margin-bottom: 16px; }
     .page-hero p { font-size: 16px; color: var(--soft-text); max-width: 700px; margin: 0 auto; }
     .content { max-width: 900px; margin: 0 auto; padding: 0 8% 80px; }
-    .content h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--forest); margin: 48px 0 16px; }
-    .content h3 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--forest); margin: 32px 0 12px; }
+    .content h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--text, #2a2a27); margin: 48px 0 16px; }
+    .content h3 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--text, #2a2a27); margin: 32px 0 12px; }
     .content p { margin-bottom: 16px; font-size: 15px; color: var(--soft-text); }
     .content .ref { font-size: 12px; color: #999; margin: 8px 0 24px; padding: 12px 16px; background: var(--cream); border-left: 3px solid var(--gold); }
     .content .legal-note { font-size: 12px; color: #888; background: #f9f5ef; padding: 20px; margin: 32px 0; border-left: 3px solid var(--gold); }
-    .content .pub-count { display: inline-block; background: var(--forest); color: var(--gold); padding: 4px 12px; font-size: 13px; font-weight: 600; margin-left: 8px; }
+    .content .pub-count { display: inline-block; background: var(--text, #2a2a27); color: var(--accent, #8f7a3d); padding: 4px 12px; font-size: 13px; font-weight: 600; margin-left: 8px; }
     .content ul { padding-left: 20px; margin-bottom: 16px; }
     .content li { margin-bottom: 8px; font-size: 15px; color: var(--soft-text); }
     .warnings-section { background: #fdf6f6; padding: 40px; margin: 40px 0; border-left: 4px solid #c0392b; }
     .warnings-section h3 { color: #c0392b; margin-top: 0; }
     footer { background: var(--charcoal); color: rgba(255,255,255,0.6); padding: 40px 8%; text-align: center; font-size: 13px; }
-    footer a { color: var(--gold); }
+    footer a { color: var(--accent, #8f7a3d); }
   
     .breadcrumb {
       max-width: 900px;
@@ -52,6 +52,7 @@
       contain-intrinsic-size: auto 500px;
     }
 </style>
+<link rel="stylesheet" href="assets/css/cognivia-v2.css">
   <link rel="alternate" hreflang="pl" href="https://gitc0indonor.github.io/nauka.html">
   <link rel="canonical" href="https://gitc0indonor.github.io/nauka.html">
 <script type="application/ld+json">
@@ -105,7 +106,7 @@
       <li><strong>Cytykolina (CDP-cholina) i funkcje poznawcze:</strong> <span class="pub-count">233 publikacji</span></li>
       <li><strong>Beta-cyklodekstryna i biodostępność:</strong> <span class="pub-count">1 176 publikacji</span></li>
     </ul>
-    <p>Poniżej przedstawiamy wybrane wyniki badań. Pełna lista jest dostępna na stronie <a href="https://pubmed.ncbi.nlm.nih.gov/" style="color: var(--gold);">pubmed.ncbi.nlm.nih.gov</a>.</p>
+    <p>Poniżej przedstawiamy wybrane wyniki badań. Pełna lista jest dostępna na stronie <a href="https://pubmed.ncbi.nlm.nih.gov/" style="color: var(--accent, #8f7a3d);">pubmed.ncbi.nlm.nih.gov</a>.</p>
 
     <h2>Kwas Alfa‑Liponowy (ALA) — 250 mg</h2>
     <h3>Charakterystyka</h3>
@@ -181,7 +182,7 @@
           <div style="width: 68px; height: 48px; background: rgba(255,0,0,0.85); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; box-shadow: 0 4px 16px rgba(255,0,0,0.3);">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
           </div>
-          <span style="color: rgba(255,255,255,0.7); font-size: 14px; font-family: 'Inter', sans-serif;">Kliknij, aby obejrzeć film</span>
+          <span style="color: rgba(255,255,255,0.7); font-size: 14px; font-family: 'EB Garamond', Georgia, serif;">Kliknij, aby obejrzeć film</span>
         </div>
       </div>
       <p style="font-size: 12px; color: var(--soft, #5a5a58); margin-top: 12px; opacity: 0.7;">Film wyjaśnia ogólną zasadę działania cyklodekstryn w suplementacji.</p>
@@ -191,6 +192,7 @@
   <style>
     .yt-embed:hover .yt-placeholder div:first-child { transform: scale(1.08); transition: transform 0.2s ease; }
   </style>
+<link rel="stylesheet" href="assets/css/cognivia-v2.css">
   <script>
     function loadYouTube(el) {
       var videoId = el.getAttribute('data-video-id');

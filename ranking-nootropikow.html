@@ -18,31 +18,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --gold: #c9a96e; --forest: #1a3a2a; --cream: #faf7f0; --charcoal: #2a2a28; --soft-text: #5a5a58; }
+    :root { --accent: #8f7a3d; --text: #2a2a27; --cream: #faf7f0; --text: #2a2a27; --soft-text: #5a5a58; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'DM Sans', sans-serif; color: var(--charcoal); background: #fdfcf8; line-height: 1.8; }
-    .legal-bar { background: var(--forest); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
-    .legal-bar strong { color: var(--gold); }
+    body { font-family: 'EB Garamond', Georgia, serif; color: var(--charcoal); background: #fdfcf8; line-height: 1.8; }
+    .legal-bar { background: var(--text, #2a2a27); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
+    .legal-bar strong { color: var(--accent, #8f7a3d); }
     header { position: fixed; top: 32px; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(253,252,248,0.95); backdrop-filter: blur(10px); }
-    .logo { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--forest); text-decoration: none; }
-    .logo span { color: var(--gold); }
+    .logo { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--text, #2a2a27); text-decoration: none; }
+    .logo span { color: var(--accent, #8f7a3d); }
     nav a { margin-left: 24px; color: var(--charcoal); text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
     .breadcrumb { max-width: 1000px; margin: 100px auto 0; padding: 0 6%; font-size: 12px; color: var(--soft-text); }
-    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    .breadcrumb a { color: var(--accent, #8f7a3d); text-decoration: none; }
     .breadcrumb span { margin: 0 6px; opacity: 0.4; }
     main { max-width: 1000px; margin: 0 auto; padding: 40px 6% 80px; }
-    main .tag { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
-    main h1 { font-family: 'Playfair Display', serif; font-size: 42px; color: var(--forest); margin-bottom: 16px; line-height: 1.2; }
+    main .tag { font-size: 11px; color: var(--accent, #8f7a3d); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
+    main h1 { font-family: 'Playfair Display', serif; font-size: 42px; color: var(--text, #2a2a27); margin-bottom: 16px; line-height: 1.2; }
     main .meta { font-size: 13px; color: #999; margin-bottom: 32px; }
-    main h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--forest); margin: 48px 0 16px; }
-    main h3 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--forest); margin: 28px 0 12px; }
+    main h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--text, #2a2a27); margin: 48px 0 16px; }
+    main h3 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--text, #2a2a27); margin: 28px 0 12px; }
     main p { font-size: 15px; color: var(--soft-text); margin-bottom: 16px; }
     main ul { font-size: 15px; color: var(--soft-text); margin: 0 0 16px 24px; }
     main li { margin-bottom: 8px; }
     .ranking-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 14px; overflow-x: auto; display: block; }
     .ranking-table thead, .ranking-table tbody, .ranking-table tr { display: table; width: 100%; table-layout: fixed; }
     .ranking-table { display: table; }
-    .ranking-table th { background: var(--forest); color: white; padding: 14px 12px; text-align: left; font-weight: 500; font-size: 13px; }
+    .ranking-table th { background: var(--text, #2a2a27); color: white; padding: 14px 12px; text-align: left; font-weight: 500; font-size: 13px; }
     .ranking-table th:first-child { border-radius: 4px 0 0 0; }
     .ranking-table th:last-child { border-radius: 0 4px 0 0; }
     .ranking-table td { padding: 14px 12px; border-bottom: 1px solid #eee; font-size: 13px; vertical-align: top; }
@@ -55,19 +55,19 @@
 
     .competitor-card { background: white; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; padding: 24px; margin-bottom: 20px; }
     .competitor-card h3 { margin-top: 0; }
-    .competitor-card .score { display: inline-block; background: var(--forest); color: white; padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+    .competitor-card .score { display: inline-block; background: var(--text, #2a2a27); color: white; padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
     .competitor-card .pros, .competitor-card .cons { margin: 8px 0; padding-left: 20px; font-size: 14px; }
     .competitor-card .pros li::marker { content: "✅ "; }
     .competitor-card .cons li::marker { content: "❌ "; }
 
     .checklist { background: var(--cream); border-radius: 8px; padding: 28px; margin: 24px 0; }
-    .checklist h3 { margin-top: 0; color: var(--forest); }
+    .checklist h3 { margin-top: 0; color: var(--text, #2a2a27); }
     .checklist ol { font-size: 14px; color: var(--soft-text); margin-left: 20px; }
     .checklist li { margin-bottom: 10px; }
     .checklist li strong { color: var(--charcoal); }
 
     .cta-box { background: linear-gradient(135deg, #f5f0e8, #faf7f0); border: 1px solid rgba(201,169,110,0.3); border-radius: 12px; padding: 32px; margin: 40px 0; text-align: center; }
-    .cta-box h3 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--forest); margin-bottom: 12px; }
+    .cta-box h3 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--text, #2a2a27); margin-bottom: 12px; }
     .cta-box p { font-size: 14px; color: var(--soft-text); margin-bottom: 20px; }
     .cta-btn { display: inline-block; background: var(--gold); color: white; padding: 14px 32px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 14px; letter-spacing: 0.5px; text-transform: uppercase; transition: all 0.3s; }
     .cta-btn:hover { background: #b89558; transform: translateY(-2px); }
@@ -77,13 +77,13 @@
     .guarantee-badge .badge-text h4 { font-size: 16px; color: #2a7d3a; margin-bottom: 4px; }
     .guarantee-badge .badge-text p { font-size: 13px; color: var(--soft-text); margin: 0; }
 
-    .trust-bar { background: var(--forest); color: white; padding: 16px 5%; text-align: center; font-size: 13px; margin-top: 40px; }
-    .trust-bar a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    .trust-bar { background: var(--text, #2a2a27); color: white; padding: 16px 5%; text-align: center; font-size: 13px; margin-top: 40px; }
+    .trust-bar a { color: var(--accent, #8f7a3d); text-decoration: none; font-weight: 600; }
     .trust-bar .badge { display: inline-block; background: rgba(201,169,110,0.15); border: 1px solid rgba(201,169,110,0.3); padding: 4px 12px; border-radius: 20px; font-size: 11px; margin: 0 4px; }
     footer { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 40px 5%; text-align: center; font-size: 12px; }
-    footer a { color: var(--gold); text-decoration: none; }
+    footer a { color: var(--accent, #8f7a3d); text-decoration: none; }
     .cross-links { margin: 32px 0; }
-    .cross-links a { display: inline-block; color: var(--gold); text-decoration: none; font-size: 13px; font-weight: 600; margin: 0 16px 8px 0; }
+    .cross-links a { display: inline-block; color: var(--accent, #8f7a3d); text-decoration: none; font-size: 13px; font-weight: 600; margin: 0 16px 8px 0; }
     .cross-links a:hover { text-decoration: underline; }
 
     @media (max-width: 768px) {
@@ -96,6 +96,7 @@
       .competitor-card { padding: 16px; }
     }
   </style>
+<link rel="stylesheet" href="assets/css/cognivia-v2.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -445,7 +446,7 @@
       <div class="badge-circle">30</div>
       <div class="badge-text">
         <h4>30-dniowa gwarancja satysfakcji</h4>
-        <p>Nie jesteś zadowolony/a? Zwrócimy pieniądze za pierwsze opakowanie. <a href="/zwroty.html" style="color: var(--gold);">Szczegóły →</a></p>
+        <p>Nie jesteś zadowolony/a? Zwrócimy pieniądze za pierwsze opakowanie. <a href="/zwroty.html" style="color: var(--accent, #8f7a3d);">Szczegóły →</a></p>
       </div>
     </div>
 

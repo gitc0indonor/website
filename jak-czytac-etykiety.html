@@ -20,30 +20,30 @@
       --beige: #f5f0e8;
       --cream: #faf7f0;
       --white: #fdfcf8;
-      --charcoal: #2a2a28;
+      --text: #2a2a27;
       --soft: #5a5a58;
-      --gold: #c9a96e;
+      --accent: #8f7a3d;
       --green: #2D6642;
       --red: #c44;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--beige); line-height: 1.8; }
+    body { font-family: 'EB Garamond', Georgia, serif; color: var(--charcoal); background: var(--beige); line-height: 1.8; }
 
     .scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--gold); z-index: 9999; transition: width 0.1s; }
     .legal-bar { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 6px 5%; font-size: 10px; text-align: center; letter-spacing: 0.3px; }
-    .legal-bar strong { color: var(--gold); }
+    .legal-bar strong { color: var(--accent, #8f7a3d); }
     .breadcrumb { max-width: 900px; margin: 100px auto 0; padding: 0 5%; font-size: 12px; color: #888; }
-    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    .breadcrumb a { color: var(--accent, #8f7a3d); text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     .breadcrumb span { margin: 0 6px; opacity: 0.4; }
     header { position: fixed; top: 30px; width: 100%; padding: 24px 6%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); transition: all 0.3s; }
     header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
     .logo { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 600; color: var(--charcoal); text-decoration: none; letter-spacing: 1px; }
     nav a { margin-left: 36px; color: var(--charcoal); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
-    nav a:hover { color: var(--gold); }
+    nav a:hover { color: var(--accent, #8f7a3d); }
 
     .page-hero { padding: 140px 8% 60px; text-align: center; background: var(--beige); }
-    .page-hero .tag { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 16px; }
+    .page-hero .tag { font-size: 11px; color: var(--accent, #8f7a3d); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 16px; }
     .page-hero h1 { font-family: 'EB Garamond', serif; font-size: 48px; font-weight: 400; color: var(--charcoal); margin-bottom: 16px; line-height: 1.2; }
     .page-hero p { font-size: 15px; color: var(--soft); max-width: 600px; margin: 0 auto; }
 
@@ -95,27 +95,27 @@
     .cta-section h2 { font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 400; margin-bottom: 16px; }
     .cta-section p { color: rgba(255,255,255,0.7); font-size: 15px; max-width: 500px; margin: 0 auto 24px; }
     .cta-form { display: flex; gap: 12px; max-width: 420px; margin: 0 auto; }
-    .cta-form input { flex: 1; padding: 14px 20px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.08); color: white; font-size: 14px; border-radius: 6px; font-family: 'Inter', sans-serif; }
+    .cta-form input { flex: 1; padding: 14px 20px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.08); color: white; font-size: 14px; border-radius: 6px; font-family: 'EB Garamond', Georgia, serif; }
     .cta-form input::placeholder { color: rgba(255,255,255,0.4); }
-    .cta-form button { padding: 14px 28px; background: var(--gold); color: white; border: none; font-size: 14px; font-weight: 500; letter-spacing: 0.5px; cursor: pointer; border-radius: 6px; font-family: 'Inter', sans-serif; transition: background 0.3s; white-space: nowrap; }
+    .cta-form button { padding: 14px 28px; background: var(--gold); color: white; border: none; font-size: 14px; font-weight: 500; letter-spacing: 0.5px; cursor: pointer; border-radius: 6px; font-family: 'EB Garamond', Georgia, serif; transition: background 0.3s; white-space: nowrap; }
     .cta-form button:hover { background: #b8943d; }
     .cta-note { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 12px; }
 
     .trust-bar { background: var(--charcoal); color: rgba(255,255,255,0.8); padding: 14px 6%; display: flex; justify-content: center; align-items: center; gap: 24px; font-size: 12px; letter-spacing: 0.5px; flex-wrap: wrap; }
     .trust-bar .divider { color: rgba(255,255,255,0.2); }
-    .trust-bar .cta-gold { color: var(--gold); text-decoration: none; font-weight: 500; border: 1px solid var(--gold); padding: 4px 14px; border-radius: 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s; }
+    .trust-bar .cta-gold { color: var(--accent, #8f7a3d); text-decoration: none; font-weight: 500; border: 1px solid var(--gold); padding: 4px 14px; border-radius: 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s; }
     .trust-bar .cta-gold:hover { background: var(--gold); color: white; }
 
     .related-links { max-width: 740px; margin: 0 auto; padding: 40px 6%; }
     .related-links h3 { font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 500; margin-bottom: 16px; color: var(--charcoal); }
-    .related-links a { display: block; padding: 8px 0; color: var(--gold); text-decoration: none; font-size: 14px; border-bottom: 1px solid #e8e4dc; }
+    .related-links a { display: block; padding: 8px 0; color: var(--accent, #8f7a3d); text-decoration: none; font-size: 14px; border-bottom: 1px solid #e8e4dc; }
     .related-links a:hover { color: var(--charcoal); }
 
     footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 48px 6% 24px; font-size: 12px; }
     .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; max-width: 900px; margin: 0 auto 32px; }
     .footer-grid h4 { color: rgba(255,255,255,0.8); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
     .footer-grid a { display: block; color: rgba(255,255,255,0.5); text-decoration: none; margin-bottom: 8px; font-size: 12px; }
-    .footer-grid a:hover { color: var(--gold); }
+    .footer-grid a:hover { color: var(--accent, #8f7a3d); }
     .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); }
 
     .back-to-top { position: fixed; bottom: 30px; right: 30px; width: 44px; height: 44px; background: var(--gold); color: white; border: none; border-radius: 50%; font-size: 18px; cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.3s; z-index: 999; display: flex; align-items: center; justify-content: center; }
@@ -138,6 +138,7 @@
       contain-intrinsic-size: auto 500px;
     }
 </style>
+<link rel="stylesheet" href="assets/css/cognivia-v2.css">
 
   <script type="application/ld+json">
   {
@@ -392,7 +393,7 @@
         <tr>
           <th>Kryterium</th>
           <th>Wiele suplementów</th>
-          <th style="color: var(--gold);">CogniCit</th>
+          <th style="color: var(--accent, #8f7a3d);">CogniCit</th>
         </tr>
       </thead>
       <tbody>
@@ -447,7 +448,7 @@
       <li>Uważaj na cudowne obietnice — suplement nie leczy</li>
     </ul>
 
-    <p>Jeśli szukasz suplementu, który przechodzi tę checklistę — sprawdź <a href="/produkt.html" style="color: var(--gold);">CogniCit</a>. 3 składniki, jawne dawki, produkcja GMP, zgłoszenie do GIS.</p>
+    <p>Jeśli szukasz suplementu, który przechodzi tę checklistę — sprawdź <a href="/produkt.html" style="color: var(--accent, #8f7a3d);">CogniCit</a>. 3 składniki, jawne dawki, produkcja GMP, zgłoszenie do GIS.</p>
 
   </article>
 

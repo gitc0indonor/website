@@ -32,25 +32,25 @@
         /* Header */
         header { background: var(--white); border-bottom: 1px solid var(--gray-light); padding: 16px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
         .logo { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 700; color: var(--charcoal); text-decoration: none; }
-        .logo span { color: var(--gold); }
-        nav a { margin-left: 24px; color: var(--charcoal); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
-        nav a:hover { color: var(--gold); }
+        .logo span { color: var(--accent, #8f7a3d); }
+        nav a { margin-left: 24px; color: var(--charcoal); text-decoration: none; font-family: 'EB Garamond', Georgia, serif; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+        nav a:hover { color: var(--accent, #8f7a3d); }
 
         /* Breadcrumb */
-        .breadcrumb { max-width: 800px; margin: 0 auto; padding: 20px 5% 0; font-family: 'Inter', sans-serif; font-size: 12px; color: var(--gray-mid); }
-        .breadcrumb a { color: var(--gold); text-decoration: none; }
+        .breadcrumb { max-width: 800px; margin: 0 auto; padding: 20px 5% 0; font-family: 'EB Garamond', Georgia, serif; font-size: 12px; color: var(--gray-mid); }
+        .breadcrumb a { color: var(--accent, #8f7a3d); text-decoration: none; }
         .breadcrumb span { margin: 0 8px; }
 
         /* Main */
         main { max-width: 800px; margin: 0 auto; padding: 40px 5% 80px; }
         main h1 { font-family: 'EB Garamond', serif; font-size: 38px; font-weight: 700; color: var(--charcoal); margin-bottom: 8px; }
-        main .subtitle { font-family: 'Inter', sans-serif; font-size: 14px; color: var(--gray-mid); margin-bottom: 40px; }
+        main .subtitle { font-family: 'EB Garamond', Georgia, serif; font-size: 14px; color: var(--gray-mid); margin-bottom: 40px; }
         main h2 { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 600; color: var(--charcoal); margin: 40px 0 16px; border-bottom: 2px solid var(--gold); padding-bottom: 8px; }
         main h3 { font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 600; color: var(--charcoal); margin: 24px 0 12px; }
         main p { font-size: 16px; line-height: 1.8; margin-bottom: 16px; color: #3a3a3a; }
         main ul, main ol { margin: 12px 0 20px 24px; font-size: 16px; color: #3a3a3a; }
         main li { margin-bottom: 8px; line-height: 1.6; }
-        main table { width: 100%; border-collapse: collapse; margin: 20px 0 30px; font-family: 'Inter', sans-serif; font-size: 14px; }
+        main table { width: 100%; border-collapse: collapse; margin: 20px 0 30px; font-family: 'EB Garamond', Georgia, serif; font-size: 14px; }
         main th { background: var(--charcoal); color: white; padding: 12px 16px; text-align: left; font-weight: 500; }
         main td { padding: 12px 16px; border-bottom: 1px solid var(--gray-light); }
         main tr:nth-child(even) td { background: var(--beige); }
@@ -60,15 +60,15 @@
         /* Cookie consent banner */
         .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: var(--charcoal); color: rgba(255,255,255,0.9); padding: 20px 5%; z-index: 9999; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; box-shadow: 0 -4px 20px rgba(0,0,0,0.2); }
         .cookie-banner.hidden { display: none; }
-        .cookie-banner p { font-family: 'Inter', sans-serif; font-size: 13px; line-height: 1.5; flex: 1; min-width: 280px; margin: 0; }
-        .cookie-banner p a { color: var(--gold); }
+        .cookie-banner p { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; line-height: 1.5; flex: 1; min-width: 280px; margin: 0; }
+        .cookie-banner p a { color: var(--accent, #8f7a3d); }
         .cookie-buttons { display: flex; gap: 10px; flex-shrink: 0; }
-        .cookie-btn { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 6px; border: none; cursor: pointer; transition: all 0.2s; }
+        .cookie-btn { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 6px; border: none; cursor: pointer; transition: all 0.2s; }
         .cookie-btn-accept { background: var(--gold); color: var(--charcoal); }
         .cookie-btn-accept:hover { background: var(--gold-dark); }
         .cookie-btn-necessary { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); }
         .cookie-btn-necessary:hover { border-color: white; }
-        .cookie-btn-settings { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+        .cookie-btn-settings { background: transparent; color: var(--accent, #8f7a3d); border: 1px solid var(--gold); }
         .cookie-btn-settings:hover { background: rgba(201,169,110,0.1); }
 
         /* Cookie settings panel */
@@ -77,7 +77,7 @@
         .cookie-settings h3 { font-family: 'EB Garamond', serif; font-size: 24px; margin-bottom: 20px; }
         .cookie-category { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--gray-light); }
         .cookie-category-info h4 { font-family: 'EB Garamond', serif; font-size: 18px; margin-bottom: 4px; }
-        .cookie-category-info p { font-family: 'Inter', sans-serif; font-size: 12px; color: var(--gray-mid); margin: 0; }
+        .cookie-category-info p { font-family: 'EB Garamond', Georgia, serif; font-size: 12px; color: var(--gray-mid); margin: 0; }
         .toggle-switch { position: relative; width: 48px; height: 26px; flex-shrink: 0; margin-left: 20px; }
         .toggle-switch input { opacity: 0; width: 0; height: 0; }
         .toggle-slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: var(--gray-light); border-radius: 26px; transition: 0.3s; }
@@ -91,9 +91,9 @@
         footer { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 60px 5% 40px; }
         .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; max-width: 1200px; margin: 0 auto; }
         .footer-grid h4 { font-family: 'EB Garamond', serif; font-size: 18px; color: white; margin-bottom: 16px; }
-        .footer-grid p, .footer-grid a { font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.6); text-decoration: none; display: block; margin-bottom: 8px; }
-        .footer-grid a:hover { color: var(--gold); }
-        .footer-bottom { max-width: 1200px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-family: 'Inter', sans-serif; font-size: 12px; }
+        .footer-grid p, .footer-grid a { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; color: rgba(255,255,255,0.6); text-decoration: none; display: block; margin-bottom: 8px; }
+        .footer-grid a:hover { color: var(--accent, #8f7a3d); }
+        .footer-bottom { max-width: 1200px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-family: 'EB Garamond', Georgia, serif; font-size: 12px; }
 
         @media (max-width: 768px) {
             main h1 { font-size: 28px; }
@@ -104,6 +104,7 @@
             .cookie-btn { flex: 1; text-align: center; }
         }
     </style>
+<link rel="stylesheet" href="assets/css/cognivia-v2.css">
 </head>
 <body>
 

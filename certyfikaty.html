@@ -20,9 +20,9 @@
       --beige: #f5f0e8;
       --cream: #faf7f0;
       --white: #fdfcf8;
-      --charcoal: #2a2a28;
+      --text: #2a2a27;
       --soft: #5a5a58;
-      --gold: #c9a96e;
+      --accent: #8f7a3d;
       --green: #2D6642;
       --green-light: #e8f5e9;
       --blue: #1565c0;
@@ -32,12 +32,12 @@
     body { font-family: 'EB Garamond', Georgia, serif; color: var(--charcoal); background: var(--beige); line-height: 1.8; }
     .scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--gold); z-index: 9999; transition: width 0.1s; }
     .legal-bar { background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 6px 5%; font-size: 10px; text-align: center; letter-spacing: 0.3px; }
-    .legal-bar strong { color: var(--gold); }
+    .legal-bar strong { color: var(--accent, #8f7a3d); }
     header { position: fixed; top: 30px; width: 100%; padding: 24px 6%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); transition: all 0.3s; }
     header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
     .logo { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 600; color: var(--charcoal); text-decoration: none; letter-spacing: 1px; }
     nav a { margin-left: 36px; color: var(--charcoal); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
-    nav a:hover { color: var(--gold); }
+    nav a:hover { color: var(--accent, #8f7a3d); }
     .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
     .hamburger span { display: block; width: 24px; height: 2px; background: var(--charcoal); margin: 5px 0; transition: 0.3s; }
 
@@ -48,7 +48,7 @@
       font-size: 12px;
       color: #888;
     }
-    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    .breadcrumb a { color: var(--accent, #8f7a3d); text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     .breadcrumb span { margin: 0 6px; opacity: 0.4; }
 
@@ -127,7 +127,7 @@
     .cta-section .btn:hover { background: #d4b578; }
 
     footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 30px 8%; text-align: center; font-size: 12px; }
-    footer a { color: var(--gold); text-decoration: none; }
+    footer a { color: var(--accent, #8f7a3d); text-decoration: none; }
 
     .content-visibility section:not(.hero):not(.trust-intro) {
       content-visibility: auto;
@@ -304,7 +304,7 @@
         </div>
       </div>
 
-      <p style="font-size: 13px; color: var(--soft); font-style: italic;">📄 Certyfikat GMP w formacie PDF będzie dostępny do pobrania po finalizacji produkcji. W międzyczasie chętnie udostępnimy go na życzenie — napisz na <a href="mailto:cognivia.business@outlook.com" style="color: var(--gold);">cognivia.business@outlook.com</a>.</p>
+      <p style="font-size: 13px; color: var(--soft); font-style: italic;">📄 Certyfikat GMP w formacie PDF będzie dostępny do pobrania po finalizacji produkcji. W międzyczasie chętnie udostępnimy go na życzenie — napisz na <a href="mailto:cognivia.business@outlook.com" style="color: var(--accent, #8f7a3d);">cognivia.business@outlook.com</a>.</p>
     </div>
 
     <!-- LAB RESULTS -->
