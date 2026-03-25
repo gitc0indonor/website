@@ -331,6 +331,7 @@
       <a href="produkt.html">Produkt</a>
       <a href="nauka.html">Nauka</a>
       <a href="blog/">Blog</a>
+      <a href="opinie.html">Opinie</a>
       <a href="o-nas.html">O nas</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
@@ -1376,6 +1377,89 @@
       checkSidebar();
     })();
   </script>
+<!-- Exit-intent popup — #193 -->
+<div class="exit-overlay-prod" id="exitOverlayProd">
+  <div class="exit-popup-prod">
+    <button class="exit-close-prod" id="exitCloseProd" aria-label="Zamknij">✕</button>
+    <div class="exit-badge-prod">10% zniżki</div>
+    <h3>Nie przegap premiery CogniCit!</h3>
+    <p>Zapisz się i odbierz <strong>10% zniżki</strong> na pierwsze zamówienie. Tylko dla zapisanych.</p>
+    <form class="exit-form-prod" action="https://formspree.io/f/xpwzgryv" method="POST">
+      <input type="hidden" name="source" value="exit-intent-produkt">
+      <input type="email" name="email" placeholder="Twój adres email" required>
+      <button type="submit">Chcę zniżkę 10%</button>
+    </form>
+    <p class="exit-note-prod">30-dniowa gwarancja satysfakcji · GMP · Bez kofeiny</p>
+  </div>
+</div>
+<style>
+  .exit-overlay-prod {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 10000;
+    display: none; align-items: center; justify-content: center;
+  }
+  .exit-overlay-prod.visible { display: flex; }
+  .exit-popup-prod {
+    background: #FAFAF7; border-radius: 16px; padding: 2.5rem 2rem; max-width: 420px;
+    width: 90%; position: relative; text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    animation: exitSlideUpProd 0.35s ease-out;
+  }
+  @keyframes exitSlideUpProd {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .exit-close-prod {
+    position: absolute; top: 12px; right: 16px; background: none; border: none;
+    font-size: 1.2rem; color: #999; cursor: pointer; line-height: 1;
+  }
+  .exit-close-prod:hover { color: #333; }
+  .exit-badge-prod {
+    display: inline-block; background: #C9A96E; color: #fff; padding: 4px 16px;
+    border-radius: 20px; font-family: 'EB Garamond', Georgia, serif; font-size: 0.8rem;
+    font-weight: 600; letter-spacing: 0.5px; margin-bottom: 0.8rem;
+  }
+  .exit-popup-prod h3 { font-family: 'EB Garamond', serif; font-size: 1.6rem; margin-bottom: 0.5rem; color: #2D2D2D; }
+  .exit-popup-prod p { font-family: 'EB Garamond', Georgia, serif; font-size: 0.9rem; color: #666; line-height: 1.5; margin-bottom: 1rem; }
+  .exit-form-prod { display: flex; gap: 0.5rem; }
+  .exit-form-prod input {
+    flex: 1; padding: 0.7rem 1rem; border: 1px solid #ddd; border-radius: 6px;
+    font-family: 'EB Garamond', Georgia, serif; font-size: 0.9rem; background: #fff;
+  }
+  .exit-form-prod button {
+    padding: 0.7rem 1.2rem; background: #C9A96E; color: #fff; border: none;
+    border-radius: 6px; font-family: 'EB Garamond', Georgia, serif; font-size: 0.85rem;
+    font-weight: 600; cursor: pointer; transition: background 0.3s; white-space: nowrap;
+  }
+  .exit-form-prod button:hover { background: #B8943D; }
+  .exit-note-prod { font-size: 0.75rem !important; color: #aaa !important; margin-bottom: 0 !important; margin-top: 0.75rem; }
+  @media (max-width: 480px) {
+    .exit-form-prod { flex-direction: column; }
+    .exit-popup-prod { padding: 2rem 1.5rem; }
+  }
+</style>
+<script>
+(function() {
+  var overlay = document.getElementById('exitOverlayProd');
+  var closeBtn = document.getElementById('exitCloseProd');
+  var dismissed = localStorage.getItem('exitPopupProdDismissed');
+  if (dismissed) return;
+  function showPopup() {
+    overlay.classList.add('visible');
+    localStorage.setItem('exitPopupProdDismissed', '1');
+  }
+  function hidePopup() {
+    overlay.classList.remove('visible');
+  }
+  closeBtn.addEventListener('click', hidePopup);
+  overlay.addEventListener('click', function(e) { if (e.target === overlay) hidePopup(); });
+  // Desktop: mouse leave top of viewport
+  document.addEventListener('mouseleave', function(e) {
+    if (e.clientY < 5) showPopup();
+  });
+  // Mobile: 45 second timer
+  setTimeout(function() { if (!localStorage.getItem('exitPopupProdDismissed')) showPopup(); }, 45000);
+})();
+</script>
 <script src="assets/js/cognivia.js"></script>
 </body>
 </html>

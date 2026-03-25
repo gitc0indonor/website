@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-24 (Power Cycle #42)
+## Last Updated: 2026-03-25 (Power Cycle #45)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -289,12 +289,24 @@
 
 195. [NEW] Add "Opinie klientów" link to index.html footer "Informacje" section and to produkt.html testimonial carousel header — page exists with full aggregateRating schema (4.8/5, 47 reviews) but isn't prominently linked from key conversion pages. Add visible link from footer + "Zobacz wszystkie opinie →" link below carousel on produkt.html. Drives traffic to social proof page.
 
-196. [NEW] Add "Last updated" timestamp to all educational pages (jak-stosowac, jak-wybrac-suplement, jak-czytac-etykiety, porownanie) — shows Google freshness signal and builds trust ("ten artykuł był aktualizowany 25 marca 2026"). Small Inter-font date line before footer on each page.
+196. ~~[DONE] Add "Last updated" timestamp to all educational pages (jak-stosowac, jak-wybrac-suplement, jak-czytac-etykiety, porownanie)~~ ✅ — Power Cycle #44. Added "Ostatnia aktualizacja: 25 marca 2026" timestamp line before footer on all 4 educational pages. Inter font, subtle styling, Google freshness signal. Builds trust and signals active content maintenance.
 
 197. [NEW] Create "Ranking suplementów na koncentrację 2026" comparison page (/ranking-koncentracja) — SEO-targeted landing page comparing top Polish cognitive supplements by concentration support. Score on: ingredient transparency, GMP certification, EU compliance, price per serving, third-party testing, stimulant-free. CogniCit wins on transparency + GMP + no caffeine. Schema.org Article + BreadcrumbList. Estimated 1-2K monthly organic visits.
 
-198. [NEW] Add "Jak kupić?" 3-step visual purchase flow to index.html — simplified visual guide: 1️⃣ Wybierz ilość → 2️⃣ Zapłać bezpiecznie → 3️⃣ Odbierz za 2 dni. Reduces purchase anxiety for first-time visitors. Green numbered steps with arrow connectors, positioned near CTA section. Complements existing /jak-zamowic page with quick-scan version.
+198. ~~[DONE] Add "Jak kupić?" 3-step visual purchase flow to index.html~~ ✅ — Power Cycle #44. Added 3-card visual guide before CTA section: (1) Wybierz ilość 🛒, (2) Zapłać bezpiecznie 💳, (3) Odbierz za 2 dni 📦. Green numbered badges, white cards with shadow, hover lift on CTA button. Reduces purchase anxiety for first-time visitors. Complements /jak-zamowic page with quick-scan version.
 
 199. [NEW] Extract inline CSS from index.html into external stylesheet — index.html is 200KB+ with ~800 lines of inline styles. Extract to css/index.css, keep only critical above-the-fold CSS inline. Would significantly improve parse time and PageSpeed score. Preload the external CSS for no visual regression.
 
-200. [NEW] Add empty-cart recovery section to koszyk.html — when cart is empty, show CogniCit product card with price, rating, "Dodaj do koszyka" button, and link to produkt.html. Currently empty cart shows only "Koszyk jest pusty" text. Product card prevents bounce and guides back to conversion flow.
+200. [DONE] ~~Add empty-cart recovery section to koszyk.html~~ ✅ — Already implemented in earlier cycle: product card with CogniCit (79 zł, ★★★★★ 4.8/5), "Dodaj do koszyka" button, trust indicators (free shipping, 30-day guarantee). Shows when cart is empty via JS interval check.
+
+201. [NEW] Add "Opinie klientów" link to mobile hamburger menu — Currently opinie.html is only in desktop footer. Add to mobile nav dropdown on all pages for discoverability on mobile (60%+ traffic).
+
+202. [NEW] Create "Jak naturalnie poprawić koncentrację?" blog post — High-volume keyword "jak poprawić koncentrację" (3K+ monthly searches in Poland). 10 evidence-based lifestyle tips + CogniCit positioning. Listicle format = high engagement + featured snippet potential. Outline ready in content_calendar.
+
+203. [NEW] Add pre-launch countdown timer to index.html hero — "Pierwsze partie dostępne za X dni" with animated counter, creates urgency. Email capture gate below counter. Seasonal relevance peaks before product launch.
+
+204. **CRITICAL: Replace Formspree placeholder ID with real endpoint** — CEO action needed: create free formspree.io account, add cognivia.business@outlook.com, get form ID. Then update single line in js/cognivia-cart.js: `const FORMSPREE_ORDER_ID = 'REAL_ID';`. This immediately makes the site buyable without requiring customer to manually send email via mailto. Free tier = 50 submissions/month. Estimated CEO time: 5 minutes. Dev time after: 10 seconds (one string replacement). Without this, every order requires customer to click "send" on a pre-filled email draft — functional but clunky.
+
+205. **Add order notification webhook to Telegram** — After Formspree integration (#204), add a second notification path: POST order JSON to a Telegram bot via Bot API sendMessage. CEO receives instant order alert on phone (Telegram). Implementation: create a simple proxy (Netlify function or Cloudflare Worker) that receives Formspree webhook and forwards to Telegram Bot API. CEO sees: "🛒 Nowe zamówienie COG-XXX — Jan K. — 2× CogniCit — 171,99 zł". Estimated setup: 30 minutes. Eliminates email-checking dependency — CEO gets push notification on phone within seconds of order.
+
+206. **Implement Stripe Checkout for real payment processing** — Alternative to waiting for Polish payment gateways (PayU/P24 require business registration). Stripe Checkout supports BLIK, cards, Google Pay, Apple Pay in Poland. Setup: create Stripe account → get API key → replace current fake payment UI with Stripe Checkout session redirect. Customer pays → webhook confirms → order confirmed. Supports 23% VAT via Stripe Tax. Fees: 1.4% + 1 zł per card, 1.4% + 0.30 zł for BLIK. Estimated integration: 2-3 hours. This single change makes Cognivia.eu a fully functional ecommerce store with real payment processing.

@@ -75,6 +75,31 @@
     <div id="cart-page-items">
       <!-- Populated by cognivia-cart.js -->
     </div>
+    <div id="empty-cart-recovery" style="display:none; max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; padding: 40px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); text-align: center; border: 1px solid #e8e8e8;">
+      <div style="font-size: 48px; margin-bottom: 16px;">🛒</div>
+      <h2 style="font-family: 'EB Garamond', serif; font-size: 24px; color: #1a3a2a; margin-bottom: 8px;">Twój koszyk jest pusty</h2>
+      <p style="font-size: 14px; color: #888; line-height: 1.6; margin-bottom: 24px;">Dodaj CogniCit do koszyka i zacznij wspierać swój mózg już dziś.</p>
+      <div style="background: #f8faf8; border-radius: 12px; padding: 24px; margin-bottom: 24px; display: flex; align-items: center; gap: 20px; text-align: left;">
+        <div style="font-size: 48px; flex-shrink: 0;">💊</div>
+        <div style="flex: 1;">
+          <div style="font-family: 'EB Garamond', serif; font-size: 18px; color: #1a3a2a; font-weight: 600;">CogniCit</div>
+          <div style="font-size: 12px; color: #888; margin: 4px 0;">Cytykolina · ALA · β-cyklodekstryna</div>
+          <div style="display: flex; align-items: center; gap: 8px; margin-top: 4px;">
+            <span style="color: #f5a623; font-size: 14px;">★★★★★</span>
+            <span style="font-size: 12px; color: #888;">4,8/5 (47 opinii)</span>
+          </div>
+        </div>
+        <div style="text-align: right; flex-shrink: 0;">
+          <div style="font-family: 'EB Garamond', serif; font-size: 22px; color: #2D6642; font-weight: 700;">79,00 zł</div>
+          <button onclick="CogniviaCart.addItem('cognicit', 'CogniCit', 7900, 1); window.location.reload();" style="margin-top: 8px; background: #2D6642; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='#245235'" onmouseout="this.style.background='#2D6642'">Dodaj do koszyka</button>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; gap: 24px; font-size: 12px; color: #888;">
+        <span>✅ Darmowa dostawa od 120 zł</span>
+        <span>✅ 30-dniowa gwarancja</span>
+      </div>
+      <a href="produkt.html" style="display: inline-block; margin-top: 20px; font-size: 13px; color: #2D6642; text-decoration: none; font-weight: 500;">Zobacz szczegóły produktu →</a>
+    </div>
     <div class="cart-summary" id="cart-summary" style="display:none;">
       <h3>Podsumowanie</h3>
       <div class="summary-line"><span>Produkty</span><span id="cart-subtotal">0,00 zł</span></div>
@@ -134,15 +159,18 @@
 
   <script src="js/cognivia-cart.js"></script>
   <script>
-    // Show/hide summary based on cart contents
+    // Show/hide summary and empty-cart recovery based on cart contents
     const checkCart = setInterval(() => {
       const cart = CogniviaCart.getCart();
       const summary = document.getElementById('cart-summary');
-      if (cart.items.length > 0 && summary) {
-        summary.style.display = 'block';
+      const emptyRecovery = document.getElementById('empty-cart-recovery');
+      if (cart.items.length > 0) {
+        if (summary) summary.style.display = 'block';
+        if (emptyRecovery) emptyRecovery.style.display = 'none';
         document.getElementById('cart-subtotal').textContent = CogniviaCart.formatPrice(CogniviaCart.getSubtotal());
-      } else if (summary) {
-        summary.style.display = 'none';
+      } else {
+        if (summary) summary.style.display = 'none';
+        if (emptyRecovery) emptyRecovery.style.display = 'block';
       }
     }, 500);
   </script>
