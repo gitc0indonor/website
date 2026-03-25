@@ -28,7 +28,7 @@
     .contact-card {
       background: #fff;
       border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
+      border-radius: 8px;
       padding: 36px 28px;
       text-align: center;
       transition: transform 0.2s, box-shadow 0.2s;
@@ -40,13 +40,13 @@
     .contact-card-icon { font-size: 40px; margin-bottom: 16px; }
     .contact-card h3 { font-family: 'EB Garamond', serif; font-size: 22px; margin-bottom: 8px; color: var(--charcoal); }
     .contact-card p { font-size: 14px; color: var(--soft); line-height: 1.6; }
-    .contact-card a { color: var(--green); text-decoration: none; font-weight: 500; }
+    .contact-card a { color: var(--accent); text-decoration: none; font-weight: 500; }
     .contact-card a:hover { text-decoration: underline; }
 
     .form-section {
       background: #fff;
       border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
+      border-radius: 8px;
       padding: 48px 40px;
       margin: 40px 0;
     }
@@ -59,22 +59,22 @@
     .form-group label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 6px; }
     .form-group input, .form-group textarea, .form-group select {
       width: 100%; padding: 14px 18px;
-      border: 1px solid var(--line); border-radius: 10px;
+      border: 1px solid var(--line); border-radius: 6px;
       font-family: inherit; font-size: 14px;
       background: var(--cream);
       transition: border-color 0.2s, box-shadow 0.2s;
     }
     .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-      outline: none; border-color: var(--green);
+      outline: none; border-color: var(--accent);
       box-shadow: 0 0 0 3px rgba(74,124,89,0.1);
     }
     .form-group textarea { min-height: 140px; resize: vertical; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .btn-submit {
-      display: inline-block; background: var(--green-dark); color: #fff;
+      display: inline-block; background: var(--dark-btn); color: #fff;
       border: none; padding: 16px 40px;
       font-family: inherit; font-size: 15px; font-weight: 600;
-      border-radius: 10px; cursor: pointer; width: 100%;
+      border-radius: 6px; cursor: pointer; width: 100%;
       transition: background 0.2s, transform 0.1s;
     }
     .btn-submit:hover { background: #1a3a2a; transform: translateY(-1px); }
@@ -82,7 +82,7 @@
     .form-note { font-size: 12px; color: #999; text-align: center; margin-top: 16px; }
 
     .response-box {
-      background: var(--green-light); border-radius: var(--radius-lg);
+      background: var(--bg-alt); border-radius: 8px;
       padding: 28px 32px; margin: 40px 0;
       display: flex; align-items: center; gap: 20px;
     }
@@ -93,7 +93,7 @@
     .gdpr-note {
       font-size: 13px; color: var(--soft); line-height: 1.7;
       margin: 24px 0; padding: 24px;
-      background: var(--cream); border-radius: 10px;
+      background: var(--cream); border-radius: 6px;
       border-left: 3px solid var(--gold);
     }
 
@@ -174,6 +174,21 @@
     <h1>Skontaktuj się z nami</h1>
     <p>Masz pytania o CogniCit, zamówienie lub współpracę? Odpowiadamy w ciągu 24 godzin w dni robocze.</p>
   </section>
+
+  <!-- Decorative art -->
+  <div class="art-block blue" style="min-height:200px;">
+    <svg viewBox="0 0 800 200" preserveAspectRatio="none">
+      <path d="M30,100 Q120,20 220,100 Q320,180 420,100 Q520,20 620,100 Q720,180 780,100" fill="none" stroke="#0d0f14" stroke-width="9" stroke-linecap="round" opacity="0.6"/>
+      <path d="M80,140 Q170,60 280,140 Q390,220 500,140 Q610,60 720,140" fill="none" stroke="#0d0f14" stroke-width="5" stroke-linecap="round" opacity="0.3"/>
+      <circle cx="420" cy="100" r="24" fill="#f1f0eb" opacity="0.4"/>
+    </svg>
+    <div class="content" style="min-height:200px;">
+      <div>
+        <p class="kicker" style="color: rgba(255,255,255,0.6);">Jesteśmy tu dla Ciebie</p>
+        <h3 style="color: var(--white); margin-top: 8px; font-size: clamp(1.4rem, 2.5vw, 2rem);">Każde pytanie ma znaczenie</h3>
+      </div>
+    </div>
+  </div>
 
   <div class="container">
     <div class="contact-grid">
@@ -263,7 +278,7 @@
 
     <div class="gdpr-note">
       <strong>Informacja RODO</strong><br>
-      Administratorem danych osobowych jest Cognivia. Dane podane w formularzu są przetwarzane w celu udzielenia odpowiedzi (art. 6 ust. 1 lit. f RODO). Szczegóły w <a href="polityka-prywatnosci.html" style="color: var(--green);">polityce prywatności</a>.
+      Administratorem danych osobowych jest Cognivia. Dane podane w formularzu są przetwarzane w celu udzielenia odpowiedzi (art. 6 ust. 1 lit. f RODO). Szczegóły w <a href="polityka-prywatnosci.html" style="color: var(--accent);">polityce prywatności</a>.
     </div>
   </div>
 
