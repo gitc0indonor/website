@@ -759,7 +759,7 @@
     /* === FOOTER === */
     /* === FOOTER NEWSLETTER (ENHANCED) === */
     .footer-newsletter {
-      background: linear-gradient(135deg, var(--green), #1a4a2e);
+      background: var(--text, #2a2a27);
       padding: 56px 6%;
     }
     .footer-newsletter-inner {
@@ -775,7 +775,7 @@
     }
     .footer-newsletter-text p {
       font-size: 15px;
-      color: rgba(255,255,255,0.8);
+      color: rgba(255,255,255,0.75);
       line-height: 1.6;
       margin-bottom: 6px;
     }
@@ -792,30 +792,30 @@
       align-items: center;
       gap: 6px;
       font-size: 13px;
-      color: rgba(255,255,255,0.7);
+      color: rgba(255,255,255,0.65);
     }
-    .fnl-trust-item span { color: #7ddf9e; }
+    .fnl-trust-item span { color: var(--accent, #8f7a3d); }
     .fnl-subscribers {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
       border-radius: 24px;
       padding: 6px 18px;
       margin-bottom: 20px;
       font-size: 13px;
-      color: rgba(255,255,255,0.85);
+      color: rgba(255,255,255,0.8);
     }
     .fnl-subscribers .dot {
       width: 8px; height: 8px;
-      background: #7ddf9e;
+      background: var(--accent, #8f7a3d);
       border-radius: 50%;
       animation: nlPulse 2s ease-in-out infinite;
     }
     @keyframes nlPulse {
-      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(125,223,158,0.5); }
-      50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(125,223,158,0); }
+      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(143,122,61,0.5); }
+      50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(143,122,61,0); }
     }
     .footer-newsletter-form {
       display: flex;
@@ -825,9 +825,9 @@
     }
     .footer-newsletter-form input {
       padding: 14px 18px;
-      border: 1px solid rgba(255,255,255,0.25);
+      border: 1px solid rgba(255,255,255,0.2);
       border-radius: 8px;
-      background: rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.08);
       color: var(--white);
       font-size: 15px;
       font-family: 'EB Garamond', Georgia, serif;
@@ -835,12 +835,12 @@
       max-width: 100%;
       transition: border-color 0.3s, box-shadow 0.3s;
     }
-    .footer-newsletter-form input::placeholder { color: rgba(255,255,255,0.4); }
-    .footer-newsletter-form input:focus { outline: none; border-color: var(--accent, #8f7a3d); box-shadow: 0 0 0 3px rgba(201,169,110,0.2); }
+    .footer-newsletter-form input::placeholder { color: rgba(255,255,255,0.35); }
+    .footer-newsletter-form input:focus { outline: none; border-color: var(--accent, #8f7a3d); box-shadow: 0 0 0 3px rgba(143,122,61,0.2); }
     .footer-newsletter-form button {
       padding: 14px 28px;
-      background: var(--gold);
-      color: var(--charcoal);
+      background: var(--accent, #8f7a3d);
+      color: var(--white);
       border: none;
       border-radius: 8px;
       font-size: 15px;

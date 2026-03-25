@@ -9,18 +9,18 @@
 }
 
 :root {
-  --beige: #f5f0e8;
-  --beige-dark: #ece5d8;
-  --cream: #faf8f4;
+  --bg: #f3f1ec;
+  --bg-alt: #ece8e0;
+  --surface: #f8f6f2;
   --white: #ffffff;
-  --charcoal: #1a1a1a;
-  --charcoal-light: #3a3a3a;
-  --text-muted: #6b6560;
-  --yellow-botanical: #e8d5a0;
-  --yellow-soft: #f0e6c8;
-  --border: rgba(26, 26, 26, 0.08);
+  --text: #2a2a27;
+  --text: #2a2a27;
+  --muted: #6f6a61;
+  --accent: #8f7a3d;
+  --accent: #8f7a3d;
+  --line: #dbd6cc;
   --font-heading: 'EB Garamond', Georgia, serif;
-  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-body: 'EB Garamond', Georgia, serif;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
   --radius: 4px;
 }
