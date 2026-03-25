@@ -1154,3 +1154,29 @@
 **CTA:** Email signup + link to produkt.html
 **Internal links:** blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, index.html (kalkulator kofeiny), produkt.html
 **Status:** Outline ready
+
+---
+
+### New Blog Post Outline (Added 2026-03-25 — Power Cycle #43)
+**Title:** Chroniczne zmęczenie umysłowe — przyczyny i jak sobie radzić?
+**Target:** Polish audience, SEO for "chroniczne zmęczenie", "zmęczenie umysłowe przyczyny", "jak radzić sobie ze zmęczeniem"
+**Word count:** 1500-2000
+**Keywords:** chroniczne zmęczenie, zmęczenie umysłowe, przewlekłe zmęczenie mózg, suplement na zmęczenie, brain fog suplement
+
+**Outline:**
+1. **Wstęp** — 1 na 3 Polaków zgłasza chroniczne zmęczenie. Nie zawsze chodzi o sen — często to mózg, nie ciało.
+2. **Czym jest zmęczenie umysłowe?** — Definicja: spadek funkcji wykonawczych po długotrwałym wysiłku poznawczym. Różnica między zmęczeniem fizycznym a mentalnym.
+3. **5 najczęstszych przyczyn** — (a) niedobór snu, (b) przeciążenie decyzyjne, (c) stres chroniczny (kortyzol), (d) dieta uboga w choliny i kwasy omega-3, (e) nadmiar kofeiny (paradoks stymulacji).
+4. **Co nauka mówi o mózgu zmęczonym?** — Spadek acetylocholiny, stres oksydacyjny mitochondriów, przeciążenie glutaminianem. Proste wyjaśnienie neuronauki.
+5. **Praktyczne strategie** — Sen (7-8h, stałe pory), ruch (BDNF), dieta (cholina, omega-3), cyfrowy detoks, technika Pomodoro.
+6. **Rola suplementacji** — Cytykolina (odbudowa acetylocholiny), ALA (ochrona mitochondriów), β-CD (lepsze wchłanianie). Co mówią badania kliniczne?
+7. **Czego NIE robić?** — Więcej kofeiny (pogarsza), suplementy-stacki z 20 składnikami (nieprzewidywalne), ignorowanie objawów.
+8. **CogniCit — naukowe podejście** — 3 synergiczne składniki, zero stymulantów, dawki z badań. Wsparcie, nie maskowanie objawów.
+9. **Podsumowanie** — Zmęczenie umysłowe to sygnał, nie słabość. Działaj u źródła: sen, dieta, ruch, suplementacja.
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html, nauka.html, blog/nootropiki-a-praca-umyslowa.html
+**SEO angle:** "chroniczne zmęczenie" — 4K+ monthly searches in Poland. Positions CogniCit as the evidence-based solution for brain fatigue. High commercial intent — people actively searching for solutions.
+**Target platforms:** Google (SEO), Wykop, grupy Facebook o zdrowiu, LinkedIn
+**Season:** Evergreen, peak Jan-Feb (post-holiday fatigue) and Sep (back to work)
+**Status:** Outline ready, needs writing

@@ -271,11 +271,11 @@
 
 186. ~~[NEW] Add "Opinie klientów" page (/opinie.html)~~ ✅ — Power Cycle #42. Verified: page exists (23KB, created earlier), has Product aggregateRating schema (4.8/5, 47 reviews), BreadcrumbList JSON-LD, canonical/hreflang/OG meta, breadcrumb nav, responsive. Already on sitemap. Marked DONE.
 
-187. [NEW] Add "Suplementy a alkohol" blog post to index.html footer "Informacje" section — cross-reference from safety/educational content for discoverability.
+187. ~~[DONE] Add "Suplementy a alkohol" blog post to index.html footer "Informacje" section~~ ✅ — Power Cycle #43. Added link to blog/suplementy-a-alkohol.html in footer Informacje column of index.html. Cross-reference from safety/educational content for discoverability.
 
 188. [NEW] Create "Suplementy a sen — higiena snu dla osób pracujących umysłowo" blog post — Target "suplementy a sen", "higiena snu praca umysłowa". Covers sleep architecture (REM/NREM), CogniCit morning dosing = zero sleep impact, sleep hygiene checklist (6 rules), melatonin vs lifestyle changes. Positions CogniCit as the supplement that doesn't interfere with sleep.
 
-189. [NEW] Add "/opinie.html" link to index.html footer and produkt.html testimonial section — page exists with full aggregateRating schema but isn't linked from key conversion pages. Add to footer Informacje column and add visible link from produkt.html testimonial carousel section. Drives traffic to social proof page.
+189. ~~[DONE] Add "/opinie.html" link to produkt.html testimonial section~~ ✅ — Power Cycle #43. Updated testimonial carousel "Zobacz więcej opinii" link from index.html#opinie to opinie.html (direct link to dedicated reviews page). Footer link was already present from earlier cycle. Drives traffic to social proof page with aggregateRating schema.
 
 190. [NEW] Create "Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów" blog post — High-volume SEO keyword "jak poprawić koncentrację" (3K+ monthly searches in Poland). Lifestyle tips + CogniCit positioning as evidence-based cognitive support. Covers: sleep, exercise, hydration, breaks, diet, meditation, digital detox, supplements, routine, environment. 10-item format with practical advice.
 
@@ -292,3 +292,9 @@
 196. [NEW] Add "Last updated" timestamp to all educational pages (jak-stosowac, jak-wybrac-suplement, jak-czytac-etykiety, porownanie) — shows Google freshness signal and builds trust ("ten artykuł był aktualizowany 25 marca 2026"). Small Inter-font date line before footer on each page.
 
 197. [NEW] Create "Ranking suplementów na koncentrację 2026" comparison page (/ranking-koncentracja) — SEO-targeted landing page comparing top Polish cognitive supplements by concentration support. Score on: ingredient transparency, GMP certification, EU compliance, price per serving, third-party testing, stimulant-free. CogniCit wins on transparency + GMP + no caffeine. Schema.org Article + BreadcrumbList. Estimated 1-2K monthly organic visits.
+
+198. [NEW] Add "Jak kupić?" 3-step visual purchase flow to index.html — simplified visual guide: 1️⃣ Wybierz ilość → 2️⃣ Zapłać bezpiecznie → 3️⃣ Odbierz za 2 dni. Reduces purchase anxiety for first-time visitors. Green numbered steps with arrow connectors, positioned near CTA section. Complements existing /jak-zamowic page with quick-scan version.
+
+199. [NEW] Extract inline CSS from index.html into external stylesheet — index.html is 200KB+ with ~800 lines of inline styles. Extract to css/index.css, keep only critical above-the-fold CSS inline. Would significantly improve parse time and PageSpeed score. Preload the external CSS for no visual regression.
+
+200. [NEW] Add empty-cart recovery section to koszyk.html — when cart is empty, show CogniCit product card with price, rating, "Dodaj do koszyka" button, and link to produkt.html. Currently empty cart shows only "Koszyk jest pusty" text. Product card prevents bounce and guides back to conversion flow.
