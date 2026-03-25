@@ -143,7 +143,7 @@
 
 **CTA:** Email signup for launch notification  
 **Internal links:** produkt.html, faq.html, nauka.html  
-**Status:** Outline ready, needs writing  
+**Status:** ✅ PUBLISHED 2026-03-25 — blog/jak-stosowac-cognicit.html  
 
 ---
 
@@ -166,7 +166,7 @@
 
 **CTA:** Email signup for launch notification  
 **Internal links:** faq.html, suplement-vs-lek.html (blog), produkt.html  
-**Status:** Outline ready, needs writing
+**Status:** ✅ PUBLISHED 2026-03-25 — blog/mity-o-suplementach.html
 
 ### New Blog Post Outline (Added 2026-03-23)
 **Title:** Poranny rytuał — jak suplementacja wpływa na produktywność?  
