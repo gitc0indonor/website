@@ -17,11 +17,11 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --cognivia-green: #2D6642;
-      --cognivia-pink: #C8327A;
-      --cognivia-beige: #f5f0e8;
-      --cognivia-charcoal: #2a2a28;
-      --cognivia-text: #4a4a48;
+      --cognivia-green: var(--accent, #8f7a3d);
+      --cognivia-pink: var(--pink, #be6b91);
+      --cognivia-beige: var(--bg, #f3f1ec);
+      --cognivia-charcoal: var(--text, #2a2a27);
+      --cognivia-text: var(--muted, #6f6a61);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -999,6 +999,23 @@
       <p style="text-align: center; font-size: 12px; color: #aaa; margin-top: 20px;">🚚 Darmowa dostawa InPost od 120 zł · DPD od 150 zł · 30-dniowa gwarancja satysfakcji</p>
     </div>
   </section>
+
+  <!-- Decorative art: Spiral -->
+  <div class="art-block beige" style="min-height:220px;">
+    <svg viewBox="0 0 800 220" preserveAspectRatio="none">
+      <path d="M100,180 C140,170 160,120 150,80 C140,40 100,20 80,50 C60,80 80,110 110,100 C140,90 145,65 130,60" fill="none" stroke="#0d0f14" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+      <path d="M400,160 C440,150 460,100 450,60 C440,20 400,10 380,40 C360,70 380,100 410,90 C440,80 445,55 430,50" fill="none" stroke="#0d0f14" stroke-width="8" stroke-linecap="round" opacity="0.55"/>
+      <path d="M650,140 C690,130 710,80 700,40 C690,0 650,-10 630,20 C610,50 630,80 660,70" fill="none" stroke="#0d0f14" stroke-width="7" stroke-linecap="round" opacity="0.4"/>
+      <circle cx="150" cy="80" r="20" fill="#f1f0eb" opacity="0.35"/>
+      <rect x="550" y="140" width="50" height="50" rx="4" fill="#f1f0eb" opacity="0.2"/>
+    </svg>
+    <div class="content" style="min-height:220px;">
+      <div>
+        <p style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:rgba(255,255,255,0.6);font-family:'EB Garamond',serif;margin:0;">Pytania i odpowiedzi</p>
+        <h3 style="color:var(--white);margin-top:8px;font-family:'EB Garamond',serif;font-size:clamp(1.3rem,2.2vw,1.8rem);font-weight:500;">Wszystko co musisz wiedzieć o CogniCit</h3>
+      </div>
+    </div>
+  </div>
 
   <!-- FAQ SECTION -->
   <section style="padding: 60px 5%; max-width: 800px; margin: 0 auto;">
