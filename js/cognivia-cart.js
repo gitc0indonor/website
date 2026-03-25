@@ -397,7 +397,12 @@ const CogniviaCart = {
         else console.warn('[CogniviaCart] Formspree responded with', r.status);
       }).catch(err => {
         console.warn('[CogniviaCart] Formspree notification failed (order saved locally):', err.message);
+        // Mailto fallback — open user's email client with order details
+        this._mailtoFallback(order, formData);
       });
+    } else {
+      // No real Formspree ID — use mailto fallback immediately
+      this._mailtoFallback(order, formData);
     }
 
     // Clear cart
@@ -406,6 +411,35 @@ const CogniviaCart = {
     // Redirect to confirmation
     window.location.href = 'potwierdzenie.html?order=' + order.id;
     return true;
+  },
+
+  // ---- Mailto Fallback (zero-setup order delivery) ----
+
+  _mailtoFallback(order, formData) {
+    const orderLines = [
+      'NOWE ZAMOWIENIE CogniCit',
+      'ID: ' + order.id,
+      'Data: ' + new Date(order.date).toLocaleString('pl-PL'),
+      '',
+      'ZAMAWIAJACY:',
+      'Imie: ' + (formData.firstName || '-') + ' ' + (formData.lastName || '-'),
+      'Email: ' + (formData.email || '-'),
+      'Telefon: ' + (formData.phone || '-'),
+      'Adres: ' + (formData.address || '-') + ', ' + (formData.city || '-') + ' ' + (formData.postalCode || '-'),
+      '',
+      'PRODUKTY:',
+      ...order.items.map(i => '- CogniCit x ' + i.quantity + ' szt. = ' + (i.quantity * 79).toFixed(2) + ' zl'),
+      '',
+      'DOSTAWA: ' + (order.shipping ? order.shipping.name : '-') + ' — ' + (order.shippingCost > 0 ? order.shippingCost.toFixed(2) + ' zl' : 'GRATIS'),
+      'PLATNOSC: ' + (order.payment ? order.payment.name : '-'),
+      '',
+      'SUMA: ' + order.total.toFixed(2) + ' zl (brutto, VAT 23%)'
+    ];
+    const body = encodeURIComponent(orderLines.join('\n'));
+    const subject = encodeURIComponent('Zamowienie CogniCit ' + order.id);
+    const mailtoUrl = 'mailto:cognivia.business@outlook.com?subject=' + subject + '&body=' + body;
+    console.log('[CogniviaCart] Opening mailto fallback for order ' + order.id);
+    window.open(mailtoUrl, '_blank');
   },
 
   // ---- Init ----

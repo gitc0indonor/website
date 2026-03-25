@@ -1134,3 +1134,23 @@
 **Target platforms:** Google (SEO), Wykop, grupy Facebook o produktywności, LinkedIn
 **Season:** Evergreen, slight peak Sep (back to work/school) and Jan (new year resolutions)
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-25)
+**Title:** Suplementy dla programistów — jak dbać o mózg przy biurku?
+**Target:** Polish tech community (Wykop, LinkedIn, dev forums)
+**Word count:** 1500-2000
+**Keywords:** suplementy programista, nootropik developer, koncentracja praca umysłowa, suplementy IT
+
+**Outline:**
+1. **Wstęp** — Programista = intensywna praca umysłowa 8-12h dziennie. Mózg zużywa 20% energii ciała.
+2. **Problem: kofeinowy rollercoaster** — 4 kawy dziennie → tolerance → crash → kolejna kawa. Efekt: uzależnienie, nie lepsza koncentracja.
+3. **Czego naprawdę potrzebuje developer?** — Acetylcholina (focus), ochrona antyoksydacyjna (stres oksydacyjny od ekranów), stabilna energia (nie skok adrenaliny)
+4. **3 składniki, które działają** — Cytykolina (budulec acetylocholiny), ALA (antyoksydant mitochondriów), β-CD (lepsze wchłanianie)
+5. **Poranna rutyna developera** — CogniCit zamiast 3. kawy. Światło, woda, kapsułka, śniadanie, kod.
+6. **Porównanie: CogniCit vs kofeina vs modafinil** — tabela mechanizm, efekt, crash, uzależnienie, legalność
+7. **Bezpieczeństwo** — GMP, GIS, brak stymulantów, nie koliduje z lekami
+8. **Podsumowanie** — "Twój kod jest tak dobry jak twój focus. Zainwestuj w mózg."
+
+**CTA:** Email signup + link to produkt.html
+**Internal links:** blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, index.html (kalkulator kofeiny), produkt.html
+**Status:** Outline ready

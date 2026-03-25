@@ -1,6 +1,35 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-25 — Power Cycle #43 (00:20 UTC)
+**Implemented:**
+- ✅ Item #182 — Fixed breadcrumb navigation on /matura page
+  - Changed `<div class="breadcrumb">` to `<nav class="breadcrumb" aria-label="Breadcrumb">` for proper semantic HTML
+  - Matches breadcrumb pattern on all other subpages (kontakt, certyfikaty, porownanie, etc.)
+  - Improves SEO (Google parses nav[aria-label="Breadcrumb"] for breadcrumb rich results) and accessibility (screen readers announce breadcrumb navigation)
+- ✅ Item #194 — Added mailto: fallback for order notifications in cognivia-cart.js
+  - New `_mailtoFallback(order, formData)` method: generates mailto: link with full order details as body text
+  - Fires in 2 scenarios: (a) Formspree API call fails (network error, 500, etc.), (b) Formspree placeholder ID detected (no real form configured)
+  - Opens user's email client with pre-filled: recipient (cognivia.business@outlook.com), subject (order ID), body (formatted order summary)
+  - Zero external dependencies — works immediately without Formspree/EmailJS/backend setup
+  - Graceful: order always saves to localStorage regardless of mailto outcome
+  - CEO note: This ensures orders are never truly lost. Even without a Formspree account, customers who complete checkout will have their email client open with order details ready to send. Not perfect UX but orders actually arrive.
+- ✅ Blog outline added to content_calendar.md: "Suplementy dla programistów — jak dbać o mózg przy biurku?"
+- ✅ 3 new improvement ideas added to queue (#195-197)
+
+**Files changed:**
+- `matura.html` — breadcrumb div → nav element with aria-label
+- `js/cognivia-cart.js` — added _mailtoFallback method + wired to submitOrder() catch block + no-Formspree-ID branch
+- `improvement_queue.md` — items #182, #194 marked DONE; 3 new items (#195-197)
+- `content_calendar.md` — new blog outline (suplementy dla programistów)
+- `changelog.md` — this entry
+
+**Site verification:** matura.html validated — DOCTYPE present, nav[aria-label] confirmed. cognivia-cart.js syntax check passed (node -c). _mailtoFallback wired in both Formspree failure and placeholder-ID scenarios.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). NEW: mailto fallback ensures orders arrive via email even without Formspree. CEO must create formspree.io account and swap form ID for automated order delivery.
+
+**Queue:** ~192 completed + 5 active = 197 total
+
 ### 2026-03-24 — Power Cycle #42 (23:15 UTC)
 **Implemented:**
 - ✅ Item #52 — Added share buttons to 8 blog posts missing them
