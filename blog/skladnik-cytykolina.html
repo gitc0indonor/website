@@ -11,36 +11,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --gold: #c9a96e; --forest: #1a3a2a; --cream: #faf7f0; --charcoal: #2a2a28; --soft-text: #5a5a58; }
+    :root { --accent: #8f7a3d; --text: #2a2a27; --surface: #f8f6f2; --text: #2a2a27; --muted: #6f6a61; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'EB Garamond', Georgia, serif; color: var(--charcoal); background: #fdfcf8; line-height: 1.8; }
-    .legal-bar { background: var(--forest); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
-    .legal-bar strong { color: var(--gold); }
+    .legal-bar { background: var(--text, #2a2a27); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
+    .legal-bar strong { color: var(--accent, #8f7a3d); }
     header { position: fixed; top: 32px; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(253,252,248,0.95); backdrop-filter: blur(10px); }
-    .logo { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--forest); text-decoration: none; }
-    .logo span { color: var(--gold); }
+    .logo { font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 800; color: var(--text, #2a2a27); text-decoration: none; }
+    .logo span { color: var(--accent, #8f7a3d); }
     nav a { margin-left: 24px; color: var(--charcoal); text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
-    .breadcrumb { max-width: 900px; margin: 100px auto 0; padding: 0 6%; font-size: 12px; color: var(--soft-text); }
-    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    .breadcrumb { max-width: 900px; margin: 100px auto 0; padding: 0 6%; font-size: 12px; color: var(--muted, #6f6a61); }
+    .breadcrumb a { color: var(--accent, #8f7a3d); text-decoration: none; }
     .breadcrumb span { margin: 0 6px; opacity: 0.4; }
     article { max-width: 800px; margin: 0 auto; padding: 40px 8% 80px; }
-    article .tag { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
-    article h1 { font-family: 'Playfair Display', serif; font-size: 42px; color: var(--forest); margin-bottom: 16px; line-height: 1.2; }
+    article .tag { font-size: 11px; color: var(--accent, #8f7a3d); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
+    article h1 { font-family: 'EB Garamond', serif; font-size: 42px; color: var(--text, #2a2a27); margin-bottom: 16px; line-height: 1.2; }
     article .meta { font-size: 13px; color: #999; margin-bottom: 32px; }
-    article h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--forest); margin: 40px 0 16px; }
-    article p { font-size: 15px; color: var(--soft-text); margin-bottom: 16px; }
-    article ul { font-size: 15px; color: var(--soft-text); margin: 0 0 16px 24px; }
+    article h2 { font-family: 'EB Garamond', serif; font-size: 28px; color: var(--text, #2a2a27); margin: 40px 0 16px; }
+    article p { font-size: 15px; color: var(--muted, #6f6a61); margin-bottom: 16px; }
+    article ul { font-size: 15px; color: var(--muted, #6f6a61); margin: 0 0 16px 24px; }
     article li { margin-bottom: 8px; }
-    .highlight-box { background: var(--cream); border: 2px solid var(--gold); border-radius: 12px; padding: 24px; margin: 24px 0; }
-    .highlight-box h3 { color: var(--forest); margin-bottom: 8px; }
-    .dose-badge { display: inline-block; background: var(--forest); color: #fff; padding: 6px 20px; border-radius: 20px; font-size: 16px; font-weight: 600; margin: 12px 0; }
-    article .ref { font-size: 12px; color: #999; margin: 8px 0 24px; padding: 12px 16px; background: var(--cream); border-left: 3px solid var(--gold); }
-    .cta-box { background: var(--forest); color: #fff; padding: 32px; border-radius: 12px; margin: 40px 0; text-align: center; }
-    .cta-box h3 { color: var(--gold); margin-bottom: 12px; }
-    .cta-box a { display: inline-block; background: var(--gold); color: var(--forest); padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    .highlight-box { background: var(--surface, #f8f6f2); border: 2px solid var(--gold); border-radius: 12px; padding: 24px; margin: 24px 0; }
+    .highlight-box h3 { color: var(--text, #2a2a27); margin-bottom: 8px; }
+    .dose-badge { display: inline-block; background: var(--text, #2a2a27); color: #fff; padding: 6px 20px; border-radius: 20px; font-size: 16px; font-weight: 600; margin: 12px 0; }
+    article .ref { font-size: 12px; color: #999; margin: 8px 0 24px; padding: 12px 16px; background: var(--surface, #f8f6f2); border-left: 2px solid var(--accent, #8f7a3d); }
+    .cta-box { background: var(--text, #2a2a27); color: #fff; padding: 32px; border-radius: 12px; margin: 40px 0; text-align: center; }
+    .cta-box h3 { color: var(--accent, #8f7a3d); margin-bottom: 12px; }
+    .cta-box a { display: inline-block; background: var(--gold); color: var(--text, #2a2a27); padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; }
     .related { background: #fff; border: 1px solid #e8e4db; border-radius: 12px; padding: 24px; margin: 40px 0; }
-    .related h3 { color: var(--forest); margin-bottom: 12px; }
-    .related a { color: var(--gold); text-decoration: none; }
+    .related h3 { color: var(--text, #2a2a27); margin-bottom: 12px; }
+    .related a { color: var(--accent, #8f7a3d); text-decoration: none; }
     footer { text-align: center; padding: 40px 5%; font-size: 12px; color: #999; border-top: 1px solid #e8e4db; }
   
     .share-section { max-width: 800px; margin: 48px auto; padding: 24px 0; border-top: 1px solid rgba(26,26,26,0.08); border-bottom: 1px solid rgba(26,26,26,0.08); text-align: center; }

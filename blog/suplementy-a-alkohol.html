@@ -23,46 +23,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --gold: #c9a96e; --forest: #1a3a2a; --cream: #faf7f0; --charcoal: #2a2a28; --soft-text: #5a5a58; }
+    :root { --accent: #8f7a3d; --text: #2a2a27; --surface: #f8f6f2; --text: #2a2a27; --muted: #6f6a61; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'EB Garamond', Georgia, serif; color: var(--charcoal); background: #fdfcf8; line-height: 1.8; }
-    .legal-bar { background: var(--forest); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
-    .legal-bar strong { color: var(--gold); }
+    .legal-bar { background: var(--text, #2a2a27); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
+    .legal-bar strong { color: var(--accent, #8f7a3d); }
     header { position: fixed; top: 32px; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(253,252,248,0.95); backdrop-filter: blur(10px); }
-    .logo { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--forest); text-decoration: none; }
-    .logo span { color: var(--gold); }
+    .logo { font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 800; color: var(--text, #2a2a27); text-decoration: none; }
+    .logo span { color: var(--accent, #8f7a3d); }
     nav a { margin-left: 24px; color: var(--charcoal); text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
-    .breadcrumb { max-width: 900px; margin: 100px auto 0; padding: 0 6%; font-size: 12px; color: var(--soft-text); }
-    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    .breadcrumb { max-width: 900px; margin: 100px auto 0; padding: 0 6%; font-size: 12px; color: var(--muted, #6f6a61); }
+    .breadcrumb a { color: var(--accent, #8f7a3d); text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     .breadcrumb span { margin: 0 6px; opacity: 0.4; }
     article { max-width: 800px; margin: 0 auto; padding: 40px 8% 80px; }
-    article .tag { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
-    article h1 { font-family: 'Playfair Display', serif; font-size: 42px; color: var(--forest); margin-bottom: 16px; line-height: 1.2; }
+    article .tag { font-size: 11px; color: var(--accent, #8f7a3d); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
+    article h1 { font-family: 'EB Garamond', serif; font-size: 42px; color: var(--text, #2a2a27); margin-bottom: 16px; line-height: 1.2; }
     article .meta { font-size: 13px; color: #999; margin-bottom: 32px; }
-    article h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--forest); margin: 40px 0 16px; }
-    article h3 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--forest); margin: 32px 0 12px; }
-    article p { font-size: 15px; color: var(--soft-text); margin-bottom: 16px; }
-    article ul, article ol { font-size: 15px; color: var(--soft-text); margin: 0 0 16px 24px; }
+    article h2 { font-family: 'EB Garamond', serif; font-size: 28px; color: var(--text, #2a2a27); margin: 40px 0 16px; }
+    article h3 { font-family: 'EB Garamond', serif; font-size: 22px; color: var(--text, #2a2a27); margin: 32px 0 12px; }
+    article p { font-size: 15px; color: var(--muted, #6f6a61); margin-bottom: 16px; }
+    article ul, article ol { font-size: 15px; color: var(--muted, #6f6a61); margin: 0 0 16px 24px; }
     article li { margin-bottom: 8px; }
-    article .legal-note { font-size: 12px; color: #888; background: #f9f5ef; padding: 20px; margin: 24px 0; border-left: 3px solid var(--gold); }
-    article .ref { font-size: 12px; color: #999; margin: 8px 0 24px; padding: 12px 16px; background: var(--cream); border-left: 3px solid var(--gold); }
+    article .legal-note { font-size: 12px; color: #888; background: #f9f5ef; padding: 20px; margin: 24px 0; border-left: 2px solid var(--accent, #8f7a3d); }
+    article .ref { font-size: 12px; color: #999; margin: 8px 0 24px; padding: 12px 16px; background: var(--surface, #f8f6f2); border-left: 2px solid var(--accent, #8f7a3d); }
     .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 14px; }
-    .comparison-table th { background: var(--forest); color: white; padding: 12px 16px; text-align: left; font-weight: 500; }
+    .comparison-table th { background: var(--text, #2a2a27); color: white; padding: 12px 16px; text-align: left; font-weight: 500; }
     .comparison-table td { padding: 12px 16px; border-bottom: 1px solid #eee; }
-    .comparison-table tr:nth-child(even) td { background: var(--cream); }
-    .cta-section { background: var(--forest); color: white; border-radius: 12px; padding: 40px; text-align: center; margin: 48px 0; }
-    .cta-section h3 { font-family: 'Playfair Display', serif; color: white; margin-bottom: 12px; }
+    .comparison-table tr:nth-child(even) td { background: var(--surface, #f8f6f2); }
+    .cta-section { background: var(--text, #2a2a27); color: white; border-radius: 12px; padding: 40px; text-align: center; margin: 48px 0; }
+    .cta-section h3 { font-family: 'EB Garamond', serif; color: white; margin-bottom: 12px; }
     .cta-section p { color: rgba(255,255,255,0.8); margin-bottom: 20px; }
-    .cta-btn { display: inline-block; background: var(--gold); color: var(--forest); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; transition: transform 0.2s; }
+    .cta-btn { display: inline-block; background: var(--gold); color: var(--text, #2a2a27); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; transition: transform 0.2s; }
     .cta-btn:hover { transform: translateY(-2px); }
-    .trust-bar { background: var(--cream); padding: 16px 24px; border-radius: 8px; text-align: center; margin: 32px 0; font-size: 13px; color: var(--soft-text); }
-    .trust-bar strong { color: var(--forest); }
+    .trust-bar { background: var(--surface, #f8f6f2); padding: 16px 24px; border-radius: 8px; text-align: center; margin: 32px 0; font-size: 13px; color: var(--muted, #6f6a61); }
+    .trust-bar strong { color: var(--text, #2a2a27); }
     .cross-links { background: #f9f5ef; border-radius: 12px; padding: 28px; margin: 32px 0; }
-    .cross-links h4 { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--forest); margin-bottom: 16px; }
-    .cross-links a { display: block; color: var(--gold); text-decoration: none; padding: 8px 0; font-size: 14px; border-bottom: 1px solid rgba(201,169,110,0.15); }
+    .cross-links h4 { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--text, #2a2a27); margin-bottom: 16px; }
+    .cross-links a { display: block; color: var(--accent, #8f7a3d); text-decoration: none; padding: 8px 0; font-size: 14px; border-bottom: 1px solid rgba(201,169,110,0.15); }
     .cross-links a:last-child { border-bottom: none; }
-    .cross-links a:hover { color: var(--forest); }
+    .cross-links a:hover { color: var(--text, #2a2a27); }
     .share-buttons { display: flex; gap: 12px; margin: 32px 0; }
     .share-btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 500; color: white; transition: transform 0.2s; }
     .share-btn:hover { transform: translateY(-2px); }
@@ -70,7 +70,7 @@
     .share-btn.tw { background: #1da1f2; }
     .share-btn.li { background: #0a66c2; }
     .safety-box { background: #fff8f0; border: 2px solid #f0c080; border-radius: 12px; padding: 28px; margin: 24px 0; }
-    .safety-box h4 { color: #b8860b; margin-bottom: 12px; font-family: 'Playfair Display', serif; }
+    .safety-box h4 { color: #b8860b; margin-bottom: 12px; font-family: 'EB Garamond', serif; }
     @media (max-width: 768px) {
       article h1 { font-size: 30px; }
       header { top: 0; }
@@ -309,7 +309,7 @@
     <!-- TRUST BAR -->
     <div class="trust-bar">
       <strong>CogniCit</strong> — 3 synergistyczne składniki · Certyfikat GMP · Zgłoszony do GIS · Zgodny z UE
-      <br><a href="../produkt.html" style="color: var(--gold); text-decoration: none; font-weight: 600;">Sprawdź CogniCit →</a>
+      <br><a href="../produkt.html" style="color: var(--accent, #8f7a3d); text-decoration: none; font-weight: 600;">Sprawdź CogniCit →</a>
     </div>
 
     <!-- CTA -->
@@ -321,14 +321,14 @@
     </div>
   </article>
 
-  <footer style="background: var(--forest); color: rgba(255,255,255,0.7); padding: 40px 5%; text-align: center; font-size: 13px;">
-    <div style="font-family: 'Playfair Display', serif; font-size: 24px; color: white; margin-bottom: 8px;">Cogni<span style="color: var(--gold);">Cit</span></div>
+  <footer style="background: var(--text, #2a2a27); color: rgba(255,255,255,0.7); padding: 40px 5%; text-align: center; font-size: 13px;">
+    <div style="font-family: 'EB Garamond', serif; font-size: 24px; color: white; margin-bottom: 8px;">Cogni<span style="color: var(--accent, #8f7a3d);">Cit</span></div>
     <p style="margin-bottom: 16px;">Dokładnie to czego ci trzeba.</p>
     <div style="margin-bottom: 16px;">
-      <a href="../index.html" style="color: var(--gold); text-decoration: none; margin: 0 12px;">Strona główna</a>
-      <a href="../produkt.html" style="color: var(--gold); text-decoration: none; margin: 0 12px;">Produkt</a>
-      <a href="../faq.html" style="color: var(--gold); text-decoration: none; margin: 0 12px;">FAQ</a>
-      <a href="../kontakt.html" style="color: var(--gold); text-decoration: none; margin: 0 12px;">Kontakt</a>
+      <a href="../index.html" style="color: var(--accent, #8f7a3d); text-decoration: none; margin: 0 12px;">Strona główna</a>
+      <a href="../produkt.html" style="color: var(--accent, #8f7a3d); text-decoration: none; margin: 0 12px;">Produkt</a>
+      <a href="../faq.html" style="color: var(--accent, #8f7a3d); text-decoration: none; margin: 0 12px;">FAQ</a>
+      <a href="../kontakt.html" style="color: var(--accent, #8f7a3d); text-decoration: none; margin: 0 12px;">Kontakt</a>
     </div>
     <p style="font-size: 11px; opacity: 0.5;">© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
   </footer>
@@ -337,12 +337,12 @@
   <div id="blogEmailPopup" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: white; box-shadow: 0 -4px 30px rgba(0,0,0,0.15); z-index: 9999; padding: 28px 24px; text-align: center; transform: translateY(100%); transition: transform 0.5s cubic-bezier(0.4,0,0.2,1); border-top: 3px solid var(--gold);">
     <button onclick="closeBlogPopup()" style="position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 20px; cursor: pointer; color: #999;">&times;</button>
     <div style="font-size: 24px; margin-bottom: 8px;">📬</div>
-    <div style="font-family: 'Playfair Display', serif; font-size: 20px; color: var(--forest); margin-bottom: 8px;">Podoba Ci się artykuł?</div>
-    <p style="font-size: 14px; color: var(--soft-text); margin-bottom: 16px;">Zapisz się na newsletter i otrzymaj <strong>15% zniżki</strong> na pierwsze zamówienie CogniCit.</p>
+    <div style="font-family: 'EB Garamond', serif; font-size: 20px; color: var(--text, #2a2a27); margin-bottom: 8px;">Podoba Ci się artykuł?</div>
+    <p style="font-size: 14px; color: var(--muted, #6f6a61); margin-bottom: 16px;">Zapisz się na newsletter i otrzymaj <strong>15% zniżki</strong> na pierwsze zamówienie CogniCit.</p>
     <form action="https://formspree.io/f/xpwzgryv" method="POST" style="display: flex; gap: 8px; max-width: 400px; margin: 0 auto;">
       <input type="hidden" name="source" value="blog-alkohol-popup">
       <input type="email" name="email" placeholder="Twój email" required style="flex: 1; padding: 12px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; font-family: inherit;">
-      <button type="submit" style="background: var(--gold); color: var(--forest); border: none; padding: 12px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 14px;">Zapisz się</button>
+      <button type="submit" style="background: var(--gold); color: var(--text, #2a2a27); border: none; padding: 12px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 14px;">Zapisz się</button>
     </form>
   </div>
 

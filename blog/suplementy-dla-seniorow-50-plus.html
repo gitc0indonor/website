@@ -50,15 +50,15 @@
       --cream: #faf8f5;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'EB Garamond', Georgia, serif; background: var(--cream); color: var(--charcoal); line-height: 1.8; }
+    body { font-family: 'EB Garamond', Georgia, serif; background: var(--surface, #f8f6f2); color: var(--charcoal); line-height: 1.8; }
     .header { background: #fff; border-bottom: 1px solid #e8e0d0; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
     .logo { font-family: 'EB Garamond', serif; font-size: 1.6rem; font-weight: 700; color: var(--charcoal); text-decoration: none; }
-    .logo span { color: var(--gold); }
+    .logo span { color: var(--accent, #8f7a3d); }
     .nav { display: flex; gap: 1.5rem; font-family: 'EB Garamond', Georgia, serif; font-size: 0.85rem; }
     .nav a { text-decoration: none; color: #555; transition: color 0.2s; }
-    .nav a:hover { color: var(--gold); }
+    .nav a:hover { color: var(--accent, #8f7a3d); }
     .trust-bar { background: linear-gradient(135deg, #1a3a1a, #2e5a2e); color: #fff; text-align: center; padding: 0.75rem 2rem; font-family: 'EB Garamond', Georgia, serif; font-size: 0.85rem; }
-    .trust-bar a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    .trust-bar a { color: var(--accent, #8f7a3d); text-decoration: none; font-weight: 600; }
     .hero { background: linear-gradient(135deg, var(--beige), #e8dfd0); padding: 4rem 2rem; text-align: center; }
     .hero h1 { font-size: 2.6rem; max-width: 800px; margin: 0 auto 1rem; line-height: 1.3; }
     .hero .subtitle { font-size: 1.15rem; color: #555; max-width: 600px; margin: 0 auto 1.5rem; }
@@ -73,7 +73,7 @@
     .highlight-box strong { color: var(--green); }
     .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 2rem 0; }
     .stat-card { background: #fff; border-radius: 12px; padding: 1.25rem; text-align: center; border: 1px solid #e8e0d0; }
-    .stat-num { font-size: 1.8rem; font-weight: 700; color: var(--gold); }
+    .stat-num { font-size: 1.8rem; font-weight: 700; color: var(--accent, #8f7a3d); }
     .stat-label { font-family: 'EB Garamond', Georgia, serif; font-size: 0.8rem; color: #666; margin-top: 4px; }
     .cta-box { background: linear-gradient(135deg, var(--green), #43a047); border-radius: 20px; padding: 2.5rem; text-align: center; color: #fff; margin: 3rem 0; }
     .cta-box h3 { color: #fff; margin-bottom: 0.75rem; font-size: 1.6rem; }
@@ -83,9 +83,9 @@
     .cross-links { background: var(--beige); border-radius: 16px; padding: 2rem; margin: 2rem 0; }
     .cross-links h4 { font-size: 1.1rem; margin-bottom: 1rem; }
     .cross-links a { display: block; color: var(--green); text-decoration: none; padding: 0.4rem 0; font-family: 'EB Garamond', Georgia, serif; font-size: 0.95rem; }
-    .cross-links a:hover { color: var(--gold); }
+    .cross-links a:hover { color: var(--accent, #8f7a3d); }
     .footer { background: var(--charcoal); color: #ccc; text-align: center; padding: 2.5rem 2rem; font-family: 'EB Garamond', Georgia, serif; font-size: 0.85rem; }
-    .footer a { color: var(--gold); text-decoration: none; }
+    .footer a { color: var(--accent, #8f7a3d); text-decoration: none; }
     .blog-email-popup { position: fixed; bottom: -300px; right: 24px; width: 340px; background: #fff; border-radius: 16px 16px 0 0; box-shadow: 0 -4px 30px rgba(0,0,0,0.15); padding: 1.5rem; z-index: 997; transition: bottom 0.5s cubic-bezier(0.4,0,0.2,1); }
     .blog-email-popup.visible { bottom: 0; }
     .blog-email-popup h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
@@ -131,7 +131,7 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div style="font-size: 0.85rem; font-family: 'EB Garamond', Georgia, serif; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">Zdrowie · Seniorzy</div>
+    <div style="font-size: 0.85rem; font-family: 'EB Garamond', Georgia, serif; color: var(--accent, #8f7a3d); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">Zdrowie · Seniorzy</div>
     <h1>Suplementy dla seniorów 50+ — jak wspierać pamięć i koncentrację?</h1>
     <p class="subtitle">Cytykolina, kwas alfa-liponowy i beta-cyklodekstryna — przegląd badań naukowych nad wsparciem funkcji poznawczych u osób po 50. roku życia.</p>
     <div class="meta">Czas czytania: 7 min · Opublikowano: 24 marca 2026</div>
