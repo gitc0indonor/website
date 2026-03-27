@@ -1,5 +1,5 @@
 # Ecommerce Status — Cognivia / CogniCit
-## Last Audit: 2026-03-27 02:41 UTC (Cron Audit #10)
+## Last Audit: 2026-03-27 06:26 UTC (Cron Audit #11)
 
 ---
 
@@ -156,17 +156,37 @@ submitOrder() still uses placeholder Formspree ID 'xpwzgryv' (line 354 of js/cog
 
 ---
 
-## EXECUTIVE SUMMARY (Audit #10 — 2026-03-27)
+## EXECUTIVE SUMMARY (Audit #11 — 2026-03-27 06:26 UTC)
 
-**Cognicit is SEMI-BUYABLE.** No change from audit #9. Cart → checkout → order submission → localStorage + mailto fallback all functional. Customer CAN purchase via email draft.
+**Cognicit is SEMI-BUYABLE.** No change from audit #10. All file line counts stable, no regressions. Cart → checkout → order submission → localStorage + mailto fallback all functional.
 
-**What works:** Full frontend ecommerce stack — cart, checkout, shipping calculation, VAT, trust elements, policies, SEO, schema.org. Content is production-grade (3,435 lines across 9 core pages).
+**What works:** Full frontend ecommerce stack — cart, checkout, shipping calculation (4 methods), VAT 23%, trust elements (GMP, lab-tested, 30-day guarantee), all 8 policy pages (incl. RODO), SEO + schema.org. Product page 1507 lines, content production-grade.
 
-**Single blocker (10th consecutive audit):** Formspree placeholder ID 'xpwzgryv' — CEO action pending since 2026-03-19. 5 minutes of CEO time to create formspree.io account → makes site fully buyable.
+**Single blocker (11th consecutive audit):** Formspree placeholder ID 'xpwzgryv' — CEO action pending since 2026-03-19. 5 minutes to create formspree.io account → makes site fully buyable.
 
 **Alternative path:** Stripe Checkout (#206) — 2-3 hours dev time, enables real payments (cards, BLIK, Google Pay).
+
+**New additions this audit:** Improvements #228-#230 added (Web Vitals monitoring, OG image, Google Merchant feed). Queue now at 230 items.
 
 **Priority actions for CEO:**
 1. Create Formspree account (5 min) → makes site buyable immediately
 2. Provide product photos or approve AI mockups (#207)
 3. Consider Stripe Checkout (#206) for real payment processing
+
+---
+
+## AUDIT CHANGES — 2026-03-27 06:26 UTC (Cron Audit #11)
+
+1. ✅ Cart JS (cognivia-cart.js) 461 lines — intact, no regressions
+2. ✅ Formspree placeholder ID 'xpwzgryv' still at line 354 — BLOCKER UNCHANGED (11th consecutive audit)
+3. ✅ All 9 core pages verified — line counts stable (produkt 1507, kasa 289, koszyk 179, regulamin 94, polityka-prywatnosci 104, dostawa 161, zwroty 159, faq 276, faq-produkt 705)
+4. ✅ zwroty.html grew from 120→159 lines — improved content (good)
+5. ✅ kontakt.html 295 lines — stable
+6. ✅ Product listing: complete (name, PL description, ingredients, dosage, 5 benefits, 7 warnings, storage, schema.org)
+7. ✅ Shipping: 4 methods configured (InPost Paczkomat/Kurier, DPD, Poczta Polska) with free thresholds
+8. ✅ Payment: 6 methods listed in UI (PayU, Przelewy24, BLIK, PayPal, bank transfer, COD) — none actually integrated
+9. ✅ VAT: 23% calculated, brutto 79,00 zł, VAT invoice fields in checkout
+10. ✅ Trust elements: all present (GMP, lab-tested, 30-day money-back, SSL, legal bar, EU regs)
+11. ✅ Policy pages: all 8 intact and stable
+12. ✅ Added 3 new improvements to queue (#228 Web Vitals, #229 OG image, #230 Google Merchant feed)
+13. ✅ Improvement queue now at 230 items (117 done, 113 active)
