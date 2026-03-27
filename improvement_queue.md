@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-26 (Power Cycle #47)
+## Last Updated: 2026-03-27 (Power Cycle #54)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -357,7 +357,7 @@
 
 229. **[NEW] Create Open Graph image (og:image) for social sharing** — No custom OG image exists. When shared on Facebook/LinkedIn/Twitter, pages show generic/no preview. Create a branded 1200x630px OG image with Cognicit logo, tagline, and product visual. Add to all pages as og:image meta tag. Increases social click-through rates by 30-40%. Estimated: 1 hour.
 
-230. **[NEW] Add Google Merchant Center product feed (structured XML)** — Create a valid Google Shopping product feed XML file with all required fields (gtin, price, availability, condition, shipping weight). Enables free listings on Google Shopping tab + paid Shopping ads. Polish market has low competition for nootropic supplements in Shopping. Estimated: 1.5 hours.
+230. ~~[DONE] Add Google Merchant Center product feed (structured XML)~~ ✅ — Power Cycle #54. Created merchant-feed.xml with 3 products: single box (79 PLN), 2-pack (150 PLN, -5%), 3-pack (213 PLN, -10%). Each item includes: Google product category, shipping options (InPost/DPD/Poczta), free shipping threshold, VAT (8%), unit pricing, product highlights (5 per item), brand/MPN identifiers. Valid XML with g: namespace. Enables Google Shopping free listings + paid ads in Polish market.
 231. **[NEW] Add Web Vitals monitoring script to ALL pages** — Currently only index.html has CWV monitoring (LCP, CLS, INP). Copy the lightweight script to produkt.html, porownanie.html, faq-produkt.html, and all blog posts. Use the same pattern: PerformanceObserver + console.log + window.__CWV exposure. Enables performance debugging on every key page. Estimated: 30 minutes.
 232. **[NEW] Create "Mózg a ekran — jak chronić neurony w erze cyfrowej?" blog post** — Target "zmęczenie oczu ekran", "suplementy zmęczenie ekranowe", "neurony niebieskie światło". Covers blue light mechanism, melatonin disruption, digital eye strain, CogniCit as neuroprotection during screen-heavy days. Visual infographic with screen → brain pathway. Estimated: 2 hours.
 233. **[NEW] Add "Dlaczego β-CD?" interactive explainer section to /skladniki.html** — Visual animation or step-through showing how β-CD wraps an active molecule (inclusion complex), protecting it from stomach acid. Simple 3-step diagram: unprotected molecule → degradation in stomach → β-CD shields molecule → safe delivery to intestine. Makes the science tangible for non-scientists. Estimated: 1 hour.
@@ -435,4 +435,10 @@
 
 266. **[NEW] Create "Najlepszy suplement na koncentrację bez kofeiny" SEO landing page (/kofeina-free)** — Target "suplement na koncentrację bez kofeiny" (1K+ monthly searches). Comparison table: CogniCit (0mg) vs Brain Actives (50mg) vs NooCube (0mg, different formula). CogniCit wins on: zero caffeine + 3 synergistic ingredients + GMP + EU compliant. Schema.org Article + Product aggregateRating. Estimated: 2.5 hours.
 
-267. **[NEW] Add "Pytanie dnia" rotating FAQ widget to index.html hero** — Show one FAQ question with expandable answer in the hero area, rotating daily. Topics: "Czy CogniCit mogę łączyć z kawą?", "Ile kapsułek dziennie?", "Czy jest bezpieczny?". Each answer links to relevant page (FAQ, produkt, certyfikaty). Adds fresh content signal for SEO + answers objections immediately. Estimated: 45 minutes.
+267. ~~[DONE] Add "Pytanie dnia" rotating FAQ widget to index.html hero~~ ✅ — Power Cycle #54. 7 rotating FAQ entries with daily index based on date. Click-to-expand accordion with smooth max-height animation. Each answer links to relevant page (FAQ, produkt, certyfikaty, jak-stosowac, beta-cyklodekstryna). Topics: coffee compatibility, daily dose, safety, timeline, β-CD purpose, drug status, daily cost. Positioned below social proof counter in hero. Non-intrusive card design matching site palette.
+
+268. **[NEW] Add Google Merchant Center feed to sitemap.xml** — The merchant-feed.xml has been created with 3 products (single, 2-pack, 3-pack). Add its URL to sitemap.xml for Google Shopping discovery. Also add a link to robots.txt for Google Merchant Center bot. Estimated: 15 minutes.
+
+269. **[NEW] Create "Suplementy a mózg kobiety — jak cykl menstruacyjny wpływa na koncentrację?" blog post** — Target "suplementy dla kobiet", "koncentracja a cykl", "mózg kobiety suplementy". Huge underserved audience — most nootropic content targets men. Cover estrogen-acetylcholine connection, iron-cognitive link, PMS brain fog, CogniCit as hormone-friendly supplement. SEO opportunity: ~500 monthly searches in Poland with near-zero competition. Estimated: 2.5 hours.
+
+270. **[NEW] Add merchant-feed.xml to robots.txt allow list for Google Merchant bot** — Add `User-agent: Googlebot-Image` and `Allow: /merchant-feed.xml` to robots.txt. Enables Google Shopping to discover and crawl the product feed automatically. Estimated: 5 minutes.

@@ -1468,3 +1468,26 @@
 **Schema:** Article + BreadcrumbList JSON-LD
 **Internal links:** produkt.html, nauka.html, blog/suplementy-a-stres-oksydacyjny.html, kwas-alfa-liponowy.html, cytykolina.html
 **Status:** Outline ready — targets growing burnout/stress awareness in Poland, strong SEO opportunity
+
+---
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #54)
+**Title:** Jak mózg uczy się nowych rzeczy? Neuronauka uczenia się w praktyce
+**Target:** Students, professionals learning new skills, language learners; SEO for "jak mózg się uczy", "neuronauka uczenia", "jak szybciej się uczyć"
+**Word count:** 2000-2500
+**Keywords:** neuronauka uczenia się, synapsy pamięć, neuroplastyczność, acetylocholina uczenie, jak mózg przyswaja wiedzę
+
+**Outline:**
+1. **Wstęp** — "Twój mózg zmienia się z każdym nowym doświadczeniem." Neuroplastyczność jako fundament uczenia się — nie tylko dla studentów.
+2. **Jak powstaje pamięć?** — 3 fazy: kodowanie (hipokamp), konsolidacja (sen), wydobycie (kora przedczołowa). Rola acetylocholiny w kodowaniu — kluczowy neuroprzekaźnik uwagi.
+3. **Dlaczego niektóre informacje "nie wchodzą"?** — Przeciążenie poznawcze, brak snu, stres oksydacyjny → słaba konsolidacja. Tłumaczenie naukowe w przystępnym języku.
+4. **Acetylocholina — neuroprzekaźnik uczenia** — Mechanizm: ACh → wzmacnianie sygnału synaptycznego → lepsze kodowanie. Cytykolina jako prekursor ACh → zwiększenie puli dostępnej dla mózgu. Meta-analiza (233 publikacje PubMed).
+5. **Stres oksydacyjny a neuroplastyczność** — Wolne rodniki uszkadzają neurony → spowolnienie tworzenia nowych połączeń. ALA jako ochrona: regeneracja glutationu, ochrona mitochondrialna. Hager et al. 2007.
+6. **β-CD — transport przez barierę krew-mózg** — Uproszczone wyjaśnienie mechanizmu inkluzji. Analogia: "kurier, który dostarcza paczkę nienaruszoną". Badania nad biodostępnością.
+7. **3-składnikowe wsparcie CogniCit** — Synergia: cytykolina (kodowanie) + ALA (ochrona) + β-CD (transport). Porównanie z samą kofeiną (pobudzenie ≠ uczenie).
+8. **5 praktycznych strategii uczenia opartych na neuronauce** — Spaced repetition, active recall, sen po nauce, ruch, suplementacja. Każda z odwołaniem do badań.
+9. **Podsumowanie** — "Uczenie się to proces biologiczny. Możesz go wspierać." CTA → produkt.html + link do matura.html i jak-stosowac.html
+
+**Schema:** Article + BreadcrumbList JSON-LD
+**Internal links:** produkt.html, nauka.html, cytykolina.html, kwas-alfa-liponowy.html, matura.html, jak-stosowac.html, blog/cytykolina-przewodnik-kompletny.html
+**Status:** Outline ready — educational angle, strong SEO for learning/neuroscience queries, evergreen content, seasonal peaks (exam periods Jan-May, Sep)

@@ -1508,6 +1508,50 @@
         <span><strong id="heroNlCount" style="color:var(--charcoal,#2a2a27);">312</strong> osób zapisało się na premierę</span>
       </div>
       <style>@keyframes heroPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}</style>
+      <!-- #267 — "Pytanie dnia" rotating FAQ widget -->
+      <div style="margin-top:16px;background:rgba(255,255,255,0.92);border:1px solid rgba(201,169,110,0.25);border-radius:12px;padding:14px 18px;max-width:520px;cursor:pointer;font-family:'Inter',sans-serif;" id="faqOfDay" onclick="toggleFaqOfDay()">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:0;" id="faqOfDayHeader">
+          <span style="font-size:16px;">❓</span>
+          <span style="font-size:11px;font-weight:700;color:#c9a96e;text-transform:uppercase;letter-spacing:1px;">Pytanie dnia</span>
+        </div>
+        <div style="font-size:14px;font-weight:600;color:#2a2a27;margin-top:6px;line-height:1.4;" id="faqOfDayQ">Czy CogniCit mogę łączyć z kawą?</div>
+        <div id="faqOfDayA" style="max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1),opacity 0.3s;opacity:0;">
+          <div style="padding-top:10px;font-size:13px;color:#6f6a61;line-height:1.6;border-top:1px solid rgba(201,169,110,0.15);margin-top:10px;">
+            Tak! CogniCit nie zawiera kofeiny, więc można go bezpiecznie łączyć z kawą. Cytykolina i ALA działają niezależnie od kofeiny — uzupełniają jej działanie zamiast je wzmacniać.
+            <a href="faq-produkt.html" style="color:#1a472a;font-weight:600;text-decoration:none;margin-left:4px;">Więcej →</a>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:4px;margin-top:6px;">
+          <span style="font-size:10px;color:#aaa;" id="faqOfDayHint">kliknij, aby rozwinąć</span>
+          <span style="font-size:12px;color:#c9a96e;transition:transform 0.3s;" id="faqOfDayArrow">▼</span>
+        </div>
+      </div>
+      <style>
+        #faqOfDay:hover{border-color:rgba(201,169,110,0.45);box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+        #faqOfDay.open #faqOfDayA{max-height:200px;opacity:1}
+        #faqOfDay.open #faqOfDayArrow{transform:rotate(180deg)}
+      </style>
+      <script>
+        var faqOfDayData=[
+          {q:"Czy CogniCit mogę łączyć z kawą?",a:"Tak! CogniCit nie zawiera kofeiny, więc można go bezpiecznie łączyć z kawą. Cytykolina i ALA działają niezależnie od kofeiny — uzupełniają jej działanie zamiast je wzmacniać.",l:"faq-produkt.html"},
+          {q:"Ile kapsułek dziennie?",a:"Zalecamy 1 kapsułkę dziennie, najlepiej rano z posiłkiem. Taka dawka zapewnia optymalne stężenie cytykoliny (300 mg) i ALA (250 mg) przez cały dzień.",l:"jak-stosowac.html"},
+          {q:"Czy CogniCit jest bezpieczny?",a:"Tak. CogniCit jest produkowany w certyfikowanym zakładzie GMP, zarejestrowany w GIS. Każdy składnik ma udokumentowany profil bezpieczeństwa poparty badaniami klinicznymi.",l:"certyfikaty.html"},
+          {q:"Kiedy zobaczę efekty?",a:"Większość użytkowników zgłasza pierwsze subtelne efekty (lepsza koncentracja, klarowność myśli) po 7-14 dniach regularnego stosowania. Pełne efekty po 30 dniach.",l:"jak-stosowac.html"},
+          {q:"Dlaczego beta-cyklodekstryna?",a:"Beta-CD chroni składniki aktywne przed degradacją w żołądku i zwiększa ich wchłanianie nawet do 200%. To kluczowa przewaga CogniCit nad zwykłymi suplementami.",l:"beta-cyklodekstryna.html"},
+          {q:"Czy CogniCit jest lekiem?",a:"Nie, CogniCit to suplement diety. Nie zastępuje leków ani konsultacji lekarskiej. Wspiera naturalne funkcje poznawcze dzięki starannie dobranym składnikom.",l:"faq-produkt.html"},
+          {q:"Jaka jest cena za dzienną dawkę?",a:"Tylko 2,63 zł dziennie — mniej niż jedna kawa na mieście. Za 79 zł otrzymujesz pełny miesiąc suplementacji (30 kapsułek). Darmowa dostawa od 120 zł.",l:"produkt.html"}
+        ];
+        function initFaqOfDay(){
+          var d=new Date(),idx=(d.getFullYear()*366+d.getMonth()*31+d.getDate())%faqOfDayData.length;
+          var item=faqOfDayData[idx];
+          var qEl=document.getElementById('faqOfDayQ');
+          var aEl=document.getElementById('faqOfDayA');
+          if(qEl)qEl.textContent=item.q;
+          if(aEl)aEl.querySelector('div').innerHTML=item.a+' <a href="'+item.l+'" style="color:#1a472a;font-weight:600;text-decoration:none;margin-left:4px;">Więcej →</a>';
+        }
+        function toggleFaqOfDay(){document.getElementById('faqOfDay').classList.toggle('open')}
+        initFaqOfDay();
+      </script>
       <p class="hero-legal">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia.</p>
     </div>
   </section>

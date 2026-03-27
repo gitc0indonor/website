@@ -1,6 +1,39 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-27 — Power Cycle #54 (20:47 UTC)
+**Implemented:**
+- ✅ Item #267 — Added "Pytanie dnia" rotating FAQ widget to index.html hero
+  - 7 rotating FAQ entries with daily index based on date calculation
+  - Click-to-expand accordion with smooth max-height + opacity CSS transitions
+  - Each answer links to relevant page (FAQ, produkt, certyfikaty, jak-stosowac, beta-cyklodekstryna)
+  - Topics: coffee compatibility, daily dose, safety, timeline, β-CD purpose, drug status, daily cost
+  - Positioned below social proof counter in hero section
+  - Non-intrusive card design matching site palette (rgba background, gold accent border)
+  - Arrow rotation animation on expand/collapse
+- ✅ Item #230 — Created Google Merchant Center product feed (merchant-feed.xml)
+  - Valid XML with 3 products: single box (79 PLN), 2-pack (150 PLN, -5%), 3-pack (213 PLN, -10%)
+  - Each item includes: Google product category, 3 shipping options (InPost/DPD/Poczta), free shipping threshold, 8% VAT, unit pricing, 5 product highlights
+  - Brand/MPN identifiers for Google Shopping matching
+  - Enables Google Shopping free listings + paid Shopping ads in Polish market
+- ✅ Blog outline added to content_calendar.md: "Jak mózg uczy się nowych rzeczy? Neuronauka uczenia się w praktyce"
+- ✅ 3 new improvement ideas added to queue (#268-270)
+
+**Files changed:**
+- `index.html` — "Pytanie dnia" FAQ widget (CSS + HTML + JS, ~40 lines) in hero section
+- `merchant-feed.xml` — NEW (5.9KB) — Google Shopping product feed with 3 SKUs
+- `improvement_queue.md` — items #267, #230 marked DONE; 3 new items (#268-270)
+- `content_calendar.md` — new blog outline (neuronauka uczenia się)
+- `changelog.md` — this entry
+
+**Site verification:** index.html validated — DOCTYPE ✓, </html> ✓, 27 sections balanced, FAQ widget confirmed (faqOfDay, faqOfDayData, 7 Q&A entries). merchant-feed.xml validated — valid XML, 3 items with Google namespace. Cart JS syntax valid (18 CogniviaCart references).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~245 completed + 14 active = 259 total
+
+---
+
 ### 2026-03-27 — Power Cycle #53 (20:17 UTC)
 **Implemented:**
 - ✅ Item #259 — Added Product aggregateRating JSON-LD to 6 landing pages
