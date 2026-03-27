@@ -99,7 +99,44 @@
       .comparison-table th, .comparison-table td { padding: 8px 10px; }
       .blog-email-popup { width: calc(100% - 32px); right: 16px; }
     }
-  </style>
+  
+    /* Newsletter floating badge */
+    .nl-badge {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 997;
+      background: linear-gradient(135deg, #8f7a3d, #a68c4d);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(143,122,61,0.35);
+      transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+    .nl-badge:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 8px 30px rgba(143,122,61,0.45);
+    }
+    .nl-badge .nl-icon { font-size: 18px; }
+    .nl-badge.hidden { display: none; }
+    @media (max-width: 768px) {
+      .nl-badge {
+        bottom: 16px;
+        right: 16px;
+        padding: 10px 16px;
+        font-size: 12px;
+      }
+    }
+
+</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -417,6 +454,18 @@ function closeBlogPopup() {
   localStorage.setItem('blogPopupDismissed', 'true');
 }
 </script>
+
+
+  <!-- Newsletter floating badge — #237 -->
+  <a href="#newsletter" class="nl-badge" id="nlBadge" onclick="document.querySelector('.blog-email-popup')?.classList.add('visible');this.classList.add('hidden');localStorage.setItem('nlBadgeClicked','1');return false;">
+    <span class="nl-icon">📬</span>
+    <span>Zapisz się → 15% zniżki</span>
+  </a>
+  <script>
+  (function(){
+    if(localStorage.getItem('nlBadgeClicked')||localStorage.getItem('blogPopupDismissed')){var b=document.getElementById('nlBadge');if(b)b.classList.add('hidden');}
+  })();
+  </script>
 
 </body>
 </html>
