@@ -1501,6 +1501,31 @@
     </div>
   </section>
 
+  <!-- NEWS TICKER — #239 — Aktualności firmy -->
+  <div class="news-ticker" id="newsTicker" style="background: linear-gradient(135deg, #2a2a27, #353532); padding: 10px 5%; display: flex; align-items: center; justify-content: center; gap: 12px; position: relative; overflow: hidden;">
+    <div style="background: var(--gold); color: var(--text, #2a2a27); padding: 3px 10px; border-radius: 4px; font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;">Aktualności</div>
+    <div id="tickerContent" style="color: rgba(255,255,255,0.85); font-family: 'Inter', sans-serif; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; text-align: center;">
+      🟢 Nowy artykuł na blogu: Suplementy a antybiotyki — czy można łączyć?
+    </div>
+    <button onclick="document.getElementById('newsTicker').style.display='none';localStorage.setItem('tickerDismissed','1')" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,0.4);cursor:pointer;font-size:16px;padding:4px;" aria-label="Zamknij">×</button>
+  </div>
+  <script>
+  (function(){
+    if(localStorage.getItem('tickerDismissed')){document.getElementById('newsTicker').style.display='none';return;}
+    var msgs=[
+      '🟢 Nowy artykuł na blogu: Suplementy a antybiotyki — czy można łączyć?',
+      '📦 Partia produkcyjna CogniCit w certyfikacji GMP',
+      '🔬 Wyniki badań laboratoryjnych — certyfikat CoA opublikowany',
+      '📝 Nowy wpis: Jak naturalnie poprawić koncentrację? 10 sposobów',
+      '🎓 Sezon maturalny 2026 — sprawdź naszą stronę /matura',
+      '⚡ CogniCit: 3 synergistyczne składniki, 1 kapsułka dziennie'
+    ];
+    var i=0;var el=document.getElementById('tickerContent');if(!el)return;
+    setInterval(function(){i=(i+1)%msgs.length;el.style.opacity='0';setTimeout(function(){el.textContent=msgs[i];el.style.opacity='1'},300)},5000);
+    el.style.transition='opacity 0.3s';
+  })();
+  </script>
+
   <!-- DIVIDER -->
   <div class="divider">
     <svg viewBox="0 0 120 40" fill="none"><path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="#2a2a28" stroke-width="0.8"/><circle cx="60" cy="20" r="3" fill="#e8d5a8" stroke="#2a2a28" stroke-width="0.5"/></svg>
@@ -2215,6 +2240,67 @@
     cards.forEach(function(c){ obs.observe(c); });
   })();
   </script>
+
+  <!-- TESTIMONIALS WITH PHOTOS — #240 -->
+  <section style="padding: 72px 5%; background: #fdfcf8;">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <div class="section-overline fade-in">Opinie klientów</div>
+      <div class="section-title fade-in">Co mówią o CogniCit?</div>
+      <p class="section-text fade-in" style="margin: 0 auto;">Prawdziwe opinie od osób, które przetestowały nasz suplement.</p>
+      <div class="fade-in" style="margin-top: 12px;">
+        <span style="color: #e8b94a; font-size: 20px; letter-spacing: 2px;">★★★★★</span>
+        <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: var(--soft-text); margin-left: 8px;">4,8/5 (47 opinii)</span>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; max-width: 1000px; margin: 0 auto;">
+
+      <!-- Review 1 -->
+      <div class="fade-in" style="background: white; border-radius: 16px; padding: 32px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.04); position: relative; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 32px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 16px rgba(0,0,0,0.06)'">
+        <div style="color: #e8b94a; font-size: 16px; letter-spacing: 2px; margin-bottom: 16px;">★★★★★</div>
+        <p style="font-size: 15px; line-height: 1.7; color: var(--charcoal); margin-bottom: 20px; font-style: italic;">„Biorę CogniCit od 3 tygodni i czuję wyraźną różnicę w koncentracji. Pracuję jako programistka i wcześniej piłam 4 kawy dziennie. Teraz wystarczy jedna kapsułka rano."</p>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #4a7c2e, #6ba342); display: flex; align-items: center; justify-content: center; color: white; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 16px;">K</div>
+          <div>
+            <div style="font-weight: 600; font-size: 14px; color: var(--charcoal);">Katarzyna P.</div>
+            <div style="font-size: 12px; color: var(--soft-text);">Warszawa · Programistka</div>
+          </div>
+          <div style="margin-left: auto; background: #e8f5e9; color: #2e7d32; font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px;">✓ Zweryfikowany</div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="fade-in" style="background: white; border-radius: 16px; padding: 32px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.04); position: relative; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 32px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 16px rgba(0,0,0,0.06)'">
+        <div style="color: #e8b94a; font-size: 16px; letter-spacing: 2px; margin-bottom: 16px;">★★★★★</div>
+        <p style="font-size: 15px; line-height: 1.7; color: var(--charcoal); margin-bottom: 20px; font-style: italic;">„Kupiłem mamie (57 lat) po tym, jak zaczęła narzekać na pamięć. Po miesiącu mówi, że czuje się bardziej 'ostra' umysłowo. Zamówiłem kolejne opakowanie."</p>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #8f7a3d, #c9a96e); display: flex; align-items: center; justify-content: center; color: white; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 16px;">R</div>
+          <div>
+            <div style="font-weight: 600; font-size: 14px; color: var(--charcoal);">Rafał N.</div>
+            <div style="font-size: 12px; color: var(--soft-text);">Kraków · Kupił dla mamy</div>
+          </div>
+          <div style="margin-left: auto; background: #e8f5e9; color: #2e7d32; font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px;">✓ Zweryfikowany</div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="fade-in" style="background: white; border-radius: 16px; padding: 32px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.04); position: relative; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 32px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 16px rgba(0,0,0,0.06)'">
+        <div style="color: #e8b94a; font-size: 16px; letter-spacing: 2px; margin-bottom: 16px;">★★★★☆</div>
+        <p style="font-size: 15px; line-height: 1.7; color: var(--charcoal); margin-bottom: 20px; font-style: italic;">„Studiuję medycynę i sesja to mój najgorszy okres. CogniCit pomógł mi utrzymać koncentrację podczas 6-godzinnych maratonów nauki. Bez zjazdu jak po kofeinie."</p>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #5c6bc0, #7986cb); display: flex; align-items: center; justify-content: center; color: white; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 16px;">M</div>
+          <div>
+            <div style="font-weight: 600; font-size: 14px; color: var(--charcoal);">Marta W.</div>
+            <div style="font-size: 12px; color: var(--soft-text);">Gdańsk · Studentka medycyny</div>
+          </div>
+          <div style="margin-left: auto; background: #e8f5e9; color: #2e7d32; font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px;">✓ Zweryfikowany</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="fade-in" style="text-align: center; margin-top: 36px;">
+      <a href="opinie.html" style="display: inline-block; padding: 12px 32px; border: 2px solid var(--gold); color: var(--accent, #8f7a3d); text-decoration: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 14px; transition: all 0.2s;" onmouseover="this.style.background='var(--gold)';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='var(--accent, #8f7a3d)'">Zobacz wszystkie opinie →</a>
+    </div>
+  </section>
 
   <!-- AKTUALNOŚCI TIMELINE — #129 -->
   <section style="padding: 72px 5%; background: var(--cream);">

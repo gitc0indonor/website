@@ -1333,3 +1333,28 @@
 **Target platforms:** Google (SEO), Allegro listing optimization, comparison sites
 **Season:** Evergreen, peaks Sep (back to school) and Jan (New Year resolutions)
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #50)
+**Title:** Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów  
+**Target:** High-volume SEO keyword "jak poprawić koncentrację" (3K+ monthly searches in Poland)  
+**Word count:** 2000-2500  
+**Keywords:** jak poprawić koncentrację, suplement na koncentrację, skupienie, nootropik, praca umysłowa  
+
+**Outline:**
+1. **Wstęp** — Problem rozproszenia uwagi w 2026 roku (social media, notifications, remote work)
+2. **Sen** — 7-9h, regularne pory, wpływ na pamięć roboczą (Walker, 2017)
+3. **Ruch fizyczny** — 30 min dziennie, BDNF, przepływ krwi do mózgu (Ratey, 2008)
+4. **Nawodnienie** — 2% odwodnienia = 25% spadek koncentracji, zasada szklanki co godzinę
+5. **Technika Pomodoro** — 25/5 min, kiedy działa, kiedy nie, adaptacje
+6. **Dieta dla mózgu** — Omega-3, flawonoidy, magnez, unikanie cukru
+7. **Detoks cyfrowy** — Phone stacking, app blockers, tryb samolotowy jako narzędzie
+8. **Suplementacja** — CogniCit: cytykolina (acetylocholina), ALA (antyoksydacja), β-CD (biodostępność)
+9. **Medytacja i mindfulness** — 10 min dziennie, badania na attention span
+10. **Środowisko pracy** — Światło, temperatura, hałas, organizacja biurka
+11. **Rutyna** — Budowanie nawyków, habit stacking, konsystencja > intensywność
+12. **Podsumowanie** — Które sposoby działają najszybciej? Tabela rankingowa
+
+**CTA:** Email signup + link to produkt.html  
+**Schema:** Article + BreadcrumbList JSON-LD  
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html  
+**Status:** Outline ready  

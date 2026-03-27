@@ -76,6 +76,18 @@
     .breadcrumb a { color: var(--green, #4a6741); text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
 
+  
+    /* Floating newsletter badge */
+    .newsletter-float { position: fixed; bottom: -60px; left: 0; right: 0; background: linear-gradient(135deg, #2a2a27, #3a3a37); color: white; padding: 12px 5%; display: flex; align-items: center; justify-content: center; gap: 16px; z-index: 997; transition: bottom 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); flex-wrap: wrap; }
+    .newsletter-float.show { bottom: 0; }
+    .newsletter-float p { font-size: 13px; margin: 0; }
+    .newsletter-float strong { color: #c9a96e; }
+    .newsletter-float form { display: flex; gap: 6px; }
+    .newsletter-float input[type="email"] { padding: 8px 14px; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; background: rgba(255,255,255,0.1); color: white; font-size: 13px; width: 200px; }
+    .newsletter-float input[type="email"]::placeholder { color: rgba(255,255,255,0.5); }
+    .newsletter-float button[type="submit"] { background: #c9a96e; color: white; border: none; padding: 8px 16px; border-radius: 4px; font-weight: 600; cursor: pointer; font-size: 13px; white-space: nowrap; }
+    .newsletter-float .close-badge { position: absolute; top: -28px; right: 16px; background: rgba(42,42,39,0.9); color: white; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+
   </style>
 <link rel="stylesheet" href="../assets/css/cognivia-v2.css">
   <script type="application/ld+json">
@@ -347,5 +359,49 @@
 </footer>
 
 <script src="../js/web-vitals.js" defer></script>
-</body>
+<script>
+// Newsletter floating badge
+(function(){
+  if(localStorage.getItem('nl_badge_dismissed')) return;
+  function showBadge(){ document.getElementById('newsletterFloat').classList.add('show'); }
+  var shown = false;
+  var check = function(){
+    if(shown) return;
+    var pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    if(pct > 0.35){ shown = true; showBadge(); window.removeEventListener('scroll', check); }
+  };
+  window.addEventListener('scroll', check);
+})();
+</script>
+
+<!-- Newsletter Floating Badge (Power Cycle #50) -->
+<style>
+.subscribe-badge{position:fixed;bottom:24px;right:24px;z-index:997;display:none;align-items:center;gap:8px;background:linear-gradient(135deg,#2d5016,#4a7c2e);color:#fff;padding:10px 18px;border-radius:28px;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,.25);transition:all .3s cubic-bezier(.4,0,.2,1);text-decoration:none}
+.subscribe-badge:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 6px 28px rgba(0,0,0,.35)}
+.subscribe-badge .badge-icon{font-size:16px}
+.subscribe-badge .badge-close{margin-left:4px;background:none;border:none;color:rgba(255,255,255,.7);font-size:16px;cursor:pointer;padding:0 2px;line-height:1}
+.subscribe-badge .badge-close:hover{color:#fff}
+@media(max-width:768px){.subscribe-badge{bottom:16px;right:16px;font-size:12px;padding:8px 14px}}
+
+    /* Floating newsletter badge */
+    .newsletter-float { position: fixed; bottom: -60px; left: 0; right: 0; background: linear-gradient(135deg, #2a2a27, #3a3a37); color: white; padding: 12px 5%; display: flex; align-items: center; justify-content: center; gap: 16px; z-index: 997; transition: bottom 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); flex-wrap: wrap; }
+    .newsletter-float.show { bottom: 0; }
+    .newsletter-float p { font-size: 13px; margin: 0; }
+    .newsletter-float strong { color: #c9a96e; }
+    .newsletter-float form { display: flex; gap: 6px; }
+    .newsletter-float input[type="email"] { padding: 8px 14px; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; background: rgba(255,255,255,0.1); color: white; font-size: 13px; width: 200px; }
+    .newsletter-float input[type="email"]::placeholder { color: rgba(255,255,255,0.5); }
+    .newsletter-float button[type="submit"] { background: #c9a96e; color: white; border: none; padding: 8px 16px; border-radius: 4px; font-weight: 600; cursor: pointer; font-size: 13px; white-space: nowrap; }
+    .newsletter-float .close-badge { position: absolute; top: -28px; right: 16px; background: rgba(42,42,39,0.9); color: white; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+
+  </style>
+<a href="#newsletter" class="subscribe-badge" id="subBadge">
+<span class="badge-icon">0001F4EC</SPAN>
+<SPAN>ZAPISZ SI�� 2192 15% ZNI017CKI</SPAN>
+<BUTTON CLASS="BADGE-CLOSE" ONCLICK="EVENT.PREVENTDEFAULT();DOCUMENT.GETELEMENTBYID('SUBBADGE').STYLE.DISPLAY='NONE';LOCALSTORAGE.SETITEM('SUBBADGE','1')">00D7</BUTTON>
+</A>
+<SCRIPT>
+(FUNCTION(){IF(LOCALSTORAGE.GETITEM('SUBBADGE'))RETURN;VAR B=DOCUMENT.GETELEMENTBYID('SUBBADGE');IF(!B)RETURN;SETTIMEOUT(FUNCTION(){B.STYLE.DISPLAY='FLEX'},4000)})();
+</SCRIPT>
+</BODY>
 </html>

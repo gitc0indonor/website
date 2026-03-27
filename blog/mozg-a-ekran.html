@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mózg a ekran — jak chronić neurony w erze cyfrowej? | Blog Cognivia</title>
+  <meta name="description" content="Ekran 7-9h dziennie — jak chronić mózg przed cyfrowym zmęczeniem? Przegląd mechanizmów, praktyczne wskazówki i rola antyoksydantów w ochronie neuronów.">
+  <link rel="canonical" href="https://gitc0indonor.github.io/website/blog/mozg-a-ekran.html">
+  <link rel="alternate" hreflang="pl" href="https://gitc0indonor.github.io/website/blog/mozg-a-ekran.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mózg a ekran — jak chronić neurony w erze cyfrowej? | Blog Cognivia">
+  <meta property="og:description" content="Jak 7-9h przed ekranem wpływa na mózg? Praktyczne strategie ochrony neuronów w cyfrowym świecie.">
+  <meta property="og:url" content="https://gitc0indonor.github.io/website/blog/mozg-a-ekran.html">
+  <meta property="og:site_name" content="Cognivia">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:image" content="https://gitc0indonor.github.io/website/assets/blog/mozg-ekran-og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mózg a ekran — jak chronić neurony?">
+  <meta name="twitter:description" content="Praktyczne strategie ochrony mózgu przed cyfrowym zmęczeniem.">
+  <meta name="twitter:image" content="https://gitc0indonor.github.io/website/assets/blog/mozg-ekran-og.jpg">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #8f7a3d; --gold: #c9a96e; --text: #2a2a27; --surface: #f8f6f2; --muted: #6f6a61; --green: #2d5a27; --green-light: #e8f5e3; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'EB Garamond', Georgia, serif; color: var(--text); background: #fdfcf8; line-height: 1.8; }
+    .legal-bar { background: var(--text); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
+    .legal-bar strong { color: var(--accent); }
+    header { position: fixed; top: 32px; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(253,252,248,0.95); backdrop-filter: blur(10px); }
+    .logo { font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 800; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--accent); }
+    nav a { margin-left: 24px; color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+    .breadcrumb { max-width: 900px; margin: 100px auto 0; padding: 0 6%; font-size: 12px; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+    article { max-width: 800px; margin: 0 auto; padding: 40px 8% 80px; }
+    article .tag { font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
+    article h1 { font-family: 'EB Garamond', serif; font-size: 42px; color: var(--text); margin-bottom: 16px; line-height: 1.2; }
+    article .meta { font-size: 13px; color: #999; margin-bottom: 32px; }
+    article h2 { font-family: 'EB Garamond', serif; font-size: 28px; color: var(--text); margin: 40px 0 16px; }
+    article h3 { font-family: 'EB Garamond', serif; font-size: 22px; color: var(--text); margin: 32px 0 12px; }
+    article p { font-size: 15px; color: var(--muted); margin-bottom: 16px; }
+    article ul, article ol { font-size: 15px; color: var(--muted); margin: 0 0 16px 24px; }
+    article li { margin-bottom: 8px; }
+    .legal-note { font-size: 12px; color: #888; background: #f9f5ef; padding: 20px; margin: 24px 0; border-left: 2px solid var(--accent); }
+    .ref { font-size: 12px; color: #999; margin: 8px 0 24px; padding: 12px 16px; background: var(--surface); border-left: 2px solid var(--accent); }
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 14px; }
+    .comparison-table th { background: var(--text); color: white; padding: 12px 16px; text-align: left; font-weight: 500; }
+    .comparison-table td { padding: 12px 16px; border-bottom: 1px solid #eee; }
+    .comparison-table tr:nth-child(even) td { background: var(--surface); }
+    .cta-section { background: var(--text); color: white; border-radius: 12px; padding: 40px; text-align: center; margin: 48px 0; }
+    .cta-section h3 { font-family: 'EB Garamond', serif; color: white; margin-bottom: 12px; }
+    .cta-section p { color: rgba(255,255,255,0.8); margin-bottom: 20px; }
+    .cta-btn { display: inline-block; background: var(--gold); color: var(--text); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; transition: transform 0.2s; }
+    .cta-btn:hover { transform: translateY(-2px); }
+    .trust-bar { background: var(--surface); padding: 16px 24px; border-radius: 8px; text-align: center; margin: 32px 0; font-size: 13px; color: var(--muted); }
+    .trust-bar strong { color: var(--text); }
+    .cross-links { background: #f9f5ef; border-radius: 12px; padding: 28px; margin: 32px 0; }
+    .cross-links h4 { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--text); margin-bottom: 16px; }
+    .cross-links a { display: block; color: var(--accent); text-decoration: none; padding: 8px 0; font-size: 14px; border-bottom: 1px solid rgba(201,169,110,0.15); }
+    .cross-links a:last-child { border-bottom: none; }
+    .cross-links a:hover { color: var(--text); }
+    .share-buttons { display: flex; gap: 12px; margin: 32px 0; }
+    .share-btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 500; color: white; transition: transform 0.2s; }
+    .share-btn:hover { transform: translateY(-2px); }
+    .share-btn.fb { background: #1877f2; }
+    .share-btn.tw { background: #1da1f2; }
+    .share-btn.li { background: #0a66c2; }
+    .safety-box { background: #fff8f0; border: 2px solid #f0c080; border-radius: 12px; padding: 28px; margin: 24px 0; }
+    .safety-box h4 { color: #b8860b; margin-bottom: 12px; font-family: 'EB Garamond', serif; }
+    .tip-box { background: var(--green-light); border-radius: 12px; padding: 24px; margin: 24px 0; }
+    .tip-box h4 { color: var(--green); margin-bottom: 12px; font-family: 'EB Garamond', serif; }
+    .fact-box { display: flex; gap: 20px; align-items: flex-start; background: #fef9f0; border-left: 4px solid var(--gold); padding: 24px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+    .fact-box .stat { font-size: 36px; font-weight: 700; color: var(--accent); line-height: 1; font-family: 'EB Garamond', serif; }
+    .fact-box .desc { font-size: 14px; color: var(--muted); }
+    .guarantee-section { display: flex; align-items: center; gap: 20px; background: linear-gradient(135deg, #e8f5e3, #f0f8e8); border-radius: 12px; padding: 28px; margin: 32px 0; }
+    .guarantee-badge { width: 60px; height: 60px; background: var(--green); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; font-family: 'EB Garamond', serif; flex-shrink: 0; }
+    .guarantee-text h4 { color: var(--green); font-family: 'EB Garamond', serif; margin-bottom: 4px; }
+    .guarantee-text p { font-size: 13px; color: var(--muted); }
+    .guarantee-text a { color: var(--green); }
+    .blog-email-popup { position: fixed; bottom: -300px; right: 24px; width: 340px; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); padding: 28px; z-index: 999; transition: bottom 0.5s cubic-bezier(0.34,1.56,0.64,1); }
+    .blog-email-popup.show { bottom: 24px; }
+    .blog-email-popup .popup-close { position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 18px; cursor: pointer; color: #999; }
+    .blog-email-popup h4 { font-family: 'EB Garamond', serif; font-size: 20px; margin-bottom: 8px; }
+    .blog-email-popup p { font-size: 13px; color: var(--muted); margin-bottom: 16px; }
+    .blog-email-popup input { width: 100%; padding: 12px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin-bottom: 12px; }
+    .blog-email-popup button { width: 100%; padding: 12px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; }
+    @media (max-width: 768px) {
+      article h1 { font-size: 30px; }
+      header { top: 0; }
+      .breadcrumb { margin-top: 80px; }
+      .comparison-table { font-size: 12px; }
+      .comparison-table th, .comparison-table td { padding: 8px 10px; }
+      .blog-email-popup { width: calc(100% - 32px); right: 16px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Mózg a ekran — jak chronić neurony w erze cyfrowej?",
+    "description": "Praktyczne strategie ochrony mózgu przed cyfrowym zmęczeniem. Przegląd mechanizmów i rola antyoksydantów.",
+    "datePublished": "2026-03-27",
+    "dateModified": "2026-03-27",
+    "author": { "@type": "Organization", "name": "Cognivia" },
+    "publisher": { "@type": "Organization", "name": "Cognivia", "url": "https://cognivia.eu" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://gitc0indonor.github.io/website/blog/mozg-a-ekran.html" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://gitc0indonor.github.io/website/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://gitc0indonor.github.io/website/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Mózg a ekran", "item": "https://gitc0indonor.github.io/website/blog/mozg-a-ekran.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<div class="legal-bar">CogniCit — 3 synergistyczne składniki · <strong>GMP Certified</strong> · EU Compliant</div>
+
+<header>
+  <a href="../index.html" class="logo">Cogni<span>Cit</span></a>
+  <nav>
+    <a href="../produkt.html">Produkt</a>
+    <a href="../nauka.html">Nauka</a>
+    <a href="index.html">Blog</a>
+    <a href="../faq.html">FAQ</a>
+  </nav>
+</header>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../index.html">Strona główna</a> <span>›</span>
+  <a href="index.html">Blog</a> <span>›</span>
+  Mózg a ekran
+</nav>
+
+<article>
+  <div class="tag">Zdrowie cyfrowe</div>
+  <h1>Mózg a ekran — jak chronić neurony w erze cyfrowej?</h1>
+  <div class="meta">Czas czytania: 7 min · Ostatnia aktualizacja: 27 marca 2026</div>
+
+  <p>Przeciętny Polak spędza <strong>7–9 godzin dziennie</strong> przed ekranem — komputer, smartfon, tablet, telewizor. To niemal połowa czasu na jawie. Co dzieje się z mózgiem, który przez tyle godzin bombardowany jest bodźcami cyfrowymi?</p>
+
+  <p>Odpowiedź nie jest prosta, ale badania z ostatniej dekady rysują coraz wyraźniejszy obraz: długotrwała ekspozycja na ekrany wpływa na koncentrację, sen, stres oksydacyjny i neuroprzekaźniki. W tym artykule przyglądamy się mechanizmom — i praktycznym strategiom ochrony.</p>
+
+  <h2>📱 Jak ekran wpływa na mózg?</h2>
+
+  <p>Mózg nie jest przystosowany do ciągłej stymulacji wzrokowej z bliskiej odległości. Ekran to trzy jednoczesne wyzwania dla neuronów:</p>
+
+  <ul>
+    <li><strong>Niebieskie światło (400–490 nm)</strong> — hamuje produkcję melatoniny, przesuwając fazę snu o 1–2 godziny. Badania Harvard Medical School wykazały, że wieczorna ekspozycja na niebieskie światło obniża poziom melatoniny o 50% (Chang et al., 2015).</li>
+    <li><strong>Przeciążenie dopaminowe</strong> — social media, powiadomienia, gry aktywują układ nagrody. Krótkie cykle uwagi (średnio 47 sekund na jedno zadanie przy ciągłych powiadomieniach — University of California, Irvine).</li>
+    <li><strong>Cyfrowe zmęczenie oczu (CVS)</strong> — zmniejszona częstotliwość mrugania (z 15 do 5/min), suchość, ból głowy. Dotyczy 50–90% pracowników biurowych.</li>
+  </ul>
+
+  <div class="fact-box">
+    <div class="stat">7–9h</div>
+    <div class="desc"><strong>Przeciętny czas ekranowy Polaka dziennie</strong> — komputer + telefon + TV. To 2× więcej niż w 2010 roku (źródło: Mediapanel, 2025).</div>
+  </div>
+
+  <h2>🧠 Co dzieje się z neuronami?</h2>
+
+  <p>Intensywna praca przy ekranie to nie tylko zmęczone oczy. To obciążenie dla całego układu nerwowego:</p>
+
+  <h3>Spadek acetylocholiny</h3>
+  <p>Acetylocholina to neuroprzekaźnik odpowiedzialny za uwagę, koncentrację i pamięć roboczą. Przy długotrwałym wysiłku poznawczym (wielogodzinna praca przy komputerze) zapotrzebowanie na acetylocholinę rośnie, a jej poziom spada. Efekt: <strong>rozproszenie, trudności z koncentracją, "mgła mózgowa"</strong>.</p>
+
+  <div class="ref">📖 Sarter, M. & Parikh, V. (2005). Cholinergic transmission and cortical function. <em>Nature Reviews Neuroscience</em>, 6, 511–523. — Kluczowa recenzja roli acetylocholiny w kontroli uwagi.</div>
+
+  <h3>Stres oksydacyjny mitochondriów</h3>
+  <p>Mitochondria — "elektrownie" neuronów — produkują energię (ATP) niezbędną do pracy mózgu. Przy chronicznym obciążeniu poznawczym zwiększa się produkcja wolnych rodników, które uszkadzają błony mitochondrialne. Efekt: <strong>spadek energii komórkowej, przyspieszone starzenie neuronów</strong>.</p>
+
+  <div class="ref">📖 Halliwell, B. (2006). Oxidative stress and neurodegeneration. <em>Free Radical Biology and Medicine</em>, 41(6), 849–862.</div>
+
+  <h3>Przeciążenie glutaminianem</h3>
+  <p>Ciągła stymulacja wzrokowa i poznawcza zwiększa aktywność glutaminianu — głównego neuroprzekaźnika pobudzającego. W nadmiarze glutaminian staje się neurotoksyczny (ekscytotoksyczność), uszkadzając neurony.</p>
+
+  <div class="safety-box">
+    <h4>⚠️ Objawy cyfrowego przeciążenia mózgu</h4>
+    <p>Jeśli rozpoznajesz u siebie 3+ z tych objawów, Twój mózg prawdopodobnie potrzebuje odpoczynku od ekranów:</p>
+    <ul>
+      <li>Trudności z koncentracją dłużej niż 15 minut</li>
+      <li>"Mgła mózgowa" — uczucie otępienia po południu</li>
+      <li>Ból głowy lub zmęczenie oczu po 2–3h pracy</li>
+      <li>Bezsenność lub płytki sen</li>
+      <li>Drażliwość po długiej pracy przy komputerze</li>
+      <li>Potrzeba kolejnej kawy, żeby "dobijać" do końca dnia</li>
+    </ul>
+  </div>
+
+  <h2>🛡️ Praktyczna ochrona mózgu przy ekranie</h2>
+
+  <p>Dobrą wiadomością jest to, że mózg ma znaczące zdolności regeneracyjne — jeśli damy mu odpowiednie warunki. Oto 7 strategii opartych na badaniach:</p>
+
+  <h3>1. Zasada 20-20-20</h3>
+  <p>Co <strong>20 minut</strong> pracy przy ekranie, spójrz na obiekt oddalony o <strong>20 stóp (6 m)</strong> przez <strong>20 sekund</strong>. Ta prosta technika redukuje zmęczenie akomodacji oczu o 40% (American Academy of Ophthalmology).</p>
+
+  <h3>2. Ograniczenie niebieskiego światła wieczorem</h3>
+  <p>Wyłącz ekrany <strong>2 godziny przed snem</strong> lub używaj filtrów niebieskiego światła (Night Shift, f.lux). Badania pokazują, że to wystarczy, aby przywrócić normalną produkcję melatoniny (Harvard Health, 2020).</p>
+
+  <h3>3. Przerwy w formacie deep work</h3>
+  <p>Zamiast ciągłej pracy 8h przy ekranie, stosuj bloki: <strong>90 minut pracy → 20 minut przerwy</strong>. Mózg nie jest w stanie utrzymać głębokiej koncentracji dłużej niż 90 minut (Ericsson, 1993).</p>
+
+  <h3>4. Sen jako fundament regeneracji</h3>
+  <p>Podczas snu głębokiego (NREM) mózg aktywuje <strong>system glimfatyczny</strong> — mechanizm usuwania toksyn i produktów przemiany materii z neuronów. 7–8h snu = naturalny detoks mózgu.</p>
+
+  <div class="ref">📖 Xie, L. et al. (2013). Sleep drives metabolite clearance from the adult brain. <em>Science</em>, 342(6156), 373–377. — Przełomowe badanie oczyszczania mózgu podczas snu.</div>
+
+  <h3>5. Ruch — nawet 10 minut pomaga</h3>
+  <p>Krótki spacer (10–15 min) zwiększa przepływ krwi do mózgu o 15–20%, poprawiając dotlenienie neuronów. Badanie Erickson et al. (2011) wykazało, że regularny ruch zwiększa objętość hipokampu o 2% w ciągu roku.</p>
+
+  <h3>6. Nawodnienie</h3>
+  <p>Już <strong>1–2% odwodnienia</strong> obniża koncentrację i funkcje poznawcze. Przy pracy przy ekranie łatwo zapomnieć o piciu. Zasada: szklanka wody co godzinę.</p>
+
+  <div class="tip-box">
+    <h4>💡 Pro tip: Suplementacja jako fundament ochrony</h4>
+    <p>Powyższe strategie to nawyki. Ale co, jeśli potrzebujesz wsparcia "od wewnątrz"? Tu wchodzi suplementacja oparta na nauce:</p>
+    <ul>
+      <li><strong>Kwas alfa-liponowy (ALA)</strong> — jedyny antyoksydant rozpuszczalny zarówno w wodzie, jak i tłuszczach. Chroni mitochondria neuronów przed wolnymi rodnikami generowanymi przez długotrwałą pracę umysłową. 250 mg w CogniCit.</li>
+      <li><strong>Cytykolina (CDP-Cholina)</strong> — prekursor acetylocholiny. 233 publikacje PubMed. 300 mg w CogniCit = wsparcie neuroprzekaźnika koncentracji.</li>
+      <li><strong>Beta-cyklodekstryna (β-CD)</strong> — zwiększa biodostępność obu składników, chroniąc je przed degradacją w przewodzie pokarmowym.</li>
+    </ul>
+  </div>
+
+  <h2>📊 Porównanie: strategie ochrony mózgu przy ekranie</h2>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Strategia</th>
+        <th>Koszt</th>
+        <th>Czas wdrożenia</th>
+        <th>Skuteczność</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Zasada 20-20-20</td>
+        <td>0 zł</td>
+        <td>natychmiast</td>
+        <td>⭐⭐⭐ redukuje zmęczenie oczu</td>
+      </tr>
+      <tr>
+        <td>Filtr niebieskiego światła</td>
+        <td>0 zł (aplikacja)</td>
+        <td>5 min</td>
+        <td>⭐⭐⭐ poprawia sen</td>
+      </tr>
+      <tr>
+        <td>Przerwy deep work (90/20)</td>
+        <td>0 zł</td>
+        <td>1 dzień adaptacji</td>
+        <td>⭐⭐⭐⭐ utrzymuje koncentrację</td>
+      </tr>
+      <tr>
+        <td>Sen 7-8h</td>
+        <td>0 zł</td>
+        <td>1-2 tyg. zmiana nawyku</td>
+        <td>⭐⭐⭐⭐⭐ fundament regeneracji</td>
+      </tr>
+      <tr>
+        <td>Ruch 10-30 min/dzień</td>
+        <td>0 zł</td>
+        <td>natychmiast</td>
+        <td>⭐⭐⭐⭐ przepływ krwi do mózgu</td>
+      </tr>
+      <tr>
+        <td>Nawodnienie (szklanka/h)</td>
+        <td>~0 zł</td>
+        <td>natychmiast</td>
+        <td>⭐⭐⭐ zapobiega odwodnieniu</td>
+      </tr>
+      <tr>
+        <td>Suplementacja (CogniCit)</td>
+        <td>79 zł/mies.</td>
+        <td>efekty po 7-14 dniach</td>
+        <td>⭐⭐⭐⭐ ALA + cytykolina + β-CD</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>🔄 Podsumowanie — mózg w erze cyfrowej</h2>
+
+  <p>Ekrany nie znikną z naszego życia. Ale możemy chronić mózg, który z nich korzysta:</p>
+
+  <ol>
+    <li><strong>Przerwy</strong> — zasada 20-20-20 + bloki 90/20 minut</li>
+    <li><strong>Sen</strong> — 7–8h, bez ekranów 2h przed snem</li>
+    <li><strong>Ruch</strong> — nawet 10-minutowy spacer robi różnicę</li>
+    <li><strong>Nawodnienie</strong> — szklanka wody co godzinę</li>
+    <li><strong>Suplementacja</strong> — ALA (ochrona mitochondriów) + cytykolina (acetylocholina) + β-CD (biodostępność)</li>
+  </ol>
+
+  <p>Nie chodzi o eliminację ekranów — chodzi o <strong>świadome zarządzanie</strong> ich wpływem na Twój mózg. Każdy z powyższych kroków to inwestycja w zdrowie poznawcze na lata.</p>
+
+  <div class="cta-section">
+    <h3>Chroń swój mózg świadomie</h3>
+    <p>CogniCit — 3 synergistyczne składniki, GMP, zero kofeiny.<br>79 zł · Darmowa dostawa od 120 zł · 30-dniowa gwarancja</p>
+    <a href="../produkt.html" class="cta-btn">Zamów CogniCit →</a>
+  </div>
+
+  <div class="trust-bar">
+    <strong>CogniCit</strong> — 3 synergistyczne składniki · GMP Certified · EU Compliant · 30-dniowa gwarancja satysfakcji
+  </div>
+
+  <div class="legal-note">
+    <strong>Zastrzeżenie:</strong> Suplement diety nie zastępuje zróżnicowanej diety ani zdrowego stylu życia. CogniCit nie jest lekiem i nie leczy chorób. W przypadku problemów ze zdrowiem skonsultuj się z lekarzem.
+  </div>
+
+  <div class="cross-links">
+    <h4>📚 Powiązane artykuły</h4>
+    <a href="suplementy-dla-programistow.html">Suplementy dla programistów — jak zadbać o mózg przy 8h przed ekranem →</a>
+    <a href="suplementy-a-kofeina.html">Suplementy a kofeina — cytykolina vs kofeina na koncentrację →</a>
+    <a href="poranne-nawyki-programisty.html">Poranne nawyki programisty — jak zacząć dzień produktywnie →</a>
+    <a href="../jak-stosowac.html">Jak stosować CogniCit? Praktyczny przewodnik →</a>
+    <a href="../nauka.html">Przegląd badań naukowych — PubMed →</a>
+  </div>
+
+  <div class="share-buttons">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://gitc0indonor.github.io/website/blog/mozg-a-ekran.html" target="_blank" rel="noopener" class="share-btn fb">📘 Udostępnij</a>
+    <a href="https://twitter.com/intent/tweet?url=https://gitc0indonor.github.io/website/blog/mozg-a-ekran.html&text=Mózg+a+ekran+—+jak+chronić+neurony?" target="_blank" rel="noopener" class="share-btn tw">🐦 Tweet</a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://gitc0indonor.github.io/website/blog/mozg-a-ekran.html" target="_blank" rel="noopener" class="share-btn li">💼 LinkedIn</a>
+  </div>
+
+  <div class="guarantee-section">
+    <div class="guarantee-badge">30</div>
+    <div class="guarantee-text">
+      <h4>30-dniowa gwarancja satysfakcji</h4>
+      <p>Nie jesteś zadowolony? Zwrócimy pieniądze za pierwsze opakowanie. <a href="../zwroty.html">Sprawdź zasady zwrotów →</a></p>
+    </div>
+  </div>
+
+</article>
+
+<!-- Blog email capture popup -->
+<div class="blog-email-popup" id="blogPopup">
+  <button class="popup-close" onclick="closeBlogPopup()">✕</button>
+  <h4>📬 Podoba Ci się artykuł?</h4>
+  <p>Zapisz się i otrzymaj <strong>15% zniżki</strong> na pierwsze zamówienie CogniCit.</p>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="hidden" name="source" value="blog-mozg-ekran-popup">
+    <input type="email" name="email" placeholder="Twój adres email" required>
+    <button type="submit">Zapisz się → 15% zniżki</button>
+  </form>
+</div>
+
+<script>
+// Blog email popup - 60% scroll trigger
+(function() {
+  var dismissed = localStorage.getItem('blogPopupDismissed');
+  if (dismissed) return;
+  var triggered = false;
+  window.addEventListener('scroll', function() {
+    if (triggered) return;
+    var scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+    if (scrollPercent > 0.6) {
+      triggered = true;
+      document.getElementById('blogPopup').classList.add('show');
+    }
+  });
+})();
+function closeBlogPopup() {
+  document.getElementById('blogPopup').classList.remove('show');
+  localStorage.setItem('blogPopupDismissed', 'true');
+}
+</script>
+
+</body>
+</html>
