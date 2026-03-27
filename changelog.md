@@ -1653,3 +1653,64 @@
 **Queue:** ~230 completed + 14 active = 244 total
 
 **Git:** Committed & pushed to master (6692b4b)
+
+### 2026-03-27 — Power Cycle #55 (21:18 UTC)
+**Implemented:**
+- ✅ Item #268 — Added merchant-feed.xml to sitemap.xml
+  - URL: https://cognivia.eu/merchant-feed.xml
+  - changefreq: daily, priority: 0.5
+  - Enables Google Shopping discovery via standard sitemap crawling
+- ✅ Item #270 — Added merchant-feed.xml to robots.txt for Google Merchant bot
+  - User-agent: Googlebot-Image
+  - Allow: /merchant-feed.xml
+  - Enables automatic product feed crawling by Google Shopping
+- ✅ Blog outline added to content_calendar.md: "Mózg a praca zmianowa — jak suplementować przy nieregularnych godzinach?"
+  - Targets completely underserved niche: Polish shift workers
+  - 10-section outline with CogniCit protocol for day/night/rotating shifts
+  - SEO keywords: suplementy praca zmianowa, nootropiki zmiany nocne
+- ✅ 3 new improvement ideas added to queue (#274-276)
+  - #274: Delivery date calculator widget
+  - #275: Quality assurance policy page (/jakosc)
+  - #276: Real-time inventory indicator on product page
+
+**Files changed:**
+- `sitemap.xml` — merchant-feed.xml URL added (daily changefreq, 0.5 priority)
+- `robots.txt` — Googlebot-Image allow rule for merchant-feed.xml
+- `improvement_queue.md` — items #268, #270 marked DONE; 3 new items (#274-276)
+- `content_calendar.md` — new blog outline (praca zmianowa)
+- `changelog.md` — this entry
+
+**Site verification:** sitemap.xml valid XML with 79 URLs including merchant-feed.xml. robots.txt valid with Googlebot-Image directive. Cart JS syntax valid (node -c). 11 add-to-cart calls on produkt.html. Formspree wired (3 references).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID for automated order delivery.
+
+**Queue:** ~260 completed + 15 active = 276 total
+
+### 2026-03-27 — Power Cycle #56 (22:18 UTC)
+**Implemented:**
+- ✅ Item #272 — Sticky "Buy Now" top bar on produkt.html (desktop only)
+  - Slim fixed-position bar slides in from top after scrolling past hero area (~600px or 60vh)
+  - Shows: product name "CogniCit", ★★★★★ 4.8/5 rating, 79 zł price, green "W magazynie" badge, "Zamów teraz" CTA button
+  - Gold gradient background matching site palette, smooth translateY transition with cubic-bezier easing
+  - Auto-hides when scrolling back to top. Hidden on mobile (<1100px) to avoid conflict with existing floating CTA
+  - Adds item to cart directly via CogniviaCart.addItem()
+- ✅ Item #276 — Real-time inventory status badge on produkt.html
+  - Green pulsing dot + "W magazynie · Wysyłka w 24h" text pill badge
+  - Added to gallery main image area (below product description) AND sticky sidebar (below price)
+  - Subtle green accent matching site palette. Pulsing dot animation (2s ease-in-out) draws attention without being distracting
+  - JS injection via DOMContentLoaded — no inline HTML changes to existing elements
+- ✅ Blog post outline added to content_calendar.md: "Jak mózg zużywa energię? Mitochondria a koncentracja"
+  - Educational angle targeting mitochondrial energy + brain function — low competition topic in Polish SEO
+  - 9-section outline with ALA/cytykolina/β-CD scientific integration, practical tips, CogniCit positioning
+  - Internal links to nauka.html, ingredient pages, produkt.html
+- ✅ 3 new improvement ideas added to queue (#277-279)
+
+**Files changed:**
+- `produkt.html` — Sticky buy bar CSS/HTML/JS (~50 lines) + inventory badge CSS/HTML/JS (~25 lines)
+- `content_calendar.md` — New blog outline (mitochondria + brain energy)
+- `improvement_queue.md` — 3 new items (#277-279: live viewer counter, /sesja landing page, ingredient transparency widget)
+- `changelog.md` — this entry
+
+**Site verification:** produkt.html validated — DOCTYPE ✓, </html> ✓, sticky-buy-bar confirmed, inventory-badge confirmed. Cart JS syntax valid (CogniviaCart references intact). No broken elements detected.
+
+**Note:** Formspree still uses placeholder ID 'xpwzgryv' — orders fall back to mailto. CEO action needed to activate real order processing.

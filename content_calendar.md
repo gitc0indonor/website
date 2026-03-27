@@ -1491,3 +1491,51 @@
 **Schema:** Article + BreadcrumbList JSON-LD
 **Internal links:** produkt.html, nauka.html, cytykolina.html, kwas-alfa-liponowy.html, matura.html, jak-stosowac.html, blog/cytykolina-przewodnik-kompletny.html
 **Status:** Outline ready — educational angle, strong SEO for learning/neuroscience queries, evergreen content, seasonal peaks (exam periods Jan-May, Sep)
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #55)
+**Title:** Mózg a praca zmianowa — jak suplementować przy nieregularnych godzinach?
+**Target:** Polish shift workers, healthcare, security, manufacturing; SEO for "suplementy praca zmianowa", "nootropiki zmiany", "koncentracja praca nocna"
+**Word count:** 1500-2000
+**Keywords:** suplementy praca zmianowa, nootropiki zmiany nocne, koncentracja nocna praca, cytykolina praca zmianowa, mózg nieregularne godziny
+
+**Outline:**
+1. **Wstęp** — 1.5 mln Polaków pracuje na zmiany. Rytm dobowy zakłócony = spadek koncentracji, pamięci, reakcji. Co nauka mówi o suplementacji w tym kontekście?
+2. **Co zmiany robią z mózgiem?** — Desynchronizacja zegara biologicznego (suprachiasmatyczne jądro), spadek melatoniny, podwyższony kortyzol, spadek acetylocholiny podczas "biologicznej nocy"
+3. **Najczęstsze problemy** — Mgła mózgowa o 3:00, błędy w decyzjach, spadek pamięci krótkotrwałej, drażliwość. Statystyki wypadków przy pracy na nocnych zmianach.
+4. **Kofeina — przyjaciel czy wróg nocnej zmiany?** — Blokuje senność, ale półtrwanie 5-6h = problemy ze snem po zmianie. Paradoks: potrzebujesz snu, ale kofeina go blokuje.
+5. **Cytykolina dla zmianowców** — Mechanizm: ACh = neuroprzekaźnik czujności. Cytykolina zwiększa pulę ACh niezależnie od pory dnia. Brak wpływu na sen (można brać przed nocną zmianą).
+6. **ALA — ochrona przed stresem oksydacyjnym zmian** — Praca nocna = podwyższony stres oksydacyjny (zaburzony rytm antyoksydacyjny). ALA neutralizuje wolne rodniki niezależnie od pory.
+7. **Protokół suplementacji dla zmianowców** — Tabela: zmiana dzienna vs nocna vs rotacyjna → kiedy brać CogniCit, kiedy jeść, kiedy spać. β-CD chroni składniki niezależnie od godziny przyjęcia.
+8. **Higiena snu dla zmianowców** — 6 zasad: ciemność, temperatura, regularność nawet w weekendy, suplementacja rano przed pierwszą zmianą, unikanie kofeiny 6h przed snem.
+9. **CogniCit — dlaczego działa niezależnie od pory?** — Brak stymulantów, brak wpływu na sen, synergia 3 składników o każdej porze. Praktyczne wskazówki dawkowania.
+10. **Podsumowanie** — Praca zmianowa to wyzwanie dla mózgu. Suplementacja = wsparcie, nie zamiennik snu i higieny.
+
+**CTA:** Zamów CogniCit — wsparcie koncentracji niezależnie od pory dnia → produkt.html
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/nootropiki-a-sen.html, jak-stosowac.html, nauka.html
+**SEO angle:** "praca zmianowa suplementy" — zero quality Polish content, 800+ monthly searches. Positions Cognivia as the practical, real-world brand for working Poles.
+**Target platforms:** Google (SEO), grupy FB o pracy zmianowej, Wykop, LinkedIn
+**Season:** Evergreen
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #56)
+**Title:** Jak mózg zużywa energię? Mitochondria a koncentracja  
+**Target:** Polish audience, SEO + educational  
+**Word count:** 1500-2000  
+**Keywords:** mitochondria mózg, energia mózgu, ATP koncentracja, suplementy mitochondria, zmęczenie umysłowe przyczyny  
+
+**Outline:**
+1. **Wstęp** — Dlaczego mózg zużywa 20% energii ciała przy 2% masy? Intrygujący hook o neuronalnym "prądożercy"
+2. **Mitochondria w neuronach** — Każda komórka mózgu ma ~2 mln mitochondriów. Co się dzieje gdy nie nadążają z ATP?
+3. **Stres oksydacyjny i mitochondria** — ROS (reaktywne formy tlenu) uszkadzają mitochondria → mniej energii → spadek koncentracji
+4. **ALA jako mitochondrialny antyoksydant** — Podwójna rozpuszczalność → dociera do mitochondriów → regeneruje glutation → chroni łańcuch oddechowy. Hager et al. 2007.
+5. **Cytykolina i energia neuronalna** — Nie tylko acetylocholina — cytykolina wspiera syntezę fosfatydylocholiny (błony mitochondrialne). Badania na dawkach 500-2000 mg.
+6. **β-cyklodekstryna — dlaczego biodostępność ma znaczenie** — Substancja aktywna, która nie dociera do mitochondriów, jest bezwartościowa. β-CD chroni ALA i cytykolinę przed degradacją żołądkową.
+7. **Praktyczne wskazówki** — Sen (regeneracja mitochondriów), ruch (mitochondrialna biogeneza), dieta bogata w CoQ10, unikanie nadmiaru cukru
+8. **CogniCit** — Trójka składników zaprojektowana pod kątem ochrony mitochondrialnej
+9. **Podsumowanie** — 3 kluczowe wnioski
+
+**CTA:** "Chronić mitochondria = chronić koncentrację. Zapisz się na premierę CogniCit."  
+**Internal links:** nauka.html, skladniki/alfa-liponowy, skladniki/cytykolina, produkt.html  
+**SEO notes:** Temat rzadko poruszany w polskim internecie. Potencjał na featured snippet ("jak mitochondria wpływają na koncentrację"). Wysoki potencjał shareability na LinkedIn (praca umysłowa + nauka).

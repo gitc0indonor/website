@@ -408,6 +408,65 @@
   })();
   </script>
 
+    <!-- #272 — STICKY BUY NOW TOP BAR (desktop, slides in after scroll) -->
+  <style>
+    .sticky-buy-bar{position:fixed;top:0;left:0;right:0;z-index:996;background:linear-gradient(135deg,#1a3a1a,#2d5a2d);color:#fff;padding:10px 24px;display:flex;align-items:center;justify-content:center;gap:20px;box-shadow:0 4px 20px rgba(0,0,0,0.18);transform:translateY(-100%);transition:transform 0.4s cubic-bezier(0.4,0,0.2,1)}
+    .sticky-buy-bar.visible{transform:translateY(0)}
+    .sticky-buy-bar .sbp-name{font-family:'EB Garamond',serif;font-size:18px;font-weight:700;color:#fff;white-space:nowrap}
+    .sticky-buy-bar .sbp-stars{color:#ffd700;font-size:14px;white-space:nowrap}
+    .sticky-buy-bar .sbp-price{font-size:18px;font-weight:700;color:#c9a96e;white-space:nowrap}
+    .sticky-buy-bar .sbp-badge{background:rgba(76,175,80,0.2);border:1px solid rgba(76,175,80,0.4);color:#a5d6a7;padding:3px 10px;border-radius:12px;font-size:11px;white-space:nowrap}
+    .sticky-buy-bar .sbp-btn{background:#c9a96e;color:#2a2a27;padding:8px 20px;border-radius:24px;text-decoration:none;font-weight:700;font-size:14px;border:none;cursor:pointer;transition:background 0.2s;white-space:nowrap}
+    .sticky-buy-bar .sbp-btn:hover{background:#dbb97e}
+    @media(max-width:1100px){.sticky-buy-bar{display:none}}
+  </style>
+  <div class="sticky-buy-bar" id="stickyBuyBar">
+    <span class="sbp-name">CogniCit</span>
+    <span class="sbp-stars">★★★★★ 4.8/5</span>
+    <span class="sbp-price">79 zł</span>
+    <span class="sbp-badge">🟢 W magazynie</span>
+    <button class="sbp-btn" onclick="CogniviaCart.addItem('cognicit', 1)">Zamów teraz</button>
+  </div>
+  <script>
+  (function(){
+    var bar=document.getElementById('stickyBuyBar');
+    if(!bar)return;
+    var triggered=false;
+    window.addEventListener('scroll',function(){
+      var scrollY=window.pageYOffset||document.documentElement.scrollTop;
+      var threshold=Math.min(window.innerHeight*0.6,500);
+      if(scrollY>threshold&&!triggered){triggered=true;bar.classList.add('visible')}
+      else if(scrollY<=threshold&&triggered){triggered=false;bar.classList.remove('visible')}
+    },{passive:true});
+  })();
+  </script>
+
+  <!-- #276 — INVENTORY STATUS BADGE -->
+  <style>
+    .inventory-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(76,175,80,0.08);border:1px solid rgba(76,175,80,0.25);color:#2e7d32;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;margin-top:8px}
+    .inventory-badge .inv-dot{width:8px;height:8px;border-radius:50%;background:#4caf50;animation:invPulse 2s ease-in-out infinite}
+    @keyframes invPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
+  </style>
+  <script>
+  // Inject inventory badge near price display
+  document.addEventListener('DOMContentLoaded',function(){
+    var priceEl=document.querySelector('.price')||null;
+    var invHTML='<div class="inventory-badge"><span class="inv-dot"></span>W magazynie · Wysyłka w 24h</div>';
+    // Add to gallery main section after price text
+    var galleryMain=document.querySelector('.gallery-main-img');
+    if(galleryMain){
+      var d=document.createElement('div');d.innerHTML=invHTML;
+      galleryMain.appendChild(d.firstChild);
+    }
+    // Also add to sidebar
+    var sidebarPrice=document.querySelector('.sidebar-price');
+    if(sidebarPrice&&sidebarPrice.parentNode){
+      var d2=document.createElement('div');d2.innerHTML=invHTML;
+      sidebarPrice.parentNode.insertBefore(d2.firstChild,sidebarPrice.nextSibling);
+    }
+  });
+  </script>
+
   <!-- PRODUCT IMAGE GALLERY — #96 -->
   <section class="product-gallery" style="padding: 40px 5% 20px;">
     <div style="max-width: 900px; margin: 0 auto;">

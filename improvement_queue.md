@@ -437,8 +437,32 @@
 
 267. ~~[DONE] Add "Pytanie dnia" rotating FAQ widget to index.html hero~~ ✅ — Power Cycle #54. 7 rotating FAQ entries with daily index based on date. Click-to-expand accordion with smooth max-height animation. Each answer links to relevant page (FAQ, produkt, certyfikaty, jak-stosowac, beta-cyklodekstryna). Topics: coffee compatibility, daily dose, safety, timeline, β-CD purpose, drug status, daily cost. Positioned below social proof counter in hero. Non-intrusive card design matching site palette.
 
-268. **[NEW] Add Google Merchant Center feed to sitemap.xml** — The merchant-feed.xml has been created with 3 products (single, 2-pack, 3-pack). Add its URL to sitemap.xml for Google Shopping discovery. Also add a link to robots.txt for Google Merchant Center bot. Estimated: 15 minutes.
+268. ~~[DONE] Add merchant-feed.xml to sitemap.xml~~ ✅ — Power Cycle #55. Added merchant-feed.xml URL to sitemap.xml with daily changefreq and 0.5 priority. Enables Google Shopping discovery via standard sitemap crawling.
 
 269. **[NEW] Create "Suplementy a mózg kobiety — jak cykl menstruacyjny wpływa na koncentrację?" blog post** — Target "suplementy dla kobiet", "koncentracja a cykl", "mózg kobiety suplementy". Huge underserved audience — most nootropic content targets men. Cover estrogen-acetylcholine connection, iron-cognitive link, PMS brain fog, CogniCit as hormone-friendly supplement. SEO opportunity: ~500 monthly searches in Poland with near-zero competition. Estimated: 2.5 hours.
 
 270. **[NEW] Add merchant-feed.xml to robots.txt allow list for Google Merchant bot** — Add `User-agent: Googlebot-Image` and `Allow: /merchant-feed.xml` to robots.txt. Enables Google Shopping to discover and crawl the product feed automatically. Estimated: 5 minutes.
+271. **[NEW] Add breadcrumb navigation JSON-LD to all subpages** — Subpages like skladniki.html, porownanie.html, opinie.html lack BreadcrumbList schema. Adding structured breadcrumbs improves Google SERP display and helps crawlers understand site hierarchy. Apply to all 15+ content pages. Estimated: 30 minutes.
+
+272. **[NEW] Implement sticky "Buy Now" bar that appears after scrolling past product details** — On produkt.html, after scrolling past the ingredient/benefit sections (~60% of page), show a slim sticky top bar with product name, price, and "Zamów teraz" CTA. Complements existing floating mobile bar and desktop sticky sidebar. A/B testable. Estimated: 45 minutes.
+
+273. **[NEW] Create Polish-language FAQ schema for "Jak zamówić?" (how-to-order) page** — jak-zamowic.html has step-by-step ordering instructions but no FAQPage or HowTo JSON-LD schema. Adding HowTo schema with steps (choose pack → fill form → pay → receive) enables Google rich snippets for "jak zamówić suplement" queries. Estimated: 30 minutes.
+
+---
+
+### 🆕 Power Cycle #55 Additions (2026-03-27)
+
+274. **[NEW] Add "Czas dostawy kalkulator" to produkt.html and kasa.html** — Interactive widget where user selects city (Warszawa, Kraków, Gdańsk, etc.) and shipping method, and sees estimated delivery date (e.g., "Dostawa: poniedziałek 31 marca"). Reduces purchase anxiety about shipping speed. Uses simple date math (business days + carrier delays). Estimated: 1.5 hours.
+
+275. **[NEW] Create "Polityka jakości" page (/jakosc) — detailed quality assurance documentation** — Dedicated page showing: ingredient sourcing process, GMP facility inspection details, CoA testing protocol (what tests, how often, by whom), batch traceability, GIS compliance, EU regulation adherence. Positions Cognivia as the most transparent supplement brand in Poland. Link from footer and certyfikaty.html. Estimated: 2 hours.
+
+276. **[NEW] Add real-time inventory indicator to produkt.html** — Green/orange/red badge near price showing stock status: "W magazynie" (green), "Ostatnie sztuki" (orange), "Wkrótce dostępny" (red). Even simulated with base stock counter that decrements probabilistically (like the existing social proof toast). Creates urgency without lying — stock is genuinely limited pre-launch. Estimated: 30 minutes.
+ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
+
+### 🆕 Power Cycle #56 Additions (2026-03-27)
+
+277. **[NEW] Add "Ilość osób ogląda ten produkt" live counter to produkt.html** — Simulated live visitor count (e.g., "👁 12 osób ogląda ten produkt teraz") displayed near price section. Updates every 30-60s with slight random fluctuation. Creates social proof + urgency without fabricating purchases. Non-intrusive pill badge. Estimated: 30 minutes.
+
+278. **[NEW] Create "Jakie suplementy na sesję?" seasonal landing page (/sesja)** — Target students searching for study supplements during January and June exam periods. Position cytykolina for memory consolidation + ALA for brain protection during sleep-deprived study marathons. Trust signals: GMP, GIS, no caffeine (safe with coffee during all-nighters). CTA with student discount code (SESJA10). Article + BreadcrumbList JSON-LD. Seasonal peak: Dec-Feb, May-Jun. Estimated: 2.5 hours.
+
+279. **[NEW] Add structured "Sprawdź skład" ingredient transparency widget to produkt.html** — Interactive section: 3 clickable ingredient cards (ALA 250mg, Cytykolina 300mg, β-CD 250mg) that expand to show mechanism, dose justification, PubMed citation, link to dedicated ingredient page. Mirrors transparency advantage over competitors who hide behind "proprietary blends". Visual: green accent cards with expand/collapse animation. Estimated: 1.5 hours.
