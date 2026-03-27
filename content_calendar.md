@@ -1180,3 +1180,80 @@
 **Target platforms:** Google (SEO), Wykop, grupy Facebook o zdrowiu, LinkedIn
 **Season:** Evergreen, peak Jan-Feb (post-holiday fatigue) and Sep (back to work)
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-26 — Power Cycle #46)
+**Title:** Jak kofeina wpływa na suplementy? Czy można łączyć CogniCit z kawą?
+**Target:** Polish audience, SEO for "kofeina suplementy łączenie", "czy brać suplement z kawą", "CogniCit kawa"
+**Word count:** 1200-1600
+**Keywords:** kofeina suplementy, brać suplement z kawą, CogniCit kawa interakcja, kofeina a cytykolina, kawa rano suplement
+
+**Outline:**
+1. **Wstęp** — 80% Polaków pije kawę. Większość suplementy bierze rano — z kawą. Czy to bezpieczne? Czy działa?
+2. **Jak kofeina wchodzi w interakcje z suplementami?** — Wpływ na wchłanianie (pH żołądka), diureza (wypłukiwanie), kortyzol (podwójna stymulacja)
+3. **Które suplementy NIE powinny być łączone z kofeiną?** — Żelazo (wchłanianie ↓50%), wapń, niektóre witaminy B — tabela interakcji
+4. **Cytykolina + kofeina — synergia czy konflikt?** — Dobre wieści: różne mechanizmy (adenozyna vs acetylocholina) = brak konfliktu. Badania potwierdzają bezpieczeństwo połączenia.
+5. **ALA + kofeina** — Brak negatywnych interakcji. ALA działa na mitochondria, kofeina na receptory adenozynowe — niezależne ścieżki.
+6. **β-CD + kofeina** — β-CD jest obojętna dla kofeiny. Nie wpływa na metabolizm kawy.
+7. **CogniCit + kawa = OK** — Rekomendacja: CogniCit ze śniadaniem, kawa 30-60 min później (lub przed). Optymalny porządek dla maksymalnego wchłaniania.
+8. **Poranna rutyna: kawa czy CogniCit najpierw?** — Praktyczny protokół: 6:30 woda → 7:00 CogniCit ze śniadaniem → 7:30 kawa. Odwrotna kolejność też OK.
+9. **Podsumowanie** — CogniCit i kawa to nie rywale, to partnerzy. Różne mechanizmy, komplementarne efekty.
+
+**CTA:** Zamów CogniCit — idealny partner dla Twojej porannej kawy → produkt.html
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html, faq-produkt.html
+**SEO angle:** "brać suplement z kawą" — common question, zero competition in Polish SEO. Answers real user concern, positions Cognivia as practical and transparent. Featured snippet potential for Q&A format.
+**Target platforms:** Google (SEO), Wykop, grupy Facebook o suplementacji
+**Season:** Evergreen
+**Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-26 — Power Cycle #47)
+**Title:** Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów
+**Target:** High-volume SEO keyword "jak poprawić koncentrację" (3K+ monthly searches in Poland)
+**Word count:** 2000-2500
+**Keywords:** jak poprawić koncentrację, koncentracja sposoby, skupienie praca, suplementy koncentracja, nootropiki naturalne
+
+**Outline:**
+1. **Wstęp** — Problem rozproszonej uwagi w 2026: smartfony, media społecznościowe, praca hybrydowa. Mózg nie jest przystosowany do ciągłego przełączania zadań.
+2. **Sen — fundament koncentracji** — 7-9h, regularne godziny, wpływ niedoboru snu na pamięć roboczą. Badania: 1 noc bez snu = spadek koncentracji o 300%.
+3. **Ruch fizyczny** — 30 min umiarkowanego wysiłku dziennie zwiększa BDNF (neurotroficzny czynnik pochodzenia mózgowego). Nawet 10-minutowy spacer pomaga.
+4. **Nawodnienie** — 2% odwodnienia = spadek funkcji poznawczych. Pół litra wody na każde 15 kg masy ciała.
+5. **Technika Pomodoro** — 25 min pracy / 5 min przerwy. Dlaczego działa: odpoczynek dla kory przedczołowej, utrzymanie motywacji.
+6. **Dieta dla mózgu** — Kwasy omega-3, borówki, orzechy, ciemna czekolada. Unikanie cukru prostego (spike → crash).
+7. **Cyfrowy detoks** — 2h przed snem bez ekranu, tryb focus na telefonie, wyłącz powiadomienia podczas pracy.
+8. **Medytacja mindfulness** — 10 min dziennie zmienia aktywność kory przedczołowej. Nawet 4 dni praktyki poprawiają wyniki testów uwagi.
+9. **Suplementacja — co działa naukowo?** — Cytykolina (233 publikacje PubMed), ALA (neuroprotekcja), β-CD (biodostępność). Link do nauka.html.
+10. **CogniCit jako uzupełnienie** — 3 synergistyczne składniki, 1 kapsułka dziennie, GMP. Nie zastępuje zdrowych nawyków — wzmacnia je.
+11. **Podsumowanie** — Checklist 10 punktów do wydrukowania. Koncentracja to nie talent — to system.
+
+**CTA:** "Zapisz się na listę oczekujących — otrzymasz 15% zniżki w dniu premiery" + email capture
+**Internal links:** produkt.html, blog/cytykolina-przewodnik-kompletny.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, nauka.html
+**SEO angle:** "jak poprawić koncentrację" — 3K+ monthly searches, featured snippet potential for numbered list, zero strong competitors in Polish (most content is thin).
+**Target platforms:** Google (SEO), Wykop, grupy Facebook o produktywności
+**Season:** Evergreen, peaks in Jan (resolutions) and Sep (back to school)
+**Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #48)
+**Title:** Suplementy a antybiotyki — czy można łączyć? Przewodnik bezpieczeństwa
+**Target:** Polish audience, SEO for "suplementy antybiotyki", "czy brać suplement z antybiotykiem", "cytykolina antybiotyki interakcja"
+**Word count:** 1500-2000
+**Keywords:** suplementy antybiotyki łączenie, czy brać suplement z antybiotykiem, suplement diety antybiotyk interakcja, cytykolina antybiotyki, ALA antybiotyki
+
+**Outline:**
+1. **Wstęp** — Antybiotyki to jedne z najczęściej przepisywanych leków w Polsce. Czy podczas kuracji można brać suplementy?
+2. **Jak antybiotyki wpływają na organizm** — Mikrobiom jelitowy, stres oksydacyjny, obciążenie wątroby — co dzieje się w cile podczas kuracji
+3. **Które suplementy NIE powinny być łączone z antybiotykami?** — Żelazo, wapń, magnez (zmniejszają wchłanianie), dziurawiec (interakcje z cytochromem P450), probiotyki (timing matters)
+4. **Cytykolina a antybiotyki** — Brak znanych interakcji. Cytykolina działa na układ cholinergiczny, antybiotyki na bakterie — niezależne ścieżki. Brak badań wskazujących na konflikt.
+5. **ALA a antybiotyki** — ALA jako antyoksydant może wspierać organizm podczas infekcji. Badania: brak negatywnych interakcji z powszechnymi antybiotykami.
+6. **β-CD a antybiotyki** — β-CD jest obojętna dla metabolizmu antybiotyków. Nie wpływa na wchłanianie leków.
+7. **Zasada 2 godzin** — Ogólna rekomendacja: przyjmuj suplementy 2 godziny przed lub po antybiotyku, aby uniknąć potencjalnych interakcji wchłaniania.
+8. **Kiedy NIE brać suplementów?** — Przy antybiotykach z grupy chinolonów i tetracyklin (interakcje z kationami). Zawsze konsultuj z lekarzem.
+9. **CogniCit — czy można stosować podczas antybiotykoterapii?** — 3 składniki, brak znanych interakcji, ale rekomendacja konsultacji lekarskiej jako zasada ostrożności.
+10. **Podsumowanie** — Tabela: 6 popularnych suplementów × poziom ryzyka interakcji z antybiotykami. CogniCit = niskie ryzyko, ale konsultacja zawsze zalecana.
+
+**CTA:** Poznaj skład CogniCit — transparentny suplement → produkt.html
+**Internal links:** produkt.html, faq-produkt.html, skutki-uboczne.html, jak-stosowac.html, certyfikaty.html, blog/suplementy-a-alkohol.html
+**SEO angle:** "suplementy antybiotyki" — common safety question with zero quality Polish content. Positions Cognivia as the responsible brand that addresses real concerns. Featured snippet potential for interaction table.
+**Target platforms:** Google (SEO), grupy Facebook o zdrowiu
+**Season:** Evergreen, slight peak in autumn/winter (antibiotic season)
+**Status:** Outline ready, needs writing

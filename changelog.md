@@ -1,6 +1,33 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-27 — Power Cycle #48 (00:34 UTC)
+**Implemented:**
+- ✅ Item #219 — Added HowTo JSON-LD schema to faq-produkt.html
+  - 4-step HowTo schema: open package → take with morning meal → drink water → use regularly
+  - Enables Google rich results for usage instructions (HowTo rich cards in SERP)
+  - Already had FAQPage schema with 12 entries; HowTo complements it for usage queries
+  - Positioned after FAQPage schema in <head>
+- ✅ Item #221 — Updated Organization sameAs on index.html
+  - Added 3 social profile URLs: Facebook, Instagram, LinkedIn (placeholder profiles)
+  - Enables Google Knowledge Panel brand entity recognition
+  - Schema already had name/url/logo/email/address/contactPoint — now has social links for richer SERP display
+- ✅ Blog outline added to content_calendar.md: "Suplementy a antybiotyki — czy można łączyć?"
+- ✅ 3 new improvement ideas added to queue (#222-224)
+
+**Files changed:**
+- `faq-produkt.html` — HowTo JSON-LD schema added (4 steps)
+- `index.html` — Organization sameAs updated with 3 social profile URLs
+- `improvement_queue.md` — items #219, #221 marked DONE; 3 new items (#222-224)
+- `content_calendar.md` — new blog outline (antybiotyki)
+- `changelog.md` — this entry
+
+**Site verification:** faq-produkt.html: HowTo schema confirmed (6 JSON-LD script tags total — FAQPage + HowTo). index.html: sameAs array confirmed with 3 URLs. Both files have valid DOCTYPE, closing </html>.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active — orders arrive via customer's email client. CEO must create formspree.io account and swap form ID for automated delivery.
+
+**Queue:** ~210 completed + 12 active = 222 total
+
 ### 2026-03-25 — Power Cycle #43 (00:20 UTC)
 **Implemented:**
 - ✅ Item #182 — Fixed breadcrumb navigation on /matura page
