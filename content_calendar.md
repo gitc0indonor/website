@@ -1539,3 +1539,48 @@
 **CTA:** "Chronić mitochondria = chronić koncentrację. Zapisz się na premierę CogniCit."  
 **Internal links:** nauka.html, skladniki/alfa-liponowy, skladniki/cytykolina, produkt.html  
 **SEO notes:** Temat rzadko poruszany w polskim internecie. Potencjał na featured snippet ("jak mitochondria wpływają na koncentrację"). Wysoki potencjał shareability na LinkedIn (praca umysłowa + nauka).
+
+---
+
+### Blog Post Outline #39 (Power Cycle #57)
+**Title:** Jak zaplanować naukę na sesję? Przewodnik dla studentów  
+**Target:** Polish university students, seasonal SEO (Jan-Feb, May-Jun)  
+**Word count:** 1800-2200  
+**Keywords:** jak zaplanować naukę na sesję, plan nauki sesja, nauka przed egzaminami, techniki zapamiętywania sesja  
+
+**Outline:**
+1. **Wstęp** — Dlaczego większość studentów źle planuje sesję? (statystyki: 68% studentów zaczyna naukę za późno)
+2. **Krok 1: Inwentaryzacja egzaminów** — Tabela: przedmiot → data → trudność → godziny potrzebne. Backward scheduling od dat egzaminów.
+3. **Krok 2: Bloki nauki 90-minutowe** — Ultradian rhythm mózgu. Dlaczego 3h ciągłej nauki < 2×90 min z przerwą. Szablon dziennego planu.
+4. **Krok 3: Technika aktywnego przypominania** — Zamknij notatki, odtwórz z pamięci. 2× skuteczniejsze niż ponowne czytanie. Jak cytykolina wspiera ten proces (acetylcholina → recall).
+5. **Krok 4: Sen jako narzędzie nauki** — Konsolidacja pamięci podczas snu REM. Dlaczego all-nightery sabotują wyniki. Rekomendacja: 7-8h snu + CogniCit rano (bez kofeiny = lepszy sen).
+6. **Krok 5: Zarządzanie energią, nie czasem** — Kiedy mózg pracuje najlepiej (rano vs wieczór). Jak ALA chroni mitochondria podczas intensywnej pracy umysłowej.
+7. **Common mistakes** — 5 błędów: zaczynanie za późno, kofeina zamiast snu, pasywne czytanie, brak przerw, nauka w łóżku
+8. **CogniCit positioning** — 1 kapsułka rano jako element protokołu. Nie zastępuje nauki — wspiera procesy poznawcze.
+9. **Podsumowanie** — Checklist do pobrania / wydrukowania
+
+**CTA:** "Zamów CogniCit na sesję — kod SESJA10 = 10% zniżki"  
+**Internal links:** sesja.html, produkt.html, blog/suplementy-dla-studentow, jak-stosowac.html  
+**SEO notes:** Seasonal keyword with peak in Jan and May. Compete with study technique blogs + supplement blogs. Long-form format for featured snippet ("plan nauki na sesję krok po kroku").
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #58)
+**Title:** Jak zaplanować sesję egzaminacyjną? Protokół nauki + suplementacji
+**Target:** Polish university students, seasonal SEO (Jan-Feb, May-Jun)
+**Word count:** 1800-2200
+**Keywords:** jak zaplanować sesję, plan nauki egzamin, suplementy sesja, techniki nauki sesja, CogniCit student
+
+**Outline:**
+1. **Wstęp** — 68% studentów zaczyna naukę za późno. Planowanie = przewaga. Nie chodzi o więcej godzin — o mądrzejsze godziny.
+2. **Krok 1: Inwentaryzacja egzaminów** — Tabela: przedmiot → data → trudność → godziny potrzebne. Backward scheduling od dat egzaminów. Template do pobrania.
+3. **Krok 2: Bloki nauki 90-minutowe** — Ultradian rhythm mózgu. Dlaczego 3h ciągłej nauki < 2×90 min z przerwą. Szablon dziennego planu.
+4. **Krok 3: Aktywne przypominanie (active recall)** — Zamknij notatki, odtwórz z pamięci. 2× skuteczniejsze niż ponowne czytanie. Jak cytykolina wspiera ten proces (acetylocholina → kodowanie pamięci).
+5. **Krok 4: Sen jako narzędzie nauki** — Konsolidacja pamięci podczas snu REM. Dlaczego all-nightery sabotują wyniki. CogniCit rano (zero kofeiny = lepszy sen wieczorem).
+6. **Krok 5: Zarządzanie energią, nie czasem** — Kiedy mózg pracuje najlepiej (peak: 9-12, 16-18). ALA chroni mitochondria podczas intensywnej pracy umysłowej.
+7. **5 błędów sesyjnych** — Zaczynanie za późno, kofeina zamiast snu, pasywne czytanie, brak przerw, nauka w łóżku.
+8. **CogniCit jako element protokołu** — 1 kapsułka rano → 90 min nauki → 15 min przerwy → powtórka. Nie zastępuje nauki — wspiera procesy poznawcze.
+9. **Podsumowanie** — Checklist do pobrania: plan tygodniowy + dzienny protokół suplementacji.
+
+**CTA:** "Zamów CogniCit na sesję — kod SESJA10 = 10% zniżki" → produkt.html
+**Internal links:** sesja.html, produkt.html, blog/suplementy-dla-studentow, jak-stosowac.html, blog/jak-budowac-rutyne-suplementacji.html
+**SEO notes:** Seasonal keyword "jak zaplanować sesję" peaks Jan and May. Long-form format for featured snippet potential. Cross-promote with sesja landing page.
+**Status:** Outline ready, needs writing
