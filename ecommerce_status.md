@@ -1,5 +1,5 @@
 # Ecommerce Status — Cognivia / CogniCit
-## Last Audit: 2026-03-27 06:26 UTC (Cron Audit #11)
+## Last Audit: 2026-03-27 10:20 UTC (Cron Audit #12)
 
 ---
 
@@ -129,7 +129,22 @@ submitOrder() still uses placeholder Formspree ID 'xpwzgryv' (line 354 of js/cog
 
 ---
 
-## 7. AUDIT CHANGES — 2026-03-27 02:41 UTC (Cron Audit #10)
+## 7. AUDIT CHANGES — 2026-03-27 10:20 UTC (Cron Audit #12)
+
+1. ✅ Cart JS (cognivia-cart.js) 461 lines — intact, no regressions
+2. ✅ Formspree placeholder ID 'xpwzgryv' still at line 354 — BLOCKER UNCHANGED (12th consecutive audit)
+3. ✅ All 9 core pages verified — line counts stable (produkt 1508, kasa 290, koszyk 180, regulamin 95, polityka-prywatnosci 105, dostawa 162, zwroty 160, faq 277, faq-produkt 706)
+4. ✅ Minor line changes from previous audit (#11) due to breadcrumb/schema additions — no content regressions
+5. ✅ Product listing: complete (name, PL description, ingredients, dosage, 5 benefits, 7 warnings, storage, schema.org)
+6. ✅ Shipping: 4 methods configured (InPost Paczkomat/Kurier, DPD, Poczta Polska) with free thresholds
+7. ✅ Payment: 6 methods listed in UI (PayU, Przelewy24, BLIK, PayPal, bank transfer, COD) — none actually integrated
+8. ✅ VAT: 23% calculated, brutto 79,00 zł, VAT invoice fields in checkout
+9. ✅ Trust elements: all present (GMP, lab-tested, 30-day money-back, SSL, legal bar, EU regs)
+10. ✅ Policy pages: all 8 intact and stable
+11. ✅ Added 3 new improvements to queue (#234 bundle upsell, #235 exit-intent popup, #236 micro-interactions)
+12. ✅ Improvement queue now at 236 items
+
+## AUDIT CHANGES — 2026-03-27 02:41 UTC (Cron Audit #10)
 
 1. ✅ Cart JS (cognivia-cart.js) intact — no regressions since audit #9
 2. ✅ Formspree placeholder ID 'xpwzgryv' still present at line 354 — BLOCKER UNCHANGED (10th consecutive audit)
@@ -156,17 +171,17 @@ submitOrder() still uses placeholder Formspree ID 'xpwzgryv' (line 354 of js/cog
 
 ---
 
-## EXECUTIVE SUMMARY (Audit #11 — 2026-03-27 06:26 UTC)
+## EXECUTIVE SUMMARY (Audit #12 — 2026-03-27 10:20 UTC)
 
-**Cognicit is SEMI-BUYABLE.** No change from audit #10. All file line counts stable, no regressions. Cart → checkout → order submission → localStorage + mailto fallback all functional.
+**Cognicit is SEMI-BUYABLE.** No change from audit #11. All file line counts stable, no regressions. Cart → checkout → order submission → localStorage + mailto fallback all functional.
 
-**What works:** Full frontend ecommerce stack — cart, checkout, shipping calculation (4 methods), VAT 23%, trust elements (GMP, lab-tested, 30-day guarantee), all 8 policy pages (incl. RODO), SEO + schema.org. Product page 1507 lines, content production-grade.
+**What works:** Full frontend ecommerce stack — cart, checkout, shipping calculation (4 methods), VAT 23%, trust elements (GMP, lab-tested, 30-day guarantee), all 8 policy pages (incl. RODO), SEO + schema.org. Product page 1508 lines, content production-grade.
 
-**Single blocker (11th consecutive audit):** Formspree placeholder ID 'xpwzgryv' — CEO action pending since 2026-03-19. 5 minutes to create formspree.io account → makes site fully buyable.
+**Single blocker (12th consecutive audit):** Formspree placeholder ID 'xpwzgryv' — CEO action pending since 2026-03-19. 5 minutes to create formspree.io account → makes site fully buyable.
 
 **Alternative path:** Stripe Checkout (#206) — 2-3 hours dev time, enables real payments (cards, BLIK, Google Pay).
 
-**New additions this audit:** Improvements #228-#230 added (Web Vitals monitoring, OG image, Google Merchant feed). Queue now at 230 items.
+**New additions this audit:** Improvements #234-#236 added (bundle upsell widget, exit-intent popup, micro-interactions). Queue now at 236 items.
 
 **Priority actions for CEO:**
 1. Create Formspree account (5 min) → makes site buyable immediately

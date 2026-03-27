@@ -3220,6 +3220,54 @@
       hdr.classList.toggle('scrolled', window.scrollY > 40);
     });
   })();
+
+  // === WEB VITALS MONITORING — #228 ===
+  (function(){
+    var vitals = {};
+    // LCP (Largest Contentful Paint)
+    if(window.PerformanceObserver){
+      try{
+        new PerformanceObserver(function(list){
+          var entries = list.getEntries();
+          var last = entries[entries.length-1];
+          vitals.LCP = Math.round(last.startTime);
+          console.log('[CWV] LCP:', vitals.LCP+'ms', vitals.LCP < 2500 ? '✅ Good' : vitals.LCP < 4000 ? '⚠️ Needs improvement' : '❌ Poor');
+        }).observe({type:'largest-contentful-paint', buffered:true});
+      }catch(e){}
+      // CLS (Cumulative Layout Shift)
+      try{
+        var clsValue = 0;
+        new PerformanceObserver(function(list){
+          list.getEntries().forEach(function(e){
+            if(!e.hadRecentInput) clsValue += e.value;
+          });
+          vitals.CLS = Math.round(clsValue*1000)/1000;
+          console.log('[CWV] CLS:', vitals.CLS, vitals.CLS < 0.1 ? '✅ Good' : vitals.CLS < 0.25 ? '⚠️ Needs improvement' : '❌ Poor');
+        }).observe({type:'layout-shift', buffered:true});
+      }catch(e){}
+      // INP (Interaction to Next Paint) — approximate via Event Timing
+      try{
+        var maxINP = 0;
+        new PerformanceObserver(function(list){
+          list.getEntries().forEach(function(e){
+            if(e.duration > maxINP) maxINP = e.duration;
+          });
+          vitals.INP = Math.round(maxINP);
+          if(maxINP > 0) console.log('[CWV] INP:', vitals.INP+'ms', vitals.INP < 200 ? '✅ Good' : vitals.INP < 500 ? '⚠️ Needs improvement' : '❌ Poor');
+        }).observe({type:'event', buffered:true, durationThreshold:16});
+      }catch(e){}
+    }
+    // Report on page unload
+    if(typeof navigator.sendBeacon === 'function'){
+      window.addEventListener('visibilitychange', function(){
+        if(document.visibilityState === 'hidden' && (vitals.LCP || vitals.CLS || vitals.INP)){
+          console.log('[CWV] Final report:', JSON.stringify(vitals));
+        }
+      });
+    }
+    // Expose globally for debugging
+    window.__CWV = vitals;
+  })();
   </script>
 </body>
 </html>

@@ -1279,3 +1279,27 @@
 **Target platforms:** Google (SEO), grupy FB o zdrowiu, Wykop
 **Season:** Evergreen, slight peak in January (new year resolutions)
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #49)
+**Title:** Mózg a ekran — jak chronić neurony w erze cyfrowej?
+**Target:** Polish audience, SEO for "zmęczenie ekranowe", "niebieskie światło mózg", "suplementy ekran"
+**Word count:** 1500-2000
+**Keywords:** zmęczenie ekranowe mózg, niebieskie światło suplement, ochrona oczu ekran, suplement na zmęczenie oczu, cyfrowe zmęczenie mózg
+
+**Outline:**
+1. **Wstęp** — Przeciętny Polak spędza 7-9h dziennie przed ekranem. Co to robi z mózgiem i oczyma?
+2. **Jak ekran wpływa na mózg?** — Niebieskie światło → supresja melatoniny, kortyzol, nadmierna stymulacja dopaminowa (social media)
+3. **Cyfrowe zmęczenie oczu (CVS)** — Objawy: suchość, ból głowy, niewyraźne widzenie. Mechanizm: zmniejszona częstotliwość mrugania, akomodacja
+4. **Wpływ na sen i koncentrację** — Ekran wieczorem = opóźnienie fazy snu o 1-2h. Niedobór snu = spadek acetylocholiny i funkcji wykonawczych
+5. **Stres oksydacyjny mitochondriów** — Długotrwała praca umysłowa przy ekranie generuje wolne rodniki. ALA jako obrona mitochondriów
+6. **Cytykolina jako wsparcie** — Budulec acetylocholiny = neuroprzekaźnik koncentracji. 233 publikacji PubMed
+7. **Praktyczna ochrona** — 20-20-20 rule, filtry niebieskiego światła, tryb nocny, suplementacja rano, higiena snu
+8. **CogniCit** — 3 synergistyczne składniki ochronne: ALA (mitochondria), cytykolina (neurotransmisja), β-CD (biodostępność). Zero stymulantów.
+9. **Podsumowanie** — Ekranów nie wyeliminujesz. Możesz chronić mózg, który z nich korzysta.
+
+**CTA:** Zamów CogniCit — 79 zł, ochrona neuronów na co dzień → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-programistow.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, nauka.html
+**SEO angle:** "zmęczenie ekranowe" — growing trend in Poland as remote work normalizes. Positions CogniCit as the daily neuroprotection for screen workers.
+**Target platforms:** Google (SEO), Wykop, LinkedIn, grupy FB o zdrowiu
+**Season:** Evergreen, peak Sep (back to school/office)
+**Status:** Outline ready, needs writing
