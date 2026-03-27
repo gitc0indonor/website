@@ -1,5 +1,5 @@
 # Ecommerce Status — Cognivia / CogniCit
-## Last Audit: 2026-03-27 13:54 UTC (Cron Audit #13)
+## Last Audit: 2026-03-27 17:25 UTC (Cron Audit #14)
 
 ---
 
@@ -168,6 +168,40 @@ submitOrder() still uses placeholder Formspree ID 'xpwzgryv' (line 354 of js/cog
 226. **[NEW] Create cart abandonment recovery email templates (3-step sequence)** — (1) 1h: "Zapomniałeś czegoś w koszyku?", (2) 24h: "Twoje CogniCit czeka — darmowa dostawa!", (3) 72h: "Ostatnia szansa — 10% zniżki". Templates in /website/email-templates/. Ready for Mailchimp/Klaviyo integration. 70% avg cart abandonment — even 10% recovery = significant revenue. Estimated: 2 hours.
 
 227. **[NEW] Add FAQPage JSON-LD structured data to faq-produkt.html** — 20 Q&As exist but no schema markup. Adding FAQPage JSON-LD triggers Google rich snippets (expandable Q&A in search results). Free organic CTR boost. Also add HowTo schema to "Jak stosować?" section. Estimated: 30 minutes.
+
+---
+
+## EXECUTIVE SUMMARY (Audit #14 — 2026-03-27 17:25 UTC)
+
+**Cognicit is SEMI-BUYABLE.** No change from audit #13. All core files intact, no regressions. Cart → checkout → order submission → localStorage + mailto fallback all functional.
+
+**What works:** Full frontend ecommerce stack — cart (461 lines JS), checkout (290 lines), shipping calculation (4 methods), VAT 23%, trust elements (GMP, lab-tested, 30-day guarantee), all 8 policy pages (incl. RODO), SEO + schema.org. Product page 1606 lines, production-grade content.
+
+**Single blocker (14th consecutive audit):** Formspree placeholder ID 'xpwzgryv' at line 354 of cognivia-cart.js — CEO action pending since 2026-03-19. 5 minutes to create formspree.io account → makes site fully buyable. Alternative: Stripe Checkout (#206, 2-3h dev time).
+
+**New additions this audit:** Improvements #253-#255 added. Queue now at 255 items.
+
+**Priority actions for CEO (unchanged since Audit #10):**
+1. Create Formspree account (5 min) → makes site buyable immediately
+2. Provide product photos or approve AI mockups (#207)
+3. Consider Stripe Checkout (#206) for real payment processing
+
+---
+
+## AUDIT CHANGES — 2026-03-27 17:25 UTC (Cron Audit #14)
+
+1. ✅ Cart JS (cognivia-cart.js) 461 lines — intact, no regressions
+2. ✅ Formspree placeholder ID 'xpwzgryv' still at line 354 — BLOCKER UNCHANGED (14th consecutive audit)
+3. ✅ All 9 core pages verified — line counts stable (produkt 1606, kasa 290, koszyk 180, regulamin 95, polityka-prywatnosci 105, dostawa 162, zwroty 160, faq 277, faq-produkt 706)
+4. ✅ potwierdzenie.html 77 lines — stable
+5. ✅ Product listing: complete (name, PL description, ingredients, dosage, 5 benefits, 7 warnings, storage, schema.org)
+6. ✅ Shipping: 4 methods configured (InPost Paczkomat 12.99/InPost Kurier 15.99/DPD 16.99/Poczta 11.99 zł) with free thresholds (120/120/150/120 zł)
+7. ✅ Payment: 6 methods listed in UI (PayU, Przelewy24, BLIK, PayPal, bank transfer, COD+8zł) — none actually integrated
+8. ✅ VAT: 23% calculated, brutto 79,00 zł, VAT invoice fields in checkout
+9. ✅ Trust elements: all present (GMP, lab-tested, 30-day money-back, SSL, legal bar, EU regs, live activity feed, testimonial carousel)
+10. ✅ Policy pages: all 8 intact and stable (FAQ×2, shipping, returns, RODO privacy, T&C, contact, cookies)
+11. ✅ Added 3 new improvements to queue (#253 email capture A/B test, #254 order tracking page, #255 Web Vitals monitoring)
+12. ✅ Improvement queue now at 255 items
 
 ---
 
