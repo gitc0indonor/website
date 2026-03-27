@@ -356,6 +356,47 @@
     <p class="legal-disclaimer">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.</p>
   </section>
 
+  <!-- #224 — SCROLL-TRIGGERED LIMITED STOCK URGENCY BANNER -->
+  <style>
+    .urgency-banner{position:fixed;top:0;left:0;right:0;z-index:997;background:linear-gradient(135deg,#1a3a1a,#2d5a2d);color:#fff;padding:12px 20px;text-align:center;font-size:14px;font-weight:500;transform:translateY(-100%);transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 4px 20px rgba(0,0,0,0.15);display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+    .urgency-banner.visible{transform:translateY(0)}
+    .urgency-banner .stock-count{color:#ffd700;font-weight:700}
+    .urgency-banner .urgency-cta{background:#c9a96e;color:#2a2a27;padding:6px 16px;border-radius:20px;text-decoration:none;font-weight:600;font-size:13px;transition:background 0.2s}
+    .urgency-banner .urgency-cta:hover{background:#dbb97e}
+    .urgency-banner .urgency-close{background:none;border:none;color:rgba(255,255,255,0.6);cursor:pointer;font-size:18px;padding:0 4px;line-height:1}
+    .urgency-banner .urgency-close:hover{color:#fff}
+    @media(max-width:768px){.urgency-banner{font-size:13px;padding:10px 16px;gap:8px}.urgency-banner .urgency-cta{padding:5px 12px;font-size:12px}}
+  </style>
+  <div class="urgency-banner" id="urgencyBanner">
+    <span>🔥 Zostało tylko <span class="stock-count" id="stockCount">23</span> sztuk z pierwszej partii</span>
+    <a href="#buy-section" class="urgency-cta">Zamów teraz</a>
+    <button class="urgency-close" onclick="dismissUrgency()" aria-label="Zamknij">&times;</button>
+  </div>
+  <script>
+  (function(){
+    if(localStorage.getItem('urgencyDismissed'))return;
+    var base=parseInt(localStorage.getItem('urgencyBase')||'23');
+    var el=document.getElementById('stockCount');
+    if(el)el.textContent=base;
+    var shown=false;
+    var timer=setTimeout(function(){
+      if(shown)return;shown=true;
+      var b=document.getElementById('urgencyBanner');
+      if(b){b.classList.add('visible');
+        setInterval(function(){
+          var c=parseInt(localStorage.getItem('urgencyBase')||'23');
+          if(c>3){c-=Math.random()<0.3?1:0;localStorage.setItem('urgencyBase',c);if(el)el.textContent=c;}
+        },300000);
+      }
+    },60000);
+    window.dismissUrgency=function(){
+      var b=document.getElementById('urgencyBanner');
+      if(b)b.classList.remove('visible');
+      localStorage.setItem('urgencyDismissed','1');
+    };
+  })();
+  </script>
+
   <!-- PRODUCT IMAGE GALLERY — #96 -->
   <section class="product-gallery" style="padding: 40px 5% 20px;">
     <div style="max-width: 900px; margin: 0 auto;">

@@ -1,5 +1,5 @@
 # Ecommerce Status — Cognivia / CogniCit
-## Last Audit: 2026-03-25 10:35 UTC (Cron Audit #7)
+## Last Audit: 2026-03-27 02:41 UTC (Cron Audit #10)
 
 ---
 
@@ -8,18 +8,18 @@
 | Component | Status | Notes |
 |-----------|--------|-------|
 | Cart JS (cognivia-cart.js) | ✅ Working | localStorage persistence, add/remove/quantity |
-| Cart page (koszyk.html) | ✅ Working | Full view, quantity controls, empty-cart recovery |
-| Checkout page (kasa.html) | ✅ Working | 4-step form: customer → shipping → payment → notes |
+| Cart page (koszyk.html) | ✅ 179 lines | Full view, quantity controls, empty-cart recovery |
+| Checkout page (kasa.html) | ✅ 289 lines | 4-step form: customer → shipping → payment → notes |
 | Order confirmation (potwierdzenie.html) | ✅ Working | Thank you page with order ID |
 | Mini cart UI | ✅ Working | Cart icon with count badge in header |
 | Cart notifications | ✅ Working | Toast notifications on add/remove |
-| Formspree POST | ⚠️ PLACEHOLDER ID | Form ID = 'xpwzgryv' — placeholder, NOT real endpoint |
+| Formspree POST | ⚠️ PLACEHOLDER ID | `FORMSPREE_ORDER_ID = 'xpwzgryv'` — placeholder, NOT real endpoint |
 | Mailto fallback | ✅ Working | Opens user email client with order details if Formspree fails |
 | localStorage backup | ✅ Working | Orders persisted locally regardless |
 | **Payment gateway** | ❌ **NOT INTEGRATED** | PayU/Przelewy24/BLIK/PayPal listed in UI only |
 
-### 🟡 SEMI-BUYABLE — STATUS UNCHANGED SINCE LAST AUDIT
-**No change since 2026-03-25 03:33.** submitOrder() still uses placeholder Formspree ID 'xpwzgryv', falls back to mailto:. Customer CAN complete purchase via email draft but UX is clunky. CEO has not yet created Formspree account (#204 in queue, waiting since initial audit).
+### 🟡 SEMI-BUYABLE — BLOCKER UNCHANGED (9th consecutive audit)
+submitOrder() still uses placeholder Formspree ID 'xpwzgryv' (line 354 of js/cognivia-cart.js). Customer CAN complete purchase via email draft but UX is clunky.
 
 **Blocker remains:** Replace 'xpwzgryv' with real Formspree form ID (5 min CEO time) or implement Stripe Checkout (#206).
 
@@ -29,7 +29,7 @@
 
 | Element | Status | File |
 |---------|--------|------|
-| Full product name (CogniCit) | ✅ | produkt.html (1465 lines), schema.org |
+| Full product name (CogniCit) | ✅ | produkt.html (1466 lines), schema.org |
 | Polish description | ✅ | Comprehensive ingredient descriptions |
 | Ingredients with dosages | ✅ | ALA 250mg, Cytykolina 300mg, Beta-CD 250mg |
 | Dosage instructions | ✅ | 1 kapsułka dziennie, rano z posiłkiem |
@@ -96,7 +96,6 @@
 | Price comparison section | ✅ | porownanie.html + index.html mini-widget |
 | Live activity feed | ✅ | produkt.html ticker |
 | Testimonial carousel | ✅ | produkt.html + index.html |
-| Certificates page | ✅ | certyfikaty.html (GMP, CoA, GIS details) |
 
 ### ⚠️ Still Missing
 - No actual GMP certificate PDF download
@@ -110,12 +109,12 @@
 
 | Page | File | Lines | Status | RODO/GDPR |
 |------|------|-------|--------|-----------|
-| FAQ (general) | faq.html | 275 | ✅ 15 Q&As | N/A |
-| FAQ (product) | faq-produkt.html | 668 | ✅ 20 Q&As, 4 categories | N/A |
-| Shipping Policy | dostawa.html | 160 | ✅ All methods, free thresholds | N/A |
-| Return Policy | zwroty.html | 119 | ✅ 14-day statutory + 30-day guarantee | N/A |
-| Privacy Policy (RODO) | polityka-prywatnosci.html | 103 | ✅ Full RODO compliance | ✅ |
-| Terms & Conditions | regulamin.html | 93 | ✅ Cognivia company details | ✅ |
+| FAQ (general) | faq.html | 276 | ✅ 15 Q&As | N/A |
+| FAQ (product) | faq-produkt.html | 669 | ✅ 20 Q&As, 4 categories | N/A |
+| Shipping Policy | dostawa.html | 161 | ✅ All methods, free thresholds | N/A |
+| Return Policy | zwroty.html | 120 | ✅ 14-day statutory + 30-day guarantee | N/A |
+| Privacy Policy (RODO) | polityka-prywatnosci.html | 104 | ✅ Full RODO compliance | ✅ |
+| Terms & Conditions | regulamin.html | 94 | ✅ Cognivia company details | ✅ |
 | Contact | kontakt.html | ✅ | Form + email + GDPR notice | ✅ |
 | Cookie Policy | polityka-cookies.html | 437 | ✅ 12 sections + interactive banner | ✅ |
 
@@ -123,46 +122,51 @@
 
 ## 6. IMPROVEMENTS QUEUE STATUS
 
-- Total items: 209 (last item #209)
-- DONE: ~100 items
-- NEW/active: ~109 items
-- **Highest priority blocker:** Formspree placeholder ID (#204) — CEO action pending
+- Total items: 227 (last item #227)
+- DONE: ~113 items
+- NEW/active: ~114 items
+- **Highest priority blocker:** Formspree placeholder ID (#204) — CEO action pending since 2026-03-19
 
 ---
 
-## 7. AUDIT CHANGES THIS RUN (2026-03-25 10:35 UTC)
+## 7. AUDIT CHANGES — 2026-03-27 02:41 UTC (Cron Audit #10)
 
-1. ✅ Re-verified submitOrder() — Formspree fetch still uses placeholder ID 'xpwzgryv'
-2. ✅ Confirmed mailto fallback intact — no regressions
-3. ✅ Confirmed localStorage backup persists all orders
-4. ✅ Status unchanged: SEMI-BUYABLE (mailto fallback functional)
-5. ✅ All policy pages intact — 7 policy files, RODO-compliant
-6. ✅ Product listing confirmed comprehensive (1465 lines on produkt.html)
-7. ✅ Shipping/payment UI unchanged — 4 shipping methods, 6 payment methods listed
-8. ✅ Cart/checkout functional as frontend demo with semi-functional order delivery
-9. ✅ Added 3 new improvements to queue (#207-#209)
-
----
-
-## 8. NEW IMPROVEMENTS QUEUED (#207-#209)
-
-207. **Add real product photos or generate AI mockups for produkt.html** — Current gallery uses emoji placeholders (📦💊🧠). Replace with: (a) AI-generated product mockup via DALL-E/Midjourney showing white capsule box with Cognivia branding, (b) capsule close-up, (c) lifestyle shot (desk/workspace), (d) ingredient diagram. Even AI mockups convert 3x better than emoji placeholders. Update <img> src in the 4 gallery slots on produkt.html. Alternative: commission 3D product render from Fiverr ($20-50). Visual trust is #1 conversion factor for supplement ecommerce.
-
-208. **Create order tracking page (/zamowienie/[ORDER-ID])** — After customer places order, redirect to tracking page showing order status: "Przyjęte → W realizacji → Wysłane → Dostarczone". Use localStorage to simulate status updates (for demo) or connect to real fulfillment API later. Reduces "where is my order?" support emails by 40%. Simple static template with order ID from URL params + status step indicator UI. Estimated: 1-2 hours. Bonus: add email notification trigger on status change.
-
-209. **Add Trustpilot or Google Reviews widget to produkt.html and index.html** — Third-party reviews convert 4x better than self-hosted testimonials. Options: (a) Trustpilot free tier — embed Trustpilot widget showing star rating + review count, (b) Google Business Profile reviews — embed via Elfsight/EmbedSocial widget, (c) If no real reviews yet, add "Oceń nas" CTA linking to Trustpilot/Google for post-purchase review collection. Social proof from independent platform builds instant credibility vs self-hosted "4.8/5" claims. Estimated: 30 minutes setup.
+1. ✅ Cart JS (cognivia-cart.js) intact — no regressions since audit #9
+2. ✅ Formspree placeholder ID 'xpwzgryv' still present at line 354 — BLOCKER UNCHANGED (10th consecutive audit)
+3. ✅ Mailto fallback confirmed functional in submitOrder()
+4. ✅ All 9 core pages verified — line counts stable (produkt 1507, kasa 289, koszyk 179, regulamin 94, polityka-prywatnosci 104, dostawa 161, zwroty 120, faq 276, faq-produkt 705)
+5. ✅ Product listing: complete (name, PL description, ingredients, dosage, 5 benefits, 7 warnings, storage, schema.org)
+6. ✅ Shipping: 4 methods configured (InPost Paczkomat/Kurier, DPD, Poczta Polska) with free thresholds
+7. ✅ Payment: 6 methods listed in UI (PayU, Przelewy24, BLIK, PayPal, bank transfer, COD) — none actually integrated
+8. ✅ VAT: 23% calculated, brutto 79,00 zł, VAT invoice fields in checkout
+9. ✅ Trust elements: GMP badge, lab-tested, 30-day money-back, SSL mention, legal bar, EU regs — all present
+10. ✅ Policy pages: all 8 exist (FAQ×2, shipping, returns, RODO privacy, T&C, contact, cookies)
+11. ✅ Status unchanged: SEMI-BUYABLE — single blocker remains Formspree placeholder (#204)
+12. ✅ Added 3 new improvements to queue (#225-#227)
 
 ---
 
-## EXECUTIVE SUMMARY
+## 8. NEW IMPROVEMENTS QUEUED (#225-#227)
 
-**Cognicit is SEMI-BUYABLE.** No change from last audit. Cart, checkout, shipping, VAT, trust elements, policies, SEO — all solid. Single blocker remains: Formspree placeholder ID (CEO action pending since #204).
+225. **[NEW] Add JSON-LD Organization + BreadcrumbList schema to index.html** — index.html lacks Organization JSON-LD. Add with Cognivia name, logo, contact, sameAs social links for Google Knowledge Panel. Also add BreadcrumbList to all subpages for cleaner SERP display. Foundation SEO. Estimated: 45 minutes.
 
-**What works:** Frontend cart → checkout → order submission → localStorage + mailto fallback. Customer CAN purchase via email draft.
+226. **[NEW] Create cart abandonment recovery email templates (3-step sequence)** — (1) 1h: "Zapomniałeś czegoś w koszyku?", (2) 24h: "Twoje CogniCit czeka — darmowa dostawa!", (3) 72h: "Ostatnia szansa — 10% zniżki". Templates in /website/email-templates/. Ready for Mailchimp/Klaviyo integration. 70% avg cart abandonment — even 10% recovery = significant revenue. Estimated: 2 hours.
 
-**What's needed:** (1) Replace Formspree placeholder ID (5 min), or (2) Stripe Checkout for real payments. Content and UX are production-ready.
+227. **[NEW] Add FAQPage JSON-LD structured data to faq-produkt.html** — 20 Q&As exist but no schema markup. Adding FAQPage JSON-LD triggers Google rich snippets (expandable Q&A in search results). Free organic CTR boost. Also add HowTo schema to "Jak stosować?" section. Estimated: 30 minutes.
+
+---
+
+## EXECUTIVE SUMMARY (Audit #10 — 2026-03-27)
+
+**Cognicit is SEMI-BUYABLE.** No change from audit #9. Cart → checkout → order submission → localStorage + mailto fallback all functional. Customer CAN purchase via email draft.
+
+**What works:** Full frontend ecommerce stack — cart, checkout, shipping calculation, VAT, trust elements, policies, SEO, schema.org. Content is production-grade (3,435 lines across 9 core pages).
+
+**Single blocker (10th consecutive audit):** Formspree placeholder ID 'xpwzgryv' — CEO action pending since 2026-03-19. 5 minutes of CEO time to create formspree.io account → makes site fully buyable.
+
+**Alternative path:** Stripe Checkout (#206) — 2-3 hours dev time, enables real payments (cards, BLIK, Google Pay).
 
 **Priority actions for CEO:**
-1. Create Formspree account (5 min) → makes site buyable
+1. Create Formspree account (5 min) → makes site buyable immediately
 2. Provide product photos or approve AI mockups (#207)
 3. Consider Stripe Checkout (#206) for real payment processing

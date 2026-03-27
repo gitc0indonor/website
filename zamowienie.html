@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status zamówienia — CogniCit | Cognivia</title>
+  <meta name="description" content="Sprawdź status swojego zamówienia CogniCit. Śledzenie przesyłki InPost, DPD, Poczta Polska.">
+  <link rel="canonical" href="https://cognivia.eu/zamowienie.html">
+  <link rel="alternate" hreflang="pl" href="https://cognivia.eu/zamowienie.html">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root{--green:#1a472a;--gold:#c9a96e;--cream:#f9f5ef;--charcoal:#2a2a27}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',-apple-system,sans-serif;background:var(--cream);color:var(--charcoal);min-height:100vh}
+    header{background:var(--green);padding:16px 24px;text-align:center}
+    header a{color:#fff;text-decoration:none;font-family:'EB Garamond',Georgia,serif;font-size:1.3rem;letter-spacing:4px}
+    .container{max-width:640px;margin:0 auto;padding:40px 24px}
+    h1{font-family:'EB Garamond',Georgia,serif;font-size:2rem;text-align:center;margin-bottom:8px}
+    .subtitle{text-align:center;color:#6b7280;margin-bottom:32px;font-size:0.95rem}
+    .order-card{background:#fff;border-radius:16px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #e5e7eb;margin-bottom:24px}
+    .order-id{font-size:14px;color:#6b7280;margin-bottom:4px}
+    .order-id strong{color:var(--charcoal)}
+    .order-status{display:flex;align-items:center;gap:12px;margin:24px 0;padding:16px;background:#f0fdf4;border-radius:12px;border:1px solid #bbf7d0}
+    .order-status .dot{width:12px;height:12px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+    .order-status .label{font-weight:600;color:#166534}
+    .timeline{position:relative;padding-left:32px;margin:32px 0}
+    .timeline::before{content:'';position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:#e5e7eb}
+    .step{position:relative;margin-bottom:24px}
+    .step .dot{position:absolute;left:-32px;top:2px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;z-index:1}
+    .step.done .dot{background:#22c55e;color:#fff}
+    .step.active .dot{background:var(--gold);color:#fff;box-shadow:0 0 0 4px rgba(201,169,110,0.25)}
+    .step.pending .dot{background:#e5e7eb;color:#9ca3af}
+    .step .title{font-weight:600;font-size:15px;margin-bottom:2px}
+    .step.done .title{color:#166534}
+    .step.active .title{color:var(--charcoal)}
+    .step.pending .title{color:#9ca3af}
+    .step .desc{font-size:13px;color:#6b7280}
+    .step .time{font-size:12px;color:#9ca3af;margin-top:2px}
+    .help-box{text-align:center;padding:24px;background:#fff;border-radius:12px;border:1px dashed #d1d5db}
+    .help-box p{color:#6b7280;font-size:14px;margin-bottom:12px}
+    .help-box a{color:var(--green);font-weight:600;text-decoration:none}
+    .help-box a:hover{text-decoration:underline}
+    footer{background:var(--green);color:rgba(255,255,255,0.7);text-align:center;padding:24px;font-size:13px;margin-top:48px}
+    footer a{color:var(--gold);text-decoration:none}
+    @media(max-width:768px){h1{font-size:1.6rem}.order-card{padding:20px}}
+  </style>
+</head>
+<body>
+  <header><a href="/">C O G N I V I A</a></header>
+
+  <div class="container">
+    <h1>Status zamówienia</h1>
+    <p class="subtitle">Sprawdź, na jakim etapie jest Twoje zamówienie CogniCit.</p>
+
+    <div class="order-card" id="orderCard">
+      <p class="order-id">Numer zamówienia: <strong id="orderId">—</strong></p>
+      <div class="order-status">
+        <div class="dot"></div>
+        <span class="label" id="statusLabel">Wczytywanie...</span>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="step pending" id="step1">
+          <div class="dot">1</div>
+          <div class="title">Zamówienie przyjęte</div>
+          <div class="desc">Twoje zamówienie zostało zarejestrowane</div>
+          <div class="time" id="step1Time"></div>
+        </div>
+        <div class="step pending" id="step2">
+          <div class="dot">2</div>
+          <div class="title">W realizacji</div>
+          <div class="desc">Przygotowujemy Twoje zamówienie</div>
+          <div class="time" id="step2Time"></div>
+        </div>
+        <div class="step pending" id="step3">
+          <div class="dot">3</div>
+          <div class="title">Wysłane</div>
+          <div class="desc">Przesyłka jest w drodze</div>
+          <div class="time" id="step3Time"></div>
+        </div>
+        <div class="step pending" id="step4">
+          <div class="dot">4</div>
+          <div class="title">Dostarczone</div>
+          <div class="desc">Przeszka dotarła do Ciebie</div>
+          <div class="time" id="step4Time"></div>
+        </div>
+      </div>
+
+      <div style="background:var(--cream);border-radius:8px;padding:16px;font-size:14px;color:#6b7280;text-align:center">
+        <strong style="color:var(--charcoal)">Szacowany czas dostawy:</strong> 2-3 dni robocze (InPost/DPD) · 3-5 dni (Poczta Polska)
+      </div>
+    </div>
+
+    <div class="help-box">
+      <p>Masz pytania dotyczące zamówienia?</p>
+      <a href="kontakt.html">Napisz do nas →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Cognivia · <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a></p>
+    <p style="font-size:11px;margin-top:8px;opacity:0.6">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.</p>
+  </footer>
+
+  <script>
+  (function(){
+    var params=new URLSearchParams(window.location.search);
+    var id=params.get('id');
+    if(!id){id='COG-'+Date.now().toString(36).toUpperCase();}
+    document.getElementById('orderId').textContent=id;
+    var orders=JSON.parse(localStorage.getItem('cognivia_orders')||'[]');
+    var order=orders.find(function(o){return o.orderId===id;});
+    var steps=['step1','step2','step3','step4'];
+    var labels=['Zamówienie przyjęte','W realizacji','Wysłane','Dostarczone'];
+    var statusIdx=0;
+    if(order&&order.status){statusIdx=Math.min(order.status,3);}
+    // Demo: if no order found, show step 1 as active
+    if(!order){statusIdx=0;}
+    for(var i=0;i<4;i++){
+      var el=document.getElementById(steps[i]);
+      if(i<statusIdx){el.className='step done';}
+      else if(i===statusIdx){el.className='step active';}
+      else{el.className='step pending';}
+    }
+    document.getElementById('statusLabel').textContent=labels[statusIdx];
+    // Fill times if order exists
+    if(order&&order.date){
+      var d=new Date(order.date);
+      document.getElementById('step1Time').textContent=d.toLocaleDateString('pl-PL',{day:'numeric',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'});
+    }
+  })();
+  </script>
+</body>
+</html>

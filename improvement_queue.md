@@ -346,3 +346,9 @@
 223. **[NEW] Create "Suplementy a antybiotyki — czy można łączyć?" blog post** — SEO for "suplementy antybiotyki łączenie", "cytykolina antybiotyki". Common safety question. Positions Cognivia as the transparent brand addressing real concerns. Include interaction table, timing recommendations, when to consult a doctor. Estimated: 2 hours.
 
 224. **[NEW] Add scroll-triggered "limited stock" urgency banner to produkt.html** — Subtle banner appearing after 60s on page: "Zostało tylko X sztuk z pierwszej partii — zamów teraz". Creates scarcity without being aggressive. Uses localStorage counter (decrement on view). Dismissible. Estimated: 30 minutes.
+
+225. **[NEW] Add JSON-LD Organization + BreadcrumbList schema to index.html** — index.html lacks Organization JSON-LD. Add with Cognivia name, logo, contact, sameAs social links for Google Knowledge Panel. Also add BreadcrumbList to all subpages for cleaner SERP display. Foundation SEO. Estimated: 45 minutes.
+
+226. **[NEW] Create cart abandonment recovery email templates (3-step sequence)** — (1) 1h: "Zapomniałeś czegoś w koszyku?", (2) 24h: "Twoje CogniCit czeka — darmowa dostawa!", (3) 72h: "Ostatnia szansa — 10% zniżki". Templates in /website/email-templates/. Ready for Mailchimp/Klaviyo integration. 70% avg cart abandonment — even 10% recovery = significant revenue. Estimated: 2 hours.
+
+227. **[NEW] Add FAQPage JSON-LD structured data to faq-produkt.html** — 20 Q&As exist but no schema markup. Adding FAQPage JSON-LD triggers Google rich snippets (expandable Q&A in search results). Free organic CTR boost. Also add HowTo schema to "Jak stosować?" section. Estimated: 30 minutes.

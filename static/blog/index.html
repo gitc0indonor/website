@@ -34,6 +34,30 @@
     footer { background: var(--charcoal); color: rgba(255,255,255,0.6); padding: 40px 8%; text-align: center; font-size: 13px; }
     footer a { color: var(--gold); }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Strona główna","item":"index.html"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"static/blog/index.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Blog Cognivia",
+    "numberOfItems":4,
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"item":{"@type":"Article","name":"Co to są antyoksydanty? — Blog Cognivia","url":"antyoksydanty.html"}},
+        {"@type":"ListItem","position":2,"item":{"@type":"Article","name":"Beta-cyklodekstryna — nośnik z natury","url":"beta-cyklodekstryna.html"}},
+        {"@type":"ListItem","position":3,"item":{"@type":"Article","name":"Cytykolina — naturalny składnik organizmu","url":"cytykolina.html"}},
+        {"@type":"ListItem","position":4,"item":{"@type":"Article","name":"Suplement diety a lek — jaka jest różnica?","url":"suplement-vs-lek.html"}}
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="legal-bar"><strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.</div>
