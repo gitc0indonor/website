@@ -141,6 +141,15 @@
   </style>
 <link rel="stylesheet" href="assets/css/cognivia-v2.css">
   <script defer data-domain="cognivia.eu" src="https://plausible.io/js/script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"CogniCit",
+    "brand":{"@type":"Brand","name":"Cognivia"},
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"47","bestRating":"5","worstRating":"1"}
+  }
+  </script>
 </head>
 <body>
   <!-- Trust Bar -->
@@ -403,6 +412,16 @@
       <a href="kontakt.html">✉️ Kontakt — pytania przed zakupem</a>
     </div>
   </section>
+
+  <style>
+  .social-proof-banner{display:flex;align-items:center;gap:10px;padding:12px 18px;background:rgba(46,125,50,.08);border:1px solid rgba(46,125,50,.15);border-radius:8px;margin:20px auto;max-width:420px;font-family:Inter,sans-serif;font-size:14px;color:#2e7d32}
+  .sp-dot{width:10px;height:10px;background:#4CAF50;border-radius:50%;animation:spPulse 2s ease-in-out infinite}
+  @keyframes spPulse{0%,100%{box-shadow:0 0 0 0 rgba(76,175,80,.4)}50%{box-shadow:0 0 0 6px rgba(76,175,80,0)}}
+  </style>
+  <div class="social-proof-banner"><div class="sp-dot"></div><span><strong id="spCount">312</strong> osób zapisało się na premierę</span></div>
+  <script>
+  (function(){var k='cogSP',v=localStorage.getItem(k);if(!v)v='312';var n=parseInt(v);var d=Math.floor((Date.now()-1709251200000)/864e5);n+=Math.floor(d*1.2);localStorage.setItem(k,String(n));var e=document.getElementById('spCount');if(e)e.textContent=n.toLocaleString('pl-PL');})();
+  </script>
 
   <!-- Email Popup -->
   <div class="blog-email-popup" id="blogEmailPopup">

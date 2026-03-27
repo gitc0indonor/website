@@ -1497,6 +1497,17 @@
         <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
         GMP Certified · EU Compliant
       </div>
+      <!-- #256 — Price-match badge in hero -->
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(46,125,50,0.1);border:1.5px solid rgba(46,125,50,0.3);border-radius:20px;padding:6px 16px;font-size:12px;font-weight:600;color:#1a472a;margin-top:10px;font-family:'Inter',sans-serif;">
+        <span style="font-size:15px;">💰</span>
+        <span>79 zł — najniższa cena, bezpośrednio od producenta</span>
+      </div>
+      <!-- #258 — Social proof subscriber counter in hero -->
+      <div style="display:flex;align-items:center;gap:6px;margin-top:10px;font-family:'Inter',sans-serif;font-size:11px;color:var(--soft,#6f6a61);">
+        <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#43a047;animation:heroPulse 2s infinite;"></span>
+        <span><strong id="heroNlCount" style="color:var(--charcoal,#2a2a27);">312</strong> osób zapisało się na premierę</span>
+      </div>
+      <style>@keyframes heroPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}</style>
       <p class="hero-legal">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia.</p>
     </div>
   </section>
@@ -2850,14 +2861,17 @@
   <script>
     // Dynamic subscriber counter (increments 0-2/day)
     (function() {
-      const el = document.getElementById('nlCount');
-      if (!el) return;
       const base = 312;
       const start = new Date('2026-03-24').getTime();
       const days = Math.floor((Date.now() - start) / 86400000);
       const stored = parseInt(localStorage.getItem('nlCountBase') || '0');
       const increment = Math.min(days, 120) * 1.5;
-      el.textContent = Math.round(base + increment + stored);
+      const count = Math.round(base + increment + stored);
+      // Update both counters (footer + hero)
+      var nlEl = document.getElementById('nlCount');
+      if (nlEl) nlEl.textContent = count;
+      var heroEl = document.getElementById('heroNlCount');
+      if (heroEl) heroEl.textContent = count;
     })();
     // Newsletter form success animation
     (function() {

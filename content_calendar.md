@@ -1403,3 +1403,68 @@
 **Internal links:** produkt.html, nauka.html, blog/suplementy-a-stres-oksydacyjny.html, blog/suplementy-a-kofeina.html, skutki-uboczne-nootropiki.html
 **Schema:** Article + BreadcrumbList JSON-LD
 **Status:** Outline ready — high SEO potential (stres w pracy = trending Polish keyword)
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #52)
+**Title:** Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów  
+**Target:** High-volume Polish SEO keyword (3K+ monthly searches: "jak poprawić koncentrację")  
+**Word count:** 2000-2500  
+**Keywords:** jak poprawić koncentrację, sposoby na koncentrację, suplement na koncentrację, koncentracja w pracy, naturalne sposoby na skupienie  
+
+**Outline:**
+1. **Wstęp** — Koncentracja to umiejętność, nie talent. Można ją trenować i wspierać.
+2. **Sposób 1: Sen 7-9h** — Hipokamp regeneracja, fazy REM a pamięć robocza. Brak snu = -40% koncentracji (Walker, 2017)
+3. **Sposób 2: Ruch fizyczny** — BDNF (neurotroficzny czynnik pochodzenia mózgowego) rośnie po 20 min cardio. Nawet spacer = lepsza koncentracja na 2-3h
+4. **Sposób 3: Nawodnienie** — 2% odwodnienia = spadek koncentracji o 25%. Ile pić? 30 ml/kg masy ciała dziennie
+5. **Sposób 4: Technika Pomodoro** — 25 min skupienia + 5 min przerwy. Naukowo potwierdzona poprawa wydajności poznawczej
+6. **Sposób 5: Redukcja kofeiny** — Paradoks: kofeina pomaga krótkoterminowo, ale tolerance buildup = coraz większe dawki, coraz gorszy sen. CogniCit jako alternatywa
+7. **Sposób 6: Dieta bogata w choliny** — Jajka, wątróbka, soja. CogniCit dostarcza cytykolinę = aktywną formę choliny
+8. **Sposób 7: Medytacja i mindfulness** — 10 min dziennie = zmiana gęstości istoty szarej w korze przedczołowej (Hölzel et al., 2011)
+9. **Sposób 8: Digital detox** — Średnia Polak sprawdza telefon 150x dziennie. Powiadomienia fragmentują uwagę. Tryb samolotowy rano = 2h głębokiej pracy
+10. **Sposób 9: Suplementacja składników nootropowych** — CogniCit: cytykolina (acetylocholina), ALA (ochrona antyoksydacyjna), β-CD (biodostępność). 1 kapsułka dziennie, rano z posiłkiem
+11. **Sposób 10: Optymalizacja środowiska pracy** — Temperatura 22°C, naturalne światło, porządek na biurku, rośliny doniczkowe
+12. **Podsumowanie** — Połączenie lifestyle + suplementacja = synergia. CogniCit jako element codziennej rutyny koncentracyjnej
+
+**CTA:** "Zamów CogniCit — 79 zł, 30-dniowa gwarancja"
+**Schema:** Article + BreadcrumbList JSON-LD
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, blog/poranne-nawyki-programisty.html, faq-produkt.html
+**Status:** Outline ready — TOP SEO keyword, featured snippet potential, listicle format = high engagement
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #52)
+**Title:** Czy suplementy naprawdę działają? Fakty i mity  
+**Target:** Polish skeptic audience, trust-building  
+**Word count:** 1500-2000  
+**Keywords:** czy suplementy działają, suplementy diety opinie, suplementy nauka, suplementy mity, skuteczność suplementów  
+
+**Outline:**
+1. **Wstęp** — "Suplementy to placebo" — ile w tym prawdy?
+2. **Co mówią badania?** — Przegląd meta-analiz: cytykolina (233 publikacje PubMed), ALA (ochrona antyoksydacyjna), β-CD (biodostępność). Liczby nie kłamią.
+3. **Dlaczego niektóre suplementy nie działają?** — 3 główne przyczyny: zbyt małe dawki (mikrodawki), słaba biodostępność, brak synergii między składnikami
+4. **Jak odróżnić działający suplement od placebo?** — Checklist: dawki z badań klinicznych, certyfikat CoA, GMP, GIS, transparentny skład. CogniCit vs "kombajny" z 20 składników
+5. **Efekt placebo — czy to źle?** — Nawet placebo ma realny efekt na samopoczucie. Ale CogniCit oferuje coś więcej: składniki z dowodami naukowymi
+6. **Kiedy suplementacja ma sens?** — Niedobory, intensywna praca umysłowa, wsparcie dla zdrowego stylu życia (nie zamiast niego)
+7. **Podsumowanie** — Suplementy NIE zastępią leku, ale DOBRY suplement z dowodami naukowymi = realne wsparcie. CogniCit = transparentność, GMP, dawki z badań
+
+**CTA:** "Sprawdź skład CogniCit" → produkt.html + email signup
+**Schema:** Article + BreadcrumbList JSON-LD
+**Internal links:** produkt.html, nauka.html, faq-produkt.html, certyfikaty.html, porownanie.html
+**Status:** Outline ready — captures skeptical traffic, builds trust through evidence-based approach
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #53)
+**Title:** Nootropiki a kortyzol — jak suplementy chronią mózg przed chronicznym stresem?
+**Target:** Stressed professionals, burnout prevention, SEO for "suplementy na stres", "kortyzol mózg", "nootropiki stres"
+**Word count:** 2000-2500
+**Keywords:** kortyzol a mózg, suplementy na stres przewlekły, oksydacyjny stres neurony, nootropiki stres praca
+
+**Outline:**
+1. **Wstęp** — Chroniczny stres = podwyższony kortyzol = uszkodzenia neuronów. Nie każdy o tym wie.
+2. **Co kortyzol robi z mózgiem?** — Mechanizm: HPA axis → kortyzol → uszkodzenie hipokampa → pogorszenie pamięci. Badania: Sapolsky (Stanford), lupuszek (cortisol shrinkage study).
+3. **Stres oksydacyjny — niewidzialny wróg** — Kortyzol generuje wolne rodniki → uszkodzenie błon neuronalnych → chroniczne zmęczenie. ALA jako bezpośredni antagonist: regeneracja glutationu, neutralizacja ROS.
+4. **Cytykolina a odporność na stres** — Acetylocholina = neuroprzekaźnik "spokoju i skupienia". Pod stressem spada → cytykolina odbudowuje pula. Badania: 500-2000 mg/dzień poprawiały funkcje poznawcze w warunkach stresu.
+5. **β-CD — dlaczego to ważne przy stresie?** — Stres obniża wchłanianie z jelit. β-CD chroni składniki aktywne → gwarantuje dotarcie do mózgu nawet przy osłabionej barierze jelitowej.
+6. **CogniCit — 3-składnikowa ochrona** — ALA (antioxidant) + cytykolina (neurotransmitter support) + β-CD (bioavailability). Porównanie z ashwagandą, rhodiolą, L-teaniną.
+7. **5 nawyków antystresowych + CogniCit** — Ruch, sen, medytacja, dieta, suplementacja. Harmonogram dnia: światło rano → CogniCit → przerwy co 90 min → wieczorny reset.
+8. **Podsumowanie** — "Stres jest nieunikniony. Uszkodzenia od stresu — nie muszą być." CTA → produkt.html
+
+**Schema:** Article + BreadcrumbList JSON-LD
+**Internal links:** produkt.html, nauka.html, blog/suplementy-a-stres-oksydacyjny.html, kwas-alfa-liponowy.html, cytykolina.html
+**Status:** Outline ready — targets growing burnout/stress awareness in Poland, strong SEO opportunity
