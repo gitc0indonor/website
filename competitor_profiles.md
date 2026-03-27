@@ -1,123 +1,167 @@
-# Cognivia — Competitor Profiles
-*Last updated: 2026-03-25 (Night Factory session)*
+# Competitor Profiles — Cognivia
+*Created: 2026-03-27 | Night Factory Intelligence*
 
 ---
 
-## Direct Competitors (Polish Market)
-
-### 1. Brain Effect (Germany) — ALREADY DOCUMENTED
-- Multi-product nootropic ecosystem (Focus, Sleep, Perform, Young)
-- NO Poland presence, caffeine-heavy, premium pricing (€30-40)
-- See product_ideas.md for full profile
-
-### 2. Noble Health (Poland) — ALREADY DOCUMENTED
-- Major Polish lifestyle supplement brand (est. 2009)
-- NO dedicated nootropic/cognitive line
-- Beauty/wellness DNA, could enter space if trend catches on
+## STATUS KEY
+- 🟢 ACTIVE — Direct competitor, monitor regularly
+- 🟡 ADJACENT — Different focus but overlapping market
+- 🔴 THREAT — Could enter our space with resources
+- ⚪ ARCHIVED — Historical, no longer relevant
 
 ---
 
-## NEW Competitor Profiles (Research Date: 2026-03-25)
-
-### 3. NooCube (International — UK-based)
-**Website:** noocube.com
-**Type:** International nootropic stack (ships to Poland)
-
+## 1. Brain Effect (Germany) 🟢
 | Attribute | Detail |
 |-----------|--------|
-| Brand | NooCube (Wolfson Brands / Nootropics Expert brand) |
-| HQ | UK (operates internationally) |
-| Product | Single product: nootropic cognitive enhancer |
-| Formula | 13 ingredients: Alpha GPC, Cat's Claw, Oat Straw, L-Theanine, L-Tyrosine, Bacopa, Huperzine A, Resveratrol, Pterostilbene, Panax Ginseng, Vitamin B1, B7, B12 |
-| Format | Capsules, 60/bottle (1-month supply) |
-| Price | ~$64.99 USD (~260 PLN) for 1 bottle |
-| Shipping to PL | Yes (international shipping, ~$9.95) |
-| Positioning | "All-natural cognitive enhancer", caffeine-free |
-| GMP | Claims GMP-certified manufacturing |
-| Caffeine | NO (caffeine-free) |
-| Key ingredients | Alpha GPC (not citicoline), Bacopa, Huperzine A |
+| **Company** | Brain Effect GmbH |
+| **HQ** | Berlin, Germany |
+| **Founded** | ~2016 |
+| **Website** | braineffect.com |
+| **Category** | Nootropic supplement brand (DTC) |
+| **Products** | FOCUS, SLEEP, PERFORM, YOUNG, FUEL (5 products) |
+| **Positioning** | "Brain performance for everyone" — premium lifestyle |
+| **Pricing** | €30-40/unit (~130-170 PLN) |
+| **Key Ingredients** | Alpha GPC, Lion's Mane, Rhodiola, B-vitamins, caffeine (100mg in FOCUS) |
+| **Has Cyticoline?** | ❌ No — uses Alpha GPC |
+| **Has ALA?** | ❌ No |
+| **Has Beta-CD?** | ❌ No |
+| **PL Presence** | ❌ No Polish language, no PL shipping |
+| **EU Compliant** | ✅ Yes |
+| **Strengths** | Strong brand, multi-product ecosystem, good marketing, established in DE/AT/CH |
+| **Weaknesses** | Caffeine-dependent, no cyticoline, expensive for PL market, no PL presence |
+| **Threat Level** | MEDIUM — could enter PL market but expensive repositioning needed |
 
-**Competitive Analysis:**
-- **Strengths:** Wide ingredient list, international brand recognition, caffeine-free positioning matches Cognivia
-- **Weaknesses:** 13 ingredients = potential "kitchen sink" approach, very expensive for Polish market (260 PLN vs Cognivia target 79 PLN), no cytykolina, no ALA, no beta-CD, shipping cost adds to total
-- **Threat level:** LOW — too expensive for PL market, no local presence
-- **Opportunity:** Cognivia can position as "focused science vs. kitchen sink" — 3 ingredients in therapeutic doses > 13 ingredients in microdoses
-
----
-
-### 4. "Polaku, lecz się sam" (Polish Retailer — Nootropics Category)
-**Website:** sklep.polakuleczsiesam.pl
-**Type:** Polish online supplement retailer with dedicated nootropics category
-
-| Attribute | Detail |
-|-----------|--------|
-| Brand | Polaku, lecz się sam! |
-| Type | Multi-brand retailer (NOT own brand) |
-| Nootropics category | YES — dedicated section with ~15 products |
-| Product types | Single-ingredient: Ashwagandha, Lion's Mane, L-Theanine, NAC, Omega-3, Curcumin, Adaptogen Complex |
-| Price range | 19-85 PLN per product |
-| Own brand | NO — sells OstroVit, Aliness, Bio Herbs, etc. |
-| Cytykolina | NO — not listed in nootropics category |
-| Shipping | Standard Polish domestic |
-| Positioning | Health-conscious, self-care, "natural medicine" |
-
-**Competitive Analysis:**
-- **Strengths:** Polish language, domestic shipping, low prices, established retailer, broad nootropics selection
-- **Weaknesses:** Reseller model (no unique formulation), no branded nootropic stack, no cytykolina, quality varies by brand, no dedicated "cognitive focus" product
-- **Threat level:** LOW — retailer, not competitor. BUT important as a sales channel opportunity (Cognivia could be listed there)
-- **Opportunity:** Potential distribution channel. Their nootropics category lacks a dedicated cognitive stack — Cognivia could fill that gap.
+**Strategic Note:** Brain Effect confirms that a dedicated nootropic brand can succeed in DACH. Their caffeine-heavy positioning is different from Cognivia's clean science approach. If they enter Poland, our price advantage (79 PLN vs 130-170 PLN) is significant.
 
 ---
 
-### 5. Seed AM-02 (International — US-based)
-**Website:** seed.com
-**Type:** Premium probiotic company with a nootropic product
-
+## 2. Noble Health (Poland) 🟡
 | Attribute | Detail |
 |-----------|--------|
-| Brand | Seed (DS-01® Daily Synbiotic is flagship) |
-| Product | AM-02 Daily Nootropic (newer product) |
-| Formula | Multi-strain nootropic with gut-brain axis focus |
-| Format | Capsules |
-| Price | ~$49.99 USD (~200 PLN) per month |
-| Positioning | Science-first, gut-brain connection, "next-gen nootropic" |
-| Caffeine | NO (caffeine-free) |
-| Key differentiator | Gut-brain axis (probiotic + nootropic hybrid) |
-| Shipping to PL | Uncertain — primarily US market |
+| **Company** | Noble Health S.A. |
+| **HQ** | Poland |
+| **Founded** | 2009 |
+| **Website** | noblehealth.pl |
+| **Category** | Lifestyle/wellness supplements (broad) |
+| **Products** | 50+ products — beauty, immunity, energy, weight |
+| **Relevant Product** | "Misie na Dobry Dzień" — energy gummies with żeń-szeń |
+| **Positioning** | Accessible beauty/wellness for women 25-45 |
+| **Pricing** | 30-80 PLN/unit (mass market) |
+| **Key Ingredients** | Żeń-szeń, witaminy, kolagen — beauty-first |
+| **Has Cyticoline?** | ❌ No |
+| **Has Nootropic Stack?** | ❌ No |
+| **PL Presence** | 🇵🇱 Major — available in Rossmann, Super-Pharm, Allegro |
+| **Strengths** | Distribution network, brand recognition in PL, established retail |
+| **Weaknesses** | No nootropic expertise, brand DNA is beauty not cognition, no science positioning |
+| **Threat Level** | LOW-MEDIUM — they could launch a cognitive line but it would be brand stretch |
 
-**Competitive Analysis:**
-- **Strengths:** Strong brand, innovative gut-brain approach, science-forward positioning
-- **Weaknesses:** Very expensive, primarily US market, different category (probiotic+nootropic hybrid), no direct overlap with Cognicit formula
-- **Threat level:** VERY LOW — different market, different product category
-- **Opportunity:** Validates the "science-first" positioning Cognivia is pursuing. Gut-brain axis could be a future Cognivia innovation angle.
+**Strategic Note:** Noble Health owns distribution in Poland but their brand is beauty/wellness. A "Noble Health nootropic" would feel off-brand. Monitor if they acquire or partner with a cognitive supplement company.
+
+---
+
+## 3. Mind Lab Pro (UK/International) 🟢
+| Attribute | Detail |
+|-----------|--------|
+| **Company** | Opti-Nutra Ltd |
+| **HQ** | London, UK |
+| **Website** | mindlabpro.com |
+| **Category** | Premium nootropic stack (DTC global) |
+| **Products** | 1 product (Mind Lab Pro) |
+| **Positioning** | "Universal nootropic" — science-first, 11 ingredients |
+| **Pricing** | $69/bottle (~280 PLN), ships internationally |
+| **Key Ingredients** | Citicoline (Cognizin® 250mg), Lion's Mane, Phosphatidylserine, L-Theanine, Bacopa, Rhodiola |
+| **Has Cyticoline?** | ✅ Yes (Cognizin® 250mg — lower than Cognivia's 300mg) |
+| **Has ALA?** | ❌ No |
+| **Has Beta-CD?** | ❌ No |
+| **PL Presence** | ⚠️ Ships to Poland but expensive (import tax, shipping), no Polish language |
+| **Strengths** | Strong SEO, good reputation in nootropic community, Cognizin® branded ingredient |
+| **Weaknesses** | Very expensive for PL market (~280 PLN), import hassle, 11 ingredients = less focus |
+| **Threat Level** | MEDIUM — well-known internationally but too expensive and inconvenient for PL market |
+
+**Strategic Note:** Mind Lab Pro uses the same branded cyticoline (Cognizin®) but in lower dose (250mg vs Cognivia 300mg) and without ALA/β-CD. Their 11-ingredient approach dilutes individual doses. At 280 PLN vs 79 PLN, Cognivia is 3.5x cheaper for a more focused formula.
+
+---
+
+## 4. NooCube (UK) 🟡
+| Attribute | Detail |
+|-----------|--------|
+| **Company** | Wolfson Brands (UK) Limited |
+| **HQ** | United Kingdom |
+| **Website** | noocube.com |
+| **Category** | Nootropic supplement (DTC) |
+| **Products** | 1 product (NooCube) |
+| **Positioning** | "Brain productivity" — claims focus + memory + speed |
+| **Pricing** | $59.99/bottle (~240 PLN) |
+| **Key Ingredients** | Alpha GPC, Huperzine A, Cat's Claw, Bacopa, Oat Straw, L-Theanine, L-Tyrosine |
+| **Has Cyticoline?** | ❌ No — uses Alpha GPC instead |
+| **Has ALA?** | ❌ No |
+| **Has Beta-CD?** | ❌ No |
+| **PL Presence** | ⚠️ Ships to Poland, no Polish language |
+| **Strengths** | Aggressive SEO/marketing, wide ingredient profile |
+| **Weaknesses** | Expensive, questionable ingredient selection (Huperzine A side effects), no Polish presence |
+| **Threat Level** | LOW — different ingredient approach, no PL market strategy |
+
+**Strategic Note:** NooCube relies on Alpha GPC + Huperzine A approach instead of cyticoline. Huperzine A has known side effects (GI distress, cholinergic crisis at high doses) that Cognivia's formula avoids. Their 7-ingredient stack has micro-dosing concerns.
+
+---
+
+## 5. Apollos Hegemony (Poland) 🟡
+| Attribute | Detail |
+|-----------|--------|
+| **Company** | Apollos Hegemony |
+| **HQ** | Poland |
+| **Website** | apolloshegemony.com |
+| **Category** | Single-ingredient nootropics + stacks |
+| **Products** | 30+ products — single ingredients and basic stacks |
+| **Positioning** | "Biohacker" / supplement geek |
+| **Pricing** | 29-89 PLN/unit |
+| **Key Ingredients** | Ashwagandha, Lion's Mane, Alpha GPC, L-Theanine, Noopept (single) |
+| **Has Cyticoline?** | ✅ Yes (single-ingredient product) |
+| **Has ALA?** | ✅ Yes (single-ingredient product) |
+| **Has Stack?** | ⚠️ Basic 2-3 ingredient stacks, no branded cognitive stack |
+| **PL Presence** | 🇵🇱 Polish brand, Allegro + own site |
+| **Strengths** | Low prices, wide selection, popular with biohackers, Polish |
+| **Weaknesses** | No branded stack competing with Cognicit, no mainstream marketing, niche audience |
+| **Threat Level** | LOW-MEDIUM — could create a cyticoline stack but currently doesn't |
+
+**Strategic Note:** Apollos Hegemony sells individual ingredients that overlap with Cognivia (cyticoline, ALA) but has no integrated nootropic stack. Their audience is biohacker niche, not mainstream. Potential future threat if they create a branded stack.
+
+---
+
+## 6. NOW Foods (US/PL distribution) 🟡
+| Attribute | Detail |
+|-----------|--------|
+| **Company** | NOW Health Group |
+| **HQ** | Bloomingdale, IL, USA |
+| **Website** | nowfoods.com |
+| **Category** | Mass-market supplements (2000+ products) |
+| **Relevant Products** | Cyticoline 250mg, Alpha GPC, Phosphatidylserine |
+| **Positioning** | Affordable quality — "natural products since 1968" |
+| **Pricing** | 40-90 PLN (PL distribution) |
+| **Has Cyticoline?** | ✅ Yes (single ingredient, 250mg) |
+| **Has Stack?** | ❌ No branded nootropic stack |
+| **PL Presence** | 🇵🇱 Available via Allegro, iHerb PL, supplement shops |
+| **Strengths** | Massive distribution, trusted brand, low prices, GMP |
+| **Weaknesses** | No nootropic stack, no Polish marketing, commodity positioning |
+| **Threat Level** | LOW — unlikely to create PL-specific nootropic stack |
 
 ---
 
 ## Competitive Landscape Summary (March 2026)
 
-| Competitor | Market | Product Type | Price (PLN) | Cytykolina | ALA | β-CD | Caffeine-free | Polish presence |
-|-----------|--------|-------------|-------------|-----------|-----|------|--------------|----------------|
-| **CogniCit** | PL/EU | Branded stack | 79 (target) | ✅ 300mg | ✅ 250mg | ✅ 250mg | ✅ | ✅ |
-| Brain Effect | DE/EU | Multi-product | 130-170 | ❌ | ❌ | ❌ | ❌ (100mg caffeine) | ❌ |
-| Noble Health | PL | Lifestyle/gummies | 30-60 | ❌ | ❌ | ❌ | ✅ | ✅ |
-| NooCube | UK/Intl | Branded stack | ~260 | ❌ (Alpha GPC) | ❌ | ❌ | ✅ | ❌ |
-| Polaku Lecz Sie | PL | Retailer/single | 19-85 | ❌ | ❌ | ❌ | Mixed | ✅ |
-| Seed AM-02 | US | Gut-brain hybrid | ~200 | ❌ | ❌ | ❌ | ✅ | ❌ |
+| Competitor | PL Market | Cyticoline | Stack | Price (PLN) | Threat |
+|------------|-----------|------------|-------|-------------|--------|
+| Brain Effect | ❌ | ❌ | ✅ | 130-170 | MEDIUM |
+| Noble Health | ✅ | ❌ | ❌ | 30-80 | LOW-MED |
+| Mind Lab Pro | ⚠️ | ✅ | ✅ | ~280 | MEDIUM |
+| NooCube | ⚠️ | ❌ | ✅ | ~240 | LOW |
+| Apollos Hegemony | ✅ | ✅ (single) | ❌ | 29-89 | LOW-MED |
+| NOW Foods | ✅ | ✅ (single) | ❌ | 40-90 | LOW |
 
-### Key Findings:
-1. **NO Polish brand offers a cytykolina-based nootropic stack** — confirmed gap
-2. **International competitors are 2-3x more expensive** than Cognivia's target price
-3. **No competitor has ALA + cytykolina + beta-CD combination** — unique formulation
-4. **Polish nootropics market is fragmented** into single-ingredient products sold through retailers
-5. **First-mover advantage is REAL** — the window is open for a branded, science-positioned, Polish-priced nootropic
-
-### Strategic Recommendations:
-- Accelerate Cognicit launch — first-mover advantage is confirmed
-- Consider listing on "Polaku, lecz się sam" as distribution channel
-- Position against NooCube ("3 focused ingredients > 13 microdosed")
-- Monitor Noble Health — they could enter cognitive space if trend grows
-- The nootropic supplement category in Poland is nascent — Cognivia can define it
+### Key Takeaway
+**No competitor offers a cyticoline-based nootropic stack on the Polish market.** First-mover window remains OPEN. Cognivia's unique position: only branded cyticoline stack, made for Poland, at Polish pricing.
 
 ---
 
-*Next review: After additional market data from Allegro/Ceneo rankings.*
+*Update frequency: Monthly or when new competitor enters PL market*
