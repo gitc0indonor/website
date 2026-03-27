@@ -43,6 +43,43 @@
     .cta { text-align: center; padding: 40px; }
     .cta a { display: inline-block; background: var(--accent); color: var(--accent); padding: 14px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; }
     footer { text-align: center; padding: 40px 5%; font-size: 12px; color: #999; border-top: 1px solid #e0dcd4; }
+
+    /* Power Cycle #49: Interactive β-CD explainer */
+    .bcd-explainer { background: #fff; border-radius: 16px; padding: 40px; margin: 32px auto; max-width: 800px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+    .bcd-explainer h2 { font-family: 'EB Garamond', serif; font-size: 28px; color: var(--cognivia-green); margin-bottom: 8px; text-align: center; }
+    .bcd-explainer > p { text-align: center; font-size: 14px; color: #888; margin-bottom: 28px; }
+    .bcd-steps { display: flex; gap: 8px; justify-content: center; margin-bottom: 28px; flex-wrap: wrap; }
+    .bcd-step-btn { padding: 8px 18px; border: 2px solid #e0dcd4; border-radius: 24px; background: transparent; font-family: 'EB Garamond', Georgia, serif; font-size: 14px; color: #666; cursor: pointer; transition: all 0.25s ease; }
+    .bcd-step-btn:hover { border-color: var(--cognivia-green); color: var(--cognivia-green); }
+    .bcd-step-btn.active { background: var(--cognivia-green); border-color: var(--cognivia-green); color: #fff; font-weight: 600; }
+    .bcd-stage { min-height: 220px; display: flex; align-items: center; justify-content: center; padding: 24px; border-radius: 12px; background: var(--cognivia-beige); margin-bottom: 20px; transition: background 0.4s ease; }
+    .bcd-stage.stage-danger { background: #fef2f2; }
+    .bcd-stage.stage-protect { background: #f0fdf4; }
+    .bcd-visual { text-align: center; width: 100%; }
+    .bcd-visual .molecule { display: inline-block; width: 56px; height: 56px; border-radius: 50%; line-height: 56px; font-size: 28px; transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .bcd-visual .molecule.vulnerable { background: #fbbf24; box-shadow: 0 0 20px rgba(251, 191, 36, 0.3); }
+    .bcd-visual .molecule.attacked { background: #ef4444; box-shadow: 0 0 24px rgba(239, 68, 68, 0.4); animation: shake 0.5s ease; }
+    .bcd-visual .molecule.shielded { background: #22c55e; box-shadow: 0 0 24px rgba(34, 197, 94, 0.3); transform: scale(1.1); }
+    .bcd-visual .molecule.delivered { background: var(--cognivia-green); box-shadow: 0 0 20px rgba(45, 102, 66, 0.3); }
+    @keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px) rotate(-3deg); } 75% { transform: translateX(6px) rotate(3deg); } }
+    .bcd-ring { display: inline-block; width: 100px; height: 100px; border: 4px solid var(--cognivia-gold); border-radius: 50%; position: relative; animation: ringPulse 2s ease-in-out infinite; }
+    @keyframes ringPulse { 0%,100% { box-shadow: 0 0 0 0 rgba(201,169,110,0.3); } 50% { box-shadow: 0 0 0 12px rgba(201,169,110,0); } }
+    .bcd-ring .molecule { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; line-height: 40px; font-size: 22px; }
+    .bcd-acid-drops { display: flex; gap: 10px; justify-content: center; margin-bottom: 12px; }
+    .bcd-acid-drop { width: 24px; height: 30px; background: #ef4444; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; opacity: 0; animation: acidDrip 1.2s ease-in-out infinite; }
+    .bcd-acid-drop:nth-child(2) { animation-delay: 0.3s; }
+    .bcd-acid-drop:nth-child(3) { animation-delay: 0.6s; }
+    @keyframes acidDrip { 0% { opacity: 0; transform: translateY(-10px); } 50% { opacity: 0.7; } 100% { opacity: 0; transform: translateY(20px); } }
+    .bcd-desc { font-size: 15px; color: var(--cognivia-text); line-height: 1.8; text-align: center; max-width: 600px; margin: 0 auto; }
+    .bcd-desc strong { color: var(--cognivia-green); }
+    .bcd-arrow { font-size: 24px; color: var(--cognivia-gold); margin: 8px 0; display: block; text-align: center; }
+    .bcd-label { display: inline-block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; padding: 3px 10px; border-radius: 12px; margin-bottom: 8px; font-family: 'Inter', sans-serif; font-weight: 600; }
+    .bcd-label.danger { background: #fee2e2; color: #dc2626; }
+    .bcd-label.safe { background: #dcfce7; color: #16a34a; }
+    @media (max-width: 600px) {
+      .bcd-explainer { padding: 24px 16px; }
+      .bcd-step-btn { padding: 6px 12px; font-size: 12px; }
+    }
   </style>
 <link rel="stylesheet" href="assets/css/cognivia-v2.css">
   <script type="application/ld+json">
@@ -159,6 +196,70 @@
     <div class="ref">Źródła: EFSA Journal 2012, FDA GRAS Notice No. 751, Crini 2014 (przegląd zastosowań β-CD)</div>
   </div>
 
+  <!-- INTERACTIVE β-CD EXPLAINER — Power Cycle #49, #233 -->
+  <div class="bcd-explainer">
+    <h2>🔬 Jak działa beta-cyklodekstryna?</h2>
+    <p>Kliknij krok, aby zobaczyć mechanizm ochrony składników aktywnych</p>
+    <div class="bcd-steps">
+      <button class="bcd-step-btn active" onclick="bcdStep(1)">① Cząsteczka</button>
+      <button class="bcd-step-btn" onclick="bcdStep(2)">② Kwas żołądkowy</button>
+      <button class="bcd-step-btn" onclick="bcdStep(3)">③ β-CD chroni</button>
+      <button class="bcd-step-btn" onclick="bcdStep(4)">④ Dostarczenie</button>
+    </div>
+    <div class="bcd-stage" id="bcdStage">
+      <div class="bcd-visual" id="bcdVisual">
+        <!-- Step 1 -->
+        <div id="bcdStep1">
+          <span class="bcd-label danger">Bez ochrony</span>
+          <div style="margin: 16px 0;">
+            <span class="molecule vulnerable">💊</span>
+          </div>
+          <div class="bcd-arrow">↓</div>
+          <p class="bcd-desc">Samotna cząsteczka <strong>cytykoliny</strong> lub <strong>ALA</strong> — bez ochrony, wrażliwa na degradację w przewodzie pokarmowym.</p>
+        </div>
+        <!-- Step 2 (hidden) -->
+        <div id="bcdStep2" style="display:none;">
+          <span class="bcd-label danger">Degradacja</span>
+          <div class="bcd-acid-drops">
+            <div class="bcd-acid-drop"></div>
+            <div class="bcd-acid-drop"></div>
+            <div class="bcd-acid-drop"></div>
+          </div>
+          <div style="margin: 12px 0;">
+            <span class="molecule attacked">💊</span>
+          </div>
+          <p class="bcd-desc">Kwas żołądkowy (pH 1.5–3.5) <strong>degraduje</strong> część składników aktywnych. Nawet 30–40% dawki może nie dotrzeć do jelit.</p>
+        </div>
+        <!-- Step 3 (hidden) -->
+        <div id="bcdStep3" style="display:none;">
+          <span class="bcd-label safe">Ochrona β-CD</span>
+          <div style="margin: 16px 0;">
+            <div class="bcd-ring">
+              <span class="molecule shielded">💊</span>
+            </div>
+          </div>
+          <p class="bcd-desc"><strong>Beta-cyklodekstryna</strong> tworzy „pierścień ochronny" wokół cząsteczki — kompleks inkluzji. Hydrofilowa powierzchnia, hydrofobowe wnętrze. Molekuła jest bezpieczna.</p>
+        </div>
+        <!-- Step 4 (hidden) -->
+        <div id="bcdStep4" style="display:none;">
+          <span class="bcd-label safe">Bezpieczne dostarczenie</span>
+          <div style="margin: 16px 0; display: flex; align-items: center; justify-content: center; gap: 20px;">
+            <div class="bcd-ring" style="border-color: #22c55e;">
+              <span class="molecule delivered">✅</span>
+            </div>
+            <span style="font-size: 28px;">→</span>
+            <div style="text-align: left;">
+              <div style="font-size: 14px; color: var(--cognivia-green); font-weight: 600;">🧠 Mózg</div>
+              <div style="font-size: 12px; color: #888;">100% dawki</div>
+            </div>
+          </div>
+          <p class="bcd-desc">β-CD przechodzi przez żołądek <strong>nienaruszona</strong>. W jelicie cienkim uwalnia składniki — pełne 300 mg cytykoliny i 250 mg ALA dociera do krwiobiegu.</p>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center; font-size: 12px; color: #aaa; margin-top: 8px;">β-CD jest uznawana za bezpieczną (GRAS) przez FDA i EFSA. Nie jest metabolizowana przez organizm.</p>
+  </div>
+
   <!-- SYNERGIA -->
   <div class="synergy">
     <h2>Synergia — razem > suma części</h2>
@@ -183,5 +284,24 @@
 </footer>
 
 <script src="js/web-vitals.js" defer></script>
+<script>
+/* Power Cycle #49: Interactive β-CD explainer step-through */
+function bcdStep(n) {
+  // Update button states
+  document.querySelectorAll('.bcd-step-btn').forEach(function(btn, i) {
+    btn.classList.toggle('active', i === n - 1);
+  });
+  // Show/hide step content
+  for (var i = 1; i <= 4; i++) {
+    var el = document.getElementById('bcdStep' + i);
+    if (el) el.style.display = (i === n) ? 'block' : 'none';
+  }
+  // Update stage background
+  var stage = document.getElementById('bcdStage');
+  stage.className = 'bcd-stage';
+  if (n === 2) stage.classList.add('stage-danger');
+  if (n === 3 || n === 4) stage.classList.add('stage-protect');
+}
+</script>
 </body>
 </html>

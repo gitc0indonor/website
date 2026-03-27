@@ -1303,3 +1303,33 @@
 **Target platforms:** Google (SEO), Wykop, LinkedIn, grupy FB o zdrowiu
 **Season:** Evergreen, peak Sep (back to school/office)
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-27)
+**Title:** Porównanie suplementów na pamięć — cytykolina, bacopa, ginkgo, omega-3
+**Target:** Polish audience, high-volume SEO keyword
+**Word count:** 2000-2500
+**Keywords:** suplementy na pamięć ranking, najlepszy suplement na pamięć, cytykolina vs bacopa, nootropik na pamięć, suplement koncentracja ranking
+
+**Outline:**
+1. **Wstęp** — Każdy zapomina. Kiedy to norma, a kiedy sygnał alarmowy? Rynek suplementów na pamięć wart 200M+ zł w Polsce
+2. **Jak działa pamięć?** — Prosty model: zapamiętywanie (hipokamp) → konsolidacja → przypominanie. Neuroprzekaźniki: acetylocholina, dopamina, glutaminian
+3. **Ranking składników na pamięć** — Comparison table:
+   - Cytykolina (CDP-Cholina) — 233 publikacji PubMed, prekursor acetylocholiny, 300 mg dawka
+   - Bacopa monnieri — 80 publikacji, adaptogen, działa po 4-6 tyg., 300 mg
+   - Ginkgo biloba — 150+ publikacji, ale kontrowersyjne wyniki (GEM study 2008 negatywna)
+   - Omega-3 (DHA) — budulec błon neuronowych, ale mała biodostępność z suplementów
+   - Fosfatydyloseryna — naturalny fosfolipid, 100-300 mg, dobre wyniki ale drogi
+4. **Tabela porównawcza** — 8 kolumn: składnik, dawka, czas działania, PubMed count, GMP dostępność, cena/dzień, stymulant?, ocena
+5. **Dlaczego cytykolina wygrywa?** — Najwięcej dowodów, najszybsze działanie, synergia z innymi składnikami, dobry profil bezpieczeństwa
+6. **CogniCit — więcej niż jeden składnik** — Cytykolina + ALA (antyoksydant) + β-CD (biodostępność). Żaden konkurent nie ma tej kombinacji
+7. **Czego unikać przy wyborze?** — Właścicielskie mieszanki (proprietary blends), brak GMP, brak CoA, dawki poniżej badanych
+8. **Podsumowanie** — Ranking + rekomendacja
+
+**CTA:** Zamów CogniCit — 79 zł, 3 synergistyczne składniki, GMP → produkt.html
+**Internal links:** produkt.html, porownanie.html, nauka.html, cytykolina-przewodnik-kompletny.html, skladniki.html
+**SEO angle:** "suplementy na pamięć ranking" — ~1.5K monthly searches in Poland. Listicle + comparison table format = high CTR + featured snippet potential. CogniCit positioned as the transparent, evidence-based choice.
+**Target platforms:** Google (SEO), Allegro listing optimization, comparison sites
+**Season:** Evergreen, peaks Sep (back to school) and Jan (New Year resolutions)
+**Status:** Outline ready, needs writing

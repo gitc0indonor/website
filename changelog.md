@@ -1485,3 +1485,43 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). CEO must create formspree.io account and swap form ID.
 
 **Queue:** ~183 completed + 6 active = 189 total
+
+### 2026-03-27 — Power Cycle #49 (10:28 UTC)
+**Implemented:**
+- ✅ Item #236 — Micro-interactions on "Dodaj do koszyka" button (produkt.html)
+  - Scale bounce animation: press 0.94x → overshoot 1.06x → settle 1.0x with cubic-bezier spring easing
+  - Cart icon bounce: scale 1.3x + rotation -8deg → settle with shake, 0.5s
+  - Sparkle particles: 8 particles burst from button center on click, random colors (gold/green/green-dark/light-gold), random directions, 0.6s fade-out animation
+  - "✓ Dodano do koszyka!" float-up text: slides up from button top, green pill badge, auto-hides after 1.8s
+  - Hover state: translateY(-2px) scale(1.02) with elevated shadow
+  - All animations use CSS-only (no JS animation libraries), respects existing addToCartFromProduct logic
+  - Button now calls addToCartFromProductMicro() which triggers all micro-interactions + CogniviaCart.addItem()
+  - Responsive: smaller "added" text on mobile (<480px)
+  - Performance: sparkle elements auto-cleaned after 800ms, no DOM leak
+- ✅ Item #233 — Interactive β-CD explainer section on /skladniki.html
+  - 4-step visual walkthrough: ① Naked molecule → ② Acid attack → ③ β-CD shield → ④ Safe delivery to brain
+  - Tab-style step buttons with active state (green pill), hover transitions
+  - Each step has unique visual: emoji molecule with CSS animations (vulnerable glow, attacked shake, shielded ring pulse, delivered checkmark)
+  - Acid drip animation on step 2 (3 CSS-animated droplets)
+  - Gold ring pulse animation on steps 3-4 (β-CD inclusion complex visualization)
+  - Stage background changes per step: beige → red-tint (danger) → green-tint (protected)
+  - Descriptive text for each step explaining the mechanism in plain language
+  - Mobile responsive (<600px): smaller buttons, tighter padding
+  - Positioned between β-CD ingredient section and synergy section
+  - Zero external dependencies, pure CSS + vanilla JS
+
+- ✅ Blog outline added to content_calendar.md: "Porównanie suplementów na pamięć — cytykolina, bacopa, ginkgo, omega-3"
+- ✅ 3 new improvement ideas added to queue (#237-239): newsletter floating badge, interactive quiz, news ticker
+
+**Files changed:**
+- `produkt.html` — Micro-interaction CSS (45 lines), updated buy-section button HTML (sparkle container + added text), addToCartFromProductMicro() JS function (35 lines)
+- `skladniki.html` — Interactive explainer CSS (80 lines), 4-step HTML section (65 lines), bcdStep() JS function (15 lines)
+- `content_calendar.md` — New blog outline: memory supplements comparison
+- `improvement_queue.md` — 3 new items (#237-239)
+- `changelog.md` — This entry
+
+**Site verification:** produkt.html: DOCTYPE ✓, </html> ✓, 9 micro-interaction elements confirmed. skladniki.html: DOCTYPE ✓, </html> ✓, 20 explainer elements confirmed. Both files syntactically valid.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Micro-interactions make "Dodaj do koszyka" feel premium with bounce + sparkle + "Added" feedback.
+
+**Queue:** ~215 completed + 12 active = 227 total (after adding #237-239)

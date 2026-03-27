@@ -1213,10 +1213,12 @@
           <button onclick="incrementQty()" id="qty-plus">+</button>
         </div>
       </div>
-      <div style="text-align: center; margin: 20px 0;">
-        <button class="btn-add-cart" onclick="addToCartFromProduct()" style="width: 100%; justify-content: center;">
+      <div style="text-align: center; margin: 20px 0; position: relative;">
+        <button class="btn-add-cart" onclick="addToCartFromProductMicro(this)" style="width: 100%; justify-content: center; position: relative;">
           <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
           Dodaj do koszyka
+          <span class="added-text" id="addedTextMain">✓ Dodano do koszyka!</span>
+          <div class="sparkle-container" id="sparklesMain"></div>
         </button>
       </div>
       <div class="buy-features">
@@ -1280,6 +1282,41 @@
     function decrementQty() { if (buyQty > 1) { buyQty--; updateQtyDisplay(); } }
     function addToCartFromProduct() {
       CogniviaCart.addItem('cognicit', buyQty);
+    }
+    /* Power Cycle #49: Micro-interactions on add-to-cart */
+    function addToCartFromProductMicro(btn) {
+      // 1) Add to cart
+      CogniviaCart.addItem('cognicit', buyQty);
+      // 2) Bounce press → back
+      btn.classList.add('bounce-press');
+      setTimeout(() => { btn.classList.remove('bounce-press'); btn.classList.add('bounce-back'); }, 80);
+      setTimeout(() => { btn.classList.remove('bounce-back'); }, 500);
+      // 3) Cart icon bounce
+      btn.classList.add('cart-bounce');
+      setTimeout(() => { btn.classList.remove('cart-bounce'); }, 550);
+      // 4) Sparkle particles
+      var container = btn.querySelector('.sparkle-container');
+      if (container) {
+        container.innerHTML = '';
+        for (var i = 0; i < 8; i++) {
+          var s = document.createElement('span');
+          s.className = 'sparkle';
+          var angle = (i / 8) * Math.PI * 2;
+          var dist = 40 + Math.random() * 30;
+          var x = Math.cos(angle) * dist + 100;
+          var y = Math.sin(angle) * dist + 100;
+          s.style.left = x + 'px';
+          s.style.top = y + 'px';
+          s.style.animationDelay = (Math.random() * 0.15) + 's';
+          var colors = ['#c9a96e', '#8f7a3d', '#2d7a4f', '#e8c76a', '#5dbb7a'];
+          s.style.background = colors[Math.floor(Math.random() * colors.length)];
+          container.appendChild(s);
+        }
+        setTimeout(function() { container.innerHTML = ''; }, 800);
+      }
+      // 5) "Added" text float-up
+      var txt = btn.querySelector('.added-text');
+      if (txt) { txt.classList.add('show'); setTimeout(function() { txt.classList.remove('show'); }, 1800); }
     }
 
     function updateCalc() {
@@ -1436,6 +1473,67 @@
   </div>
 </div>
 <style>
+  /* Power Cycle #49: Micro-interactions on add-to-cart button */
+  .btn-add-cart {
+    transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.15s ease, background 0.2s ease;
+    position: relative;
+    overflow: visible;
+  }
+  .btn-add-cart:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+  .btn-add-cart:active, .btn-add-cart.bounce-press {
+    transform: scale(0.94);
+    transition: transform 0.08s ease;
+  }
+  .btn-add-cart.bounce-back {
+    animation: btnBounceBack 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+  @keyframes btnBounceBack {
+    0% { transform: scale(0.94); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+  }
+  .btn-add-cart svg {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .btn-add-cart.cart-bounce svg {
+    animation: cartIconBounce 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  @keyframes cartIconBounce {
+    0% { transform: scale(1) rotate(0deg); }
+    30% { transform: scale(1.3) rotate(-8deg); }
+    60% { transform: scale(0.9) rotate(4deg); }
+    100% { transform: scale(1) rotate(0deg); }
+  }
+  .btn-add-cart .sparkle-container {
+    position: absolute; top: 50%; left: 50%; pointer-events: none;
+    width: 200px; height: 200px; margin-left: -100px; margin-top: -100px;
+  }
+  .btn-add-cart .sparkle {
+    position: absolute; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--cognivia-gold, #c9a96e);
+    opacity: 0; animation: sparklePop 0.6s ease-out forwards;
+  }
+  @keyframes sparklePop {
+    0% { opacity: 1; transform: scale(0) translate(0,0); }
+    50% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 0; transform: scale(0.5); }
+  }
+  .btn-add-cart .added-text {
+    position: absolute; top: -32px; left: 50%; transform: translateX(-50%) translateY(10px);
+    background: #2d7a4f; color: white; padding: 4px 14px; border-radius: 20px;
+    font-size: 12px; font-weight: 600; white-space: nowrap; opacity: 0;
+    pointer-events: none; transition: opacity 0.3s, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .btn-add-cart .added-text.show {
+    opacity: 1; transform: translateX(-50%) translateY(0);
+  }
+  @media (max-width: 480px) {
+    .btn-add-cart .added-text { font-size: 11px; top: -28px; }
+  }
+
   .exit-overlay-prod {
     position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 10000;
     display: none; align-items: center; justify-content: center;
