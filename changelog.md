@@ -1525,3 +1525,29 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Micro-interactions make "Dodaj do koszyka" feel premium with bounce + sparkle + "Added" feedback.
 
 **Queue:** ~215 completed + 12 active = 227 total (after adding #237-239)
+
+### 2026-03-27 — Power Cycle #50 (17:35 UTC)
+**Implemented:**
+- ✅ Item #248 — Added "Tylko 2,63 zł dziennie" price-per-day transparency callout to produkt.html hero
+  - Prominent green card below ingredient badges: "2,63 zł dziennie · 79 zł za 30 dni kuracji · mniej niż jedna kawa na mieście ☕"
+  - Gradient background (#e8f5e9 → #f1f8e9), green border, matching site palette
+  - Dual-column layout: big daily price + contextual comparison
+  - Expected impact: reduces "too expensive" objections by framing as daily cost
+- ✅ Item #252 — Added "Dlaczego CogniCit nie zawiera kofeiny?" comparison section to produkt.html
+  - Side-by-side comparison: ☕ Kofeina (red, 5 downsides) vs 🧠 CogniCit (green, 5 advantages)
+  - Key messaging: "CogniCit nie zastępuje kofeiny — uzupełnia ją"
+  - Zero caffeine = safe for evening use, no tolerance, works alongside coffee
+  - Cross-link to blog/suplementy-a-kofeina.html for deeper content
+  - Positioned between product gallery and ingredients section
+- ✅ Blog post outline added to content_calendar.md: "Nootropiki a sen — czy suplementy wpływają na jakość snu?"
+- ✅ 3 new improvement ideas added to queue (#256-#258)
+
+**Files changed:**
+- `produkt.html` — Price-per-day transparency callout + caffeine comparison section (+49 lines)
+
+**Notes:**
+- #231 (Web Vitals monitoring) — already implemented on ALL pages, confirmed
+- #236 (Micro-interactions on add-to-cart) — already implemented in Power Cycle #49, confirmed
+- Cart functionality: Formspree placeholder ID 'xpwzgryv' still active — CEO must replace with real endpoint (#204)
+- Site verified live at https://gitc0indonor.github.io/website/produkt.html (HTTP 200)
+- Committed as 5c96a25, pushed to origin/master

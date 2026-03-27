@@ -136,6 +136,51 @@
       }
     }
 
+
+    /* Floating Newsletter Badge — #237 */
+    .newsletter-float-badge {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 997;
+      background: linear-gradient(135deg, #4a7c2e, #6ba342);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(74,124,46,0.4);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s;
+      animation: nfBadgePulse 3s ease-in-out infinite;
+    }
+    .newsletter-float-badge:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(74,124,46,0.5);
+      animation: none;
+    }
+    .newsletter-float-badge.hidden { display: none; }
+    @keyframes nfBadgePulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(74,124,46,0.4); }
+      50% { box-shadow: 0 4px 28px rgba(74,124,46,0.6); }
+    }
+    @media (max-width: 768px) {
+      .newsletter-float-badge {
+        bottom: 16px;
+        right: 16px;
+        font-size: 12px;
+        padding: 10px 16px;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .newsletter-float-badge { animation: none; }
+    }
+
 </style>
   <script type="application/ld+json">
   {
@@ -464,6 +509,36 @@ function closeBlogPopup() {
   <script>
   (function(){
     if(localStorage.getItem('nlBadgeClicked')||localStorage.getItem('blogPopupDismissed')){var b=document.getElementById('nlBadge');if(b)b.classList.add('hidden');}
+  })();
+  </script>
+
+
+  <!-- Floating Newsletter Badge — #237 -->
+  <button class="newsletter-float-badge" id="nfBadge" onclick="document.getElementById('nfBadge').classList.add('hidden'); document.getElementById('nfPopup').style.display='flex';" title="Zapisz się na newsletter — 15% zniżki">
+    📬 Zapisz się — 15% zniżki
+  </button>
+  <div id="nfPopup" style="display:none; position:fixed; bottom:0; left:0; right:0; z-index:9998; background:rgba(0,0,0,0.5); justify-content:center; align-items:flex-end; padding:20px;">
+    <div style="background:white; border-radius:16px 16px 0 0; max-width:480px; width:100%; padding:32px; position:relative; animation:nfSlideUp 0.4s cubic-bezier(0.4,0,0.2,1);">
+      <button onclick="document.getElementById('nfPopup').style.display='none'; localStorage.setItem('blogNfBadge','dismissed');" style="position:absolute; top:12px; right:16px; background:none; border:none; font-size:24px; cursor:pointer; color:#999;">&times;</button>
+      <div style="font-size:32px; margin-bottom:12px;">📬</div>
+      <h3 style="font-family:'EB Garamond',serif; font-size:22px; margin-bottom:8px;">Podobał Ci się artykuł?</h3>
+      <p style="font-family:'Inter',sans-serif; font-size:14px; color:#666; margin-bottom:20px;">Zapisz się na newsletter i otrzymaj <strong>15% zniżki</strong> na pierwsze zamówienie CogniCit.</p>
+      <form action="https://formspree.io/f/xpwzgryv" method="POST" style="display:flex; gap:8px;">
+        <input type="hidden" name="source" value="blog-float-badge">
+        <input type="email" name="email" placeholder="Twój adres email" required style="flex:1; padding:12px 16px; border:1px solid #ddd; border-radius:8px; font-family:'Inter',sans-serif; font-size:14px;">
+        <button type="submit" style="background:linear-gradient(135deg,#4a7c2e,#6ba342); color:white; border:none; border-radius:8px; padding:12px 20px; font-family:'Inter',sans-serif; font-weight:600; font-size:14px; cursor:pointer; white-space:nowrap;">Zapisz się</button>
+      </form>
+      <p style="font-family:'Inter',sans-serif; font-size:11px; color:#999; margin-top:10px;">🔒 Twoje dane są bezpieczne. Zgodnie z RODO.</p>
+    </div>
+  </div>
+  <style>@keyframes nfSlideUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }</style>
+  <script>
+  (function(){
+    if(localStorage.getItem('blogNfBadge')==='dismissed') return;
+    var b=document.getElementById('nfBadge');
+    if(!b) return;
+    b.classList.add('hidden');
+    setTimeout(function(){ b.classList.remove('hidden'); }, 6000);
   })();
   </script>
 

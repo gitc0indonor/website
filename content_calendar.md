@@ -1358,3 +1358,48 @@
 **Schema:** Article + BreadcrumbList JSON-LD  
 **Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html  
 **Status:** Outline ready  
+
+---
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #50)
+**Title:** Nootropiki a sen — czy suplementy wpływają na jakość snu?
+**Target:** Polish audience, SEO-focused
+**Word count:** 2000-2500
+**Keywords:** nootropiki sen, suplementy a jakość snu, cytykolina a sen, suplementy bez kofeiny sen
+
+**Outline:**
+1. **Wstęp** — Czy suplementy na koncentrację zaburzają sen? Obawy vs. fakty
+2. **Jak kofeina niszczy sen** — Półtrwanie 5-6h, blokada adenozyny, efekt na architekturę snu (Walker, 2017; Drake et al., 2013)
+3. **Które nootropiki wpływają na sen negatywnie?** — Kofeina, modafinil, racetamy (pobudzenie). Tabela porównawcza.
+4. **Które nootropiki są bezpieczne dla snu?** — Cytykolina (nie jest stymulantem), ALA (antyoksydant, nie wpływa na melatoninę), β-CD (nośnik, obojętny)
+5. **Cytykolina i sen** — Badania: cytykolina nie zaburza architektury snu, może poprawiać jakość snu REM (Secades i Frontera, 2009). Dawka 300 mg rano = zero wpływu na wieczorny sen.
+6. **ALA a rytm dobowy** — Antyoksydant chroni neurony nawet podczas snu. Badania nad stresem oksydacyjnym w mózgu podczas snu.
+7. **CogniCit — suplementacja przyjazna snowi** — Rano 1 kapsułka, zero kofeiny, zero stymulantów. Można łączyć z melatoniną i innymi suplementami na sen.
+8. **Higiena snu — 6 zasad** — Regularne pory, brak ekranu 1h przed, temperatura 18-20°C, ciemność, brak kofeiny po 14:00, suplementacja rano nie wieczorem.
+9. **Podsumowanie** — CogniCit rano + higiena snu wieczorem = optymalna regeneracja mózgu
+
+**CTA:** Link to produkt.html + email signup
+**Schema:** Article + BreadcrumbList JSON-LD
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, nauka.html, blog/nootropiki-a-sen.html, jak-stosowac.html
+**Status:** Outline ready — high SEO value (common concern = high search intent)
+
+### New Blog Post Outline (Added 2026-03-27 — Power Cycle #51)
+**Title:** Jak chronić mózg przed stresem? Nootropiki a kortyzol  
+**Target:** Polish professionals, SEO-focused  
+**Word count:** 1800-2200  
+**Keywords:** stres a mózg, kortyzol suplementy, noootropiki stres, suplementy na stres w pracy, ochrona mózgu  
+
+**Outline:**
+1. **Wstęp** — Chroniczny stres jako cichy zabójca funkcji poznawczych
+2. **Jak kortyzol wpływa na mózg?** — Mechanizm: kortyzol → hipokamp → pamięć. Badania na temat zmniejszania objętości hipokampu pod wpływem chronicznego stresu
+3. **Objawy przeciążenia stresem** — 5 sygnałów: mgła mózgowa, problemy z koncentracją, drażliwość, bezsenność, spadek motywacji
+4. **ALA jako tarcza antyoksydacyjna** — Kortyzol generuje stres oksydacyjny → ALA neutralizuje wolne rodniki. Hager et al. 2007. Podwójna rozpuszczalność = ochrona komórek nerwowych
+5. **Cytykolina pod presją** — Acetylocholina a funkcjonowanie pod stresem. Badania: cytykolina wspiera funkcje wykonawcze nawet w warunkach stresu poznawczego
+6. **β-CD — dlaczego ma znaczenie** — Lepsze wchłanianie = mniejsze dawki = mniej obciążenia dla organizmu
+7. **Praktyczne strategie** — 5 nawyków redukujących kortyzol (sen, ruch, oddech, dieta, suplementacja). CogniCit jako element porannej rutyny antystresowej
+8. **Podsumowanie** — Stress management = brain protection. CogniCit nie zastępuje terapii, ale wspiera organizm na poziomie biochemicznym
+
+**CTA:** "Chroń swój mózg — zamów CogniCit" (79 zł, 30-dniowa gwarancja)
+**Internal links:** produkt.html, nauka.html, blog/suplementy-a-stres-oksydacyjny.html, blog/suplementy-a-kofeina.html, skutki-uboczne-nootropiki.html
+**Schema:** Article + BreadcrumbList JSON-LD
+**Status:** Outline ready — high SEO potential (stres w pracy = trending Polish keyword)
