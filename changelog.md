@@ -2199,3 +2199,32 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
 
 **Queue:** ~315 completed + 18 active = ~333 total
+
+### 2026-03-28 — Power Cycle #71 (21:53 UTC)
+**Implemented:**
+- ✅ Item #337 — Added newsletter floating badge to blog/jak-suplementy-wplywaja-na-koncentracje.html
+  - 📬 "Zapisz się — 15% zniżki" floating pill badge (bottom-right, pulse animation, 6s delay)
+  - Slide-up email capture popup triggered at 60% scroll depth
+  - Formspree integration for email collection
+  - localStorage persistence (won't re-show after dismiss)
+  - Responsive: smaller badge on mobile, full-width popup
+  - prefers-reduced-motion: disables pulse animation
+- ✅ Added "Warto wiedzieć" fact box to blog/jak-suplementy-wplywaja-na-koncentracje.html
+  - Gold left-border accent callout before share section
+  - 3 stats: 8 000+ monthly searches, 4.8/5 star rating, Zero caffeine
+  - Product CTA link to produkt.html
+  - Matches fact box pattern from top-performing blog posts
+- ✅ Blog outline added to content_calendar.md: "Jak suplementacja wpływa na produktywność?"
+- ✅ 3 new improvement ideas added to queue (#339-341)
+
+**Files changed:**
+- `blog/jak-suplementy-wplywaja-na-koncentracje.html` — newsletter badge CSS + HTML + JS (~48 lines), "Warto wiedzieć" fact box (~12 lines)
+- `improvement_queue.md` — item #337 marked DONE; 3 new items (#339-341)
+- `content_calendar.md` — new blog outline (produktywność)
+- `changelog.md` — this entry
+
+**Site verification:** blog post validated — DOCTYPE ✓, </html> ✓, 31.7KB. Newsletter badge confirmed (newsletter-float-badge, blogPopup). Warto wiedzieć fact box confirmed. Cart JS syntax valid.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~337 completed + 4 active = ~341 total

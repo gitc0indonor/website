@@ -1916,3 +1916,27 @@
 **CTA:** Email signup + link to produkt.html + link to porownanie.html
 **Internal links:** porownanie.html, ranking-nootropikow.html, produkt.html, jak-wybrac-suplement.html
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-28 — Power Cycle #71)
+**Title:** Jak suplementacja wpływa na produktywność? Protokół dla pracowników umysłowych
+**Target:** Polish professionals, SEO for "suplementy na produktywność", "nootropiki praca umysłowa", "koncentracja w pracy"
+**Word count:** 1500-2000
+**Keywords:** suplementy na produktywność, nootropiki praca umysłowa, koncentracja praca biurowa, suplement na focus, cytykolina produktywność
+
+**Outline:**
+1. **Wstęp** — Przeciętny pracownik umysłowy ma 3h produktywnej pracy na 8h w biurze. Dlaczego? (badania RescueTime)
+2. **Mózg a produktywność** — Kora przedczołowa, funkcje wykonawcze, "decision fatigue", spadek acetylocholiny w ciągu dnia
+3. **3 pułapki produktywności** — (a) Kofeinowy rollercoaster (wzlot → crash → kolejna kawa), (b) Multitasking (mit wielozadaniowości, badania Stanford), (c) Brak regeneracji (hipokamp potrzebuje przerw)
+4. **Cytykolina — paliwo dla funkcji wykonawczych** — Acetylocholina = neuroprzekaźnik planowania, organizacji, focusu. 300 mg w CogniCit = dawka z badań. Meta-analiza 233 publikacji.
+5. **ALA — ochrona przed stresem oksydacyjnym pracy umysłowej** — Chroniczny wysiłek poznawczy generuje wolne rodniki. ALA regeneruje glutation, chroni mitochondria.
+6. **Protokół produktywności z CogniCit** — 6:30 ☀️ światło → 7:00 💊 CogniCit ze śniadaniem → 9:00 deep work (acetylocholina peak) → 12:00 spacer → 14:00 zadania administracyjne → 18:00 shutdown ritual
+7. **Porównanie: CogniCit vs popularne rozwiązania** — Tabela: CogniCit (trwała koncentracja) vs kofeina (krótkotrwały boost) vs modafinil (recepta) vs energetyki (cukier+crash)
+8. **5 nawyków wspierających produktywność** — Sen 7-8h, Pomodoro 50/10, cyfrowy detoks rano, dieta bogata w omega-3, CogniCit jako poranny anchor
+9. **Podsumowanie** — Produktywność to nie talent, to system. CogniCit = biochemiczny fundament tego systemu.
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, blog/suplementy-dla-programistow.html, jak-stosowac.html, porownanie.html
+**SEO angle:** "produktywność w pracy" + "suplementy" = growing Polish search trend. Positions CogniCit as the professional's cognitive tool. Evergreen with Sep peak (back to office).
+**Status:** Outline ready, needs writing

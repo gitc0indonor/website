@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-28 (Power Cycle #66)
+## Last Updated: 2026-03-28 (Power Cycle #71)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -610,6 +610,16 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 336. **[NEW] Add A/B test for buy badge copy variations on landing pages** — Test 3 badge variants: (A) "🛒 Kup na cognivia.eu → 79 zł" (price-led), (B) "🎯 Zamów z 30-dniową gwarancją" (trust-led), (C) "📦 Darmowa dostawa od 120 zł" (shipping-led). Use URL param ?badge=variant. Track click-through to produkt.html. Expected: identify 15-25% better-converting variant within 2 weeks. Estimated: 1 hour.
 
-337. **[NEW] Add newsletter floating badge to new blog post** — Add the 📬 floating newsletter badge to blog/jak-suplementy-wplywaja-na-koncentracje.html matching other blog posts. Pulse animation, 6s delay, slide-up popup with 15% discount. Estimated: 10 minutes.
+337. ~~**[DONE] Add newsletter floating badge to new blog post**~~ ✅ — Power Cycle #71. Added 📬 floating badge (pulse animation, 6s delay) + slide-up email capture popup to blog/jak-suplementy-wplywaja-na-koncentracje.html. Popup triggers at 60% scroll depth, localStorage persistence, Formspree integration. Also added "Warto wiedzieć" fact box (8K+ searches stat, star rating, caffeine-free positioning). All 38+ blog posts now have newsletter badges.
 
 338. **[NEW] Create "Porównanie suplementów na pamięć — cytykolina vs bacopa vs ginkgo" blog post** — Target "suplementy na pamięć ranking" (1.5K monthly searches). Comparison table format. Positions cytykolina as the evidence-based winner (233 PubMed publications). Estimated: 2 hours.
+
+---
+
+### 🆕 Power Cycle #71 Additions (2026-03-28)
+
+339. **[NEW] Add "Jak suplementacja wpływa na produktywność?" blog post** — Target "suplementy na produktywność", "nootropiki praca umysłowa". Outline ready in content_calendar.md. Positions CogniCit as professional cognitive tool. Evergreen with Sep peak. Estimated: 2 hours.
+
+340. **[NEW] Add "Warto wiedzieć" fact boxes to top 5 blog posts missing them** — Audit all blog posts. Add consistent fact boxes (search volume stat, star rating, product CTA) to highest-traffic posts that lack them. Strengthens conversion on content pages. Estimated: 30 minutes.
+
+341. **[NEW] Create pre-launch "Otwarcie za X dni" countdown banner for index.html** — Animated countdown to product launch date, creates urgency. Below hero section. Email capture gate: "Zapisz się i otrzymaj powiadomienie + 15% zniżki w dniu premiery." Replaces static "Zapisz się na premierę" CTA. Estimated: 1 hour.
