@@ -325,7 +325,7 @@ const CogniviaCart = {
 
   // ---- Checkout Submission ----
 
-  submitOrder(formData) {
+  async submitOrder(formData) {
     const cart = this.getCart();
     if (cart.items.length === 0) return false;
     if (!cart.shipping) { this.showNotification('Wybierz metodę dostawy'); return false; }
@@ -349,6 +349,20 @@ const CogniviaCart = {
     const orders = JSON.parse(localStorage.getItem('cognivia_orders') || '[]');
     orders.push(order);
     localStorage.setItem('cognivia_orders', JSON.stringify(orders));
+
+    // reCAPTCHA v3 token (anti-spam) — graceful if grecaptcha not loaded
+    let recaptchaToken = '';
+    try {
+      if (typeof grecaptcha !== 'undefined' && grecaptcha.ready) {
+        recaptchaToken = await new Promise(resolve => {
+          grecaptcha.ready(() => {
+            grecaptcha.execute('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', { action: 'checkout' })
+              .then(t => resolve(t))
+              .catch(() => resolve(''));
+          });
+        });
+      }
+    } catch(e) { console.log('[CogniviaCart] reCAPTCHA skipped:', e.message); }
 
     // Send order notification via Formspree
     const FORMSPREE_ORDER_ID = 'xpwzgryv'; // TODO: Replace with real Formspree form ID
@@ -390,6 +404,7 @@ const CogniviaCart = {
           subtotal: order.subtotal.toFixed(2) + ' zł',
           shipping_cost: order.shippingCost.toFixed(2) + ' zł',
           total: order.total.toFixed(2) + ' zł',
+          recaptcha_token: recaptchaToken,
           order_summary: orderSummary
         })
       }).then(r => {

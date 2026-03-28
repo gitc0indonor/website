@@ -112,6 +112,14 @@ footer a { color: #6b6560; }
       .newsletter-float-badge { animation: none; }
     }
 
+    .share-section { max-width: 800px; margin: 48px auto; padding: 24px 0; border-top: 1px solid rgba(26,26,26,0.08); border-bottom: 1px solid rgba(26,26,26,0.08); text-align: center; }
+    .share-section p { font-size: 13px; color: #999; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+    .share-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .share-btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 4px; font-size: 13px; font-weight: 500; text-decoration: none; color: white; transition: opacity 0.2s, transform 0.2s; }
+    .share-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .share-btn.fb { background: #1877F2; }
+    .share-btn.tw { background: #1a1a1a; }
+    .share-btn.li { background: #0A66C2; }
 </style>
 </head>
 <body>
@@ -232,6 +240,17 @@ footer a { color: #6b6560; }
       <a href="../jak-stosowac.html">💊 Jak stosować CogniCit? Przewodnik</a>
       <a href="../skladniki.html">🧪 Składniki CogniCit — poznaj każdy z nich</a>
     </div>
+
+<!-- Satisfaction Guarantee -->
+<div style="background: linear-gradient(135deg, #e8f5e9, #f1f8e9); border-radius: 14px; padding: 28px 24px; margin: 32px 0; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; border: 1px solid rgba(45,102,66,0.15);">
+  <div style="flex-shrink: 0; width: 56px; height: 56px; background: #2D6642; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 22px; font-weight: 700; box-shadow: 0 4px 12px rgba(45,102,66,0.3);">30</div>
+  <div style="flex: 1; min-width: 200px;">
+    <div style="font-family: 'EB Garamond', serif; font-size: 18px; font-weight: 700; color: #2a2a27; margin-bottom: 4px;">30-dniowa gwarancja satysfakcji</div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Nie jesteś zadowolony? Zwrócimy pieniądze za pierwsze opakowanie. Zero ryzyka.</p>
+    <a href="produkt.html" style="display: inline-block; margin-top: 8px; font-size: 13px; color: #2D6642; font-weight: 600; text-decoration: none;">Zamów bez ryzyka →</a>
+  </div>
+</div>
+
 <footer>
 <p>© 2026 Cognivia · <a href="../index.html">Strona główna</a> · <a href="index.html">Blog</a></p>
 </footer>
@@ -253,5 +272,13 @@ footer a { color: #6b6560; }
 <SCRIPT>
 (FUNCTION(){IF(LOCALSTORAGE.GETITEM('SUBBADGE'))RETURN;VAR B=DOCUMENT.GETELEMENTBYID('SUBBADGE');IF(!B)RETURN;SETTIMEOUT(FUNCTION(){B.STYLE.DISPLAY='FLEX'},4000)})();
 </SCRIPT>
+  <div class="share-section">
+    <p>Udostępnij artykuł</p>
+    <div class="share-buttons">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://gitc0indonor.github.io/website/blog/kiedy-zaczac-suplementacje.html" target="_blank" rel="noopener" class="share-btn fb">📘 Facebook</a>
+      <a href="https://twitter.com/intent/tweet?url=https://gitc0indonor.github.io/website/blog/kiedy-zaczac-suplementacje.html&text=Kiedy%20zacz%C4%85%C4%87%20suplementacj%C4%99%3F" target="_blank" rel="noopener" class="share-btn tw">🐦 Twitter/X</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://gitc0indonor.github.io/website/blog/kiedy-zaczac-suplementacje.html" target="_blank" rel="noopener" class="share-btn li">💼 LinkedIn</a>
+    </div>
+  </div>
 </BODY>
 </html>

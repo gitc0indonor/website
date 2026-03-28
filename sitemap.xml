@@ -95,6 +95,11 @@
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  <url>
+    <loc>https://gitc0indonor.github.io/website/szukaj.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
   </url>
   <url>
     <loc>https://gitc0indonor.github.io/website/koszyk.html</loc>

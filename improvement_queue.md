@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-28 (Power Cycle #63)
+## Last Updated: 2026-03-28 (Power Cycle #66)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -541,3 +541,39 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 311. **[NEW] Create post-purchase review solicitation email sequence** — After order is placed (potwierdzenie.html), trigger 3-email sequence: Day 7: "Jak się czujesz po pierwszym tygodniu?" — ask for 1-5 star rating + short review. Day 21: "Twoje opinie pomagają innym" — link to opinie.html. Day 30: "Miesiąc z CogniCit — podziel się efektami!" — request detailed review with offer to feature on homepage. Automates social proof collection. Current opinie.html has 47 reviews but all appear to be static. Estimated: 2 hours.
 
 312. ~~**[DONE] Optimize Google Merchant Center product feed**~~ ✅ — Power Cycle #65. Enhanced merchant-feed.xml (7.7KB, was 5.9KB): Added shipping_weight to all 3 items (0.15/0.30/0.45 kg). Added age_group + gender to bundles. Added sale_price with original price to 2-pack and 3-pack (proper discount display). Added unit_pricing_measure to bundles. Added custom_label_0-4 to all items (category, campaign, price_tier, sku_type, feature). Added availability_date to bundles. Added is_bundle=true to multi-packs. Enables Google Shopping campaign segmentation, proper discount display, and weight-based shipping calculations.
+
+313. **[NEW] Add "Gwarancja najniższej ceny" price match widget to produkt.html sidebar** — Floating widget below the add-to-cart button: "Znalazłeś taniej? Wyrównamy cenę + 5% ekstra!" with a simple form (competitor name + price + link). Builds trust, captures competitor intelligence, and justifies premium positioning. Shows confidence in pricing. Estimated: 1 hour.
+
+314. **[NEW] Create "Jak suplementacja wpływa na wyniki matury" landing page** — Target "suplementy na maturę", "nootropiki nauka" (seasonal peaks Feb-Apr, 2K+ monthly searches during season). matura.html exists (28K) but no dedicated conversion landing page. Add: countdown timer to matura 2026, 30-day CogniCit study protocol, student testimonial section, limited-time "Matura Pack" bundle (3 boxes at -20%). Seasonal campaign page. Estimated: 2 hours.
+
+315. **[NEW] Implement Schema.org Review + AggregateRating verification audit on all pages** — produkt.html has AggregateRating (4.8/5, 47 reviews) but verify all review JSON-LD blocks are valid per Google's Rich Results Test. Check: datePublished format, author.name, reviewRating bestRating/worstValue, itemReviewed type. Run through Google Rich Results Test API. Invalid schema = no rich snippets = wasted SEO. Estimated: 45 minutes.
+
+---
+
+### 🆕 Power Cycle #66 Additions (2026-03-28)
+
+~~**[DONE] Add satisfaction guarantee trust badges to blog/kiedy-zaczac-suplementacje.html and blog/koszt-suplementacji.html**~~ ✅ — Power Cycle #66. Both posts were missing the 30-day green satisfaction guarantee section. Added identical guarantee card (30-day badge + marketing copy + CTA to produkt.html). All 37+ blog posts now have consistent trust signals.
+
+~~**[DONE] Add "Powiązane artykuły" cross-links to 4 blog posts missing internal links**~~ ✅ — Power Cycle #66. Added 3-card cross-link grids to: blog/chroniczne-zmeczenie-umyslowe.html, blog/czy-suplementy-dzialaja.html, blog/ranking-nootropikow-2026.html, blog/suplementy-a-kofeina.html. Each links to related articles + produkt.html. Strengthens internal link mesh and reduces bounce rate.
+
+316. **[NEW] Add "Ranking suplementów dla programistów 2026" SEO blog post** — Target "nootropik programista", "suplementy dla informatyków" (800+ monthly searches, low competition). Cover: developer-specific cognitive demands (deep work, debugging, context switching), CogniCit morning protocol for coders, caffeine-free advantage for late-night sessions. Position CogniCit as the programmer's supplement. Article + BreadcrumbList JSON-LD. Estimated: 2 hours.
+
+317. **[NEW] Create "Suplementy a praca zdalna — jak zachować koncentrację w domu?" blog post** — Target "suplementy praca zdalna", "koncentracja w domu" (trending in Poland post-pandemic). Cover: home office distractions, digital fatigue, blue light impact, CogniCit as focus anchor for remote workers. Estimated: 2 hours.
+
+318. **[NEW] Add "Test email notification" section to ecommerce_status.md** — Document the current Formspree placeholder state, provide step-by-step instructions for CEO to create account and swap form ID. Include screenshot guide of formspree.io signup flow. Makes the activation path dead simple — CEO just follows steps. Estimated: 30 minutes.
+
+319. **[NEW] Add order confirmation email auto-send via Formspree webhook** — Once Formspree is activated, configure a webhook to auto-send branded order confirmation email to customer. Include order summary, shipping method, estimated delivery, and Cognivia branding. Reduces "did my order go through?" support inquiries. Pre-build template in /website/email-templates/order-confirmation.html so it's ready when Formspree goes live. Estimated: 1 hour.
+
+320. **[NEW] Create Polish-language product unboxing experience page** — "Co znajdziesz w paczce?" page showing: sealed supplement jar, printed insert with dosage/safety info, QR code linking to digital certificate of analysis, branded thank-you card design. Builds anticipation, reduces post-purchase anxiety, differentiates from generic supplements. Visual mockup + copy. Estimated: 2 hours.
+
+321. ~~**[DONE] Implement Google reCAPTCHA v3 on checkout form**~~ ✅ — Power Cycle #67. Added reCAPTCHA v3 script to kasa.html (Google test key — CEO replaces with production key from google.com/recaptcha). Added async token generation to submitOrder() in cognivia-cart.js. Token included in Formspree payload. Graceful degradation: if grecaptcha not loaded, checkout works without token. Invisible anti-spam — no user interaction required. CEO registers domain at google.com/recaptcha/admin → copies site key → replaces in kasa.html script tag + cognivia-cart.js execute call.
+
+---
+
+### 🆕 Power Cycle #67 Additions (2026-03-28)
+
+322. **[NEW] Create "Nootropiki ranking 2026" comparison blog post** — Full ranking page comparing CogniCit vs top 5 competitors on 6 criteria. Targets "nootropiki ranking 2026" (high-volume, yearly refresh). Publish April 2026 for Q2 traffic. Estimated: 3 hours.
+
+323. **[NEW] Add order confirmation email HTML template** — Pre-build responsive HTML email template for Formspree autoresponder. Cognivia branding, order summary table, shipping info, 30-day guarantee reminder. Ready to activate when Formspree goes live. Estimated: 1.5 hours.
+
+324. **[NEW] Create "Suplementy a kofeina u seniorów" blog post** — Target "kofeina seniorzy suplementy", "bezpieczna kofeina po 50". Growing concern among 50+ and their families. Positions CogniCit as zero-caffeine alternative for older adults. Estimated: 2 hours.

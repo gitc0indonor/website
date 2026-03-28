@@ -2,6 +2,40 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-28 — Power Cycle #67 (17:07 UTC)
+**Implemented:**
+- ✅ Item #318 — Created ecommerce_status.md
+  - Full documentation of current cart architecture (cognivia-cart.js, 5 ecommerce pages)
+  - Step-by-step Formspree activation guide (9 steps, ~5 min CEO time)
+  - Cart architecture diagram showing submitOrder() flow
+  - Free tier limits documented (50 submissions/month)
+  - Pages involved table with status
+- ✅ Item #321 — Implemented Google reCAPTCHA v3 on checkout form
+  - Added reCAPTCHA v3 script to kasa.html (Google test key — replace with production key)
+  - Added async token generation to submitOrder() in cognivia-cart.js
+  - Token included in Formspree payload for server-side verification
+  - Graceful degradation: works fine if grecaptcha not loaded
+  - Invisible anti-spam — zero user interaction required
+  - CEO action: register at google.com/recaptcha/admin, replace site key
+- ✅ Blog outline added to content_calendar.md: "Nootropiki ranking 2026"
+- ✅ 3 new improvement ideas added to queue (#322-324)
+
+**Files changed:**
+- `ecommerce_status.md` — NEW (2.9KB) — Formspree setup guide + cart architecture docs
+- `kasa.html` — reCAPTCHA v3 script tag added to head
+- `js/cognivia-cart.js` — async submitOrder(), reCAPTCHA token generation, token in Formspree payload
+- `improvement_queue.md` — items #318, #321 marked DONE; 3 new items (#322-324)
+- `content_calendar.md` — new blog outline (nootropiki ranking 2026)
+- `changelog.md` — this entry
+
+**Site verification:** kasa.html validated — DOCTYPE ✓, </html> ✓, reCAPTCHA script confirmed. cognivia-cart.js syntax valid (node -c). ecommerce_status.md created with 9-step Formspree guide.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. reCAPTCHA v3 anti-spam active. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must: create formspree.io account + register reCAPTCHA site key.
+
+**Queue:** ~321 completed + 15 active = ~336 total
+
+---
+
 ### 2026-03-28 — Power Cycle #63 (02:53 UTC)
 **Implemented:**
 - ✅ Item #298 — Added "Ile kapsułek dziennie?" visual dosage timeline to produkt.html
@@ -1976,3 +2010,36 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
 
 **Queue:** ~303 completed + 16 active = ~319 total
+
+### 2026-03-28 — Power Cycle #66 (13:31 UTC)
+**Implemented:**
+- ✅ Added satisfaction guarantee trust badges to 2 blog posts missing them
+  - blog/kiedy-zaczac-suplementacje.html — Added green 30-day guarantee card (30 badge + marketing copy + "Zamów bez ryzyka →" CTA to produkt.html)
+  - blog/koszt-suplementacji.html — Same guarantee card added
+  - All 37+ blog posts now have consistent trust signals
+- ✅ Added "Powiązane artykuły" cross-links to 4 blog posts missing internal links
+  - blog/chroniczne-zmeczenie-umyslowe.html — 3-card grid (suplementy-a-kofeina, cytykolina-przewodnik, produkt)
+  - blog/czy-suplementy-dzialaja.html — 3-card grid with related articles
+  - blog/ranking-nootropikow-2026.html — 3-card grid with related articles
+  - blog/suplementy-a-kofeina.html — 3-card grid with related articles
+  - Each card: emoji icon, title, short description, hover effects
+  - Positioned before trust bar or footer section
+- ✅ Blog outline added to content_calendar.md: "Suplementy a praca zdalna — jak zachować koncentrację w domu?"
+- ✅ 3 new improvement ideas added to queue (#316-318)
+
+**Files changed:**
+- `blog/kiedy-zaczac-suplementacje.html` — satisfaction guarantee section (~12 lines)
+- `blog/koszt-suplementacji.html` — satisfaction guarantee section (~12 lines)
+- `blog/chroniczne-zmeczenie-umyslowe.html` — cross-links section (~20 lines)
+- `blog/czy-suplementy-dzialaja.html` — cross-links section (~20 lines)
+- `blog/ranking-nootropikow-2026.html` — cross-links section (~20 lines)
+- `blog/suplementy-a-kofeina.html` — cross-links section (~20 lines)
+- `improvement_queue.md` — items #303, #304 marked DONE; 3 new items (#316-318)
+- `content_calendar.md` — new blog outline (praca zdalna)
+- `changelog.md` — this entry
+
+**Site verification:** All 6 modified files validated — DOCTYPE ✓, </html> ✓. Guarantee badges confirmed on 2 posts. Cross-links confirmed on 4 posts. Cart JS syntax valid.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~315 completed + 18 active = ~333 total

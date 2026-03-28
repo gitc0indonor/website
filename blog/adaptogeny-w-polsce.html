@@ -113,7 +113,15 @@
     .cross-links a { display: block; color: #8f7a3d; text-decoration: none; padding: 8px 0; font-size: 14px; border-bottom: 1px solid rgba(201,169,110,0.15); }
     .cross-links a:last-child { border-bottom: none; }
     .cross-links a:hover { color: #2a2a27; }
-  </style>
+      .share-section { max-width: 800px; margin: 48px auto; padding: 24px 0; border-top: 1px solid rgba(26,26,26,0.08); border-bottom: 1px solid rgba(26,26,26,0.08); text-align: center; }
+    .share-section p { font-size: 13px; color: #999; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+    .share-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .share-btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 4px; font-size: 13px; font-weight: 500; text-decoration: none; color: white; transition: opacity 0.2s, transform 0.2s; }
+    .share-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .share-btn.fb { background: #1877F2; }
+    .share-btn.tw { background: #1a1a1a; }
+    .share-btn.li { background: #0A66C2; }
+</style>
 </head>
 
 <body>
@@ -334,6 +342,14 @@
       <a href="../produkt.html">🛒 Zamów CogniCit — 79 zł</a>
       <a href="../porownanie.html">📊 Porównanie suplementów</a>
     </div>
+  <div class="share-section">
+    <p>Udostępnij artykuł</p>
+    <div class="share-buttons">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://gitc0indonor.github.io/website/blog/adaptogeny-w-polsce.html" target="_blank" rel="noopener" class="share-btn fb">📘 Facebook</a>
+      <a href="https://twitter.com/intent/tweet?url=https://gitc0indonor.github.io/website/blog/adaptogeny-w-polsce.html&text=Adaptogeny%20w%20Polsce%20%E2%80%94%20co%20warto%20wiedzie%C4%87" target="_blank" rel="noopener" class="share-btn tw">🐦 Twitter/X</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://gitc0indonor.github.io/website/blog/adaptogeny-w-polsce.html" target="_blank" rel="noopener" class="share-btn li">💼 LinkedIn</a>
+    </div>
+  </div>
 </article>
 
 <!-- Satisfaction Guarantee — Power Cycle #64 -->
