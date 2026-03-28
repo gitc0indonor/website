@@ -1,7 +1,11 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cognivia.eu/sitemap.xml
+# Google Merchant Center bot
+User-agent: Googlebot-Image
+Allow: /merchant-feed.xml
+
+Sitemap: https://gitc0indonor.github.io/website/sitemap.xml
 
 # Block checkout/cart from indexing
 Disallow: /kasa.html
