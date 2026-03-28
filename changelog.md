@@ -2,6 +2,40 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-28 — Power Cycle #63 (02:53 UTC)
+**Implemented:**
+- ✅ Item #298 — Added "Ile kapsułek dziennie?" visual dosage timeline to produkt.html
+  - 3-step horizontal timeline: ☀️ Rano (1 capsule with meal) → 🎯 Przez cały dzień (300mg cytykolina) → 🌙 Wieczorem (0mg kofeiny, no crash)
+  - Color-coded gradient cards (amber/green/purple) with arrow connectors between steps
+  - Each step: large emoji icon, headline, subtitle, key stat badge (1 / 300mg / 0mg)
+  - Callout: "Jedna kapsułka rano. Żadnych dodatkowych dawek."
+  - Cross-link to jak-stosowac.html for full dosing guide
+  - Positioned between "Polecane artykuły" and "Często kupowane razem" sections
+  - Responsive: stacks vertically on mobile, horizontal flow on desktop
+- ✅ Item #300 — Added video testimonial placeholder section to produkt.html
+  - Dashed-border card after existing text testimonial carousel
+  - 🎬 emoji + "Opinie wideo — Wkrótce" heading
+  - Explanation: "recenzje wideo konwertują 2-3× lepiej niż tekstowe"
+  - "Nagraj swoją opinię" CTA with play icon for future submissions
+  - Email link for video submissions (cognivia.business@outlook.com)
+  - Sets up infrastructure for future real video testimonials
+- ✅ Blog outline added to content_calendar.md: "Jak mózg zużywa energię? Mitochondria a koncentracja"
+- ✅ 3 new improvement ideas added to queue (#301-303)
+
+**Files changed:**
+- `produkt.html` — Dosage timeline section (~50 lines) + video testimonial placeholder (~15 lines)
+- `improvement_queue.md` — items #298, #300 marked DONE; 3 new items (#301-303)
+- `content_calendar.md` — new blog outline (mitochondria + brain energy)
+- `changelog.md` — this entry
+
+**Site verification:** produkt.html validated — DOCTYPE ✓, </html> ✓. Dosage timeline confirmed (ile-kapsulek-timeline elements: ☀️,🎯,🌙). Video testimonial confirmed (🎬, "Opinie wideo"). Cart JS syntax valid.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~302 completed + 15 active = ~317 total
+
+---
+
 ### 2026-03-28 — Power Cycle #62 (02:19 UTC)
 **Implemented:**
 - ✅ Item #295 — Added freshness guarantee badge to produkt.html
@@ -1910,3 +1944,35 @@
 **Site verification:** Both files validated — DOCTYPE ✓, </html> ✓. produkt.html: "recentlyViewed" confirmed, 10 references. potwierdzenie.html: "trackingProgress" confirmed, status bar functional.
 
 **Cart status:** Unchanged from previous cycle. Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). CEO must create formspree.io account and swap form ID to enable real order capture.
+
+### 2026-03-28 — Power Cycle #64 (03:23 UTC)
+**Implemented:**
+- ✅ Item #301 — Added "Wyniki w liczbach" before/after section to produkt.html
+  - Side-by-side comparison: Before (☁️ Mgła mózgowa, 😵 Crash po kawie, 📉 Słaba pamięć) → After 30 days (☀️ Czysty umysł, ⚡ Stała energia, 🎯 Lepsza pamięć)
+  - Color-coded cards: red-tinted "PRZED" vs green-tinted "PO 30 DNIACH"
+  - Arrow connector with "30 dni" label between states
+  - Legal disclaimer: "Opisy oparte na mechanizmach działania składników. Suplement diety nie zastępuje leku."
+  - Cross-link to nauka.html for research backing
+  - Responsive: stacks vertically on mobile, side-by-side on desktop
+  - Positioned between dosage timeline and bundle suggestion sections
+- ✅ Item #303 — Audited all blog posts for missing satisfaction guarantee trust badges
+  - Found 2 posts missing the badge: adaptogeny-w-polsce.html, suplementy-stres-w-pracy.html
+  - Added green gradient satisfaction guarantee section (30-day badge + marketing copy + "Zamów bez ryzyka →" CTA) to both
+  - Blog index.html correctly excluded (listing page, not content page)
+  - All 37+ blog posts now have consistent trust signals
+- ✅ Blog outline added to content_calendar.md: "Czy kofeina niszczy suplementy? Prawda o łączeniu kawy z nootropikami"
+- ✅ 3 new improvement ideas added to queue (#304-306)
+
+**Files changed:**
+- `produkt.html` — Before/After section (~40 lines) between dosage timeline and bundle sections
+- `blog/adaptogeny-w-polsce.html` — Satisfaction guarantee section (~15 lines) before footer
+- `blog/suplementy-stres-w-pracy.html` — Satisfaction guarantee section (~15 lines) before footer
+- `improvement_queue.md` — items #301, #303 marked DONE; 3 new items (#304-306)
+- `content_calendar.md` — new blog outline (kofeina + suplementy)
+- `changelog.md` — this entry
+
+**Site verification:** produkt.html validated — DOCTYPE ✓, </html> ✓, 24 sections. Before/After section confirmed (Wyniki w liczbach, PRZED, PO 30 DNIACH). Both blog posts confirmed with trust badges (gwarancja satysfakcji). Cart JS syntax valid.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~303 completed + 16 active = ~319 total

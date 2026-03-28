@@ -1683,3 +1683,47 @@
 **CTA:** produkt.html + email popup (60% scroll)
 **SEO notes:** "suplementy na koncentrację" = 8K+ monthly, highest volume keyword in Polish nootropic space. This page should be the #1 ranking target. Featured snippet: "Najlepsze składniki na koncentrację: cytykolina, ALA, omega-3, bacopa, kofeina." Include comparison table format for Google rich results.
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-28)
+**Title:** Jak mózg zużywa energię? Mitochondria a koncentracja
+**Target:** Polish audience, science-education SEO
+**Word count:** 1800-2200
+**Keywords:** mitochondria mózg, energia mózgu, koncentracja a energia, suplementy mitochondria, ALA mitochondria
+
+**Outline:**
+1. **Wstęp** — Mózg zużywa 20% energii ciała przy 2% masy. Dlaczego to ważne?
+2. **Mitochondria — elektrownie neuronów** — ATP production, neuronal energy demands, why mitochondria density matters in brain tissue
+3. **Co wyczerpuje mitochondria?** — chronic stress, poor sleep, oxidative damage, aging, excessive caffeine (depletes reserves short-term)
+4. **Kwas alfa-liponowy a mitochondria** — ALA as mitochondrial cofactor, glutathione regeneration, metal chelation protecting mitochondria. Hager et al. 2007 study.
+5. **Cytykolina — energia + neurotransmisja** — dual mechanism: membrane phospholipid repair (fuel for mitochondria) + acetylcholine synthesis (signal transmission). CDP-choline as ATP precursor.
+6. **β-CD — dlaczego biodostępność ma znaczenie** — even the best ingredients are useless if not absorbed. β-CD inclusion complex protects and delivers.
+7. **Praktyczne wskazówki** — sleep 7-8h, regular meals, movement, morning CogniCit for steady mitochondrial support
+8. **Podsumowanie** — "Energia mózgu zaczyna się od mitochondriów. CogniCit wspiera je na 3 poziomach."
+
+**CTA:** produkt.html + email capture (60% scroll)
+**Schema:** Article + BreadcrumbList JSON-LD
+**Internal links:** nauka.html, kwas-alfa-liponowy.html, cytykolina.html, produkt.html, blog/suplementy-dla-seniorow-50-plus
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-28 — Power Cycle #64)
+**Title:** Czy kofeina niszczy suplementy? Prawda o łączeniu kawy z nootropikami
+**Target:** Polish audience, SEO for "kofeina suplementy łączenie", "czy brać suplement z kawą", "kawa a suplementy"
+**Word count:** 1200-1600
+**Keywords:** kofeina a suplementy, brać suplement z kawą, kawa a nootropiki, interakcje kofeina suplementy, CogniCit kawa
+
+**Outline:**
+1. **Wstęp** — 80% Polaków pije kawę rano. Większość bierze suplementy w tym samym czasie. Czy to bezpieczne?
+2. **Jak kofeina wpływa na wchłanianie?** — pH żołądka, diureza, kortyzol — mechanizmy interakcji
+3. **Które suplementy NIE powinny być łączone z kawą?** — Żelazo (↓50% wchłaniania), wapń, B12. Tabela.
+4. **Cytykolina + kofeina — dobra wiadomość** — Różne mechanizmy (adenozyna vs acetylocholina) = brak konfliktu. Badania.
+5. **ALA + kofeina** — Brak negatywnych interakcji. ALA działa na mitochondria, kofeina na receptory — niezależne ścieżki.
+6. **β-CD + kofeina** — Obojętna. Nie wpływa na metabolizm kawy.
+7. **CogniCit + kawa = OK** — Protokół: CogniCit ze śniadaniem, kawa 30-60 min później (lub przed).
+8. **Podsumowanie** — CogniCit i kawa = partnerzy, nie rywale.
+
+**CTA:** Zamów CogniCit — idealny partner dla porannej kawy → produkt.html
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, faq-produkt.html
+**SEO angle:** "brać suplement z kawą" — common question, zero quality Polish content. Answers real user concern. Featured snippet potential.
+**Status:** Outline ready, needs writing
