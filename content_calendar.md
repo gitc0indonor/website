@@ -1827,3 +1827,26 @@
 **Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html
 **Season:** Evergreen
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-28 — Power Cycle #67)
+**Title:** Suplementy a praca zdalna — jak zachować koncentrację w domu?
+**Target:** Polish remote workers, SEO-focused
+**Word count:** 1500-2000
+**Keywords:** suplementy praca zdalna, koncentracja w domu, nootropiki home office, suplementy dla freelancera
+
+**Outline:**
+1. **Wstęp** — Remote work boom in Poland (2020-2026 trends), cognitive challenges of working from home
+2. **Problem: domowe rozpraszacze** — Netflix, lodówka, dzieci, sąsiedzi — jak to wpływa na koncentrację
+3. **Cyfrowe zmęczenie** — ekran 8h+, niebieskie światło, efekty na mózg
+4. **Kofeina w domu** — bez granicy "biuro → dom", kawa od 7 do 22 → problemy ze snem
+5. **Rozwiązanie: protokół koncentracji** — CogniCit rano (cytykolina 300mg), ALA na ochronę, β-CD na wchłanianie
+6. **Zero kofeiny** — nie koliduje z kawą, nie zaburza snu przy późnych sesjach pracy
+7. **Porównanie suplementów** — CogniCit vs kofeina vs energetyki dla pracujących zdalnie
+8. **Protokół dnia pracy zdalnej** — 7:00 CogniCit → 9:00 deep work → 12:00 ruch → 14:00 zadania administracyjne
+9. **Podsumowanie** — CogniCit jako focus anchor dla home office
+
+**CTA:** Email signup with "HOME15" discount code
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, porownanie.html
+**Status:** Outline ready

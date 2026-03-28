@@ -146,10 +146,10 @@
     </div>
   </section>
 
-  <!-- Smart Bundle Upsell -->
+  <!-- Smart Bundle Upsell (enhanced: qty detection + free shipping threshold) -->
   <section id="bundle-upsell" style="max-width: 800px; margin: 0 auto 40px; padding: 0 8%; display: none;">
     <h3 style="font-family: 'EB Garamond', serif; font-size: 22px; color: #1a3a2a; margin-bottom: 8px; text-align: center;">💡 Kup więcej — oszczędź więcej</h3>
-    <p style="font-size: 14px; color: #888; text-align: center; margin-bottom: 24px;">Dodaj kolejne opakowanie i skorzystaj z rabatu ilościowego</p>
+    <p id="bundle-subtitle" style="font-size: 14px; color: #888; text-align: center; margin-bottom: 24px;">Dodaj kolejne opakowanie i skorzystaj z rabatu ilościowego</p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
       <div style="background: white; border: 2px solid #e8e8e8; border-radius: 12px; padding: 20px; text-align: center; transition: all 0.3s ease;">
         <div style="font-size: 32px; margin-bottom: 8px;">📦</div>
@@ -157,8 +157,9 @@
         <div style="font-size: 13px; color: #888; margin-bottom: 8px;">60 dni kuracji</div>
         <div style="font-size: 13px; color: #999; text-decoration: line-through;">158 zł</div>
         <div style="font-size: 20px; font-weight: 700; color: #4a6741; margin-bottom: 4px;">150 zł</div>
-        <div style="font-size: 11px; background: #e8f5e9; color: #4a6741; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 12px;">Oszczędzasz 8 zł</div>
-        <button onclick="CogniviaCart.addItem({id:'cognicit', name:'CogniCit', price:15000, quantity:2}); checkCart();" style="width: 100%; background: #4a6741; color: white; border: none; padding: 10px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 13px;">Dodaj 2×</button>
+        <div style="font-size: 11px; background: #e8f5e9; color: #4a6741; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 4px;">Oszczędzasz 8 zł</div>
+        <div id="bundle-free-ship-2" style="font-size: 11px; color: #2e7d32; margin-bottom: 10px; display: none;">✅ Darmowa dostawa!</div>
+        <button onclick="CogniviaCart.addItem('cognicit', 2); window.location.reload();" style="width: 100%; background: #4a6741; color: white; border: none; padding: 10px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 13px;">Dodaj 2×</button>
       </div>
       <div style="background: linear-gradient(135deg, #f0f7f0, #e8f5e9); border: 2px solid #4a6741; border-radius: 12px; padding: 20px; text-align: center; position: relative; transition: all 0.3s ease;">
         <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #c9a96e; color: white; font-size: 10px; font-weight: 700; padding: 3px 12px; border-radius: 10px; text-transform: uppercase; letter-spacing: 1px;">Popularne</div>
@@ -167,9 +168,15 @@
         <div style="font-size: 13px; color: #888; margin-bottom: 8px;">90 dni kuracji</div>
         <div style="font-size: 13px; color: #999; text-decoration: line-through;">237 zł</div>
         <div style="font-size: 20px; font-weight: 700; color: #4a6741; margin-bottom: 4px;">213 zł</div>
-        <div style="font-size: 11px; background: #c9a96e; color: white; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 12px;">Oszczędzasz 24 zł (10%)</div>
-        <button onclick="CogniviaCart.addItem({id:'cognicit', name:'CogniCit', price:21300, quantity:3}); checkCart();" style="width: 100%; background: #1a3a2a; color: white; border: none; padding: 10px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 13px;">Dodaj 3×</button>
+        <div style="font-size: 11px; background: #c9a96e; color: white; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 4px;">Oszczędzasz 24 zł (10%)</div>
+        <div style="font-size: 11px; color: #2e7d32; margin-bottom: 10px;">✅ Darmowa dostawa!</div>
+        <button onclick="CogniviaCart.addItem('cognicit', 3); window.location.reload();" style="width: 100%; background: #1a3a2a; color: white; border: none; padding: 10px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 13px;">Dodaj 3×</button>
       </div>
+    </div>
+    <!-- Free shipping threshold banner -->
+    <div id="free-ship-banner" style="display:none; margin-top: 16px; background: #fff8e1; border: 1px solid #ffe082; border-radius: 10px; padding: 12px 20px; text-align: center;">
+      <span style="font-size: 14px;">🚚</span>
+      <span id="free-ship-msg" style="font-size: 13px; color: #5d4037; font-weight: 500;"></span>
     </div>
     <p style="text-align: center; font-size: 12px; color: #aaa; margin-top: 16px;">📦 Darmowa dostawa od 120 zł · 30-dniowa gwarancja satysfakcji</p>
   </section>
@@ -194,9 +201,10 @@
 
   <script src="js/cognivia-cart.js"></script>
   <script>
-    // Show/hide summary, savings calculator and empty-cart recovery based on cart contents
+    // Show/hide summary, savings calculator, free shipping, and empty-cart recovery based on cart contents
     const PHARMACY_PRICE = 11900; // 119.00 zł pharmacy reference price
     const OUR_PRICE = 7900; // 79.00 zł direct price
+    const FREE_SHIP_THRESHOLD = 12000; // 120.00 zł
     const checkCart = setInterval(() => {
       const cart = CogniviaCart.getCart();
       const summary = document.getElementById('cart-summary');
@@ -204,6 +212,8 @@
       const savingsCalc = document.getElementById('savings-calc');
       const savingsAmount = document.getElementById('savings-amount');
       const upsell = document.getElementById('bundle-upsell');
+      const freeShipBanner = document.getElementById('free-ship-banner');
+      const freeShipMsg = document.getElementById('free-ship-msg');
       if (cart.items.length > 0) {
         if (summary) summary.style.display = 'block';
         if (emptyRecovery) emptyRecovery.style.display = 'none';
@@ -212,8 +222,19 @@
         // Calculate savings vs pharmacy
         let totalQty = 0;
         cart.items.forEach(i => { totalQty += i.quantity; });
-        // Show bundle upsell when cart has 1 item
-        if (upsell) upsell.style.display = totalQty <= 1 ? 'block' : 'none';
+        // Show bundle upsell only when cart has exactly 1 box
+        if (upsell) upsell.style.display = totalQty === 1 ? 'block' : 'none';
+        // Free shipping threshold logic
+        if (subtotal < FREE_SHIP_THRESHOLD && freeShipBanner && freeShipMsg) {
+          const remaining = FREE_SHIP_THRESHOLD - subtotal;
+          freeShipBanner.style.display = 'block';
+          freeShipMsg.textContent = `Dodaj ${CogniviaCart.formatPrice(remaining)} więcej, aby otrzymać darmową dostawę!`;
+        } else if (freeShipBanner) {
+          freeShipBanner.style.display = 'none';
+        }
+        // Show "Darmowa dostawa!" badge on 2-pack when cart already qualifies
+        const freeShipBadge2 = document.getElementById('bundle-free-ship-2');
+        if (freeShipBadge2) freeShipBadge2.style.display = totalQty >= 2 ? 'block' : 'none';
         const pharmacyCost = totalQty * PHARMACY_PRICE;
         const savings = pharmacyCost - subtotal;
         if (savings > 0 && savingsCalc && savingsAmount) {
@@ -227,6 +248,7 @@
         if (emptyRecovery) emptyRecovery.style.display = 'block';
         if (savingsCalc) savingsCalc.style.display = 'none';
         if (upsell) upsell.style.display = 'none';
+        if (freeShipBanner) freeShipBanner.style.display = 'none';
       }
     }, 500);
   </script>

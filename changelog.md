@@ -2,6 +2,40 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-28 — Power Cycle #68 (18:18 UTC)
+**Implemented:**
+- ✅ Item #308 — Fixed smart bundle recommendations on koszyk.html
+  - Fixed broken addItem() calls: was passing objects `{id:'cognicit', name:'...', price:..., quantity:...}` instead of correct `CogniviaCart.addItem('cognicit', qty)` API
+  - Added free shipping threshold banner: when cart < 120 zł, shows dynamic "Dodaj X więcej, aby otrzymać darmową dostawę!" message
+  - 2-pack card gets "Darmowa dostawa!" green badge when cart qualifies (subtotal ≥ 120 zł)
+  - Bundle upsell now shows only when cart has exactly 1 box (was ≤1, hiding when 0 items in cart)
+  - Buttons reload page after add-to-cart for clean UI state
+- ✅ Item #318 — Enhanced ecommerce_status.md with test notification guide
+  - Step-by-step 3-minute verification protocol for Formspree activation
+  - Test data: full checkout fields pre-filled for quick testing
+  - Expected email content format documented
+  - Troubleshooting table for 4 common issues (no email, 403, form not found, reCAPTCHA)
+- ✅ Item #323 — Verified order confirmation email template exists
+  - email-templates/order-confirmation.html: full responsive HTML email with Cognivia branding
+  - Template variables: {{ORDER_ID}}, {{CUSTOMER_NAME}}, ready for Formspree autoresponder
+- ✅ Blog outline added to content_calendar.md: "Suplementy a praca zdalna — jak zachować koncentrację w domu?"
+- ✅ 3 new improvement ideas added to queue (#325-327)
+
+**Files changed:**
+- `koszyk.html` — Fixed addItem() calls, added free shipping banner + threshold logic, enhanced bundle display rules
+- `ecommerce_status.md` — Added test notification verification guide with troubleshooting
+- `improvement_queue.md` — items #308, #318, #323 marked DONE; 3 new items (#325-327)
+- `content_calendar.md` — new blog outline (praca zdalna)
+- `changelog.md` — this entry
+
+**Site verification:** koszyk.html validated — DOCTYPE ✓, </html> ✓, bundle-upsell confirmed, free-ship-banner confirmed, addItem('cognicit', 2/3) correct API usage. No broken object syntax.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Bundle upsell: fixed broken addItem calls, added free shipping threshold messaging, smart show/hide based on cart quantity. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~324 completed + 20 active = ~344 total
+
+---
+
 ### 2026-03-28 — Power Cycle #67 (17:07 UTC)
 **Implemented:**
 - ✅ Item #318 — Created ecommerce_status.md

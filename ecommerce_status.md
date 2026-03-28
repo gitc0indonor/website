@@ -40,7 +40,44 @@ Currently using placeholder form ID `xpwzgryv`. Orders save to localStorage only
 - 50 submissions/month (sufficient for pre-launch)
 - Upgrade to $10/month for 1,000 submissions when needed
 
-## Cart Architecture
+## 🧪 Test Order Notification (Quick Verification)
+
+After activating Formspree, verify it works with this 3-minute test:
+
+1. **Open** the live site → `produkt.html`
+2. **Add** 1× CogniCit to cart (click "Dodaj do koszyka")
+3. **Go to** `koszyk.html` → verify item shows at 79,00 zł
+4. **Click** "Przejdź do kasy" → `kasa.html`
+5. **Fill in** test data:
+   - Imię i nazwisko: `Test Testowy`
+   - Email: `cognivia.business@outlook.com` (or your personal email)
+   - Telefon: `123456789`
+   - Ulica: `Testowa 1`
+   - Miasto: `Gdańsk`
+   - Kod pocztowy: `80-001`
+   - Shipping: InPost Paczkomat
+   - Payment: Przelew bankowy
+6. **Click** "Zamawiam i płacę"
+7. **Check inbox** for email from Formspree with order JSON
+8. **Verify** confirmation page (`potwierdzenie.html`) shows order ID
+
+### Expected Email Content
+```json
+{
+  "subject": "🛒 Nowe zamówienie CogniCit — Test Testowy",
+  "body": "imię: Test Testowy, email: ..., produkty: CogniCit × 1, suma: 79,00 zł"
+}
+```
+
+### Troubleshooting
+| Problem | Fix |
+|---------|-----|
+| No email received | Check spam folder; verify form ID matches |
+| Formspree 403 error | Form may be disabled in dashboard — re-enable |
+| "Form not found" | Wrong form ID — double-check the string in cognivia-cart.js |
+| reCAPTCHA error | Production site key needed — test key only works on localhost |
+
+## 📊 Order Flow Diagram
 
 ```
 cognivia-cart.js (377 lines)

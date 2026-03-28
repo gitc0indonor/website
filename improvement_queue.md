@@ -532,7 +532,7 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 307. **[NEW] Add order confirmation email auto-trigger after checkout** — Currently potwierdzenie.html shows confirmation but no email is sent to customer. Add a Formspree autoresponder or a simple JS trigger to send order confirmation email with order details, estimated delivery, and tracking link placeholder. Reduces "where's my order?" inquiries by ~40%. Estimated: 1 hour.
 
-308. **[NEW] Implement smart product bundle recommendations on koszyk.html** — When cart contains 1 box of Cognicit, show "Kup 2 — oszczędź 15%" upsell banner with one-click add. Cross-sell logic: if cart > 200 zł, suggest free shipping threshold message. Current koszyk.html (203 lines) has no upsell logic. Average order value increase potential: 20-30%. Estimated: 1.5 hours.
+308. ~~[DONE] Implement smart product bundle recommendations on koszyk.html~~ ✅ — Power Cycle #68. Fixed broken addItem() calls (was passing objects instead of addItem('cognicit', qty)). Added free shipping threshold banner: when cart < 120 zł, shows "Dodaj X więcej, aby otrzymać darmową dostawę!" Dynamic message updates with remaining amount. 2-pack card gets "Darmowa dostawa!" badge when cart qualifies. Bundle upsell now shows only when cart has exactly 1 box (was ≤1). Page reload after add-to-cart for clean state. All buttons use correct CogniviaCart.addItem('cognicit', qty) API.
 
 309. ~~**[DONE] Create Polish-language product video script + storyboard**~~ ✅ — Power Cycle #65. Created video-script-storyboard.md (4.8KB). 6-scene storyboard: Problem → Science → Mechanism → Trust → Proof → CTA. 60-90 second format. Full Polish voiceover script with timing. Production notes: style palette, voiceover direction, music reference, AI video tool options (Runway, Pika, D-ID), format variants (16:9, 9:16, 1:1). Cost estimates: $0 DIY to $1500 studio. Ready for freelance animator or AI video generation.
 
@@ -560,7 +560,7 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 317. **[NEW] Create "Suplementy a praca zdalna — jak zachować koncentrację w domu?" blog post** — Target "suplementy praca zdalna", "koncentracja w domu" (trending in Poland post-pandemic). Cover: home office distractions, digital fatigue, blue light impact, CogniCit as focus anchor for remote workers. Estimated: 2 hours.
 
-318. **[NEW] Add "Test email notification" section to ecommerce_status.md** — Document the current Formspree placeholder state, provide step-by-step instructions for CEO to create account and swap form ID. Include screenshot guide of formspree.io signup flow. Makes the activation path dead simple — CEO just follows steps. Estimated: 30 minutes.
+318. ~~[DONE] Add "Test email notification" section to ecommerce_status.md~~ ✅ — Power Cycle #68. Added step-by-step verification guide: 3-minute test protocol (add to cart → fill test data → submit → check inbox). Includes expected email content format, troubleshooting table for 4 common issues (no email, 403, form not found, reCAPTCHA). Makes Formspree activation foolproof for CEO.
 
 319. **[NEW] Add order confirmation email auto-send via Formspree webhook** — Once Formspree is activated, configure a webhook to auto-send branded order confirmation email to customer. Include order summary, shipping method, estimated delivery, and Cognivia branding. Reduces "did my order go through?" support inquiries. Pre-build template in /website/email-templates/order-confirmation.html so it's ready when Formspree goes live. Estimated: 1 hour.
 
@@ -574,6 +574,14 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 322. **[NEW] Create "Nootropiki ranking 2026" comparison blog post** — Full ranking page comparing CogniCit vs top 5 competitors on 6 criteria. Targets "nootropiki ranking 2026" (high-volume, yearly refresh). Publish April 2026 for Q2 traffic. Estimated: 3 hours.
 
-323. **[NEW] Add order confirmation email HTML template** — Pre-build responsive HTML email template for Formspree autoresponder. Cognivia branding, order summary table, shipping info, 30-day guarantee reminder. Ready to activate when Formspree goes live. Estimated: 1.5 hours.
+323. ~~[DONE] Add order confirmation email HTML template~~ ✅ — Power Cycle #68. Template already existed at email-templates/order-confirmation.html (created in earlier cycle). Full responsive HTML email: Cognivia header, success banner, order summary table, shipping address, total with VAT, 30-day guarantee reminder, contact info. Template variables use {{ORDER_ID}}, {{CUSTOMER_NAME}}, etc. for Formspree integration. Ready to activate when Formspree goes live.
 
 324. **[NEW] Create "Suplementy a kofeina u seniorów" blog post** — Target "kofeina seniorzy suplementy", "bezpieczna kofeina po 50". Growing concern among 50+ and their families. Positions CogniCit as zero-caffeine alternative for older adults. Estimated: 2 hours.
+
+### 🆕 Power Cycle #68 Additions (2026-03-28)
+
+325. **[NEW] Add "Polecane produkty" section to empty koszyk.html** — When cart is empty, show a personalized "Klienci kupili też" section with blog posts about ingredients (cytykolina, ALA, β-CD) and a CTA to produkt.html. Currently empty cart only shows one CogniCit card. Add 3 blog post cards matching the cross-sell style from the bottom of the page. Reduces bounce rate on empty cart. Estimated: 30 minutes.
+
+326. **[NEW] Add "Zamów telefonicznie" alternative ordering option to kasa.html** — Some Polish customers (especially 50+ demographic) prefer phone ordering. Add a small "Wolisz zamówić telefonicznie?" link that reveals a phone number or callback request form. Captures customers who abandon checkout due to payment anxiety. Estimated: 20 minutes.
+
+327. **[NEW] Create order confirmation thank-you page with social sharing** — After placing order on potwierdzenie.html, add social sharing buttons ("Powiedz znajomym o CogniCit") with pre-filled Facebook/Twitter share text. Word-of-mouth conversion from existing customers. Add referral code field for tracking. Estimated: 45 minutes.
