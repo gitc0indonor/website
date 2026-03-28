@@ -585,3 +585,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 326. **[NEW] Add "Zamów telefonicznie" alternative ordering option to kasa.html** — Some Polish customers (especially 50+ demographic) prefer phone ordering. Add a small "Wolisz zamówić telefonicznie?" link that reveals a phone number or callback request form. Captures customers who abandon checkout due to payment anxiety. Estimated: 20 minutes.
 
 327. **[NEW] Create order confirmation thank-you page with social sharing** — After placing order on potwierdzenie.html, add social sharing buttons ("Powiedz znajomym o CogniCit") with pre-filled Facebook/Twitter share text. Word-of-mouth conversion from existing customers. Add referral code field for tracking. Estimated: 45 minutes.
+
+### 🆕 Power Cycle #69 Additions (2026-03-28)
+
+328. **[NEW] Add live Chatwoot/Tawk.to chat widget for pre-sale questions** — Polish e-commerce customers expect instant support. Add a free chat widget (Tawk.to or Chatwoot) to produkt.html and kasa.html. Reduces cart abandonment by answering dosage, shipping, and ingredient questions in real-time. Tawk.to is free for 1 agent. Estimated: 30 minutes.
+
+329. **[NEW] Create "Składniki w pigułce" interactive ingredient explainer on produkt.html** — Add an expandable accordion or tabbed section below the main product description: each ingredient (Cytokolina, ALA, Beta-CD) gets a short animated icon + 2-sentence benefit + "Dowiedz się więcej" link to its dedicated page. Improves time-on-page and reduces bounce. Currently ingredients are mentioned but not visually separated. Estimated: 1.5 hours.
+
+330. **[NEW] Implement abandoned cart recovery via localStorage detection** — When user returns to site and localStorage has cart items but no completed order, show a subtle banner: "Masz coś w koszyku! Dokończ zamówienie →" with link to koszyk.html. Track via Plausible event. No backend needed — pure JS. Estimated: 20 minutes.

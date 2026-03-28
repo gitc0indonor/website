@@ -1,5 +1,9 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-03-28
+## Last Updated: 2026-03-28 18:43 UTC (Power Cycle #69)
+
+## 🔴 CRITICAL BLOCKER: Formspree STILL NOT ACTIVATED
+Last checked: 2026-03-28 18:43 UTC. Form ID still placeholder `xpwzgryv`.
+**Orders CANNOT be received until CEO activates Formspree.** This has been flagged in every cycle since #65.
 
 ## Current State
 The site has a **fully functional client-side JavaScript cart** (cognivia-cart.js) with:
