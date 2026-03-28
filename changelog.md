@@ -2,6 +2,55 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-28 — Power Cycle #70 (21:23 UTC)
+**Implemented:**
+- ✅ Item #335 — Created blog/jak-suplementy-wplywaja-na-koncentracje.html (27.6KB)
+  - Comprehensive SEO article targeting "suplementy na koncentrację" (8K+ monthly searches)
+  - Neuroscience basics: acetylcholine, dopamine, mitochondria explained accessibly
+  - Top 5 ingredients comparison table (cytykolina, ALA, omega-3, bacopa, kofeina) with PubMed counts
+  - Detailed ingredient sections: cytykolina mechanism, ALA mitochondrial protection, β-CD bioavailability
+  - 7-point buying checklist for choosing supplements
+  - 4-product comparison table (CogniCit vs cholina solo vs multi-nootropic vs kofeinowy)
+  - "Why 3 ingredients instead of 20?" philosophy section
+  - 5 expandable FAQ items with FAQPage JSON-LD schema for Google rich results
+  - Article + BreadcrumbList JSON-LD schemas
+  - Canonical/hreflang/OG/Twitter Card meta tags
+  - Share buttons (Facebook, Twitter/X, LinkedIn)
+  - Cross-links section (3 related articles)
+  - Satisfaction guarantee badge
+  - CTA section with pricing
+  - Added to sitemap.xml (priority 0.8)
+  - Added to blog/index.html as first blog card
+  - Added to index.html blog section as first card
+- ✅ Item #334 — Added buy badges to pages missing them
+  - faq-produkt.html: green pill "🛒 79 zł" in desktop nav
+  - certyfikaty.html: green pill "🛒 79 zł" in desktop nav
+  - kontakt.html: green pill "🛒 79 zł" in desktop nav + mobile buy badge in mobile menu
+  - opinie.html: green pill "🛒 79 zł" in desktop nav
+- ✅ Blog outline added to content_calendar.md: "Porównanie suplementów na pamięć — cytykolina vs bacopa vs ginkgo"
+- ✅ 2 new improvement ideas added to queue (#337-338)
+
+**Files changed:**
+- `blog/jak-suplementy-wplywaja-na-koncentracje.html` — NEW (27.6KB)
+- `sitemap.xml` — new blog URL added
+- `blog/index.html` — new blog card (first position)
+- `index.html` — new blog card in "Najnowsze artykuły" section (first position)
+- `faq-produkt.html` — buy badge in nav
+- `certyfikaty.html` — buy badge in nav
+- `kontakt.html` — buy badge in desktop nav + mobile menu
+- `opinie.html` — buy badge in nav
+- `improvement_queue.md` — items #334, #335 marked DONE; 2 new items (#337-338)
+- `content_calendar.md` — new blog outline
+- `changelog.md` — this entry
+
+**Site verification:** blog post validated — DOCTYPE ✓, </html> ✓, 3 JSON-LD schemas (Article, BreadcrumbList, FAQPage), FAQ accordion working. All 4 pages with new buy badges validated. Sitemap valid XML.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~335 completed + 6 active = ~341 total
+
+---
+
 ### 2026-03-28 — Power Cycle #69 (20:19 UTC)
 **Implemented:**
 - ✅ Item #333 — Added "Gdzie kupić?" availability badge to ALL landing pages

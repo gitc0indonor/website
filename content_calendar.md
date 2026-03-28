@@ -23,6 +23,33 @@
 
 ---
 
+### New Blog Post Outline (Added 2026-03-28 — Power Cycle #70)
+**Title:** Porównanie suplementów na pamięć — cytykolina vs bacopa vs ginkgo
+**Target:** Polish audience, SEO for "suplementy na pamięć ranking", "najlepszy suplement na pamięć"
+**Word count:** 1800-2200
+**Keywords:** suplementy na pamięć ranking, cytykolina vs bacopa, najlepszy suplement na pamięć, nootropik na pamięć
+
+**Outline:**
+1. **Wstęp** — Każdy zapomina. Kiedy to norma, a kiedy sygnał? Rynek suplementów na pamięć rośnie.
+2. **Jak działa pamięć?** — Hipokamp, acetylocholina, konsolidacja podczas snu. Prosty model.
+3. **Ranking składników na pamięć** — Tabela porównawcza:
+   - Cytykolina — 233 publikacji, prekursor ACh, 300 mg dawka
+   - Bacopa — 80 publikacji, adaptogen, działa po 4-6 tyg.
+   - Ginkgo biloba — 150+ publikacji, ale kontrowersyjne (GEM study 2008)
+   - Omega-3 (DHA) — budulec błon, ale 1-3 mies. na efekty
+   - Fosfatydyloseryna — dobry profil, ale drogi
+4. **Tabela 8 kryteriów** — składnik, dawka, czas działania, PubMed, GMP, cena/dzień, stymulant?, ocena
+5. **Dlaczego cytykolina wygrywa?** — Najwięcej dowodów, najszybsze działanie, synergia
+6. **CogniCit — więcej niż jeden składnik** — Cytykolina + ALA + β-CD
+7. **Czego unikać?** — Proprietary blends, brak GMP, mikrodawki
+8. **Podsumowanie** — Ranking + rekomendacja
+
+**CTA:** produkt.html + email capture
+**Internal links:** produkt.html, porownanie.html, nauka.html, cytykolina-przewodnik-kompletny.html, skladniki.html
+**Status:** Outline ready, needs writing
+
+---
+
 ### Future Posts (Ideas)
 | # | Title | Focus | Status |
 |---|-------|-------|--------|
