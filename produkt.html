@@ -92,6 +92,7 @@
     footer a { color: var(--cognivia-pink); }
     .footer-legal { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 11px; color: rgba(255,255,255,0.4); line-height: 1.6; }
     @media (max-width: 768px) { .hero h1 { font-size: 36px; } .ingredients-grid { grid-template-columns: 1fr; } .science-section { padding: 24px; } }
+      .mobile-buy-nav { display: block !important; }
   
     .breadcrumb {
       max-width: 900px;
@@ -119,8 +120,9 @@
       background: rgba(255,255,255,0.97);
       backdrop-filter: blur(10px);
       border-top: 1px solid #e0dcd4;
-      padding: 12px 16px;
+      padding: 10px 16px;
       box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+      overflow: visible;
     }
     .floating-cta-inner {
       display: flex;
@@ -128,40 +130,84 @@
       justify-content: space-between;
       max-width: 500px;
       margin: 0 auto;
-      gap: 12px;
+      gap: 10px;
+    }
+    .floating-cta-thumb {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg,#e8f5e9,#f1f8e9);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+      border: 1px solid #c8e6c9;
+    }
+    .floating-cta-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .floating-cta-name {
+      font-family: 'EB Garamond', serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--charcoal);
+      line-height: 1.2;
+    }
+    .floating-cta-stars {
+      font-size: 11px;
+      color: #f9a825;
+      letter-spacing: 1px;
     }
     .floating-cta-price {
       font-family: 'EB Garamond', serif;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 700;
       color: var(--cognivia-green);
       white-space: nowrap;
+      text-align: right;
     }
     .floating-cta-price small {
       display: block;
       font-family: 'EB Garamond', Georgia, serif;
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 400;
       color: #888;
     }
     .floating-cta-btn {
-      flex: 1;
       background: var(--cognivia-green);
       color: white;
       border: none;
-      padding: 14px 20px;
+      padding: 12px 18px;
       border-radius: 8px;
       font-family: 'EB Garamond', Georgia, serif;
-      font-size: 15px;
-      font-weight: 500;
+      font-size: 14px;
+      font-weight: 600;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      transition: background 0.2s;
+      gap: 6px;
+      transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+      white-space: nowrap;
+      flex-shrink: 0;
     }
-    .floating-cta-btn:hover { background: #234f33; }
+    .floating-cta-btn:hover { background: #234f33; transform: translateY(-1px); }
+    .floating-cta-btn:active { transform: scale(0.96); }
+    .floating-cta-badge {
+      display: none;
+      position: absolute;
+      top: -8px;
+      right: 12px;
+      background: #f9a825;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-family: 'DM Sans', sans-serif;
+    }
     /* Satisfaction guarantee section — #77 */
     .guarantee-section {
       background: linear-gradient(135deg, #f9f5ef 0%, #f0ebe2 100%);
@@ -216,6 +262,7 @@
       margin-bottom: 4px;
     }
     @media (max-width: 768px) {
+      .mobile-buy-nav { display: block !important; }
       .floating-cta { display: block; }
       body { padding-bottom: 70px; }
       .guarantee-steps { grid-template-columns: 1fr; }
@@ -301,7 +348,8 @@
     <a href="blog/">Blog</a>
     <a href="faq.html">FAQ</a>
     <a href="kontakt.html">Kontakt</a>
-  </nav>
+        <a href="produkt.html" style="background:linear-gradient(135deg,#2e7d32,#388e3c);color:#fff!important;padding:10px 20px;border-radius:24px;text-align:center;font-weight:600;margin-top:8px;display:none;text-decoration:none;" class="mobile-buy-nav">🛒 Kup CogniCit → 79 zł</a>
+    </nav>
 
   <!-- STICKY SIDEBAR — #120 -->
   <div class="sticky-sidebar" id="stickySidebar">
@@ -327,7 +375,8 @@
 <a href="/">Strona główna</a>
 <span>›</span>
 <span>Produkt</span>
-</nav>
+      <a href="produkt.html" style="background:linear-gradient(135deg,#2e7d32,#388e3c);color:#fff!important;padding:10px 20px;border-radius:24px;text-align:center;font-weight:600;margin-top:8px;display:none;text-decoration:none;" class="mobile-buy-nav">🛒 Kup CogniCit → 79 zł</a>
+    </nav>
   <div class="legal-bar">
     <strong>Suplement diety.</strong> Nie może być stosowany jako substytut (zamiennik) zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. Nie przekraczać zalecanej dziennej porcji. Przechowywać w sposób niedostępny dla małych dzieci.
   </div>
@@ -344,6 +393,7 @@
       <a href="opinie.html">Opinie</a>
       <a href="o-nas.html">O nas</a>
       <a href="#kontakt">Kontakt</a>
+          <a href="produkt.html" style="background:linear-gradient(135deg,#2e7d32,#388e3c);color:#fff!important;padding:10px 20px;border-radius:24px;text-align:center;font-weight:600;margin-top:8px;display:none;text-decoration:none;" class="mobile-buy-nav">🛒 Kup CogniCit → 79 zł</a>
     </nav>
   </header>
 
@@ -410,6 +460,7 @@
     .urgency-banner .urgency-close{background:none;border:none;color:rgba(255,255,255,0.6);cursor:pointer;font-size:18px;padding:0 4px;line-height:1}
     .urgency-banner .urgency-close:hover{color:#fff}
     @media(max-width:768px){.urgency-banner{font-size:13px;padding:10px 16px;gap:8px}.urgency-banner .urgency-cta{padding:5px 12px;font-size:12px}}
+      .mobile-buy-nav { display: block !important; }
   </style>
   <div class="urgency-banner" id="urgencyBanner">
     <span>🔥 Zostało tylko <span class="stock-count" id="stockCount">23</span> sztuk z pierwszej partii</span>
@@ -972,7 +1023,7 @@
   <!-- PRZECHOWYWANIE -->
   <section>
     <div style="max-width: 800px; margin: 0 auto; background: white; padding: 32px; border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.06);">
-      <h3 style="font-family: 'EB Garamond', serif; color: var(--cognivia-green); font-size: 24px; margin-bottom: 16px;">Przechowywanie</h3>
+      <h3 style="font-family: 'EB Garamond', serif; color: var(--cognivia-green); font-size: 24px; margin-bottom: 16px;">Przechowywanie i informacje o partii</h3>
       <ul style="padding-left: 20px; font-size: 14px; line-height: 2;">
         <li>Przechowywać w temperaturze pokojowej (15–25°C)</li>
         <li>Chronić od światła i wilgoci</li>
@@ -980,6 +1031,12 @@
         <li>Nie stosować po upływie terminu ważności podanym na opakowaniu</li>
         <li>Po otwarciu zużyć w ciągu 3 miesięcy</li>
       </ul>
+      <div style="margin-top: 20px; padding: 16px 20px; background: #f8faf8; border-left: 3px solid #2e7d32; border-radius: 0 8px 8px 0; font-size: 13px; color: #555; line-height: 1.7;">
+        <strong style="color: #2e7d32;">📅 Gwarancja świeżości:</strong> Każda partia CogniCit produkowana jest na bieżąco. Data ważności i numer partii znajdują się na spodzie opakowania. Minimalny okres przydatności: 12 miesięcy od daty zakupu.
+      </div>
+      <div style="margin-top: 12px; padding: 16px 20px; background: #f8faf8; border-left: 3px solid #8f7a3d; border-radius: 0 8px 8px 0; font-size: 13px; color: #555; line-height: 1.7;">
+        <strong style="color: #8f7a3d;">🔬 Śledzenie partii:</strong> Każdy produkt można zidentyfikować po numerze partii — umożliwia to pełną ścieżkę od surowca do gotowego suplementu. Wyniki badań laboratoryjnych dla każdej partii dostępne na <a href="certyfikaty.html" style="color: #2e7d32; font-weight: 600; text-decoration: none;">stronie certyfikatów</a>.
+      </div>
     </div>
   </section>
 
@@ -1740,14 +1797,20 @@
 
   <!-- FLOATING MOBILE CTA — #73 -->
   <div class="floating-cta" id="floatingCta">
+    <div class="floating-cta-badge">🔥 Ostatnie sztuki</div>
     <div class="floating-cta-inner">
+      <div class="floating-cta-thumb">💊</div>
+      <div class="floating-cta-info">
+        <div class="floating-cta-name">CogniCit — 30 kapsułek</div>
+        <div class="floating-cta-stars">★★★★★ 4.8</div>
+      </div>
       <div class="floating-cta-price">
         79,00 zł
-        <small>30 kapsułek · darmowa dostawa od 120 zł</small>
+        <small>darmowa dostawa od 120 zł</small>
       </div>
       <button class="floating-cta-btn" onclick="CogniviaCart.addItem('cognicit', 1)">
-        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-        Zamów teraz
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Zamów
       </button>
     </div>
   </div>

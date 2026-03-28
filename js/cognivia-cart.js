@@ -457,6 +457,37 @@ const CogniviaCart = {
     window.open(mailtoUrl, '_blank');
   },
 
+  // ---- Abandoned Cart Recovery Banner ----
+
+  showAbandonedCartBanner() {
+    const cart = this.getCart();
+    if (cart.items.length === 0) return;
+    if (localStorage.getItem('cognivia_cart_banner_dismissed')) return;
+    // Don't show on cart or checkout pages
+    if (window.location.pathname.includes('koszyk') || window.location.pathname.includes('kasa')) return;
+
+    const totalItems = cart.items.reduce((s, i) => s + i.qty, 0);
+    const totalPrice = this.formatPrice(cart.items.reduce((s, i) => s + (i.price * i.qty), 0));
+
+    const banner = document.createElement('div');
+    banner.id = 'abandoned-cart-banner';
+    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(135deg,#2e7d32,#388e3c);color:#fff;padding:12px 20px;display:flex;align-items:center;justify-content:center;gap:16px;font-size:14px;font-family:Inter,sans-serif;box-shadow:0 4px 20px rgba(0,0,0,0.15);animation:slideDown 0.4s ease;';
+
+    banner.innerHTML = `
+      <span style="font-size:18px;">🛒</span>
+      <span>Masz w koszyku <strong>${totalItems} ${totalItems === 1 ? 'produkt' : 'produkty'}</strong> za <strong>${totalPrice}</strong>!</span>
+      <a href="koszyk.html" style="background:#fff;color:#2e7d32;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px;white-space:nowrap;transition:transform 0.2s;">Dokończ zamówienie →</a>
+      <button onclick="document.getElementById('abandoned-cart-banner').remove();localStorage.setItem('cognivia_cart_banner_dismissed','1');" style="background:none;border:none;color:rgba(255,255,255,0.7);font-size:18px;cursor:pointer;padding:0 4px;">×</button>
+    `;
+
+    const style = document.createElement('style');
+    style.textContent = '@keyframes slideDown{from{transform:translateY(-100%)}to{transform:translateY(0)}}#abandoned-cart-banner a:hover{transform:scale(1.05)}';
+    document.head.appendChild(style);
+    document.body.prepend(banner);
+    // Push body down so banner doesn't overlap content
+    document.body.style.marginTop = '48px';
+  },
+
   // ---- Init ----
 
   init() {
@@ -465,6 +496,8 @@ const CogniviaCart = {
     if (document.getElementById('cart-page-items')) this.renderCartPage();
     // Render checkout if on checkout page
     if (document.getElementById('checkout-summary')) this.renderCheckoutPage();
+    // Show abandoned cart recovery banner
+    this.showAbandonedCartBanner();
   }
 };
 

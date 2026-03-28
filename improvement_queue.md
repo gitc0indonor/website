@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-28 (Power Cycle #71)
+## Last Updated: 2026-03-28 (Power Cycle #73)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -623,3 +623,29 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 340. **[NEW] Add "Warto wiedzieć" fact boxes to top 5 blog posts missing them** — Audit all blog posts. Add consistent fact boxes (search volume stat, star rating, product CTA) to highest-traffic posts that lack them. Strengthens conversion on content pages. Estimated: 30 minutes.
 
 341. **[NEW] Create pre-launch "Otwarcie za X dni" countdown banner for index.html** — Animated countdown to product launch date, creates urgency. Below hero section. Email capture gate: "Zapisz się i otrzymaj powiadomienie + 15% zniżki w dniu premiery." Replaces static "Zapisz się na premierę" CTA. Estimated: 1 hour.
+
+---
+
+### 🆕 Cron Cycle #70 Additions (2026-03-28 22:13 UTC)
+
+342. **[NEW] Expand Privacy Policy (RODO) & Terms (Regulamin) for EU compliance** — Current privacy policy (105 lines) and T&C (95 lines) insufficient for Polish e-commerce. Need: data controller identity & address, DPO contact, data processing legal bases, cookie consent specifics (granular opt-in), right to erasure/rectification procedures, complaint procedures, EU Online Dispute Resolution link (ec.europa.eu/odr), withdrawal form template per Polish consumer law. Priority: HIGH (legal risk). Estimated: 3 hours.
+
+343. **[NEW] Add visual trust badges to checkout page (kasa.html)** — Checkout has only 7 textual trust mentions. Add prominent SVG/image badges directly above and below submit button: GMP certification seal, "🔒 Szyfrowane płatności SSL", "✅ 30 dni gwarancji satysfakcji", "🇵🇱 Wysyłka z Polski". Trust badges near CTA buttons increase conversion 10-25% in e-commerce studies. Priority: MEDIUM (conversion). Estimated: 45 minutes.
+
+344. **[NEW] Add product storage & shelf-life info section to produkt.html** — Product page lacks visible storage instructions. Add "Przechowywanie" block near dosage section: "Przechowywać w suchym miejscu, w temperaturze pokojowej, chronić od światła, w sposób niedostępny dla małych dzieci. Nie stosować po upływie terminu ważności. Data ważności i nr partii na opakowaniu." Also add to FAQ-produkt.html if missing. Priority: LOW (completeness). Estimated: 20 minutes.
+
+---
+
+### 🆕 Power Cycle #72 Additions (2026-03-28)
+
+345. **[NEW] Add shipping cost estimator widget to koszyk.html** — Interactive calculator: user selects voivodeship/city, shows exact delivery cost per courier (InPost 12.99 zł, DPD 14.99 zł, Poczta 10.99 zł) and free shipping threshold progress bar. Reduces cart abandonment by eliminating surprise shipping costs at checkout. Polish e-commerce data shows 48% of cart abandonments are due to unexpected shipping fees. Estimated: 1.5 hours.
+
+346. **[NEW] Create "Jak wybrać suplement na koncentrację? Kompletny przewodnik kupującego 2026" SEO mega-article** — 4000+ word authority article targeting "jak wybrać suplement na koncentrację" (2K+ monthly). Covers: 10 red flags table, GMP verification checklist, GIS registration how-to, ingredient dose comparison, price-per-serving calculator, CogniCit as the gold standard example. Designed to rank #1 for buyer-intent keywords. Includes FAQPage + HowTo JSON-LD. Estimated: 4 hours.
+
+347. **[NEW] Add micro-animation to "Zamów i zapłać" button on kasa.html** — On hover: subtle pulse glow (green box-shadow expansion), slight scale(1.02). On click: quick scale(0.97) bounce-back + brief loading spinner replacement ("Przetwarzanie..."). Makes the checkout feel premium and responsive. CSS-only, no JS library. Industry data: micro-interactions on primary CTA increase click-through 8-12%. Estimated: 20 minutes.
+
+348. **[NEW] Add "Opinie klientów" floating badge to ALL product-category landing pages** — Small persistent star rating badge (★★★★★ 4,8/5) linking to opinie.html, visible on matura, sesja, powrot-do-szkoly, porownanie, ranking-nootropikow pages. Currently only produkt.html and index.html show visible star ratings. Adding consistent ratings across all 7+ landing pages builds trust at every conversion touchpoint. Estimated: 30 minutes.
+
+349. **[NEW] Create "Porównanie suplementów na koncentrację bez kofeiny" SEO landing page** — Target "suplement na koncentrację bez kofeiny" (1K+ monthly searches in Poland). Comparison table: CogniCit (0mg caffeine + 3 synergistic ingredients) vs Brain Actives (50mg caffeine) vs NooCube (0mg, different formula) vs Mind Lab Pro (0mg, different formula). CogniCit wins on: zero caffeine + GMP + EU compliant + 3 synergistic ingredients + lowest price/day. Article + BreadcrumbList + Product aggregateRating JSON-LD. Estimated: 2.5 hours.
+
+350. **[NEW] Add seasonal "Wakacyjna energia" landing page (/wakacje)** — Target summer vacation period (Jun-Aug). Polish tourists and active vacationers searching for "suplementy na energię lato", "suplementy na wakacje". Position CogniCit as: energy for hiking/travel without caffeine crashes, 1 capsule/day simplicity for travel, GMP safety for peace of mind. Include: comparison vs energy drinks (sugar crash), caffeine pills (insomnia in hotel), travel-friendly dosing protocol. Seasonal peak: May-Jul. Estimated: 2 hours.

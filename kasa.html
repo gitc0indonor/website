@@ -194,9 +194,43 @@
           <div class="summary-row"><span>Dostawa</span><span id="summary-shipping">—</span></div>
           <div class="summary-row total"><span>Razem</span><span id="summary-total">0,00 zł</span></div>
           <div class="vat-note">W tym VAT: <span id="summary-vat">0,00 zł</span> (23%)</div>
+          <!-- Trust Badges Above CTA — Power Cycle #72 -->
+          <div style="display: flex; justify-content: center; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 5px; padding: 6px 12px; background: #f0f7f0; border: 1px solid #c8e6c9; border-radius: 20px; font-size: 11px; font-weight: 500; color: #2e7d32; white-space: nowrap;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Szyfrowanie SSL
+            </div>
+            <div style="display: flex; align-items: center; gap: 5px; padding: 6px 12px; background: #f0f7f0; border: 1px solid #c8e6c9; border-radius: 20px; font-size: 11px; font-weight: 500; color: #2e7d32; white-space: nowrap;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Certyfikat GMP
+            </div>
+            <div style="display: flex; align-items: center; gap: 5px; padding: 6px 12px; background: #f0f7f0; border: 1px solid #c8e6c9; border-radius: 20px; font-size: 11px; font-weight: 500; color: #2e7d32; white-space: nowrap;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+              30 dni zwrotu
+            </div>
+            <div style="display: flex; align-items: center; gap: 5px; padding: 6px 12px; background: #f0f7f0; border: 1px solid #c8e6c9; border-radius: 20px; font-size: 11px; font-weight: 500; color: #2e7d32; white-space: nowrap;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5a1 1 0 0 1-1 1h-1"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              Wysyłka z PL
+            </div>
+          </div>
           <button class="btn-place-order" id="place-order-btn" onclick="handleCheckout()">
             Zamów i zapłać
           </button>
+          <!-- Trust micro-info below CTA -->
+          <!-- Payment Method Icons Below CTA — Power Cycle #72 -->
+          <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 14px; flex-wrap: wrap; padding: 10px 0;">
+            <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: #0a0a0a; letter-spacing: 0.5px;">BLIK</div>
+            <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: #1a1f71; letter-spacing: 0.5px;">VISA</div>
+            <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: #eb001b; letter-spacing: 0.5px;">Mastercard</div>
+            <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: #00a4e4; letter-spacing: 0.5px;">PayU</div>
+            <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: #1a73e8; letter-spacing: 0.5px;">Google Pay</div>
+            <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: #000; letter-spacing: 0.5px;">Apple Pay</div>
+          </div>
+          <div style="display: flex; justify-content: center; gap: 16px; margin-top: 10px; font-size: 10px; color: var(--text-muted, #999);">
+            <span>💳 Płatności chronione</span>
+            <span>📦 Wysyłka 24h</span>
+            <span>✅ GIS zarejestrowany</span>
+          </div>
           <div style="text-align: center; margin-top: 14px;">
             <div onclick="var el=document.getElementById('phone-order-box');el.style.display=el.style.display==='none'?'block':'none';" style="font-size: 13px; color: #2e7d32; cursor: pointer; padding: 8px; border-radius: 8px; background: #f0f7f0; transition: background 0.2s;" onmouseover="this.style.background='#e0f0e0'" onmouseout="this.style.background='#f0f7f0'">📞 Wolisz zamówić telefonicznie? Kliknij tutaj</div>
             <div id="phone-order-box" style="display:none; margin-top: 10px; padding: 16px; background: white; border-radius: 8px; border: 1px solid #c8e6c9; text-align: left;">

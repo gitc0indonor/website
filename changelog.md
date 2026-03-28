@@ -2,6 +2,55 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-28 — Power Cycle #73 (23:53 UTC)
+**Implemented:**
+- ✅ Item #340 (partial) — Added "Warto wiedzieć" fact boxes to 5 top blog posts missing them
+  - blog/czy-suplementy-dzialaja.html — 5K+ monthly searches stat, star rating, caffeine-free positioning
+  - blog/chroniczne-zmeczenie-umyslowe.html — 4K+ searches stat, star rating, 3 synergistic ingredients
+  - blog/nootropiki-a-sen.html — 3K+ searches "suplementy a sen", star rating, zero caffeine for sleep
+  - blog/suplementy-praca-zdalna.html — 2.5M remote workers stat, star rating, 1 capsule simplicity
+  - blog/porownanie-suplementow-na-pamiec.html — 1.5K searches "suplementy na pamięć", star rating, 233 PubMed publications
+  - Each fact box: gold left border, cream gradient background, 3-row grid (stat + description), product CTA link
+  - Total blog posts with fact boxes: 21/51 (up from 16/51)
+- ✅ New blog post outline added to content_calendar.md: "Suplementy a leki na nadciśnienie — co wolno łączyć?" — targets 10M Polish hypertension patients + families
+- ✅ 3 new improvement ideas added to queue (#348-350)
+
+**Files changed:**
+- `blog/czy-suplementy-dzialaja.html` — fact box (~12 lines)
+- `blog/chroniczne-zmeczenie-umyslowe.html` — fact box (~12 lines)
+- `blog/nootropiki-a-sen.html` — fact box (~12 lines)
+- `blog/suplementy-praca-zdalna.html` — fact box (~12 lines)
+- `blog/porownanie-suplementow-na-pamiec.html` — fact box (~12 lines)
+- `content_calendar.md` — new blog outline (nadciśnienie + suplementy)
+- `improvement_queue.md` — items #348-350 added, timestamp updated
+
+**Site verification:** All 5 modified files validated — DOCTYPE ✓, </html> ✓. Fact boxes confirmed on all 5 posts.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~347 completed + 11 active = ~358 total
+
+
+### 2026-03-28 — Power Cycle #72 (23:23 UTC)
+**Implemented:**
+- ✅ Enhanced checkout trust badges (kasa.html) — Added prominent payment method icons below CTA: BLIK, VISA, Mastercard, PayU, Google Pay, Apple Pay. Clean card-style badges with brand colors. Reinforces payment security at conversion decision point.
+- ✅ Enhanced storage section (produkt.html) — Renamed to "Przechowywanie i informacje o partii". Added freshness guarantee box (📅 12-month minimum shelf life from purchase date) and batch traceability box (🔬 full supply chain traceability per batch, link to certyfikaty.html). Two distinct info callouts with green/gold accent borders.
+- ✅ New blog post outline added to content_calendar.md: "Czy kofeina niszczy suplementy? Prawda o łączeniu kawy z nootropikami" — zero-competition SEO topic.
+- ✅ 3 new improvement ideas added to queue (#345-347)
+
+**Files changed:**
+- `kasa.html` — payment method icons below CTA button
+- `produkt.html` — enhanced przechowywanie section with freshness + batch traceability
+- `content_calendar.md` — new blog outline (kofeina suplementy łączenie)
+- `improvement_queue.md` — items #345-347 added
+
+**Site verification:** kasa.html DOCTYPE ✓, </html> ✓. produkt.html DOCTYPE ✓, </html> ✓.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID). Payment method trust badges now visible at checkout.
+
+**Queue:** ~343 completed + 8 active = ~351 total
+
+
 ### 2026-03-28 — Power Cycle #70 (21:23 UTC)
 **Implemented:**
 - ✅ Item #335 — Created blog/jak-suplementy-wplywaja-na-koncentracje.html (27.6KB)

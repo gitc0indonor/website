@@ -1940,3 +1940,53 @@
 **Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, blog/suplementy-dla-programistow.html, jak-stosowac.html, porownanie.html
 **SEO angle:** "produktywność w pracy" + "suplementy" = growing Polish search trend. Positions CogniCit as the professional's cognitive tool. Evergreen with Sep peak (back to office).
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-28 — Power Cycle #72)
+**Title:** Czy kofeina niszczy suplementy? Prawda o łączeniu kawy z nootropikami
+**Target:** Polish audience, SEO for "kofeina suplementy łączenie", "kawa a suplementy", "czy kofeina blokuje wchłanianie"
+**Word count:** 1500-1800
+**Keywords:** kofeina suplementy łączenie, kawa a suplementy diety, kofeina wchłanianie, interakcje kofeina suplementy, kawa rano suplement
+
+**Outline:**
+1. **Wstęp** — 80% Polaków pije kawę rano. Większość bierze suplementy o tej samej porze. Czy to problem?
+2. **Jak kofeina wpływa na wchłanianie?** — Mechanizm: kofeina przyspiesza perystaltykę, zmniejsza czas kontaktu z błoną śluzową. Wpływ na żelazo, wapń, witaminy z grupy B. Badania: kawa zmniejsza wchłanianie żelaza o 39% (Morck 1983).
+3. **Które suplementy kofeina "niszczy"?** — Tabela interakcji: żelazo (TAK, -39%), wapń (umiarkowany), witamina D (brak istotnego wpływu), cytykolina (brak interakcji), ALA (brak interakcji), β-CD (brak interakcji). CogniCit = bezpieczny z kawą.
+4. **Czasowanie = rozwiązanie** — Zasada: suplement z posiłkiem, kawa 30-60 min później. Poranny protokół: 7:00 CogniCit ze śniadaniem → 8:00 kawa. Proste.
+5. **Kofeina a nootropiki — synergia czy konflikt?** — Cytykolina + kofeina = synergia (oba zwiększają acetylocholinę różnymi mechanizmami). ALA + kofeina = brak konfliktu (ALA działa antyoksydacyjnie, nie farmakokinetycznie).
+6. **Przypadki szczególne** — Leki na nadciśnienie + kofeina = ostrożnie. Żelazo + kawa = odstęp 2h. Leki psychotropowe + kofeina = konsultacja z lekarzem.
+7. **Protokół "Kawa + CogniCit"** — Prosta infografika: co rano, co po śniadaniu, co odstawić.
+8. **Podsumowanie** — Kofeina nie "niszczy" większości suplementów. Klucz to czasowanie. CogniCit zaprojektowany tak, by współdziałać z poranną kawą.
+
+**CTA:** produkt.html + email capture
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, faq-produkt.html
+**SEO angle:** Zero-quality Polish content on this specific topic. Featured snippet potential ("Czy kofeina blokuje wchłanianie suplementów?"). Answers a real concern 80% of supplement users have.
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-28 — Power Cycle #73)
+**Title:** Suplementy a leki na nadciśnienie — co wolno łączyć? Przewodnik dla seniorów
+**Target:** Polish seniors + families, SEO for "suplementy nadciśnienie leki", "cytykolina ciśnienie krwi", "nootropiki leki ciśnienie"
+**Word count:** 1500-2000
+**Keywords:** suplementy nadciśnienie leki, cytykolina ciśnienie, nootropiki leki ciśnienie, suplementy dla seniorów bezpieczne, CogniCit ciśnienie
+
+**Outline:**
+1. **Wstęp** — 10 mln Polaków ma nadciśnienie. Większość przyjmuje leki. Czy suplementy kolidują?
+2. **Jak leki na nadciśnienie działają?** — 4 grupy: ACE-inhibitory, beta-blokery, blokery kanału wapniowego, diuretyki. Prosty mechanizm.
+3. **Które suplementy kolidują?** — Tabela interakcji: kofeina (TAK — podnosi ciśnienie), potas (przy diuretykach), dziurawiec (enzymy wątrobowe). CogniCit = brak kolizji.
+4. **Cytykolina a ciśnienie** — Brak wpływu na ciśnienie krwi w badaniach klinicznych. Bezpieczna przy lekach hipotensyjnych. PubMed evidence.
+5. **ALA a ciśnienie** — Badania: ALA może obniżać ciśnienie (efekt dodatni). Nie koliduje z lekami. Hager et al. 2007.
+6. **β-CD** — Obojętna dla metabolizmu leków. Nie wpływa na farmakokinetykę.
+7. **CogniCit — zero kofeiny, zero kolizji** — Porównanie z suplementami zawierającymi kofeinę (Brain Actives 50mg — ryzyko!). CogniCit = bezpieczny wybór.
+8. **Protokół dla seniora z nadciśnieniem** — 1 kapsułka rano z posiłkiem, konsultacja z kardiologiem (zasada ostrożności), monitoring ciśnienia.
+9. **Kiedy NIE brać suplementów?** — Przy zmianach dawkowania leków, przed operacją, przy niestabilnym ciśnieniu. Zawsze konsultacja.
+10. **Podsumowanie** — Tabela: 6 suplementów × ryzyko interakcji z lekami na nadciśnienie. CogniCit = niskie ryzyko.
+
+**CTA:** Zamów CogniCit — bezpieczny suplement dla seniorów → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-seniorow-50-plus.html, faq-produkt.html, skutki-uboczne.html, jak-stosowac.html, certyfikaty.html
+**SEO angle:** "suplementy a nadciśnienie" — critical safety query with zero quality Polish content. Positions Cognivia as the responsible brand addressing real medical concerns. Featured snippet potential for interaction table. High trust-building value.
+**Target platforms:** Google (SEO), grupy FB o zdrowiu seniorów, Wykop
+**Season:** Evergreen, peak autumn/winter (health awareness)
+**Status:** Outline ready, needs writing
