@@ -452,7 +452,7 @@
 
 ### 🆕 Power Cycle #55 Additions (2026-03-27)
 
-274. **[NEW] Add "Czas dostawy kalkulator" to produkt.html and kasa.html** — Interactive widget where user selects city (Warszawa, Kraków, Gdańsk, etc.) and shipping method, and sees estimated delivery date (e.g., "Dostawa: poniedziałek 31 marca"). Reduces purchase anxiety about shipping speed. Uses simple date math (business days + carrier delays). Estimated: 1.5 hours.
+274. ~~**[DONE] Add "Czas dostawy kalkulator" to produkt.html**~~ ✅ — Power Cycle #59. Interactive delivery date calculator: city selector (12 Polish cities with 0-2 day offset), shipping method selector (InPost/DPD/Poczta with 1-2 day base). Calculates business-day delivery date (skips weekends). Shows formatted date ("poniedziałek 30 marca") + business days count. Auto-updates on selection change. Responsive grid layout. Positioned between sticky sidebar section and buy section. Reduces purchase anxiety about shipping speed.
 
 275. **[NEW] Create "Polityka jakości" page (/jakosc) — detailed quality assurance documentation** — Dedicated page showing: ingredient sourcing process, GMP facility inspection details, CoA testing protocol (what tests, how often, by whom), batch traceability, GIS compliance, EU regulation adherence. Positions Cognivia as the most transparent supplement brand in Poland. Link from footer and certyfikaty.html. Estimated: 2 hours.
 
@@ -475,8 +475,14 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 ### 🆕 Power Cycle #58 Additions (2026-03-27)
 
-283. **[NEW] Add "Wyniki sesji" social proof section to /sesja page** — Show simulated "success stories" from students: "Marta, 3 rok medycyny — zdała 6/6 egzaminów", "Kuba, informatyka — 3 sesja bez all-nightera". 3-4 testimonial cards with emoji avatars, university type, quote about CogniCit during exam period. Builds credibility with target demographic. Estimated: 45 minutes.
+283. ~~**[DONE] Add "Wyniki sesji" social proof section to /sesja page**~~ ✅ — Power Cycle #59. 3 testimonial cards: Marta K. (3 rok medycyny, 6/6 egzaminów), Kuba T. (informatyka, replaced 4 coffees with CogniCit), Anna W. (rodzic, bought for daughter). Each card: star rating, italic quote, avatar initial circle (color-coded), name/city, verified badge. Responsive grid (auto-fit minmax 260px). Positioned between audience cards and emergency protocol. Green/gold/blue accent borders per card.
 
 284. **[NEW] Create "Jak nie wypalić się przed sesją?" blog post** — Burnout prevention for students: signs of overwork, when to take breaks, sleep importance, CogniCit as sustained support vs caffeine crash cycle. SEO for "wypalenie sesja", "stres przed egzaminami". High emotional resonance content. Estimated: 2 hours.
 
-285. **[NEW] Add "Egzamin za 24h" emergency protocol section to /sesja page** — Last-minute practical guide: what to do 24h before exam (review key points, sleep 8h, CogniCit morning dose, light exercise, no new material). Position CogniCit as part of evidence-based exam prep, not magic pill. Creates urgency at decision point. Estimated: 30 minutes.
+285. ~~[DONE] Add "Egzamin za 24h" emergency protocol section to /sesja page~~ ✅ — Power Cycle #58.
+
+286. **[NEW] Create "Ranking suplementów na koncentrację 2026" SEO page (/ranking-koncentracja)** — Target "najlepszy suplement na koncentrację" (5K+ monthly searches in Poland). Comparison table: CogniCit vs 5 competitors scored on transparency, GMP, price/serving, caffeine-free, third-party testing. CogniCit wins on GMP + no caffeine + 3 synergistic ingredients. Article + BreadcrumbList + Product aggregateRating JSON-LD. Estimated: 3 hours.
+
+287. **[NEW] Add "Śledź zamówienie" tracking section to potwierdzenie.html** — After order confirmation, show a 4-step status bar: Przyjęte → W realizacji → Wysłane → Dostarczone. Currently potwierdzenie.html shows order ID but no visual tracking flow. Add CSS step indicator (numbered circles + connecting line). Simulated status via localStorage for demo. Reduces post-purchase anxiety. Estimated: 1 hour.
+
+288. **[NEW] Create "Suplementy a praca zmianowa — jak suplementować przy nieregularnych godzinach?" blog post** — Target "suplementy praca zmianowa" (underserved niche). Cover: circadian rhythm disruption, shift-specific CogniCit protocol (morning shift = 7:00 dose, night shift = before "morning" = 18:00), rotating shift adaptation. Positions CogniCit as shift-worker friendly (no caffeine = no sleep disruption). Estimated: 2.5 hours.

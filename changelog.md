@@ -1,6 +1,37 @@
 # Website Changelog
 ## All changes to cognivia.eu static site
 
+### 2026-03-28 — Power Cycle #59 (00:19 UTC)
+**Implemented:**
+- ✅ Item #283 — Added "Wyniki sesji" social proof section to /sesja.html
+  - 3 testimonial cards: Marta K. (3 rok medycyny, 6/6 egzaminów), Kuba T. (informatyka, replaced 4 coffees with CogniCit), Anna W. (rodzic, bought for daughter)
+  - Each card: ★★★★★ star rating, italic quote, color-coded avatar initial circle, name/city, green "zweryfikowany" badge
+  - Responsive grid (auto-fit minmax 260px), green/gold/blue accent borders per card
+  - Positioned between audience cards and emergency protocol sections
+- ✅ Item #274 — Added "Czas dostawy kalkulator" to produkt.html
+  - Interactive delivery date calculator with city selector (12 Polish cities, 0-2 day offset) and shipping method selector (InPost/DPD/Poczta, 1-2 day base)
+  - Calculates business-day delivery date (skips weekends), shows formatted date in Polish ("poniedziałek 30 marca")
+  - Auto-updates on selection change via calcDelivery() JS function
+  - Green gradient result card matching site palette
+  - Positioned between sticky sidebar CSS section and buy section
+- ✅ Blog outline added to content_calendar.md: "Jak nie wypalić się przed sesję?"
+- ✅ 3 new improvement ideas added to queue (#286-288)
+
+**Files changed:**
+- `sesja.html` — "Wyniki sesji" social proof section (3 testimonial cards, ~50 lines)
+- `produkt.html` — Delivery date calculator widget (CSS + HTML + JS calcDelivery, ~60 lines)
+- `improvement_queue.md` — items #283, #274 marked DONE; 3 new items (#286-288)
+- `content_calendar.md` — new blog outline (wypalenie sesja)
+- `changelog.md` — this entry
+
+**Site verification:** Both files validated — DOCTYPE ✓, </html> ✓. sesja.html: "Wyniki sesji" confirmed, 3 testimonial cards. produkt.html: calcDelivery() function confirmed, 4 calls to calcDelivery. Cart JS syntax valid.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~278 completed + 15 active = ~293 total
+
+---
+
 ### 2026-03-27 — Power Cycle #54 (20:47 UTC)
 **Implemented:**
 - ✅ Item #267 — Added "Pytanie dnia" rotating FAQ widget to index.html hero

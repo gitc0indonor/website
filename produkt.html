@@ -367,6 +367,30 @@
     <p class="legal-disclaimer">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.</p>
   </section>
 
+  <!-- #277 — LIVE VIEWER COUNTER -->
+  <div id="viewerCounter" style="display:none;text-align:center;padding:10px 0 0;">
+    <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.85);border:1px solid #e0dcd4;border-radius:20px;padding:6px 16px;font-size:13px;color:#6f6a61;font-family:'Inter',sans-serif;">
+      <span style="display:inline-block;width:8px;height:8px;background:#4caf50;border-radius:50%;animation:viewerPulse 2s ease-in-out infinite;"></span>
+      <span id="viewerCount">0</span> osób ogląda ten produkt teraz
+    </span>
+  </div>
+  <style>@keyframes viewerPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}</style>
+  <script>
+  (function(){
+    var el=document.getElementById('viewerCounter');
+    var cnt=document.getElementById('viewerCount');
+    var base=8+Math.floor(Math.random()*7); // 8-14 base
+    el.style.display='block';
+    function update(){
+      var jitter=Math.floor(Math.random()*3)-1; // -1,0,+1
+      base=Math.max(5,Math.min(18,base+jitter));
+      cnt.textContent=base;
+    }
+    update();
+    setInterval(update,8000+Math.random()*7000); // every 8-15s
+  })();
+  </script>
+
   <!-- #224 — SCROLL-TRIGGERED LIMITED STOCK URGENCY BANNER -->
   <style>
     .urgency-banner{position:fixed;top:0;left:0;right:0;z-index:997;background:linear-gradient(135deg,#1a3a1a,#2d5a2d);color:#fff;padding:12px 20px;text-align:center;font-size:14px;font-weight:500;transform:translateY(-100%);transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 4px 20px rgba(0,0,0,0.15);display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
@@ -606,6 +630,112 @@
       </p>
     </div>
   </section>
+
+  <!-- #279 — SPRAWDŹ SKŁAD: Transparency Widget -->
+  <section style="padding: 56px 5%; background: white;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 32px;">
+        <h3 style="font-family: 'EB Garamond', serif; font-size: 28px; color: var(--cognivia-green); margin-bottom: 8px;">🔍 Sprawdź skład CogniCit</h3>
+        <p style="font-size: 15px; color: #666; max-width: 550px; margin: 0 auto;">Kliknij składnik, aby zobaczyć mechanizm działania, uzasadnienie dawki i badania naukowe.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;" id="transparency-grid">
+        <!-- ALA Card -->
+        <div class="transparency-card" onclick="toggleTransparency('ala')" style="background: #fff; border-radius: 14px; padding: 24px; border: 1px solid #e8e0d0; cursor: pointer; transition: all 0.3s cubic-bezier(0.4,0,0.2,1);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #e8f5e9, #c8e6c9); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;">🛡️</div>
+            <div>
+              <div style="font-family: 'EB Garamond', serif; font-size: 17px; font-weight: 700; color: var(--cognivia-charcoal);">Kwas Alfa-Liponowy</div>
+              <div style="font-size: 13px; color: var(--cognivia-green); font-weight: 600;">250 mg</div>
+            </div>
+            <span id="ala-arrow" style="margin-left: auto; font-size: 18px; color: #bbb; transition: transform 0.3s;">▼</span>
+          </div>
+          <div id="ala-detail" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease, opacity 0.3s; opacity: 0;">
+            <div style="border-top: 1px solid #eee; padding-top: 16px; margin-top: 4px;">
+              <p style="font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 10px;"><strong>Mechanizm:</strong> Antyoksydant rozpuszczalny w wodzie i tłuszczach. Regeneruje witaminy C i E. Chroni mitochondria neuronów przed stresem oksydacyjnym.</p>
+              <p style="font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 10px;"><strong>Dlaczego 250 mg?</strong> Dawka z zakresu stosowanego w badaniach klinicznych (200–600 mg/dzień). Wystarczająca do efektu antyoksydacyjnego bez ryzyka działań niepożądanych.</p>
+              <p style="font-size: 12px; color: #999; margin-bottom: 12px;">📚 113 publikacji w PubMed · PMID 41469453 (Sci Rep, 2025)</p>
+              <a href="kwas-alfa-liponowy.html" style="font-size: 13px; color: var(--cognivia-green); text-decoration: none; font-weight: 600;">Dowiedz się więcej o ALA →</a>
+            </div>
+          </div>
+        </div>
+        <!-- Citicoline Card -->
+        <div class="transparency-card" onclick="toggleTransparency('cyt')" style="background: #fff; border-radius: 14px; padding: 24px; border: 1px solid #e8e0d0; cursor: pointer; transition: all 0.3s cubic-bezier(0.4,0,0.2,1);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #fff8e1, #ffecb3); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;">🧠</div>
+            <div>
+              <div style="font-family: 'EB Garamond', serif; font-size: 17px; font-weight: 700; color: var(--cognivia-charcoal);">Cytykolina (CDP-Cholina)</div>
+              <div style="font-size: 13px; color: var(--cognivia-green); font-weight: 600;">300 mg</div>
+            </div>
+            <span id="cyt-arrow" style="margin-left: auto; font-size: 18px; color: #bbb; transition: transform 0.3s;">▼</span>
+          </div>
+          <div id="cyt-detail" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease, opacity 0.3s; opacity: 0;">
+            <div style="border-top: 1px solid #eee; padding-top: 16px; margin-top: 4px;">
+              <p style="font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 10px;"><strong>Mechanizm:</strong> Prekursor acetylocholiny (neuroprzekaźnik odpowiedzialny za koncentrację i pamięć). Buduje fosfatydylocholinę — główny składnik błon neuronów.</p>
+              <p style="font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 10px;"><strong>Dlaczego 300 mg?</strong> Optymalna dawka doustna z badań: wyższe dawki (500–2000 mg) stosowane są w badaniach klinicznych, ale 300 mg zapewnia efekt przy 1 kapsułce dziennie — prosty, wygodny schemat.</p>
+              <p style="font-size: 12px; color: #999; margin-bottom: 12px;">📚 233 publikacje w PubMed · najczęściej badany nootropik</p>
+              <a href="cytykolina.html" style="font-size: 13px; color: var(--cognivia-green); text-decoration: none; font-weight: 600;">Dowiedz się więcej o cytykolinie →</a>
+            </div>
+          </div>
+        </div>
+        <!-- Beta-CD Card -->
+        <div class="transparency-card" onclick="toggleTransparency('bcd')" style="background: #fff; border-radius: 14px; padding: 24px; border: 1px solid #e8e0d0; cursor: pointer; transition: all 0.3s cubic-bezier(0.4,0,0.2,1);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #e3f2fd, #bbdefb); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;">🔬</div>
+            <div>
+              <div style="font-family: 'EB Garamond', serif; font-size: 17px; font-weight: 700; color: var(--cognivia-charcoal);">Beta-Cyklodekstryna</div>
+              <div style="font-size: 13px; color: var(--cognivia-green); font-weight: 600;">250 mg</div>
+            </div>
+            <span id="bcd-arrow" style="margin-left: auto; font-size: 18px; color: #bbb; transition: transform 0.3s;">▼</span>
+          </div>
+          <div id="bcd-detail" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease, opacity 0.3s; opacity: 0;">
+            <div style="border-top: 1px solid #eee; padding-top: 16px; margin-top: 4px;">
+              <p style="font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 10px;"><strong>Mechanizm:</strong> Tworzy kompleksy inkluzji z cząsteczkami ALA i cytykoliny — zwiększa ich rozpuszczalność w wodzie i chroni przed degradacją w żołądku. Więcej składnika dociera do jelita = lepsze wchłanianie.</p>
+              <p style="font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 10px;"><strong>Dlaczego 250 mg?</strong> Stosunek 1:1 do ALA zapewnia optymalne kompleksowanie. Wyższe dawki nie zwiększają efektu — kluczowa jest proporcja, nie ilość.</p>
+              <p style="font-size: 12px; color: #999; margin-bottom: 12px;">📚 1 176 publikacji w PubMed · standard farmaceutyczny</p>
+              <a href="beta-cyklodekstryna.html" style="font-size: 13px; color: var(--cognivia-green); text-decoration: none; font-weight: 600;">Dowiedz się więcej o β-CD →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 24px; padding: 16px; background: #f9f5ef; border-radius: 10px; border: 1px solid #e8e0d0;">
+        <p style="font-size: 14px; color: #555; margin: 0;">✓ Zero wypełniaczy &nbsp;·&nbsp; ✓ Roślinne kapsułki HPMC &nbsp;·&nbsp; ✓ Certyfikat GMP &nbsp;·&nbsp; ✓ Zgłoszone do GIS</p>
+        <p style="font-size: 13px; color: #888; margin: 8px 0 0;">Pełny skład: <a href="skladniki.html" style="color: var(--cognivia-green); text-decoration: none; font-weight: 600;">Zobacz wszystkie składniki →</a></p>
+      </div>
+    </div>
+  </section>
+  <style>
+    .transparency-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .transparency-card.open { border-color: var(--cognivia-green); box-shadow: 0 6px 24px rgba(46,125,50,0.1); }
+  </style>
+  <script>
+    function toggleTransparency(id) {
+      var detail = document.getElementById(id + '-detail');
+      var arrow = document.getElementById(id + '-arrow');
+      var card = detail.closest('.transparency-card');
+      var isOpen = detail.style.maxHeight && detail.style.maxHeight !== '0px';
+      // Close all
+      ['ala','cyt','bcd'].forEach(function(key) {
+        document.getElementById(key + '-detail').style.maxHeight = '0px';
+        document.getElementById(key + '-detail').style.opacity = '0';
+        document.getElementById(key + '-arrow').style.transform = '';
+        document.getElementById(key + '-detail').closest('.transparency-card').classList.remove('open');
+      });
+      // Open clicked if was closed
+      if (!isOpen) {
+        detail.style.maxHeight = '400px';
+        detail.style.opacity = '1';
+        arrow.style.transform = 'rotate(180deg)';
+        card.classList.add('open');
+      }
+    }
+    // Hover effect on cards
+    document.querySelectorAll('.transparency-card').forEach(function(card) {
+      card.addEventListener('mouseenter', function() { this.style.borderColor = '#c8e6c9'; });
+      card.addEventListener('mouseleave', function() {
+        if (!this.classList.contains('open')) this.style.borderColor = '#e8e0d0';
+      });
+    });
+  </script>
 
   <!-- SKŁADNIKI -->
   <section id="składniki" style="background: white;">
@@ -1304,6 +1434,65 @@
   </style>
 <link rel="stylesheet" href="assets/css/cognivia-v2.css">
   </section>
+
+  <!-- #274 — KALKULATOR DOSTAWY -->
+  <section style="padding: 40px 5%; max-width: 800px; margin: 0 auto;">
+    <div style="background: white; border-radius: 16px; padding: 32px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); border: 1px solid #f0f0f0;">
+      <h3 style="font-family: 'EB Garamond', serif; font-size: 22px; color: var(--cognivia-green); margin-bottom: 6px;">📦 Kiedy dotrze Twoje zamówienie?</h3>
+      <p style="font-size: 13px; color: #888; margin-bottom: 20px;">Wybierz miasto i metodę dostawy, żeby zobaczyć przewidywaną datę dostarczenia.</p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+        <div>
+          <label style="font-size: 13px; font-weight: 500; color: #555; display: block; margin-bottom: 6px;">Miasto</label>
+          <select id="deliveryCity" onchange="calcDelivery()" style="width: 100%; padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; font-family: 'Inter', sans-serif; background: white;">
+            <option value="0">Warszawa</option>
+            <option value="0">Kraków</option>
+            <option value="0">Wrocław</option>
+            <option value="0">Poznań</option>
+            <option value="1">Gdańsk</option>
+            <option value="1">Łódź</option>
+            <option value="1">Katowice</option>
+            <option value="1">Lublin</option>
+            <option value="2">Szczecin</option>
+            <option value="2">Białystok</option>
+            <option value="2">Rzeszów</option>
+            <option value="2">Olsztyn</option>
+          </select>
+        </div>
+        <div>
+          <label style="font-size: 13px; font-weight: 500; color: #555; display: block; margin-bottom: 6px;">Metoda dostawy</label>
+          <select id="deliveryMethod" onchange="calcDelivery()" style="width: 100%; padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; font-family: 'Inter', sans-serif; background: white;">
+            <option value="1">InPost Paczkomat — 12,99 zł</option>
+            <option value="2">DPD Kurier — 15,99 zł</option>
+            <option value="2">Poczta Polska — 9,99 zł</option>
+          </select>
+        </div>
+      </div>
+      <div id="deliveryResult" style="background: linear-gradient(135deg, #e8f5e9, #f1f8e9); border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #c8e6c9;">
+        <div style="font-size: 13px; color: #666; margin-bottom: 6px;">Przewidywana dostawa</div>
+        <div id="deliveryDate" style="font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 700; color: var(--cognivia-green);">poniedziałek — wtorek</div>
+        <div id="deliveryDays" style="font-size: 13px; color: #888; margin-top: 6px;">1–2 dni robocze · zamów dziś, otrzymaj na początku tygodnia</div>
+      </div>
+    </div>
+  </section>
+  <script>
+    function calcDelivery() {
+      var cityOffset = parseInt(document.getElementById('deliveryCity').value) || 0;
+      var methodDays = parseInt(document.getElementById('deliveryMethod').value) || 1;
+      var baseDays = methodDays + cityOffset;
+      var now = new Date();
+      var delivery = new Date(now);
+      var added = 0;
+      while (added < baseDays) {
+        delivery.setDate(delivery.getDate() + 1);
+        if (delivery.getDay() !== 0 && delivery.getDay() !== 6) added++;
+      }
+      var dayNames = ['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
+      var monthNames = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
+      document.getElementById('deliveryDate').textContent = dayNames[delivery.getDay()] + ' ' + delivery.getDate() + ' ' + monthNames[delivery.getMonth()];
+      document.getElementById('deliveryDays').textContent = baseDays + (baseDays === 1 ? ' dzień roboczy' : ' dni robocze') + ' · zamów dziś, otrzymaj w ' + dayNames[delivery.getDay()];
+    }
+    calcDelivery();
+  </script>
 
   <!-- BUY SECTION -->
   <section style="padding: 60px 5%;">

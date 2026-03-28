@@ -1584,3 +1584,24 @@
 **Internal links:** sesja.html, produkt.html, blog/suplementy-dla-studentow, jak-stosowac.html, blog/jak-budowac-rutyne-suplementacji.html
 **SEO notes:** Seasonal keyword "jak zaplanować sesję" peaks Jan and May. Long-form format for featured snippet potential. Cross-promote with sesja landing page.
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-28 — Power Cycle #59)
+**Title:** Jak nie wypalić się przed sesją? Przewodnik po odporności psychicznej studenta
+**Target:** Polish university students, burnout prevention
+**Word count:** 1800-2200
+**Keywords:** wypalenie sesja, stres przed egzaminami, zmęczenie psychiczne student, jak nie wypalić się na studiach
+
+**Outline:**
+1. **Wstęp** — Statystyki: 60% studentów zgłasza wypalenie akademiczne (badania OECD). Nie jesteś sam/a.
+2. **Co to jest wypalenie akademickie?** — 3 wymiary: wyczerpanie emocjonalne, cynizm, obniżona skuteczność. Odróżnij od zwykłego zmęczenia.
+3. **5 sygnałów ostrzegawczych** — Tabela: chroniczne zmęczenie, brak motywacji, problemy ze snem, drażliwość, spadek wyników. Każdy sygnał + co robić.
+4. **Dlaczego sesja wypala?** — Presja czasu, kofeinowe cykle (wzlot-zjazd), porównywanie z innymi, brak regeneracji. Kortyzol i jego wpływ na hipokamp.
+5. **Protokół anti-wypalenie** — 5 zasad: (a) sen 7-8h non-negotiable, (b) maks 3h ciągłej nauki, (c) ruch codziennie 20 min, (d) 1 dzień wolny w tygodniu, (e) suplementacja wspierająca nie zastępująca.
+6. **Rola suplementacji** — Cytokolina dla koncentracji bez stymulacji, ALA dla ochrony przed stresem oksydacyjnym chronicznego wysiłku umysłowego. β-CD dla wchłaniania. 1 kapsułka = minimum wysiłku logistycznego.
+7. **Kiedy szukać pomocy** — Granica między stresem a problemem zdrowotnym. Linki do poradni psychologicznych na uczelniach.
+8. **Podsumowanie** — Checklist anti-wypalenie (7 punktów). CogniCit jako część holistycznego podejścia.
+
+**CTA:** Email signup → produkt.html (z kodem SESJA10)
+**Internal links:** sesja.html, blog/suplementy-dla-studentow, blog/jak-budowac-rutyne-suplementacji, produkt.html, jak-stosowac.html
+**SEO notes:** "wypalenie studenckie" — niska konkurencja, wysoka intencja. Emotional resonance = high engagement + shares. Seasonal peak: Jan, May, Jun.
+**Status:** Outline ready, needs writing
