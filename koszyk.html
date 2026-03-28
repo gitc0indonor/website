@@ -106,6 +106,12 @@
       <div class="summary-line"><span>Produkty</span><span id="cart-subtotal">0,00 zł</span></div>
       <div class="summary-line"><span>Dostawa</span><span id="cart-shipping">Obliczane w kasie</span></div>
       <div class="summary-line total"><span>Razem</span><span class="cart-total">0,00 zł</span></div>
+      <!-- Savings Calculator -->
+      <div id="savings-calc" style="display:none; background: linear-gradient(135deg, #e8f5e9, #f1f8e9); border-radius: 12px; padding: 20px; margin: 16px 0; border: 1px solid #c8e6c9; text-align: center;">
+        <div style="font-size: 13px; color: #2e7d32; font-weight: 600; margin-bottom: 6px;">💰 Oszczędzasz kupując bezpośrednio</div>
+        <div id="savings-amount" style="font-family: 'EB Garamond', serif; font-size: 32px; color: #1b5e20; font-weight: 700; margin-bottom: 4px;"></div>
+        <div style="font-size: 12px; color: #558b2f;">w porównaniu do cen aptecznych (119 zł/opakowanie)</div>
+      </div>
       <a href="kasa.html" class="btn-checkout">Przejdź do kasy</a>
       <a href="produkt.html" class="cart-continue-link">← Kontynuuj zakupy</a>
     </div>
@@ -140,6 +146,34 @@
     </div>
   </section>
 
+  <!-- Smart Bundle Upsell -->
+  <section id="bundle-upsell" style="max-width: 800px; margin: 0 auto 40px; padding: 0 8%; display: none;">
+    <h3 style="font-family: 'EB Garamond', serif; font-size: 22px; color: #1a3a2a; margin-bottom: 8px; text-align: center;">💡 Kup więcej — oszczędź więcej</h3>
+    <p style="font-size: 14px; color: #888; text-align: center; margin-bottom: 24px;">Dodaj kolejne opakowanie i skorzystaj z rabatu ilościowego</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+      <div style="background: white; border: 2px solid #e8e8e8; border-radius: 12px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+        <div style="font-size: 32px; margin-bottom: 8px;">📦</div>
+        <div style="font-weight: 700; color: #1a3a2a; margin-bottom: 4px;">2 opakowania</div>
+        <div style="font-size: 13px; color: #888; margin-bottom: 8px;">60 dni kuracji</div>
+        <div style="font-size: 13px; color: #999; text-decoration: line-through;">158 zł</div>
+        <div style="font-size: 20px; font-weight: 700; color: #4a6741; margin-bottom: 4px;">150 zł</div>
+        <div style="font-size: 11px; background: #e8f5e9; color: #4a6741; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 12px;">Oszczędzasz 8 zł</div>
+        <button onclick="CogniviaCart.addItem({id:'cognicit', name:'CogniCit', price:15000, quantity:2}); checkCart();" style="width: 100%; background: #4a6741; color: white; border: none; padding: 10px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 13px;">Dodaj 2×</button>
+      </div>
+      <div style="background: linear-gradient(135deg, #f0f7f0, #e8f5e9); border: 2px solid #4a6741; border-radius: 12px; padding: 20px; text-align: center; position: relative; transition: all 0.3s ease;">
+        <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #c9a96e; color: white; font-size: 10px; font-weight: 700; padding: 3px 12px; border-radius: 10px; text-transform: uppercase; letter-spacing: 1px;">Popularne</div>
+        <div style="font-size: 32px; margin-bottom: 8px;">📦📦</div>
+        <div style="font-weight: 700; color: #1a3a2a; margin-bottom: 4px;">3 opakowania</div>
+        <div style="font-size: 13px; color: #888; margin-bottom: 8px;">90 dni kuracji</div>
+        <div style="font-size: 13px; color: #999; text-decoration: line-through;">237 zł</div>
+        <div style="font-size: 20px; font-weight: 700; color: #4a6741; margin-bottom: 4px;">213 zł</div>
+        <div style="font-size: 11px; background: #c9a96e; color: white; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 12px;">Oszczędzasz 24 zł (10%)</div>
+        <button onclick="CogniviaCart.addItem({id:'cognicit', name:'CogniCit', price:21300, quantity:3}); checkCart();" style="width: 100%; background: #1a3a2a; color: white; border: none; padding: 10px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 13px;">Dodaj 3×</button>
+      </div>
+    </div>
+    <p style="text-align: center; font-size: 12px; color: #aaa; margin-top: 16px;">📦 Darmowa dostawa od 120 zł · 30-dniowa gwarancja satysfakcji</p>
+  </section>
+
   <!-- Footer -->
   <footer>
     <div class="footer-logo">C O G N I V I A</div>
@@ -160,18 +194,39 @@
 
   <script src="js/cognivia-cart.js"></script>
   <script>
-    // Show/hide summary and empty-cart recovery based on cart contents
+    // Show/hide summary, savings calculator and empty-cart recovery based on cart contents
+    const PHARMACY_PRICE = 11900; // 119.00 zł pharmacy reference price
+    const OUR_PRICE = 7900; // 79.00 zł direct price
     const checkCart = setInterval(() => {
       const cart = CogniviaCart.getCart();
       const summary = document.getElementById('cart-summary');
       const emptyRecovery = document.getElementById('empty-cart-recovery');
+      const savingsCalc = document.getElementById('savings-calc');
+      const savingsAmount = document.getElementById('savings-amount');
+      const upsell = document.getElementById('bundle-upsell');
       if (cart.items.length > 0) {
         if (summary) summary.style.display = 'block';
         if (emptyRecovery) emptyRecovery.style.display = 'none';
-        document.getElementById('cart-subtotal').textContent = CogniviaCart.formatPrice(CogniviaCart.getSubtotal());
+        const subtotal = CogniviaCart.getSubtotal();
+        document.getElementById('cart-subtotal').textContent = CogniviaCart.formatPrice(subtotal);
+        // Calculate savings vs pharmacy
+        let totalQty = 0;
+        cart.items.forEach(i => { totalQty += i.quantity; });
+        // Show bundle upsell when cart has 1 item
+        if (upsell) upsell.style.display = totalQty <= 1 ? 'block' : 'none';
+        const pharmacyCost = totalQty * PHARMACY_PRICE;
+        const savings = pharmacyCost - subtotal;
+        if (savings > 0 && savingsCalc && savingsAmount) {
+          savingsCalc.style.display = 'block';
+          savingsAmount.textContent = CogniviaCart.formatPrice(savings);
+        } else if (savingsCalc) {
+          savingsCalc.style.display = 'none';
+        }
       } else {
         if (summary) summary.style.display = 'none';
         if (emptyRecovery) emptyRecovery.style.display = 'block';
+        if (savingsCalc) savingsCalc.style.display = 'none';
+        if (upsell) upsell.style.display = 'none';
       }
     }, 500);
   </script>
