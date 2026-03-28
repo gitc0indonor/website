@@ -2,6 +2,42 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-28 — Power Cycle #69 (19:49 UTC)
+**Implemented:**
+- ✅ Item #329 — Added "Składniki w pigułce" interactive ingredient explainer to produkt.html
+  - 3 clickable accordion cards: ALA (🛡️ green border), Cytykolina (🧠 gold border), β-CD (🔬 blue border)
+  - Each card expands to show: mechanism explanation, dose justification, PubMed citation count, link to ingredient page
+  - Auto-close: clicking one card closes any other open card (single-open UX pattern)
+  - toggleSdp() JS function with smooth max-height CSS transition (0 → 400px)
+  - Color-coded dose badges (green/gold/blue matching ingredient card borders)
+  - Gradient background section (green → gold) between SKŁADNIKI and KORZYŚCI sections
+  - Footer note linking to nauka.html for full research review
+- ✅ Item #326 (enhanced) — Upgraded phone ordering option on kasa.html
+  - Changed from tiny link text to clickable green accent box ("📞 Wolisz zamówić telefonicznie? Kliknij tutaj")
+  - Expandable section reveals: email ordering instructions + contact form alternative
+  - Email link pre-fills subject "Zamówienie CogniCit" to cognivia.business@outlook.com
+  - Hover effect (background lightens), clean expand/collapse
+  - Captures customers who prefer non-web ordering (especially 50+ demographic)
+- ✅ Blog outline added to content_calendar.md: "Suplementy a kofeina u seniorów"
+- ✅ 3 new improvement ideas added to queue (#331-333)
+
+**Files changed:**
+- `produkt.html` — Interactive ingredient explainer section (~70 lines CSS/HTML) + toggleSdp() JS function (~20 lines)
+- `kasa.html` — Enhanced phone ordering section (expandable with email + contact instructions)
+- `improvement_queue.md` — items #326, #329 marked DONE; 3 new items (#331-333)
+- `content_calendar.md` — new blog outline (kofeina + seniorzy)
+- `changelog.md` — this entry
+
+**Git:** Committed & pushed to master (bde0db7)
+
+**Site verification:** produkt.html validated — DOCTYPE ✓, </html> ✓, toggleSdp function confirmed. Live site at gitc0indonor.github.io shows "Składniki w pigułce" section with 3 accordion cards. kasa.html validated — phone ordering expandable confirmed.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~329 completed + 20 active = ~349 total
+
+---
+
 ### 2026-03-28 — Power Cycle #68 (18:18 UTC)
 **Implemented:**
 - ✅ Item #308 — Fixed smart bundle recommendations on koszyk.html

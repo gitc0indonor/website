@@ -1850,3 +1850,23 @@
 **CTA:** Email signup with "HOME15" discount code
 **Internal links:** produkt.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, porownanie.html
 **Status:** Outline ready
+
+### New Blog Post Outline (Added 2026-03-28)
+**Title:** Suplementy a kofeina u seniorów — bezpieczne alternatywy po 50. roku życia
+**Target:** Polish seniors + their adult children, SEO-focused
+**Word count:** 1500-2000
+**Keywords:** kofeina seniorzy suplementy, bezpieczna kofeina po 50, nootropiki osoby starsze, suplementy dla seniorów bez kofeiny
+
+**Outline:**
+1. **Wstęp** — Dlaczego kofeina jest problematyczna po 50.? (seniorzy metabolizują kofeinę 2× wolniej)
+2. **Kofeina a układ sercowo-naczyniowy** — Ciśnienie tętnicze, arytmia, interakcje z lekami na nadciśnienie
+3. **Kofeina a sen u seniorów** — Zaburzony rytm dobowy, płytki sen, zmęczenie następnego dnia
+4. **Alternatywy bez kofeiny** — Cytykolina (acetylocholina), ALA (antyoksydacja mitochondriów), β-CD (biodostępność)
+5. **CogniCit — zero kofeiny** — Porównanie z popularnymi suplementami zawierającymi kofeinę
+6. **Protokół suplementacji dla seniorów** — Rano z posiłkiem, 1 kapsułka, bez konfliku z lekami
+7. **Bezpieczeństwo** — Przeciwwskazania, konsultacja z lekarzem, interakcje z lekami
+8. **Podsumowanie** — Jakość życia bez kofeinowego rollercoastera
+
+**CTA:** Email signup + link to produkt.html
+**Internal links:** blog/suplementy-dla-seniorow-50-plus.html, produkt.html, nauka.html, skutki-uboczne.html
+**Status:** Outline ready, needs writing

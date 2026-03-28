@@ -593,3 +593,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 329. **[NEW] Create "Składniki w pigułce" interactive ingredient explainer on produkt.html** — Add an expandable accordion or tabbed section below the main product description: each ingredient (Cytokolina, ALA, Beta-CD) gets a short animated icon + 2-sentence benefit + "Dowiedz się więcej" link to its dedicated page. Improves time-on-page and reduces bounce. Currently ingredients are mentioned but not visually separated. Estimated: 1.5 hours.
 
 330. **[NEW] Implement abandoned cart recovery via localStorage detection** — When user returns to site and localStorage has cart items but no completed order, show a subtle banner: "Masz coś w koszyku! Dokończ zamówienie →" with link to koszyk.html. Track via Plausible event. No backend needed — pure JS. Estimated: 20 minutes.
+
+### 🆕 Power Cycle #69 Additions (2026-03-28)
+
+331. **[NEW] Add "Opinie klientów" widget with verified badges to index.html hero** — Replace the static review cards near the bottom with an inline star rating + 3 rotating mini-reviews directly in the hero section. Shows social proof at the very first impression point. Include: star count, short quote (20 words max), reviewer name + city. Auto-rotates every 8s. Expected 10-15% signup rate increase from hero trust. Estimated: 1.5 hours.
+
+332. **[NEW] Create "Suplementy a leki na nadciśnienie — co wolno łączyć?" blog post** — Target "suplementy nadciśnienie leki", "cytykolina ciśnienie". Critical safety content for 50+ demographic taking BP medication. Positions CogniCit as the safe, caffeine-free option. Include: interaction table (ACE inhibitors, beta-blockers, calcium channel blockers), timing recommendations, when to consult cardiologist. Article + BreadcrumbList JSON-LD. Estimated: 2.5 hours.
+
+333. **[NEW] Add "Gdzie kupić?" availability badge to ALL landing pages** — Currently only ranking pages show purchase options. Add a small "Kup na cognivia.eu →" pill badge near the trust section on every landing page (matura, sesja, powrot-do-szkoly, porownanie, skladniki). Consistent placement = consistent conversion path from every content entry point. Estimated: 30 minutes.
