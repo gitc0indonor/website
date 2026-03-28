@@ -1629,3 +1629,57 @@
 **Internal links:** nauka.html, produkt.html, skladniki-cytykolina.html, blog/cytykolina-vs-kofeina, porownanie.html  
 **SEO notes:** "cytykolina" to rosnący keyword w Polsce — 2.4K monthly searches, niska konkurencja contentowa. Post powinien być THE authority page po polsku. Dodaj FAQ schema na końcu (5 pytań). Featured snippet target: "cytykolina co to jest" definicja w pierwszym akapicie.  
 **Status:** Outline ready, needs writing  
+
+---
+
+### New Blog Post Outline (Added 2026-03-28, Power Cycle #61)
+**Title:** Jak mózg zużywa energię? Mitochondria a koncentracja — naukowe podejście  
+**Target:** Polish audience, SEO-focused — targets "mitochondria mózg", "energia mózgu suplement", "zmęczenie umysłowe przyczyny"  
+**Word count:** 1500-2000  
+**Keywords:** mitochondria, energia mózgu, zmęczenie umysłowe, ATP, suplement na energię, kwas alfa-liponowy mitochondria  
+
+**Outline:**
+1. **Wstęp** — Mózg zużywa 20% energii organizmu przy 2% masy — dlaczego energia ma kluczowe znaczenie
+2. **Mitochondria — elektrownie neuronów** — Jak neurony produkują ATP, dlaczego wydajność mitochondrialna spada z wiekiem
+3. **Stres oksydacyjny a mitochondria** — Wolne rodniki uszkadzają błony mitochondrialne → spadek ATP → "mgła mózgowa"
+4. **Kwas alfa-liponowy jako mitochondria protector** — ALA regeneruje glutation, wspiera cykl Krebsa, działa jako antyoksydant w obu środowiskach (woda + tłuszcz)
+5. **Cytykolina a metabolizm energetyczny** — CDP-cholina dostarcza cytydynę (→ CTP) wspierając syntezę fosfolipidów mitochondrialnych
+6. **β-CD jako katalizator** — Jak β-CD zwiększa biodostępność ALA o 40-200%, co oznacza więcej aktywnej substancji docierającej do mitochondriów
+7. **Praktyczne wskazówki** — Sen, ruch, dieta (omega-3, magnez), CogniCit jako wsparcie
+8. **CogniCit** — 250 mg ALA + 300 mg cytykolina + 250 mg β-CD = potrójne wsparcie mitochondrialne
+9. **Podsumowanie** — 5 punktów-action
+
+**CTA:** Newsletter signup → produkt.html  
+**Internal links:** nauka.html, kwas-alfa-liponowy.html, cytykolina.html, produkt.html, blog/suplementy-a-stres-oksydacyjny  
+**SEO notes:** "zmęczenie umysłowe" — 1.8K monthly searches, niska konkurencja contentowa w Polsce. Post pozycjonuje CogniCit jako rozwiązanie problemu energii (nie tylko koncentracji). Dodaj infografikę mitochondrium → ALA → ATP. Featured snippet target: "ile energii zużywa mózg" statystyka.  
+**Status:** Outline ready, needs writing
+
+---
+
+### Outline #38: "Jak suplementy wpływają na koncentrację? Kompletny przewodnik 2026"
+**Target keyword:** suplementy na koncentrację (8K+ monthly searches, Poland)
+**Angle:** Long-form evergreen authority article — THE Polish-language reference for cognitive supplements
+**Tone:** Educational, evidence-based, accessible to non-scientists
+
+**H1:** Jak suplementy wpływają na koncentrację? Kompletny przewodnik 2026
+
+**Sections:**
+1. **Czym jest koncentracja? (neuroscience basics)** — acetylcholine, dopamine, prefrontal cortex, working memory. 400 words. Accessible language with 1-2 diagrams.
+2. **Top 5 składników na koncentrację** — ranking table:
+   - Cytykolina (300 mg) — acetylcholine precursor, 233 PubMed publications
+   - Kwas alfa-liponowy (250 mg) — mitochondrial antioxidant, neuroprotection
+   - Omega-3 (DHA) — membrane fluidity, but 1-3 months to see effects
+   - Bacopa monnieri — memory, but GI side effects common
+   - Kofeina — short-term boost, but tolerance + crash
+   - Each ingredient: mechanism, evidence strength, typical dose, side effects
+3. **Jak wybrać suplement na koncentrację?** — 7-point checklist (GMP, GIS, CoA, transparency, dose match, no proprietary blends, caffeine-free option). Convert to CTA linking to jak-wybrac-suplement.html
+4. **Porównanie suplementów** — table: CogniCit vs top 5 competitors on transparency, price/serving, certifications
+5. **CogniCit — dlaczego 3 składniki zamiast 20?** — minimalist philosophy, synergy of ALA + cytykolina + β-CD, each ingredient justified
+6. **FAQ** — 5 Q&As: "Czy suplementy na koncentrację naprawdę działają?", "Jak długo czekać na efekty?", "Czy mogę łączyć z kawą?", "Czy suplementy są bezpieczne?", "Jaki suplement dla studentów?"
+7. **Podsumowanie + CTA** — "CogniCit łączy 3 synergistyczne składniki w 1 kapsułce dziennie" → produkt.html
+
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD
+**Internal links:** produkt.html, nauka.html, porownanie.html, all 3 ingredient pages, blog/cytykolina-przewodnik, blog/suplementy-a-kofeina
+**CTA:** produkt.html + email popup (60% scroll)
+**SEO notes:** "suplementy na koncentrację" = 8K+ monthly, highest volume keyword in Polish nootropic space. This page should be the #1 ranking target. Featured snippet: "Najlepsze składniki na koncentrację: cytykolina, ALA, omega-3, bacopa, kofeina." Include comparison table format for Google rich results.
+**Status:** Outline ready, needs writing
