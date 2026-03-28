@@ -1870,3 +1870,22 @@
 **CTA:** Email signup + link to produkt.html
 **Internal links:** blog/suplementy-dla-seniorow-50-plus.html, produkt.html, nauka.html, skutki-uboczne.html
 **Status:** Outline ready, needs writing
+
+---
+
+## #66: "Porównanie cen suplementów nootropowych — ile naprawdę kosztuje suplementacja mózgu?"
+**Target keywords:** "ceny suplementów nootropowych", "ile kosztuje suplementacja", "nootropiki cena porównanie"
+**Search volume:** ~800/month in Poland
+**Angle:** Price transparency — show real cost per day, expose hidden costs of cheap supplements
+**Structure:**
+1. **Wstęp** — Dlaczego cena za opakowanie myli? Porównaj cenę za dzień
+2. **Tabela porównawcza** — CogniCit vs 5 popularnych suplementów: cena, ilość kapsułek, cena/dzień, składniki, certyfikaty
+3. **Ukryte koszty tanich suplementów** — Brak certyfikatów = ryzyko, proprietary blends = niewiadoma
+4. **Jak liczyć wartość suplementu** — 5 kryteriów: składniki/dawkę, formę chemiczną, certyfikaty, przejrzystość, gwarancję
+5. **CogniCit — 2,63 zł dziennie** — Przezroczysty skład, GMP, 3 synergistyczne składniki, gwarancja 30 dni
+6. **Kiedy warto zapłacić więcej** — Jakość vs ilość w suplementacji
+7. **Podsumowanie** — Tabela z kalkulacją roczną
+
+**CTA:** Email signup + link to produkt.html + link to porownanie.html
+**Internal links:** porownanie.html, ranking-nootropikow.html, produkt.html, jak-wybrac-suplement.html
+**Status:** Outline ready, needs writing

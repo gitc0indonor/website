@@ -2,6 +2,43 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-28 — Power Cycle #69 (20:19 UTC)
+**Implemented:**
+- ✅ Item #333 — Added "Gdzie kupić?" availability badge to ALL landing pages
+  - Green pill buy badges: "🛒 Kup na cognivia.eu → 79 zł" linking to produkt.html
+  - Added to 7 landing pages: matura.html, sesja.html, powrot-do-szkoly.html, porownanie.html, skladniki.html, skutki-uboczne-nootropiki.html, ranking-nootropikow.html
+  - Consistent design: rgba(46,125,50,.15) background, green border, 24px radius pill, Inter font
+  - Placement: after trust row in hero section (matura, sesja, powrot-do-szkoly), after trust bar (porownanie), in hero paragraph (skladniki, skutki-uboczne), after intro (ranking-nootropikow)
+  - All 7 pages validated: DOCTYPE ✓, </html> ✓
+- ✅ Item #313 — Added price match widget to produkt.html sticky sidebar
+  - "💰 Gwarancja najniższej ceny — Znalazłeś taniej? Wyrównamy cenę + 5% ekstra"
+  - Green tinted box (rgba bg + border) positioned below GMP/EU/GIS trust badges
+  - Small font (11px), centered text, 8px border-radius, subtle but visible
+  - Reinforces pricing confidence at desktop purchase decision point
+- ✅ Blog outline added to content_calendar.md: "Porównanie cen suplementów nootropowych"
+- ✅ 3 new improvement ideas added to queue (#334-336)
+
+**Files changed:**
+- `matura.html` — buy badge after trust row
+- `sesja.html` — buy badge after trust row
+- `powrot-do-szkoly.html` — buy badge after trust-row div
+- `porownanie.html` — buy badge after trust-bar
+- `skladniki.html` — buy badge in hero section
+- `skutki-uboczne-nootropiki.html` — buy badge in hero section
+- `ranking-nootropikow.html` — buy badge after intro paragraph
+- `produkt.html` — price match widget in sticky sidebar
+- `improvement_queue.md` — items #313, #333 marked DONE; 3 new items (#334-336)
+- `content_calendar.md` — new blog outline (price comparison)
+- `changelog.md` — this entry
+
+**Site verification:** All 8 modified files validated — DOCTYPE ✓, </html> ✓. Buy badges confirmed on all 7 landing pages (1 occurrence each). produkt.html sidebar has price match widget (2 references to "cognivia" in sidebar context).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~333 completed + 5 active = ~338 total
+
+---
+
 ### 2026-03-28 — Power Cycle #69 (19:49 UTC)
 **Implemented:**
 - ✅ Item #329 — Added "Składniki w pigułce" interactive ingredient explainer to produkt.html
