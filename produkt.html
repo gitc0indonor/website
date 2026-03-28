@@ -1549,6 +1549,19 @@
     </div>
   </div>
 
+  <!-- OSTATNIO PRZEGLADANE -->
+  <div id="recentlyViewed" style="display:none;max-width:1100px;margin:40px auto 0;padding:0 5%;">
+    <h2 style="font-family:'EB Garamond',serif;font-size:26px;text-align:center;margin-bottom:20px;color:var(--cognivia-charcoal);">Ostatnio przeglądane</h2>
+    <div id="rvGrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;"></div>
+  </div>
+  <style>
+    .rv-card{background:#fff;border:1px solid #eee;border-radius:10px;padding:16px;text-align:center;transition:transform .2s,box-shadow .2s;cursor:pointer;text-decoration:none;color:inherit;}
+    .rv-card:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.08);}
+    .rv-card .rv-emoji{font-size:28px;margin-bottom:8px;}
+    .rv-card .rv-title{font-family:'EB Garamond',serif;font-size:15px;font-weight:600;color:var(--cognivia-charcoal);margin-bottom:4px;}
+    .rv-card .rv-type{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.5px;}
+  </style>
+
   <!-- FOOTER -->
   <footer id="kontakt">
     <p style="font-family: 'EB Garamond', serif; font-size: 24px; color: white; margin-bottom: 16px;">Cognivia</p>
@@ -1754,6 +1767,37 @@
       checkSidebar();
     })();
   </script>
+
+<!-- Recently Viewed tracker — #289 -->
+<script>
+(function(){
+  var catalog=[
+    {s:'produkt',u:'produkt.html',t:'CogniCit — suplement nootropowy',e:'🧠',tp:'Produkt'},
+    {s:'skladniki',u:'skladniki.html',t:'Składniki CogniCit',e:'🔬',tp:'Składniki'},
+    {s:'cytykolina',u:'skladniki-cytykolina.html',t:'Cytykolina (CDP-Cholina)',e:'⚡',tp:'Składnik'},
+    {s:'ala',u:'skladniki-ala.html',t:'Kwas alfa-liponowy (ALA)',e:'🛡️',tp:'Składnik'},
+    {s:'beta-cd',u:'beta-cyklodekstryna.html',t:'Beta-cyklodekstryna',e:'🧬',tp:'Składnik'},
+    {s:'nauka',u:'nauka.html',t:'Nauka i badania',e:'📚',tp:'Edukacja'},
+    {s:'porownanie',u:'porownanie.html',t:'Porównanie suplementów',e:'📊',tp:'Porównanie'},
+    {s:'faq',u:'faq-produkt.html',t:'FAQ produktu',e:'❓',tp:'FAQ'}
+  ];
+  var hist=JSON.parse(localStorage.getItem('rv_hist')||'[]');
+  if(!hist.length||hist[0]!=='produkt'){hist.unshift('produkt');if(hist.length>6)hist=hist.slice(0,6);localStorage.setItem('rv_hist',JSON.stringify(hist));}
+  var prev=hist.filter(function(s){return s!=='produkt';}).slice(0,4);
+  if(!prev.length)return;
+  var el=document.getElementById('recentlyViewed'),g=document.getElementById('rvGrid');
+  if(!el||!g)return;
+  prev.forEach(function(slug){
+    var it=catalog.find(function(c){return c.s===slug;});
+    if(!it)return;
+    var card=document.createElement('a');card.href=it.u;card.className='rv-card';
+    card.innerHTML='<div class="rv-emoji">'+it.e+'</div><div class="rv-title">'+it.t+'</div><div class="rv-type">'+it.tp+'</div>';
+    g.appendChild(card);
+  });
+  if(g.children.length>0)el.style.display='block';
+})();
+</script>
+
 <!-- Exit-intent popup — #193 -->
 <div class="exit-overlay-prod" id="exitOverlayProd">
   <div class="exit-popup-prod">

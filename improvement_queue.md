@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-27 (Power Cycle #54)
+## Last Updated: 2026-03-28 (Power Cycle #60)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -483,6 +483,22 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 286. **[NEW] Create "Ranking suplementów na koncentrację 2026" SEO page (/ranking-koncentracja)** — Target "najlepszy suplement na koncentrację" (5K+ monthly searches in Poland). Comparison table: CogniCit vs 5 competitors scored on transparency, GMP, price/serving, caffeine-free, third-party testing. CogniCit wins on GMP + no caffeine + 3 synergistic ingredients. Article + BreadcrumbList + Product aggregateRating JSON-LD. Estimated: 3 hours.
 
-287. **[NEW] Add "Śledź zamówienie" tracking section to potwierdzenie.html** — After order confirmation, show a 4-step status bar: Przyjęte → W realizacji → Wysłane → Dostarczone. Currently potwierdzenie.html shows order ID but no visual tracking flow. Add CSS step indicator (numbered circles + connecting line). Simulated status via localStorage for demo. Reduces post-purchase anxiety. Estimated: 1 hour.
+287. ~~[DONE] Add "Śledź zamówienie" tracking section to potwierdzenie.html~~ ✅ tracking section to potwierdzenie.html** — After order confirmation, show a 4-step status bar: Przyjęte → W realizacji → Wysłane → Dostarczone. Currently potwierdzenie.html shows order ID but no visual tracking flow. Add CSS step indicator (numbered circles + connecting line). Simulated status via localStorage for demo. Reduces post-purchase anxiety. Estimated: 1 hour.
 
 288. **[NEW] Create "Suplementy a praca zmianowa — jak suplementować przy nieregularnych godzinach?" blog post** — Target "suplementy praca zmianowa" (underserved niche). Cover: circadian rhythm disruption, shift-specific CogniCit protocol (morning shift = 7:00 dose, night shift = before "morning" = 18:00), rotating shift adaptation. Positions CogniCit as shift-worker friendly (no caffeine = no sleep disruption). Estimated: 2.5 hours.
+
+289. ~~[DONE] Add "Recently Viewed" section to produkt.html~~ ✅ section to produkt.html** — Track last 3-5 viewed products via localStorage and display a horizontal scrollable section below the main content. Reduces bounce rate by keeping users engaged. Uses simple JS: on page load, push current product slug to array in localStorage, render cards on other product pages. Estimated: 40 minutes.
+
+290. **[NEW] Implement CSS dark mode with system preference detection** — Add `prefers-color-scheme: dark` media query plus manual toggle. Benefits: growing % of Polish users browse in dark mode (especially evening nootropic buyers). Start with header/nav, body background, text colors, product cards. Use CSS variables already in design system. Estimated: 2 hours.
+
+291. **[NEW] Create a "How to choose a nootropic" comparison landing page** — Long-form SEO article comparing CogniCit vs other nootropic supplements, with structured comparison table, FAQ schema, and strong internal links to produkt.html. Target keywords: "najlepszy nootropik Polska", "ranking nootropików 2026", "jaki suplement na koncentrację". Estimated: 3 hours.
+
+---
+
+### 🆕 Power Cycle #60 Additions (2026-03-28)
+
+292. **[NEW] Add "Sprawdź skład" interactive ingredient transparency widget to produkt.html** — 3 clickable ingredient cards (ALA 250mg, Cytykolina 300mg, β-CD 250mg) that expand to show mechanism, dose justification, PubMed citation, link to dedicated page. Green accent cards with expand/collapse animation. Mirrors transparency advantage over competitors hiding behind proprietary blends. Estimated: 1.5 hours.
+
+293. **[NEW] Create "Suplementy na koncentrację ranking 2026" SEO landing page (/ranking-koncentracja)** — Target "najlepszy suplement na koncentrację" (5K+ monthly searches in Poland). Comparison table scoring 5+ supplements on: ingredient transparency, GMP certification, EU compliance, price per serving, caffeine-free, third-party testing. CogniCit wins on GMP + no caffeine + 3 synergistic ingredients. Article + BreadcrumbList + Product aggregateRating JSON-LD. Estimated: 3 hours.
+
+294. **[NEW] Add dynamic "Zaoszczędź X zł" savings calculator to koszyk.html** — When user has items in cart, show real-time savings vs pharmacy/reseller prices below the cart summary. Green gradient banner: "Oszczędzasz 40 zł kupując bezpośrednio od producenta". Compares cart total against a reference price (e.g. 119 zł/box at pharmacies). Reinforces value proposition at the moment of purchase decision. Estimated: 45 minutes.

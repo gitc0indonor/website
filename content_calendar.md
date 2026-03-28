@@ -1605,3 +1605,27 @@
 **Internal links:** sesja.html, blog/suplementy-dla-studentow, blog/jak-budowac-rutyne-suplementacji, produkt.html, jak-stosowac.html
 **SEO notes:** "wypalenie studenckie" — niska konkurencja, wysoka intencja. Emotional resonance = high engagement + shares. Seasonal peak: Jan, May, Jun.
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-28, Power Cycle #60)
+**Title:** Czym jest cytykolina? Kompletny przewodnik po CDP-cholinie dla każdego  
+**Target:** Polish audience, SEO-focused — targets "cytykolina co to", "CDP-cholina działanie", "cytykolina dawkowanie"  
+**Word count:** 1800-2200  
+**Keywords:** cytykolina, CDP-cholina, suplement diety, funkcje poznawcje, dawkowanie cytykoliny, cytykolina efekty  
+
+**Outline:**
+1. **Wstęp** — Czym jest cytykolina? Krótka definicja i dlaczego wzbudza zainteresowanie naukowców
+2. **Jak działa cytykolina?** — Metabolizm: cytykolina → cytydyna + cholina → synteza fosfatydylocholiny → acetylocholina
+3. **Rola acetylocholiny w mózgu** — Neuroprzekaźnik odpowiedzialny za pamięć, koncentrację, uczenie się
+4. **Badania naukowe** — 233 publikacje w PubMed, przegląd kluczowych badań klinicznych, dawki 250-2000 mg
+5. **Kto może skorzystać?** — Studenci, programiści, osoby 50+, pracownicy umysłowi
+6. **Dawkowanie i bezpieczeństwo** — Zalecane dawki, profil bezpieczeństwa, interakcje z lekami
+7. **Cytykolina vs inne źródła choliny** — Porównanie z Alpha GPC, fosfatydyloseryną, cholinką
+8. **Cytykolina w CogniCit** — Jak 300 mg w synergii z ALA (250 mg) i β-CD (250 mg) daje pełną formułę nootropową
+9. **Podsumowanie** — Key takeaways z 3 kluczowymi punktami
+
+**CTA:** Newsletter signup → produkt.html (15% zniżki na premierę)  
+**Internal links:** nauka.html, produkt.html, skladniki-cytykolina.html, blog/cytykolina-vs-kofeina, porownanie.html  
+**SEO notes:** "cytykolina" to rosnący keyword w Polsce — 2.4K monthly searches, niska konkurencja contentowa. Post powinien być THE authority page po polsku. Dodaj FAQ schema na końcu (5 pytań). Featured snippet target: "cytykolina co to jest" definicja w pierwszym akapicie.  
+**Status:** Outline ready, needs writing  

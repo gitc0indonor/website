@@ -42,6 +42,37 @@
     <p>Twoje zamówienie zostało przyjęte do realizacji.</p>
     <p id="order-id-display" style="font-weight: 600; font-size: 18px; margin-top: 8px;"></p>
 
+    <!-- Order tracking status bar -->
+    <div style="max-width:600px;margin:28px auto 0;padding:0 5%;">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;position:relative;">
+        <!-- Connecting line -->
+        <div style="position:absolute;top:18px;left:30px;right:30px;height:3px;background:#e0e0e0;border-radius:2px;z-index:0;"></div>
+        <div id="trackingProgress" style="position:absolute;top:18px;left:30px;width:0;height:3px;background:linear-gradient(90deg,#4caf50,#2e7d32);border-radius:2px;z-index:1;transition:width 1.5s ease;"></div>
+        <!-- Step 1 -->
+        <div style="flex:1;text-align:center;position:relative;z-index:2;">
+          <div id="step1" style="width:36px;height:36px;border-radius:50%;background:#4caf50;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-size:16px;font-weight:700;transition:all .3s;box-shadow:0 0 0 4px rgba(76,175,80,0.15);">✓</div>
+          <div style="font-size:12px;font-weight:600;color:#2e7d32;">Przyjęte</div>
+          <div style="font-size:10px;color:#888;margin-top:2px;" id="step1date"></div>
+        </div>
+        <!-- Step 2 -->
+        <div style="flex:1;text-align:center;position:relative;z-index:2;">
+          <div id="step2" style="width:36px;height:36px;border-radius:50%;background:#e0e0e0;color:#999;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-size:14px;font-weight:700;transition:all .3s;">2</div>
+          <div style="font-size:12px;font-weight:500;color:#999;" id="step2label">W realizacji</div>
+        </div>
+        <!-- Step 3 -->
+        <div style="flex:1;text-align:center;position:relative;z-index:2;">
+          <div id="step3" style="width:36px;height:36px;border-radius:50%;background:#e0e0e0;color:#999;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-size:14px;font-weight:700;transition:all .3s;">3</div>
+          <div style="font-size:12px;font-weight:500;color:#999;" id="step3label">Wysłane</div>
+        </div>
+        <!-- Step 4 -->
+        <div style="flex:1;text-align:center;position:relative;z-index:2;">
+          <div id="step4" style="width:36px;height:36px;border-radius:50%;background:#e0e0e0;color:#999;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-size:14px;font-weight:700;transition:all .3s;">4</div>
+          <div style="font-size:12px;font-weight:500;color:#999;" id="step4label">Dostarczone</div>
+        </div>
+      </div>
+      <p style="text-align:center;font-size:12px;color:#888;margin-top:16px;">Aktualny status: <strong id="currentStatus" style="color:#2e7d32;">Przyjęte</strong></p>
+    </div>
+
     <div class="confirmation-details">
       <h3 style="font-family: var(--font-heading); font-size: 20px; margin-bottom: 16px;">Co dalej?</h3>
       <ol style="padding-left: 20px; line-height: 2; font-size: 14px; color: var(--charcoal-light);">
@@ -71,6 +102,41 @@
     if (orderId) {
       document.getElementById('order-id-display').textContent = 'Nr zamówienia: ' + orderId;
     }
+
+    // Order tracking status animation — simulates step 1 active (just placed)
+    (function() {
+      var now = new Date();
+      var opts = { weekday: 'long', day: 'numeric', month: 'long' };
+      document.getElementById('step1date').textContent = now.toLocaleDateString('pl-PL', opts);
+
+      // Simulate: after order placed, step 1 is complete, step 2 activates after demo delay
+      // In production, status would come from backend / order tracking API
+      var savedStatus = localStorage.getItem('order_status_' + (orderId || 'demo')) || 'przyjete';
+      var steps = ['przyjete', 'realizacja', 'wyslana', 'dostarczona'];
+      var labels = ['Przyjęte', 'W realizacji', 'Wysłane', 'Dostarczone'];
+      var currentIdx = steps.indexOf(savedStatus);
+
+      // For demo: auto-advance to show animation (real orders start at step 1)
+      if (currentIdx < 0) currentIdx = 0;
+
+      // Activate steps up to current
+      setTimeout(function() {
+        var bar = document.getElementById('trackingProgress');
+        bar.style.width = (currentIdx * 33.3) + '%';
+        for (var i = 1; i <= 4; i++) {
+          var el = document.getElementById('step' + i);
+          var lbl = document.getElementById('step' + i + 'label');
+          if (i <= currentIdx + 1) {
+            el.style.background = '#4caf50';
+            el.style.color = '#fff';
+            el.style.boxShadow = '0 0 0 4px rgba(76,175,80,0.15)';
+            el.innerHTML = (i <= currentIdx) ? '✓' : i;
+            if (lbl) { lbl.style.color = '#2e7d32'; lbl.style.fontWeight = '600'; }
+          }
+        }
+        document.getElementById('currentStatus').textContent = labels[currentIdx];
+      }, 500);
+    })();
   </script>
   <script src="js/web-vitals.js" defer></script>
 </body>

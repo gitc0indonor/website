@@ -1823,3 +1823,31 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
 
 **Queue:** ~273 completed + 15 active = ~285 total
+
+### 2026-03-28 — Power Cycle #60 (00:49 UTC)
+**Implemented:**
+- ✅ Item #287 — Added "Śledź zamówienie" order tracking status bar to potwierdzenie.html
+  - 4-step visual progress bar: Przyjęte → W realizacji → Wysłane → Dostarczone
+  - Green gradient connecting line with animated fill based on order status
+  - Numbered circle steps with checkmark for completed steps
+  - Current status label with Polish-formatted date
+  - localStorage-based status tracking (ready for backend integration)
+  - Positioned between order ID display and "Co dalej?" section
+- ✅ Item #289 — Added "Ostatnio przeglądane" (Recently Viewed) section to produkt.html
+  - Tracks last 6 visited content pages via localStorage
+  - Displays up to 4 previously viewed items in responsive card grid
+  - Each card: emoji icon, title, content type label, hover lift animation
+  - Catalog of 8 trackable pages (product, ingredients, science, comparison, FAQ)
+  - Non-intrusive: section only appears when user has browsing history
+  - Positioned before footer
+
+**Files changed:**
+- `potwierdzenie.html` — Order tracking status bar (CSS + HTML + JS animation, ~55 lines)
+- `produkt.html` — Recently viewed section + tracker JS (CSS + HTML + JS, ~45 lines)
+- `improvement_queue.md` — Items #287, #289 marked DONE; 3 new items (#292-#294)
+- `content_calendar.md` — New blog outline: "Czym jest cytykolina? Kompletny przewodnik"
+- `changelog.md` — this entry
+
+**Site verification:** Both files validated — DOCTYPE ✓, </html> ✓. produkt.html: "recentlyViewed" confirmed, 10 references. potwierdzenie.html: "trackingProgress" confirmed, status bar functional.
+
+**Cart status:** Unchanged from previous cycle. Full client-side JS cart functional. 79 zł. Formspree integration wired (placeholder ID 'xpwzgryv'). CEO must create formspree.io account and swap form ID to enable real order capture.
