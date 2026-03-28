@@ -1727,3 +1727,29 @@
 **Internal links:** produkt.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, faq-produkt.html
 **SEO angle:** "brać suplement z kawą" — common question, zero quality Polish content. Answers real user concern. Featured snippet potential.
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-28 — Power Cycle #65)
+**Title:** Nootropiki dla programisty — jak dbać o mózg przy 8h przed ekranem
+**Target:** Polish tech community (Wykop, LinkedIn, dev.to/pl), SEO for "nootropik programista", "suplementy dla informatyków", "suplementy praca przy komputerze"
+**Word count:** 1500-2000
+**Keywords:** nootropik programista, suplementy dla informatyków, suplementy praca zdalna, koncentracja programowanie, CogniCit developer
+
+**Outline:**
+1. **Wstęp** — Programista = ekstremalne obciążenie poznawcze: deep work, debugging, context switching, PR review. Mózg zużywa 20% energii ciała przy 2% masy.
+2. **Wyzwania cognitive developersa** — 4 typy obciążenia: sustained attention (deep work), working memory (debugging), task switching (meetings+code), creative problem solving (architecture). Tabela z mechanizmami neurologicznymi.
+3. **Dlaczego kofeina nie wystarczy?** — Adenosine blocking = temporary alertness, not cognitive enhancement. Tolerance builds in 7-14 days. Crash at 15:00. Evening code sessions ruined. Comparison table.
+4. **Cytykolina — neuroprzekaźnik developera** — Acetylcholine for sustained focus. 300 mg dose = clinical range. Study: improved working memory in cognitive-demanding tasks. How it differs from caffeine: builds capacity vs masks fatigue.
+5. **ALA — ochrona przed stresem oksydacyjnym ekranu** — Blue light → oxidative stress → neuron damage. ALA regenerates glutathione. Hager 2007 study. Practical: 250 mg ALA protects during 8h screen sessions.
+6. **β-CD — dlaczego to ważne dla suplementacji** — Developers appreciate mechanism explanations. β-CD = inclusion complex = 400% better absorption. "It's like a CDN for molecules — caches and delivers reliably."
+7. **Protokół CogniCit dla programisty** — Morning (with breakfast) → deep work block (9-12) → sustained focus → no afternoon crash → evening coding sessions OK (zero caffeine). Weekly routine calendar.
+8. **Biohacker stacks vs CogniCit** — Comparison: popular "nootropic stacks" (5-12 ingredients, unproven doses, no GMP) vs CogniCit (3 ingredients, clinical doses, GMP, EU compliant). Developers value transparency and evidence.
+9. **Praktyczne tips** — Pomodoro 50/10, standing desk, eye breaks (20-20-20 rule), sleep 7h minimum, CogniCit as morning anchor. Habit stacking: "After git pull, take capsule."
+10. **Podsumowanie** — "Twój kod jest tylko tak dobry jak twój mózg. CogniCit — jedna kapsułka, zero kofeiny, pełna przejrzystość."
+
+**CTA:** produkt.html + email capture (60% scroll, "DEV10" discount code for developer audience tracking)
+**Schema:** Article + BreadcrumbList JSON-LD
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html, porownanie.html
+**SEO angle:** Low competition niche — most Polish nootropic content targets students/women. Developer angle is nearly untouched. Wykop/LinkedIn tech communities = high-value traffic.
+**Status:** Outline ready, needs writing
