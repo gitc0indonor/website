@@ -197,6 +197,15 @@
           <button class="btn-place-order" id="place-order-btn" onclick="handleCheckout()">
             Zamów i zapłać
           </button>
+          <div style="text-align: center; margin-top: 14px;">
+            <div onclick="var el=document.getElementById('phone-order-box');el.style.display=el.style.display==='none'?'block':'none';" style="font-size: 13px; color: #2e7d32; cursor: pointer; padding: 8px; border-radius: 8px; background: #f0f7f0; transition: background 0.2s;" onmouseover="this.style.background='#e0f0e0'" onmouseout="this.style.background='#f0f7f0'">📞 Wolisz zamówić telefonicznie? Kliknij tutaj</div>
+            <div id="phone-order-box" style="display:none; margin-top: 10px; padding: 16px; background: white; border-radius: 8px; border: 1px solid #c8e6c9; text-align: left;">
+              <p style="font-size: 14px; color: #333; margin-bottom: 8px;"><strong>📧 Zamówienie emailowe:</strong></p>
+              <p style="font-size: 13px; color: #666; margin-bottom: 12px;">Wyślij zamówienie na adres <a href="mailto:cognivia.business@outlook.com?subject=Zamówienie%20CogniCit" style="color: #2e7d32; font-weight: 600;">cognivia.business@outlook.com</a> z podaniem: imię, adres, ilość opakowań, preferowana metoda dostawy.</p>
+              <p style="font-size: 14px; color: #333; margin-bottom: 8px;"><strong>📋 Alternatywnie:</strong></p>
+              <p style="font-size: 13px; color: #666;">Wypełnij formularz na <a href="kontakt.html" style="color: #2e7d32; font-weight: 600;">stronie kontaktowej</a> — odpowiemy w 24h z potwierdzeniem zamówienia.</p>
+            </div>
+          </div>
           <div class="secure-checkout">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             Bezpieczne zamówienie — SSL

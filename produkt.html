@@ -610,6 +610,23 @@
       document.getElementById('activity-feed').style.display = 'none';
       localStorage.setItem('activityDismissed', '1');
     }
+    // #329 — Składniki w pigułce: expandable ingredient cards
+    function toggleSdp(card) {
+      var detail = card.querySelector('.sdp-detail');
+      var arrow = card.querySelector('.sdp-arrow');
+      var isOpen = detail.style.maxHeight && detail.style.maxHeight !== '0px';
+      // Close all others first
+      document.querySelectorAll('.sdp-card').forEach(function(c) {
+        c.querySelector('.sdp-detail').style.maxHeight = '0px';
+        c.querySelector('.sdp-detail').style.padding = '0 24px';
+        c.querySelector('.sdp-arrow').style.transform = 'rotate(0deg)';
+      });
+      if (!isOpen) {
+        detail.style.maxHeight = '400px';
+        detail.style.padding = '0 24px';
+        arrow.style.transform = 'rotate(180deg)';
+      }
+    }
   </script>
 
   <!-- #252 — DLACZEGO NIE KOFEINA? -->
@@ -842,6 +859,78 @@
       <strong>Zalecana dzienna porcja:</strong> 1 kapsułka dziennie, najlepiej rano z posiłkiem, popić wodą.<br>
       <strong>Nie przekraczać zalecanej porcji do spożycia w ciągu dnia.</strong>
     </p>
+  </section>
+
+  <!-- SKŁADNIKI W PIGUŁCE — Interactive Ingredient Explainer -->
+  <section style="background: linear-gradient(135deg, #f0f7f0 0%, #fff8e1 100%); padding: 60px 20px;">
+    <h2 style="font-family: 'EB Garamond', serif; font-size: 28px; text-align: center; margin-bottom: 8px; color: #1a3a2a;">Składniki w pigułce</h2>
+    <p style="text-align: center; color: #666; font-size: 15px; margin-bottom: 32px;">Kliknij składnik, aby poznać jego mechanizm działania</p>
+    <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+      <!-- ALA -->
+      <div class="sdp-card" onclick="toggleSdp(this)" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #2e7d32; cursor: pointer; transition: box-shadow 0.3s;">
+        <div style="display: flex; align-items: center; gap: 16px; padding: 20px 24px;">
+          <span style="font-size: 32px;">🛡️</span>
+          <div style="flex: 1;">
+            <strong style="font-family: 'EB Garamond', serif; font-size: 20px; color: #1a3a2a;">Kwas Alfa-Liponowy (ALA)</strong>
+            <span style="display: inline-block; background: #e8f5e9; color: #2e7d32; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 20px; margin-left: 8px;">250 mg</span>
+          </div>
+          <span class="sdp-arrow" style="font-size: 20px; color: #2e7d32; transition: transform 0.3s;">▼</span>
+        </div>
+        <div class="sdp-detail" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 24px;">
+          <div style="padding: 0 0 20px; border-top: 1px solid #e8e8e8; padding-top: 16px;">
+            <p style="font-size: 14px; color: #444; line-height: 1.7; margin-bottom: 12px;"><strong>Mechanizm:</strong> ALA jest jednym z nielicznych antyoksydantów rozpuszczalnych zarówno w wodzie, jak i tłuszczach — dzięki temu chroni komórki mózgu na wielu poziomach. Neutralizuje wolne rodniki, regeneruje witaminy C i E, oraz chelatuje metale ciężkie.</p>
+            <p style="font-size: 14px; color: #444; line-height: 1.7; margin-bottom: 12px;"><strong>Dlaczego 250 mg?</strong> Dawka 250 mieści się w zakresie stosowanym w badaniach klinicznych (200–600 mg/dzień). Większe dawki nie wykazują proporcjonalnie większych korzyści w populacji ogólnej.</p>
+            <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+              <span style="font-size: 12px; color: #888;">📚 113 publikacji w PubMed</span>
+              <a href="kwas-alfa-liponowy.html" style="font-size: 13px; color: #2e7d32; font-weight: 600; text-decoration: none;">Dowiedz się więcej →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cytykolina -->
+      <div class="sdp-card" onclick="toggleSdp(this)" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #f9a825; cursor: pointer; transition: box-shadow 0.3s;">
+        <div style="display: flex; align-items: center; gap: 16px; padding: 20px 24px;">
+          <span style="font-size: 32px;">🧠</span>
+          <div style="flex: 1;">
+            <strong style="font-family: 'EB Garamond', serif; font-size: 20px; color: #1a3a2a;">Cytykolina (CDP-Cholina)</strong>
+            <span style="display: inline-block; background: #fff8e1; color: #f57f17; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 20px; margin-left: 8px;">300 mg</span>
+          </div>
+          <span class="sdp-arrow" style="font-size: 20px; color: #f9a825; transition: transform 0.3s;">▼</span>
+        </div>
+        <div class="sdp-detail" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 24px;">
+          <div style="padding: 0 0 20px; border-top: 1px solid #e8e8e8; padding-top: 16px;">
+            <p style="font-size: 14px; color: #444; line-height: 1.7; margin-bottom: 12px;"><strong>Mechanizm:</strong> Cytykolina rozkłada się na cytydynę i cholinę — oba składniki kluczowe dla syntezy fosfatydylocholiny (błony neuronów) i acetylocholiny (neuroprzekaźnik odpowiedzialny za pamięć i koncentrację). To podwójne działanie odróżnia ją od zwykłej choliny.</p>
+            <p style="font-size: 14px; color: #444; line-height: 1.7; margin-bottom: 12px;"><strong>Dlaczego 300 mg?</strong> Dawka 300 mg jest zgodna z zakresem stosowanym w badaniach klinicznych (250–1000 mg/dzień). Przy tej dawce obserwuje się istotne wsparcie funkcji poznawczych przy minimalnym ryzyku działań niepożądanych.</p>
+            <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+              <span style="font-size: 12px; color: #888;">📚 233 publikacje w PubMed</span>
+              <a href="cytykolina.html" style="font-size: 13px; color: #f9a825; font-weight: 600; text-decoration: none;">Dowiedz się więcej →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Beta-CD -->
+      <div class="sdp-card" onclick="toggleSdp(this)" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #1565c0; cursor: pointer; transition: box-shadow 0.3s;">
+        <div style="display: flex; align-items: center; gap: 16px; padding: 20px 24px;">
+          <span style="font-size: 32px;">🔬</span>
+          <div style="flex: 1;">
+            <strong style="font-family: 'EB Garamond', serif; font-size: 20px; color: #1a3a2a;">Beta-Cyklodekstryna (β-CD)</strong>
+            <span style="display: inline-block; background: #e3f2fd; color: #1565c0; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 20px; margin-left: 8px;">250 mg</span>
+          </div>
+          <span class="sdp-arrow" style="font-size: 20px; color: #1565c0; transition: transform 0.3s;">▼</span>
+        </div>
+        <div class="sdp-detail" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 24px;">
+          <div style="padding: 0 0 20px; border-top: 1px solid #e8e8e8; padding-top: 16px;">
+            <p style="font-size: 14px; color: #444; line-height: 1.7; margin-bottom: 12px;"><strong>Mechanizm:</strong> β-CD ma kształt „kubka" molekularnego — tworzy kompleksy inkluzji z cząsteczkami ALA i cytykoliny, chroniąc je przed degradacją w żołądku i zwiększając ich rozpuszczalność w wodzie. To oznacza, że więcej składnika aktywnego dociera do jelit, gdzie jest wchłaniane.</p>
+            <p style="font-size: 14px; color: #444; line-height: 1.7; margin-bottom: 12px;"><strong>Dlaczego 250 mg?</strong> Stosunek 1:1 β-CD do ALA zapewnia optymalne tworzenie kompleksów inkluzji. β-CD jest substancją oGRAS (Generally Recognized As Safe) — bezpieczną do spożycia w zalecanych dawkach.</p>
+            <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+              <span style="font-size: 12px; color: #888;">📚 1 176 publikacji w PubMed</span>
+              <a href="beta-cyklodekstryna.html" style="font-size: 13px; color: #1565c0; font-weight: 600; text-decoration: none;">Dowiedz się więcej →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 24px; font-size: 14px; color: #888;">Wszystkie dawki zgodne z zakresami stosowanymi w badaniach klinicznych. <a href="nauka.html" style="color: #2e7d32; text-decoration: none; font-weight: 600;">Zobacz przeglądy badań →</a></p>
   </section>
 
   <!-- KORZYŚCI -->
