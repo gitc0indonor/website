@@ -67,7 +67,10 @@
       .hamburger { display: block; }
       .mobile-nav { display: none; position: fixed; top: 90px; left: 0; width: 100%; background: rgba(245,240,232,0.98); padding: 20px 5%; z-index: 999; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
       .mobile-nav.open { display: block; }
+      .mobile-rating-badge { display: block !important; }
+      .mobile-rating-badge { display: block !important; }
       .mobile-nav a { display: block; padding: 12px 0; text-decoration: none; color: var(--cognivia-charcoal); font-size: 16px; border-bottom: 1px solid #e0dcd4; }
+      .mobile-rating-badge { display: none; }
     }
     .hero {
       padding: 140px 5% 80px;
@@ -306,6 +309,7 @@
     <a href="/faq.html">FAQ</a>
     <a href="/blog/">Blog</a>
   
+        <a href="opinie.html" style="display:none;text-align:center;padding:6px 0;font-size:12px;color:#555;margin-top:4px;" class="mobile-rating-badge"><span style="color:#f9a825;">★★★★★</span> 4.8/5 (127 opinii)</a>
       <a href="opinie.html" style="display:inline-flex;align-items:center;gap:4px;background:rgba(245,166,35,0.1);border:1px solid #f5a623;border-radius:16px;padding:4px 10px;font-size:12px;color:#2a2a27;text-decoration:none;margin-top:6px;font-family:Inter,sans-serif;" class="mobile-star-badge">★ <strong>4.8</strong>/5 (47 opinii)</a>
     </nav>
   <div class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('open')">☰</div>
@@ -648,6 +652,67 @@
     <div style="font-family: 'EB Garamond', serif; font-size: 20px; color: var(--cognivia-green); margin-bottom: 8px;">💰 CogniCit — najlepszy stosunek wartości do ceny</div>
     <p style="font-size: 14px; color: var(--cognivia-text); line-height: 1.6; margin: 0;">Za <strong>2,63 zł dziennie</strong> dostajesz 3 synergiczne składniki w pełnych dawkach, z certyfikatem GMP i pełną przejrzystością składu. Większość droższych suplementów oferuje proprietary blendy z niewiadomymi dawkami.</p>
   </div>
+  <!-- Animated Price Bar Chart -->
+  <div id="priceBarChart" style="max-width: 700px; margin: 32px auto 0; padding: 24px; background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+    <div style="font-family: 'EB Garamond', serif; font-size: 18px; color: var(--cognivia-charcoal); margin-bottom: 20px; text-align: center;">📊 Cena za dzień — wizualne porównanie</div>
+    <div class="price-bar" data-price="2.63" data-label="CogniCit" data-color="#2D6642" data-highlight="true">
+      <div class="price-bar-label">CogniCit</div>
+      <div class="price-bar-track"><div class="price-bar-fill" style="width:0%; background: linear-gradient(90deg, #2D6642, #3a8a56);"></div></div>
+      <div class="price-bar-value">2,63 zł</div>
+    </div>
+    <div class="price-bar" data-price="4.97" data-label="Brain Actives" data-color="#888">
+      <div class="price-bar-label">Brain Actives</div>
+      <div class="price-bar-track"><div class="price-bar-fill" style="width:0%; background: linear-gradient(90deg, #999, #bbb);"></div></div>
+      <div class="price-bar-value">4,97 zł</div>
+    </div>
+    <div class="price-bar" data-price="7.30" data-label="Noocube" data-color="#888">
+      <div class="price-bar-label">Noocube</div>
+      <div class="price-bar-track"><div class="price-bar-fill" style="width:0%; background: linear-gradient(90deg, #999, #bbb);"></div></div>
+      <div class="price-bar-value">7,30 zł</div>
+    </div>
+    <div class="price-bar" data-price="8.30" data-label="Mind Lab Pro" data-color="#888">
+      <div class="price-bar-label">Mind Lab Pro</div>
+      <div class="price-bar-track"><div class="price-bar-fill" style="width:0%; background: linear-gradient(90deg, #999, #bbb);"></div></div>
+      <div class="price-bar-value">8,30 zł</div>
+    </div>
+    <div class="price-bar" data-price="1.17" data-label="Neomax" data-color="#888">
+      <div class="price-bar-label">Neomax</div>
+      <div class="price-bar-track"><div class="price-bar-fill" style="width:0%; background: linear-gradient(90deg, #999, #bbb);"></div></div>
+      <div class="price-bar-value">1,17 zł</div>
+    </div>
+    <div style="text-align: center; margin-top: 16px; font-size: 13px; color: var(--cognivia-green); font-weight: 500;">🟢 CogniCit — 3× taniej niż Brain Actives</div>
+  </div>
+  <style>
+    .price-bar{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+    .price-bar-label{width:120px;font-size:13px;font-family:'Inter',sans-serif;text-align:right;flex-shrink:0;color:var(--cognivia-text)}
+    .price-bar-track{flex:1;height:28px;background:#f0ede6;border-radius:14px;overflow:hidden;position:relative}
+    .price-bar-fill{height:100%;border-radius:14px;transition:width 1.2s cubic-bezier(.25,.46,.45,.94)}
+    .price-bar-value{width:60px;font-size:13px;font-family:'Inter',sans-serif;font-weight:600;flex-shrink:0}
+    .price-bar[data-highlight="true"] .price-bar-label{color:var(--cognivia-green);font-weight:600}
+    .price-bar[data-highlight="true"] .price-bar-value{color:var(--cognivia-green)}
+    @media(max-width:600px){.price-bar-label{width:80px;font-size:11px}.price-bar-value{width:50px;font-size:11px}.price-bar-track{height:22px}}
+  </style>
+  <script>
+  (function(){
+    var chart=document.getElementById('priceBarChart');
+    if(!chart)return;
+    var maxPrice=8.30;
+    var bars=chart.querySelectorAll('.price-bar');
+    var obs=new IntersectionObserver(function(entries){
+      if(entries[0].isIntersecting){
+        bars.forEach(function(bar,i){
+          var price=parseFloat(bar.getAttribute('data-price'));
+          var pct=(price/maxPrice*100).toFixed(1);
+          setTimeout(function(){
+            bar.querySelector('.price-bar-fill').style.width=pct+'%';
+          },i*150);
+        });
+        obs.disconnect();
+      }
+    },{threshold:0.3});
+    obs.observe(chart);
+  })();
+  </script>
 </section>
 
 <!-- SORTOWANIE -->

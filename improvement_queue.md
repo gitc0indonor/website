@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Ecommerce Cron Cycle #86 — 21:57 UTC)
+## Last Updated: 2026-03-29 (Power Cycle #93 — 22:36 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -871,11 +871,21 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 434. **[NEW] Add "Certyfikaty GMP" animation to mobile nav on ALL pages** — Small green shield icon with pulse animation in hamburger menu, linking to certyfikaty.html. Visible trust signal at first interaction point for mobile visitors (60%+ traffic). Consistent across all 50+ pages. Estimated: 30 minutes.
 
+### 🆕 Power Cycle #92 Additions (2026-03-29 22:05 UTC)
+
+441. **[NEW] Add "Ranking cenowy" animated bar chart to /porownanie.html** — Expand the existing price-per-serving table with an animated horizontal bar chart: each supplement gets a proportional-width bar (CogniCit = shortest = cheapest). Green highlight for CogniCit, grey for competitors. Animated on scroll via IntersectionObserver. Makes the value proposition instantly visual. Estimated: 1 hour.
+
+442. **[NEW] Create "Jak suplementy wpływają na odporność?" blog post** — Target "suplementy na odporność" (2K+ monthly, Oct-Mar seasonal peak). Cover immune-brain connection (vagus nerve, cholinergic anti-inflammatory pathway), cytykolina → acetylcholine → immune regulation, ALA glutathione regeneration for lymphocytes. Positions CogniCit as dual-benefit (brain + immunity). Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+443. **[NEW] Add "Zaufali nam" logos section to ALL landing pages missing it** — Audit sesja, matura, powrot-do-szkoly, porownanie for certification trust logos (GMP, GIS, EU, Lab). Add consistent trust bar matching index.html "Zaufali nam" section. Trust transfer from institutions to brand at every conversion point. Estimated: 1 hour.
+
+---
+
 ### 🆕 Power Cycle #91 Additions (2026-03-29 21:27 UTC)
 
-435. **[NEW] Add "Wpływ na sen" section to produkt.html** — Expand the product page with a dedicated section addressing the common "does this affect sleep?" concern. Green pill badge "0 mg kofeiny — nie zaburza snu", link to blog/nootropiki-a-sen.html. Captures safety-conscious buyers who abandon cart over sleep anxiety. Complements new sleep FAQ on faq-produkt.html (#432). Estimated: 30 minutes.
+435. ~~**[DONE] Add "Wpływ na sen" section to produkt.html**~~ ✅ — Expand the product page with a dedicated section addressing the common "does this affect sleep?" concern. Green pill badge "0 mg kofeiny — nie zaburza snu", link to blog/nootropiki-a-sen.html. Captures safety-conscious buyers who abandon cart over sleep anxiety. Complements new sleep FAQ on faq-produkt.html (#432). Estimated: 30 minutes.
 
-436. **[NEW] Create "Najczęstsze pytania o składniki" FAQ page (/faq-skladniki)** — Ingredient-specific FAQ separate from general FAQ and product FAQ. Covers: ALA bioavailability, cytykolina vs Alpha GPC, β-CD food safety status, "czy mogę otworzyć kapsułkę?", "czy składniki są GMO-free?". 15+ Q&As with FAQPage JSON-LD. SEO target: "kwas alfa-liponowy suplement pytania", "cytykolina bezpieczeństwo". Estimated: 2 hours.
+436. ~~**[DONE] Create "Najczęstsze pytania o składniki" FAQ page (/faq-skladniki)**~~ ✅ — Power Cycle #92. Created faq-skladniki.html (19.2KB). 4 categories, 13 Q&As covering cytykolina (4), ALA (3), β-CD (3), synergia (3). FAQPage JSON-LD with 8 entries for Google rich results. Cross-links to ingredient pages, blog posts, skutki-uboczne, certyfikaty, produkt. Responsive design matching site palette. Added to sitemap.xml. SEO targets: "cytykolina bezpieczeństwo", "beta-cyklodekstryna suplement", "ALA interakcje".
 
 437. **[NEW] Add "Gwiazdka Google" visible rating badge to mobile nav on ALL pages missing it** — index.html mobile nav already has ★4.8/5 badge (Power Cycle #84). Extend to all 50+ pages' mobile hamburger menus. Consistent trust signal at first mobile interaction. Green pill badge linking to opinie.html. Estimated: 1 hour.
 
@@ -887,4 +897,12 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 439. ~~**[DONE] Add "Dla kogo jest CogniCit?" personas section to index.html**~~ ✅ — Ecommerce Cron Cycle #86. Added 3-card persona grid before footer newsletter: Students (→ sesja.html), Professionals (→ produkt.html), 40+ adults (→ nauka.html). Each card has icon, benefit-focused copy, hover animation, and deep link. Targets different buyer personas with tailored messaging.
 
-440. **[NEW] Add "Polecane przez ekspertów" authority section to produkt.html** — Feature quotes or endorsements from pharmacists, neuroscientists, or nutrition experts about the 3 ingredients. Even general (non-brand-specific) expert quotes boost credibility. Add headshot placeholders, name, title. Estimated: 1.5 hours.
+440. ~~**[DONE] Add "Polecane przez ekspertów" authority section to produkt.html**~~ ✅ — Power Cycle #92. Added "Co mówią badania?" section after video testimonial carousel and before recommended articles. 3 quote cards: cytykolina (Secades & Frontera, Clinical Interventions in Aging 2014, 233 PubMed), ALA (Hager et al. 2007, 1522 PubMed), β-CD (farmaceutical review, GRAS/UE). White cards with colored left borders (green/gold/indigo). Each card: emoji, blockquote, citation with journal/year. Responsive grid. Disclaimer footer. Builds science credibility at conversion decision point.
+
+### 🆕 Power Cycle #93 Additions (2026-03-29 22:36 UTC)
+
+444. **[NEW] Add "Najlepszy suplement na koncentrację bez kofeiny" SEO mega-page (/ranking-koncentracja-bez-kofeiny)** — Target "suplement na koncentrację bez kofeiny ranking" (1.5K+ monthly). Full comparison: CogniCit (0mg caffeine, 3 synergistic ingredients, GMP) vs 5 competitors scored on 8 criteria. Interactive filter by price/ingredients. FAQPage + Product aggregateRating JSON-LD. Estimated: 3 hours.
+
+445. **[NEW] Create "Jak suplementy wpływają na wydajność w pracy?" blog post** — Target "suplementy na wydajność w pracy" (600+ monthly). Covers: cognitive load theory, deep work support, meeting fatigue, CogniCit morning protocol for professionals. Positions CogniCit as the productivity supplement. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+446. **[NEW] Add animated ingredient mechanism GIFs to /skladniki.html** — Create 3 short animated GIFs showing each ingredient's mechanism: (1) ALA neutralizing free radicals, (2) Cytykolina building acetylcholine, (3) β-CD wrapping and protecting molecules. GIFs are more shareable than interactive JS and load faster than videos. Position next to each ingredient card. Estimated: 2 hours.

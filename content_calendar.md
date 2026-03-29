@@ -2484,3 +2484,27 @@
 **SEO angle:** First Polish content connecting nootropic supplementation to SLEEP QUALITY (not just "do supplements keep you awake"). Positions CogniCit as the sleep-friendly nootropic. Complements existing sleep blog post with deeper neuroscience angle.
 **Target platforms:** Google (SEO), grupy FB o zdrowym śnie/biohackingu
 **Status:** Outline ready, needs writing
+
+### Blog Post Outline #82 — Power Cycle #92
+**Title:** "Jak suplementy wpływają na odporność? Neuroimmunologia w praktyce"
+**Target keyword:** "suplementy na odporność" / "nootropiki odporność" (~2K+ monthly, seasonal peak Oct-Mar)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Seasonal peak October-March (flu/cold season), secondary peak Sep (back to school/work)
+
+**Outline:**
+1. **Wstęp** — Odporność to nie tylko witamina C. Układ nerwowy i immunologiczny są połączone przez nerw błędny (vagus nerve). CogniCit jako suplement mózgu z korzyścią dla odporności.
+2. **Jak mózg wpływa na odporność?** — Acetylocholina jako modulator odpowiedzi zapalnej. Cholinergic anti-inflammatory pathway (Tracey, 2002). Prosty diagram: mózg → vagus nerve → regulacja zapalenia.
+3. **Cytykolina a układ immunologiczny** — Cytykolina → acetylocholina → regulacja stanów zapalnych. Mechanizm: więcej ACh = lepsza kontrola cytokin prozapalnych. Context: chroniczne stany zapalne a funkcje poznawcze.
+4. **ALA — ochrona komórek immunologicznych** — Wolne rodniki uszkadzają limfocyty. ALA regeneruje glutation (główny antyoksydant komórek odpornościowych). Hager et al. 2007. Rola w mitochondriach limfocytów.
+5. **β-CD — dlaczego biodostępność ma znaczenie dla odporności** — Stres (choroba, sezon) obniża wchłanianie z jelit. β-CD chroni składniki aktywne → więcej dociera do komórek. Analogia: kurier dostarczający paczkę nienaruszoną.
+6. **Praktyczne wskazówki na sezon** — 5 sposobów na naturalne wsparcie odporności + CogniCit jako uzupełnienie (sen 7-8h, ruch 30 min/dzień, dieta bogata w cynk/witaminę D, nawodnienie, suplementacja rano).
+7. **Porównanie z typowymi suplementami na odporność** — Tabela: CogniCit vs witamina C vs tran vs multiwitaminowy. Wyróżnik: CogniCit = wsparcie mózgu + odporności w jednej kapsułce. Zero kofeiny.
+8. **Bezpieczeństwo** — Przeciwwskazania, interakcje z lekami immunosupresyjnymi, disclaimer. Suplement nie zastępuje leku.
+9. **Podsumowanie** — Odporność zaczyna się od mózgu. CogniCit jako suplement łączący oba systemy.
+
+**CTA:** "Zamów CogniCit — wsparcie mózgu i odporności w jednej kapsułce" → produkt.html
+**Internal links:** produkt.html, nauka.html, skladniki.html, blog/suplementy-dla-seniorow-50-plus.html, blog/nootropiki-a-stres.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** Seasonal Oct-Mar peak. Zero Polish content connecting nootropics to immunity. First-mover advantage. Positions CogniCit as dual-benefit (brain + immunity).
+**Target platforms:** Google (SEO), grupy FB o zdrowiu, Wykop
+**Status:** Outline ready, needs writing

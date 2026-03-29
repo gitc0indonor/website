@@ -2926,3 +2926,40 @@
 - #437: ★4.8/5 rating badge to mobile nav on all pages (1 hour)
 
 **Pushed:** commit 2bafeca → github.com/gitc0indonor/website.git
+
+### 2026-03-29 — Power Cycle #92 (22:05 UTC)
+**Implemented:**
+- ✅ #440 — Added "Co mówią badania?" expert authority section to produkt.html
+  - 3 quote cards: cytykolina (Secades & Frontera, 2014, 233 PubMed), ALA (Hager et al. 2007, 1522 PubMed), β-CD (farmaceutical review, GRAS/UE status)
+  - White cards with colored left borders (green/gold/indigo), blockquote styling, journal citations
+  - Responsive grid (auto-fit minmax 280px))
+  - Disclaimer footer: "Cytaty pochodzą z recenzowanych publikacji naukowych"
+  - Positioned after video testimonial placeholder and before recommended articles section
+  - Builds science credibility at the conversion decision point — visitors see real research backing
+- ✅ #436 — Created /faq-skladniki.html (19.2KB) — ingredient-specific FAQ page
+  - 4 categories: Cytykolina (4 Q&As), ALA (3 Q&As), β-CD (3 Q&As), Synergia (3 Q&As) — 13 total
+  - FAQPage JSON-LD schema with 8 entries for Google rich results
+  - Cross-links to ingredient pages, blog posts, skutki-uboczne, certyfikaty, produkt
+  - Accordion UI with smooth max-height CSS transitions
+  - Responsive design matching site palette
+  - Added to sitemap.xml (priority 0.7, monthly changefreq)
+  - SEO targets: "cytykolina bezpieczeństwo", "beta-cyklodekstryna suplement", "ALA interakcje"
+- ✅ Blog outline #82 added to content_calendar.md: "Jak suplementy wpływają na odporność?"
+  - Targets "suplementy na odporność" (2K+ monthly, Oct-Mar seasonal peak)
+  - Zero Polish content connecting nootropics to immunity — first-mover advantage
+  - Neuroimmunology angle: vagus nerve + cholinergic anti-inflammatory pathway
+- ✅ 3 new improvement ideas added to queue (#441-443)
+
+**Files changed:**
+- `produkt.html` — Expert authority section (~30 lines) after video testimonial carousel
+- `faq-skladniki.html` — NEW (19.2KB) — ingredient FAQ page with accordion + FAQPage JSON-LD
+- `sitemap.xml` — faq-skladniki.html URL added
+- `improvement_queue.md` — Items #436, #440 marked DONE; 3 new items (#441-443); timestamp → Power Cycle #92
+- `content_calendar.md` — Blog outline #82: suplementy a odporność
+- `changelog.md` — This entry
+
+**Site verification:** Both files validated — DOCTYPE ✓, </html> ✓. produkt.html: "EXPERT AUTHORITY" section confirmed, 3 quote cards confirmed. faq-skladniki.html: 13 accordion items confirmed, FAQPage JSON-LD with 8 entries, BreadcrumbList schema. Sitemap valid XML.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~440 completed + ~48 active = ~488 total
