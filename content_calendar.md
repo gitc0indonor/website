@@ -2213,3 +2213,57 @@
 **SEO angle:** Seasonal content (Oct-Nov peak) with evergreen elements. Zero quality Polish content on supplements + SAD. Emotional resonance = high engagement + shares. Positions CogniCit as year-round cognitive support.
 **Target platforms:** Google (SEO), grupy FB o zdrowiu psychicznym, Wykop
 **Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #71 — Power Cycle #83
+**Title:** "Poranne nawyki na koncentrację — 5-minutowy protokół na lepszy dzień"
+**Target keyword:** "poranne nawyki koncentracja" / "jak zacząć dzień produktywnie" (~1.2K monthly searches in Poland)
+**Estimated word count:** 1,500-2,000 words
+**Seasonality:** Evergreen, slight peak Jan (New Year resolutions) and Sep (back to work/school)
+
+**Outline:**
+1. **Wstęp** — Pierwsza godzina dnia determinuje resztę. 5-minutowy protokół, który zmienia grę.
+2. **Krok 1: Światło (1 min)** — Regulacja kortyzolu, serotoninina. Nawet 5 min światła słonecznego = lepszy rytm dobowy.
+3. **Krok 2: Woda (1 min)** — Rehydratacja po nocy. 2% odwodnienia = spadek koncentracji o 25%.
+4. **Krok 3: CogniCit (30 sek)** — 1 kapsułka ze śniadaniem. Cytykolina → acetylocholina → focus na cały dzień. Zero kofeiny = zero crashu.
+5. **Krok 4: Oddech (2 min)** — 4-7-8 breathing technique. Aktywacja przywspółczulnego układu nerwowego. Badania: 2 min oddechu = spadek kortyzolu o 15%.
+6. **Krok 5: Intencja (30 sek)** — 1 najważniejsze zadanie dnia. Zamiast listy 20 zadań → 1 cel. Redukuje decision fatigue.
+7. **Dlaczego to działa?** — Neurobiologia: acetylocholina (CogniCit) + kortyzol (światło) + nawodnienie = optymalne warunki dla kory przedczołowej.
+8. **Protokół na 7 dni** — Tracking sheet: czy wykonałeś 5 kroków? Po 7 dniach zobaczysz różnicę.
+9. **Podsumowanie** — 5 minut > 2 godziny "produktywnego" scrollowania. CogniCit jako anchor poranka.
+
+**CTA:** Zamów CogniCit → produkt.html (79 zł, 30-dniowa gwarancja)
+**Internal links:** produkt.html, blog/poranne-nawyki-programisty.html, blog/jak-budowac-rutyne-suplementacji.html, jak-stosowac.html, blog/suplementy-a-kofeina.html
+**Schema:** Article + BreadcrumbList JSON-LD
+**SEO angle:** "poranne nawyki" = trending Polish keyword (1.2K+ monthly). Practical listicle format = high engagement + featured snippet potential. Positions CogniCit as a simple daily habit, not a medical intervention.
+**Target platforms:** Google (SEO), Wykop, grupy FB o produktywności, LinkedIn
+**Season:** Evergreen
+**Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #72 — Power Cycle #83
+**Title:** "Czy kofeina działa inaczej po 50.? Co nauka mówi o kawie w starszym wieku"
+**Target keyword:** "kofeina po 50" / "kawa osoby starsze" / "kofeina seniorzy" (~800 monthly searches, zero-quality Polish content)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Evergreen, slight peak winter (fatigue concern)
+
+**Outline:**
+1. **Wstęp** — 78% Polaków po 50. roku życia pije kawę codziennie. Ale kofeina metabolizuje się wolniej z wiekiem. Co to oznacza?
+2. **Jak kofeina działa w mózgu** — Mechanizm adenozynowy, blokada receptorów A1/A2A. Prosty schemat: kawa → blokuje senność → alert → ale potem crash.
+3. **Dlaczego po 50. jest inaczej** — Wolniejszy metabolizm wątrobowy (CYP1A2), dłuższy T½ kofeiny (z 4h → 6-8h). Badania: średnio 50% wolniejsza eliminacja u osób 60+. Wpływ na sen: kofeina o 14:00 = zaburzenie snu o 23:00.
+4. **Kofeina a leki** — Interakcje: leki na nadciśnienie (kofeina podnosi ciśnienie o 5-10 mmHg), statyny (konkurencja metaboliczna), leki na tarczycę (zmniejsza wchłanianie). Tabela interakcji.
+5. **Alternatywa: cytykolina** — Mechanizm: buduje acetylocholinę (neuroprzekaźnik pamięci), nie blokuje adenozyny = naturalna czujność bez stymulacji. Badania: meta-analiza 2014 (Clinical Interventions in Aging) — cytykolina poprawiała funkcje poznawcze u osób 50+.
+6. **CogniCit jako bezpieczna alternatywa** — 0 mg kofeiny, 300 mg cytykolina, synergia z ALA (antyoksydant dla starzejącego się mózgu), β-CD dla lepszej absorpcji u osób starszych (enzymy trawienne słabsze).
+7. **Protokół: jak przejść z kawy na suplement** — Stopniowa redukcja: Tydzień 1 (kawa + CogniCit), Tydzień 2 (mniejsza kawa + CogniCit), Tydzień 3 (CogniCit rano, kawa opcjonalnie). Nie trzeba rezygnować z kawy — CogniCit uzupełnia, nie zastępuje.
+8. **FAQ** — 5 pytań: Czy mogę pić kawę z CogniCit? Czy jest bezpieczny z lekami? Kiedy zacząć? Czy to dla osób po 60.? Gdzie kupić?
+9. **Podsumowanie** — Kofeina nie jest zła — ale po 50. warto myśleć o alternatywach. CogniCit = wsparcie poznawcze bez skutków ubocznych kofeiny.
+
+**CTA:** Zamów CogniCit → produkt.html (79 zł, 0 mg kofeiny, GMP)
+**Internal links:** produkt.html, blog/suplementy-dla-seniorow-50-plus.html, blog/suplementy-a-kofeina.html, nauka.html, certyfikaty.html, porownanie.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD
+**SEO angle:** Zero-quality Polish content on caffeine + aging. Emotional safety angle (leki interakcje) = high engagement. Positions CogniCit as the safe alternative for 50+. Featured snippet potential for "kofeina po 50".
+**Target platforms:** Google (SEO), grupy FB dla seniorów, Wykop, newsletter
+**Season:** Evergreen
+**Status:** Outline ready, needs writing

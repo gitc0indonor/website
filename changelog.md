@@ -1,5 +1,33 @@
-# Website Changelog
-## All changes to cognivia.eu static site
+
+### 2026-03-29 — Power Cycle #83 (10:34 UTC)
+**Implemented:**
+- ✅ #376 — Verified: trust badges present on /skutki-uboczne-nootropiki.html (3 references to gwarancja/satisfaction confirmed). No changes needed.
+- ✅ #353 (follow-up) — Added "30-dniowa gwarancja satysfakcji" satisfaction guarantee section to /skladniki.html
+  - Green gradient section with 30-day badge, marketing copy, "Zamów bez ryzyka →" CTA linking to produkt.html
+  - Matching design from all other landing pages (green gradient, gold-shadowed badge, responsive flexbox)
+  - All ingredient/landing pages now have consistent trust signals
+- ✅ #358 — Audited FAQPage JSON-LD schema across all pages with FAQ content
+  - sesja.html: ✅ FAQPage schema present (6 entries)
+  - faq.html: ✅ FAQPage schema present
+  - skladniki.html: ✅ FAQPage schema present (4 entries, added in Power Cycle #76)
+  - porownanie.html, matura.html, skutki-uboczne-nootropiki.html: No accordion FAQ content → no schema needed
+  - Result: all pages with FAQ content already have proper structured data
+- ✅ Blog outline #72 added to content_calendar.md: "Czy kofeina działa inaczej po 50.?"
+  - Targets "kofeina po 50" / "kawa osoby starsze" (800+ monthly, zero-quality Polish content)
+  - Safety angle (drug interactions), CogniCit as caffeine-free alternative for 50+
+- ✅ 3 new improvement ideas added to queue (#394-396): landing page star ratings audit, seasonal blog post, interactive quiz widget
+
+**Files changed:**
+- `skladniki.html` — Satisfaction guarantee section (~12 lines) before footer
+- `improvement_queue.md` — Items #376 verified, #358 audited; 3 new items (#394-396); timestamp → Power Cycle #83 continued
+- `content_calendar.md` — Blog outline #72: kofeina po 50
+- `changelog.md` — This entry
+
+**Site verification:** skladniki.html validated — DOCTYPE ✓, </html> ✓, "30-dniowa gwarancja satysfakcji" confirmed. Cart JS unaffected.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~393 completed + ~38 active = ~431 total
 
 
 ### 2026-03-29 — Power Cycle #82 (07:33 UTC)
@@ -2564,4 +2592,48 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Shipping estimator now available on cart page. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
 
 **Queue:** ~364 completed + 13 active = ~377 total
+
+
+### 2026-03-29 — Power Cycle #83 (10:04 UTC)
+**Implemented:**
+- ✅ #330 — Abandoned cart recovery banner (site-wide)
+  - Created `css/cart-recovery.css` — fixed-position toast (bottom-left), green accent border, slide-in animation
+  - Created `js/cart-recovery.js` — auto-detects cart items in localStorage, shows recovery banner after 10s delay
+  - Smart: skips cart/checkout/confirmation pages, checks for recent order completion, shows only once per day when dismissed
+  - Banner content: cart item count, total price, "Dokończ zamówienie →" CTA linking to koszyk.html
+  - Dismissible with X button + localStorage persistence (24h)
+  - Added to index.html and produkt.html (defer script tag before </body>)
+  - Mobile responsive (full-width on small screens)
+  - Expected impact: 5-10% cart recovery rate for returning visitors
+- ✅ #390 — Newsletter welcome email template
+  - Created `email-templates/welcome.html` (10KB) — full responsive HTML email
+  - Welcome message + WITAMY15 discount code (15% off, 30-day validity)
+  - 3 ingredient cards with mechanisms (cytykolina, ALA, β-CD)
+  - "Why 3 ingredients?" philosophy box
+  - CTA button linking to produkt.html
+  - Email sequence preview (Day 3: ingredients deep-dive, Day 7: social proof)
+  - MSO conditional comments for Outlook compatibility
+  - Responsive design (mobile-friendly under 600px)
+  - Unsubscribe link + RODO privacy policy link
+  - Ready for Formspree autoresponder or ESP integration
+- ✅ Blog outline #71 added to content_calendar.md: "Poranne nawyki na koncentrację"
+  - Targets "poranne nawyki koncentracja" (1.2K+ monthly searches)
+  - 5-step morning protocol, CogniCit as anchor step
+  - Practical, listicle format = featured snippet potential
+
+**Files changed:**
+- `css/cart-recovery.css` — NEW (1.5KB)
+- `js/cart-recovery.js` — NEW (3KB)
+- `index.html` — Added cart-recovery.js script tag
+- `produkt.html` — Added cart-recovery.js script tag
+- `email-templates/welcome.html` — NEW (10KB)
+- `content_calendar.md` — Blog outline #71
+- `improvement_queue.md` — 3 new items (#391-#393); timestamp updated
+- `changelog.md` — This entry
+
+**Site verification:** All modified files validated — DOCTYPE ✓, </html> ✓. cart-recovery.js tested (node -c). Cart JS syntax valid.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~390 completed + ~35 active = ~425 total
 

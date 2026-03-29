@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potwierdzenie zamówienia — CogniCit</title>
+  <style>
+    body { margin: 0; padding: 0; background-color: #f5f3ee; font-family: 'Helvetica Neue', Arial, sans-serif; }
+    .wrapper { max-width: 600px; margin: 0 auto; background: #ffffff; }
+    .header { background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%); padding: 32px 24px; text-align: center; }
+    .header h1 { color: #ffffff; font-size: 28px; margin: 0 0 4px; font-weight: 400; font-family: Georgia, 'Times New Roman', serif; }
+    .header p { color: rgba(255,255,255,0.8); font-size: 14px; margin: 0; }
+    .content { padding: 32px 24px; }
+    .success-banner { background: #e8f5e9; border-radius: 12px; padding: 20px; text-align: center; margin-bottom: 24px; }
+    .success-banner .icon { font-size: 40px; margin-bottom: 8px; }
+    .success-banner h2 { color: #2e7d32; font-size: 20px; margin: 0 0 4px; }
+    .success-banner p { color: #555; font-size: 14px; margin: 0; }
+    .order-id { background: #f8f5ef; border-radius: 8px; padding: 16px; text-align: center; margin-bottom: 24px; }
+    .order-id span { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 4px; }
+    .order-id strong { font-size: 18px; color: #1a3a2a; font-family: monospace; }
+    .section-title { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #eee; }
+    table.items { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+    table.items th { text-align: left; font-size: 12px; color: #888; padding: 8px 0; border-bottom: 2px solid #eee; font-weight: 500; }
+    table.items th:last-child { text-align: right; }
+    table.items td { padding: 12px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #333; }
+    table.items td:last-child { text-align: right; font-weight: 600; }
+    .total-row td { border-top: 2px solid #1a3a2a; border-bottom: none; padding-top: 16px; font-size: 16px; }
+    .total-row td:last-child { color: #2e7d32; font-size: 18px; }
+    .info-card { background: #f8f5ef; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+    .info-card h4 { font-size: 13px; color: #1a3a2a; margin: 0 0 8px; }
+    .info-card p { font-size: 13px; color: #555; margin: 0; line-height: 1.5; }
+    .timeline { margin: 24px 0; }
+    .timeline-step { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+    .timeline-dot { width: 28px; height: 28px; border-radius: 50%; background: #2e7d32; color: white; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+    .timeline-dot.pending { background: #e0e0e0; color: #999; }
+    .timeline-label { font-size: 14px; color: #333; padding-top: 4px; }
+    .timeline-label small { display: block; font-size: 12px; color: #888; }
+    .cta-btn { display: inline-block; background: #2e7d32; color: #ffffff !important; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 15px; font-weight: 600; margin: 8px 4px; }
+    .trust-bar { display: flex; justify-content: center; gap: 16px; margin: 24px 0; flex-wrap: wrap; }
+    .trust-item { font-size: 12px; color: #888; }
+    .footer { background: #1a3a2a; color: rgba(255,255,255,0.7); padding: 24px; text-align: center; font-size: 12px; line-height: 1.6; }
+    .footer a { color: #c9a96e; text-decoration: none; }
+    .footer .links { margin: 12px 0; }
+    .footer .links a { margin: 0 8px; }
+    @media only screen and (max-width: 480px) {
+      .content { padding: 24px 16px; }
+      .header { padding: 24px 16px; }
+      .header h1 { font-size: 24px; }
+      .trust-bar { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Cognivia</h1>
+      <p>Suplementy diety nowej generacji</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <!-- Success banner -->
+      <div class="success-banner">
+        <div class="icon">✅</div>
+        <h2>Zamówienie przyjęte!</h2>
+        <p>Dziękujemy, {{CUSTOMER_NAME}}. Twoje zamówienie jest już w realizacji.</p>
+      </div>
+
+      <!-- Order ID -->
+      <div class="order-id">
+        <span>Numer zamówienia</span>
+        <strong>{{ORDER_ID}}</strong>
+      </div>
+
+      <!-- Order items -->
+      <div class="section-title">Szczegóły zamówienia</div>
+      <table class="items">
+        <thead>
+          <tr>
+            <th>Produkt</th>
+            <th>Ilość</th>
+            <th>Cena</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ITEMS_ROWS}}
+          <tr class="total-row">
+            <td colspan="2"><strong>Suma</strong></td>
+            <td>{{ORDER_TOTAL}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Shipping & delivery info -->
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <div class="info-card" style="flex: 1; min-width: 240px;">
+          <h4>📦 Adres dostawy</h4>
+          <p>{{CUSTOMER_NAME}}<br>
+          {{CUSTOMER_ADDRESS}}<br>
+          {{CUSTOMER_CITY}}, {{CUSTOMER_ZIP}}<br>
+          📞 {{CUSTOMER_PHONE}}</p>
+        </div>
+        <div class="info-card" style="flex: 1; min-width: 240px;">
+          <h4>🚚 Metoda dostawy</h4>
+          <p>{{SHIPPING_METHOD}}<br>
+          Szacowany czas: <strong>{{ESTIMATED_DELIVERY}}</strong><br>
+          {{SHIPPING_COST}}</p>
+        </div>
+      </div>
+
+      <!-- What happens next -->
+      <div class="section-title" style="margin-top: 24px;">Co dalej?</div>
+      <div class="timeline">
+        <div class="timeline-step">
+          <div class="timeline-dot">✓</div>
+          <div class="timeline-label">Zamówienie przyjęte<small>{{ORDER_DATE}}</small></div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot pending">2</div>
+          <div class="timeline-label">Pakowanie zamówienia<small>Zwykle w ciągu 24h</small></div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot pending">3</div>
+          <div class="timeline-label">Wysyłka<small>Otrzymasz numer śledzenia</small></div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot pending">4</div>
+          <div class="timeline-label">Dostarczenie<small>{{ESTIMATED_DELIVERY}}</small></div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align: center; margin: 24px 0;">
+        <a href="https://cognivia.eu/jak-stosowac.html" class="cta-btn">📖 Jak stosować CogniCit?</a>
+        <a href="https://cognivia.eu/faq-produkt.html" class="cta-btn" style="background: transparent; color: #2e7d32; border: 2px solid #2e7d32;">❓ FAQ produktu</a>
+      </div>
+
+      <!-- Guarantee -->
+      <div style="background: linear-gradient(135deg, #e8f5e9, #f1f8e9); border-radius: 12px; padding: 20px; text-align: center; margin: 24px 0;">
+        <div style="font-size: 32px; margin-bottom: 8px;">🛡️</div>
+        <h3 style="color: #1a3a2a; font-size: 16px; margin: 0 0 4px;">30-dniowa gwarancja satysfakcji</h3>
+        <p style="color: #555; font-size: 13px; margin: 0;">Nie jesteś zadowolony? Zwrócimy pieniądze za pierwsze opakowanie — bez pytań.</p>
+      </div>
+
+      <!-- Trust bar -->
+      <div class="trust-bar">
+        <span class="trust-item">🔒 Szyfrowane płatności</span>
+        <span class="trust-item">🏭 Certyfikat GMP</span>
+        <span class="trust-item">🇵🇱 Wysyłka z Polski</span>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <strong style="color: #ffffff; font-size: 14px;">Cognivia</strong><br>
+      Suplementy diety nowej generacji<br><br>
+      <div class="links">
+        <a href="https://cognivia.eu/produkt.html">Produkt</a>
+        <a href="https://cognivia.eu/kontakt.html">Kontakt</a>
+        <a href="https://cognivia.eu/zwroty.html">Zwroty</a>
+        <a href="https://cognivia.eu/regulamin.html">Regulamin</a>
+      </div>
+      <br>
+      <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a><br><br>
+      <span style="font-size: 11px; opacity: 0.6;">
+        Ten email został wysłany automatycznie w związku z realizacją zamówienia.<br>
+        Zgodnie z RODO masz prawo do dostępu, sprostowania i usunięcia swoich danych.<br>
+        <a href="https://cognivia.eu/polityka-prywatnosci.html">Polityka prywatności</a>
+      </span>
+    </div>
+  </div>
+</body>
+</html>

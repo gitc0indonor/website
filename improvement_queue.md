@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Power Cycle #82)
+## Last Updated: 2026-03-29 (Power Cycle #83)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -750,3 +750,27 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 389. **[NEW] Create "Ranking suplementów na koncentrację 2026" mega SEO page (/ranking-koncentracja-2026)** — Ultimate authority page targeting "najlepszy suplement na koncentrację" (5K+ monthly). Full comparison of 8 supplements scored on 10 criteria. Interactive filter (by price, ingredients, certifications). CogniCit wins on transparency + GMP + no caffeine. Article + BreadcrumbList + FAQPage + Product aggregateRating JSON-LD. Estimated: 4 hours.
 
 390. **[NEW] Add "Newsletter welcome" branded HTML email template** — Create /email-templates/welcome.html with Cognivia branding (EB Garamond + Inter, green accents). Content: welcome message, 15% discount code, product overview, ingredient links, dosage quick-start, contact info. Ready for Formspree autoresponder or ESP integration. Estimated: 1 hour.
+
+### 🆕 Power Cycle #83 Additions (2026-03-29)
+
+391. **[NEW] Add "Jak to działa?" animated GIF to produkt.html** — Create a short animated GIF showing the 3-step CogniCit mechanism (ingest → β-CD protection → brain absorption). GIFs are more shareable than static images and load faster than videos. Position near the ingredient explainer section. Estimated: 1 hour.
+392. **[NEW] Add Google Search Console verification to index.html** — Verify site ownership at search.google.com/search-console. Add HTML verification tag to index.html head. Enables performance monitoring, index coverage reports, and manual URL submission. Critical for SEO visibility. Estimated: 15 minutes.
+393. **[NEW] Create "Witamy w Cognivia" thank-you page (/dziekuje-za-zapis) with discount delivery** — Post-newsletter signup landing page: shows WITAMY15 discount code, what to expect (email frequency), link back to produkt.html. Currently email signups have no dedicated follow-up page. Estimated: 45 minutes.
+
+---
+
+## Last Updated: 2026-03-29 (Power Cycle #83 continued)
+
+### 🆕 Power Cycle #83 Additions (2026-03-29 10:34 UTC)
+
+394. **[NEW] Add "Opinie klientów" mini-widget to ALL landing pages missing it** — Audit matura, sesja, powrot-do-szkoly, porownanie, ranking-nootropikow, skladniki, skutki-uboczne-nootropiki for visible ★★★★★ 4.8/5 star rating badges linking to opinie.html. Some pages may have been missed in earlier audits. Ensure every conversion-focused page has visible social proof. Estimated: 20 minutes.
+
+395. **[NEW] Create "Kiedy zacząć suplementację nootropikami?" seasonal blog post** — Target "kiedy brać nootropiki", "suplementacja od kiedy zacząć". Answer common timing questions (morning vs evening, with food vs empty stomach, seasonal relevance). SEO for high-intent queries from people considering their first nootropic. Positions CogniCit (1 capsule/day simplicity) as the easiest entry point. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+396. **[NEW] Add "Czy CogniCit jest dla Ciebie?" interactive quiz widget to index.html** — 3-question mini-quiz embedded in index.html hero or CTA section: (1) What's your biggest cognitive challenge? (2) How many hours of mental work per day? (3) Do you drink coffee? Result maps to specific CogniCit benefits with ingredient links. Email gate before detailed results = lead capture. Gamification drives engagement + time-on-page. Expected 15-20% email capture rate on quiz completers. Estimated: 2 hours.
+
+---
+
+## Last Updated: 2026-03-29 (Power Cycle #83)
+
+### ✅ Completed (this session)

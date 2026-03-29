@@ -1,0 +1,66 @@
+/* Abandoned Cart Recovery Banner — #330 */
+#cart-recovery-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  background: white;
+  border: 1px solid #e0e8e0;
+  border-left: 4px solid #2D6642;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  z-index: 996;
+  max-width: 360px;
+  font-family: 'Inter', sans-serif;
+  animation: crSlideIn 0.4s cubic-bezier(0.4,0,0.2,1);
+  display: none;
+}
+@keyframes crSlideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+#cart-recovery-banner .cr-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a3a2a;
+  margin-bottom: 4px;
+}
+#cart-recovery-banner .cr-items {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+#cart-recovery-banner .cr-btn {
+  display: inline-block;
+  background: #2D6642;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+#cart-recovery-banner .cr-btn:hover { background: #245235; }
+#cart-recovery-banner .cr-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+  line-height: 1;
+}
+#cart-recovery-banner .cr-close:hover { color: #333; }
+@media (max-width: 768px) {
+  #cart-recovery-banner {
+    left: 12px;
+    right: 12px;
+    max-width: none;
+    bottom: 12px;
+  }
+}
