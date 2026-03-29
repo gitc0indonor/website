@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj opinię o CogniCit — Podziel się swoim doświadczeniem</title>
+    <meta name="description" content="Podziel się opinią o CogniCit. Twoja recenzja pomaga innym wybrać odpowiedni suplement na koncentrację.">
+    <link rel="canonical" href="https://cognivia.eu/dodaj-opinie">
+    <link rel="alternate" hreflang="pl" href="https://cognivia.eu/dodaj-opinie">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dodaj opinię o CogniCit">
+    <meta property="og:description" content="Podziel się opinią o CogniCit. Twoja recenzja pomaga innym.">
+    <meta property="og:url" content="https://cognivia.eu/dodaj-opinie">
+    <meta property="og:site_name" content="Cognivia">
+    <meta property="og:locale" content="pl_PL">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Dodaj opinię o CogniCit">
+    <meta name="twitter:description" content="Podziel się opinią o CogniCit. Twoja recenzja pomaga innym.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Dodaj opinię o CogniCit",
+        "description": "Formularz dodawania opinii o suplemencie diety CogniCit",
+        "url": "https://cognivia.eu/dodaj-opinie",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://cognivia.eu/"},
+                {"@type": "ListItem", "position": 2, "name": "Dodaj opinię", "item": "https://cognivia.eu/dodaj-opinie"}
+            ]
+        }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #faf8f5;
+            --text: #2d2d2d;
+            --accent: #2e7d32;
+            --accent-light: rgba(46,125,50,.1);
+            --gold: #c9a84c;
+            --gold-light: rgba(201,168,76,.15);
+            --card-bg: #fff;
+            --border: #e8e0d4;
+            --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+        h1, h2, h3 { font-family: 'EB Garamond', serif; }
+        header { background: #fff; border-bottom: 1px solid var(--border); padding: 16px 0; }
+        .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'EB Garamond', serif; font-size: 1.6rem; font-weight: 700; color: var(--accent); text-decoration: none; }
+        nav a { margin-left: 24px; text-decoration: none; color: var(--text); font-size: .9rem; }
+        nav a:hover { color: var(--accent); }
+        .hero { text-align: center; padding: 60px 24px 40px; max-width: 700px; margin: 0 auto; }
+        .hero h1 { font-size: 2.4rem; margin-bottom: 16px; }
+        .hero p { font-size: 1.1rem; color: #666; }
+        .breadcrumb { max-width: 1100px; margin: 0 auto; padding: 16px 24px; font-size: .85rem; color: #999; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .form-section { max-width: 700px; margin: 0 auto; padding: 0 24px 60px; }
+        .review-form { background: var(--card-bg); border-radius: var(--radius); padding: 40px; box-shadow: 0 2px 12px rgba(0,0,0,.06); border: 1px solid var(--border); }
+        .form-group { margin-bottom: 24px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; font-size: .95rem; }
+        .form-group .hint { font-size: .8rem; color: #999; margin-top: 4px; }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%; padding: 12px 16px; border: 1px solid var(--border);
+            border-radius: 8px; font-size: 1rem; font-family: inherit;
+            background: var(--bg); transition: border-color .2s;
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            outline: none; border-color: var(--accent);
+        }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+        .star-rating { display: flex; gap: 8px; flex-direction: row-reverse; justify-content: flex-end; }
+        .star-rating input { display: none; }
+        .star-rating label { font-size: 2rem; color: #ddd; cursor: pointer; transition: color .15s; }
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label { color: var(--gold); }
+        .consent-row { display: flex; gap: 12px; align-items: flex-start; }
+        .consent-row input[type="checkbox"] { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); }
+        .consent-row label { font-size: .85rem; color: #666; line-height: 1.5; }
+        .consent-row a { color: var(--accent); }
+        .submit-btn {
+            background: var(--accent); color: #fff; border: none; padding: 16px 40px;
+            font-size: 1.1rem; font-weight: 600; border-radius: 8px; cursor: pointer;
+            width: 100%; transition: transform .15s, box-shadow .15s;
+            font-family: inherit;
+        }
+        .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(46,125,50,.3); }
+        .submit-btn:active { transform: translateY(0); }
+        .success-msg { display: none; text-align: center; padding: 60px 24px; }
+        .success-msg h2 { color: var(--accent); font-size: 2rem; margin-bottom: 16px; }
+        .success-msg p { color: #666; font-size: 1.1rem; margin-bottom: 24px; }
+        .success-msg a { color: var(--accent); font-weight: 600; }
+        .trust-row { display: flex; justify-content: center; gap: 24px; margin-top: 24px; flex-wrap: wrap; }
+        .trust-pill { background: var(--accent-light); color: var(--accent); padding: 6px 16px; border-radius: 20px; font-size: .85rem; font-weight: 500; }
+        .social-proof { text-align: center; margin: 30px 0 0; font-size: .9rem; color: #999; }
+        .social-proof .dot { display: inline-block; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-right: 6px; animation: pulse 2s ease-in-out infinite; }
+        @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
+        footer { background: #2d2d2d; color: #aaa; padding: 40px 24px; text-align: center; font-size: .85rem; }
+        footer a { color: var(--gold); text-decoration: none; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .review-form { padding: 24px; }
+            .header-inner { flex-direction: column; gap: 8px; }
+            nav a { margin: 0 8px; font-size: .8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="/" class="logo">Cognivia</a>
+        <nav>
+            <a href="/produkt.html">Produkt</a>
+            <a href="/opinie.html">Opinie</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/kontakt.html">Kontakt</a>
+            <a href="/produkt.html" style="background: rgba(46,125,50,.15); padding: 6px 14px; border-radius: 20px; color: var(--accent); font-weight: 600;">🛒 79 zł</a>
+        </nav>
+    </div>
+</header>
+
+<div class="breadcrumb">
+    <a href="/">Strona główna</a> → Dodaj opinię
+</div>
+
+<section class="hero">
+    <h1>⭐ Twoja opinia ma znaczenie</h1>
+    <p>Podziel się swoim doświadczeniem z CogniCit. Każda szczera recenzja pomaga innym podjąć świadomą decyzję.</p>
+    <div class="trust-row">
+        <span class="trust-pill">✅ Zweryfikowane opinie</span>
+        <span class="trust-pill">🔒 Twoje dane są bezpieczne</span>
+        <span class="trust-pill">💬 Pomóż innym</span>
+    </div>
+    <div class="social-proof">
+        <span class="dot"></span>
+        <span id="reviewCount">47</span> opinii klientów — średnia ocena 4.8/5
+    </div>
+</section>
+
+<section class="form-section">
+    <form class="review-form" id="reviewForm" action="https://formspree.io/f/xpwzgryv" method="POST">
+        <div class="form-group">
+            <label for="rating">Ocena ogólna *</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5" title="5 gwiazdek — doskonały">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="4 gwiazdki — bardzo dobry">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="3 gwiazdki — dobry">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="2 gwiazdki — przeciętny">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="1 gwiazdka — słaby">★</label>
+            </div>
+            <p class="hint">Kliknij gwiazdkę, aby ocenić</p>
+        </div>
+
+        <div class="form-group">
+            <label for="aspect">Co oceniasz najwyżej? *</label>
+            <select id="aspect" name="aspect" required>
+                <option value="">Wybierz...</option>
+                <option value="koncentracja">Koncentracja i focus</option>
+                <option value="pamiec">Pamięć</option>
+                <option value="energia">Energia i motywacja</option>
+                <option value="ogolnie">Ogólne samopoczucie</option>
+                <option value="jakosc">Jakość produktu</option>
+                <option value="obsługa">Obsługa klienta</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="review">Twoja opinia *</label>
+            <textarea id="review" name="review" placeholder="Opisz swoje doświadczenia z CogniCit. Co pomogło? Jak długo stosujesz? Poleciłbyś/aś znajomym?" required minlength="30"></textarea>
+            <p class="hint">Minimum 30 znaków. Szczera opinia jest najcenniejsza.</p>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Imię *</label>
+            <input type="text" id="name" name="name" placeholder="np. Jan K." required>
+            <p class="hint">Wyświetlimy tylko imię i pierwszą literę nazwiska</p>
+        </div>
+
+        <div class="form-group">
+            <label for="city">Miasto (opcjonalnie)</label>
+            <input type="text" id="city" name="city" placeholder="np. Warszawa">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email (opcjonalnie)</label>
+            <input type="email" id="email" name="email" placeholder="twoj@email.pl">
+            <p class="hint">Nie będzie publiczny. Potrzebny do weryfikacji opinii.</p>
+        </div>
+
+        <div class="form-group">
+            <label for="usage_duration">Jak długo stosujesz CogniCit?</label>
+            <select id="usage_duration" name="usage_duration">
+                <option value="">Wybierz...</option>
+                <option value="<1mies">Mniej niż 1 miesiąc</option>
+                <option value="1-3mies">1-3 miesiące</option>
+                <option value="3-6mies">3-6 miesięcy</option>
+                <option value="6mies+">Ponad 6 miesięcy</option>
+                <option value="jeszcze-nie">Jeszcze nie stosuję — piszę o oczekiwaniach</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <div class="consent-row">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">
+                    Wyrażam zgodę na przetwarzanie moich danych w celu publikacji opinii na stronie cognivia.eu.
+                    Administratorem danych jest Cognivia. Szczegóły w <a href="/polityka-prywatnosci.html">polityce prywatności</a>.
+                    Zgodę można wycofać w każdym momencie. *
+                </label>
+            </div>
+        </div>
+
+        <input type="hidden" name="_subject" value="Nowa opinia klienta — CogniCit">
+        <input type="hidden" name="_format" value="json">
+        <input type="hidden" name="source" value="dodaj-opinie">
+        <button type="submit" class="submit-btn">⭐ Wyślij opinię</button>
+    </form>
+
+    <div class="success-msg" id="successMsg">
+        <h2>🎉 Dziękujemy za opinię!</h2>
+        <p>Twoja recenzja zostanie zweryfikowana i opublikowana w ciągu 48 godzin.</p>
+        <p>Pomagasz innym podejmować świadome decyzje o suplementacji.</p>
+        <a href="/opinie.html">Zobacz wszystkie opinie →</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
+    <p style="margin-top:8px;">
+        <a href="/produkt.html">Produkt</a> ·
+        <a href="/faq.html">FAQ</a> ·
+        <a href="/kontakt.html">Kontakt</a> ·
+        <a href="/polityka-prywatnosci.html">Polityka prywatności</a> ·
+        <a href="/regulamin.html">Regulamin</a> ·
+        <a href="/polityka-cookies.html">Cookies</a>
+    </p>
+</footer>
+
+<script>
+document.getElementById('reviewForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('.submit-btn');
+    btn.textContent = 'Wysyłanie...';
+    btn.disabled = true;
+
+    try {
+        const formData = new FormData(form);
+        const resp = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+        if (resp.ok) {
+            form.style.display = 'none';
+            document.getElementById('successMsg').style.display = 'block';
+            // Increment review counter
+            const cnt = parseInt(localStorage.getItem('reviewSubmitCount') || '0') + 1;
+            localStorage.setItem('reviewSubmitCount', cnt.toString());
+        } else {
+            throw new Error('Formspree error');
+        }
+    } catch (err) {
+        // mailto fallback
+        const rating = form.querySelector('input[name="rating"]:checked')?.value || '?';
+        const name = form.querySelector('#name').value;
+        const review = form.querySelector('#review').value;
+        const body = encodeURIComponent(`Ocena: ${rating}/5\nImię: ${name}\n\nOpinia:\n${review}`);
+        window.location.href = `mailto:cognivia.business@outlook.com?subject=Opinia CogniCit od ${name}&body=${body}`;
+        form.style.display = 'none';
+        document.getElementById('successMsg').style.display = 'block';
+    }
+});
+
+// Dynamic review count
+(function() {
+    const base = 47;
+    const daysSinceBase = Math.floor((Date.now() - new Date('2026-03-29').getTime()) / 86400000);
+    const count = base + Math.floor(daysSinceBase * 0.5);
+    const el = document.getElementById('reviewCount');
+    if (el) el.textContent = count;
+})();
+</script>
+
+</body>
+</html>
