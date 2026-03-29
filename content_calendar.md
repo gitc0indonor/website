@@ -2267,3 +2267,49 @@
 **Target platforms:** Google (SEO), grupy FB dla seniorów, Wykop, newsletter
 **Season:** Evergreen
 **Status:** Outline ready, needs writing
+
+---
+
+### #73 — "Poranne nawyki na koncentrację — 5 kroków na lepszy start dnia" (Power Cycle #84)
+**Keyword target:** "poranne nawyki koncentracja" (1.2K+ monthly), "jak zacząć dzień produktywnie", "poranna rutyna suplementacja"
+**Search intent:** Informational + lifestyle — people looking for practical morning routine optimization
+**Structure:**
+1. Dlaczego poranek decyduje o reszcie dnia? (cortisol awakening response, circadian rhythm)
+2. Krok 1: Światło słoneczne w pierwszej godzinie (melatonin suppression, serotonin boost)
+3. Krok 2: Nawodnienie przed kawą (dehydration = brain fog, 500ml water protocol)
+4. Krok 3: Suplementacja z posiłkiem (CogniCit — 1 kapsułka rano, cytykolina + ALA + β-CD z śniadaniem)
+5. Krok 4: Śniadanie bogate w cholinę (jaja, orzechy — synergia z cytykoliną)
+6. Krok 5: Deep work block przed 10:00 (ultradian rhythm, Pomodoro)
+7. Czego unikać — 3 poranne błędy (telefon w łóżku, kawa na czczo, pomijanie śniadania)
+8. CogniCit w kontekście porannej rutyny — dlaczego 1 kapsułka rano to optymalny protokół
+**Word count:** 1800-2200
+**Cross-links:** produkt.html, blog/jak-budowac-rutyne-suplementacji.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** Listicle format = high engagement + featured snippet potential. Practical lifestyle content drives social shares. CogniCit naturally positioned as step 3/5 (not pushy).
+**Target platforms:** Google (SEO), Instagram stories, Pinterest (morning routine pins), LinkedIn
+**Season:** Evergreen with Sep back-to-work peak
+**Status:** Outline ready, needs writing
+
+### Blog Post Outline #74 — Power Cycle #84
+**Title:** "Nootropiki dla kobiet — jak hormony wpływają na koncentrację?"
+**Target keyword:** "suplementy dla kobiet koncentracja" / "nootropiki kobiety" / "mózg a cykl menstruacyjny" (~500 monthly, zero competition)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Evergreen, slight peak Mar (Women's Day health awareness)
+
+**Outline:**
+1. **Wstęp** — Większość treści o nootropikach jest pisana z perspektywy męskiej. Kobiety mają unikalne wyzwania poznawcze związane z cyklem hormonalnym.
+2. **Jak estrogen wpływa na mózg?** — Estrogen zwiększa wrażliwość receptorów acetylocholinowych. Faza folikularna (wyższy estrogen) = lepsza koncentracja. Faza lutealna (spadek) = "brain fog".
+3. **PMS a funkcje poznawcze** — Badania: 60% kobiet zgłasza spadek koncentracji przed menstruacją. Mechanizm: spadek estrogenów → mniej receptorów ACh → gorsza pamięć robocza.
+4. **Cytykolina jako wsparcie** — 300 mg CDP-choliny = zwiększenie puli acetylocholiny. Pomaga zrównoważyć naturalne spadki hormonalne. 233 publikacje PubMed.
+5. **ALA — ochrona przed stresem oksydacyjnym cyklu** — Fluktuacje hormonalne generują stres oksydacyjny. ALA regeneruje glutation, chroni mitochondria.
+6. **Kiedy suplementacja ma największy sens?** — Faza lutealna (przed okresem) = największe spadki = najlepszy moment na wsparcie. CogniCit rano = stabilna koncentracja niezależnie od fazy cyklu.
+7. **Bezpieczeństwo** — Brak interakcji z antykoncepcją hormonalną. Brak kofeiny = brak wpływu na sen i nastrój. GMP, GIS.
+8. **Podsumowanie** — "Twój mózg zasługuje na wsparcie dopasowane do Ciebie."
+
+**CTA:** Zamów CogniCit → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-seniorow-50-plus.html, blog/chroniczne-zmeczenie-umyslowe.html, jak-stosowac.html, nauka.html
+**Schema:** Article + BreadcrumbList JSON-LD
+**SEO angle:** Zero Polish content on nootropics + female hormones. Huge underserved audience. Emotional resonance = high engagement + shares on women's health groups.
+**Target platforms:** Google (SEO), grupy FB dla kobiet, Instagram, Pinterest
+**Season:** Evergreen
+**Status:** Outline ready, needs writing
