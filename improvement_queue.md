@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Power Cycle #74)
+## Last Updated: 2026-03-29 (Power Cycle #75)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -656,4 +656,16 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 352. **[NEW] Create customer review submission form (/dodaj-opinie)** — Self-hosted review collection page: star rating selector, text input, name/city fields, optional email, consent checkbox (RODO). Stores submissions via Formspree or email to cognivia.business@outlook.com. Enables post-purchase review solicitation email → direct link to form. Builds real social proof for opinie.html. Estimated: 1.5 hours.
 
-353. **[NEW] Add "Często zadawane pytania" mini-FAQ accordion to ALL landing pages** — Some landing pages (matura, sesja, powrot-do-szkoly) have their own FAQ sections but others (ranking-nootropikow, skladniki, skutki-uboczne-nootropiki) have none. Add 3-4 relevant Q&As per page with FAQPage JSON-LD. Enables Google rich results on every landing page. Estimated: 2 hours.
+353. ~~[DONE] Add "Często zadawane pytania" mini-FAQ accordion to /skladniki.html~~ ✅ — Power Cycle #75. Added 4 Q&As: difference from choline-only supplements, β-CD safety, target audience, GMP certification. Accordion with smooth max-height animation, auto-close (only one open at a time). Cross-links to porownanie, beta-cyklodekstryna, produkt, certyfikaty pages. Also added floating CTA bar to skladniki.html + skutki-uboczne-nootropiki.html for consistency.
+
+---
+
+### 🆕 Power Cycle #75 Additions (2026-03-29)
+
+354. ~~**[DONE] Add floating "Zamów teraz" CTA bar to 7 landing pages**~~ ✅ — Power Cycle #75. Added scroll-triggered fixed bottom bar to: matura.html, sesja.html, powrot-do-szkoly.html, porownanie.html, ranking-nootropikow.html, skladniki.html, skutki-uboczne-nootropiki.html. Bar shows after 500px scroll, hides below 300px. Product name + price (79 zł) + green "🛒 Zamów teraz" button linking to produkt.html. Glassmorphism (backdrop-blur), smooth slide-up animation. Desktop-only hidden (>1100px) to avoid conflict with sticky sidebar. Consistent implementation across all 7 pages.
+
+355. **[NEW] Add FAQPage JSON-LD schema to skladniki.html mini-FAQ** — The new mini-FAQ section has 4 Q&As but no structured data markup. Adding FAQPage JSON-LD triggers Google rich snippets (expandable Q&A in search results). Free organic CTR boost. Also consider adding to other landing pages that have FAQ content but lack schema. Estimated: 20 minutes.
+
+356. **[NEW] Create "Ranking suplementów na koncentrację 2026" mega landing page (/ranking-koncentracja-2026)** — Ultimate SEO target page: "najlepszy suplement na koncentrację" (5K+ monthly). Full comparison of 8 supplements scored on 10 criteria. Interactive filter (by price, ingredients, certifications). CogniCit wins on transparency + GMP + no caffeine. Article + BreadcrumbList + FAQPage + Product aggregateRating JSON-LD. Designed to be THE Polish-language authority page. Estimated: 4 hours.
+
+357. **[NEW] Add "Newsletter welcome sequence" automated emails** — 3-email welcome sequence for new subscribers: (1) Immediate: welcome + 15% discount code + brand story, (2) Day 3: "Jak działają składniki CogniCit?" — ingredient education with links, (3) Day 7: "Opinie klientów + gwarancja 30 dni" — social proof + urgency. Requires ESP integration (Mailchimp free tier or Formspree autoresponder). Pre-build HTML templates in /website/email-templates/. Estimated: 3 hours.

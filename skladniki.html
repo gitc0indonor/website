@@ -356,12 +356,104 @@
 
 </div>
 
+<!-- Mini-FAQ for SEO + conversion -->
+<section style="max-width:800px;margin:40px auto 20px;padding:0 20px;">
+  <h2 style="font-family:'Playfair Display',serif;font-size:28px;color:#1a3a2a;text-align:center;margin-bottom:24px;">❓ Najczęściej zadawane pytania</h2>
+  <div style="border-top:1px solid #e0e0e0;">
+    <div class="mini-faq-item" style="border-bottom:1px solid #e0e0e0;">
+      <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;background:none;border:none;padding:16px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:600;color:#1a3a2a;text-align:left;">
+        <span>Czym różni się CogniCit od suplementów z samą choliną?</span>
+        <span style="font-size:20px;color:#c9a96e;transition:transform .3s;">+</span>
+      </button>
+      <div style="max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 0 0 0;color:#555;line-height:1.7;">
+        <p style="padding:0 0 16px;">Suplementy z samą choliną dostarczają jeden budulec. CogniCit idzie dalej: <strong>cytykolina</strong> (300 mg) to podwójny prekursor — zarówno choliny, jak i cytydyny, zwiększając syntezę acetylocholiny i fosfatydylocholin. Dodatkowo <strong>ALA</strong> (250 mg) chroni neurony przed stresem oksydacyjnym, a <strong>β-CD</strong> (250 mg) zwiększa wchłanianie obu składników o 40–200%. To synergia, której pojedynczy składnik nie zapewni. <a href="porownanie.html" style="color:#2e7d32;">Zobacz pełne porównanie →</a></p>
+      </div>
+    </div>
+    <div class="mini-faq-item" style="border-bottom:1px solid #e0e0e0;">
+      <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;background:none;border:none;padding:16px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:600;color:#1a3a2a;text-align:left;">
+        <span>Czy β-cyklodekstryna jest bezpieczna?</span>
+        <span style="font-size:20px;color:#c9a96e;transition:transform .3s;">+</span>
+      </button>
+      <div style="max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 0 0 0;color:#555;line-height:1.7;">
+        <p style="padding:0 0 16px;">Tak. β-cyklodekstryna ma status <strong>GRAS</strong> (Generally Recognized As Safe) w USA i jest dopuszczona w UE. Stosowana jest w farmacji od dekad — jako nośnik leków na receptę. W CogniCit używamy 250 mg, znacznie poniżej limitu 12 g/dzień uznawanego za bezpieczny. <a href="beta-cyklodekstryna.html" style="color:#2e7d32;">Dowiedz się więcej o β-CD →</a></p>
+      </div>
+    </div>
+    <div class="mini-faq-item" style="border-bottom:1px solid #e0e0e0;">
+      <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;background:none;border:none;padding:16px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:600;color:#1a3a2a;text-align:left;">
+        <span>Dla kogo jest CogniCit?</span>
+        <span style="font-size:20px;color:#c9a96e;transition:transform .3s;">+</span>
+      </button>
+      <div style="max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 0 0 0;color:#555;line-height:1.7;">
+        <p style="padding:0 0 16px;">CogniCit jest przeznaczony dla dorosłych (18+), którzy chcą wesprzeć koncentrację i funkcje poznawcze. Szczólnie polecamy dla: pracowników umysłowych, studentów w okresie sesji, programistów i osób po 50. roku życia. Nie zawiera kofeiny — można łączyć z kawą. <a href="produkt.html" style="color:#2e7d32;">Sprawdź skład CogniCit →</a></p>
+      </div>
+    </div>
+    <div class="mini-faq-item" style="border-bottom:1px solid #e0e0e0;">
+      <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;background:none;border:none;padding:16px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:600;color:#1a3a2a;text-align:left;">
+        <span>Czy CogniCit ma certyfikat GMP?</span>
+        <span style="font-size:20px;color:#c9a96e;transition:transform .3s;">+</span>
+      </button>
+      <div style="max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 0 0 0;color:#555;line-height:1.7;">
+        <p style="padding:0 0 16px;">Tak. CogniCit jest produkowany w zakładzie z certyfikatem <strong>GMP</strong> (Good Manufacturing Practice). Każdy batch jest testowany laboratoryjnie — wyniki CoA (Certificate of Analysis) są dostępne na życzenie. Produkt jest zgłoszony do <strong>Głównego Inspektora Sanitarnego (GIS)</strong> i spełnia wymogi regulacyjne UE. <a href="certyfikaty.html" style="color:#2e7d32;">Zobacz certyfikaty →</a></p>
+      </div>
+    </div>
+  </div>
+  <script>
+  // Mini-FAQ accordion animation
+  document.querySelectorAll('.mini-faq-item button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var content = this.nextElementSibling;
+      var icon = this.querySelector('span:last-child');
+      var isOpen = this.parentElement.classList.contains('open');
+      // Close all others
+      document.querySelectorAll('.mini-faq-item.open').forEach(function(item){
+        if(item !== btn.parentElement){
+          item.classList.remove('open');
+          item.querySelector('div').style.maxHeight = '0';
+          item.querySelector('span:last-child').style.transform = 'rotate(0deg)';
+        }
+      });
+      if(isOpen){
+        content.style.maxHeight = '0';
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.style.transform = 'rotate(45deg)';
+      }
+    });
+  });
+  </script>
+</section>
+
 <footer>
   <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
   <p><a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="regulamin.html">Regulamin</a></p>
 </footer>
 
 <script src="js/web-vitals.js" defer></script>
+<script>
+// === Floating CTA bar on scroll ===
+(function(){
+  var bar = document.createElement('div');
+  bar.id = 'floatCta';
+  bar.innerHTML = '<div style="display:flex;align-items:center;justify-content:space-between;max-width:600px;margin:0 auto;">' +
+    '<div><strong style="font-family:Playfair Display,serif;font-size:15px;">CogniCit</strong> <span style="opacity:.7;font-size:13px;">79 zł</span></div>' +
+    '<a href="produkt.html" style="background:#2e7d32;color:#fff;padding:8px 20px;border-radius:24px;text-decoration:none;font-weight:600;font-size:14px;transition:background .2s;" onmouseover="this.style.background=\'#1b5e20\'" onmouseout="this.style.background=\'#2e7d32\'">🛒 Zamów teraz</a>' +
+    '</div>';
+  bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:997;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid #e0e0e0;padding:10px 16px;transform:translateY(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);display:none;';
+  document.body.appendChild(bar);
+  var shown = false;
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY || window.pageYOffset;
+    if(y > 500 && !shown){ bar.style.display='block'; setTimeout(function(){ bar.style.transform='translateY(0)'; },20); shown=true; }
+    if(y <= 300 && shown){ bar.style.transform='translateY(100%)'; shown=false; }
+  });
+  if(window.innerWidth > 1100) { bar.style.display='none'; window._floatCtaDisabled=true; }
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 1100){ bar.style.display='none'; window._floatCtaDisabled=true; }
+    else { window._floatCtaDisabled=false; }
+  });
+})();
+</script>
 <script>
 /* Power Cycle #49: Interactive β-CD explainer step-through */
 function bcdStep(n) {

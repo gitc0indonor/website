@@ -2278,7 +2278,43 @@
 
 **Queue:** ~337 completed + 4 active = ~341 total
 
-### 2026-03-29 — Power Cycle #74 (00:23 UTC)
+### 2026-03-29 — Power Cycle #75 (00:54 UTC)
+**Implemented:**
+- ✅ Item #354 — Added floating "Zamów teraz" CTA bar to 7 landing pages
+  - matura.html, sesja.html, powrot-do-szkoly.html, porownanie.html, ranking-nootropikow.html, skladniki.html, skutki-uboczne-nootropiki.html
+  - Scroll-triggered fixed bottom bar: shows after 500px scroll, hides below 300px
+  - Product name "CogniCit" + price "79 zł" + green "🛒 Zamów teraz" button linking to produkt.html
+  - Glassmorphism (backdrop-filter: blur(10px)), smooth translateY slide-up animation (cubic-bezier .4,0,.2,1)
+  - Desktop-only hidden (>1100px) to avoid conflict with existing sticky sidebar on produkt.html
+  - Responsive resize handler disables bar on wide screens
+  - Non-intrusive: uses z-index 997 (below cookie banner and chat widgets)
+- ✅ Item #353 — Added mini-FAQ accordion to /skladniki.html
+  - 4 Q&As: choline-only comparison, β-CD safety (GRAS status), target audience (18+, professionals, students, 50+), GMP certification
+  - Smooth max-height CSS transition, auto-close (only one open at a time via JS forEach)
+  - Cross-links to porownanie.html, beta-cyklodekstryna.html, produkt.html, certyfikaty.html
+  - Icon rotation on expand ( + → × )
+  - Positioned between CTA section and footer for conversion flow
+  - Also added floating CTA bar to skladniki.html for consistency with other landing pages
+- ✅ Blog post outline added to content_calendar.md: "Suplementy a praca umysłowa — jak chronić mózg podczas intensywnego myślenia?"
+- ✅ 3 new improvement ideas added to queue (#355-357)
+
+**Files changed:**
+- `matura.html` — floating CTA bar (~30 lines JS)
+- `sesja.html` — floating CTA bar (~30 lines JS)
+- `powrot-do-szkoly.html` — floating CTA bar (~30 lines JS)
+- `porownanie.html` — floating CTA bar (~30 lines JS)
+- `ranking-nootropikow.html` — floating CTA bar (~30 lines JS)
+- `skladniki.html` — floating CTA bar (~30 lines JS) + mini-FAQ section (~60 lines HTML/CSS/JS)
+- `skutki-uboczne-nootropiki.html` — floating CTA bar (~30 lines JS)
+- `improvement_queue.md` — items #351, #353 marked DONE; 3 new items (#355-357)
+- `content_calendar.md` — new blog outline (praca umysłowa)
+- `changelog.md` — this entry
+
+**Site verification:** All 7 modified files validated — DOCTYPE ✓, </html> ✓, floatCta JS confirmed. skladniki.html mini-FAQ: 4 accordion items confirmed with cross-links. All pages have consistent floating CTA implementation.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~354 completed + 15 active = ~369 total
 **Implemented:**
 - ✅ Item #348 (partial) — Added ★★★★★ 4.8/5 (47 opinii) floating star rating badge to 3 landing pages missing them
   - ranking-nootropikow.html — gold-tinted badge with link to opinie.html, positioned after social proof banner

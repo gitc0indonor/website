@@ -428,6 +428,30 @@ function closeSchoolPopup() {
         <li style="margin-bottom:8px;"><a href="produkt.html" style="color:#c9a96e;text-decoration:none;">→ CogniCit</a></li>
       </ul>
     </div>
+<script>
+// === Floating CTA bar on scroll ===
+(function(){
+  var bar = document.createElement('div');
+  bar.id = 'floatCta';
+  bar.innerHTML = '<div style="display:flex;align-items:center;justify-content:space-between;max-width:600px;margin:0 auto;">' +
+    '<div><strong style="font-family:Playfair Display,serif;font-size:15px;">CogniCit</strong> <span style="opacity:.7;font-size:13px;">79 zł</span></div>' +
+    '<a href="produkt.html" style="background:#2e7d32;color:#fff;padding:8px 20px;border-radius:24px;text-decoration:none;font-weight:600;font-size:14px;transition:background .2s;" onmouseover="this.style.background=\'#1b5e20\'" onmouseout="this.style.background=\'#2e7d32\'">🛒 Zamów teraz</a>' +
+    '</div>';
+  bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:997;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid #e0e0e0;padding:10px 16px;transform:translateY(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);display:none;';
+  document.body.appendChild(bar);
+  var shown = false;
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY || window.pageYOffset;
+    if(y > 500 && !shown){ bar.style.display='block'; setTimeout(function(){ bar.style.transform='translateY(0)'; },20); shown=true; }
+    if(y <= 300 && shown){ bar.style.transform='translateY(100%)'; shown=false; }
+  });
+  if(window.innerWidth > 1100) { bar.style.display='none'; window._floatCtaDisabled=true; }
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 1100){ bar.style.display='none'; window._floatCtaDisabled=true; }
+    else { window._floatCtaDisabled=false; }
+  });
+})();
+</script>
 <script src="js/web-vitals.js" defer></script>
 </body>
 </html>

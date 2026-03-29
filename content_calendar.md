@@ -2013,3 +2013,27 @@
 **Internal links:** produkt.html, blog/suplementy-dla-seniorow-50-plus.html, blog/suplementy-a-kofeina.html, faq-produkt.html, skutki-uboczne.html, nauka.html
 **SEO angle:** Growing aging population in Poland. "Suplementy dla seniorów" = 1K+ monthly searches. Positions CogniCit as the safe, caffeine-free choice for 50+ adults.
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-29 — Power Cycle #75)
+**Title:** Suplementy a praca umysłowa — jak chronić mózg podczas intensywnego myślenia?
+**Target:** Polish professionals (analysts, consultants, managers, lawyers), SEO for "suplementy praca umysłowa", "ochrona mózgu praca", "zmęczenie umysłowe suplement"
+**Word count:** 1500-2000
+**Keywords:** suplementy praca umysłowa, ochrona mózgu praca biurowa, zmęczenie umysłowe suplement, koncentracja praca, cytykolina praca
+
+**Outline:**
+1. **Wstęp** — Mózg zużywa 20% energii ciała przy 2% masy. Praca umysłowa = ekstremalne obciążenie neuronalne.
+2. **Jak praca umysłowa wyczerpuje mózg?** — Spadek acetylocholiny w ciągu dnia, stres oksydacyjny mitochondriów, "decision fatigue", attention residue.
+3. **Cytykolina — paliwo dla funkcji wykonawczych** — Prekursor acetylocholiny, 300 mg = dawka z badań. Poprawia planowanie, organizację, focus. 233 publikacji PubMed.
+4. **ALA — ochrona mitochondrialna** — Chroniczny wysiłek poznawczy generuje wolne rodniki. ALA regeneruje glutation, chroni łańcuch oddechowy mitochondriów.
+5. **β-CD — dlaczego wchłanianie ma znaczenie** — Nawet najlepszy składnik nie zadziała, jeśli nie dotrze do mózgu. β-CD zwiększa biodostępność o 40-200%.
+6. **Protokół dla pracownika umysłowego** — 7:00 CogniCit ze śniadaniem → 9:00 deep work → 12:00 spacer → 14:00 zadania administracyjne → 18:00 shutdown.
+7. **Porównanie: CogniCit vs inne rozwiązania** — Tabela: trwała koncentracja (CogniCit) vs krótkotrwały boost (kofeina) vs cukier+crash (energetyki).
+8. **Kto skorzysta najbardziej?** — Analitycy, konsultanci, prawnicy, lekarze, nauczyciele, tłumacze.
+9. **Podsumowanie** — "Twój mózg to najcenniejsze narzędzie. CogniCit = biochemiczne wsparcie dla zawodowych myślicieli."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-programistow.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, porownanie.html, blog/poranne-nawyki-programisty.html
+**SEO angle:** "Praca umysłowa" + "suplement" = medium-competition niche. Positions CogniCit as the professional cognitive tool.
+**Status:** Outline ready, needs writing
