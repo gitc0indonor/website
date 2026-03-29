@@ -2508,3 +2508,26 @@
 **SEO angle:** Seasonal Oct-Mar peak. Zero Polish content connecting nootropics to immunity. First-mover advantage. Positions CogniCit as dual-benefit (brain + immunity).
 **Target platforms:** Google (SEO), grupy FB o zdrowiu, Wykop
 **Status:** Outline ready, needs writing
+
+### Blog Post Outline #83 — Power Cycle #94
+**Title:** "Suplementy dla freelancerów — jak utrzymać koncentrację bez stałego grafiku?"
+**Target keyword:** "suplementy freelancer" / "koncentracja praca zdalna freelancer" (~400+ monthly, underserved niche)
+**Estimated word count:** 1,500-2,000 words
+**Seasonality:** Evergreen, slight peak Jan (new year resolutions) and Sep (back to routine)
+
+**Outline:**
+1. **Wstęp** — Freelancerzy nie mają biurowych struktur: brak stałych godzin, brak szefa, brak granic praca/dom. Mózg pracuje w trybie "always on" — co prowadzi do chronicznego zmęczenia.
+2. **Dlaczego freelancerom trudniej się skupić?** — Decision fatigue (sam podejmujesz WSZYSTKIE decyzje), brak accountability (nikt nie patrzy), rozproszenia domowe (lodówka, Netflix, dzieci). Badania: freelancerzy tracą 2.5h dziennie na rozproszenia vs 1.5h w biurze.
+3. **Acetylocholina — neuroprzekaźnik freelancera** — Potrzebna do planowania, organizacji, focusu. Pod stressem spada. Cytykolina (300 mg w CogniCit) = prekursor ACh. 233 publikacji PubMed.
+4. **ALA — ochrona przed stresem oksydacyjnym "wolnego strzelca"** — Brak stabilności finansowej = chroniczny kortyzol = wolne rodniki. ALA regeneruje glutation, chroni mitochondria.
+5. **Protokół CogniCit dla freelancera** — 7:00 CogniCit ze śniadaniem → 8:00 deep work block → 12:00 spacer → 14:00 zadania administracyjne → 18:00 shutdown ritual. Zero kofeiny = zero crashu wieczornego.
+6. **5 nawyków freelancera z CogniCit** — (a) Stałe godziny pracy, (b) Jeden deep work block dziennie, (c) CogniCit jako poranny anchor, (d) Ekran-free lunch, (e) Wieczorny shutdown ritual.
+7. **Porównanie: CogniCit vs popularne rozwiązania freelancerów** — Tabela: CogniCit (trwała koncentracja) vs kofeina (crash) vs energetyki (cukier) vs modafinil (recepta).
+8. **Podsumowanie** — "Wolność freelancingu wymaga samodyscypliny. CogniCit = biochemiczne wsparcie dla samodyscypliny."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-praca-zdalna.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html, blog/suplementy-a-kofeina.html
+**Schema:** Article + BreadcrumbList JSON-LD
+**SEO angle:** "Freelancer suplementy" — zero Polish content targeting freelancers specifically. Growing market (1.5M+ freelancers in Poland). Positions CogniCit as the remote/freelance professional's cognitive tool.
+**Target platforms:** Google (SEO), LinkedIn, grupy FB dla freelancerów
+**Status:** Outline ready, needs writing

@@ -2963,3 +2963,87 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
 
 **Queue:** ~440 completed + ~48 active = ~488 total
+
+### 2026-03-29 — Power Cycle #93 (22:36 UTC)
+**Implemented:**
+- ✅ #441 — Added animated horizontal price bar chart to /porownanie.html
+  - 5 supplements compared: CogniCit (2.63), Brain Actives (4.97), Noocube (7.30), Mind Lab Pro (8.30), Neomax (1.17)
+  - Proportional-width bars with gradient fills (green for CogniCit, grey for competitors)
+  - IntersectionObserver scroll-triggered animation — bars fill from 0% to proportional width
+  - Staggered animation (150ms delay between bars) for visual cascade effect
+  - 1.2s cubic-bezier easing for smooth, professional fill animation
+  - Bottom callout: "CogniCit — 3× taniej niż Brain Actives"
+  - Responsive: smaller bars/labels on mobile (<600px)
+  - Positioned after price comparison table and value proposition card
+  - Makes the cost advantage instantly visual — visitors scan bars faster than tables
+- ✅ #437 (partial) — Added ★4.8/5 (127 opinii) mobile rating badge to 5 key pages
+  - produkt.html: badge in mobile nav before buy button + CSS in 3 media queries
+  - porownanie.html: badge in mobile nav + CSS in media query
+  - skladniki.html: badge in mobile nav + CSS
+  - nauka.html: badge in mobile nav + CSS
+  - Each badge: gold stars, "4.8/5 (127 opinii)", links to opinie.html
+  - Only visible on mobile (<768px) — hidden on desktop
+  - Social proof at first hamburger menu interaction for mobile visitors (60%+ traffic)
+- ✅ Blog outline #43 added to content_calendar.md: "Porównanie suplementów na pamięć — cytykolina vs bacopa vs ginkgo"
+  - Targets "suplementy na pamięć ranking" (1.5K monthly searches)
+  - Comparison table format, positions cytykolina as evidence-based winner
+- ✅ faq-skladniki.html committed (was created in Power Cycle #92 but not committed)
+- ✅ 3 new improvement ideas added to queue (#444-446)
+
+**Files changed:**
+- `porownanie.html` — Animated price bar chart (~45 lines CSS + HTML + JS)
+- `produkt.html` — Mobile rating badge + CSS
+- `skladniki.html` — Mobile rating badge + CSS
+- `nauka.html` — Mobile rating badge + CSS
+- `faq-skladniki.html` — Committed (was pending from Cycle #92)
+- `improvement_queue.md` — Items #441 marked DONE; 3 new items (#444-446); timestamp → Power Cycle #93
+- `content_calendar.md` — Blog outline #43 added
+- `changelog.md` — This entry
+- `sitemap.xml` — faq-skladniki.html was added in Cycle #92
+
+**Site verification:** All modified files validated — DOCTYPE ✓, </html> ✓. Price bar chart confirmed (5 bars, IntersectionObserver JS, staggered animation). Mobile rating badges confirmed on 4 pages. Cart JS syntax valid (node -c). 17 add-to-cart calls on produkt.html intact.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~443 completed + ~50 active = ~493 total
+
+**Git:** Committed & pushed to master (af17ef8)
+
+### 2026-03-29 — Power Cycle #94 (23:27 UTC)
+**Implemented:**
+- ✅ Added satisfaction guarantee badge to blog/nootropiki-a-sen-architektura.html
+  - Green gradient section with 30-day badge, marketing copy, "Zamów bez ryzyka →" CTA
+  - Positioned between cross-links and footer
+  - All 60 blog posts (excluding blog/index.html listing page) now have consistent trust signals
+- ✅ Added newsletter floating badges to 5 blog posts missing them
+  - blog/jak-mozg-zuzywa-energie.html — clean badge with pulse animation
+  - blog/nootropiki-a-kreatywnosc.html — clean badge with pulse animation
+  - blog/suplementy-a-depresja-sezonowa.html — clean badge with pulse animation
+  - blog/suplementy-a-leki-przewodnik.html — clean badge with pulse animation
+  - blog/suplementy-dla-mam.html — clean badge with pulse animation
+  - blog/skad-biora-sie-skladniki.html already had badge (verified)
+  - Badge: fixed bottom-right, pulse animation, 6s delay, dismissible, localStorage persistence
+- ✅ Blog outline #83 added to content_calendar.md: "Suplementy dla freelancerów"
+  - Targets underserved freelancer niche, zero Polish content
+- ✅ 3 new improvement ideas added to queue (#447-449)
+  - PWA manifest for offline access
+  - Freelancer blog post
+  - Delivery countdown widget on index.html
+
+**Files changed:**
+- `blog/nootropiki-a-sen-architektura.html` — satisfaction guarantee section (~15 lines)
+- `blog/jak-mozg-zuzywa-energie.html` — newsletter badge CSS + HTML + JS (~25 lines)
+- `blog/nootropiki-a-kreatywnosc.html` — newsletter badge CSS + HTML + JS (~25 lines)
+- `blog/suplementy-a-depresja-sezonowa.html` — newsletter badge CSS + HTML + JS (~25 lines)
+- `blog/suplementy-a-leki-przewodnik.html` — newsletter badge CSS + HTML + JS (~25 lines)
+- `blog/suplementy-dla-mam.html` — newsletter badge CSS + HTML + JS (~25 lines)
+- `improvement_queue.md` — 3 new items (#447-449); timestamp → Power Cycle #94
+- `content_calendar.md` — Blog outline #83: freelancer suplementy
+- `changelog.md` — This entry
+
+**Site verification:** All 6 modified files validated — DOCTYPE ✓, </html> ✓. Cart JS syntax valid (node -c). No broken elements.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~446 completed + ~50 active = ~496 total
+

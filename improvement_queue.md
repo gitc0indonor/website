@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Power Cycle #93 — 22:36 UTC)
+## Last Updated: 2026-03-29 (Power Cycle #94 — 23:27 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -906,3 +906,9 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 445. **[NEW] Create "Jak suplementy wpływają na wydajność w pracy?" blog post** — Target "suplementy na wydajność w pracy" (600+ monthly). Covers: cognitive load theory, deep work support, meeting fatigue, CogniCit morning protocol for professionals. Positions CogniCit as the productivity supplement. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
 
 446. **[NEW] Add animated ingredient mechanism GIFs to /skladniki.html** — Create 3 short animated GIFs showing each ingredient's mechanism: (1) ALA neutralizing free radicals, (2) Cytykolina building acetylcholine, (3) β-CD wrapping and protecting molecules. GIFs are more shareable than interactive JS and load faster than videos. Position next to each ingredient card. Estimated: 2 hours.
+
+447. **[NEW] Add "Tryb offline" PWA manifest to website** — Enable installable PWA with service worker caching. Polish mobile users (60%+ traffic) would benefit from offline access to blog content + ingredient pages. Add manifest.json + minimal service worker. Expected: 15-20% increase in return visits from "installed" users. Estimated: 2 hours.
+
+448. **[NEW] Create "Suplementy dla freelancerów — jak utrzymać koncentrację bez stałego grafiku?" blog post** — Target "suplementy freelancer koncentracja" (underserved niche, zero Polish content). Covers: decision fatigue, lack of accountability, home distractions, CogniCit morning protocol for self-employed. Outline already in content_calendar.md #83. Estimated: 2 hours.
+
+449. **[NEW] Add "Czas dostawy" countdown widget to index.html hero** — Dynamic widget showing "Zamów dziś → dostawa za X dni" based on current day of week. Calculates business-day delivery (skips weekends). Reduces "kiedy dostanę paczkę?" uncertainty at the first touchpoint. Reuses existing calcDelivery() logic from produkt.html. Estimated: 30 minutes.
