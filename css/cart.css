@@ -531,8 +531,13 @@
   transition: all 0.2s;
   letter-spacing: 0.5px;
 }
-.btn-place-order:hover { background: #b8955a; box-shadow: 0 0 0 3px rgba(143,122,61,0.25), 0 4px 12px rgba(0,0,0,0.15); transform: scale(1.02); }
-.btn-place-order:active { transform: scale(0.97); box-shadow: 0 0 0 1px rgba(143,122,61,0.1); transition: all 0.1s; }
+.btn-place-order:hover { background: #b8955a; box-shadow: 0 0 0 3px rgba(143,122,61,0.25), 0 4px 12px rgba(0,0,0,0.15); transform: scale(1.02); animation: btnPulseGlow 1.5s ease-in-out infinite; }
+.btn-place-order:active { transform: scale(0.97); box-shadow: 0 0 0 1px rgba(143,122,61,0.1); transition: all 0.1s; animation: none; }
+@keyframes btnPulseGlow {
+  0% { box-shadow: 0 0 0 3px rgba(143,122,61,0.25), 0 4px 12px rgba(0,0,0,0.15); }
+  50% { box-shadow: 0 0 0 6px rgba(143,122,61,0.15), 0 0 20px rgba(143,122,61,0.2), 0 4px 12px rgba(0,0,0,0.15); }
+  100% { box-shadow: 0 0 0 3px rgba(143,122,61,0.25), 0 4px 12px rgba(0,0,0,0.15); }
+}
 .btn-place-order:disabled { opacity: 0.5; cursor: default; transform: none; box-shadow: none; }
 .btn-place-order.loading { pointer-events: none; position: relative; color: transparent !important; }
 .btn-place-order.loading::after { content: ''; position: absolute; top: 50%; left: 50%; width: 20px; height: 20px; margin: -10px 0 0 -10px; border: 2px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: btnSpin 0.6s linear infinite; }

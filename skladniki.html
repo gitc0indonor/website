@@ -399,6 +399,52 @@
   </div>
   <script>
   // Mini-FAQ accordion animation
+  // FAQPage JSON-LD schema — Power Cycle #76
+  (function(){
+    var faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Czym różni się CogniCit od suplementów z samą choliną?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suplementy z samą choliną dostarczają jeden budulec. CogniCit idzie dalej: cytykolina (300 mg) to podwójny prekursor — zarówno choliny, jak i cytydyny, zwiększając syntezę acetylocholiny i fosfatydylocholin. Dodatkowo ALA (250 mg) chroni neurony przed stresem oksydacyjnym, a β-CD (250 mg) zwiększa wchłanianie obu składników o 40–200%. To synergia, której pojedynczy składnik nie zapewni."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy β-cyklodekstryna jest bezpieczna?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tak. β-cyklodekstryna ma status GRAS (Generally Recognized As Safe) w USA i jest dopuszczona w UE. Stosowana jest w farmacji od dekad — jako nośnik leków na receptę. W CogniCit używamy 250 mg, znacznie poniżej limitu 12 g/dzień uznawanego za bezpieczny."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dla kogo jest CogniCit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CogniCit jest przeznaczony dla dorosłych (18+), którzy chcą wesprzeć koncentrację i funkcje poznawcze. Szczególnie polecamy dla: pracowników umysłowych, studentów w okresie sesji, programistów i osób po 50. roku życia. Nie zawiera kofeiny — można łączyć z kawą."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy CogniCit ma certyfikat GMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tak. CogniCit jest produkowany w zakładzie z certyfikatem GMP (Good Manufacturing Practice). Każdy batch jest testowany laboratoryjnie — wyniki CoA (Certificate of Analysis) są dostępne na życzenie. Produkt jest zgłoszony do Głównego Inspektora Sanitarnego (GIS) i spełnia wymogi regulacyjne UE."
+          }
+        }
+      ]
+    };
+    var s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(s);
+  })();
+  // Mini-FAQ accordion animation
   document.querySelectorAll('.mini-faq-item button').forEach(function(btn){
     btn.addEventListener('click', function(){
       var content = this.nextElementSibling;
