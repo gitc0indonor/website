@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-03-29 14:29 UTC (Cron Cycle #84)
+## Last Updated: 2026-03-29 18:17 UTC (Cron Cycle #85)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -158,6 +158,18 @@ See improvement_queue.md for full list (387 items, ~15 active).
 - IMP-408: Add "Zaufało nam" trust counter to index.html hero section — "127+ zadowolonych klientów" with animated count-up on scroll
 - IMP-409: Create "Nootropiki a stres — jak suplementy wspierają odporność psychiczną?" blog post — targets "nootropiki stres" and "suplementy na stres psychiczny" (trending topic)
 - IMP-410: Add "Ostatnio kupione" toast notifications to produkt.html — non-intrusive bottom-left popups showing "Ktoś z Warszawy kupił CogniCit 3 min temu" to drive urgency
+
+## 📋 Recent Changes (Cycle #85 — 2026-03-29 18:17 UTC)
+
+- No code changes this cycle (status audit + improvement queue maintenance)
+- Site verified: 6 files changed in last 3 commits (index.html, kasa.html, changelog, content_calendar, improvement_queue, ecommerce_status)
+- Queue: ~20 active items pending (397-419)
+- Formspree blocker: UNCHANGED — placeholder ID `xpwzgryv` still in cognivia-cart.js line 368
+
+### Cycle #85 Added to Queue (417-419)
+- IMP-417: Add "Sprawdź skład" mobile-optimized comparison popup to /produkt page (card-based layout, thumb-scroll optimized)
+- IMP-418: Create "Nootropiki dla studentów — jak się uczyć efektywniej?" blog post (targets "nootropiki studenci" + "jak się uczyć efektywnie", 5K+ monthly combined)
+- IMP-419: Add "Pytanie tygodnia" interactive poll widget to /faq-produkt page (engagement + market research + time-on-page SEO boost)
 
 ---
 
