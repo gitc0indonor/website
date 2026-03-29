@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aktualizacja zamówienia CogniCit</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f5f0e8; font-family: 'Georgia', 'Times New Roman', serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #f5f0e8;">
+    <tr><td align="center" style="padding: 40px 20px;">
+      <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+
+        <!-- Header -->
+        <tr><td style="background: linear-gradient(135deg, #1a3a2a, #2D6642); padding: 40px 40px 30px; text-align: center;">
+          <div style="font-size: 32px; font-weight: 700; color: #ffffff; letter-spacing: 3px; font-family: 'Georgia', serif;">COGNIVIA</div>
+          <div style="font-size: 13px; color: #a8d5b8; margin-top: 4px; letter-spacing: 1px;">Suplementy diety · Polska</div>
+        </td></tr>
+
+        <!-- Status Banner -->
+        <tr><td style="padding: 0;">
+          <div style="background: #e8f5e9; padding: 20px 40px; text-align: center; border-bottom: 1px solid #c8e6c9;">
+            <div style="font-size: 36px; margin-bottom: 8px;">📦</div>
+            <div style="font-size: 20px; font-weight: 700; color: #1a3a2a; margin-bottom: 4px;">{{STATUS_TITLE}}</div>
+            <div style="font-size: 14px; color: #555;">{{STATUS_DESCRIPTION}}</div>
+          </div>
+        </td></tr>
+
+        <!-- Order Progress Bar -->
+        <tr><td style="padding: 30px 40px 20px;">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="25%" align="center" style="padding: 0 4px;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: {{STEP1_BG}}; color: {{STEP1_COLOR}}; line-height: 32px; text-align: center; font-weight: 700; font-size: 14px; margin: 0 auto 6px;">{{STEP1_ICON}}</div>
+                <div style="font-size: 11px; color: {{STEP1_TEXT}}; font-weight: 600;">Przyjęte</div>
+              </td>
+              <td width="25%" align="center" style="padding: 0 4px;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: {{STEP2_BG}}; color: {{STEP2_COLOR}}; line-height: 32px; text-align: center; font-weight: 700; font-size: 14px; margin: 0 auto 6px;">{{STEP2_ICON}}</div>
+                <div style="font-size: 11px; color: {{STEP2_TEXT}}; font-weight: 600;">W realizacji</div>
+              </td>
+              <td width="25%" align="center" style="padding: 0 4px;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: {{STEP3_BG}}; color: {{STEP3_COLOR}}; line-height: 32px; text-align: center; font-weight: 700; font-size: 14px; margin: 0 auto 6px;">{{STEP3_ICON}}</div>
+                <div style="font-size: 11px; color: {{STEP3_TEXT}}; font-weight: 600;">Wysłane</div>
+              </td>
+              <td width="25%" align="center" style="padding: 0 4px;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: {{STEP4_BG}}; color: {{STEP4_COLOR}}; line-height: 32px; text-align: center; font-weight: 700; font-size: 14px; margin: 0 auto 6px;">{{STEP4_ICON}}</div>
+                <div style="font-size: 11px; color: {{STEP4_TEXT}}; font-weight: 600;">Dostarczone</div>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Order Summary -->
+        <tr><td style="padding: 10px 40px 20px;">
+          <div style="background: #fafaf7; border-radius: 10px; padding: 20px; border: 1px solid #e8e4dc;">
+            <div style="font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Szczegóły zamówienia</div>
+            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size: 14px; color: #333;">
+              <tr>
+                <td style="padding: 6px 0; color: #888;">Numer zamówienia:</td>
+                <td style="padding: 6px 0; text-align: right; font-weight: 600;">{{ORDER_ID}}</td>
+              </tr>
+              <tr>
+                <td style="padding: 6px 0; color: #888;">Data zamówienia:</td>
+                <td style="padding: 6px 0; text-align: right;">{{ORDER_DATE}}</td>
+              </tr>
+              <tr>
+                <td style="padding: 6px 0; color: #888;">Metoda dostawy:</td>
+                <td style="padding: 6px 0; text-align: right;">{{SHIPPING_METHOD}}</td>
+              </tr>
+              {{#TRACKING_NUMBER}}
+              <tr>
+                <td style="padding: 6px 0; color: #888;">Numer przesyłki:</td>
+                <td style="padding: 6px 0; text-align: right; font-weight: 600; color: #2D6642;">{{TRACKING_NUMBER}}</td>
+              </tr>
+              {{/TRACKING_NUMBER}}
+              <tr>
+                <td style="padding: 6px 0; color: #888;">Przewidywana dostawa:</td>
+                <td style="padding: 6px 0; text-align: right; font-weight: 600; color: #2D6642;">{{ESTIMATED_DELIVERY}}</td>
+              </tr>
+            </table>
+          </div>
+        </td></tr>
+
+        <!-- Items -->
+        <tr><td style="padding: 0 40px 20px;">
+          <div style="font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Produkty</div>
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size: 14px;">
+            <tr style="border-bottom: 1px solid #e8e4dc;">
+              <td style="padding: 12px 0;">
+                <strong style="color: #1a3a2a;">CogniCit</strong><br>
+                <span style="font-size: 12px; color: #888;">Cytykolina 300 mg · ALA 250 mg · β-CD 250 mg</span>
+              </td>
+              <td style="padding: 12px 0; text-align: center; color: #888;">{{QUANTITY}} szt.</td>
+              <td style="padding: 12px 0; text-align: right; font-weight: 600;">{{ITEM_TOTAL}} zł</td>
+            </tr>
+          </table>
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="font-size: 14px; margin-top: 8px;">
+            <tr>
+              <td style="padding: 4px 0; color: #888;">Produkty:</td>
+              <td style="padding: 4px 0; text-align: right;">{{SUBTOTAL}} zł</td>
+            </tr>
+            <tr>
+              <td style="padding: 4px 0; color: #888;">Dostawa:</td>
+              <td style="padding: 4px 0; text-align: right;">{{SHIPPING_COST}}</td>
+            </tr>
+            <tr style="border-top: 2px solid #1a3a2a;">
+              <td style="padding: 8px 0; font-weight: 700; color: #1a3a2a; font-size: 16px;">Razem:</td>
+              <td style="padding: 8px 0; text-align: right; font-weight: 700; color: #1a3a2a; font-size: 16px;">{{TOTAL}} zł</td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Shipping Address -->
+        <tr><td style="padding: 0 40px 20px;">
+          <div style="background: #f8faf8; border-radius: 10px; padding: 16px; border: 1px solid #e0e8e0;">
+            <div style="font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">Adres dostawy</div>
+            <div style="font-size: 14px; color: #333; line-height: 1.6;">
+              {{CUSTOMER_NAME}}<br>
+              {{STREET}}<br>
+              {{ZIP_CODE}} {{CITY}}<br>
+              {{PHONE}}
+            </div>
+          </div>
+        </td></tr>
+
+        <!-- CTA -->
+        <tr><td style="padding: 0 40px 30px; text-align: center;">
+          <a href="https://cognivia.eu/zamowienie.html?id={{ORDER_ID}}" style="display: inline-block; background: #2D6642; color: #ffffff; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 600; letter-spacing: 0.5px;">Śledź zamówienie online →</a>
+        </td></tr>
+
+        <!-- Trust Bar -->
+        <tr><td style="padding: 20px 40px; background: #f8faf8; border-top: 1px solid #e8e4dc;">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="33%" align="center" style="font-size: 12px; color: #888; padding: 8px 0;">🔒 Płatności SSL</td>
+              <td width="33%" align="center" style="font-size: 12px; color: #888; padding: 8px 0;">✅ Certyfikat GMP</td>
+              <td width="33%" align="center" style="font-size: 12px; color: #888; padding: 8px 0;">↩️ 30 dni gwarancji</td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- Footer -->
+        <tr><td style="padding: 30px 40px; background: #1a3a2a; color: #a8d5b8; text-align: center;">
+          <div style="font-size: 20px; font-weight: 700; color: #ffffff; letter-spacing: 2px; margin-bottom: 12px;">COGNIVIA</div>
+          <div style="font-size: 12px; line-height: 1.8; margin-bottom: 16px;">
+            Cognivia · Polska<br>
+            <a href="mailto:cognivia.business@outlook.com" style="color: #a8d5b8; text-decoration: none;">cognivia.business@outlook.com</a><br>
+            <a href="https://cognivia.eu" style="color: #a8d5b8; text-decoration: none;">cognivia.eu</a>
+          </div>
+          <div style="font-size: 11px; color: #7aa88a; line-height: 1.6; margin-bottom: 12px;">
+            Masz pytania dotyczące zamówienia? Odpowiedz na tego emaila lub odwiedź <a href="https://cognivia.eu/kontakt.html" style="color: #a8d5b8;">stronę kontaktową</a>.
+          </div>
+          <div style="font-size: 10px; color: #5a7a6a;">
+            Suplement diety. Nie zastępuje zróżnicowanej diety i zdrowego trybu życia.<br>
+            © 2026 Cognivia. Wszelkie prawa zastrzeżone.<br>
+            <a href="https://cognivia.eu/polityka-prywatnosci.html" style="color: #5a7a6a;">Polityka prywatności</a> · <a href="https://cognivia.eu/regulamin.html" style="color: #5a7a6a;">Regulamin</a>
+          </div>
+        </td></tr>
+
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>
