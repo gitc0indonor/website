@@ -318,6 +318,10 @@
         CogniviaCart.showNotification('Wypełnij wszystkie wymagane pola');
         return;
       }
+      // Micro-animation: loading state
+      const btn = document.getElementById('place-order-btn');
+      if(btn) btn.classList.add('loading');
+      }
 
       const invoice = document.getElementById('customer-invoice').value;
       if (invoice === 'yes') {
