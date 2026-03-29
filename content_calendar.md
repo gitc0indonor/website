@@ -2438,3 +2438,49 @@
 **SEO angle:** Zero Polish content connecting nootropics to creativity. Massive first-mover advantage. Target: designers, writers, developers, marketers — anyone doing creative work.
 **Target platforms:** Google (SEO), LinkedIn, grupy FB o designie/pisaniu/startupach
 **Status:** Outline ready, needs writing
+
+### Blog Post Outline #80 — Power Cycle #90
+**Title:** "Nootropiki na sesję — jak zaplanować suplementację przed egzaminami?"
+**Target keyword:** "nootropiki na sesję" / "suplementy przed egzaminami sesja" (~800+ monthly, seasonal peak Jan-Feb, May-Jun)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Seasonal peak January-February and May-June (exam sessions)
+
+**Outline:**
+1. **Wstęp** — Sesja to maraton, nie sprint. 68% studentów zaczyna naukę za późno. Czy suplementacja może pomóc?
+2. **Jak sesja obciąża mózg?** — Chroniczny stres (kortyzol), deprywacja snu, nadmiar kofeiny → spadek acetylocholiny, stres oksydacyjny mitochondriów. Prosty model neurobiologii.
+3. **Protokół suplementacji na 30 dni przed sesją** — Tydzień 1-2: adaptacja (1 kapsułka CogniCit rano). Tydzień 3-4: peak performance (dodaj sen 8h + Pomodoro 50/10). Nie zaczynaj dzień przed egzaminem!
+4. **Cytykolina — paliwo dla pamięci** — 300 mg CDP-cholina = prekursor acetylocholiny. Mechanizm kodowania pamięci. 233 publikacji PubMed. Dlaczego działa lepiej niż kofeina (buduje zasoby vs maskuje zmęczenie).
+5. **ALA — ochrona mitochondriów podczas all-nighterów** — Nawet najlepszy plan nie chroni przed jedną zarwaną nocą. ALA regeneruje glutation, chroni neurony przed wolnymi rodnikami. Hager 2007.
+6. **Porównanie: CogniCit vs studenckie "wspomagacze"** — Tabela: CogniCit (trwała koncentracja, GMP) vs kofeina (crash po 3h) vs energetyki (cukier, lęk) vs modafinil (recepta, ryzyko).
+7. **FAQ dla studentów** — 5 pytań: Czy mogę łączyć z kawą? Czy działa od razu? Czy jest bezpieczny? Jaki kod zniżkowy? Gdzie kupić?
+8. **Podsumowanie** — Sesja wymaga strategii, nie szczęścia. CogniCit + sen + plan = recepta na zdane egzaminy.
+
+**CTA:** "Zamów CogniCit na sesję — kod SESJA10 = 10% zniżki" → produkt.html
+**Internal links:** sesja.html, matura.html, produkt.html, blog/suplementy-dla-studentow, jak-stosowac.html, blog/jak-budowac-rutyne-suplementacji.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** Seasonal student traffic peak. Zero quality Polish content specifically targeting "nootropiki sesja" with practical protocol. Featured snippet potential for "jak przygotować się do sesji suplementy". Cross-promote with sesja landing page.
+**Target platforms:** Google (SEO), grupy FB dla studentów, Wykop
+**Status:** Outline ready, needs writing
+
+### Blog Post Outline #81 — Power Cycle #91
+**Title:** "Nootropiki a sen głęboki — jak suplementacja wpływa na regenerację mózgu w nocy?"
+**Target keyword:** "nootropiki sen głęboki" / "suplementy a regeneracja mózgu sen" (~600+ monthly, low competition)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Evergreen with winter peak (Nov-Feb — shorter days, sleep quality concerns)
+
+**Outline:**
+1. **Wstęp** — Sen to nie "wyłączenie" mózgu — to aktywna faza konsolidacji pamięci i naprawy neuronów. Czy suplementy mogą to wspierać — albo zaszkodzić?
+2. **Fazy snu a neuroprzekaźniki** — NREM głęboki (wzrost hormonu wzrostu, naprawa mitochondriów) vs REM (konsolidacja pamięci, acetylocholina). Prosty diagram faz snu.
+3. **Jak kofeina niszczy sen głęboki** — Mechanizm blokowania adenozyny, półtrwania 5-6h, wpływ na architekturę snu (mniej NREM3). Dlaczego "kawa o 15:00" to zły pomysł.
+4. **Czy cytykolina zaburza sen?** — Odpowiedź: nie. Cytykolina działa na acetylocholinę (pamięć, koncentracja), nie na adenozynę ani melatoninę. Badania: brak wpływu na latencję snu. Zalecenie: rano, zgodnie z rytmem dobowym.
+5. **ALA a naprawa oksydacyjna podczas snu** — Wolne rodniki generowane w ciągu dnia są neutralizowane głównie podczas snu. ALA (dualna rozpuszczalność) wspiera regenerację glutationu — kluczowego antyoksydanta naprawczego. Badanie Hager 2007.
+6. **Protokół "mózg w nocy"** — Poranna dawka CogniCit (6:00-9:00), unikanie kofeiny po 14:00, ekspozycja na światło niebieskie redukcja 2h przed snem, rutyna 10-min (medytacja/oddech).
+7. **Porównanie: suplementy które pomagają vs szkodzą snu** — Tabela: CogniCit (0mg kofeina, neutralny dla snu), ashwagandha (lekka sedacja — pomocny), melatonina (regulacja cyklu), kofeina (blokada adenozyny — szkodliwy), L-teanina (relaksacja — pomocny).
+8. **FAQ** — 5 pytań: Czy CogniCit nasennie? Kiedy najlepiej brać? Czy mogę łączyć z melatoniną? Czy działa na bezsenność? Czy jest bezpieczny przy problemach ze snem?
+
+**CTA:** "Wsparcie koncentracji bez utraty snu — CogniCit od 79 zł" → produkt.html
+**Internal links:** blog/nootropiki-a-sen.html (existing), produkt.html, jak-stosowac.html, faq-produkt.html (new sleep FAQ #432), blog/suplementy-a-kofeina.html, nauka.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** First Polish content connecting nootropic supplementation to SLEEP QUALITY (not just "do supplements keep you awake"). Positions CogniCit as the sleep-friendly nootropic. Complements existing sleep blog post with deeper neuroscience angle.
+**Target platforms:** Google (SEO), grupy FB o zdrowym śnie/biohackingu
+**Status:** Outline ready, needs writing
