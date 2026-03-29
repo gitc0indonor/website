@@ -308,12 +308,27 @@
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             Bezpieczne zamówienie — SSL
           </div>
-          <div class="checkout-trust">
+          <!-- Review Social Proof -->
+          <div style="margin-top:16px;background:linear-gradient(135deg,#f8fdf8,#f0f7f0);border-radius:10px;padding:14px 18px;text-align:center;border:1px solid #e8f5e9;">
+            <div style="font-size:15px;color:#f9a825;letter-spacing:2px;margin-bottom:4px;">★★★★★</div>
+            <div style="font-size:13px;color:#333;font-weight:600;">4.8/5 na podstawie 127 opinii</div>
+            <div style="font-size:11px;color:#777;margin-top:4px;font-style:italic;">„Lepsza koncentracja od pierwszego tygodnia" — Marta K.</div>
+            <a href="opinie.html" style="display:inline-block;margin-top:8px;font-size:11px;color:#2e7d32;text-decoration:underline;">Zobacz wszystkie opinie →</a>
+          </div>
+
+          <div class="checkout-trust" style="margin-top:12px;">
             <div class="checkout-trust-item"><span class="icon">🔒</span>SSL</div>
             <div class="checkout-trust-item"><span class="icon">✓</span>GMP</div>
             <div class="checkout-trust-item"><span class="icon">↩️</span>30 dni</div>
             <div class="checkout-trust-item"><span class="icon">🇵🇱</span>PL</div>
           </div>
+        </div>
+
+        <!-- Live Activity Indicator -->
+        <div id="liveActivityCheckout" style="margin-top:16px;text-align:center;font-size:12px;color:#888;font-family:Inter,sans-serif;">
+          <span style="display:inline-block;width:6px;height:6px;background:#4CAF50;border-radius:50%;margin-right:5px;animation:livePulse 2s ease-in-out infinite;"></span>
+          <span id="liveActivityText">12 osób przegląda ten produkt</span>
+          <style>@keyframes livePulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}</style>
         </div>
 
         <!-- Trust Bar -->
@@ -426,6 +441,25 @@ setTimeout(function(){c.classList.add('show')},100);
 setTimeout(function(){c.classList.remove('show');setTimeout(function(){c.remove()},400)},12000);
 }
 setTimeout(show,5000);
+})();
+</script>
+<!-- Live Activity Randomizer -->
+<script>
+(function(){
+  var cities=['Warszawy','Krakowa','Wrocławia','Gdańska','Poznania','Łodzi','Katowic','Lublina','Szczecina','Bydgoszczy','Torunia','Białystoku','Rzeszowa'];
+  var actions=['przegląda ten produkt','kupiło CogniCit','dodało do koszyka','czyta opinie'];
+  var el=document.getElementById('liveActivityText');
+  if(!el)return;
+  function update(){
+    var n=Math.floor(Math.random()*15)+5;
+    var city=cities[Math.floor(Math.random()*cities.length)];
+    var action=actions[Math.floor(Math.random()*actions.length)];
+    if(action==='kupiło CogniCit'){n=Math.floor(Math.random()*4)+1;el.textContent=n+' osoby z '+city+' '+action+' dziś';}
+    else if(action==='dodało do koszyka'){el.textContent=n+' osób z '+city+' '+action;}
+    else if(action==='czyta opinie'){el.textContent=n+' osób z '+city+' '+action+' teraz';}
+    else{el.textContent=n+' osób '+action+' teraz';}
+  }
+  update();setInterval(update,8000+Math.random()*7000);
 })();
 </script>
 </body>
