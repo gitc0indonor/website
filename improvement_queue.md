@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Power Cycle #90 — 20:50 UTC)
+## Last Updated: 2026-03-29 (Ecommerce Cron Cycle #86 — 21:57 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -878,3 +878,13 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 436. **[NEW] Create "Najczęstsze pytania o składniki" FAQ page (/faq-skladniki)** — Ingredient-specific FAQ separate from general FAQ and product FAQ. Covers: ALA bioavailability, cytykolina vs Alpha GPC, β-CD food safety status, "czy mogę otworzyć kapsułkę?", "czy składniki są GMO-free?". 15+ Q&As with FAQPage JSON-LD. SEO target: "kwas alfa-liponowy suplement pytania", "cytykolina bezpieczeństwo". Estimated: 2 hours.
 
 437. **[NEW] Add "Gwiazdka Google" visible rating badge to mobile nav on ALL pages missing it** — index.html mobile nav already has ★4.8/5 badge (Power Cycle #84). Extend to all 50+ pages' mobile hamburger menus. Consistent trust signal at first mobile interaction. Green pill badge linking to opinie.html. Estimated: 1 hour.
+
+435. ~~**[DONE] Add "Wpływ na sen" section to produkt.html**~~ ✅ — Ecommerce Cron Cycle #86. Added dedicated "Bezpieczeństwo snu" section after OSTRZEŻENIA: green pill badge "0 mg kofeiny — bezpieczny dla snu", 2-column grid (what CogniCit doesn't do / why), dosing recommendation box, cross-link to blog/nootropiki-a-sen.html.
+
+### 🆕 Ecommerce Cron Cycle #86 Additions (2026-03-29 21:57 UTC)
+
+438. ~~**[DONE] Add "Kiedy poczuję różnicę?" timeline to produkt.html**~~ ✅ — Ecommerce Cron Cycle #86. Added vertical timeline section with 3 stages: Day 1-3 (first impression), Day 7-14 (stabilization), Day 15-30 (full effect). Sets realistic expectations, reduces refund requests from premature judgment. Animated gradient line, numbered dots, disclaimer footnote.
+
+439. ~~**[DONE] Add "Dla kogo jest CogniCit?" personas section to index.html**~~ ✅ — Ecommerce Cron Cycle #86. Added 3-card persona grid before footer newsletter: Students (→ sesja.html), Professionals (→ produkt.html), 40+ adults (→ nauka.html). Each card has icon, benefit-focused copy, hover animation, and deep link. Targets different buyer personas with tailored messaging.
+
+440. **[NEW] Add "Polecane przez ekspertów" authority section to produkt.html** — Feature quotes or endorsements from pharmacists, neuroscientists, or nutrition experts about the 3 ingredients. Even general (non-brand-specific) expert quotes boost credibility. Add headshot placeholders, name, title. Estimated: 1.5 hours.

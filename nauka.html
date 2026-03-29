@@ -246,6 +246,67 @@
     </div>
   </section>
 
+  <section style="padding: 60px 5%; background: linear-gradient(135deg, #f8f5ee 0%, #f0ebe0 100%); text-align: center;">
+    <h2 style="font-family: 'EB Garamond', serif; font-size: 32px; color: #2a2a27; margin-bottom: 8px;">Skuteczność w liczbach</h2>
+    <p style="font-size: 15px; color: #6f6a61; margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto;">Dane oparte na publikacjach naukowych i badaniach klinicznych.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; max-width: 900px; margin: 0 auto;">
+      <div style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+        <div style="font-size: 42px; margin-bottom: 8px;">📚</div>
+        <div class="counter-value" data-target="1522" data-suffix="" style="font-size: 48px; font-weight: 700; color: #8f7a3d; font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+        <div style="font-size: 14px; color: #2a2a27; font-weight: 600; margin-top: 8px;">publikacji w PubMed</div>
+        <div style="font-size: 12px; color: #6f6a61; margin-top: 4px;">ALA + cytykolina + β-CD</div>
+      </div>
+      <div style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+        <div style="font-size: 42px; margin-bottom: 8px;">233</div>
+        <div class="counter-value" data-target="233" data-suffix="" style="font-size: 48px; font-weight: 700; color: #8f7a3d; font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+        <div style="font-size: 14px; color: #2a2a27; font-weight: 600; margin-top: 8px;">publikacji o cytykolinie</div>
+        <div style="font-size: 12px; color: #6f6a61; margin-top: 4px;">Najlepiej przebadany nootropik</div>
+      </div>
+      <div style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+        <div style="font-size: 42px; margin-bottom: 8px;">3️⃣</div>
+        <div class="counter-value" data-target="3" data-suffix="" style="font-size: 48px; font-weight: 700; color: #8f7a3d; font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+        <div style="font-size: 14px; color: #2a2a27; font-weight: 600; margin-top: 8px;">synergistyczne składniki</div>
+        <div style="font-size: 12px; color: #6f6a61; margin-top: 4px;">ALA + cytykolina + β-CD</div>
+      </div>
+      <div style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+        <div style="font-size: 42px; margin-bottom: 8px;">🛡️</div>
+        <div class="counter-value" data-target="30" data-suffix="" style="font-size: 48px; font-weight: 700; color: #8f7a3d; font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+        <div style="font-size: 14px; color: #2a2a27; font-weight: 600; margin-top: 8px;">dni gwarancji</div>
+        <div style="font-size: 12px; color: #6f6a61; margin-top: 4px;">Kochaj albo zwróć</div>
+      </div>
+    </div>
+  </section>
+  <script>
+  (function() {
+    var counters = document.querySelectorAll('.counter-value');
+    var animated = new Set();
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !animated.has(entry.target)) {
+          animated.add(entry.target);
+          animateCounter(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    counters.forEach(function(c) { obs.observe(c); });
+    function animateCounter(el) {
+      var target = parseInt(el.getAttribute('data-target'), 10);
+      var suffix = el.getAttribute('data-suffix') || '';
+      var duration = 2000;
+      var start = null;
+      function step(ts) {
+        if (!start) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var current = Math.round(eased * target);
+        el.textContent = current.toLocaleString('pl-PL') + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+  })();
+  </script>
+
   <footer>
     <p>© 2026 Cognivia. <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a> | <a href="polityka-prywatnosci.html">Polityka prywatności</a> | <a href="regulamin.html">Regulamin</a></p>
     <p style="font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 16px;">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.</p>

@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-03-29 18:17 UTC (Cron Cycle #85)
+## Last Updated: 2026-03-29 21:57 UTC (Ecommerce Cron Cycle #86)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -174,3 +174,17 @@ See improvement_queue.md for full list (387 items, ~15 active).
 ---
 
 *Next check scheduled by cron. Status file: website/ecommerce_status.md*
+
+## 📋 Recent Changes (Cycle #86 — 2026-03-29 21:57 UTC)
+
+- ✅ IMP-435: Added "Bezpieczeństwo snu" section to produkt.html — dedicated sleep safety section after warnings. Green pill badge "0 mg kofeiny — bezpieczny dla snu", 2-column grid (what CogniCit doesn't do / why), dosing recommendation, cross-link to blog/nootropiki-a-sen.html. Addresses #1 buyer concern preemptively.
+- ✅ IMP-438: Added "Kiedy poczuję różnicę?" timeline to produkt.html — vertical 3-stage timeline (Day 1-3, 7-14, 15-30) setting realistic supplement expectations. Reduces premature-judgment refunds and manages buyer psychology.
+- ✅ IMP-439: Added "Dla kogo jest CogniCit?" personas section to index.html — 3-card grid: Students (🎓→sesja.html), Professionals (💼→produkt.html), 40+ adults (🧠→nauka.html). Tailored messaging per persona, hover animations, deep links.
+
+### Cycle #86 Added to Queue (440)
+- IMP-440: Add "Polecane przez ekspertów" authority section to produkt.html — pharmacist/neuroscientist/nutrition expert quotes about the 3 ingredients
+
+### Blocker Status
+- Formspree: UNCHANGED — placeholder ID `xpwzgryv` in cognivia-cart.js line 368. CEO ACTION REQUIRED.
+- Payment gateways: UI-only (PayU/P24/BLIK/PayPal defined but not integrated). Requires merchant accounts.
+- Queue: ~18 active items pending (421-440)
