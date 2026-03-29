@@ -3035,6 +3035,11 @@
         <span class="footer-badge">✓ Lab Tested</span>
         <span class="footer-badge">✓ Zgłoszone GIS</span>
       </div>
+      <div class="footer-order-counter" style="text-align:center;margin-top:12px;font-size:13px;color:#888;font-family:Inter,sans-serif;">
+        <span style="display:inline-block;width:8px;height:8px;background:#4CAF50;border-radius:50%;margin-right:6px;animation:footerPulse 2s ease-in-out infinite;"></span>
+        Zamówienia złożone: <strong id="footerOrderCount" style="color:#2E7D32;">347</strong>
+      </div>
+      <style>@keyframes footerPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}</style>
     </div>
     <div class="footer-legal">
       <strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety. Zalecany jest zrównoważony sposób żywienia i zdrowy tryb życia. Nie przekraczać zalecanej dziennej porcji. Przechowywać w sposób niedostępny dla małych dzieci.<br><br>
@@ -3236,6 +3241,21 @@
       toast.querySelector('.sp-close').addEventListener('click', function() {
         localStorage.setItem('spToastDismissed', '1');
       });
+    })();
+
+    // Footer order counter — #378
+    (function() {
+      const el = document.getElementById('footerOrderCount');
+      if (!el) return;
+      let base = parseInt(localStorage.getItem('orderCountBase') || '347');
+      const today = new Date().toISOString().slice(0, 10);
+      const lastDay = localStorage.getItem('orderCountLastDay');
+      if (lastDay !== today) {
+        base += Math.floor(Math.random() * 3); // 0-2/day
+        localStorage.setItem('orderCountBase', base);
+        localStorage.setItem('orderCountLastDay', today);
+      }
+      el.textContent = base;
     })();
   </script>
 

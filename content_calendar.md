@@ -2161,3 +2161,28 @@
 **Schema:** Article + BreadcrumbList JSON-LD
 **SEO angle:** Completely underserved niche — zero Polish content targeting mothers + supplements. Emotional resonance = high engagement + shares. Positions CogniCit as the practical, real-world supplement.
 **Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #69 — Power Cycle #80
+**Title:** "Jak suplementy wpływają na kreatywność? Nauka o twórczym myśleniu"
+**Target keyword:** "suplementy na kreatywność" / "nootropiki kreatywność" (~400 monthly searches, underserved niche)
+**Estimated word count:** 1,500-2,000 words
+**Seasonality:** Evergreen, slight peak Jan (new year goals) and Sep (back to creative work)
+
+**Outline:**
+1. **Wstęp** — Kreatywność to nie talent — to proces neurobiologiczny. Można go wspierać. Dlaczego twórcy (graficy, pisarze, muzycy) potrzebują innego podejścia do suplementacji niż pracownicy umysłowi.
+2. **Neurobiologia kreatywności** — Sieć default mode (DMN) vs sieć wykonawcza (CEN). Kreatywność = przełączanie między nimi. Rola acetylocholiny w płynnym przełączaniu uwagi. Dopamina a motywacja twórcza.
+3. **Co blokuje kreatywność?** — Stres oksydacyjny mitochondriów (mniej energii = mniej skojarzeń), chroniczny kortyzol (zamyka DMN), niedobór snu (REM = konsolidacja kreatywna), nadmiar kofeiny (wąski focus = mniej dywergentnego myślenia).
+4. **Cytykolina a płynność pomysłów** — Acetylocholina = neuroprzekaźnik przełączania między DMN a CEN. 300 mg cytykoliny = większe zasoby ACh = płynniejsze przełączanie. 233 publikacje PubMed.
+5. **ALA — ochrona mitochondriów twórcy** — Praca kreatywna wymaga dużo energii neuronalnej. ALA chroni mitochondria przed stresem oksydacyjnym intensywnego myślenia. Hager 2007.
+6. **β-CD — dlaczego wchłanianie ma znaczenie dla kreatywności** — Nawet najlepszy składnik nie zadziała, jeśli nie dotrze do mózgu. β-CD = gwarancja biodostępności.
+7. **Kofeina a kreatywność — paradoks** — Kofeina zawęża focus (dobra dla zadań liniowych), ale może blokować dywergentne myślenie. CogniCit = zero kofeiny = wspiera oba tryby.
+8. **Protokół dla twórcy** — Rano: CogniCit → deep creative work (9-12) → ruch/przerwa → popołudniowa edycja/krytyka. Wieczór: bez ekranów, sen 7-8h.
+9. **Podsumowanie** — "Kreatywność to proces biologiczny. CogniCit wspiera mitochondria i neuroprzekaźniki, które go napędzają."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-programistow.html, blog/suplementy-praca-zdalna.html, blog/cytykolina-przewodnik-kompletny.html, jak-stosowac.html, nauka.html
+**Schema:** Article + BreadcrumbList JSON-LD
+**SEO angle:** Zero Polish content on supplements + creativity. Positions CogniCit beyond "focus" into creative support. Emotional hook for designer/writer/musician audiences. Shareable on creative community platforms (Behance, Dribbble Polish groups).
+**Status:** Outline ready, needs writing
