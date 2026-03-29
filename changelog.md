@@ -2,6 +2,42 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-29 — Power Cycle #82 (07:33 UTC)
+**Implemented:**
+- ✅ #384 — Added "Napisz opinię" CTA to potwierdzenie.html order confirmation page
+  - Green gradient card after social sharing section
+  - ⭐ icon + "Twoja opinia ma znaczenie!" heading
+  - Explanation: "Po 30 dniach stosowania podziel się opinią"
+  - Green "Oceń CogniCit" button linking to opinie.html
+  - "Wyślemy Ci przypomnienie za 30 dni 📧" trust note
+  - Captures reviews from actual buyers at highest satisfaction moment
+  - Expected impact: 5-10% review submission rate from confirmed orders
+- ✅ #387 — Added freshness guarantee badges to produkt.html buy section
+  - 2 pill badges between price and quantity selector
+  - "📅 Min. 12 miesięcy ważności przy zakupie"
+  - "🔬 Każdy partia przebadana laboratoryjnie"
+  - Green-tinted badges (rgba background, green text, 20px pill radius)
+  - Inter font, 11px, matching site palette
+  - Reduces purchase hesitation about expiry dates at conversion point
+- ✅ Blog outline #70 added to content_calendar.md: "Suplementy a depresja sezonowa"
+  - Targets seasonal keyword "depresja sezonowa suplementy" (Oct-Nov peak)
+  - SAD mechanism, cytykolina/ALA/β-CD positioning, responsible disclaimer
+  - Zero quality Polish content on supplements + SAD
+
+**Files changed:**
+- `potwierdzenie.html` — Review CTA card (~12 lines) after social sharing
+- `produkt.html` — Freshness badges (~6 lines) in buy section between price and quantity
+- `improvement_queue.md` — Items #384, #387 marked DONE; 3 new items (#388-390); timestamp → Power Cycle #82
+- `content_calendar.md` — Blog outline #70: depresja sezonowa
+- `changelog.md` — This entry
+
+**Site verification:** Both files validated — DOCTYPE ✓, </html> ✓. potwierdzenie.html: "Oceń CogniCit" button confirmed linking to opinie.html. produkt.html: freshness badges confirmed (12 miesięcy ważności, partia przebadana). Cart JS unaffected.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~387 completed + ~35 active = ~422 total
+
+
 ### 2026-03-29 — Power Cycle #80 (06:33 UTC)
 **Implemented:**
 - ✅ #378 — Added "Ostatnie zamówienia" counter to index.html footer

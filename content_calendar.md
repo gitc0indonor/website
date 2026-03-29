@@ -2186,3 +2186,30 @@
 **Schema:** Article + BreadcrumbList JSON-LD
 **SEO angle:** Zero Polish content on supplements + creativity. Positions CogniCit beyond "focus" into creative support. Emotional hook for designer/writer/musician audiences. Shareable on creative community platforms (Behance, Dribbble Polish groups).
 **Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #70 — Power Cycle #81
+**Title:** "Suplementy a depresja sezonowa — jak radzić sobie z jesiennym spadkiem energii?"
+**Target keyword:** "depresja sezonowa suplementy" / "jesienny spadek energii" (~600 monthly searches, seasonal peak Oct-Nov in Poland)
+**Estimated word count:** 1,500-2,000 words
+**Seasonality:** Seasonal peak Oct-Nov (autumn blues), secondary peak Jan-Feb (winter fatigue)
+
+**Outline:**
+1. **Wstęp** — 10-15% Polaków doświadcza sezonowego spadku nastroju. Jesień = krótsze dni, mniej światła, spadek energii. Czy suplementy mogą pomóc?
+2. **Czym jest depresja sezonowa (SAD)?** — Mechanizm: mniej światła → spadek serotoniny → wzrost melatoniny → zmęczenie, spadek koncentracji, drażliwość. Proste wyjaśnienie bez medycznego żargonu.
+3. **Jak jesień wpływa na mózg?** — Mniej światła = mniej witaminy D, zakłócony rytm dobowy, spadek acetylocholiny (neuroprzekaźnik koncentracji). Stres oksydacyjny z powodu chronicznego zmęczenia.
+4. **Cytykolina — wsparcie koncentracji w ciemne miesiące** — 300 mg CDP-choliny = prekursor acetylocholiny. Nie zastępuje światła, ale pomaga mózg funkcjonować lepiej. 233 publikacje PubMed.
+5. **ALA — ochrona mitochondriów jesienią** — Mniej ruchu + więcej stresu = więcej wolnych rodników. ALA regeneruje glutation, chroni mitochondria. Hager et al. 2007. Podwójna rozpuszczalność = unikalna.
+6. **β-CD — gwarancja wchłaniania** — Nawet najlepszy składnik nie zadziała, jeśli nie dotrze do mózgu. β-CD zwiększa biodostępność o 40-200%.
+7. **Protokół na jesienny spadek energii** — Rano: CogniCit ze śniadaniem → 15 min światła (spacer lub lampa SAD) → ruch 30 min → dieta bogata w omega-3. Wieczór: bez ekranów 1h przed snem.
+8. **Porównanie: CogniCit vs inne rozwiązania** — Tabela: CogniCit (trwała koncentracja, zero kofeiny) vs kofeina (tymczasowy boost, pogarsza sen) vs energetyki (cukier, crash) vs multi-suplementy (nieprzejrzyste).
+9. **Kiedy suplementacja nie wystarczy?** — Granica między jesiennym spadkiem a depresją kliniczną. Kiedy szukać pomocy psychologa/psychiatry. Odpowiedzialna komunikacja.
+10. **Podsumowanie** — "Jesień nie musi oznaczać spadku. Z odpowiednim wsparciem możesz funkcjonować pełną parą."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/nootropiki-a-sen.html, blog/chroniczne-zmeczenie-umyslowe.html, blog/suplementy-dla-seniorow-50-plus.html, jak-stosowac.html, nauka.html
+**Schema:** Article + BreadcrumbList JSON-LD
+**SEO angle:** Seasonal content (Oct-Nov peak) with evergreen elements. Zero quality Polish content on supplements + SAD. Emotional resonance = high engagement + shares. Positions CogniCit as year-round cognitive support.
+**Target platforms:** Google (SEO), grupy FB o zdrowiu psychicznym, Wykop
+**Status:** Outline ready, needs writing
