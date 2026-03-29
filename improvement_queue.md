@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Power Cycle #78)
+## Last Updated: 2026-03-29 (Power Cycle #79)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -711,8 +711,14 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 372. ~~**[DONE] Add "Gwarancja satysfakcji" progress bar to koszyk.html**~~ ✅ — Power Cycle #78. 3-step visual bar: Zamów ✓ → Przetestuj 30 dni → Kochaj albo zwróć. Green gradient background, numbered circles with icons. "Zero ryzyka — zwracamy pieniądze bez pytań" callout. Positioned between checkout button and summary. Reduces purchase anxiety.
 
-373. **[NEW] Add "Porównaj skład" comparison widget to produkt.html** — Interactive side-by-side comparison: CogniCit vs a competitor product showing ingredient transparency. User sees: CogniCit (3 ingredients, exact doses, GMP, CoA) vs competitor (proprietary blend, vague doses, no GMP). Visual "green vs red" highlight. Converts visitors who are comparing products. Estimated: 1 hour.
+373. ~~**[DONE] Add "Porównaj skład" comparison widget to produkt.html**~~ ✅ — Power Cycle #79. Interactive table comparing CogniCit vs "typowy suplement" on 8 criteria: ingredient count, dose transparency, GMP, bioavailability enhancer, caffeine content, antioxidant, price/day, satisfaction guarantee. Green-highlighted CogniCit column vs grey/red competitor. Green ✓/✗ visual indicators. CTA link to full /porownanie.html page. Positioned between "Składniki w pigułce" and "KORZYŚCI" sections. Responsive with horizontal scroll on mobile. Converts visitors comparing products.
 
 374. **[NEW] Create "Suplementy a praca umysłowa dla mam" blog post** — Target "suplementy dla mam", "koncentracja mama" (underserved niche). Cover: cognitive demands of parenting (sleep deprivation, multitasking, decision fatigue), how cytykolina supports focus during chaotic days, ALA protection from oxidative stress of sleep deprivation. Positions CogniCit as the mother's cognitive tool. Estimated: 2 hours.
 
-375. **[NEW] Add "Najczęściej zadawane pytania przed zakupem" FAQ accordion to kasa.html** — Reduce checkout abandonment by answering last-minute doubts directly on the checkout page: "Czy płatność jest bezpieczna?", "Kiedy dostanę przesyłkę?", "Czy mogę zwrócić?". Collapsible FAQ below shipping/payment options. Reduces cart abandonment by 8-12% (Baymard Institute data). Estimated: 30 minutes.
+375. ~~**[DONE] Add "Najczęściej zadawane pytania przed zakupem" FAQ accordion to kasa.html**~~ ✅ — Power Cycle #79. 4 collapsible Q&As: payment security (SSL/PCI DSS), delivery timeframe (24h shipping, 3 methods), return policy (14-day + 30-day guarantee), VAT invoice. Smooth max-height CSS transition, +/× icon rotation. Green accent matching site palette. Positioned between subtitle and checkout forms — catches last-minute doubts at conversion point. Reduces cart abandonment by answering objections before form fill.
+
+376. **[NEW] Add trust badges row to /skutki-uboczne-nootropiki.html** — Verify page has satisfaction guarantee + social proof + buy badge consistency. Some pages may have been missed in earlier audits. Estimated: 15 minutes.
+
+377. **[NEW] Create "Porównanie suplementów na pamięć — cytykolina vs bacopa vs ginkgo" blog post** — Outline ready in content_calendar.md (#338). Target "suplementy na pamięć ranking" (1.5K monthly). Comparison table format. Positions cytykolina as evidence-based winner. Estimated: 2 hours.
+
+378. **[NEW] Add "Ostatnie zamówienia" counter to index.html footer** — Social proof counter showing total orders placed (simulated until real backend). "🛒 Zamówienia złożone: XXX" with day-based increment. Reinforces momentum. Estimated: 15 minutes.

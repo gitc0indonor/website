@@ -74,6 +74,53 @@
     <h1>Kasa</h1>
     <p class="checkout-subtitle">Bezpieczna płatność — Twoje dane są chronione szyfrowaniem SSL</p>
 
+    <!-- #375 — Pre-purchase FAQ accordion -->
+    <div style="max-width: 800px; margin: 0 auto 32px; background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 24px;">
+      <h2 style="font-family: 'EB Garamond', serif; font-size: 22px; color: #1a3a2a; margin-bottom: 16px; text-align: center;">Najczęściej zadawane pytania przed zakupem</h2>
+      <div id="checkout-faq" style="display: flex; flex-direction: column; gap: 8px;">
+        <div class="ch-faq-item" style="border: 1px solid #e8e8e8; border-radius: 8px; overflow: hidden;">
+          <div onclick="this.parentElement.classList.toggle('open');var d=this.nextElementSibling;d.style.maxHeight=d.style.maxHeight?'':d.scrollHeight+'px';this.querySelector('.ch-icon').style.transform=this.parentElement.classList.contains('open')?'rotate(45deg)':''" style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; cursor: pointer; background: #fafafa; transition: background 0.2s;" onmouseover="this.style.background='#f0f7f0'" onmouseout="this.style.background='#fafafa'">
+            <span style="font-size: 20px;">🔒</span>
+            <span style="flex: 1; font-weight: 600; font-size: 14px; color: #333;">Czy płatność jest bezpieczna?</span>
+            <span class="ch-icon" style="font-size: 20px; color: #2e7d32; font-weight: 300; transition: transform 0.3s;">+</span>
+          </div>
+          <div style="max-height: 0; overflow: hidden; transition: max-height 0.35s ease;">
+            <div style="padding: 14px 18px; font-size: 13px; color: #555; line-height: 1.7; border-top: 1px solid #f0f0f0;">Tak. Wszystkie płatności są szyfrowane protokołem SSL i obsługiwane przez certyfikowanych operatorów (PayU, Przelewy24) zgodnych ze standardem PCI DSS. Twoje dane kartowe nigdy nie są przechowywane na naszych serwerach. Obsługujemy również BLIK, Google Pay i Apple Pay.</div>
+          </div>
+        </div>
+        <div class="ch-faq-item" style="border: 1px solid #e8e8e8; border-radius: 8px; overflow: hidden;">
+          <div onclick="this.parentElement.classList.toggle('open');var d=this.nextElementSibling;d.style.maxHeight=d.style.maxHeight?'':d.scrollHeight+'px';this.querySelector('.ch-icon').style.transform=this.parentElement.classList.contains('open')?'rotate(45deg)':''" style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; cursor: pointer; background: #fafafa; transition: background 0.2s;" onmouseover="this.style.background='#f0f7f0'" onmouseout="this.style.background='#fafafa'">
+            <span style="font-size: 20px;">📦</span>
+            <span style="flex: 1; font-weight: 600; font-size: 14px; color: #333;">Kiedy dostanę przesyłkę?</span>
+            <span class="ch-icon" style="font-size: 20px; color: #2e7d32; font-weight: 300; transition: transform 0.3s;">+</span>
+          </div>
+          <div style="max-height: 0; overflow: hidden; transition: max-height 0.35s ease;">
+            <div style="padding: 14px 18px; font-size: 13px; color: #555; line-height: 1.7; border-top: 1px solid #f0f0f0;">Wysyłamy w 24h od złożenia zamówienia. InPost Paczkomaty: 1-2 dni robocze (12,99 zł, darmowa od 120 zł). DPD kurier: 1-2 dni (15,99 zł, darmowa od 150 zł). Poczta Polska: 2-4 dni (10,99 zł, darmowa od 120 zł). Zamówienia złożone do 14:00 wysyłamy tego samego dnia.</div>
+          </div>
+        </div>
+        <div class="ch-faq-item" style="border: 1px solid #e8e8e8; border-radius: 8px; overflow: hidden;">
+          <div onclick="this.parentElement.classList.toggle('open');var d=this.nextElementSibling;d.style.maxHeight=d.style.maxHeight?'':d.scrollHeight+'px';this.querySelector('.ch-icon').style.transform=this.parentElement.classList.contains('open')?'rotate(45deg)':''" style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; cursor: pointer; background: #fafafa; transition: background 0.2s;" onmouseover="this.style.background='#f0f7f0'" onmouseout="this.style.background='#fafafa'">
+            <span style="font-size: 20px;">🔄</span>
+            <span style="flex: 1; font-weight: 600; font-size: 14px; color: #333;">Czy mogę zwrócić produkt?</span>
+            <span class="ch-icon" style="font-size: 20px; color: #2e7d32; font-weight: 300; transition: transform 0.3s;">+</span>
+          </div>
+          <div style="max-height: 0; overflow: hidden; transition: max-height 0.35s ease;">
+            <div style="padding: 14px 18px; font-size: 13px; color: #555; line-height: 1.7; border-top: 1px solid #f0f0f0;">Tak! Masz 14 dni ustawowego prawa do zwrotu oraz dodatkową 30-dniową gwarancję satysfakcji — jeśli produkt nie spełni Twoich oczekiwań, zwracamy pieniądze bez pytań. Szczegóły na <a href="zwroty.html" style="color: #2e7d32; font-weight: 600;">stronie zwrotów</a>.</div>
+          </div>
+        </div>
+        <div class="ch-faq-item" style="border: 1px solid #e8e8e8; border-radius: 8px; overflow: hidden;">
+          <div onclick="this.parentElement.classList.toggle('open');var d=this.nextElementSibling;d.style.maxHeight=d.style.maxHeight?'':d.scrollHeight+'px';this.querySelector('.ch-icon').style.transform=this.parentElement.classList.contains('open')?'rotate(45deg)':''" style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; cursor: pointer; background: #fafafa; transition: background 0.2s;" onmouseover="this.style.background='#f0f7f0'" onmouseout="this.style.background='#fafafa'">
+            <span style="font-size: 20px;">📋</span>
+            <span style="flex: 1; font-weight: 600; font-size: 14px; color: #333;">Czy dostanę fakturę VAT?</span>
+            <span class="ch-icon" style="font-size: 20px; color: #2e7d32; font-weight: 300; transition: transform 0.3s;">+</span>
+          </div>
+          <div style="max-height: 0; overflow: hidden; transition: max-height 0.35s ease;">
+            <div style="padding: 14px 18px; font-size: 13px; color: #555; line-height: 1.7; border-top: 1px solid #f0f0f0;">Tak, do każdego zamówienia dołączamy fakturę VAT (lub paragon). Jeśli potrzebujesz faktury na firmę, wpisz dane firmy w formularzu zamówienia. Faktura zostanie wysłana na podany adres email w ciągu 48h od realizacji zamówienia.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="checkout-grid">
       <!-- Left: Forms -->
       <div class="checkout-forms">

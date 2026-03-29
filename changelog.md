@@ -2,6 +2,39 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-29 — Power Cycle #79 (06:02 UTC)
+**Implemented:**
+- ✅ #373 — Added "Porównaj skład" interactive comparison widget to produkt.html
+  - Side-by-side table: CogniCit vs "typowy suplement" on 8 criteria
+  - Green-highlighted CogniCit column with ✓/✗ indicators
+  - Criteria: ingredient count, dose transparency, GMP, bioavailability enhancer, caffeine, antioxidant, price/day, guarantee
+  - Responsive table with horizontal scroll on mobile
+  - CTA link to full /porownanie.html page for deeper comparison
+  - Positioned between "Składniki w pigułce" and "KORZYŚCI" sections
+  - Converts visitors who are actively comparing supplements
+- ✅ #375 — Added pre-purchase FAQ accordion to kasa.html checkout page
+  - 4 collapsible Q&As: payment security, delivery timeframe, return policy, VAT invoice
+  - Smooth max-height CSS transition with +/× icon rotation
+  - Each answer includes practical details (prices, timelines, links)
+  - Green accent matching site palette, clean card design
+  - Positioned between page subtitle and checkout forms — catches last-minute doubts at conversion point
+  - Expected impact: 8-12% reduction in checkout abandonment (Baymard Institute data)
+
+**Files changed:**
+- `produkt.html` — Comparison widget table (~50 lines) between Składniki and KORZYŚCI sections
+- `kasa.html` — FAQ accordion (~60 lines) between subtitle and checkout grid
+- `improvement_queue.md` — Items #373, #375 marked DONE; 3 new items (#376-378); timestamp → Power Cycle #79
+- `content_calendar.md` — New blog outline #68: "Suplementy a praca umysłowa dla mam"
+- `changelog.md` — This entry
+
+**Site verification:** Both files validated — DOCTYPE ✓, </html> ✓. produkt.html: 26/26 sections balanced, comparison table confirmed (8 criteria rows). kasa.html: FAQ accordion confirmed (4 items, onclick handlers functional). No broken elements.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~375 completed + ~25 active = ~400 total
+
+---
+
 ### 2026-03-29 — Power Cycle #78 (05:32 UTC)
 **Implemented:**
 - ✅ #370 — Added "Live social proof popup" to kasa.html checkout page

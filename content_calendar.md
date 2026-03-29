@@ -2136,3 +2136,28 @@
 **Internal links:** porownanie.html, produkt.html, ranking-nootropikow.html, blog/suplementy-a-kofeina.html
 **Schema:** Article + BreadcrumbList JSON-LD
 **Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #68 — Power Cycle #79
+**Title:** "Suplementy a praca umysłowa dla mam — jak zachować koncentrację przy dzieciach?"
+**Target keyword:** "suplementy dla mam" / "koncentracja mama" / "zmęczenie mama suplement" (~600 monthly searches, underserved niche)
+**Estimated word count:** 1,500-2,000 words
+**Seasonality:** Evergreen, slight peak in Sep (back to school routine)
+
+**Outline:**
+1. **Wstęp** — Bycie mamą to intensywna praca umysłowa: planowanie, multitasking, podejmowanie decyzji, pamiętanie o milionie rzeczy. Mózg mamy zużywa więcej energii niż myślisz.
+2. **Dlaczego mózg mamy jest przeciążony?** — Niedobór snu (noworodek = -40% funkcji poznawczych), chroniczny kortyzol (zabawy + obowiązki + praca), decision fatigue (35 000 decyzji dziennie wg badań).
+3. **Co dzieje się z acetylocholiną przy niedoborze snu?** — Spadek neuroprzekaźnika odpowiedzialnego za pamięć i focus. Mechanizm naukowy: sen REM → konsolidacja → acetylocholina. Bez snu = bez konsolidacji.
+4. **Cytykolina — wsparcie dla mózgu w trybie survival** — 300 mg CDP-choliny = prekursor acetylocholiny. Nie zastępuje snu, ale pomaga mózg funkcjonować lepiej w warunkach deficytu. 233 publikacje PubMed.
+5. **ALA — ochrona przed stresem oksydacyjnym chronicznego zmęczenia** — Brak snu = więcej wolnych rodników → uszkodzenie neuronów. ALA regeneruje glutation, chroni mitochondria. Hager et al. 2007.
+6. **Protokół CogniCit dla mamy** — 1 kapsułka rano ze śniadaniem, kiedy dzieci jedzą śniadanie. Zero kofeiny = można pić kawę później bez ryzyka. Proste: 1 kapsułka, 0 myślenia.
+7. **Porównanie: CogniCit vs inne rozwiązania dla mam** — Kofeina (crash o 14:00), energetyki (niezdrowe), multi-suplementy (20+ składników, niewiadome dawki). CogniCit: 3 składniki, precyzyjne dawki, GMP.
+8. **5 praktycznych tipów dla mam** — (a) CogniCit rano jako anchor, (b) 15 min dla siebie dziennie, (c) delegowanie zadań, (d) sen kiedy dziecko śpi, (e) dieta bogata w cholinę (jajka).
+9. **Podsumowanie** — "Twój mózg pracuje na pełny etat. Zasługuje na wsparcie."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-seniorow-50-plus.html, blog/chroniczne-zmeczenie-umyslowe.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList JSON-LD
+**SEO angle:** Completely underserved niche — zero Polish content targeting mothers + supplements. Emotional resonance = high engagement + shares. Positions CogniCit as the practical, real-world supplement.
+**Status:** Outline ready, needs writing
