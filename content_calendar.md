@@ -2088,3 +2088,28 @@
 **Schema:** Article + BreadcrumbList + FAQPage (3 Q&As)
 **SEO target:** capture featured snippet for "jak sprawdzić suplement" with numbered list format
 
+
+---
+
+### 📝 Blog Post Outline #66 — Power Cycle #77
+**Title:** "Czy suplementy naprawdę działają? Naukowe dowody za i przeciw"
+**Target keyword:** "czy suplementy działają" / "suplementy diety skuteczność" (~2K monthly searches in Poland)
+**Estimated word count:** 2,500-3,000 words
+**Seasonality:** Evergreen, slight peak during health awareness months (Jan, Sep)
+
+**Outline:**
+1. **Wstęp** — dlaczego Polacy kupują suplementy (rynek wart 6 mld zł) i czy to ma sens. Podejście evidence-based.
+2. **Problem: placebo vs. nauka** — jak odróżnić suplement oparty na dowodach od marketingu? Meta-analizy, dawki kliniczne, badania na ludziach.
+3. **Składnik #1: Cytykolina** — 233 publikacje PubMed, meta-analiza 2014 (500-2000 mg/dzień, poprawa pamięci u osób z deficytami poznawczymi). Mechanizm: acetylocholina + fosfatydylocholina. Dawkowanie: 300 mg w CogniCit.
+4. **Składnik #2: Kwas alfa-liponowy** — podwójny mechanizm antyoksydacyjny (rozpuszczalny w wodzie + tłuszczach). Hager et al. 2007 — ochrona mitochondrialna. Dawkowanie: 250 mg w CogniCit.
+5. **Składnik #3: β-cyklodekstryna** — nośnik zwiększający biodostępność. Badania nad kompleksami inkluzji. 250 mg w CogniCit.
+6. **Porównanie: suplement vs. styl życia** — sen, ruch, dieta jako fundament. Suplement jako wsparcie, nie zamiennik. Kiedy suplementacja ma największy sens.
+7. **Czerwone flagi suplementów bez dowodów** — "cudowne" obietnice, brak badań, proprietary blends, dawki poniżej klinicznych, brak kontroli jakości.
+8. **Jak czytać badania naukowe?** — prosty przewodnik: co to jest randomizowane badanie, meta-analiza, dawka kliniczna vs. suplementacyjna.
+9. **FAQ** — 5 pytań (czy suplementy zastąpią leki, jak długo trzeba stosować, czy mogę łączyć z lekami, czy naturalne = bezpieczne, skąd brać rzetelne informacje)
+10. **CTA** — zamów CogniCit z gwarancją 30 dni, linki do nauka.html i certyfikaty.html
+
+**Internal links:** nauka.html, certyfikaty.html, skladniki.html, produkt.html, faq-produkt.html, porownanie.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO target:** capture featured snippet for "czy suplementy działają" with structured evidence-based answer
+**Status:** Outline ready, needs writing

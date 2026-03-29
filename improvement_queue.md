@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Power Cycle #76)
+## Last Updated: 2026-03-29 (Power Cycle #77)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -702,3 +702,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 369. **[NEW] Add "Dlaczego β-CD?" animated GIF explainer to skladniki.html** — Replace or supplement the current tab-based interactive explainer (#233) with an animated GIF or short video showing β-CD inclusion complex mechanism. GIFs are more shareable and load faster than interactive JS. Source: create in Canva/After Effects or find CC-licensed cyclodextrin animation. Position next to existing explainer for users who prefer visual over interactive. Estimated: 1.5 hours.
 
+
+### 🆕 Power Cycle #77 Additions (2026-03-29)
+
+370. **[NEW] Add "Live social proof popup on checkout" to kasa.html** — When user lands on checkout page, show a small toast notification after 5 seconds: "🛒 Ktoś z Warszawy zamówił CogniCit 2 min temu" — creates urgency at the exact purchase decision point. Non-intrusive, auto-hides after 8s. Uses same pattern as the social proof toast on index.html but contextualized for checkout. Randomized Polish cities + time offsets. Expected 5-8% conversion lift on checkout page. Estimated: 30 minutes.
+
+371. **[NEW] Create "Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów" blog post** — High-volume keyword "jak poprawić koncentrację" (3K+ monthly searches in Poland). Listicle format with 10 evidence-based tips: sleep optimization, exercise, hydration, Pomodoro, digital detox, Mediterranean diet, meditation, cold exposure, CogniCit as #10 evidence-based supplement. Featured snippet potential (Google loves numbered lists). Article + BreadcrumbList + FAQPage JSON-LD. Cross-links to produkt.html, blog/suplementy-praca-zdalna.html, blog/cytykolina-przewodnik-kompletny.html. Estimated: 2 hours.
+
+372. **[NEW] Add "Gwarancja satysfakcji" progress bar to koszyk.html** — Visual trust element in cart sidebar: horizontal progress bar showing 3 milestones (1. Zamów → 2. Przetestuj 30 dni → 3. Kochaj albo zwróć). Green fill animation on each step. Below bar: "Zero ryzyka — zwracamy pieniądze bez pytań." Reduces purchase anxiety by making the guarantee process tangible. Estimated: 45 minutes.

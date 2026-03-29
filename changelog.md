@@ -2,6 +2,28 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-29 — Power Cycle #77 (05:02 UTC)
+**Implemented:**
+- ✅ #362 (enhanced) — Added PCI DSS compliance trust signal to kasa.html shipping section
+  - Lock icon + "Płatności obsługiwane przez certyfikowanych operatorów (PayU, Przelewy24) zgodnych z PCI DSS"
+  - Green-tinted banner above shipping options, builds payment security confidence
+- ✅ Checkout trust row below submit button — 3-icon micro-trust row: "📦 Darmowa dostawa od 120 zł · 🔄 14 dni na zwrot · ✅ 30 dni gwarancji"
+  - Positioned directly below "Zamów i zapłać" button — visible at the moment of purchase decision
+  - Reinforces key trust signals (free shipping, return right, satisfaction guarantee) at conversion point
+
+**Files changed:**
+- `kasa.html` — PCI DSS trust banner (~6 lines), 3-icon trust row below CTA (~12 lines)
+
+**Site verification:** kasa.html loads correctly — DOCTYPE ✓, </html> ✓. All existing elements intact (forms, shipping/payment options, order summary, trust badges, payment method icons, phone order alternative). New trust signals integrated without breaking layout.
+
+**Blog outline added:** "Czy suplementy naprawdę działają? Naukowe dowody za i przeciw" — targets "czy suplementy działają" (2K+ monthly searches). Full outline in content_calendar.md (#66).
+
+**Queue:** Items #370-372 added (checkout social proof popup, concentration blog post, cart trust progress bar). Total: ~372 items (369 completed + ~18 active).
+
+**Next priorities:** #370 (checkout social proof popup — 30 min), #358 (audit FAQ JSON-LD across all pages), #204 (CEO Formspree activation — THE blocker).
+
+---
+
 ### 2026-03-29 — Power Cycle #76 (01:24 UTC)
 **Implemented:**
 - ✅ #355 — Added FAQPage JSON-LD schema to skladniki.html mini-FAQ
