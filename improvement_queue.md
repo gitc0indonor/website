@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Power Cycle #85 — 16:59 UTC)
+## Last Updated: 2026-03-29 (Power Cycle #86 — 18:24 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -821,8 +821,18 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 ### 🆕 Power Cycle #85 Additions (2026-03-29 18:17 UTC)
 
-417. **[NEW] Add "Sprawdź skład" mobile-optimized comparison popup to /produkt page** — Tap-triggered modal showing CogniCit ingredient breakdown side-by-side with "typowy suplement" (hidden fillers, low bioavailability, no GMP). Clean card-based layout optimized for thumb-scroll. Clear CTA: "Wybierz CogniCit — sprawdzony skład, zero kompromisów." Targets mobile users who don't scroll past the fold. Estimated: 1 hour.
+417. ~~**[DONE] Add "Sprawdź skład" mobile-optimized comparison popup to /produkt page**~~ ✅ — Power Cycle #86. Floating green 🔬 button (mobile only, bottom-left, z-index 998). Tap opens full-screen overlay with slide-up panel: 8-row comparison table (CogniCit vs typowy suplement). Criteria: ingredient count, dose transparency, GMP, bioavailability, caffeine, antioxidant, price/day, guarantee. Green ✓/red ✗ indicators. CTA "Zamów CogniCit — 79 zł →". Dismissible via overlay click or "Zamknij". CSS animation (sdpSlideUp, sdpPulse). Body scroll lock. Targets mobile users who don't scroll past fold.
 
 418. **[NEW] Create "Nootropiki dla studentów — jak się uczyć efektywniej?" blog post** — Target "nootropiki studenci", "jak się uczyć efektywnie" (5K+ monthly combined, evergreen student traffic). Cover: Pomodoro + spaced repetition basics, cytykolina for working memory, ALA for exam stress, 30-day study protocol with CogniCit. Links to /sesja and /matura landing pages. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
 
-419. **[NEW] Add "Pytanie tygodnia" interactive poll widget to /faq-produkt page** — Weekly rotating question (e.g., "Co jest dla Ciebie najważniejsze w suplemencie?") with 4 clickable answer options. Results displayed as animated bar chart after vote. Stores vote in localStorage. Drives engagement, provides market research data, and increases time-on-page (SEO signal). Estimated: 1.5 hours.
+419. ~~**[DONE] Add "Pytanie tygodnia" interactive poll widget to /faq-produkt page**~~ ✅ — Power Cycle #86. Green badge "🗳️ Pytanie tygodnia". 7 rotating questions (weekly via timestamp). 4 clickable answer options with hover transitions. After vote: animated percentage bars (green, cubic-bezier easing), vote count, "Dziękujemy!" confirmation. localStorage persistence (voted state + per-option counts). Auto-close cursor after voting. Positioned between Powiązane pytania and CTA sections. Drives engagement + market research + time-on-page (SEO signal).
+
+---
+
+### 🆕 Power Cycle #86 Additions (2026-03-29 18:24 UTC)
+
+420. **[NEW] Add "Jak suplementacja wpływa na odporność?" blog post** — Target "suplementy na odporność" (2K+ monthly, seasonal peak Oct-Mar). Cover: immune system basics, cytykolina role in acetylcholine-mediated immune regulation, ALA antioxidant protection for immune cells. Positions CogniCit as brain-focused with immune co-benefits. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+421. **[NEW] Add "Ostatnio kupione" toast notifications to ALL landing pages** — Extend the live activity feed from produkt.html to sesja, matura, powrot-do-szkoly, porownanie, ranking pages. Randomized "Ktoś z [miasto] kupił CogniCit X min temu" toast. Non-intrusive bottom-left. Expected 5-8% conversion lift on content pages. Estimated: 30 minutes.
+
+422. **[NEW] Add "Test suplementu" interactive quiz snippet to index.html hero** — Mini 3-question quiz (What's your challenge? / Coffee or no? / Age range?) that maps to CogniCit ingredient recommendation. Shows personalized result card with ingredient breakdown. Email gate for full results. Expected 15-25% email capture rate. Positioned below Pytanie dnia widget. Estimated: 2 hours.

@@ -2313,3 +2313,78 @@
 **Target platforms:** Google (SEO), grupy FB dla kobiet, Instagram, Pinterest
 **Season:** Evergreen
 **Status:** Outline ready, needs writing
+
+---
+
+### Blog Post #75: "Nootropiki a stres — jak suplementy wspierają odporność psychiczną?"
+**Target keywords:** "nootropiki stres" (400+ monthly), "suplementy na stres psychiczny" (300+), "kortyzol suplementy"
+**Search volume:** ~700+ combined monthly in Poland
+**Word count:** 2000-2500 words
+**Outline:**
+1. **Wstęp** — Stres przewlekły jako cichy zabójca wydajności umysłowej (WHO statystyki)
+2. **Jak stres wpływa na mózg?** — oś HPA, kortyzol, uszkodzenie oksydacyjne neuronów, spadek acetycholiny
+3. **Nootropiki vs adaptogeny** — różnice mechanizmów: adaptogeny regulują kortyzol, nootropiki chronią neurony bezpośrednio
+4. **Kluczowe składniki podczas stresu:**
+   - **Cytykolina** — odbudowa błon neuronalnych uszkodzonych przez kortyzol, wsparcie acetycholiny
+   - **ALA** — tarcza antyoksydacyjna przed wolnymi rodnikami generowanymi przez chroniczny stres
+   - **β-CD** — zwiększenie biodostępności w warunkach stresu (zmieniona motoryka przewodu pokarmowego)
+5. **Protokół CogniCit dla osób pod dużą presją** — 1 kapsułka rano, konsekwentnie, minimum 30 dni
+6. **Czego unikać podczas stresu** — kofeina na pusty żołądek, alkohol jako "relaksant", suplementy bez GMP
+7. **Kiedy suplementacja nie wystarczy** — odpowiedzialny disclaimer, kiedy iść do specjalisty
+8. **Podsumowanie + CTA**
+
+**Internal links:** produkt.html, blog/suplementy-a-stres-oksydacyjny.html, nauka.html, skladniki.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** Post-pandemic mental health awareness trending. Zero quality Polish content connecting nootropics to stress resilience.
+**Season:** Evergreen, peak Sep (back-to-work) and Jan (new year stress)
+**Status:** Outline ready, needs writing
+
+---
+
+### Blog Post #76: "Nootropiki ranking 2026 — porównanie suplementów na koncentrację"
+**Title:** Nootropiki ranking 2026 — porównanie suplementów na koncentrację
+**Target keyword:** "nootropiki ranking 2026" / "najlepszy suplement na koncentrację Polska" (~2K+ monthly searches, yearly refresh)
+**Estimated word count:** 2,000-2,500 words
+**Seasonality:** Evergreen, slight peak Jan (new year resolutions) and Sep (back to work/school)
+
+**Outline:**
+1. **Wstęp** — Rynek nootropików w Polsce rośnie 15% rocznie. W 2026 konsument ma do wyboru dziesiątki produktów. Który wybrać?
+2. **Metodologia rankingu** — 6 kryteriów: przejrzystość składu, dawki z badań klinicznych, certyfikat GMP, rejestracja GIS, cena za dzienną porcję, dostępność w Polsce
+3. **Ranking składników nootropowych** — Tabela: cytykolina (#1, 233 publikacji PubMed), ALA (#2, 1522 publikacji), bacopa (#3, 80 publikacji), ginkgo (#4, kontrowersyjne), kofeina (#5 — skuteczna ale z zastrzeżeniami)
+4. **Porównanie suplementów dostępnych w Polsce** — CogniCit vs Brain Actives vs NooCube vs Mind Lab Pro — tabela 8 kryteriów (składniki, dawki, GMP, GIS, CoA, cena/dzień, kofeina?, gwarancja)
+5. **Dlaczego synergia 3 składników wygrywa** — ALA (ochrona mitochondrialna) + cytykolina (neurotransmisja) + β-CD (biodostępność) > 20 składników w mikrodawkach
+6. **Cena vs wartość** — 2,63 zł/dzień CogniCit vs 5-8 zł/dzień konkurencji. Wykres słupkowy z cenami za dzienną porcję.
+7. **Checklist kupującego na 2026** — 7 pytań przed zakupem nootropiku (GMP? GIS? skład z dawkami? cena/dzień? gwarancja? kofeina? publikacje?)
+8. **Podsumowanie** — Ranking + jasna rekomendacja CogniCit jako najbardziej transparentnego suplementu nootropowego na polskim rynku
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** porownanie.html, produkt.html, skladniki.html, jak-wybrac-suplement.html, certyfikaty.html, blog/ranking-nootropikow-2026.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** "nootropiki ranking 2026" — yearly update format = high CTR + freshness signal. Comparison tables = rich snippet potential. Positions Cognivia as the transparent authority. Low competition in Polish market.
+**Target platforms:** Google (SEO), Wykop, grupy FB o suplementacji
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-29 — Power Cycle #86)
+**Title:** Suplementy a odporność — jak składniki CogniCit wspierają układ immunologiczny?
+**Target:** Polish audience, seasonal (Oct-Mar peak), SEO for "suplementy na odporność" (2K+ monthly)
+**Word count:** 1800-2200
+**Keywords:** suplementy na odporność, suplementy wspierające odporność, cytykolina odporność, ALA antyoksydant odporność
+
+**Outline:**
+1. **Wstęp** — Odporność to nie tylko witamina C. Układ nerwowy i immunologiczny są połączone (osiowa neuroimmunologia). CogniCit jako suplement mózgu z korzyścią dla odporności.
+2. **Jak mózg wpływa na odporność?** — Acetylocholina jako modulator odpowiedzi zapalnej. Vagus nerve cholinergic anti-inflammatory pathway. Prosty diagram nerw → odporność.
+3. **Cytykolina a układ immunologiczny** — Cytykolina → acetylocholina → regulacja stanów zapalnych. Badania na modelach zwierzęcych (Rivera-Espinoza, 2020). Kontekst: chroniczne stany zapalne a funkcje poznawcne.
+4. **ALA — tarcza antyoksydacyjna** — Ochrona komórek immunologicznych przed stresem oksydacyjnym. Regeneracja glutationu (Hager et al. 2007). Rola w mitochondriach limfocytów.
+5. **β-CD — rola nośnika** — Poprawa biodostępności = lepsza absorpcja = więcej składników aktywnych dociera do komórek. Analogia: β-CD jako „dostawca" chroniący ładunek.
+6. **Praktyczne wskazówki** — 5 sposobów na naturalne wsparcie odporności + CogniCit jako uzupełnienie (sen, ruch, dieta, nawodnienie, suplementacja).
+7. **Porównanie z typowymi suplementami na odporność** — Tabela: CogniCit vs witamina C vs tran vs multiwitaminowy. Wyróżnik: CogniCit = wsparcie mózgu + odporności w jednej kapsułce.
+8. **Bezpieczeństwo** — Przeciwwskazania, interakcje z lekami immunosupresyjnymi, disclaimer.
+9. **Podsumowanie** — Odporność zaczyna się od mózgu. CogniCit jako suplement łączący oba systemy.
+
+**CTA:** produkt.html + email capture (15% discount)
+**Internal links:** nauka.html, produkt.html, skladniki.html, blog/suplementy-dla-seniorow-50-plus.html, blog/nootropiki-a-stres.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** Seasonal Oct-Mar peak. Zero Polish content connecting nootropics to immunity. First-mover advantage. Positions CogniCit as dual-benefit (brain + immunity).
+**Status:** Outline ready, needs writing
