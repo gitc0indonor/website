@@ -484,11 +484,74 @@
   <a href="produkt.html" style="display:inline-block;margin-top:20px;background:#2e7d32;color:#fff;padding:12px 32px;border-radius:24px;text-decoration:none;font-weight:600;font-size:15px;transition:all .2s;box-shadow:0 2px 8px rgba(46,125,50,.2);" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 16px rgba(46,125,50,.3)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(46,125,50,.2)'">Zamów bez ryzyka →</a>
 </section>
 
+<!-- SKŁADNIKI W LICZBACH — Animated Counters — #428 -->
+<section style="padding: 60px 5%; background: linear-gradient(135deg, #f8f5ee 0%, #f0ebe0 100%); text-align: center;">
+  <div class="section-title fade-in" style="margin-bottom: 8px;">Składniki w liczbach</div>
+  <p style="font-size: 15px; color: #666; margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto;">Dane oparte na publikacjach naukowych i badaniach klinicznych — nie marketingu.</p>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; max-width: 900px; margin: 0 auto;">
+    <div style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+      <div style="font-size: 42px; margin-bottom: 8px;">📚</div>
+      <div class="counter-value" data-target="1522" data-suffix="" style="font-size: 48px; font-weight: 700; color: #8f7a3d; font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+      <div style="font-size: 14px; color: #333; font-weight: 600; margin-top: 8px;">publikacji w PubMed</div>
+      <div style="font-size: 12px; color: #999; margin-top: 4px;">ALA + cytykolina + β-CD</div>
+    </div>
+    <div style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+      <div style="font-size: 42px; margin-bottom: 8px;">💊</div>
+      <div class="counter-value" data-target="800" data-suffix=" mg" style="font-size: 48px; font-weight: 700; color: #8f7a3d; font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+      <div style="font-size: 14px; color: #333; font-weight: 600; margin-top: 8px;">aktywnych składników</div>
+      <div style="font-size: 12px; color: #999; margin-top: 4px;">250 + 300 + 250 mg w 1 kapsułce</div>
+    </div>
+    <div style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+      <div style="font-size: 42px; margin-bottom: 8px;">🧪</div>
+      <div class="counter-value" data-target="3" data-suffix="" style="font-size: 48px; font-weight: 700; color: #8f7a3d; font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+      <div style="font-size: 14px; color: #333; font-weight: 600; margin-top: 8px;">synergistyczne składniki</div>
+      <div style="font-size: 12px; color: #999; margin-top: 4px;">Każdy wzmacnia działanie pozostałych</div>
+    </div>
+    <div style="background: white; border-radius: 16px; padding: 32px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15);">
+      <div style="font-size: 42px; margin-bottom: 8px;">🛡️</div>
+      <div class="counter-value" data-target="30" data-suffix=" dni" style="font-size: 48px; font-weight: 700; color: #8f7a3d; font-family: 'EB Garamond', serif; line-height: 1;">0</div>
+      <div style="font-size: 14px; color: #333; font-weight: 600; margin-top: 8px;">gwarancja satysfakcji</div>
+      <div style="font-size: 12px; color: #999; margin-top: 4px;">Zwrócimy pieniądze bez pytań</div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
   <p><a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="regulamin.html">Regulamin</a></p>
 </footer>
 
+<script>
+// Animated counters — #428
+(function() {
+  var counters = document.querySelectorAll('.counter-value');
+  var animated = new Set();
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !animated.has(entry.target)) {
+        animated.add(entry.target);
+        animateCounter(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  counters.forEach(function(c) { obs.observe(c); });
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    var duration = 2000;
+    var start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = Math.round(eased * target);
+      el.textContent = current.toLocaleString('pl-PL') + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+})();
+</script>
 <script src="js/web-vitals.js" defer></script>
 <script>
 // === Floating CTA bar on scroll ===

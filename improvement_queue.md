@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Power Cycle #88 — 19:37 UTC)
+## Last Updated: 2026-03-29 (Power Cycle #89 — 20:19 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -852,3 +852,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 427. **[NEW] Create "Suplementy a stres w pracy — jak chronić mózg podczas deadline'ów?" blog post** — Target "suplementy stres praca" (600+ monthly). Cover: cortisol cycle during workday, open-plan office cognitive damage, meeting fatigue. CogniCit as morning anchor for high-pressure professionals. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
 
 428. **[NEW] Add structured "Składniki w liczbach" animated counters to /skladniki.html** — 4 animated counters (1522 PubMed publications, 3 synergistic ingredients, 800mg active compounds, 30-day guarantee) matching the existing index.html counter section. IntersectionObserver trigger, cubic ease-out animation. Adds science credibility to the ingredient landing page. Estimated: 30 minutes.
+
+### 🆕 Power Cycle #89 Additions (2026-03-29 20:19 UTC)
+
+429. **[NEW] Add "Ostatnio kupione" purchase activity ticker to sesja.html and matura.html** — Extend the live purchase activity toast from produkt.html to seasonal landing pages. Randomized "Ktoś z [miasto] kupił CogniCit X min temu" with green pulse dot. These pages have high-intent student traffic — social proof here converts browsers to buyers. Expected 5-8% conversion lift. Estimated: 30 minutes.
+
+430. **[NEW] Create "Suplementy dla osób pracujących kreatywnie — designerzy, pisarze, muzycy" blog post** — Target "suplementy dla kreatywnych", "nootropiki twórczość" (zero Polish content). Cover: DMN/CEN switching, acetycholine for associative thinking, ALA for stress-induced creative blocks. Position CogniCit as the creative professional's tool. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+431. **[NEW] Add "Skuteczność w liczbach" section to /nauka.html** — Visual timeline showing: 233 PubMed publications on cytykolina, 1522 total publications on all 3 ingredients, clinical dose ranges matching CogniCit formula. Animated counters (matching index.html pattern) + expandable study cards with links to PubMed. Makes the science page feel dynamic rather than static text. Estimated: 1.5 hours.

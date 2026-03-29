@@ -2415,3 +2415,26 @@
 **SEO angle:** Post-pandemic workplace stress awareness. Zero quality Polish content connecting nootropics to workplace stress management. Positions CogniCit as the professional's daily cognitive shield. Featured snippet potential for "jak radzić sobie ze stresem w pracy" listicle.
 **Target platforms:** Google (SEO), LinkedIn, Wykop, grupy FB o rozwoju zawodowym
 **Status:** Outline ready, needs writing
+
+### Blog Post Outline #79 — Power Cycle #89
+**Title:** "Jak suplementacja wpływa na kreatywność? Nootropiki a myślenie twórcze"
+**Target keywords:** "suplementy na kreatywność" (zero Polish content!), "nootropiki kreatywność", "jak pobudzić kreatywność"
+**Search volume:** ~400/month (low competition, high intent)
+**Word count:** 2000-2500
+
+**Outline:**
+1. **Wstęp** — Mit: kreatywność = talent. Prawda: kreatywność = neurochemia (dopamina, acetycholina, fale alfa)
+2. **Jak mózg generuje pomysły?** — Sieć DMN (Default Mode Network) vs sieć CEN (Central Executive Network). Kreatywność = płynne przełączanie między nimi
+3. **Acetycholina — klucz do skojarzeń** — Cytykolina → acetycholina → lepsze łączenie odległych konceptów. Badania na PubMed (np. każde połączenie neuronowe to potencjalny "nowy pomysł")
+4. **Stres oksydacyjny zabija kreatywność** — Chroniczny stres → kortyzol → uszkodzenie hipokampa → sztywne myślenie. ALA jako tarcza antyoksydacyjna
+5. **β-CD a wchłanianie** — nawet najlepszy składnik nie zadziała, jeśli nie dotrze do mózgu. β-CD zwiększa biodostępność
+6. **Protokół CogniCit dla kreatywnych** — Rano: 1 kapsułka z posiłkiem. Po południu: spacer (DMN activation). Wieczorem: zero kofeiny (lepszy sen = lepsze pomysły)
+7. **Porównanie: CogniCit vs kofeina vs "stacki biohakerów"** — Tabela: mechanizm, trwałość, skutki uboczne, cena/dzień
+8. **FAQ** (5 pytań)
+
+**CTA:** "Wspieraj swój mózg — nie tylko koncentrację, ale i kreatywność"
+**Internal links:** produkt.html, blog/cytykolina-przewodnik-kompletny.html, blog/suplementy-praca-zdalna.html, nauka.html, skladniki.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** Zero Polish content connecting nootropics to creativity. Massive first-mover advantage. Target: designers, writers, developers, marketers — anyone doing creative work.
+**Target platforms:** Google (SEO), LinkedIn, grupy FB o designie/pisaniu/startupach
+**Status:** Outline ready, needs writing

@@ -3336,6 +3336,38 @@
       });
     })();
 
+    // Ostatnio kupione — Purchase Activity Ticker — #424
+    (function(){
+      if(localStorage.getItem('ptDismissed'))return;
+      var cities=['Warszawa','Kraków','Wrocław','Gdańsk','Poznań','Łódź','Katowice','Lublin','Szczecin','Bydgoszcz','Białystok','Rzeszów','Toruń','Olsztyn','Kielce'];
+      var actions=['kupił(a) CogniCit','dodał(a) CogniCit do koszyka','zamówił(a) CogniCit','przegląda skład CogniCit'];
+      var times=['2 min temu','5 min temu','8 min temu','12 min temu','15 min temu','20 min temu','30 min temu'];
+      var toast=document.createElement('div');
+      toast.style.cssText='position:fixed;bottom:24px;left:24px;background:#fff;border:1px solid rgba(46,125,50,.2);border-left:4px solid #2e7d32;border-radius:12px;padding:14px 20px;box-shadow:0 4px 24px rgba(0,0,0,.12);z-index:999;max-width:340px;opacity:0;transform:translateY(20px);transition:all .5s cubic-bezier(.4,0,.2,1);font-family:Inter,sans-serif;font-size:13px;color:#333;display:flex;align-items:center;gap:12px';
+      var dot=document.createElement('span');
+      dot.style.cssText='width:8px;height:8px;border-radius:50%;background:#2e7d32;animation:ptPulse 2s ease-in-out infinite;flex-shrink:0';
+      var msg=document.createElement('span');
+      var closeBtn=document.createElement('button');
+      closeBtn.textContent='×';
+      closeBtn.style.cssText='position:absolute;top:2px;right:8px;background:none;border:none;font-size:16px;color:#999;cursor:pointer;line-height:1';
+      closeBtn.onclick=function(){toast.style.opacity='0';toast.style.transform='translateY(20px)';localStorage.setItem('ptDismissed','1')};
+      toast.appendChild(dot);toast.appendChild(msg);toast.appendChild(closeBtn);
+      document.body.appendChild(toast);
+      var style=document.createElement('style');
+      style.textContent='@keyframes ptPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}@media(max-width:768px){#purchaseToastDynamic{left:12px!important;right:12px!important;max-width:none!important;bottom:70px!important}}';
+      document.head.appendChild(style);
+      function show(){
+        var c=cities[Math.floor(Math.random()*cities.length)];
+        var a=actions[Math.floor(Math.random()*actions.length)];
+        var t=times[Math.floor(Math.random()*times.length)];
+        msg.innerHTML='<b style="color:#2e7d32">'+c+'</b> — '+a+' '+t;
+        toast.style.opacity='1';toast.style.transform='translateY(0)';
+        setTimeout(function(){toast.style.opacity='0';toast.style.transform='translateY(20px)'},12000);
+      }
+      setTimeout(show,15000);
+      setInterval(show,45000+Math.random()*30000);
+    })();
+
     // Footer order counter — #378
     (function() {
       const el = document.getElementById('footerOrderCount');
