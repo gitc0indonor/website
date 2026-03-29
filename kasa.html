@@ -352,5 +352,34 @@
     }
   </script>
   <script src="js/web-vitals.js" defer></script>
+
+<!-- Checkout Social Proof Toast — Power Cycle #78 -->
+<style>
+.chkt-proof{position:fixed;bottom:20px;left:20px;background:#fff;border:1px solid #e0e0e0;border-left:3px solid #2D6642;border-radius:10px;padding:12px 16px;max-width:320px;box-shadow:0 6px 20px rgba(0,0,0,.12);z-index:999;display:flex;align-items:center;gap:10px;font-family:'Inter',sans-serif;font-size:13px;color:#444;opacity:0;transform:translateY(20px);transition:all .4s cubic-bezier(.4,0,.2,1)}
+.chkt-proof.show{opacity:1;transform:translateY(0)}
+.chkt-proof .dot{width:8px;height:8px;background:#2D6642;border-radius:50%;animation:cProofPulse 2s ease-in-out infinite;flex-shrink:0}
+.chkt-proof .close-p{cursor:pointer;opacity:.4;font-size:16px;margin-left:auto;flex-shrink:0;transition:opacity .2s}
+.chkt-proof .close-p:hover{opacity:.8}
+@keyframes cProofPulse{0%,100%{box-shadow:0 0 0 0 rgba(46,125,50,.4)}50%{box-shadow:0 0 0 5px rgba(46,125,50,0)}}
+@media(max-width:480px){.chkt-proof{left:10px;right:10px;max-width:none;bottom:10px}}
+</style>
+<script>
+(function(){
+var cities=['Warszawy','Krakowa','Gdańska','Wrocławia','Poznania','Łodzi','Katowic','Szczecina','Lublina','Bydgoszczy','Torunia','Rzeszowa','Białegostoku','Gdyni','Sopotu'];
+var actions=['zamówił CogniCit','dodał CogniCit do koszyka','rozpoczął płatność','złożył zamówienie','wybrał wysyłkę InPost'];
+if(localStorage.getItem('chktProofDismissed'))return;
+function show(){
+var c=document.createElement('div');c.className='chkt-proof';
+var city=cities[Math.floor(Math.random()*cities.length)];
+var action=actions[Math.floor(Math.random()*actions.length)];
+var mins=Math.floor(Math.random()*8)+1;
+c.innerHTML='<span class="dot"></span><span>🛒 Ktoś z '+city+' '+action+' '+mins+' min temu</span><span class="close-p" onclick="this.parentElement.classList.remove(\'show\');setTimeout(()=>this.parentElement.remove(),400);localStorage.setItem(\'chktProofDismissed\',\'1\')">✕</span>';
+document.body.appendChild(c);
+setTimeout(function(){c.classList.add('show')},100);
+setTimeout(function(){c.classList.remove('show');setTimeout(function(){c.remove()},400)},12000);
+}
+setTimeout(show,5000);
+})();
+</script>
 </body>
 </html>

@@ -2113,3 +2113,26 @@
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
 **SEO target:** capture featured snippet for "czy suplementy działają" with structured evidence-based answer
 **Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #67 — Power Cycle #78
+**Title:** "Ile kosztuje suplementacja mózgu? Kalkulator kosztów nootropików 2026"
+**Target keyword:** "ile kosztuje suplementacja" / "nootropiki cena" (~1K monthly searches in Poland)
+**Estimated word count:** 1,500-2,000 words
+**Seasonality:** Evergreen, slight peak in Jan (budget planning) and Sep (back to work)
+
+**Outline:**
+1. **Wstęp** — Polacy wydają średnio 80-150 zł miesięcznie na suplementy. Ale czy wiedzą, za co płacą? Cena za opakowanie myli — liczy się cena za dzień kuracji.
+2. **Jak liczyć prawdziwy koszt suplementu?** — Wzorzec: cena ÷ ilość dziennych porcji = cena/dzień. Tabela z 6 popularnymi suplementami: CogniCit (2,63 zł), Brain Actives (4,97 zł), NooCube (7,30 zł), Mind Lab Pro (8,30 zł), Neomax (1,17 zł), Cholina solo (0,50-0,90 zł).
+3. **Ukryte koszty tanich suplementów** — Brak GMP = ryzyko kontaminacji. Brak CoA = niewiadoma składu. Mikrodawki = placebo. Porównanie: suplement za 30 zł × 0 efektu vs suplement za 79 zł × realne wsparcie.
+4. **Kalkulator: ile wydajesz na "wsparcie mózgu"?** — Interactive section: kawa (5 zł × ilość dziennie), energetyki (8 zł × ilość tygodniowo), inne suplementy (zł/miesiąc). Suma vs CogniCit 79 zł.
+5. **Inwestycja vs wydatek** — Framing: 2,63 zł dziennie = mniej niż jedna kawa na mieście. Ale daje trwałe wsparcie (cytykolina buduje acetylocholinę), nie krótkotrwały kop (kofeina blokuje adenozynę).
+6. **Porównanie wartości** — CogniCit: 3 synergistyczne składniki, GMP, GIS, 30-dniowa gwarancja, najniższa cena od producenta.
+7. **Jak nie przepłacać?** — 5 zasad: kupuj bezpośrednio od producenta, porównuj cenę/dzień, sprawdzaj dawki, szukaj gwarancji, unikaj "kombajnów".
+8. **Podsumowanie** — CogniCit za 2,63 zł dziennie = najniższa cena za synergiczny nootropik z GMP na polskim rynku.
+
+**CTA:** Zamów CogniCit — 79 zł → produkt.html
+**Internal links:** porownanie.html, produkt.html, ranking-nootropikow.html, blog/suplementy-a-kofeina.html
+**Schema:** Article + BreadcrumbList JSON-LD
+**Status:** Outline ready, needs writing
