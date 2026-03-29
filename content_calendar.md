@@ -2037,3 +2037,29 @@
 **Internal links:** produkt.html, blog/suplementy-dla-programistow.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, porownanie.html, blog/poranne-nawyki-programisty.html
 **SEO angle:** "Praca umysłowa" + "suplement" = medium-competition niche. Positions CogniCit as the professional cognitive tool.
 **Status:** Outline ready, needs writing
+
+### New Blog Post Outline (Added 2026-03-29 — Power Cycle #76)
+**Title:** Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów
+**Target:** Polish audience, SEO for "jak poprawić koncentrację" (3K+ monthly searches)
+**Word count:** 2000-2500
+**Keywords:** jak poprawić koncentrację, sposoby na koncentrację, koncentracja naturalnie, suplementy na koncentrację, poprawa skupienia
+
+**Outline:**
+1. **Wstęp** — Każdy doświadcza spadku koncentracji. Problem rośnie wraz z pracą zdalną i ekranami. 10 praktycznych sposobów.
+2. **1. Sen 7-8h** — Konsolidacja pamięci podczas REM. Brak snu = -40% koncentracji (Walker 2017)
+3. **2. Ruch fizyczny 30 min/dzień** — BDNF, neurogeneza w hipokampie. Nawet spacer pomaga (Erickson 2011)
+4. **3. Nawodnienie** — 2% odwodnienie = spadek funkcji poznawczych. 2L wody dziennie minimum
+5. **4. Technika Pomodoro** — 25 min pracy / 5 min przerwy. Prosta i skuteczna dla większości ludzi
+6. **5. Redukcja wielozadaniowości** — Koszt przełączania zadań (Monsell 2003). Deep work > multitasking
+7. **6. Dieta bogata w omega-3 i antyoksydanty** — Tłuste ryby, orzechi, jagody. Mózg zużywa 20% energii ciała
+8. **7. Medytacja mindfulness** — 10 min/dzień. Zwiększa gęstość istoty szarej (Hölzel 2011)
+9. **8. Ograniczenie kofeiny do 200mg** — Paradoks kofeiny: pomaga do 200mg, szkodzi powyżej 400mg (EFSA)
+10. **9. Ekspozycja na światło poranne** — Regulacja rytmu dobowego, kortyzol rano, melatonina wieczorem
+11. **10. Wsparcie suplementacyjne** — Evidence-based: cytykolina (300mg), ALA (250mg), β-CD. CogniCit jako kompleksowe rozwiązanie
+12. **Podsumowanie** — Checklist + rekomendacja kombinacji (sen + ruch + suplementacja)
+13. **FAQ** — 4 pytania (Czy suplementy działają? / Kiedy zobaczę efekty? / Czy łączyć z kawą? / Dla kogo suplementacja?)
+
+**CTA:** produkt.html + email capture popup (60% scroll)
+**Internal links:** produkt.html, jak-stosowac.html, porownanie.html, blog/suplementy-a-kofeina.html, blog/jak-budowac-rutyne-suplementacji.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD
+**Status:** Outline ready, needs writing

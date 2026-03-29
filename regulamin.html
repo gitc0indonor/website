@@ -3,15 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Regulamin — Cognivia</title>
+<title>Regulamin sklepu — Cognivia</title>
+<meta name="description" content="Regulamin sklepu internetowego Cognivia — zasady składania zamówień, płatności, dostawy, zwrotów i reklamacji.">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <style>
 body { font-family: 'EB Garamond', Georgia, serif; max-width: 720px; margin: 60px auto; padding: 0 24px; line-height: 1.8; color: #1a1a1a; background: #f5f0e8; font-weight: 300; }
 h1 { font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 400; margin-bottom: 8px; }
 h2 { font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 500; margin: 32px 0 12px; }
+h3 { font-family: 'EB Garamond', serif; font-size: 18px; font-weight: 500; margin: 20px 0 8px; }
 a { color: #1a1a1a; border-bottom: 1px solid #1a1a1a; padding-bottom: 1px; text-decoration: none; }
 .badge { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #6b6560; margin-bottom: 24px; display: block; }
-
+.toc { background: #efe9dd; padding: 20px 28px; border-radius: 8px; margin: 24px 0; }
+.toc a { display: block; margin: 4px 0; font-size: 15px; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid #d5cfc5; }
+th { font-weight: 500; background: #efe9dd; }
     .breadcrumb {
       max-width: 900px;
       margin: 100px auto 0;
@@ -31,18 +37,8 @@ a { color: #1a1a1a; border-bottom: 1px solid #1a1a1a; padding-bottom: 1px; text-
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Strona główna",
-      "item": "https://gitc0indonor.github.io"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Regulamin",
-      "item": "https://gitc0indonor.github.io/website/regulamin.html"
-    }
+    { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://gitc0indonor.github.io" },
+    { "@type": "ListItem", "position": 2, "name": "Regulamin", "item": "https://gitc0indonor.github.io/website/regulamin.html" }
   ]
 }
 </script>
@@ -50,47 +46,192 @@ a { color: #1a1a1a; border-bottom: 1px solid #1a1a1a; padding-bottom: 1px; text-
 </head>
 <body>
 <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
-<a href="/">Strona główna</a>
-<span>›</span>
-<span>Regulamin</span>
+<a href="/">Strona główna</a><span>›</span><span>Regulamin</span>
 </nav>
 <span class="badge">Cognivia</span>
-<h1>Regulamin</h1>
-<p>Ostatnia aktualizacja: marzec 2026</p>
+<h1>Regulamin sklepu internetowego</h1>
+<p>Ostatnia aktualizacja: 29 marca 2026 r.</p>
 
-<h2>§1 Postanowienia ogólne</h2>
-<p>1.1. Niniejszy regulamin określa zasady korzystania ze sklepu internetowego prowadzonego przez Cognivia (dalej „Sklep").</p>
-<p>1.2. Właścicielem Sklepu jest Cognivia z siedzibą w Polsce. Dane rejestrowe: [adres, NIP, KRS — do uzupełnienia].</p>
-<p>1.3. Kontakt: <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a></p>
+<div class="toc">
+<strong>Spis treści</strong>
+<a href="#s1">§1 Postanowienia ogólne</a>
+<a href="#s2">§2 Definicje</a>
+<a href="#s3">§3 Wymagania techniczne</a>
+<a href="#s4">§4 Składanie zamówień</a>
+<a href="#s5">§5 Ceny i płatności</a>
+<a href="#s6">§6 Dostawa</a>
+<a href="#s7">§7 Prawo odstąpienia od umowy</a>
+<a href="#s8">§8 Reklamacje</a>
+<a href="#s9">§9 Gwarancja satysfakcji</a>
+<a href="#s10">§10 Ochrona danych osobowych</a>
+<a href="#s11">§11 Własność intelektualna</a>
+<a href="#s12">§12 Odpowiedzialność</a>
+<a href="#s13">§13 Postępowanie reklamacyjne — szczegóły</a>
+<a href="#s14">§14 Pozasądowe rozwiązywanie sporów</a>
+<a href="#s15">§15 Postanowienia końcowe</a>
+</div>
 
-<h2>§2 Definicje</h2>
-<p>2.1. Konsument — osoba fizyczna dokonująca zakupu niezwiązanego bezpośrednio z jej działalnością gospodarczą lub zawodową.</p>
-<p>2.2. Produkt — suplement diety oferowany w Sklepie.</p>
+<h2 id="s1">§1 Postanowienia ogólne</h2>
+<p>1.1. Niniejszy regulamin (dalej „Regulamin") określa zasady korzystania ze sklepu internetowego prowadzonego pod adresem cognivia.eu (dalej „Sklep").</p>
+<p>1.2. Właścicielem i prowadzącym Sklep jest:</p>
+<p><strong>Cognivia</strong><br>
+z siedzibą w Polsce<br>
+E-mail: <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a></p>
+<p>Dane rejestrowe firmy (adres, NIP, KRS) zostaną uzupełnione po zakończeniu rejestracji działalności.</p>
+<p>1.3. Regulamin jest udostępniany nieodpłatnie na stronie Sklepu w formie umożliwiającej jego pozyskanie, odtwarzanie i utrwalanie.</p>
+<p>1.4. Każdy Klient zobowiązany jest do zapoznania się z Regulaminem przed złożeniem zamówienia.</p>
+<p>1.5. W sprawach nieuregulowanych niniejszym Regulaminem zastosowanie mają przepisy prawa polskiego, w szczególności: Kodeks cywilny, ustawa o prawach konsumenta z dnia 30 maja 2014 r., ustawa o świadczeniu usług drogą elektroniczną z dnia 18 lipca 2002 r., oraz Rozporządzenie RODO.</p>
 
-<h2>§3 Zamówienia</h2>
-<p>3.1. Zamówienia składane są poprzez stronę internetową Sklepu.</p>
-<p>3.2. Złożenie zamówienia jest równoznaczne z akceptacją niniejszego regulaminu.</p>
-<p>3.3. Ceny produktów podane są w złotych polskich (PLN) i zawierają podatek VAT.</p>
+<h2 id="s2">§2 Definicje</h2>
+<p><strong>Klient</strong> — osoba fizyczna, osoba prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej, dokonująca zakupów w Sklepie.</p>
+<p><strong>Konsument</strong> — osoba fizyczna dokonująca z przedsiębiorcą czynności prawnej niezwiązanej bezpośrednio z jej działalnością gospodarczą lub zawodową (art. 221 Kodeksu cywilnego).</p>
+<p><strong>Przedsiębiorca na prawach konsumenta</strong> — osoba fizyczna zawierająca umowę bezpośrednio związaną z jej działalnością gospodarczą, gdy z treści tej umowy wynika, że nie posiada ona dla niej charakteru zawodowego.</p>
+<p><strong>Produkt</strong> — suplement diety oferowany w Sklepie, w szczególności CogniCit.</p>
+<p><strong>Zamówienie</strong> — oświadczenie woli Klienta zmierzające do zawarcia umowy sprzedaży Produktu.</p>
+<p><strong>Umowa sprzedaży</strong> — umowa zawarta pomiędzy Klientem a Cognivia na odległość, za pośrednictwem Sklepu.</p>
 
-<h2>§4 Płatność i dostawa</h2>
-<p>4.1. Dostępne formy płatności: przelew bankowy, płatności elektroniczne.</p>
-<p>4.2. Termin dostawy wynosi od 2 do 5 dni roboczych od momentu zaksięgowania płatności.</p>
-<p>4.3. Koszty dostawy pokazywane są przed finalizacją zamówienia.</p>
+<h2 id="s3">§3 Wymagania techniczne</h2>
+<p>3.1. Do korzystania ze Sklepu niezbędne jest urządzenie z dostępem do Internetu oraz przeglądarka internetowa (Chrome, Firefox, Safari, Edge — aktualna wersja).</p>
+<p>3.2. Sklep korzysta z plików cookies. Szczegółowe informacje znajdują się w <a href="polityka-cookies.html">Polityce Cookies</a>.</p>
+<p>3.3. Sklep nie ponosi odpowiedzialności za zakłócenia w funkcjonowaniu wynikające z przyczyn niezależnych (awarie internetu, przerwy w dostawie prądu).</p>
 
-<h2>§5 Prawo odstąpienia</h2>
-<p>5.1. Konsument ma prawo odstąpić od umowy w ciągu 14 dni od otrzymania produktu, bez podania przyczyny.</p>
-<p>5.2. Zwracany produkt musi być nieużywany i w oryginalnym opakowaniu.</p>
-<p>5.3. Koszt zwrotu ponosi Konsument.</p>
+<h2 id="s4">§4 Składanie zamówień</h2>
+<p>4.1. Zamówienia składane są poprzez stronę internetową Sklepu 24 godziny na dobę, 7 dni w tygodniu.</p>
+<p>4.2. Proces składania zamówienia obejmuje:</p>
+<ul>
+<li>Dodanie Produktu do koszyka;</li>
+<li>Wypełnienie formularza zamówienia (dane osobowe, adres dostawy);</li>
+<li>Wybór metody dostawy i płatności;</li>
+<li>Sprawdzenie podsumowania zamówienia i jego wartość (z VAT);</li>
+<li>Zatwierdzenie zamówienia przyciskiem „Zamawiam i płacę".</li>
+</ul>
+<p>4.3. Złożenie zamówienia jest równoznaczne z akceptacją niniejszego Regulaminu oraz wyrażeniem zgody na przetwarzanie danych osobowych w celu realizacji zamówienia.</p>
+<p>4.4. Po złożeniu zamówienia Klient otrzyma potwierdzenie na podany adres e-mail.</p>
+<p>4.5. Umowa sprzedaży zostaje zawarta z chwilą potwierdzenia zamówienia przez Sklep.</p>
+<p>4.6. Sklep zastrzega sobie prawo do odmowy realizacji zamówienia w przypadku wyczerpania zapasów, błędu cenowego lub podejrzeń co do nieuczciwego zamówienia. Klient zostanie niezwłocznie poinformowany.</p>
 
-<h2>§6 Reklamacje</h2>
-<p>6.1. Reklamacje należy zgłaszać na adres: <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a></p>
-<p>6.2. Reklamacja zostanie rozpatrzona w ciągu 14 dni roboczych.</p>
+<h2 id="s5">§5 Ceny i płatności</h2>
+<p>5.1. Ceny produktów podane są w złotych polskich (PLN) i zawierają podatek VAT (23%).</p>
+<p>5.2. Cena podana przy produkcie w momencie składania zamówienia jest wiążąca.</p>
 
-<h2>§7 Postanowienia końcowe</h2>
-<p>7.1. W sprawach nieuregulowanych niniejszym regulaminem zastosowanie mają przepisy prawa polskiego.</p>
-<p>7.2. Regulamin może być zmieniany. O zmianach Klienci zostaną poinformowani z 14-dniowym wyprzedzeniem.</p>
+<h3>5.3. Dostępne metody płatności:</h3>
+<table>
+<tr><th>Metoda</th><th>Opis</th><th>Czas realizacji</th></tr>
+<tr><td>PayU</td><td>Karta płatnicza, BLIK, przelew online</td><td>Natychmiast</td></tr>
+<tr><td>Przelewy24</td><td>Szybki przelew online</td><td>Natychmiast</td></tr>
+<tr><td>BLIK</td><td>Kod BLIK z aplikacji bankowej</td><td>Natychmiast</td></tr>
+<tr><td>PayPal</td><td>Płatność przez konto PayPal</td><td>Natychmiast</td></tr>
+<tr><td>Przelew tradycyjny</td><td>Przelew bankowy na rachunek Sklepu</td><td>1-2 dni robocze</td></tr>
+<tr><td>Pobranie (COD)</td><td>Zapłać przy odbiorze (+8 zł)</td><td>Przy dostawie</td></tr>
+</table>
+<p>5.4. Zamówienie nieopłacone w ciągu 7 dni (przelew tradycyjny) zostaje automatycznie anulowane.</p>
+<p>5.5. Faktura VAT jest wystawiana na życzenie Klienta — prosimy o podanie danych do faktury w formularzu zamówienia.</p>
 
-<p style="margin-top:48px;font-size:12px;color:#6b6560;">Suplement diety nie może być stosowany jako substytut zróżnicowanej diety. Zdrowy tryb życia i zrównoważone odżywianie są ważne.</p>
+<h2 id="s6">§6 Dostawa</h2>
+<p>6.1. Dostawa realizowana jest na terenie Polski.</p>
+
+<h3>6.2. Metody dostawy:</h3>
+<table>
+<tr><th>Metoda</th><th>Cena</th><th>Darmowa dostawa od</th><th>Czas dostawy</th></tr>
+<tr><td>InPost Paczkomat</td><td>12,99 zł</td><td>120 zł</td><td>1-2 dni robocze</td></tr>
+<tr><td>InPost Kurier</td><td>15,99 zł</td><td>120 zł</td><td>1-2 dni robocze</td></tr>
+<tr><td>DPD Kurier</td><td>16,99 zł</td><td>150 zł</td><td>1-2 dni robocze</td></tr>
+<tr><td>Poczta Polska (priorytet)</td><td>11,99 zł</td><td>120 zł</td><td>2-3 dni robocze</td></tr>
+</table>
+<p>6.3. Czas dostawy liczony jest od momentu zaksięgowania płatności (w przypadku płatności natychmiastowych — od momentu złożenia zamówienia).</p>
+<p>6.4. Sklep nie ponosi odpowiedzialności za opóźnienia w dostawie wynikające z winy przewoźnika.</p>
+<p>6.5. Przy odbiorze przesyłki Klient powinien sprawdzić jej stan. W przypadku uszkodzenia opakowania zaleca się sporządzenie protokołu szkody z kurierem.</p>
+
+<h2 id="s7">§7 Prawo odstąpienia od umowy</h2>
+<p>7.1. Zgodnie z ustawą o prawach konsumenta z dnia 30 maja 2014 r., Konsument ma prawo odstąpić od umowy w ciągu <strong>14 dni kalendarzowych</strong> od dnia otrzymania Produktu, bez podania przyczyny.</p>
+<p>7.2. Do zachowania terminu wystarczy wysłanie oświadczenia przed jego upływem.</p>
+<p>7.3. Oświadczenie o odstąpieniu można złożyć:</p>
+<ul>
+<li>e-mailem na adres: <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a>;</li>
+<li>pocztą tradycyjną na adres siedziby Sklepu.</li>
+</ul>
+<p>7.4. Sklep potwierdzi otrzymanie oświadczenia o odstąpieniu e-mailem.</p>
+
+<h3>7.5. Warunki zwrotu:</h3>
+<ul>
+<li>Zwracany Produkt musi być nieużywany, w oryginalnym, nieuszkodzonym opakowaniu;</li>
+<li>Konsument ponosi bezpośrednie koszty zwrotu Produktu;</li>
+<li>Zwrot Produktu powinien nastąpić niezwłocznie, nie później niż 14 dni od dnia złożenia oświadczenia o odstąpieniu;</li>
+<li>Sklep zwróci płatność (cena Produktu + koszt najtańszej dostępnej wysyłki) w ciągu 14 dni od otrzymania zwracanego Produktu lub dowodu jego nadania.</li>
+</ul>
+<p>7.6. Zwrot płatności nastąpi przy użyciu takiego samego sposobu płatności, jakiego użył Konsument, chyba że Konsument wyraźnie zgodził się na inny sposób.</p>
+<p>7.7. Prawo odstąpienia nie przysługuje w przypadku:</p>
+<ul>
+<li>Produktów, które zostały otwarte po dostawie (ze względów higienicznych i zdrowotnych — art. 38 pkt 5 ustawy o prawach konsumenta);</li>
+<li>Produktów dostarczonych w zapieczętowanym opakowaniu, którego po otwarciu nie można zwrócić ze względu na ochronę zdrowia.</li>
+</ul>
+
+<h2 id="s8">§8 Reklamacje</h2>
+<p>8.1. Sklep jest zobowiązany dostarczyć Produkt bez wad.</p>
+<p>8.2. W przypadku wady Produktu, Klientowi przysługuje prawo złożenia reklamacji.</p>
+<p>8.3. Reklamację należy zgłosić:</p>
+<ul>
+<li>e-mailem na adres: <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a>;</li>
+<li>z podaniem: numeru zamówienia, opisu wady, żądania (naprawa, wymiana, obniżenie ceny, odstąpienie od umowy).</li>
+</ul>
+<p>8.4. Sklep rozpatrzy reklamację w ciągu <strong>14 dni kalendarzowych</strong> od jej otrzymania i poinformuje Klienta o wyniku.</p>
+<p>8.5. Jeżeli reklamacja zostanie uznana, Sklep dokona naprawy, wymiany, obniżenia ceny lub zwrotu płatności — zgodnie z żądaniem Klienta.</p>
+<p>8.6. Konsument może skorzystać z pozasądowych sposobów rozpatrywania reklamacji i dochodzenia roszczeń (patrz §14).</p>
+
+<h2 id="s9">§9 Gwarancja satysfakcji</h2>
+<p>9.1. Oferujemy 30-dniową gwarancję satysfakcji na CogniCit.</p>
+<p>9.2. Jeśli po 30 dniach stosowania nie jesteś zadowolony z rezultatów, skontaktuj się z nami — rozpatrzymy Twój przypadek indywidualnie.</p>
+<p>9.3. Gwarancja satysfakcji nie wyłącza ani nie ogranicza uprawnień Konsumenta wynikających z ustawy o prawach konsumenta.</p>
+
+<h2 id="s10">§10 Ochrona danych osobowych</h2>
+<p>10.1. Administratorem danych osobowych jest Cognivia.</p>
+<p>10.2. Dane osobowe Klientów są przetwarzane zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO/GDPR).</p>
+<p>10.3. Szczegółowe informacje o przetwarzaniu danych osobowych znajdują się w <a href="polityka-prywatnosci.html">Polityce prywatności</a>.</p>
+
+<h2 id="s11">§11 Własność intelektualna</h2>
+<p>11.1. Wszelkie treści zamieszczone na stronie Sklepu (teksty, grafiki, logo, zdjęcia) stanowią własność intelektualną Cognivia lub są wykorzystywane na podstawie licencji.</p>
+<p>11.2. Kopiowanie, rozpowszechnianie lub wykorzystywanie treści bez pisemnej zgody Cognivia jest zabronione.</p>
+
+<h2 id="s12">§12 Odpowiedzialność</h2>
+<p>12.1. Cognivia nie ponosi odpowiedzialności za:</p>
+<ul>
+<li>Nieprawidłowe stosowanie Produktu niezgodnie z zaleceniami na opakowaniu;</li>
+<li>Skutki uboczne wynikające z indywidualnej nietolerancji składników;</li>
+<li>Szkody wynikające z korzystania ze Sklepu niezgodnie z Regulaminem.</li>
+</ul>
+<p>12.2. Suplement diety nie może być stosowany jako substytut zróżnicowanej diety. Zdrowy tryb życia i zrównoważone odżywianie są ważne.</p>
+<p>12.3. Produkt nie jest przeznaczony do diagnozowania, leczenia ani zapobiegania chorobom.</p>
+
+<h2 id="s13">§13 Postępowanie reklamacyjne — szczegóły</h2>
+<p>13.1. Reklamacja powinna zawierać:</p>
+<ul>
+<li>Dane kontaktowe Klienta (imię, nazwisko, e-mail);</li>
+<li>Numer zamówienia;</li>
+<li>Opis wady lub zastrzeżeń;</li>
+<li>Żądanie Klienta (wymiana, naprawa, zwrot, obniżenie ceny);</li>
+<li>Dokumentację fotograficzną (w miarę możliwości).</li>
+</ul>
+<p>13.2. Sklep może zwrócić się do Klienta o dodatkowe informacje lub dokumenty niezbędne do rozpatrzenia reklamacji.</p>
+<p>13.3. Odpowiedź na reklamację zostanie przesłana na adres e-mail podany przez Klienta.</p>
+
+<h2 id="s14">§14 Pozasądowe rozwiązywanie sporów</h2>
+<p>14.1. Konsument ma możliwość skorzystania z pozasądowych sposobów rozpatrywania reklamacji i dochodzenia roszczeń.</p>
+<p>14.2. Szczegółowe informacje o pozasądowych sposobach rozwiązywania sporów dostępne są na stronie:</p>
+<p><a href="https://polubowne.konsument.gov.pl" target="_blank" rel="noopener">polubowne.konsument.gov.pl</a></p>
+<p>14.3. Platforma ODR (Online Dispute Resolution) UE:</p>
+<p><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a></p>
+<p>Adres e-mail Sklepu do celów ODR: <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a></p>
+<p>14.4. Sklep nie zobowiązuje się do korzystania z pozasądowego rozwiązywania sporów, ale wyraża gotowość do polubownego rozstrzygania sporów.</p>
+
+<h2 id="s15">§15 Postanowienia końcowe</h2>
+<p>15.1. Regulamin wchodzi w życie z dniem publikacji na stronie Sklepu.</p>
+<p>15.2. Sklep zastrzega sobie prawo do zmiany Regulaminu. Zmiany wchodzą w życie z dniem ich publikacji na stronie.</p>
+<p>15.3. Do umów zawartych przed zmianą Regulaminu stosuje się wersję obowiązującą w chwili złożenia zamówienia.</p>
+<p>15.4. W przypadku zmiany Regulaminu, Klienci zostaną poinformowani z 14-dniowym wyprzedzeniem poprzez komunikat na stronie.</p>
+<p>15.5. Wszelkie spory wynikające z realizacji umów sprzedaży rozstrzygane będą przez sąd właściwy dla siedziby Sklepu, z zastrzeżeniem uprawnień Konsumenta wynikających z bezwzględnie obowiązujących przepisów prawa.</p>
+<p>15.6. W przypadku, gdy którekolwiek z postanowień Regulaminu okaże się nieważne lub bezskuteczne, nie wpływa to na ważność pozostałych postanowień.</p>
+
+<p style="margin-top:48px;font-size:12px;color:#6b6560;">Suplement diety nie może być stosowany jako substytut zróżnicowanej diety. Zdrowy tryb życia i zrównoważone odżywianie są ważne. Przed zastosowaniem produktu zaleca się konsultację z lekarzem.</p>
   <script src="js/web-vitals.js" defer></script>
 </body>
 </html>

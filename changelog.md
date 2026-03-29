@@ -2,6 +2,33 @@
 ## All changes to cognivia.eu static site
 
 
+### 2026-03-29 — Power Cycle #76 (01:24 UTC)
+**Implemented:**
+- ✅ #355 — Added FAQPage JSON-LD schema to skladniki.html mini-FAQ
+  - 4 Q&As structured: CogniCit vs cholina, β-CD safety, target audience, GMP certification
+  - DOM injection pattern matching other pages (script injection on load)
+  - Enables Google rich snippets (expandable Q&A) for ingredient page queries
+- ✅ Checkout button pulse glow — Added btnPulseGlow CSS keyframes to cart.css
+  - Hover: subtle expanding gold shadow animation (1.5s ease-in-out infinite)
+  - Active: animation disabled (clean click feedback)
+  - Increases perceived quality and draws visual attention to primary CTA
+
+**Files changed:**
+- `skladniki.html` — FAQPage JSON-LD schema (~40 lines)
+- `css/cart.css` — btnPulseGlow keyframes + updated hover/active rules (~5 lines)
+
+**Site verification:** skladniki.html loads correctly — hero, ingredients, β-CD explainer, synergy, sourcing, FAQ, footer all present. FAQPage schema injected to <head>.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). CEO must create formspree.io account and swap form ID. Pulse glow animation on checkout button enhances CTA visibility.
+
+**Blog outline added:** "Jak naturalnie popramić koncentrację? 10 sprawdzonych sposobów" — 3K+ monthly searches target. Outline in content_calendar.md.
+
+**Queue:** Items #358-360 added. #355 marked DONE. Total: ~360 items (347 completed + ~13 active).
+
+**Next priorities:** #358 (audit FAQ JSON-LD across all pages), #345 (shipping estimator), #204 (CEO Formspree activation).
+
+---
+
 ### 2026-03-28 — Power Cycle #73 (23:53 UTC)
 **Implemented:**
 - ✅ Item #340 (partial) — Added "Warto wiedzieć" fact boxes to 5 top blog posts missing them
