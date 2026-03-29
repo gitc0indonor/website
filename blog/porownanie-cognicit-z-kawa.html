@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CogniCit vs kawa — co lepiej wspiera koncentrację? | Blog Cognivia</title>
+  <meta name="description" content="Porównanie CogniCit z kawą na koncentrację. Cytykolina vs kofeina: mechanizm, trwanie, skutki uboczne, koszt dzienny. Czy nootropik może zastąpić kawę?">
+  <link rel="canonical" href="https://gitc0indonor.github.io/website/blog/porownanie-cognicit-z-kawa.html">
+  <link rel="alternate" hreflang="pl" href="https://gitc0indonor.github.io/website/blog/porownanie-cognicit-z-kawa.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="CogniCit vs kawa — co lepiej wspiera koncentrację? | Blog Cognivia">
+  <meta property="og:description" content="Cytykolina buduje neuroprzekaźniki, kofeina je eksploatuje. Porównanie mechanizmów, trwania efektu i bezpieczeństwa.">
+  <meta property="og:url" content="https://gitc0indonor.github.io/website/blog/porownanie-cognicit-z-kawa.html">
+  <meta property="og:site_name" content="Cognivia">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:image" content="https://gitc0indonor.github.io/website/assets/blog/cognicit-vs-kawa-og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CogniCit vs kawa — co lepiej wspiera koncentrację?">
+  <meta name="twitter:description" content="Cytykolina vs kofeina: mechanizm, trwanie, bezpieczeństwo. Porównanie, które zmienia perspektywę.">
+  <meta name="twitter:image" content="https://gitc0indonor.github.io/website/assets/blog/cognicit-vs-kawa-og.jpg">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #8f7a3d; --text: #2a2a27; --surface: #f8f6f2; --muted: #6f6a61; --green: #2e7d32; --charcoal: #2a2a27; --gold: #c9a96e; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'EB Garamond', Georgia, serif; color: var(--charcoal); background: #fdfcf8; line-height: 1.8; }
+    .legal-bar { background: var(--charcoal); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
+    .legal-bar strong { color: var(--gold); }
+    header { position: fixed; top: 32px; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(253,252,248,0.95); backdrop-filter: blur(10px); }
+    .logo { font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 800; color: var(--charcoal); text-decoration: none; }
+    .logo span { color: var(--gold); }
+    nav a { margin-left: 24px; color: var(--charcoal); text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+    nav .buy-badge { background: linear-gradient(135deg, #2e7d32, #43a047); color: white; padding: 8px 16px; border-radius: 24px; font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.3s; }
+    .breadcrumb { max-width: 900px; margin: 100px auto 0; padding: 0 6%; font-size: 12px; color: var(--muted); }
+    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    article { max-width: 800px; margin: 0 auto; padding: 40px 8% 80px; }
+    article .tag { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; }
+    article h1 { font-family: 'EB Garamond', serif; font-size: 42px; color: var(--charcoal); margin-bottom: 16px; line-height: 1.2; }
+    article .meta { font-size: 13px; color: #999; margin-bottom: 32px; }
+    article h2 { font-family: 'EB Garamond', serif; font-size: 28px; color: var(--charcoal); margin: 40px 0 16px; }
+    article h3 { font-family: 'EB Garamond', serif; font-size: 22px; color: var(--charcoal); margin: 32px 0 12px; }
+    article p { font-size: 15px; color: var(--muted); margin-bottom: 16px; }
+    article ul, article ol { font-size: 15px; color: var(--muted); margin: 0 0 16px 24px; }
+    article li { margin-bottom: 8px; }
+    .legal-note { font-size: 12px; color: #888; background: #f9f5ef; padding: 20px; margin: 24px 0; border-left: 2px solid var(--gold); }
+    .ref { font-size: 12px; color: #999; margin: 8px 0 24px; padding: 12px 16px; background: var(--surface); border-left: 2px solid var(--gold); }
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 14px; }
+    .comparison-table th { background: var(--charcoal); color: white; padding: 12px 16px; text-align: left; font-weight: 500; }
+    .comparison-table th:first-child { border-radius: 4px 0 0 0; }
+    .comparison-table th:last-child { border-radius: 0 4px 0 0; }
+    .comparison-table td { padding: 12px 16px; border-bottom: 1px solid #eee; }
+    .comparison-table tr:nth-child(even) td { background: #faf7f0; }
+    .comparison-table .highlight { background: #f0ebe0 !important; font-weight: 500; }
+    .versus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0 32px; }
+    .vs-card { border-radius: 12px; padding: 24px; }
+    .vs-card.coffee { background: linear-gradient(135deg, #fff3e0, #fbe9e7); border: 1px solid rgba(255,152,0,0.2); }
+    .vs-card.cognicit { background: linear-gradient(135deg, #e8f5e9, #f1f8e9); border: 1px solid rgba(46,125,50,0.15); }
+    .vs-card h4 { font-family: 'EB Garamond', serif; font-size: 18px; margin-bottom: 12px; }
+    .vs-card.coffee h4 { color: #e65100; }
+    .vs-card.cognicit h4 { color: var(--green); }
+    .vs-card ul { margin-left: 18px; font-size: 14px; color: #555; }
+    .vs-card li { margin-bottom: 6px; }
+    .cta-box { background: linear-gradient(135deg, #f5f0e8, #faf7f0); border: 1px solid rgba(201,169,110,0.3); border-radius: 12px; padding: 32px; margin: 40px 0; text-align: center; }
+    .cta-box h3 { font-family: 'EB Garamond', serif; font-size: 22px; color: var(--charcoal); margin-bottom: 12px; }
+    .cta-box p { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+    .cta-btn { display: inline-block; background: var(--gold); color: white; padding: 14px 32px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 14px; letter-spacing: 0.5px; text-transform: uppercase; transition: all 0.3s; }
+    .cta-btn:hover { background: #b89555; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(201,169,110,0.3); }
+    .back-link { display: inline-block; color: var(--gold); text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px; }
+    footer { background: var(--charcoal); color: rgba(255,255,255,0.6); padding: 40px 8%; text-align: center; font-size: 13px; }
+    footer a { color: var(--gold); }
+    .trust-bar { background: var(--charcoal); color: rgba(255,255,255,0.9); padding: 14px 24px; border-radius: 8px; display: flex; justify-content: center; align-items: center; gap: 24px; flex-wrap: wrap; font-size: 13px; max-width: 800px; margin: 0 auto 40px; }
+    .trust-bar a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    .share-section { max-width: 800px; margin: 48px auto; padding: 24px 0; border-top: 1px solid rgba(26,26,26,0.08); border-bottom: 1px solid rgba(26,26,26,0.08); text-align: center; }
+    .share-section p { font-size: 13px; color: #999; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+    .share-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .share-btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 4px; font-size: 13px; font-weight: 500; text-decoration: none; color: white; transition: opacity 0.2s, transform 0.2s; }
+    .share-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .share-btn.fb { background: #1877F2; }
+    .share-btn.tw { background: #1a1a1a; }
+    .share-btn.li { background: #0A66C2; }
+    .cross-links { max-width: 800px; margin: 0 auto 40px; padding: 0 8%; }
+    .cross-links h3 { font-family: 'EB Garamond', serif; font-size: 20px; color: var(--charcoal); margin-bottom: 16px; }
+    .cross-links a { display: inline-block; color: var(--gold); text-decoration: none; font-size: 14px; margin-right: 24px; margin-bottom: 8px; }
+    .cross-links a:hover { text-decoration: underline; }
+    .fact-box { border-left: 3px solid var(--gold); background: linear-gradient(135deg, #f9f5ef, #faf7f0); padding: 20px 24px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+    .fact-box .stat { font-size: 28px; font-weight: 700; color: var(--gold); display: block; margin-bottom: 4px; }
+    .fact-box .desc { font-size: 14px; color: var(--muted); }
+    .guarantee-section { background: linear-gradient(135deg, #e8f5e9, #f1f8e9); border: 1px solid rgba(46,125,50,0.15); border-radius: 12px; padding: 24px 28px; margin: 32px 0; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .guarantee-section .badge { font-size: 40px; font-weight: 800; color: var(--green); background: white; border-radius: 50%; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(46,125,50,0.15); }
+    .guarantee-section .text { flex: 1; min-width: 200px; }
+    .guarantee-section .text h4 { font-family: 'EB Garamond', serif; font-size: 20px; color: var(--green); margin-bottom: 4px; }
+    .guarantee-section .text p { font-size: 13px; color: #555; margin-bottom: 12px; }
+    .guarantee-section .cta-sm { display: inline-block; background: var(--green); color: white; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-size: 13px; font-weight: 600; transition: all 0.3s; }
+    .guarantee-section .cta-sm:hover { background: #1b5e20; transform: translateY(-1px); }
+    @media (max-width: 768px) {
+      article h1 { font-size: 28px; }
+      .versus-grid { grid-template-columns: 1fr; }
+      .guarantee-section { flex-direction: column; text-align: center; }
+      header { padding: 12px 5%; }
+      nav a { margin-left: 12px; font-size: 11px; }
+    }
+  </style>
+
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Czy CogniCit można łączyć z kawą?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak. CogniCit nie zawiera kofeiny, więc można go bezpiecznie łączyć z kawą. Cytykolina i kofeina działają na różne neuroprzekaźniki — synergia jest możliwa bez zwiększania ryzyka skutków ubocznych."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy CogniCit zastępuje kawę?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CogniCit nie jest stymulantem — nie daje natychmiastowego kopa energii jak kawa. Zamiast tego buduje długoterminową podstawę neurochemiczną dla koncentracji. Wiele osób stosuje oba: kawę rano dla szybkiego startu, CogniCit dla stabilnego wsparcia przez cały dzień."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ile kosztuje dziennie CogniCit vs kawa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CogniCit kosztuje 2,63 zł dziennie (79 zł / 30 dni). Kawa na mieście kosztuje 12-18 zł za filiżankę. Nawet kawa domowa (0,50-1,50 zł) wymaga 3-5 filiżanek, co daje 1,50-7,50 zł dziennie — plus koszty mleka, cukru i czasu na parzenie."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Article JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "CogniCit vs kawa — co lepiej wspiera koncentrację?",
+    "description": "Porównanie CogniCit z kawą na koncentrację. Cytykolina vs kofeina: mechanizm, trwanie, skutki uboczne, koszt dzienny.",
+    "author": { "@type": "Organization", "name": "Cognivia" },
+    "publisher": { "@type": "Organization", "name": "Cognivia", "url": "https://cognivia.eu" },
+    "datePublished": "2026-03-29",
+    "dateModified": "2026-03-29",
+    "mainEntityOfPage": "https://gitc0indonor.github.io/website/blog/porownanie-cognicit-z-kawa.html",
+    "image": "https://gitc0indonor.github.io/website/assets/blog/cognicit-vs-kawa-og.jpg"
+  }
+  </script>
+
+  <!-- BreadcrumbList JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://gitc0indonor.github.io/website/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://gitc0indonor.github.io/website/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "CogniCit vs kawa", "item": "https://gitc0indonor.github.io/website/blog/porownanie-cognicit-z-kawa.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="legal-bar">Cognivia — suplementy diety z certyfikatem GMP · <strong>Wysyłka 24h</strong> · Darmowa dostawa od 120 zł</div>
+
+  <header>
+    <a href="../index.html" class="logo">Cogni<span>Cit</span></a>
+    <nav>
+      <a href="../produkt.html">Produkt</a>
+      <a href="../skladniki.html">Składniki</a>
+      <a href="index.html">Blog</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../produkt.html" class="buy-badge">🛒 79 zł</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    <nav aria-label="Breadcrumb">
+      <a href="../index.html">Strona główna</a> <span>›</span>
+      <a href="index.html">Blog</a> <span>›</span>
+      CogniCit vs kawa
+    </nav>
+  </div>
+
+  <article>
+    <div class="tag">Porównanie</div>
+    <h1>CogniCit vs kawa — co lepiej wspiera koncentrację?</h1>
+    <div class="meta">29 marca 2026 · 7 min czytania · Cognivia</div>
+
+    <h2>Kawa rano, crash o 14:00 — znasz to?</h2>
+    <p>Pierwsza kawa o 7:00. Druga o 10:00. Trzecia o 13:00 — bo przecież „jeszcze tylko jeden mail". A o 15:00 czujesz się gorzej niż przed pierwszą filiżanką. Znajome?</p>
+    <p>Kofeina jest najpopularniejszym stymulantem na świecie. Pije ją 80% Polaków. Ale „popularny" nie znaczy „najlepszy". W tym artykule porównujemy mechanizm działania kawy z mechanizmem CogniCit — suplementu, który buduje koncentrację zamiast ją pożyczać.</p>
+
+    <div class="fact-box">
+      <span class="stat">☕ 3 filiżanki</span>
+      <span class="desc">Tyle kawy dziennie wypija przeciętny Polak. Przeciętna zawartość kofeiny: 80-120 mg na filiżankę = 240-360 mg dziennie. Limit EFSA: 400 mg.</span>
+    </div>
+
+    <h2>Dwa różne mechanizmy — jedno „skupienie"</h2>
+    <p>Kiedy mówimy „koncentracja", myślimy o jednym zjawisku. Ale za kulisami mózg operuje na wielu neuroprzekaźnikach jednocześnie. Kofeina i cytykolina wpływają na zupełnie inne elementy tej układanki.</p>
+
+    <h3>☕ Kofeina — jak to działa?</h3>
+    <p>Kofeina blokuje receptory adenozynowe w mózgu. Adenozyna jest neuroprzekaźnikiem, który narasta w ciągu dnia i sygnalizuje zmęczenie. Kiedy kofeina zajmuje jej receptory, czujesz się czujny — ale adenozyna nie znika. Gromadzi się.</p>
+    <p>Po 4-6 godzinach kofeina jest metabolizowana, a cała nagromadzona adenozyna uderza naraz. To właśnie jest „crash" — nagły spadek energii, często gorszy niż zmęczenie przed kawą.</p>
+    <p><strong>Kluczowa cecha:</strong> kofeina nie dodaje energii — maskuje zmęczenie.</p>
+
+    <div class="ref">Nehlig A. „Interactions of caffeine with adenosine receptors." Frontiers in Psychiatry, 2023. PubMed: 37250024</div>
+
+    <h3>🧠 Cytykolina (CDP-Cholina) — jak to działa?</h3>
+    <p>Cytykolina to prekursor acetylocholiny — neuroprzekaźnika odpowiedzialnego za pamięć, uwagę i szybkość przetwarzania informacji. Zamiast blokować sygnały zmęczenia, cytykolina dostarcza surowce do budowy nowych neuroprzekaźników.</p>
+    <p>Acetylocholina jest tym, czym paliwo jest dla silnika — im więcej masz, tym dłużej i wydajniej pracujesz. Cytykolina zwiększa jej dostępność w sposób zrównoważony, bez gwałtownych skoków i spadków.</p>
+    <p><strong>Kluczowa cecha:</strong> cytykolina buduje zasoby — nie pożycza ich.</p>
+
+    <div class="ref">Secades JJ, Gareri P. „Citicoline: pharmacological and clinical review." Methods and Findings in Experimental and Clinical Pharmacology, 2006. 233 publikacji w PubMed dotyczących cytykoliny.</div>
+
+    <h2>Porównanie: CogniCit vs kawa</h2>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Kryterium</th>
+          <th>☕ Kawa</th>
+          <th>🧠 CogniCit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Mechanizm</strong></td>
+          <td>Blokuje receptory adenozynowe</td>
+          <td class="highlight">Buduje acetylocholinę + chroni mitochondria</td>
+        </tr>
+        <tr>
+          <td><strong>Początek działania</strong></td>
+          <td>15-30 minut</td>
+          <td class="highlight">30-60 minut (stabilny efekt)</td>
+        </tr>
+        <tr>
+          <td><strong>Czas działania</strong></td>
+          <td>3-5 godzin</td>
+          <td class="highlight">Cały dzień (akumulacja 7-14 dni)</td>
+        </tr>
+        <tr>
+          <td><strong>Crash / spadek</strong></td>
+          <td style="color: #e53935;">✗ Tak — po metabolizacji kofeiny</td>
+          <td class="highlight" style="color: #2e7d32;">✓ Brak — brak stymulacji</td>
+        </tr>
+        <tr>
+          <td><strong>Tolerancja</strong></td>
+          <td style="color: #e53935;">✗ Rosnąca — potrzeba więcej kawy</td>
+          <td class="highlight" style="color: #2e7d32;">✓ Brak — stabilna dawka</td>
+        </tr>
+        <tr>
+          <td><strong>Wpływ na sen</strong></td>
+          <td style="color: #e53935;">✗ Znaczący (t½ = 5-6h)</td>
+          <td class="highlight" style="color: #2e7d32;">✓ Brak — 0 mg kofeiny</td>
+        </tr>
+        <tr>
+          <td><strong>Zależność</strong></td>
+          <td style="color: #e53935;">✗ Fizyczna (bóle głowy przy odstawieniu)</td>
+          <td class="highlight" style="color: #2e7d32;">✓ Brak</td>
+        </tr>
+        <tr>
+          <td><strong>Wpływ na pamięć</strong></td>
+          <td>Minimalny (pobudzenie ≠ pamięć)</td>
+          <td class="highlight">Bezpośredni — acetylocholina</td>
+        </tr>
+        <tr>
+          <td><strong>Ochrona antyoksydacyjna</strong></td>
+          <td>Umiarkowana</td>
+          <td class="highlight">Silna (ALA 250 mg — mitochondria)</td>
+        </tr>
+        <tr>
+          <td><strong>Koszt dzienny</strong></td>
+          <td>2-18 zł (domowa vs na mieście)</td>
+          <td class="highlight">2,63 zł (stała cena)</td>
+        </tr>
+        <tr>
+          <td><strong>Certyfikacja</strong></td>
+          <td>Brak regulacji (kawiarnie)</td>
+          <td class="highlight">GMP + GIS + CoA</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Koncentracja „pożyczona" vs „zbudowana"</h2>
+    <p>Wyobraź sobie dwa modele finansowe:</p>
+
+    <div class="versus-grid">
+      <div class="vs-card coffee">
+        <h4>☕ Model kredytowy (kawa)</h4>
+        <ul>
+          <li>Bierzesz energię „na kredyt" — adenozyna czeka</li>
+          <li>Każda filiżanka spłaca poprzedni crash, ale zaciąga nowy dług</li>
+          <li>Po 3-4 kawach dziennie rośnie tolerancja</li>
+          <li>Wieczorem: spłata całego długu naraz (bezsenność albo totalny crash)</li>
+          <li>Następnego dnia: zaczynasz od nowa</li>
+        </ul>
+      </div>
+      <div class="vs-card cognicit">
+        <h4>🧠 Model inwestycyjny (CogniCit)</h4>
+        <ul>
+          <li>Budujesz zasoby neuroprzekaźników</li>
+          <li>Pierwszy tydzień: adaptacja, subtelne efekty</li>
+          <li>Tydzień 2-3: stabilna, równomierna koncentracja</li>
+          <li>Bez crashu, bez tolerancji, bez zależności</li>
+          <li>Jedna kapsułka rano — cały dzień wsparcia</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>Te dwa modele nie wykluczają się. Wiele osób stosuje oba: kawę dla szybkiego porannego startu, CogniCit jako fundament koncentracji na cały dzień. Różnica polega na tym, że po odstawieniu kawy wracasz do punktu wyjścia. Po odstawieniu CogniCit — zbudowane zasoby acetylocholiny utrzymują się jeszcze przez pewien czas.</p>
+
+    <h2>Dla kogo kawa nie wystarcza?</h2>
+    <p>Są sytuacje, w których kofeina albo nie pomaga, albo wręcz szkodzi:</p>
+    <ul>
+      <li><strong>Praca wieczorna / nocna zmiana</strong> — kofeina o 18:00 = problemy ze snem o 23:00. CogniCit nie ma wpływu na sen.</li>
+      <li><strong>Nadciśnienie</strong> — kofeina podnosi ciśnienie o 5-10 mmHg na 3-4h. CogniCit nie ma tego działania.</li>
+      <li><strong>Studenci w sesji</strong> — 5-6 kaw dziennie = drżenie rąk, lęki, bezsenność. Cytykolina działa spokojnie.</li>
+      <li><strong>Osoby z refluksem</strong> — kawa nasila objawy żołądkowe. Kapsułka CogniCit nie drażni żołądka.</li>
+      <li><strong>Kofeinowrażliwi</strong> — genetyczny wolny metabolizm kofeiny (CYP1A2). Nawet 1 filiżanka = 8h pobudzenia.</li>
+    </ul>
+
+    <h2>Czy mogę pić kawę i brać CogniCit?</h2>
+    <p><strong>Tak.</strong> CogniCit nie zawiera kofeiny. Cytykolina i kofeina działają na różne neuroprzekaźniki — nie ma interakcji farmakologicznej. Wiele osób stosuje:</p>
+    <ul>
+      <li><strong>Rano:</strong> 1 kapsułka CogniCit + śniadanie → fundament na cały dzień</li>
+      <li><strong>Południe:</strong> 1 kawa jeśli potrzebna → dodatkowy bodziec</li>
+      <li><strong>Po 14:00:</strong> już tylko CogniCit → bez ryzyka bezsenności</li>
+    </ul>
+    <p>Ta kombinacja daje to, co najlepsze z obu światów: szybki start z kawy i stabilną koncentrację z CogniCit — bez crashu o 15:00.</p>
+
+    <div class="ref">Interakcje kofeiny z cytykoliną: brak znanych interakcji farmakologicznych. CogniCit nie zawiera substancji stymulujących. Zalecana konsultacja z lekarzem przy jednoczesnym stosowaniu leków.</div>
+
+    <h2>Porównanie kosztów: kawa vs CogniCit</h2>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Scenariusz</th>
+          <th>Koszt dzienny</th>
+          <th>Koszt miesięczny</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>☕ Kawa w kawiarni (2 filiżanki)</td>
+          <td>16-36 zł</td>
+          <td>480-1 080 zł</td>
+        </tr>
+        <tr>
+          <td>☕ Kawa z ekspresu (3 filiżanki)</td>
+          <td>3-6 zł</td>
+          <td>90-180 zł</td>
+        </tr>
+        <tr>
+          <td>☕ Kawa rozpuszczalna (3 filiżanki)</td>
+          <td>1,50-3 zł</td>
+          <td>45-90 zł</td>
+        </tr>
+        <tr>
+          <td>🧠 CogniCit (1 kapsułka)</td>
+          <td style="background: #f0f7f0; font-weight: 600; color: #2e7d32;">2,63 zł</td>
+          <td style="background: #f0f7f0; font-weight: 600; color: #2e7d32;">79 zł</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>CogniCit jest porównywalny cenowo z kawą domową — ale daje więcej: ochronę antyoksydacyjną (ALA), wsparcie pamięci (cytykolina) i zwiększoną wchłanialność (β-CD). Kawa daje tylko kofeinę.</p>
+
+    <h2>Podsumowanie</h2>
+    <p>Kawa i CogniCit to nie konkurenci — to uzupełniające się narzędzia. Kawa pożycza energię na teraz. CogniCit buduje zasoby na jutro, pojutrze i przyszły tydzień.</p>
+    <p>Jeśli pijesz 1-2 kawy dziennie i czujesz się dobrze — nie musisz nic zmieniać. Ale jeśli:</p>
+    <ul>
+      <li>Masz crash o 14-15:00</li>
+      <li>Pijesz 3+ kaw dziennie</li>
+      <li>Masz problemy ze snem</li>
+      <li>Szukasz czegoś, co działa długoterminowo</li>
+    </ul>
+    <p>...to CogniCit jest warty wypróbowania. 30 dni, jedna kapsułka dziennie, zero ryzyka dzięki gwarancji satysfakcji.</p>
+
+    <div class="legal-note">
+      <strong>Oświadczenie:</strong> CogniCit jest suplementem diety, nie lekiem. Nie zastępuje zróżnicowanej diety ani konsultacji lekarskiej. Informacje w tym artykule oparte są na publikacjach naukowych (PubMed) i nie stanowią porady medycznej. Kobiety w ciąży, karmiące piersią oraz osoby przyjmujące leki powinny skonsultować się z lekarzem przed suplementacją.
+    </div>
+  </article>
+
+  <!-- Fact Box -->
+  <div style="max-width: 800px; margin: 0 auto 32px; padding: 0 8%;">
+    <div class="fact-box">
+      <span class="stat">2,63 zł dziennie</span>
+      <span class="desc">CogniCit kosztuje mniej niż jedna kawa na mieście. 3 synergistyczne składniki, certyfikat GMP, zero kofeiny. <a href="../produkt.html" style="color: var(--gold);">Sprawdź skład →</a></span>
+    </div>
+  </div>
+
+  <!-- Share -->
+  <div class="share-section">
+    <p>Udostępnij artykuł</p>
+    <div class="share-buttons">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://gitc0indonor.github.io/website/blog/porownanie-cognicit-z-kawa.html" target="_blank" rel="noopener" class="share-btn fb">📘 Facebook</a>
+      <a href="https://twitter.com/intent/tweet?url=https://gitc0indonor.github.io/website/blog/porownanie-cognicit-z-kawa.html&text=CogniCit+vs+kawa+—+co+lepiej+wspiera+koncentrację?" target="_blank" rel="noopener" class="share-btn tw">🐦 Twitter/X</a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://gitc0indonor.github.io/website/blog/porownanie-cognicit-z-kawa.html&title=CogniCit+vs+kawa" target="_blank" rel="noopener" class="share-btn li">💼 LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- Cross-links -->
+  <div class="cross-links">
+    <h3>Powiązane artykuły</h3>
+    <a href="suplementy-a-kofeina.html">→ Suplementy a kofeina — cytykolina vs kofeina</a>
+    <a href="poranne-nawyki-programisty.html">→ Poranne nawyki programisty</a>
+    <a href="../produkt.html">→ Zamów CogniCit — 79 zł</a>
+    <a href="../porownanie.html">→ Porównanie suplementów nootropowych</a>
+  </div>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <span>CogniCit — 3 synergistyczne składniki</span>
+    <span>·</span>
+    <span>GMP Certified</span>
+    <span>·</span>
+    <span>Bez kofeiny</span>
+    <span>·</span>
+    <a href="../produkt.html">Zamów →</a>
+  </div>
+
+  <!-- Satisfaction Guarantee -->
+  <div class="guarantee-section">
+    <div class="badge">30</div>
+    <div class="text">
+      <h4>30-dniowa gwarancja satysfakcji</h4>
+      <p>Nie jesteś zadowolony? Zwrócimy pieniądze — bez pytań. Przetestuj CogniCit bez ryzyka.</p>
+      <a href="../produkt.html" class="cta-sm">Zamów bez ryzyka →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Cognivia · <a href="../polityka-prywatnosci.html">Polityka prywatności</a> · <a href="../regulamin.html">Regulamin</a> · <a href="../kontakt.html">Kontakt</a></p>
+  </footer>
+
+  <!-- Newsletter Floating Badge -->
+  <style>
+    .blog-float-badge{position:fixed;bottom:24px;right:24px;z-index:998;display:none;background:#2e7d32;color:white;border:none;padding:12px 20px;border-radius:30px;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 4px 16px rgba(46,125,50,0.3);font-family:'DM Sans',sans-serif;animation:blogFloatPulse 3s ease-in-out infinite}
+    @keyframes blogFloatPulse{0%,100%{box-shadow:0 4px 16px rgba(46,125,50,0.3)}50%{box-shadow:0 4px 24px rgba(46,125,50,0.5)}}
+    .blog-popup-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:1001;justify-content:center;align-items:center}
+    .blog-popup-overlay.active{display:flex}
+    .blog-popup{background:white;border-radius:16px;padding:32px;max-width:420px;width:90%;text-align:center;animation:blogPopUp .4s cubic-bezier(.34,1.56,.64,1)}
+    @keyframes blogPopUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+    .blog-popup h4{font-family:'EB Garamond',serif;font-size:22px;color:#2a2a27;margin-bottom:8px}
+    .blog-popup p{font-size:14px;color:#666;margin-bottom:16px}
+    .blog-popup input[type=email]{width:100%;padding:12px 16px;border:1px solid #ddd;border-radius:8px;font-size:14px;margin-bottom:12px;font-family:'DM Sans',sans-serif}
+    .blog-popup button[type=submit]{width:100%;background:#2e7d32;color:white;border:none;padding:14px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif}
+    .blog-popup .close-popup{position:absolute;top:12px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#999}
+    @media(max-width:768px){.blog-float-badge{bottom:16px;right:16px;font-size:12px;padding:10px 16px}}
+  </style>
+  <button class="blog-float-badge" onclick="document.getElementById('blogPop').classList.add('active')" id="blogFloatBadge">📬 Zapisz się — 15% zniżki</button>
+  <div class="blog-popup-overlay" id="blogPop">
+    <div class="blog-popup" style="position:relative">
+      <button class="close-popup" onclick="document.getElementById('blogPop').classList.remove('active');localStorage.setItem('blogPopup_pckzk','1')">✕</button>
+      <h4>Podoba Ci się artykuł?</h4>
+      <p>Zapisz się na newsletter i otrzymaj <strong>15% zniżki</strong> na pierwsze zamówienie CogniCit.</p>
+      <form action="https://formspree.io/f/xpwzgryv" method="POST">
+        <input type="hidden" name="source" value="blog-porownanie-kawa">
+        <input type="email" name="email" placeholder="Twój adres email" required>
+        <button type="submit">Zapisz się i odbierz zniżkę →</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    if(localStorage.getItem('blogPopup_pckzk')){document.getElementById('blogFloatBadge').style.display='none'}
+    else{setTimeout(()=>{document.getElementById('blogFloatBadge').style.display='block'},6000)}
+    let pckzkFired=false;
+    window.addEventListener('scroll',()=>{if(pckzkFired)return;if(window.scrollY/(document.body.scrollHeight-window.innerHeight)>.6){pckzkFired=true;if(!localStorage.getItem('blogPopup_pckzk'))document.getElementById('blogPop').classList.add('active')}});
+  </script>
+</body>
+</html>

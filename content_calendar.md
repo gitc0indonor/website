@@ -2388,3 +2388,30 @@
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
 **SEO angle:** Seasonal Oct-Mar peak. Zero Polish content connecting nootropics to immunity. First-mover advantage. Positions CogniCit as dual-benefit (brain + immunity).
 **Status:** Outline ready, needs writing
+
+---
+
+### Blog Post Outline #78 — Power Cycle #88
+**Title:** "Suplementy a stres w pracy — jak chronić mózg podczas deadline'ów?"
+**Target keyword:** "suplementy stres praca" / "stres w pracy suplementy" (~600+ monthly searches in Poland)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Evergreen, peak Sep (back to work) and Jan (new year stress)
+
+**Outline:**
+1. **Wstęp** — 67% Polaków zgłasza stres w pracy jako główny problem zdrowotny (badania GUS). Deadline'y, spotkania, open-space. Co to robi z mózgiem?
+2. **Jak stres w pracy wpływa na mózg?** — Oś HPA → kortyzol → uszkodzenie hipokampa → spadek pamięci i koncentracji. Chroniczny stres = chroniczne uszkodzenie neuronów. Prosty schemat.
+3. **Open-space jako zabójca koncentracji** — Badania: pracownicy w open-space tracą 86 minut dziennie na rozproszenia. Koszt przełączania zadań (Monsell 2003). Attention residue (Sophie Leroy).
+4. **Kortyzol a acetylocholina** — Pod stressem spada poziom acetylocholiny (neuroprzekaźnik focusu). Mechanizm: stres → kortyzol → deplecja ACh → mgła mózgowa. Cytykolina jako odbudowa puli ACh.
+5. **ALA — ochrona mitochondriów pracownika** — Chroniczny stres = więcej wolnych rodników → uszkodzenie mitochondriów → mniej energii neuronalnej. ALA regeneruje glutation, chroni łańcuch oddechowy. Hager 2007.
+6. **Protokół antystresowy z CogniCit** — Rano: CogniCit ze śniadaniem → deep work block 9-12 → spacer 15 min → zadania administracyjne 14-16 → shutdown ritual 17:00. Zero kofeiny = zero crashu wieczornego.
+7. **Porównanie: CogniCit vs popularne rozwiązania na stres** — Tabela: CogniCit (trwała koncentracja, 0 mg kofeiny) vs ashwagandha (adaptogen, ale wolne działanie) vs kofeina (tymczasowy boost, pogarsza kortyzol) vs alkohol (depresant, pogarsza wszystko).
+8. **5 nawyków antystresowych** — (a) Sen 7-8h, (b) Ruch 30 min/dzień, (c) Medytacja 10 min, (d) Granice pracy (shutdown ritual), (e) CogniCit jako poranny anchor.
+9. **Kiedy suplementacja nie wystarczy?** — Granica między stresem zawodowym a wypaleniem (burnout). Kiedy szukać pomocy psychologa. Odpowiedzialna komunikacja.
+10. **Podsumowanie** — "Stres w pracy jest nieunikniony. Uszkodzenia od stresu — nie muszą być."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/poranne-nawyki-programisty.html, blog/chroniczne-zmeczenie-umyslowe.html, jak-stosowac.html, nauka.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** Post-pandemic workplace stress awareness. Zero quality Polish content connecting nootropics to workplace stress management. Positions CogniCit as the professional's daily cognitive shield. Featured snippet potential for "jak radzić sobie ze stresem w pracy" listicle.
+**Target platforms:** Google (SEO), LinkedIn, Wykop, grupy FB o rozwoju zawodowym
+**Status:** Outline ready, needs writing

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poranne nawyki na koncentrację — 5-minutowy protokół na lepszy dzień | Cognivia</title>
+  <meta name="description" content="5 porannych kroków, które poprawiają koncentrację na cały dzień. Praktyczny protokół: światło, nawodnienie, suplementacja, śniadanie, deep work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #8f7a3d; --text: #2a2a27; --cream: #faf7f0; --soft-text: #5a5a58; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', 'Inter', sans-serif; color: var(--text); background: #fdfcf8; line-height: 1.8; }
+    .legal-bar { background: var(--text); color: rgba(255,255,255,0.85); padding: 6px 5%; font-size: 10px; text-align: center; }
+    .legal-bar strong { color: var(--accent); }
+    header { position: fixed; top: 32px; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(253,252,248,0.95); backdrop-filter: blur(10px); }
+    .logo { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--accent); }
+    nav a { margin-left: 24px; color: var(--text); text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s; }
+    @media (max-width: 768px) { .hamburger { display: block; } nav#mainNav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(253,252,248,0.98); backdrop-filter: blur(10px); flex-direction: column; padding: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); } nav#mainNav.open { display: flex; } nav#mainNav a { margin: 8px 0; } }
+    article { max-width: 760px; margin: 0 auto; padding: 120px 24px 60px; }
+    .breadcrumb { max-width: 760px; margin: 100px auto 0; padding: 0 24px; font-size: 12px; color: var(--soft-text); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+    article h1 { font-family: 'Playfair Display', serif; font-size: 2.4rem; line-height: 1.2; margin-bottom: 16px; color: var(--text); }
+    .meta { font-size: 13px; color: var(--soft-text); margin-bottom: 32px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+    .meta .tag { background: rgba(143,122,61,0.1); color: var(--accent); padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
+    article h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; margin: 48px 0 16px; color: var(--text); }
+    article h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; margin: 32px 0 12px; color: var(--text); }
+    article p { margin-bottom: 16px; font-size: 15px; color: var(--soft-text); }
+    article ul, article ol { padding-left: 24px; margin-bottom: 16px; }
+    article li { margin-bottom: 8px; font-size: 15px; color: var(--soft-text); }
+    article strong { color: var(--text); }
+    .step-card { background: #fff; border-radius: 16px; padding: 28px 24px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); border-left: 4px solid var(--accent); }
+    .step-card .step-num { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #2d6a4f, #40916c); color: #fff; font-weight: 700; font-size: 14px; margin-bottom: 12px; }
+    .step-card h3 { margin-top: 0; }
+    .mistake-card { background: #fff5f5; border-radius: 12px; padding: 20px 24px; margin-bottom: 12px; border-left: 4px solid #dc3545; }
+    .mistake-card h4 { color: #dc3545; font-size: 0.95rem; margin-bottom: 6px; }
+    .cta-box { background: linear-gradient(135deg, #2d6a4f, #40916c); border-radius: 16px; padding: 36px 32px; text-align: center; color: #fff; margin: 48px 0; }
+    .cta-box h3 { color: #fff; font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 8px; }
+    .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 20px; }
+    .cta-box a { display: inline-block; background: #fff; color: #2d6a4f; padding: 14px 32px; border-radius: 24px; text-decoration: none; font-weight: 600; transition: transform 0.2s; }
+    .cta-box a:hover { transform: translateY(-2px); }
+    .trust-bar { background: rgba(143,122,61,0.08); border-radius: 12px; padding: 16px 24px; text-align: center; margin: 32px 0; font-size: 13px; color: var(--soft-text); }
+    .trust-bar strong { color: var(--text); }
+    .cross-links { margin: 48px 0; padding-top: 32px; border-top: 1px solid #eee; }
+    .cross-links h3 { font-family: 'Playfair Display', serif; margin-bottom: 16px; }
+    .cross-links-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .cross-links-grid a { display: block; background: #fff; border-radius: 12px; padding: 20px; text-decoration: none; color: var(--text); box-shadow: 0 1px 8px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; }
+    .cross-links-grid a:hover { transform: translateY(-3px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+    .cross-links-grid a .emoji { font-size: 1.5rem; display: block; margin-bottom: 8px; }
+    .cross-links-grid a .title { font-weight: 600; font-size: 14px; }
+    .share-section { margin: 32px 0; padding: 24px 0; border-top: 1px solid #eee; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .share-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 500; transition: transform 0.2s; }
+    .share-btn:hover { transform: translateY(-1px); }
+    .share-btn.fb { background: #1877f2; color: #fff; }
+    .share-btn.tw { background: #1da1f2; color: #fff; }
+    .share-btn.li { background: #0077b5; color: #fff; }
+    .guarantee-section { background: linear-gradient(135deg, rgba(46,125,50,0.06), rgba(76,175,80,0.04)); border-radius: 16px; padding: 32px; margin: 48px 0; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .guarantee-section .badge { font-size: 3rem; font-family: 'Playfair Display', serif; color: #2d6a4f; font-weight: 800; line-height: 1; }
+    .guarantee-section .text h3 { font-family: 'Playfair Display', serif; color: #2d6a4f; margin-bottom: 4px; }
+    .guarantee-section .text p { color: var(--soft-text); font-size: 14px; margin-bottom: 12px; }
+    .guarantee-section .text a { color: #2d6a4f; text-decoration: none; font-weight: 600; }
+    .blog-email-popup { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; padding: 24px; box-shadow: 0 -4px 24px rgba(0,0,0,0.15); z-index: 999; transform: translateY(100%); transition: transform 0.4s cubic-bezier(0.4,0,0.2,1); border-radius: 16px 16px 0 0; }
+    .blog-email-popup.show { transform: translateY(0); }
+    .blog-email-popup .close-popup { position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 20px; cursor: pointer; color: #999; }
+    .blog-email-popup h4 { font-family: 'Playfair Display', serif; margin-bottom: 8px; }
+    .blog-email-popup form { display: flex; gap: 8px; margin-top: 12px; }
+    .blog-email-popup input[type="email"] { flex: 1; padding: 12px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; }
+    .blog-email-popup button[type="submit"] { background: #2d6a4f; color: #fff; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+    footer { background: var(--text); color: rgba(255,255,255,0.6); padding: 40px 8%; text-align: center; font-size: 13px; }
+    footer a { color: var(--accent); }
+    @media (max-width: 768px) {
+      article h1 { font-size: 1.8rem; }
+      .guarantee-section { flex-direction: column; text-align: center; }
+    }
+  </style>
+  <link rel="canonical" href="https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html">
+  <link rel="alternate" hreflang="pl" href="https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Poranne nawyki na koncentrację — 5-minutowy protokół na lepszy dzień">
+  <meta property="og:description" content="5 porannych kroków, które poprawiają koncentrację na cały dzień. Praktyczny protokół oparty na nauce.">
+  <meta property="og:url" content="https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html">
+  <meta property="og:site_name" content="Cognivia">
+  <meta property="og:locale" content="pl_PL">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Poranne nawyki na koncentrację — 5-minutowy protokół na lepszy dzień">
+  <meta name="twitter:description" content="5 porannych kroków, które poprawiają koncentrację na cały dzień.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Poranne nawyki na koncentrację — 5-minutowy protokół na lepszy dzień",
+    "description": "5 porannych kroków, które poprawiają koncentrację na cały dzień.",
+    "author": { "@type": "Organization", "name": "Cognivia" },
+    "publisher": { "@type": "Organization", "name": "Cognivia", "url": "https://cognivia.eu" },
+    "datePublished": "2026-03-29",
+    "dateModified": "2026-03-29",
+    "mainEntityOfPage": "https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://gitc0indonor.github.io" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://gitc0indonor.github.io/website/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Poranne nawyki na koncentrację", "item": "https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Czy można pić kawę razem z CogniCit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak. CogniCit nie zawiera kofeiny, więc można go bezpiecznie łączyć z kawą. Zalecamy przyjęcie kapsułki z posiłkiem, a kawę 30-60 minut później."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kiedy najlepiej przyjmować CogniCit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rano, z pierwszym posiłkiem. Cytykolina i ALA najlepiej wchłaniają się z pożywieniem. β-cyklodekstryna dodatkowo zwiększa biodostępność."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ile czasu potrzeba, żeby zobaczyć efekty porannej suplementacji?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Większość osób zgłasza subiektywną poprawę koncentracji po 7-14 dniach regularnego stosowania. Pełne efekty po 30 dniach."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy poranne nawyki naprawdę wpływają na koncentrację?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak. Badania nad kortyzolem (cortisol awakening response) pokazują, że pierwsze 60-90 minut po przebudzeniu kształtuje poziom energii i skupienia na resztę dnia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy CogniCit jest bezpieczny dla osób z wysokim ciśnieniem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CogniCit nie zawiera kofeiny ani innych stymulantów. Osoby przyjmujące leki na ciśnienie powinny jednak skonsultować suplementację z lekarzem."
+        }
+      }
+    ]
+  }
+  </script>
+  <script defer data-domain="cognivia.eu" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+  <div class="legal-bar"><strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.</div>
+  <header>
+    <a href="../index.html" class="logo">Cogni<span>via</span></a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav id="mainNav">
+      <a href="../index.html">Strona główna</a>
+      <a href="../produkt.html">Produkt</a>
+      <a href="../nauka.html">Nauka</a>
+      <a href="./">Blog</a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+    <a href="../index.html">Strona główna</a> <span>›</span> <a href="./">Blog</a> <span>›</span> <span>Poranne nawyki</span>
+  </nav>
+
+  <article>
+    <h1>Poranne nawyki na koncentrację — 5-minutowy protokół na lepszy dzień</h1>
+    <div class="meta">
+      <span class="tag">Zdrowie</span>
+      <span>⏱ 7 min czytania</span>
+      <span>Ostatnia aktualizacja: 29 marca 2026</span>
+    </div>
+
+    <p>Pierwsze 90 minut po przebudzeniu decyduje o jakości reszty dnia. To nie motywacyjny slogan — to biologia. Kortyzol osiąga szczyt w ciągu 30-45 minut od przebudzenia (tzw. <em>cortisol awakening response</em>), a to, co robisz w tym oknie, kształtuje Twój poziom energii i skupienia na kolejne 8-10 godzin.</p>
+
+    <p>Nie potrzebujesz 2-godzinnej rutyny. Potrzebujesz 5 świadomych kroków, które zajmują łącznie 5 minut. Oto protokół.</p>
+
+    <!-- STEP 1 -->
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <h2>☀️ Światło słoneczne w pierwszej godzinie</h2>
+      <p>Twój mózg potrzebuje sygnału, że dzień się zaczął. Światło słoneczne (nawet pochmurne) dociera do jądra nadskrzyżowaniowego (SCN) i hamuje produkcję melatoniny, jednocześnie stymulując kortyzol i serotoninę.</p>
+      <p><strong>Co robić:</strong> W ciągu pierwszych 30 minut po wstaniu wyjdź na zewnątrz na 5-10 minut. Jeśli to niemożliwe, stań przy oknie z odsłoniętymi zasłonami. Sztuczne oświetlenie w mieszkaniu to zaledwie 200-500 luksów — słońce daje 10 000-100 000 luksów nawet w pochmurny dzień.</p>
+      <p><strong>Dlaczego to działa:</strong> Badania Andrew Hubermana z Stanford pokazują, że ekspozycja na poranne światło reguluje rytm dobowy skuteczniej niż kawa. Efekt? Lepsza koncentracja rano i lepszy sen wieczorem.</p>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <h2>💧 Nawodnienie przed kawą</h2>
+      <p>Podczas snu tracisz 300-500 ml wody. Odwodnienie na poziomie zaledwie 1-2% masy ciała powoduje spadek koncentracji, bóle głowy i zmęczenie — objawy, które większość osób przypisuje "braku kawy".</p>
+      <p><strong>Co robić:</strong> Wypij 500 ml wody zaraz po przebudzeniu, przed pierwszą kawą. Możesz dodać szczyptę soli (sód pomaga zatrzymać wodę) lub plaster cytryny dla smaku.</p>
+      <p><strong>Dlaczego to działa:</strong> Mózg składa się w 75% z wody. Nawet łagodne odwodnienie zmniejsza objętość komórek mózgowych i spowalnia przekaźnictwo neuronalne. 500 ml wody to najprostszy i najszybszy sposób na poranny reset poznawczy.</p>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step-card" style="border-left-color: #c9a84c; background: linear-gradient(135deg, #fffdf5, #fff);">
+      <div class="step-num" style="background: linear-gradient(135deg, #c9a84c, #e0c068);">3</div>
+      <h2>💊 Suplementacja z posiłkiem — CogniCit</h2>
+      <p>Rano Twój mózg potrzebuje substratów do syntezy neuroprzekaźników. To idealny moment na suplementację.</p>
+      <p><strong>CogniCit — 1 kapsułka z pierwszym posiłkiem:</strong></p>
+      <ul>
+        <li><strong>Cytykolina (300 mg)</strong> — prekursor acetylocholiny, neuroprzekaźnika odpowiedzialnego za koncentrację i pamięć roboczą. 233 publikacje w PubMed.</li>
+        <li><strong>Kwas alfa-liponowy (250 mg)</strong> — silny antyoksydant, chroni mitochondria mózgu przed stresem oksydacyjnym. Podwójny mechanizm: rozpuszczalny w wodzie i tłuszczach.</li>
+        <li><strong>β-cyklodekstryna (250 mg)</strong> — zwiększa biodostępność składników aktywnych o 40-200% poprzez mechanizm inkluzji molekularnej.</li>
+      </ul>
+      <p><strong>Dlaczego z jedzeniem?</strong> Cytykolina i ALA wchłaniają się lepiej w obecności tłuszczów. Śniadanie z jajkami, awokado lub orzechami to idealne towarzystwo.</p>
+      <p><strong>Dlaczego nie kofeina?</strong> CogniCit nie zawiera kofeiny — nie powoduje skoków ani crashów. Możesz go bezpiecznie łączyć ze swoją poranną kawą. <a href="suplementy-a-kofeina.html">Więcej o łączeniu suplementów z kofeiną →</a></p>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <h2>🥚 Śniadanie bogate w cholinę</h2>
+      <p>Cytykolina w CogniCit dostarcza choliny — ale synergia z dietą potęguje efekt. Cholina z pożywienia uzupełnia pulę substratów do syntezy acetylocholiny.</p>
+      <p><strong>Najlepsze źródła choliny na śniadanie:</strong></p>
+      <ul>
+        <li><strong>Jajka</strong> — 1 jajko = ~147 mg choliny. 2 jajka na śniadanie to prawie 300 mg — dawka synergiczna z CogniCit.</li>
+        <li><strong>Orzechy</strong> — szczególnie włoskie i migdały. Dodatkowo dostarczają tłuszczów omega-3 (mózg to w 60% tłuszcz).</li>
+        <li><strong>Łosoś</strong> — cholina + omega-3 + witamina D. Idealne śniadanie dla mózgu (jeśli jesz ryby rano).</li>
+      </ul>
+      <p><strong>Przykładowe śniadanie synergiczne:</strong> 2 jajka sadzone + awokado + garść orzechów włoskich + 1 kapsułka CogniCit. Łączna dawka choliny: ~450 mg. Czas przygotowania: 8 minut.</p>
+    </div>
+
+    <!-- STEP 5 -->
+    <div class="step-card">
+      <div class="step-num">5</div>
+      <h2>🎯 Deep work block przed 10:00</h2>
+      <p>Po zrealizowaniu kroków 1-4 Twój mózg jest w optymalnym stanie: kortyzol na naturalnym szczycie, acetylocholina zasilona cytykoliną, nawodniony, nakarmiony. To okno 9:00-10:30 to Twój najcenniejszy czas w ciągu dnia.</p>
+      <p><strong>Co robić:</strong> Zaplanuj najważniejsze zadanie na ten blok. Wyłącz powiadomienia. Ustaw timer na 50 minut (jeden ultradian cycle). Po 50 minutach zrób 10-minutową przerwę.</p>
+      <p><strong>Dlaczego przed 10:00?</strong> Rytm ultradianny (90-minutowe cykle aktywności mózgu) zaczyna się od przebudzenia. Pierwszy pełny cykl kończy się ok. 10:30. Zadania wymagające głębokiej koncentracji najlepiej wykonuje się w pierwszym cyklu — później energia naturalnie spada.</p>
+    </div>
+
+    <h2>🚫 Czego unikać — 3 poranne błędy</h2>
+
+    <div class="mistake-card">
+      <h4>❌ Telefon w łóżku</h4>
+      <p>Sprawdzanie emaili i social media zaraz po przebudzeniu aktywuje reaktywny tryb mózgu (odpowiadanie zamiast tworzenia). Kortyzol + dopamina z powiadomień = chroniczne poczucie "muszę coś zrobić" bez realnego postępu. <strong>Zasada:</strong> pierwsze 30 minut bez telefonu.</p>
+    </div>
+
+    <div class="mistake-card">
+      <h4>❌ Kawa na czczo</h4>
+      <p>Kofeina na pusty żołądek podrażnia błonę śluzową żołądka i powoduje gwałtowny skok kortyzolu (podwójny — naturalny + kofeinowy). Efekt: krótkotrwała energia, potem crash o 10-11. <strong>Zasada:</strong> nawodnienie → śniadanie → kawa (minimum 60 min po przebudzeniu).</p>
+    </div>
+
+    <div class="mistake-card">
+      <h4>❌ Pomijanie śniadania</h4>
+      <p>Mózg zużywa 20% energii całego organizmu. Jeśli nie dostarczysz paliwa rano, organizm zaczyna spalać kortyzol i adrenalinę — stąd "poranna energia" na czczo, która kończy się mgłą mózgową o 11. <strong>Zasada:</strong> nawet mały posiłek (jajko + orzechy) > pusty żołądek.</p>
+    </div>
+
+    <h2>📋 Checklist — Twój poranny protokół</h2>
+    <p>Wydrukuj i powieś na lodówce. Po 14 dniach wejdzie w nawyk:</p>
+    <ul>
+      <li>☐ ☀️ Wyjdź na zewnątrz na 5 min w ciągu pierwszej godziny</li>
+      <li>☐ 💧 Wypij 500 ml wody przed kawą</li>
+      <li>☐ 💊 Weź 1 kapsułkę CogniCit z pierwszym posiłkiem</li>
+      <li>☐ 🥚 Zjedz śniadanie bogate w cholinę (jajka, orzechy)</li>
+      <li>☐ 🎯 Przed 10:00 — zrób swój najważniejszy task (50 min, bez telefonu)</li>
+    </ul>
+
+    <div class="trust-bar">
+      <strong>CogniCit</strong> — 3 synergistyczne składniki · GMP Certified · EU Compliant · <a href="../produkt.html" style="color: #2d6a4f;">Zamów →</a>
+    </div>
+
+    <div class="cta-box">
+      <h3>Jedna kapsułka rano. Zero kofeiny. Pełna koncentracja.</h3>
+      <p>CogniCit — suplement diety z cytykoliną, ALA i β-cyklodekstryną. 30 dni kuracji za 79 zł.</p>
+      <a href="../produkt.html">Zamów CogniCit → 79 zł</a>
+    </div>
+
+    <div class="guarantee-section">
+      <div class="badge">30</div>
+      <div class="text">
+        <h3>30-dniowa gwarancja satysfakcji</h3>
+        <p>Nie jesteś zadowolony? Zwrócimy pieniądze za pierwsze opakowanie. Bez pytań.</p>
+        <a href="../zwroty.html">Przeczytaj politykę zwrotów →</a>
+      </div>
+    </div>
+
+    <div class="cross-links">
+      <h3>Powiązane artykuły</h3>
+      <div class="cross-links-grid">
+        <a href="jak-budowac-rutyne-suplementacji.html">
+          <span class="emoji">🔄</span>
+          <span class="title">Jak budować rutynę suplementacji?</span>
+        </a>
+        <a href="suplementy-a-kofeina.html">
+          <span class="emoji">☕</span>
+          <span class="title">Suplementy a kofeina — porównanie mechanizmów</span>
+        </a>
+        <a href="poranne-nawyki-programisty.html">
+          <span class="emoji">💻</span>
+          <span class="title">Poranne nawyki programisty</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="share-section">
+      <span style="font-size: 13px; color: var(--soft-text);">Udostępnij:</span>
+      <a class="share-btn fb" href="https://www.facebook.com/sharer/sharer.php?u=https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html" target="_blank" rel="noopener">Facebook</a>
+      <a class="share-btn tw" href="https://twitter.com/intent/tweet?url=https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html&text=Poranne%20nawyki%20na%20koncentracj%C4%99%20%E2%80%94%205-minutowy%20protok%C3%B3%C5%82" target="_blank" rel="noopener">Twitter/X</a>
+      <a class="share-btn li" href="https://www.linkedin.com/shareArticle?mini=true&url=https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </article>
+
+  <!-- Email capture popup -->
+  <div class="blog-email-popup" id="blogPopup">
+    <button class="close-popup" onclick="closeBlogPopup()">✕</button>
+    <h4>📬 Podoba Ci się artykuł?</h4>
+    <p style="font-size: 14px; color: var(--soft-text); margin-bottom: 4px;">Zapisz się i otrzymaj <strong>15% zniżki</strong> na pierwsze zamówienie CogniCit.</p>
+    <form action="https://formspree.io/f/xpwzgryv" method="POST">
+      <input type="email" name="email" placeholder="Twój adres email" required>
+      <input type="hidden" name="source" value="blog-poranne-nawyki">
+      <button type="submit">Zapisz się</button>
+    </form>
+  </div>
+  <script>
+    (function(){
+      var dismissed = localStorage.getItem('blogPopupDismissed-poranne-nawyki');
+      if(dismissed) return;
+      var popup = document.getElementById('blogPopup');
+      var triggered = false;
+      window.addEventListener('scroll', function(){
+        if(triggered) return;
+        var scrollPct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+        if(scrollPct > 60) {
+          popup.classList.add('show');
+          triggered = true;
+        }
+      });
+    })();
+    function closeBlogPopup(){
+      document.getElementById('blogPopup').classList.remove('show');
+      localStorage.setItem('blogPopupDismissed-poranne-nawyki','1');
+    }
+    // Hamburger
+    document.getElementById('hamburgerBtn').addEventListener('click',function(){
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+  </script>
+
+  <footer>
+    <p>© 2026 Cognivia. <a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a> | <a href="../polityka-prywatnosci.html">Polityka prywatności</a> | <a href="../regulamin.html">Regulamin</a></p>
+    <p style="font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 16px;">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.</p>
+  </footer>
+  <script src="../js/web-vitals.js" defer></script>
+</body>
+</html>

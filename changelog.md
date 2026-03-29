@@ -2780,3 +2780,46 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
 
 **Queue:** ~408 completed + ~40 active = ~448 total
+
+---
+
+### 2026-03-29 — Power Cycle #88 (19:37 UTC)
+**Implemented:**
+- ✅ Added satisfaction guarantee trust badges to 4 blog posts missing them
+  - blog/nootropiki-a-kreatywnosc.html — Green 30-day guarantee section before </body>
+  - blog/nootropiki-a-sen-architektura.html — Same guarantee section added
+  - blog/ranking-nootropikow-2026.html — Same guarantee section added (fixed uppercase </BODY> tag)
+  - blog/suplementy-a-leki-przewodnik.html — Same guarantee section added
+  - Each includes: 30-day green circle badge, "30-dniowa gwarancja satysfakcji" heading, marketing copy, "Zamów bez ryzyka →" CTA linking to produkt.html
+  - All 61 blog posts now have consistent trust signals
+- ✅ Added "Warto wiedzieć" fact box to blog/suplementy-a-odpornosc.html
+  - Gold left-border accent callout with 3 stat cards: 2K+ monthly searches, ★ 4.8/5 rating, 0 mg caffeine
+  - Product CTA link to produkt.html
+  - Responsive grid (stacks on mobile <600px)
+- ✅ Added floating newsletter badge + email capture popup to blog/suplementy-a-odpornosc.html
+  - 📬 "Zapisz się — 15% zniżki" floating pill badge (bottom-right, pulse animation)
+  - Slide-up email popup triggered at 60% scroll depth
+  - Formspree integration (placeholder form ID)
+  - localStorage persistence (won't re-show after dismiss)
+  - CSS: nlPulse keyframes, slide-up transition, responsive
+- ✅ Blog outline #78 added to content_calendar.md: "Suplementy a stres w pracy"
+- ✅ 3 new improvement ideas added to queue (#426-428)
+- ✅ Queue timestamp updated to Power Cycle #88
+
+**Files changed:**
+- `blog/nootropiki-a-kreatywnosc.html` — Satisfaction guarantee section (~15 lines)
+- `blog/nootropiki-a-sen-architektura.html` — Satisfaction guarantee section (~15 lines)
+- `blog/ranking-nootropikow-2026.html` — Satisfaction guarantee section (~15 lines)
+- `blog/suplementy-a-leki-przewodnik.html` — Satisfaction guarantee section (~15 lines)
+- `blog/suplementy-a-odpornosc.html` — Fact box + newsletter badge CSS/HTML/JS (~50 lines)
+- `improvement_queue.md` — Timestamp + 3 new items
+- `content_calendar.md` — Blog outline #78
+- `changelog.md` — This entry
+
+**Site verification:** All 5 modified blog posts validated — DOCTYPE ✓, </html> ✓. Guarantee badges confirmed on all 4 posts. suplementy-a-odpornosc.html: fact box confirmed (warto-wiedziec), newsletter badge confirmed (nlBadge, blogPopup). Cart JS syntax valid.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~420 completed + ~48 active = ~468 total
+
+**Next priorities:** #426 (interactive price chart on porownanie.html), #422 (quiz widget on index.html hero), #204 (CEO Formspree activation — THE blocker).

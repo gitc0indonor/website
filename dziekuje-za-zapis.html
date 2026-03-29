@@ -26,7 +26,14 @@
     @keyframes popIn { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
     .hero h1 { font-family: 'EB Garamond', serif; font-size: 42px; color: var(--text, #2a2a27); margin-bottom: 16px; line-height: 1.2; }
     .hero p { font-size: 17px; color: var(--soft-text); max-width: 560px; margin: 0 auto 32px; }
-    .discount-badge { display: inline-block; background: linear-gradient(135deg, var(--gold), #d4b87a); color: white; padding: 12px 28px; border-radius: 8px; font-size: 20px; font-weight: 700; margin-bottom: 32px; box-shadow: 0 4px 16px rgba(201,169,110,0.3); }
+    .discount-badge { display: inline-block; background: linear-gradient(135deg, var(--gold), #d4b87a); color: white; padding: 12px 28px; border-radius: 8px; font-size: 20px; font-weight: 700; margin-bottom: 12px; box-shadow: 0 4px 16px rgba(201,169,110,0.3); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; position: relative; }
+    .discount-badge:hover { transform: scale(1.04); box-shadow: 0 6px 20px rgba(201,169,110,0.4); }
+    .discount-badge:active { transform: scale(0.97); }
+    .copy-hint { display: block; font-size: 12px; color: var(--soft-text); margin-bottom: 28px; font-family: 'DM Sans', sans-serif; }
+    .copy-hint .copied { color: #2e7d32; font-weight: 600; display: none; }
+    .discount-badge.copied { background: linear-gradient(135deg, #2e7d32, #43a047); }
+    .discount-badge.copied + .copy-hint .copied { display: inline; }
+    .discount-badge.copied + .copy-hint .hint { display: none; }
 
     .what-next { max-width: 800px; margin: 0 auto; padding: 0 8% 60px; }
     .what-next h2 { font-family: 'EB Garamond', serif; font-size: 28px; color: var(--text, #2a2a27); margin-bottom: 32px; text-align: center; }
@@ -80,6 +87,15 @@
       .explore-links { grid-template-columns: 1fr; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Strona główna","item":"https://gitc0indonor.github.io/website/"},
+      {"@type":"ListItem","position":2,"name":"Dziękujemy za zapis","item":"https://gitc0indonor.github.io/website/dziekuje-za-zapis.html"}
+    ]
+  }
+  </script>
 <link rel="stylesheet" href="assets/css/cognivia-v2.css">
   <script defer data-domain="cognivia.eu" src="https://plausible.io/js/script.js"></script>
   <link rel="alternate" hreflang="pl" href="https://cognivia.eu/dziekuje-za-zapis.html">
@@ -101,7 +117,8 @@
     <span class="check-icon">🎉</span>
     <h1>Dziękujemy za zapis!</h1>
     <p>Jesteś na liście. Otrzymasz powiadomienie o premierze CogniCit jako jedna z pierwszych osób.</p>
-    <div class="discount-badge">🎁 Twój kod: COGNIVIA15 — 15% zniżki na premierę</div>
+    <div class="discount-badge" id="discountCode" title="Kliknij, aby skopiować">🎁 Twój kod: COGNIVIA15 — 15% zniżki na premierę</div>
+    <span class="copy-hint"><span class="hint">👆 Kliknij kod, aby skopiować do schowka</span><span class="copied">✅ Skopiowano do schowka!</span></span>
   </section>
 
   <section class="what-next">
@@ -199,5 +216,20 @@
     <p>© 2026 Cognivia · <a href="/polityka-prywatnosci.html">Polityka prywatności</a> · <a href="/regulamin.html">Regulamin</a> · <a href="/kontakt.html">Kontakt</a></p>
   </footer>
   <script src="js/web-vitals.js" defer></script>
+  <script>
+  document.getElementById('discountCode').addEventListener('click', function() {
+    var badge = this;
+    navigator.clipboard.writeText('COGNIVIA15').then(function() {
+      badge.classList.add('copied');
+      setTimeout(function() { badge.classList.remove('copied'); }, 3000);
+    }).catch(function() {
+      var t = document.createElement('textarea');
+      t.value = 'COGNIVIA15'; document.body.appendChild(t);
+      t.select(); document.execCommand('copy'); document.body.removeChild(t);
+      badge.classList.add('copied');
+      setTimeout(function() { badge.classList.remove('copied'); }, 3000);
+    });
+  });
+  </script>
 </body>
 </html>

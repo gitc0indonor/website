@@ -204,6 +204,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://gitc0indonor.github.io/website/skladniki-deep-dive.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://gitc0indonor.github.io/website/skladniki.html</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -409,6 +415,11 @@
   </url>
   <url>
     <loc>https://gitc0indonor.github.io/website/blog/poranne-nawyki-programisty.html</loc>
+  </url>
+  <url>
+    <loc>https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -544,6 +555,24 @@
   </url>
   <url>
     <loc>https://gitc0indonor.github.io/website/blog/suplementy-dla-mam.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gitc0indonor.github.io/website/blog/porownanie-cognicit-kawa.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gitc0indonor.github.io/website/blog/porownanie-cognicit-z-kawa.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gitc0indonor.github.io/website/blog/suplementy-a-odpornosc.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

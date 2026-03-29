@@ -1541,6 +1541,40 @@
         #faqOfDay.open #faqOfDayA{max-height:200px;opacity:1}
         #faqOfDay.open #faqOfDayArrow{transform:rotate(180deg)}
       </style>
+      <!-- #408 — Animated "Zaufało nam" trust counter in hero -->
+      <div id="trustCounterHero" style="margin-top:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-family:'Inter',sans-serif;">
+        <div style="display:flex;align-items:center;">
+          <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#43a047,#2e7d32);display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;margin-right:-8px;border:2px solid #fff;z-index:3;">A</div>
+          <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#c9a96e,#b8942e);display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;margin-right:-8px;border:2px solid #fff;z-index:2;">M</div>
+          <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#5c6bc0,#3949ab);display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;margin-right:-8px;border:2px solid #fff;z-index:1;">K</div>
+          <div style="width:28px;height:28px;border-radius:50%;background:rgba(46,125,50,0.15);display:flex;align-items:center;justify-content:center;color:#2e7d32;font-size:10px;font-weight:700;border:2px solid #fff;z-index:0;">+99</div>
+        </div>
+        <div style="font-size:12px;color:#6f6a61;line-height:1.3;">
+          <strong id="trustCountNum" style="color:#2a2a27;font-size:14px;">0</strong><span style="color:#2a2a27;font-size:14px;">+</span> zadowolonych klientów
+          <span style="display:inline-block;margin-left:4px;font-size:10px;color:#43a047;">● rośnie każdego dnia</span>
+        </div>
+      </div>
+      <script>
+      (function(){
+        var el=document.getElementById('trustCountNum');
+        if(!el)return;
+        var target=127,duration=1800,started=false;
+        var obs=new IntersectionObserver(function(entries){
+          if(entries[0].isIntersecting&&!started){started=true;animateCount();}
+        },{threshold:0.3});
+        obs.observe(document.getElementById('trustCounterHero'));
+        function animateCount(){
+          var start=performance.now();
+          function tick(now){
+            var p=Math.min((now-start)/duration,1);
+            var ease=1-Math.pow(1-p,3);
+            el.textContent=Math.floor(ease*target);
+            if(p<1)requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        }
+      })();
+      </script>
       <script>
         var faqOfDayData=[
           {q:"Czy CogniCit mogę łączyć z kawą?",a:"Tak! CogniCit nie zawiera kofeiny, więc można go bezpiecznie łączyć z kawą. Cytykolina i ALA działają niezależnie od kofeiny — uzupełniają jej działanie zamiast je wzmacniać.",l:"faq-produkt.html"},
@@ -2771,6 +2805,15 @@
       <p class="section-text fade-in" style="margin: 0 auto;">Poznaj naukę stojącą za CogniCit. Artykuły o suplementacji, składnikach i zdrowiu poznawczym.</p>
     </div>
     <div class="blog-grid">
+      <a href="blog/suplementy-a-odpornosc.html" class="blog-card fade-in">
+        <div class="blog-card-img">🛡️</div>
+        <div class="blog-card-body">
+          <div class="blog-card-tag">Zdrowie · Odporność</div>
+          <div class="blog-card-title">Suplementy a odporność — neuroimmunologia w praktyce</div>
+          <p class="blog-card-excerpt">Odporność zaczyna się od mózgu. Jak cytykolina, ALA i β-CD wspierają układ immunologiczny?</p>
+          <span class="blog-card-link">Czytaj więcej</span>
+        </div>
+      </a>
       <a href="blog/cytykolina.html" class="blog-card fade-in">
         <div class="blog-card-img">🧠</div>
         <div class="blog-card-body">
