@@ -771,6 +771,14 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 ---
 
-## Last Updated: 2026-03-29 (Power Cycle #83)
+## Last Updated: 2026-03-29 (Power Cycle #84)
+
+### 🆕 Power Cycle #84 Additions (2026-03-29 10:45 UTC)
+
+397. **[NEW] Add "Gwarancja satysfakcji — jak to działa?" explainer section to produkt.html** — Expand the existing 30-day guarantee mention into a dedicated visual section: 3-step process graphic (Kup → Przetestuj → Zwróć jeśli nie zadowolony), remove risk framing ("zero ryzyka"), customer testimonial quote about easy returns. Many visitors see "30-day guarantee" but don't trust it. Making it visual and concrete at the product page reduces perceived purchase risk. Estimated: 1.5 hours.
+
+398. **[NEW] Create "Porównanie CogniCit z kawą" blog post** — Target "nootropiki vs kawa", "zamiennik kawy na koncentrację" (high-volume Polish queries). Position CogniCit (cytykolina for sustained focus, ALA for mitochondrial energy, no caffeine crash, no jitters, no dependency) as a smarter alternative to coffee for mental performance. Include: mechanism comparison table, daily use scenario, FAQ section. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+399. **[NEW] Add structured FAQ schema (FAQPage JSON-LD) to faq-produkt.html** — The product FAQ page (719 lines of excellent content) currently has no FAQPage structured data markup. Adding JSON-LD FAQPage schema will enable Google rich results for FAQ snippets, driving significantly more organic clicks. Schema should cover the top 15-20 questions. Estimated: 45 minutes.
 
 ### ✅ Completed (this session)

@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-03-29 07:15 UTC (Cron Cycle #82)
+## Last Updated: 2026-03-29 10:45 UTC (Cron Cycle #83)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -129,6 +129,24 @@
 - IMP-384: "Napisz opinię" CTA on potwierdzenie.html
 
 See improvement_queue.md for full list (387 items, ~15 active).
+
+---
+
+## 📋 Recent Changes (Cycle #83)
+
+- ✅ IMP-384: Added "Napisz opinię" CTA button to potwierdzenie.html
+- ✅ IMP-387: Added "Gwarancja świeżości" badges to produkt.html buy section
+- ✅ IMP-391: Added "Jak to działa?" animated GIF to produkt.html
+- ✅ IMP-392: Added Google Search Console verification to index.html
+- ✅ IMP-393: Updated dziekuje-za-zapis.html with discount delivery
+- ✅ IMP-394: Added review widgets to landing pages
+- ✅ IMP-395: Created seasonal timing blog post
+- ✅ IMP-396: Added interactive quiz widget to index.html
+
+### Cycle #83 Added to Queue (397-399)
+- IMP-397: "Gwarancja satysfakcji — jak to działa?" explainer section on produkt.html
+- IMP-398: "Porównanie CogniCit z kawą" blog post (high-volume Polish SEO target)
+- IMP-399: FAQPage JSON-LD schema for faq-produkt.html (rich results enablement)
 
 ---
 
