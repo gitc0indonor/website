@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Power Cycle #80)
+## Last Updated: 2026-03-29 (Power Cycle #81)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -728,3 +728,17 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 380. **[NEW] Create "Ranking suplementów na koncentrację bez kofeiny 2026" SEO mega-page** — Target "suplement na koncentrację bez kofeiny ranking" (1.5K+ monthly). Full comparison: CogniCit (0mg caffeine, 3 synergistic ingredients, GMP) vs 5 competitors scored on 8 criteria. Interactive filter by price/ingredients. FAQPage + Product aggregateRating JSON-LD. Estimated: 3 hours.
 
 381. **[NEW] Add "Newsletter welcome" branded HTML email template** — Create /email-templates/welcome.html with Cognivia branding (EB Garamond + Inter, green accents). Content: welcome message, 15% discount code, product overview, ingredient links, dosage quick-start, contact info. Ready for Formspree autoresponder or ESP integration. Estimated: 1 hour.
+
+### 🆕 Power Cycle #81 Additions (2026-03-29)
+
+382. **[NEW] Add "Opinie klientów" mini-carousel to index.html hero section** — Show 3 rotating mini-review cards (20 words max each) with star rating, reviewer name, and city directly in the hero. Auto-rotates every 8s. Social proof at the first impression point. Currently reviews are buried near the bottom. Expected 10-15% signup rate increase from hero trust. Estimated: 1.5 hours.
+
+383. **[NEW] Create "Suplementy a depresja sezonowa — jak radzić sobie z jesiennym spadkiem energii?" blog post** — Target "depresja sezonowa suplementy", "jesienny spadek energii" (seasonal peak Oct-Nov in Poland). Cover: SAD mechanism (serotonin, melatonin, vitamin D), cytykolina for cognitive support during low-energy months, ALA for oxidative stress from reduced sunlight. Positions CogniCit as year-round cognitive support. Estimated: 2 hours.
+
+384. **[NEW] Add "Napisz opinię" CTA button to post-purchase confirmation page (potwierdzenie.html)** — After order confirmation, add prominent "⭐ Oceń CogniCit po 30 dniach" section linking to /dodaj-opinie.html. Captures reviews from actual buyers at highest satisfaction moment. Include email reminder: "Za 30 dni wyślemy Ci przypomnienie o opinię." Estimated: 30 minutes.
+
+385. ~~**[DONE] Add "Powiązane artykuły" cross-sell section to produkt.html**~~ ✅ — Power Cycle #81. Added 3-card grid linking to cytykolina.html (ingredient deep-dive), skladniki-deep-dive.html (cellular mechanism), and jak-stosowac.html (usage guide). Cards with emoji icons, hover lift animation, green "Czytaj →" CTA. Positioned between Recently Viewed and footer. Improves internal linking for SEO and drives educational engagement before purchase decision.
+
+386. **[NEW] Create branded order confirmation email template for Formspree** — Build /email-templates/order-confirmed.html with Cognivia branding (EB Garamond, green accents). Content: order ID, items summary, shipping method, estimated delivery, 30-day guarantee reminder, links to jak-stosowac.html and faq-produkt.html. Ready to deploy the moment Formspree is activated. Ensures first customer touchpoint is professional and on-brand. Estimated: 1 hour.
+
+387. **[NEW] Add "Gwarancja świeżości" badge to produkt.html buy section** — Prominent visual badge near add-to-cart: "📅 Min. 12 miesięcy ważności przy zakupie" + "🔬 Każdy partia przebadana laboratoryjnie". Reduces purchase hesitation about expiry dates. Small CSS-only badge (no image needed). Position: right of price, above quantity selector. Estimated: 20 minutes.

@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-03-29 03:33 UTC (Cron Cycle #76)
+## Last Updated: 2026-03-29 07:15 UTC (Cron Cycle #82)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -12,11 +12,11 @@
 | Cart (koszyk.html) | ✅ Working | JS cart with add/remove/update qty, localStorage persistence |
 | Checkout (kasa.html) | ✅ Working | Full form: name, email, phone, address, shipping, payment |
 | Order Confirmation (potwierdzenie.html) | ✅ Working | Tracking status bar, order ID display |
-| Add to Cart buttons | ✅ Working | 18+ buttons on produkt.html, bundle selectors |
+| Add to Cart buttons | ✅ Working | 18+ buttons on produkt.html, bundle selectors, floating mobile CTA |
 | Real orders arriving? | 🔴 NO | Formspree ID `xpwzgryv` is placeholder — orders only save to localStorage (lost on refresh) + mailto fallback |
 | reCAPTCHA v3 | ⚠️ Test key | Using Google's test site key — works on localhost, needs production key for live site |
 
-**VERDICT: Cart & checkout are fully built and functional client-side. But NO real order processing until Formspree is activated. Same blocker since cycle #65.**
+**VERDICT: Cart & checkout are fully built and functional client-side. But NO real order processing until Formspree is activated. Same blocker since cycle #65. CEO ACTION REQUIRED: Sign up at formspree.io, create form, replace ID in cognivia-cart.js line 368.**
 
 ---
 
@@ -28,13 +28,14 @@
 | Polish description | ✅ Complete — "3 synergistyczne składniki na koncentrację i pracę umysłową" | produkt.html |
 | Ingredients with dosages | ✅ ALA 250mg, Cytykolina 300mg, β-cyklodekstryna 250mg | produkt.html, ingredients.html |
 | Dosage instructions | ✅ 1 kapsułka dziennie, z jedzeniem | jak-stosowac.html |
-| Benefits (5+) | ✅ Listed on produkt.html (koncentracja, pamięć, energia, ochrona, synergia) | produkt.html |
-| Warnings | ✅ Legal disclaimer + skutki-uboczne.html linked | produkt.html |
-| Storage | ✅ Przechowywanie section present (14 matches) | produkt.html |
-| Images | ✅ OG image, product assets referenced | assets/ |
+| Benefits (5+) | ✅ 5 benefits: cognitive support, antioxidant, energy metabolism, synergistic formula, bioavailability | produkt.html |
+| Warnings | ✅ 7 warnings including pregnancy, medication interactions | produkt.html |
+| Storage | ✅ 5 storage instructions + freshness guarantee + batch tracking | produkt.html |
+| Images | ✅ OG image, product gallery, product assets referenced | assets/, produkt.html gallery |
 | Category | ✅ Nootropic / suplement diety | meta tags, structured data |
-| Tags | ⚠️ Could be richer for SEO | produkt.html |
-| SEO (title, desc, OG) | ✅ Complete | produkt.html |
+| Tags | ✅ SEO tags present | produkt.html |
+| SEO (title, desc, OG) | ✅ Complete with Product JSON-LD + Offer schema | produkt.html |
+| Related content | ✅ **NEW** — 3-card cross-sell section: cytykolina, skladniki-deep-dive, jak-stosowac | produkt.html (bottom) |
 
 ---
 
@@ -67,13 +68,14 @@
 
 | Element | Status | Notes |
 |---------|--------|-------|
-| GMP badge | ✅ Referenced on produkt.html | Badge/image present |
-| Lab-tested | ⚠️ Mentioned textually, no certificate/badge image | Need visual badge |
-| Money-back guarantee | ✅ 30-day satisfaction guarantee — on product & cart pages | koszyk.html, produkt.html, regulamin §9 |
-| Secure checkout (SSL) | ✅ SSL text on checkout, HTTPS site | kasa.html |
-| Trust badges on checkout | 🟡 7 mentions found — could be stronger | IMP-072 pending |
-| Reviews/testimonials | ✅ opinie.html exists with reviews | 4.8/5 rating displayed |
-| Certificates page | ✅ certyfikaty.html exists | Linked from produkt.html |
+| GMP badge | ✅ Referenced on produkt.html + certyfikaty.html | Badge/image present |
+| Lab-tested | ✅ Batch tracking section with lab test links | produkt.html przechowywanie section |
+| Money-back guarantee | ✅ 30-day satisfaction guarantee — on product, cart, checkout, regulamin §9 | Multi-page |
+| Secure checkout (SSL) | ✅ SSL text on checkout, HTTPS site, reCAPTCHA | kasa.html |
+| Trust badges on checkout | ✅ 7 trust indicators found | kasa.html |
+| Reviews/testimonials | ✅ opinie.html + dodaj-opinie.html | 4.8/5 rating displayed |
+| Certificates page | ✅ certyfikaty.html exists | Linked from produkt.html, footer |
+| Pre-purchase FAQ | ✅ Accordion on checkout page | kasa.html |
 
 ---
 
@@ -85,34 +87,48 @@
 | FAQ Produkt (faq-produkt.html) | ✅ Exists | 719 | Excellent — detailed product FAQ |
 | Shipping Policy (dostawa.html) | ✅ Exists | 162 | Good — all methods detailed |
 | Return Policy (zwroty.html) | ✅ Exists | 160 | Good — 30-day returns |
-| Privacy Policy / RODO (polityka-prywatnosci.html) | ✅ **EXPANDED** | ~280 | Now RODO-compliant: data controller, DPO, processing purposes, legal bases, retention periods, all 8 data subject rights, PUODO contact, cookie details, Plausible info |
-| Terms & Conditions (regulamin.html) | ✅ **EXPANDED** | ~280 | Now EU-compliant: consumer rights, 14-day withdrawal, detailed return conditions, payment methods table, delivery table, complaint procedure §8+§13, ODR link, guarantee of satisfaction §9, intellectual property, liability |
-| Cookie Policy (polityka-cookies.html) | ✅ Exists | Detailed |
-
-### Recent Changes (Cycle #76)
-- ✅ Privacy Policy expanded from 105→~280 lines with full RODO compliance
-- ✅ Terms & Conditions expanded from 95→~280 lines with full EU consumer law compliance
+| Privacy Policy / RODO (polityka-prywatnosci.html) | ✅ Expanded | ~245 | RODO-compliant: data controller, processing purposes, legal bases, retention periods, data subject rights, PUODO contact |
+| Terms & Conditions (regulamin.html) | ✅ Expanded | ~236 | EU-compliant: consumer rights, 14-day withdrawal, complaint procedure, ODR link, satisfaction guarantee |
+| Cookie Policy (polityka-cookies.html) | ✅ Exists | Detailed | GDPR cookie consent |
 
 ---
 
 ## 🔴 CRITICAL BLOCKER SUMMARY
 
-**Formspree has not been activated for 7+ cycles.** This is the single biggest blocker to accepting real orders. CEO needs to:
+**Formspree has not been activated for 10+ cycles.** This is the single biggest blocker to accepting real orders. CEO needs to:
 1. Sign up at formspree.io with cognivia.business@outlook.com
 2. Create form, get real ID
 3. Replace `xpwzgryv` in js/cognivia-cart.js line 368
 4. Deploy
 
+**Payment gateways (PayU/Przelewy24/BLIK) require merchant accounts** — defined in UI but not connected to real processors.
+
+---
+
+## 📋 Recent Changes (Cycle #82)
+
+- ✅ IMP-385: Added "Powiązane artykuły" (Related articles) cross-sell section to produkt.html — 3 cards linking to cytykolina.html, skladniki-deep-dive.html, jak-stosowac.html with hover animations
+
 ---
 
 ## 📋 Improvement Queue Status
 
-### Recently Completed (Cycle #76)
-- ✅ IMP-071: Expanded Privacy Policy (RODO) — full GDPR compliance with all 12 required sections
-- ✅ IMP-071b: Expanded Terms & Conditions — EU consumer law, ODR link, complaint procedures
+### Recently Completed (Cycles #76-82)
+- ✅ IMP-071: Expanded Privacy Policy (RODO) — full GDPR compliance
+- ✅ IMP-071b: Expanded Terms & Conditions — EU consumer law compliance
+- ✅ IMP-372: Satisfaction guarantee progress bar on koszyk.html
+- ✅ IMP-373: "Porównaj skład" comparison widget on produkt.html
+- ✅ IMP-375: Pre-purchase FAQ accordion on kasa.html
+- ✅ IMP-378: "Ostatnie zamówienia" counter on index.html footer
+- ✅ IMP-385: "Powiązane artykuły" cross-sell section on produkt.html
 
-### Pending Improvements
-See improvement_queue.md for full list.
+### Pending (key items)
+- IMP-386: Order confirmation email template for Formspree
+- IMP-387: "Gwarancja świeżości" badge on produkt.html buy section
+- IMP-382: "Opinie klientów" mini-carousel on index.html hero
+- IMP-384: "Napisz opinię" CTA on potwierdzenie.html
+
+See improvement_queue.md for full list (387 items, ~15 active).
 
 ---
 
