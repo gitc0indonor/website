@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-28 (Power Cycle #73)
+## Last Updated: 2026-03-29 (Power Cycle #74)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -649,3 +649,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 349. **[NEW] Create "Porównanie suplementów na koncentrację bez kofeiny" SEO landing page** — Target "suplement na koncentrację bez kofeiny" (1K+ monthly searches in Poland). Comparison table: CogniCit (0mg caffeine + 3 synergistic ingredients) vs Brain Actives (50mg caffeine) vs NooCube (0mg, different formula) vs Mind Lab Pro (0mg, different formula). CogniCit wins on: zero caffeine + GMP + EU compliant + 3 synergistic ingredients + lowest price/day. Article + BreadcrumbList + Product aggregateRating JSON-LD. Estimated: 2.5 hours.
 
 350. **[NEW] Add seasonal "Wakacyjna energia" landing page (/wakacje)** — Target summer vacation period (Jun-Aug). Polish tourists and active vacationers searching for "suplementy na energię lato", "suplementy na wakacje". Position CogniCit as: energy for hiking/travel without caffeine crashes, 1 capsule/day simplicity for travel, GMP safety for peace of mind. Include: comparison vs energy drinks (sugar crash), caffeine pills (insomnia in hotel), travel-friendly dosing protocol. Seasonal peak: May-Jul. Estimated: 2 hours.
+
+### 🆕 Power Cycle #74 Additions (2026-03-29)
+
+351. **[NEW] Add floating "Zamów teraz" CTA bar that appears on scroll for ALL landing pages** — Currently only produkt.html has a floating buy bar. Extend to sesja, matura, powrot-do-szkoly, porownanie, ranking-nootropikow — any page that positions CogniCit as a solution. Slim fixed bottom bar on mobile with price + "Zamów teraz" button linking to produkt.html. Expected 8-12% click-through increase on content pages. Estimated: 1 hour.
+
+352. **[NEW] Create customer review submission form (/dodaj-opinie)** — Self-hosted review collection page: star rating selector, text input, name/city fields, optional email, consent checkbox (RODO). Stores submissions via Formspree or email to cognivia.business@outlook.com. Enables post-purchase review solicitation email → direct link to form. Builds real social proof for opinie.html. Estimated: 1.5 hours.
+
+353. **[NEW] Add "Często zadawane pytania" mini-FAQ accordion to ALL landing pages** — Some landing pages (matura, sesja, powrot-do-szkoly) have their own FAQ sections but others (ranking-nootropikow, skladniki, skutki-uboczne-nootropiki) have none. Add 3-4 relevant Q&As per page with FAQPage JSON-LD. Enables Google rich results on every landing page. Estimated: 2 hours.

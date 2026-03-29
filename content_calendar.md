@@ -1990,3 +1990,26 @@
 **Target platforms:** Google (SEO), grupy FB o zdrowiu seniorów, Wykop
 **Season:** Evergreen, peak autumn/winter (health awareness)
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-29 — Power Cycle #74)
+**Title:** Suplementy dla seniorów — bezpieczne alternatywy bez kofeiny po 50. roku życia
+**Target:** Polish seniors + adult children buying for parents, SEO for "suplementy dla seniorów bez kofeiny", "nootropiki po 50"
+**Word count:** 1500-2000
+**Keywords:** suplementy dla seniorów bez kofeiny, nootropiki po 50, suplementy pamięć senior bezpieczne, cytykolina senior, suplementy bez stymulantów
+
+**Outline:**
+1. **Wstęp** — Po 50. roku życia metabolizm zwalnia, w tym metabolizm kofeiny (półtrwanie wydłuża się 2×). Suplementy z kofeiną mogą szkodzić seniorom.
+2. **Dlaczego kofeina jest problematyczna u seniorów?** — Wolniejszy metabolizm, interakcje z lekami na nadciśnienie, zaburzenia snu, ryzyko arytmii. Tabela ryzyk.
+3. **Bezpieczne składniki dla mózgu po 50** — Cytykolina (acetylocholina, brak wpływu na ciśnienie), ALA (antyoksydant mitochondriów, Hager 2007), β-CD (biodostępność).
+4. **Porównanie: suplementy z kofeiną vs bez kofeiny** — Tabela: Brain Actives (50mg kofeiny — ryzyko!) vs CogniCit (0mg — bezpieczny). Kryteria: ciśnienie, sen, interakcje z lekami.
+5. **Protokół suplementacji dla seniorów** — 1 kapsułka rano z posiłkiem, konsultacja z lekarzem przy lekach, monitoring ciśnienia.
+6. **Co jeszcze robić?** — Ruch (30 min dziennie), dieta (omega-3, cholina), sen (7-8h), aktywność umysłowa.
+7. **Kiedy suplementacja nie wystarczy?** — Granica między suplementem a pomocą lekarską. Odpowiedzialna komunikacja.
+8. **Podsumowanie** — Zdrowy mózg po 50 = bezpieczna suplementacja + zdrowe nawyki. Zero kofeiny, zero ryzyka.
+
+**CTA:** Zamów CogniCit — bezpieczny suplement dla seniorów, 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-seniorow-50-plus.html, blog/suplementy-a-kofeina.html, faq-produkt.html, skutki-uboczne.html, nauka.html
+**SEO angle:** Growing aging population in Poland. "Suplementy dla seniorów" = 1K+ monthly searches. Positions CogniCit as the safe, caffeine-free choice for 50+ adults.
+**Status:** Outline ready, needs writing
