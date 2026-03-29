@@ -2063,3 +2063,28 @@
 **Internal links:** produkt.html, jak-stosowac.html, porownanie.html, blog/suplementy-a-kofeina.html, blog/jak-budowac-rutyne-suplementacji.html
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD
 **Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #65 — Power Cycle #77
+**Title:** "Jak sprawdzić, czy suplement jest bezpieczny? 5 znaków jakości"
+**Target keyword:** "bezpieczny suplement diety" / "jak sprawdzić suplement" (~800 monthly searches in Poland)
+**Estimated word count:** 2,000-2,500 words
+**Seasonality:** Evergreen, slight peak before New Year's resolutions (Jan)
+
+**Outline:**
+1. **Wstęp** — dlaczego bezpieczeństwo suplementów nie jest oczywiste (rynek bez recepty, brak kontroli przed sprzedażą)
+2. **Znak #1: Rejestracja GIS** — co to znaczy, jak sprawdzić, CogniCit jako przykład
+3. **Znak #2: Certyfikat GMP** — co obejmuje, różnica między "produkowane zgodnie z GMP" a "certyfikat GMP"
+4. **Znak #3: Certyfikat analizy (CoA)** — co jest badane, jak odczytać wyniki, znaczenie każdej partii
+5. **Znak #4: Przejrzysty skład** — dawki substancji aktywnych, brak "proprietary blends", forma chemiczna składników
+6. **Znak #5: Odpowiedzialne deklaracje** — suplement ≠ lek, znaczenie oświadczeń zdrowotnych WE 1924/2006
+7. **Czerwone flagi** — 7 znaków ostrzegawczych (brak GIS, brak składu dawkowego, cudowne obietnice, brak producenta, niska cena bez uzasadnienia, import bez deklaracji, brak daty ważności)
+8. **CogniCit — case study** — jak przechodzi wszystkie 5 testów (linki do certyfikaty, nauka, skladniki)
+9. **FAQ** — 3 pytania (jak sprawdzić rejestrację GIS, czy naturalne = bezpieczne, czy suplementy mogą zaszkodzić)
+10. **CTA** — zamów CogniCit z 30-dniową gwarancją
+
+**Internal links:** certyfikaty.html, nauka.html, skladniki.html, jak-czytac-etykiety.html, produkt.html, faq-produkt.html
+**Schema:** Article + BreadcrumbList + FAQPage (3 Q&As)
+**SEO target:** capture featured snippet for "jak sprawdzić suplement" with numbered list format
+

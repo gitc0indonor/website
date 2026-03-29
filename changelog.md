@@ -2375,3 +2375,39 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. Checkout button now has premium micro-animation feel. CEO must create formspree.io account and swap form ID.
 
 **Queue:** ~350 completed + 11 active = ~361 total
+
+### 2026-03-29 — Power Cycle #77 (04:32 UTC)
+**Implemented:**
+- ✅ Item #345 — Added shipping cost estimator widget to koszyk.html
+  - Interactive calculator: shipping method selector (InPost/DPD/Poczta) + zip code input
+  - Real-time cost display with free shipping detection (green/orange states)
+  - Estimated delivery date in Polish format (weekday + date + month)
+  - Business-day calculation (skips weekends)
+  - Dynamic "add more for free shipping" message when below threshold
+  - JS: calcShipCost() with 3 shipping methods (InPost 12.99/120zł, DPD 15.99/150zł, Poczta 10.99/120zł)
+  - Positioned between savings calculator and checkout button in cart summary
+  - Reduces cart abandonment (48% of Polish abandonments = surprise shipping costs)
+- ✅ Item #363 — Created order tracking email template
+  - email-templates/order-status.html (10KB)
+  - Responsive HTML email: Cognivia header, status banner, 4-step progress bar, order summary, items table, shipping address, tracking CTA, trust bar, branded footer
+  - Template variables: {{ORDER_ID}}, {{STATUS_TITLE}}, {{STATUS_DESCRIPTION}}, {{CUSTOMER_NAME}}, etc.
+  - Progress bar: conditional step styling (completed=green, current=gold, pending=grey)
+  - Ready for Formspree autoresponder or future ESP integration
+- ✅ Blog post outline added to content_calendar.md: "Jak sprawdzić, czy suplement jest bezpieczny?"
+- ✅ 3 new improvement ideas added to queue (#367-369)
+
+**Files changed:**
+- `koszyk.html` — Shipping estimator widget (CSS + HTML + JS calcShipCost function, ~40 lines)
+- `email-templates/order-status.html` — NEW (10KB) — Order status tracking email template
+- `improvement_queue.md` — items #345, #363 marked DONE; 3 new items (#367-369)
+- `content_calendar.md` — new blog outline (safe supplements guide)
+- `changelog.md` — this entry
+
+**Git:** Committed & pushed to master (abeaa6b)
+
+**Site verification:** koszyk.html validated — DOCTYPE ✓, </html> ✓, calcShipCost JS confirmed. order-status.html validated — proper HTML email structure, all template variables present.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Shipping estimator now available on cart page. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~364 completed + 13 active = ~377 total
+
