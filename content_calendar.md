@@ -2694,3 +2694,103 @@
 **SEO angle:** Zero Polish content connecting nootropics to post-stress brain recovery. Mental health + burnout awareness is at all-time high in Poland. Emotional resonance content with scientific backing.
 **Target platforms:** Google (SEO), grupy FB o zdrowiu psychicznym, LinkedIn, Wykop
 **Status:** Outline ready, needs writing
+
+---
+
+### #90 — "Ranking suplementów na koncentrację 2026 — kompletny przewodnik"
+**Target keyword:** "najlepszy suplement na koncentrację ranking 2026" / "suplementy na koncentrację ranking" (5K+ monthly, highest-volume target keyword in Polish nootropic space)
+**Publish date:** April 2026 (Q2 refresh)
+**Word count:** ~3000
+**Outline:**
+1. **Wstęp** — Ranking suplementów na koncentrację 2026. Metodologia oceny: 10 kryteriów (przejrzystość składu, dawki, GMP, EU compliance, cena/dzień, kofeina, trzecia strona testująca, gwarancja, forma składników, opinie).
+2. **Top 8 suplementów** — CogniCit vs Brain Actives vs NooCube vs Mind Lab Pro vs Neomax vs Alpha Brain vs cholina solo vs multi-nootropik. Każda ocena: składniki, dawki, cena/dzień, certyfikaty, wady/zalety.
+3. **Tabela porównawcza** — 10 kryteriów × 8 produktów, zielone ✓ / czerwone ✗.
+4. **Cena za porcję** — Interaktywny wykres słupkowy (CogniCit 2,63 zł vs reszta 4-8 zł).
+5. **Dlaczego CogniCit wygrywa** — 6 kart: synergia, przejrzystość, badania, certyfikaty, β-CD, polska firma.
+6. **Checklist kupującego** — 7 pytań przed zakupem suplementu na koncentrację.
+7. **Gdzie kupić?** — Dostępność (Allegro, apteki, strony producentów). CogniCit = tylko cognivia.eu.
+8. **Podsumowanie** — Rekomendacja + link do produktu.
+
+**Internal links:** produkt.html, porownanie.html, nauka.html, skladniki.html, faq-produkt.html
+**Schema:** Article + BreadcrumbList + FAQPage + Product aggregateRating JSON-LD
+**SEO angle:** ULTIMATE Polish-language authority page for "suplement na koncentrację ranking". Designed to outrank zop2021.pl, fitrepublic.pl, and other affiliate sites. Evergreen with quarterly refresh.
+**Status:** Outline ready, needs writing
+
+---
+
+### Blog Post Outline #91 — Power Cycle #103 (Added 2026-03-30)
+**Title:** "Suplementy na wiosenne przesilenie — jak wrócić do formy po zimie?"
+**Target keyword:** "przesilenie wiosenne suplementy" / "zmęczenie wiosna suplementy" / "wiosenne zmęczenie suplement" (~500 monthly searches, seasonal peak March-April in Poland)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** STRONG seasonal — March-April peak, publish late February for indexing
+
+**Outline:**
+1. **Wstęp** — Wiosna powinna dawać energię, ale wiele osób czuje się gorzej niż zimą. Dlaczego? Przesilenie wiosenne to realne zjawisko biologiczne.
+2. **Czym jest przesilenie wiosenne?** — Mechanizm: zmiana rytmu dobowego (dłuższe dni → przestawianie zegara biologicznego), wahania ciśnienia atmosferycznego, spadek odporności po zimie. Statystyki: 1 na 4 Polaków zgłasza wiosenne zmęczenie (badania CBOS).
+3. **Jak wiosna wpływa na mózg?** — Kortyzol waha się podczas zmian sezonowych. Przestawianie zegara (marzec) = deprywacja snu = spadek acetylocholiny. Wahania temperatury = więcej wolnych rodników (stres oksydacyjny).
+4. **Cytykolina — reset koncentracji na wiosnę** — 300 mg CDP-choliny = odbudowa puli acetylocholiny po zimowym spowolnieniu. 233 publikacje PubMed. Mechanizm: więcej ACh = lepsza adaptacja do nowego rytmu dnia.
+5. **ALA — ochrona mitochondriów podczas przesilenia** — Wahania temperatury i ciśnienia generują stres oksydacyjny. ALA regeneruje glutation, chroni mitochondria. Hager et al. 2007. Podwójna rozpuszczalność = unikalna ochrona.
+6. **Protokół "wiosenny reset"** — 7:00 ☀️ światło słoneczne (15 min) → 7:30 💊 CogniCit ze śniadaniem → 8:00 🚶 spacer na powietrzu → 12:00 🥗 lekki lunch (sezonowe warzywa) → 22:00 😴 sen 7-8h. 5-dniowy protokół adaptacji.
+7. **5 oznak, że potrzebujesz wiosennego resetu** — (a) Budzisz się zmęczony mimo 7h snu, (b) Kawa nie pomaga, (c) Masz problem z koncentracją w pracy, (d) Jesteś drażliwy/a, (e) Czujesz "mgłę mózgową". Checklist do samodzielnej oceny.
+8. **Porównanie: CogniCit vs inne rozwiązania na wiosenne zmęczenie** — Tabela: CogniCit (trwała koncentracja, 0 mg kofeiny, 3 synergistyczne składniki) vs kofeina (tymczasowy boost, pogarsza adaptację) vs energetyki (cukier, crash) vs multiwitamina (brak mechanizmu nootropowego).
+9. **Co jeszcze robić?** — Ruch na powietrzu (30 min/dzień), dieta sezonowa (szczypiorek, rzodkiewka, natka — źródła choliny i antyoksydantów), cyfrowy detoks wieczorem, sen o regularnych porach.
+10. **Podsumowanie** — "Wiosna to najlepszy moment na reset. CogniCit pomaga mózgowi nadrobić zimowe zaległości."
+
+**CTA:** Zamów CogniCit — wiosenny reset koncentracji, 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-a-stres-oksydacyjny.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html, nauka.html, blog/suplementy-a-odpornosc.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy przesilenie wiosenne jest prawdziwe?", "Jakie suplementy na wiosenne zmęczenie?", "Czy CogniCit pomaga na wiosenną chandrę?", "Kiedy zacząć suplementację?", "Czy łączyć z witaminą D?")
+**SEO angle:** Zero Polish content specifically targeting supplements + spring fatigue. First-mover advantage on a seasonal topic with predictable annual traffic. Emotional hook: "wiosna powinna dawać energię, ale czujesz się gorzej" = high engagement. Featured snippet potential for "przesilenie wiosenne co brać".
+**Target platforms:** Google (SEO), grupy FB o zdrowiu, Wykop, Pinterest (spring wellness)
+**Season:** March-April strong peak. Publish mid-February for indexing. Refresh annually.
+**Status:** Outline ready, needs writing
+
+---
+
+### Blog Post Outline #92 — Power Cycle #104 (Added 2026-03-30)
+**Title:** "Suplementy a praca zdalna — jak chronić mózg przed cyfrowym zmęczeniem?"
+**Target keyword:** "cyfrowe zmęczenie suplementy" / "praca zdalna zmęczenie mózg" / "suplementy home office" (~700+ monthly, growing post-pandemic)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Evergreen, peak Sep (back to work) and Jan (new year productivity goals)
+
+**Outline:**
+1. **Wstęp** — 2.5 mln Polaków pracuje zdalnie. Ekrany 8-10h dziennie. Co to robi z mózgiem?
+2. **Mechanizm cyfrowego zmęczenia** — Niebieskie światło → supresja melatoniny, ciągły context switching → spadek acetylocholiny, siedzący tryb → słabszy przepływ krwi do mózgu. Prosta infografika.
+3. **Kortyzol pracownika zdalnego** — Brak granic praca/dom = chroniczny stres. Decision fatigue (sam o wszystkim decydujesz). Brak accountability = więcej energii na samokontrolę.
+4. **Cytykolina — paliwo dla zdalnego mózgu** — 300 mg CDP-cholina = prekursor acetylocholiny (neuroprzekaźnik focusu). Mechanizm: więcej ACh = lepsza organizacja, planowanie, koncentracja przy home office. 233 publikacje PubMed.
+5. **ALA — ochrona przed stresem oksydacyjnym ekranów** — Długotrwała praca przy ekranie generuje wolne rodniki → uszkodzenie mitochondriów. ALA regeneruje glutation, chroni neurony. Hager et al. 2007.
+6. **β-CD — dlaczego wchłanianie ma znaczenie przy pracy zdalnej** — Stres + nieregularne posiłki = gorsze wchłanianie. β-CD chroni składniki → więcej dociera do mózgu.
+7. **Protokół "zdalny dzień" z CogniCit** — 7:00 ☀️ światło (15 min) → 7:30 💊 CogniCit ze śniadaniem → 9:00 deep work block → 12:00 spacer + ekran-free lunch → 14:00 zadania administracyjne → 18:00 shutdown ritual. Zero kofeiny = zero crashu wieczornego.
+8. **5 praktycznych tipów dla zdalnych pracowników** — (a) Stałe godziny pracy, (b) Jeden deep work block dziennie, (c) CogniCit jako poranny anchor, (d) 20-20-20 rule (co 20 min patrz 20 stóp w dal przez 20 sekund), (e) Wieczorny shutdown ritual.
+9. **Porównanie: CogniCit vs inne rozwiązania** — Tabela: CogniCit (trwała koncentracja, 0 mg kofeiny) vs kofeina (crash o 15:00) vs energetyki (cukier, lęk) vs modafinil (recepta, ryzyko).
+10. **Podsumowanie** — "Praca zdalna to wolność, ale mózg potrzebuje wsparcia, by z niej korzystać."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-programistow.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html, blog/chroniczne-zmeczenie-umyslowe.html, porownanie.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy ekran niszczy mózg?", "Jakie suplementy na zmęczenie oczu?", "Czy CogniCit pomaga przy pracy zdalnej?", "Czy mogę łączyć z kawą?", "Kiedy zacząć suplementację?")
+**SEO angle:** "Praca zdalna" + "zmęczenie" = trending Polish queries post-pandemic. Zero Polish content connecting nootropics to remote work fatigue. First-mover advantage. Positions CogniCit as the remote worker's daily cognitive shield.
+**Target platforms:** Google (SEO), LinkedIn (remote work groups), Wykop, grupy FB o pracy zdalnej
+**Status:** Outline ready, needs writing
+
+### Blog Post Outline #93 — Power Cycle #105 (Added 2026-03-30)
+**Title:** "Wiosenne przesilenie — dlaczego czujesz się zmęczony, gdy robi się cieplej?"
+**Target keyword:** "przesilenie wiosenne zmęczenie" / "zmęczenie wiosna suplementy" / "wiosenna chandra" (~600+ monthly, seasonal peak March-April)
+**Estimated word count:** 1,600-2,000 words
+**Seasonality:** March-April — publish NOW for immediate traffic (currently peak search season in Poland)
+
+**Outline:**
+1. **Wstęp** — "Słońce świeci, dzień się wydłuża, a Ty czujesz się jak po maratonie?" Paradox: everyone expects more energy in spring, but many feel MORE tired. Why?
+2. **Co to jest przesilenie wiosenne?** — Astronomical explanation (equal day/night → longer days), biological impact: circadian rhythm recalibration, melatonin schedule shift, cortisol adjustment period (2-4 weeks).
+3. **Dlaczego mózg potrzebuje czasu na adaptację?** — Pineal gland takes 2-3 weeks to adjust melatonin production to new daylight hours. During transition: brain fog, irritability, poor sleep quality, afternoon energy dips. Hormonal cascade: more light → less melatonin → temporary cortisol dysregulation.
+4. **3 składniki CogniCit a wiosenna adaptacja** — (a) Cytykolina: supports acetylcholine production during circadian adjustment — brain needs MORE neurotransmitter resources when sleep is disrupted. (b) ALA: oxidative stress from cortisol spikes during seasonal transition → ALA regenerates glutathione. (c) β-CD: stress impairs nutrient absorption → β-CD ensures ingredients reach the brain even during adaptation.
+5. **5 praktycznych tipów na przesilenie wiosenne** — (a) Stopniowo przesuwaj budzik (15 min/3 dni), (b) Poranna ekspozycja na światło 15 min, (c) CogniCit ze śniadaniem (poranny anchor), (d) Unikaj kofeiny po 14:00 (pogarsza adaptację snu), (e) Lekki ruch na świeżym powietrzu.
+6. **Porównanie: CogniCit vs kofeina na wiosenne zmęczenie** — Tabela: kofeina maskuje problem (adrenalina spike → crash), CogniCit wspiera adaptację (acetylcholine → naturalna energia). Zero kofeiny = nie zaburza i tak już rozregulowanego cyklu snu.
+7. **Kiedy przesilenie mija i czego się spodziewać?** — Timeline: dni 1-7 (najtrudniejsze), dni 8-14 (adaptacja), dni 15-30 (ustabilizowanie). CogniCit jako 30-dniowy wsparcie przez cały okres przejściowy.
+8. **Podsumowanie** — "Przesilenie wiosenne to nie choroba — to normalny proces adaptacji. Wspieraj mózg zamiast go stymulować."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/nootropiki-a-sen.html, blog/suplementy-a-stres-oksydacyjny.html, jak-stosowac.html, blog/poranne-nawyki-programisty.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (4 Q&As: "Czy przesilenie wiosenne jest normalne?", "Jakie suplementy na wiosenne zmęczenie?", "Czy CogniCit pomaga przy przesileniu?", "Kiedy przesilenie wiosenne mija?")
+**SEO angle:** Seasonal content for March-April — zero Polish content connecting nootropics to spring fatigue specifically. Time-sensitive: publish this week for 4-week traffic window.
+**Target platforms:** Google (seasonal SEO), Facebook (health/wellness groups), Instagram (seasonal content), Wykop
+**Status:** Outline ready, needs writing — PRIORITY (seasonal timing)
+

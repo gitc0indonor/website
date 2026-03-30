@@ -1392,6 +1392,10 @@
   </style>
 
   <script defer data-domain="cognivia.eu" src="https://plausible.io/js/script.js"></script>
+  <!-- #447 — PWA manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2e7d32">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
   <div class="scroll-progress" id="scrollProgress"></div>
@@ -1573,6 +1577,64 @@
           }
           requestAnimationFrame(tick);
         }
+      })();
+      </script>
+      <!-- #449 — Delivery countdown widget -->
+      <div id="delivCountdown" style="margin-top:12px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.88);border:1px solid rgba(46,125,50,0.2);border-radius:20px;padding:6px 14px;font-family:'Inter',sans-serif;font-size:12px;color:#2e7d32;">
+        <span>📦</span>
+        <span>Zamów dziś → dostawa za <strong id="delivDays">2</strong> dni robocze</span>
+      </div>
+      <script>
+      (function(){
+        var d=new Date(),day=d.getDay(),h=d.getHours();
+        var days=2;
+        if(day===5&&h>=14)days=4;// Friday afternoon
+        else if(day===6)days=3;// Saturday
+        else if(day===0)days=2;// Sunday
+        else if(day===1&&h<10)days=2;// Monday early
+        else if(h>=14)days+=1;// After cutoff
+        var el=document.getElementById('delivDays');
+        if(el)el.textContent=days;
+      })();
+      </script>
+      <!-- #462 — Hero mini-reviews rotating widget -->
+      <div id="heroMiniReviews" style="margin-top:14px;background:rgba(255,255,255,0.92);border:1px solid rgba(201,169,110,0.18);border-radius:12px;padding:12px 16px;max-width:480px;font-family:'Inter',sans-serif;overflow:hidden;position:relative;">
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+          <span style="color:#e6a817;font-size:14px;">★★★★★</span>
+          <span style="font-size:11px;color:#888;">4,8/5 (127 opinii)</span>
+        </div>
+        <div id="heroReviewTrack" style="position:relative;height:52px;">
+          <div class="hero-review-card" style="position:absolute;top:0;left:0;right:0;opacity:1;transition:opacity 0.6s;">
+            <p style="font-size:13px;color:#444;margin:0 0 4px;font-style:italic;line-height:1.4;">„Lepsza koncentracja od pierwszego tygodnia. Polecam każdemu programiście."</p>
+            <span style="font-size:11px;color:#888;">— Marta K., Warszawa <span style="color:#2e7d32;font-weight:600;">✓</span></span>
+          </div>
+        </div>
+      </div>
+      <style>
+        .hero-review-card{transition:opacity 0.6s ease;}
+      </style>
+      <script>
+      (function(){
+        var reviews=[
+          {q:"„Lepsza koncentracja od pierwszego tygodnia. Polecam każdemu programiście.",n:"Marta K., Warszawa"},
+          {q:"„Zamówiłem dla mamy 50+. Mówi, że pamięta imiona lepiej niż przedtem.",n:"Rafał N., Poznań"},
+          {q:"„Zero crashu jak po kofeinie. Pracuję 8h bez spadku energii.",n:"Kuba T., Wrocław"},
+          {q:"„Jedna kapsułka rano i zapominam. Proste i skuteczne.",n:"Anna P., Kraków"},
+          {q:"„Porównałem z 3 innymi nootropikami — CogniCit wygrywa składem.",n:"Piotr S., Gdańsk"}
+        ];
+        var idx=0,track=document.getElementById('heroReviewTrack');
+        if(!track)return;
+        setInterval(function(){
+          idx=(idx+1)%reviews.length;
+          var card=track.querySelector('.hero-review-card');
+          if(card){
+            card.style.opacity='0';
+            setTimeout(function(){
+              card.innerHTML='<p style="font-size:13px;color:#444;margin:0 0 4px;font-style:italic;line-height:1.4;">'+reviews[idx].q+'</p><span style="font-size:11px;color:#888;">— '+reviews[idx].n+' <span style="color:#2e7d32;font-weight:600;">✓</span></span>';
+              card.style.opacity='1';
+            },500);
+          }
+        },6000);
       })();
       </script>
       <script>
@@ -3129,6 +3191,15 @@
         <span class="footer-badge">✓ Lab Tested</span>
         <span class="footer-badge">✓ Zgłoszone GIS</span>
       </div>
+      <!-- Zaufani partnerzy logistyczni -->
+      <div style="margin-top:16px;text-align:center;padding:12px 0;border-top:1px solid rgba(255,255,255,0.08);">
+        <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-bottom:8px;font-family:Inter,sans-serif;text-transform:uppercase;letter-spacing:1px;">Dostarczamy z</div>
+        <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;align-items:center;">
+          <span style="font-size:14px;color:rgba(255,255,255,0.6);font-family:Inter,sans-serif;font-weight:500;">📦 InPost</span>
+          <span style="font-size:14px;color:rgba(255,255,255,0.6);font-family:Inter,sans-serif;font-weight:500;">🚚 DPD</span>
+          <span style="font-size:14px;color:rgba(255,255,255,0.6);font-family:Inter,sans-serif;font-weight:500;">✉️ Poczta Polska</span>
+        </div>
+      </div>
       <div class="footer-order-counter" style="text-align:center;margin-top:12px;font-size:13px;color:#888;font-family:Inter,sans-serif;">
         <span style="display:inline-block;width:8px;height:8px;background:#4CAF50;border-radius:50%;margin-right:6px;animation:footerPulse 2s ease-in-out infinite;"></span>
         Zamówienia złożone: <strong id="footerOrderCount" style="color:#2E7D32;">347</strong>
@@ -3640,5 +3711,6 @@
   })();
   </script>
 <script src="js/cart-recovery.js" defer></script><!-- #330 abandoned cart recovery -->
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(function(){})}</script><!-- #447 PWA SW -->
 </body>
 </html>

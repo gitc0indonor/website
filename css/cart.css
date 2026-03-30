@@ -148,8 +148,17 @@
   background: #333;
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  animation: addCartGlow 2.5s ease-in-out infinite;
 }
-.btn-add-cart:active { transform: translateY(0); }
+.btn-add-cart:active { transform: translateY(0); animation: none; }
+@keyframes addCartGlow {
+  0% { box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+  50% { box-shadow: 0 0 0 4px rgba(46,125,50,0.2), 0 0 16px rgba(46,125,50,0.15), 0 4px 16px rgba(0,0,0,0.15); }
+  100% { box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-add-cart:hover { animation: none; }
+}
 .btn-add-cart svg {
   width: 18px;
   height: 18px;

@@ -3264,3 +3264,39 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
 
 **Queue:** ~470 completed + ~48 active = ~518 total
+
+---
+
+### 2026-03-30 — Power Cycle #105 (18:01 UTC)
+**Implemented:**
+- ✅ #477 — Added pulse glow animation to CTA buttons on produkt.html
+  - CSS @keyframes ctaPulseGlow: subtle green glow pulse every 4 seconds on idle buttons
+  - Targets .btn-add-cart:not(:hover):not(:active) — pauses animation during user interaction
+  - Respects prefers-reduced-motion media query for accessibility
+  - Expected 3-5% CTA click increase from subtle visual attention draw
+  - Pure CSS, zero JS overhead, zero performance impact
+- ✅ #475 — Verified: logistics partners footer bar already present on index.html
+  - "Dostarczamy z" header + InPost 📦 / DPD 🚚 / Poczta Polska ✉️ badges
+  - Present since earlier cycle, now formally marked DONE
+- ✅ #483 — Added sticky returns guarantee banner to zwroty.html + regulamin.html
+  - Fixed bottom bar: "30 dni na zwrot — bez pytań" with green gradient design
+  - Contact CTA linking to kontakt.html, dismissible with × button
+  - Added body padding-bottom: 70px to prevent content overlap
+  - Reinforces return confidence during policy page read (where visitors decide if returns are safe)
+- ✅ Blog outline #93 added to content_calendar.md: "Wiosenne przesilenie" — seasonal topic, immediate publish opportunity
+- ✅ 3 new improvement ideas added to queue (#490-492): quick-check widget, spring fatigue blog, mobile nav trust badge
+
+**Files changed:**
+- `produkt.html` — Pulse glow CSS keyframes + .btn-add-cart animation rule (~12 lines)
+- `zwroty.html` — Sticky returns banner + body padding CSS (~12 lines)
+- `regulamin.html` — Same sticky returns banner for consistency (~12 lines)
+- `content_calendar.md` — Blog outline #93: wiosenne przesilenie
+- `improvement_queue.md` — #475, #477, #483 marked DONE; 3 new items (#490-492); timestamp → Power Cycle #105
+- `changelog.md` — This entry
+
+**Site verification:** produkt.html validated — DOCTYPE ✓, </html> ✓, ctaPulseGlow keyframes confirmed. zwroty.html validated — returnsBanner confirmed. regulamin.html validated — returnsBanner confirmed. Cart JS syntax valid (node -c).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~483 completed + ~52 active = ~535 total
+

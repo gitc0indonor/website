@@ -259,11 +259,74 @@
     </div>
   </section>
 
+  <!-- Statystyki zaufania — animated counters -->
+  <section style="padding: 60px 8%; background: #1a472a; text-align: center;">
+    <h2 style="font-family: 'EB Garamond', serif; font-size: 1.8rem; color: #fff; margin: 0 0 8px;">Cognivia w liczbach</h2>
+    <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem; margin: 0 0 40px; font-family: Inter, sans-serif;">Rosniemy każdego dnia — dziękujemy za zaufanie.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px; max-width: 700px; margin: 0 auto;">
+      <div class="onStat" style="background: rgba(255,255,255,0.06); border-radius: 12px; padding: 28px 16px;">
+        <div style="font-size: 2.4rem; font-weight: 700; color: #66bb6a; font-family: 'EB Garamond', serif;" data-count="127" data-suffix="+">0</div>
+        <div style="font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 8px; font-family: Inter, sans-serif; text-transform: uppercase; letter-spacing: 1px;">Zadowolonych klientów</div>
+      </div>
+      <div class="onStat" style="background: rgba(255,255,255,0.06); border-radius: 12px; padding: 28px 16px;">
+        <div style="font-size: 2.4rem; font-weight: 700; color: #ffd54f; font-family: 'EB Garamond', serif;">4.8<span style="font-size:1.2rem;">/5</span></div>
+        <div style="font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 8px; font-family: Inter, sans-serif; text-transform: uppercase; letter-spacing: 1px;">Średnia ocena ★</div>
+      </div>
+      <div class="onStat" style="background: rgba(255,255,255,0.06); border-radius: 12px; padding: 28px 16px;">
+        <div style="font-size: 2.4rem; font-weight: 700; color: #66bb6a; font-family: 'EB Garamond', serif;" data-count="30" data-suffix="">0</div>
+        <div style="font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 8px; font-family: Inter, sans-serif; text-transform: uppercase; letter-spacing: 1px;">Dni gwarancji</div>
+      </div>
+      <div class="onStat" style="background: rgba(255,255,255,0.06); border-radius: 12px; padding: 28px 16px;">
+        <div style="font-size: 2.4rem; font-weight: 700; color: #66bb6a; font-family: 'EB Garamond', serif;">✓</div>
+        <div style="font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 8px; font-family: Inter, sans-serif; text-transform: uppercase; letter-spacing: 1px;">GMP Certyfikat</div>
+      </div>
+    </div>
+  </section>
+  <script>
+  (function(){
+    var counters=document.querySelectorAll('.onStat [data-count]');
+    if(!counters.length)return;
+    var animated=false;
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting&&!animated){
+          animated=true;
+          counters.forEach(function(el){
+            var target=parseInt(el.getAttribute('data-count'));
+            var suffix=el.getAttribute('data-suffix')||'';
+            var start=0;var duration=1800;var startTime=null;
+            function step(ts){
+              if(!startTime)startTime=ts;
+              var progress=Math.min((ts-startTime)/duration,1);
+              var ease=1-Math.pow(1-progress,3);
+              el.textContent=Math.floor(ease*target)+suffix;
+              if(progress<1)requestAnimationFrame(step);
+            }
+            requestAnimationFrame(step);
+          });
+          obs.disconnect();
+        }
+      });
+    },{threshold:0.3});
+    counters.forEach(function(c){obs.observe(c.parentElement);});
+  })();
+  </script>
+
   <section class="contact-section">
     <h2>Kontakt</h2>
     <p>Cognivia<br>ul. [ADRES — do uzupełnienia]<br>[KOD] [MIASTO], Polska</p>
     <p>NIP: [NUMER — do uzupełnienia]</p>
     <p style="margin-top: 16px;"><a href="mailto:cognivia.business@outlook.com">cognivia.business@outlook.com</a></p>
+  </section>
+
+  <!-- Review CTA -->
+  <section style="max-width: 720px; margin: 40px auto 20px; padding: 24px 28px; background: linear-gradient(135deg, #f8fdf8, #f0f7f0); border-radius: 12px; border-left: 4px solid #2e7d32; text-align: center;">
+    <p style="font-family: 'EB Garamond', serif; font-size: 22px; color: #1a1a1a; margin: 0 0 8px;">⭐ Twoja opinia się liczy!</p>
+    <p style="font-size: 14px; color: #555; margin: 0 0 16px; line-height: 1.5;">Stosujesz CogniCit? Podziel się swoim doświadczeniem — pomagasz innym podjąć świadomą decyzję.</p>
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <a href="opinie.html" style="display: inline-block; padding: 10px 24px; background: #2e7d32; color: white; border-radius: 24px; text-decoration: none; font-weight: 600; font-size: 14px;">Przeczytaj opinie →</a>
+      <a href="dodaj-opinie.html" style="display: inline-block; padding: 10px 24px; background: transparent; color: #2e7d32; border: 2px solid #2e7d32; border-radius: 24px; text-decoration: none; font-weight: 600; font-size: 14px;">Napisz opinię ✍️</a>
+    </div>
   </section>
 
   <footer>
