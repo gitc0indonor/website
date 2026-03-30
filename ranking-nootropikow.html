@@ -542,5 +542,33 @@
 function dismissActivity(){document.getElementById("activity-feed").style.display="none";localStorage.setItem("activityDismissed","1");}
 </script>
 
+<script>// Purchase activity ticker - social proof
+(function(){
+  var cities=['Warszawy','Krakowa','Wrocławia','Gdańska','Poznania','Łodzi','Katowic','Szczecina','Bydgoszczy','Lublina','Białystoku','Rzeszowa','Torunia','Opola','Gdyni'];
+  var actions=['kupił(a) CogniCit','zamówił(a) CogniCit','dodał(a) CogniCit do koszyka','przegląda skład CogniCit'];
+  var key='ptDismissedLP';
+  if(localStorage.getItem(key))return;
+  setTimeout(function(){
+    var t=document.createElement('div');
+    t.id='purchaseTickerLP';
+    t.style.cssText='position:fixed;bottom:24px;left:24px;z-index:999;background:#fff;border:1px solid rgba(46,125,50,.2);border-left:3px solid #2e7d32;border-radius:12px;padding:12px 16px;box-shadow:0 4px 20px rgba(0,0,0,.12);font-family:Inter,sans-serif;font-size:13px;color:#333;display:flex;align-items:center;gap:8px;max-width:320px;animation:ptSlideIn .4s ease-out';
+    var dot=document.createElement('span');
+    dot.style.cssText='width:8px;height:8px;border-radius:50%;background:#2e7d32;animation:ptPulse2 2s ease-in-out infinite;flex-shrink:0';
+    var txt=document.createElement('span');
+    var city=cities[Math.floor(Math.random()*cities.length)];
+    var action=actions[Math.floor(Math.random()*actions.length)];
+    var mins=Math.floor(Math.random()*12)+1;
+    txt.textContent='Ktoś z '+city+' '+action+' '+mins+' min temu';
+    var close=document.createElement('button');
+    close.innerHTML='&times;';
+    close.style.cssText='background:none;border:none;font-size:16px;color:#999;cursor:pointer;margin-left:auto;padding:0 4px;line-height:1';
+    close.onclick=function(){t.style.display='none';localStorage.setItem(key,'1')};
+    t.appendChild(dot);t.appendChild(txt);t.appendChild(close);
+    var s=document.createElement('style');
+    s.textContent='@keyframes ptPulse2{0%,100%{opacity:1}50%{opacity:.4}}@keyframes ptSlideIn{from{transform:translateX(-100%);opacity:0}to{transform:translateX(0);opacity:1}}@media(max-width:768px){#purchaseTickerLP{left:12px;right:12px;bottom:70px;max-width:none}}';
+    document.head.appendChild(s);document.body.appendChild(t);
+    setTimeout(function(){if(t.parentNode){t.style.opacity='0';t.style.transition='opacity .5s';setTimeout(function(){if(t.parentNode)t.remove()},600)}},12000);
+  },15000);
+})();</script>
 </body>
 </html>

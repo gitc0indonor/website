@@ -67,6 +67,8 @@ const CogniviaCart = {
     }
     this.saveCart(cart);
     this.showNotification(`${product.name} dodano do koszyka`);
+    // GA4: add_to_cart event
+    try { if (window.CogniviaAnalytics) CogniviaAnalytics.addToCart(productId, qty, product.price); } catch(e) {}
     return true;
   },
 
@@ -422,6 +424,9 @@ const CogniviaCart = {
 
     // Clear cart
     this.clearCart();
+
+    // GA4: purchase event
+    try { if (window.CogniviaAnalytics) CogniviaAnalytics.purchase(order); } catch(e) {}
 
     // Redirect to confirmation
     window.location.href = 'potwierdzenie.html?order=' + order.id;

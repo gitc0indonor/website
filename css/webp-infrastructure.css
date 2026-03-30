@@ -1,0 +1,53 @@
+/* ==========================================================================
+   WebP Image Infrastructure for Cognivia
+   Pattern: Use <picture> element with WebP source + fallback
+   Add loading="lazy" to all images below the fold
+   ========================================================================== */
+
+/* Example usage in HTML:
+
+   <!-- Above the fold (hero product image) -->
+   <picture>
+     <source srcset="assets/products/cognicit-front.webp" type="image/webp">
+     <img src="assets/products/cognicit-front.jpg" alt="CogniCit - suplement nootropowy" width="400" height="400" fetchpriority="high">
+   </picture>
+
+   <!-- Below the fold (gallery, blog images) -->
+   <picture>
+     <source srcset="assets/products/cognicit-back.webp" type="image/webp">
+     <img src="assets/products/cognicit-back.jpg" alt="CogniCit - tył opakowania" width="400" height="400" loading="lazy" decoding="async">
+   </picture>
+
+   <!-- Responsive images with srcset -->
+   <picture>
+     <source srcset="assets/products/cognicit-front-400.webp 400w, assets/products/cognicit-front-800.webp 800w" type="image/webp" sizes="(max-width: 600px) 400px, 800px">
+     <img src="assets/products/cognicit-front-800.jpg" alt="CogniCit" width="800" height="800" loading="lazy" decoding="async">
+   </picture>
+
+   Conversion commands (run when real photos arrive):
+   # Convert JPG to WebP:
+   cwebp -q 85 cognicit-front.jpg -o cognicit-front.webp
+   # Convert PNG to WebP:
+   cwebp -q 85 cognicit-front.png -o cognicit-front.webp
+   # Batch convert:
+   for f in assets/products/*.jpg; do cwebp -q 85 "$f" -o "${f%.jpg}.webp"; done
+*/
+
+/* Image performance CSS */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Placeholder shimmer for lazy-loaded images */
+.img-placeholder {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: imgShimmer 1.5s infinite;
+}
+
+@keyframes imgShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

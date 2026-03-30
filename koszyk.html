@@ -27,6 +27,21 @@
     @media (max-width: 768px) {
       .mobile-rating-badge { display: block !important; }
     }
+    /* Exit-intent popup */
+    .ei-overlay { position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:10000; opacity:0; pointer-events:none; transition:opacity .3s; }
+    .ei-overlay.active { opacity:1; pointer-events:auto; }
+    .ei-popup { position:fixed; top:50%; left:50%; transform:translate(-50%,-50%) scale(.92); background:#fff; border-radius:16px; padding:2.5rem 2rem; max-width:420px; width:90%; z-index:10001; opacity:0; pointer-events:none; transition:all .35s cubic-bezier(.4,0,.2,1); box-shadow:0 24px 64px rgba(0,0,0,.25); text-align:center; }
+    .ei-popup.active { opacity:1; pointer-events:auto; transform:translate(-50%,-50%) scale(1); }
+    .ei-close { position:absolute; top:12px; right:16px; background:none; border:none; font-size:22px; cursor:pointer; color:#999; }
+    .ei-popup h3 { font-family:'EB Garamond',serif; font-size:24px; color:#1a3a2a; margin-bottom:.5rem; }
+    .ei-popup .ei-discount { font-size:36px; font-weight:700; color:#2e7d32; margin:.5rem 0; font-family:'EB Garamond',serif; }
+    .ei-popup p { font-family:Inter,sans-serif; font-size:14px; color:#666; margin-bottom:1.25rem; line-height:1.5; }
+    .ei-popup input[type="email"] { width:100%; padding:12px 16px; border:2px solid #e0e0e0; border-radius:8px; font-size:14px; font-family:Inter,sans-serif; margin-bottom:.75rem; box-sizing:border-box; }
+    .ei-popup input[type="email"]:focus { border-color:#2e7d32; outline:none; }
+    .ei-popup button[type="submit"] { width:100%; padding:12px; background:#2e7d32; color:#fff; border:none; border-radius:8px; font-size:15px; font-weight:600; font-family:Inter,sans-serif; cursor:pointer; transition:background .2s; }
+    .ei-popup button[type="submit"]:hover { background:#1b5e20; }
+    .ei-popup .ei-note { font-size:11px; color:#999; margin-top:.75rem; }
+    @media (max-width:480px) { .ei-popup { padding:2rem 1.5rem; } }
 </style>
 <link rel="stylesheet" href="assets/css/cognivia-v2.css">
 <script type="application/ld+json">
@@ -296,6 +311,7 @@
     </div>
   </footer>
 
+  <script src="js/ga4-events.js"></script>
   <script src="js/cognivia-cart.js"></script>
   <script>
     // Show/hide summary, savings calculator, free shipping, and empty-cart recovery based on cart contents
@@ -350,5 +366,41 @@
     }, 500);
   </script>
   <script src="js/web-vitals.js" defer></script>
+  <!-- Exit-Intent Popup -->
+  <div class="ei-overlay" id="eiOverlay"></div>
+  <div class="ei-popup" id="eiPopup">
+    <button class="ei-close" onclick="closeEi()" aria-label="Zamknij">&times;</button>
+    <h3>Zanim odejdziesz! 🧠</h3>
+    <div class="ei-discount">-10%</div>
+    <p>Odbierz 10% zniżki na pierwsze zamówienie CogniCit.<br>Zapisz się i otrzymaj kod rabatowy na email.</p>
+    <form action="https://formspree.io/f/xpwzgryv" method="POST" onsubmit="localStorage.setItem('eiDismissed','1');closeEi();">
+      <input type="hidden" name="source" value="exit-intent-cart">
+      <input type="email" name="email" placeholder="Twój adres email" required>
+      <input type="hidden" name="discount_code" value="FIRST10">
+      <button type="submit">Odbierz 10% zniżki →</button>
+    </form>
+    <p class="ei-note">🔒 Twój email jest bezpieczny. Zero spamu.</p>
+  </div>
+  <script>
+  (function(){
+    if(localStorage.getItem('eiDismissed'))return;
+    var shown=false;
+    function showEi(){
+      if(shown)return;shown=true;
+      document.getElementById('eiOverlay').classList.add('active');
+      document.getElementById('eiPopup').classList.add('active');
+    }
+    function hideEi(){
+      document.getElementById('eiOverlay').classList.remove('active');
+      document.getElementById('eiPopup').classList.remove('active');
+      localStorage.setItem('eiDismissed','1');
+    }
+    window.closeEi=hideEi;
+    document.addEventListener('mouseleave',function(e){if(e.clientY<5)showEi();});
+    document.getElementById('eiOverlay').addEventListener('click',hideEi);
+    // Mobile fallback: show after 45s
+    if('ontouchstart' in window)setTimeout(showEi,45000);
+  })();
+  </script>
 </body>
 </html>

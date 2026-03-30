@@ -2595,6 +2595,7 @@
       Strona zawiera oświadczenia żywieniowe i zdrowotne zgodne z Rozporządzeniem (WE) nr 1924/2006 oraz informacje zgodne z Rozporządzeniem (WE) nr 1169/2011.
     </div>
   </footer>
+  <script src="js/ga4-events.js"></script>
   <script src="js/cognivia-cart.js"></script>
   <script src="js/web-vitals.js" defer></script>
   <script>
@@ -3023,5 +3024,7 @@
     <div class="sdp-close" onclick="document.getElementById('sdpOverlay').classList.remove('open');document.body.style.overflow=''">Zamknij ✕</div>
   </div>
 </div>
+<!-- GA4: view_item event -->
+<script>try{if(window.CogniviaAnalytics)CogniviaAnalytics.viewItem({id:'cognicit',name:'CogniCit',price:79});}catch(e){}</script>
 </body>
 </html>

@@ -2886,3 +2886,26 @@
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (4 Q&As)
 **SEO angle:** Zero Polish content specifically targeting supplements + spring fatigue. Seasonal content with 4-week traffic window. Emotional hook = high engagement.
 **Status:** Outline ready — PRIORITY PUBLISH (seasonal timing critical)
+
+### Blog Post Outline #97 — Power Cycle #110
+**Title:** "Nootropiki dla kobiet — jak hormony wpływają na koncentrację?"
+**Target keyword:** "suplementy dla kobiet koncentracja" / "nootropiki kobiety" / "mózg a cykl menstruacyjny" (~500 monthly, zero competition)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Evergreen, slight peak Mar (Women's Day health awareness)
+
+**Outline:**
+1. **Wstęp** — Większość treści o nootropikach jest pisana z perspektywy męskiej. Kobiety mają unikalne wyzwania poznawcze związane z cyklem hormonalnym.
+2. **Jak estrogen wpływa na mózg?** — Estrogen zwiększa wrażliwość receptorów acetylocholinowych. Faza folikularna (wyższy estrogen) = lepsza koncentracja. Faza lutealna (spadek) = "brain fog".
+3. **PMS a funkcje poznawcze** — Badania: 60% kobiet zgłasza spadek koncentracji przed menstruacją. Mechanizm: spadek estrogenów → mniej receptorów ACh → gorsza pamięć robocza.
+4. **Cytykolina jako wsparcie** — 300 mg CDP-choliny = zwiększenie puli acetylocholiny. Pomaga zrównoważyć naturalne spadki hormonalne. 233 publikacje PubMed.
+5. **ALA — ochrona przed stresem oksydacyjnym cyklu** — Fluktuacje hormonalne generują stres oksydacyjny. ALA regeneruje glutation, chroni mitochondria.
+6. **Kiedy suplementacja ma największy sens?** — Faza lutealna (przed okresem) = największe spadki = najlepszy moment na wsparcie. CogniCit rano = stabilna koncentracja niezależnie od fazy cyklu.
+7. **Bezpieczeństwo** — Brak interakcji z antykoncepcją hormonalną. Brak kofeiny = brak wpływu na sen i nastrój. GMP, GIS.
+8. **Podsumowanie** — "Twój mózg zasługuje na wsparcie dopasowane do Ciebie."
+
+**CTA:** Zamów CogniCit → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-seniorow-50-plus.html, blog/chroniczne-zmeczenie-umyslowe.html, jak-stosowac.html, nauka.html
+**Schema:** Article + BreadcrumbList JSON-LD
+**SEO angle:** Zero Polish content on nootropics + female hormones. Huge underserved audience. Emotional resonance = high engagement + shares on women's health groups.
+**Target platforms:** Google (SEO), grupy FB dla kobiet, Instagram, Pinterest
+**Status:** Outline ready, needs writing
