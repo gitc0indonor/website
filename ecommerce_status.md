@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-03-29 21:57 UTC (Ecommerce Cron Cycle #86)
+## Last Updated: 2026-03-30 01:40 UTC (Ecommerce Cron Cycle #87)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -188,3 +188,28 @@ See improvement_queue.md for full list (387 items, ~15 active).
 - Formspree: UNCHANGED — placeholder ID `xpwzgryv` in cognivia-cart.js line 368. CEO ACTION REQUIRED.
 - Payment gateways: UI-only (PayU/P24/BLIK/PayPal defined but not integrated). Requires merchant accounts.
 - Queue: ~18 active items pending (421-440)
+
+## 📋 Recent Changes (Cycle #87 — 2026-03-30 01:40 UTC)
+
+- No code changes this cycle (status audit + improvement queue maintenance)
+- Site verified: All HTML pages validate. Cart JS syntax valid.
+- Cart: Full client-side JS cart functional. 79 zł. Formspree placeholder ID `xpwzgryv` — UNCHANGED.
+- PWA: manifest.json + sw.js deployed. Offline caching active.
+- Legal pages: All present and current (regulamin, polityka-prywatnosci, zwroty, dostawa, polityka-cookies)
+- Trust elements: GMP badge, lab-tested, money-back guarantee, secure checkout, reviews (4.8/5) — ALL present
+- Product listing: Full name, Polish description, ingredients+dosage, 5+ benefits, warnings, storage, images, category, tags, SEO — ALL complete
+- Shipping: 4 methods configured (InPost Paczkomat/Kurier, DPD, Poczta Polska) with free thresholds
+- Payment: UI defined (PayU/P24/BLIK/PayPal/COD/bank transfer) — gateways NOT integrated (CEO action needed)
+- VAT: 23% configured in cart JS
+
+### Cycle #87 Added to Queue (459-461)
+- IMP-459: Add social proof purchase counter to produkt.html — animated count-up (~300+) above buy section
+- IMP-460: Create downloadable study plan checklist PDF for /sesja page — email-gated student lead capture
+- IMP-461: Add FAQPage JSON-LD schema to faq-produkt.html — Google rich results for existing FAQ accordion
+
+### Blocker Status (UNCHANGED for 22+ cycles)
+- Formspree: UNCHANGED — placeholder ID `xpwzgryv` in cognivia-cart.js line 368. CEO ACTION REQUIRED.
+- Payment gateways: UI-only (PayU/P24/BLIK/PayPal defined but not integrated). Requires merchant accounts.
+- Queue: ~55 active items pending (408-461)
+
+*Next check scheduled by cron. Status file: website/ecommerce_status.md*
