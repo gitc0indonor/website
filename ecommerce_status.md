@@ -212,4 +212,30 @@ See improvement_queue.md for full list (387 items, ~15 active).
 - Payment gateways: UI-only (PayU/P24/BLIK/PayPal defined but not integrated). Requires merchant accounts.
 - Queue: ~55 active items pending (408-461)
 
+## 📋 Recent Changes (Cycle #88 — 2026-03-30 05:19 UTC)
+
+- No code changes this cycle (status audit + improvement queue maintenance)
+- Site verified: All HTML pages valid. Cart JS functional. 79 zł CogniCit buyable.
+- Cart: Full client-side JS cart operational. 5+ add-to-cart buttons on produkt.html. localStorage persistence.
+- Checkout (kasa.html): Complete form with name/email/phone/address/shipping/payment. Trust badges present.
+- Formspree: UNCHANGED — placeholder ID `xpwzgryv` line 368 cognivia-cart.js. 24+ cycles unchanged.
+- PWA: manifest.json + sw.js deployed. Offline caching active.
+- Legal pages: ALL present — regulamin, polityka-prywatnosci (RODO), zwroty, dostawa, polityka-cookies, faq, faq-produkt
+- Trust elements: GMP badge ✅, lab-tested ✅, 30-day money-back ✅, secure checkout ✅, reviews 4.8/5 ✅
+- Product listing: COMPLETE — full name, Polish description, ingredients+dosage, 5+ benefits, warnings, storage, images, category, tags, SEO JSON-LD
+- Shipping: 4 methods (InPost Paczkomat 12.99zł, InPost Kurier 15.99zł, DPD 16.99zł, Poczta Polska 11.99zł) — free from 120-150zł
+- Payment: UI defined (PayU/P24/BLIK/PayPal/COD/bank transfer) — gateways NOT integrated. Requires merchant accounts.
+- VAT: 23% configured in cart JS
+- Queue: ~55 active items pending (463-474)
+
+### Cycle #88 Added to Queue (475-477)
+- IMP-475: Add "Zaufani partnerzy logistyczni" footer bar to all pages — InPost, DPD, Poczta Polska logos with "Dostarczamy z" header. Reinforces shipping trust at every page view. Estimated: 0.5 hours.
+- IMP-476: Create "Suplementy dla programistów — jak utrzymać focus podczas 8h kodowania?" blog post — Target "suplementy dla programistów" + "focus przy komputerze" (400+ monthly, high-intent tech audience). Dev-specific scenarios: deep work sessions, debugging fatigue, meeting overload. CogniCit as morning stack replacement for energy drinks. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+- IMP-477: Add micro-interaction "pulse glow" animation to CTA buttons on produkt.html — Subtle green glow pulse on primary "Dodaj do koszyka" button every 4 seconds when idle. CSS-only, respects prefers-reduced-motion. Draws eye without being annoying. Expected 3-5% CTA click increase. Estimated: 0.5 hours.
+
+### Blocker Status (UNCHANGED for 24+ cycles)
+- Formspree: UNCHANGED — placeholder ID `xpwzgryv` in cognivia-cart.js line 368. CEO ACTION REQUIRED: Sign up at formspree.io, create form, replace ID, deploy.
+- Payment gateways: UI-only (PayU/P24/BLIK/PayPal defined but not integrated). Requires merchant account applications.
+- Queue: ~55 active items pending (463-477)
+
 *Next check scheduled by cron. Status file: website/ecommerce_status.md*

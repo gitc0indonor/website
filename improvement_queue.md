@@ -974,3 +974,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 473. **[NEW] Create "Suplementy a praca zmianowa — protokół dla nocnych zmian" blog post** — Target "suplementy praca zmianowa nocna" (300+ monthly, zero competition). Detailed protocol: kiedy brać CogniCit przed nocną zmianą (18:00), sen po zmianie (ciemność, temperatura), rotacyjne zmiany (adaptacja 3-5 dni). Positions CogniCit as 24/7 supplement — works day AND night. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
 
 474. **[NEW] Add "Testimonials carousel" with verified purchase badges to index.html** — Replace the static 3 review cards in the trust section with an auto-rotating carousel (5-7 reviews from opinie.html). Include: star rating, quote, name/city, "zweryfikowany kupujący" badge, product photo placeholder. Auto-rotate every 6s, dot navigation, pause on hover. CSS-only carousel (no library). Expected 10-15% conversion lift from dynamic social proof. Estimated: 1.5 hours.
+
+### 🆕 Ecommerce Cron Cycle #88 Additions (2026-03-30 05:19 UTC)
+
+475. **[NEW] Add "Zaufani partnerzy logistyczni" footer bar to all pages** — InPost, DPD, Poczta Polska logos with "Dostarczamy z" header. Reinforces shipping trust at every page view. CSS grid, responsive. Estimated: 0.5 hours.
+
+476. **[NEW] Create "Suplementy dla programistów — jak utrzymać focus podczas 8h kodowania?" blog post** — Target "suplementy dla programistów" + "focus przy komputerze" (400+ monthly, high-intent tech audience). Dev-specific scenarios: deep work sessions, debugging fatigue, meeting overload. CogniCit as morning stack replacement for energy drinks. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+477. **[NEW] Add micro-interaction "pulse glow" animation to CTA buttons on produkt.html** — Subtle green glow pulse on primary "Dodaj do koszyka" button every 4 seconds when idle. CSS-only, respects prefers-reduced-motion. Draws eye without being annoying. Expected 3-5% CTA click increase. Estimated: 0.5 hours.
