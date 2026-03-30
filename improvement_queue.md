@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-29 (Power Cycle #94 — 23:27 UTC)
+## Last Updated: 2026-03-30 (Power Cycle #97 — 01:20 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -865,7 +865,7 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 ### 🆕 Power Cycle #90 Additions (2026-03-29 20:50 UTC)
 
-432. **[NEW] Add "Jak suplementacja wpływa na sen?" FAQ section to faq-produkt.html** — Common concern: "Czy CogniCit zaburza sen?". Accordion entry with honest answer: zero caffeine, cytykolina doesn't affect sleep architecture per studies, morning dosing recommended. Cross-links to blog/nootropiki-a-sen.html. Captures safety-conscious searchers. Estimated: 20 minutes.
+432. ~~**[DONE] Add "Jak suplementacja wpływa na sen?" FAQ section to faq-produkt.html**~~ ✅ — Power Cycle #92 (earlier). "Czy CogniCit zaburza sen?" accordion already present in Powiązane pytania section. Answer covers zero caffeine, acetylcholine pathway independence, morning dosing recommendation, cross-link to blog/nootropiki-a-sen.html.
 
 433. **[NEW] Create exit-intent popup with "Test swój mózg" quiz hook on index.html** — Desktop mouse-leave triggers modal: "Zanim odejdziesz — jaki jest Twój typ mózgu? 3 pytania, 30 sekund." Quiz maps to CogniCit ingredient benefits. Email gate for results. Expected 5-8% email capture rate on exit traffic. Estimated: 1.5 hours.
 
@@ -912,3 +912,27 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 448. **[NEW] Create "Suplementy dla freelancerów — jak utrzymać koncentrację bez stałego grafiku?" blog post** — Target "suplementy freelancer koncentracja" (underserved niche, zero Polish content). Covers: decision fatigue, lack of accountability, home distractions, CogniCit morning protocol for self-employed. Outline already in content_calendar.md #83. Estimated: 2 hours.
 
 449. **[NEW] Add "Czas dostawy" countdown widget to index.html hero** — Dynamic widget showing "Zamów dziś → dostawa za X dni" based on current day of week. Calculates business-day delivery (skips weekends). Reduces "kiedy dostanę paczkę?" uncertainty at the first touchpoint. Reuses existing calcDelivery() logic from produkt.html. Estimated: 30 minutes.
+
+450. ~~**[DONE] Add "Czas dostawy" countdown to landing pages**~~ ✅ — Power Cycle #96. Added delivery countdown widget to matura.html, sesja.html, and porownanie.html. Same implementation as index.html: dynamic business-day calculation (skips weekends, Friday afternoon +2 days), green pill badge matching site palette, JS calculates realistic delivery estimate. Reduces purchase anxiety at conversion points on seasonal and comparison landing pages. Pages: matura ✓, sesja ✓, porownanie ✓. Remaining pages (powrot-do-szkoly, skladniki) can be added in next cycle.
+
+451. **[NEW] Create "Ranking suplementów na koncentrację bez kofeiny 2026" SEO mega-page** — Ultimate authority page: "najlepszy suplement na koncentrację bez kofeiny" (1.5K+ monthly). Full comparison: CogniCit (0mg) vs 5 competitors scored on 8 criteria. Interactive filter. FAQPage + Product aggregateRating JSON-LD. CogniCit wins on zero caffeine + 3 synergistic ingredients + GMP. Estimated: 3 hours.
+
+452. ~~**[DONE] Create "Newsletter welcome" branded HTML email template**~~ ✅ — Power Cycle #96. Created email-templates/welcome-confirmation.html (9.4KB). Post-signup confirmation email with: green gradient header, success checkmark, WITAMY15 discount code (15% off, 30-day validity, monospace font, dashed border), CogniCit product card with 3 ingredients + pricing (67.15 zł after discount), 4-day email sequence preview (Day 3/7/14 + weekly), quick links to skladniki/nauka/jak-stosowac, trust bar (GMP/EU/Lab/GIS), responsive mobile layout, MSO conditional comments for Outlook, RODO unsubscribe link. Ready for Formspree autoresponder or Mailchimp/GetResponse integration. Different from welcome.html (which is a general welcome) — this template specifically confirms signup and delivers the discount code.
+
+---
+
+### 🆕 Power Cycle #96 Additions (2026-03-30 00:42 UTC)
+
+453. ~~**[DONE] Add "Czas dostawy" countdown to remaining landing pages**~~ ✅ — Power Cycle #97. Added delivery countdown widget to powrot-do-szkoly.html and skladniki.html. Same implementation as matura/sesja/porownanie: dynamic business-day calculation (skips weekends, Friday afternoon +2 days), green pill badge matching site palette. All seasonal and conversion landing pages now show estimated delivery date. Pages: matura ✓, sesja ✓, porownanie ✓, powrot-do-szkoly ✓, skladniki ✓.
+
+454. **[NEW] Add welcome-confirmation.html to email automation flow** — Wire the new welcome-confirmation.html template into the existing newsletter signup flow. When user submits email via Formspree on index.html footer or blog popups, trigger this template as autoresponder. Requires Formspree autoresponder feature or ESP integration. Pre-build the integration so it activates when Formspree account goes live. Estimated: 30 minutes.
+
+455. **[NEW] Create "Ranking suplementów na koncentrację 2026" SEO mega-page (/ranking-koncentracja-2026)** — Ultimate authority page: "najlepszy suplement na koncentrację" (5K+ monthly). Full comparison of 8 supplements scored on 10 criteria. Interactive filter by price/ingredients. FAQPage + Product aggregateRating JSON-LD. CogniCit wins on transparency + GMP + no caffeine. Designed to be THE Polish-language authority page. Estimated: 4 hours.
+
+### 🆕 Power Cycle #97 Additions (2026-03-30 01:20 UTC)
+
+456. **[NEW] Add "Jak działa CogniCit w mózgu?" animated mechanism section to produkt.html** — Replace static text descriptions with a scroll-animated visual walkthrough: (1) capsule dissolves in stomach, (2) β-CD wraps active molecules, (3) cytykolina crosses blood-brain barrier, (4) acetylcholine synthesis in neuron, (5) ALA neutralizes free radicals. CSS scroll-triggered animations (no JS library), 5 connected visual steps with arrow connectors. Makes the science tangible for non-scientific visitors. Estimated: 2 hours.
+
+457. **[NEW] Add "Kup ponownie" one-click reorder for returning customers** — Detect completed order in localStorage (submitOrder sets orderHistory). If returning visitor has order history, show a non-intrusive banner on produkt.html: "Zamówiłeś już CogniCit — kup ponownie w 1 kliknięcie →" with pre-filled cart (same quantity as last order). Reduces friction for repeat buyers. Estimated: 45 minutes.
+
+458. **[NEW] Create downloadable PDF lead magnet "Przewodnik suplementacji mózgu — 2026"** — 8-10 page PDF covering: how nootropics work, ingredient deep-dive (cytykolina/ALA/β-CD), 30-day supplementation protocol, dosage table, FAQ. Email-gated download on a dedicated /przewodnik landing page. Captures leads from visitors who want "something to take away" but aren't ready to buy. Positions Cognivia as the education-first brand. Estimated: 3 hours (content + design + landing page).

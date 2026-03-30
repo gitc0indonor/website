@@ -2531,3 +2531,74 @@
 **SEO angle:** "Freelancer suplementy" — zero Polish content targeting freelancers specifically. Growing market (1.5M+ freelancers in Poland). Positions CogniCit as the remote/freelance professional's cognitive tool.
 **Target platforms:** Google (SEO), LinkedIn, grupy FB dla freelancerów
 **Status:** Outline ready, needs writing
+
+### Blog Post Outline #84 — Power Cycle #95 (Added 2026-03-30)
+**Title:** "Jak mózg reaguje na suplementację? Co czujesz w pierwszych 30 dniach z CogniCit"
+**Target keyword:** "efekty suplementacji nootropiki" / "jak działają suplementy na koncentrację pierwsze dni" (~500+ monthly, high intent)
+**Estimated word count:** 1,500-2,000 words
+**Seasonality:** Evergreen, slight peak Jan (new year goals) and Sep (back to work)
+
+**Outline:**
+1. **Wstęp** — Każdy, kto zaczyna suplementację, zadaje pytanie: „Kiedy poczuję różnicę?" Realistyczna oś czasu zamiast marketingowych obietnic.
+2. **Dni 1-3: Adaptacja** — Subtelne zmiany. Organizm przyswaja składniki. β-CD chroni cytykolinę i ALA przed degradacją żołądkową. Nie spodziewaj się fajerwerków — to normalne.
+3. **Dni 4-7: Pierwsze sygnały** — U niektórych: klarowność myśli, łatwiejsze skupienie. Mechanizm: cytykolina zwiększa pulę acetylocholiny, ALA zaczyna ochronę mitochondrialną. Badania: meta-analiza Secades & Frontera (2014) — efekty widoczne po 7 dniach.
+4. **Dni 8-14: Stabilizacja** — Stała energia (bez crashu jak po kofeinie), lepsza pamięć robocza. ALA regeneruje glutation — komórki mają więcej paliwa. Użytkownicy zgłaszają: „Pracuję dłużej bez przerw."
+5. **Dni 15-21: Pełne działanie** — Synergia 3 składników osiąga steady-state. Acetylocholina (cytykolina) + ochrona antyoksydacyjna (ALA) + lepsza absorpcja (β-CD) = trwałe wsparcie koncentracji.
+6. **Dni 22-30: Optymalizacja** — Efekty kumulują się. Sen lepszy (zero kofeiny), koncentracja stabilna. Porównanie: CogniCit vs kofeina — tabela efektów w czasie.
+7. **Czego NIE oczekiwać** — Suplement ≠ lek. Nie zastąpi snu, diety ani ruchu. Uczciwy disclaimer.
+8. **Podsumowanie** — Realistyczna oś czasu 30 dni. CogniCit = systematyczne wsparcie, nie natychmiastowy kop.
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, jak-stosowac.html, nauka.html, blog/cytykolina-przewodnik-kompletny.html, faq-produkt.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** Zero Polish content with realistic day-by-day supplementation timeline. Positions Cognivia as the honest, science-backed brand. FAQPage for "kiedy działają suplementy" = rich snippet potential.
+**Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #85 — Power Cycle #96
+**Title:** "Jak sprawdzić, czy suplement jest bezpieczny? 5 znaków jakości"
+**Target keyword:** "bezpieczny suplement diety" / "jak sprawdzić suplement" (~800 monthly searches in Poland)
+**Estimated word count:** 2,000-2,500 words
+**Seasonality:** Evergreen, slight peak before New Year's resolutions (Jan)
+
+**Outline:**
+1. **Wstęp** — dlaczego bezpieczeństwo suplementów nie jest oczywiste (rynek bez recepty, brak kontroli przed sprzedażą)
+2. **Znak #1: Rejestracja GIS** — co to znaczy, jak sprawdzić, CogniCit jako przykład
+3. **Znak #2: Certyfikat GMP** — co obejmuje, różnica między "produkowane zgodnie z GMP" a "certyfikat GMP"
+4. **Znak #3: Certyfikat analizy (CoA)** — co jest badane, jak odczytać wyniki, znaczenie każdej partii
+5. **Znak #4: Przejrzysty skład** — dawki substancji aktywnych, brak "proprietary blends", forma chemiczna składników
+6. **Znak #5: Odpowiedzialne deklaracje** — suplement ≠ lek, znaczenie oświadczeń zdrowotnych WE 1924/2006
+7. **Czerwone flagi** — 7 znaków ostrzegawczych (brak GIS, brak składu dawkowego, cudowne obietnice, brak producenta, niska cena bez uzasadnienia, import bez deklaracji, brak daty ważności)
+8. **CogniCit — case study** — jak przechodzi wszystkie 5 testów (linki do certyfikaty, nauka, skladniki)
+9. **FAQ** — 3 pytania (jak sprawdzić rejestrację GIS, czy naturalne = bezpieczne, czy suplementy mogą zaszkodzić)
+10. **CTA** — zamów CogniCit z 30-dniową gwarancją
+
+**Internal links:** certyfikaty.html, nauka.html, skladniki.html, jak-czytac-etykiety.html, produkt.html, faq-produkt.html
+**Schema:** Article + BreadcrumbList + FAQPage (3 Q&As)
+**SEO target:** capture featured snippet for "jak sprawdzić suplement" with numbered list format
+**Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #86 — Power Cycle #97
+**Title:** "Suplementy a jesienna chandra — jak utrzymać koncentrację, gdy dni są krótsze?"
+**Target keyword:** "jesienna chandra suplementy" / "spadek energii jesień suplement" (~600 monthly searches in Poland, seasonal peak Oct-Nov)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Strong — October-November peak, publish mid-September for indexing
+
+**Outline:**
+1. **Wstęp** — krótsze dni, mniej światła, spadek energii. 10-15% Polaków odczuwa sezonowy spadek nastroju.
+2. **Dlaczego jesień osłabia koncentrację?** — melatonina (wcześniejsze wydzielanie), serotonina (mniej syntezy bez światła), witamina D (spadek po lecie). Prosty diagram.
+3. **Cytykolina — paliwo dla mózgu w ciemne dni** — acetylocholina jako neuroprzekaźnik "czujności", badania (Secades & Frontera 2014), dawka 300 mg.
+4. **ALA — ochrona przed stresem oksydacyjnym** — kortyzol → wolne rodniki → ALA jako tarcza. Hager et al. 2007.
+5. **β-CD — jesienne wchłanianie** — dieta jesienna = wolniejszy metabolizm. β-CD poprawia biodostępność.
+6. **5 praktycznych tipów** — suplementacja rano, światło przed 10:00, ruch na powietrzu, ogranicz kofeinę po 14:00, 7-8h snu.
+7. **CogniCit — jesienny protokół** — 1 kapsułka rano, 0 mg kofeiny, 30-dniowa gwarancja.
+8. **FAQ** — 3 pytania (Czy pomaga na chandrę? / Łączenie z witaminą D? / Kiedy zacząć?)
+9. **CTA** — produkt.html
+
+**Internal links:** produkt.html, blog/nootropiki-a-sen.html, blog/suplementy-a-stres-oksydacyjny.html, nauka.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage (3 Q&As)
+**SEO angle:** First-mover — zero Polish content connecting nootropics to seasonal affective patterns.
+**Status:** Outline ready, needs writing
