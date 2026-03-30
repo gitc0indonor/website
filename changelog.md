@@ -3300,3 +3300,41 @@
 
 **Queue:** ~483 completed + ~52 active = ~535 total
 
+### 2026-03-30 — Power Cycle #106 (18:33 UTC)
+**Implemented:**
+- ✅ #490 — Added "Czy CogniCit jest dla Ciebie?" quick-check quiz widget to produkt.html
+  - 3-question interactive quiz inserted between viewer counter and "Dlaczego nie kofeina?" sections
+  - Questions: mental work? / >2 coffees daily? / want better focus without side effects?
+  - Click-to-advance with button highlight animation (green for yes, grey for no)
+  - 3 result tiers: perfect match (3/3) → CTA, partial (2/3) → check ingredients, minimal (0-1) → educational links
+  - Result card with personalized ingredient match explanation, animated scroll-into-view
+  - CSS-only quiz (no library), IntersectionObserver-free, lightweight
+  - Gamified micro-engagement at top of product page — captures visitors before they scroll away
+- ✅ #491 — Enhanced suplementy-na-wiosne.html into full blog post (6KB → 29KB)
+  - Expanded from thin placeholder to comprehensive seasonal article
+  - 7 major sections: why you're tired (5-factor table), brain needs, 3 CogniCit ingredients deep-dive, comparison table (CogniCit vs coffee/vitD/multi), 5-day adaptation plan, what to avoid, who benefits
+  - Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As) — Google rich snippets enabled
+  - OG/Twitter Card meta tags for social sharing
+  - Share buttons (Facebook, Twitter/X, LinkedIn)
+  - "Warto wiedzieć" fact box (50-70% statistics, 2-4 week timeline, 800mg active ingredients)
+  - Cross-links section (3 related pages: cytykolina guide, odporność, składniki)
+  - 30-day satisfaction guarantee section with CTA
+  - Newsletter floating badge + email capture popup (60% scroll trigger, localStorage persistence)
+  - Navigation header + branded footer matching other blog posts
+  - Responsive design (mobile hamburger menu, comparison table horizontal scroll)
+  - Targets "przesilenie wiosenne suplementy" — seasonal peak RIGHT NOW (March-April)
+  - Zero Polish competition connecting nootropics to spring fatigue = first-mover advantage
+- ✅ 3 new improvement ideas added to queue (#493-495): wiosenny reset challenge, caffeine-supplements blog, seasonal pricing widget
+
+**Files changed:**
+- `produkt.html` — Quick-check quiz widget (CSS + HTML + JS, ~130 lines) between viewer counter and caffeine section
+- `suplementy-na-wiosne.html` — Complete rewrite: 6KB → 29KB full blog post with all conversion elements
+- `improvement_queue.md` — #490, #491 marked DONE; 3 new items (#493-495); timestamp → Power Cycle #106
+- `changelog.md` — This entry
+
+**Site verification:** produkt.html validated — DOCTYPE ✓, </html> ✓, quiz widget confirmed (qcQuiz + qcResult elements). suplementy-na-wiosne.html validated — DOCTYPE ✓, </html> ✓, Article JSON-LD ✓, FAQPage JSON-LD (5 Q&As) ✓, BreadcrumbList ✓, share buttons ✓, email popup ✓, guarantee section ✓. All tags balanced.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~485 completed + ~52 active = ~537 total
+

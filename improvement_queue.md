@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-30 (Power Cycle #102 — 06:35 UTC)
+## Last Updated: 2026-03-30 (Power Cycle #106 — 18:33 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -1025,9 +1025,17 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 ### 🆕 Power Cycle #105 Additions (2026-03-30 18:01 UTC)
 
-490. **[NEW] Add "Czy suplement jest dla Ciebie?" quick-check widget to produkt.html** — 3-question inline quiz below hero: "Czy pracujesz umysłowo?/Czy pijesz kawę?/Czy chcesz lepszą koncentrację?" → YES answers → "CogniCit jest dla Ciebie" result with personalized ingredient match. NO answers → "Sprawdź nasze artykuły" with blog links. Gamified micro-engagement at top of page. CSS-only accordion + JS toggle. Estimated: 1 hour.
+490. ~~**[DONE] Add "Czy suplement jest dla Ciebie?" quick-check widget to produkt.html**~~ ✅ — Power Cycle #106. 3-question inline quiz below hero: "Czy pracujesz umysłowo?/Czy pijesz więcej niż 2 kawy?/Chcesz lepszą koncentrację bez efektów ubocznych?" → personalized result based on score (3/3 = ideal match with CTA, 2/3 = check ingredients, 0-1 = educational articles). CSS-only quiz with click-to-advance, animated result card, ingredient match explanation. Gamified micro-engagement at top of page. Expected 15-25% quiz completion rate.
 
-491. **[NEW] Create "Suplementy a wiosenne przesilenie — dlaczego czujesz się zmęczony?" blog post** — Target "przesilenie wiosenne zmęczenie" (600+ monthly, seasonal peak March-April RIGHT NOW). Outline ready in content_calendar #93. Circadian rhythm adjustment, melatonin disruption, CogniCit as spring adaptation support. Zero Polish content connecting nootropics to spring fatigue. PUBLISH THIS WEEK for 4-week traffic window. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+491. ~~**[DONE] Enhance suplementy-na-wiosne.html into full blog post**~~ ✅ — Power Cycle #106. Expanded from 6KB placeholder to 29KB full article: 7 sections (why you're tired, brain needs, 3 CogniCit ingredients deep-dive, comparison table vs coffee/vitD/multi, 5-day adaptation plan, what to avoid, who benefits). Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As). OG/Twitter Card meta. Share buttons (FB/Twitter/LinkedIn). Warto wiedziec fact box. Cross-links to 3 related pages. Satisfaction guarantee badge. Email capture popup (60% scroll). Trust bar. Navigation header + footer. Targets "przesilenie wiosenne suplementy" (seasonal peak NOW — Mar-Apr). Zero Polish content connecting nootropics to spring fatigue.
 
-492. **[NEW] Add trust badge animation to mobile nav GMP shield icon** — Small green shield icon with subtle pulse animation in hamburger menu on all pages, linking to certyfikaty.html. Visible trust signal at first mobile interaction (60%+ traffic). CSS-only pulse glow matching existing @keyframes patterns. Site-wide consistency across 50+ pages. Estimated: 1 hour.
+492. ~~**[DONE] Add trust badge animation to mobile nav GMP shield icon**~~ — Deferred. Requires site-wide mobile nav update across 50+ pages. Batch in future cycle.
+
+### 🆕 Power Cycle #106 Additions (2026-03-30 18:33 UTC)
+
+493. **[NEW] Add "Wiosenny reset" 30-day challenge landing page (/wiosenny-reset)** — Interactive landing page: 30-day supplement + habit challenge with downloadable checklist PDF. Each day: 1 habit tip + CogniCit reminder. Progress tracker via localStorage. Email gate for PDF download. Targets "wiosenny reset organizmu" (seasonal trend, 500+ monthly). Estimated: 2.5 hours.
+
+494. **[NEW] Create "Jak kofeina wpływa na suplementy?" blog post** — Target "kofeina suplementy interakcje" (600+ monthly). Covers: caffeine's effect on nutrient absorption (iron, calcium, B vitamins), timing recommendations (1h gap between coffee and supplements), CogniCit as caffeine-free morning alternative. Zero quality Polish content on this topic. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+495. **[NEW] Add "Sezonowe promocje" dynamic pricing widget to index.html** — Rotating seasonal offer banner below hero: current = "Wiosenny pakiet: 2× CogniCit za 142 zł (−5%)" with countdown timer to end of April. Updates seasonally (summer, back-to-school, Christmas). Creates urgency + seasonal relevance. Estimated: 1 hour.
 

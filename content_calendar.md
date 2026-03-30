@@ -2794,3 +2794,23 @@
 **Target platforms:** Google (seasonal SEO), Facebook (health/wellness groups), Instagram (seasonal content), Wykop
 **Status:** Outline ready, needs writing — PRIORITY (seasonal timing)
 
+
+### New Blog Post Outline (Added 2026-03-30 — Power Cycle #106)
+**Title:** Jak kofeina wpływa na suplementy? Przewodnik po interakcjach
+**Target:** Polish audience, evergreen, SEO for "kofeina suplementy interakcje" (600+ monthly)
+**Word count:** 1500-1800
+**Keywords:** kofeina suplementy interakcje, kiedy brać suplementy a kawa, kofeina wchłanianie, suplementy a kawa rano
+
+**Outline:**
+1. **Wstęp** — 80% Polaków pije kawę rano. Większość bierze suplementy o tej samej porze. Czy to problem?
+2. **Jak kofeina wpływa na wchłanianie?** — Mechanizm: kofeina zwiększa perystaltykę, zmniejsza czas wchłaniania w jelicie cienkim. Wpływa na: żelazo (−39%), wapń (−32%), magnez (−28%), witaminy z grupy B.
+3. **Tabela interakcji** — składnik / wpływ kofeiny / zalecany odstęp czasowy
+4. **Złota zasada: 1 godzina** — Kawa najpierw, suplementy 60 minut później. Albo odwrotnie.
+5. **Dlaczego CogniCit nie ma kofeiny?** — Celowy wybór projektowy: można brać z kawą bez interakcji. Acetylocholina ≠ adenozyna. Różne mechanizmy = brak konfliktu.
+6. **Praktyczne wskazówki** — Kalendarz poranny: 7:00 kawa → 8:00 CogniCit → 8:30 śniadanie
+7. **FAQ** — 4 pytania (Czy mogę brać CogniCit z kawą? / Czy kofeina osłabia suplementy? / Ile odczekać? / Czy CogniCit zastępuje kawę?)
+
+**CTA:** produkt.html + email capture
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/cytykolina-przewodnik-kompletny.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (4 Q&As)
+**Status:** Outline ready — PRIORITY (zero quality Polish content on this topic, featured snippet potential)

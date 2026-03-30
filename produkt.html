@@ -726,6 +726,96 @@
     }
   </script>
 
+  <!-- #490 — "Czy suplement jest dla Ciebie?" quick-check widget -->
+  <section style="padding: 48px 5%; background: linear-gradient(135deg, #f0f7f0, #e8f5e9);">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h3 style="font-family: 'EB Garamond', serif; font-size: 26px; text-align: center; color: #1a3a2a; margin-bottom: 8px;">Czy CogniCit jest dla Ciebie?</h3>
+      <p style="text-align: center; font-size: 14px; color: #666; margin-bottom: 28px;">Odpowiedz na 3 pytania — zajmie to 15 sekund.</p>
+      <div id="qcQuiz" style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="qc-q" style="background: white; border-radius: 12px; padding: 20px 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); cursor: pointer;" onclick="qcAnswer(this, 0, true)">
+          <div style="font-size: 13px; color: #888; margin-bottom: 6px;">Pytanie 1 z 3</div>
+          <div style="font-size: 17px; font-weight: 500; color: #1a3a2a; margin-bottom: 12px;">Czy pracujesz umysłowo (komputer, nauka, pisanie)?</div>
+          <div style="display: flex; gap: 10px;">
+            <button style="flex:1; padding: 10px; border: 2px solid #c8e6c9; border-radius: 8px; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;" onmouseover="this.style.background='#e8f5e9'" onmouseout="this.style.background='white'" onclick="event.stopPropagation();qcAnswer(this.closest('.qc-q'),0,true)">✅ Tak</button>
+            <button style="flex:1; padding: 10px; border: 2px solid #e0dcd4; border-radius: 8px; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;" onmouseover="this.style.background='#f5f0e6'" onmouseout="this.style.background='white'" onclick="event.stopPropagation();qcAnswer(this.closest('.qc-q'),0,false)">❌ Nie</button>
+          </div>
+        </div>
+        <div class="qc-q" style="background: white; border-radius: 12px; padding: 20px 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); display: none;">
+          <div style="font-size: 13px; color: #888; margin-bottom: 6px;">Pytanie 2 z 3</div>
+          <div style="font-size: 17px; font-weight: 500; color: #1a3a2a; margin-bottom: 12px;">Czy pijesz więcej niż 2 kawy dziennie?</div>
+          <div style="display: flex; gap: 10px;">
+            <button style="flex:1; padding: 10px; border: 2px solid #c8e6c9; border-radius: 8px; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;" onmouseover="this.style.background='#e8f5e9'" onmouseout="this.style.background='white'" onclick="event.stopPropagation();qcAnswer(this.closest('.qc-q'),1,true)">✅ Tak</button>
+            <button style="flex:1; padding: 10px; border: 2px solid #e0dcd4; border-radius: 8px; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;" onmouseover="this.style.background='#f5f0e6'" onmouseout="this.style.background='white'" onclick="event.stopPropagation();qcAnswer(this.closest('.qc-q'),1,false)">❌ Nie</button>
+          </div>
+        </div>
+        <div class="qc-q" style="background: white; border-radius: 12px; padding: 20px 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); display: none;">
+          <div style="font-size: 13px; color: #888; margin-bottom: 6px;">Pytanie 3 z 3</div>
+          <div style="font-size: 17px; font-weight: 500; color: #1a3a2a; margin-bottom: 12px;">Chcesz lepszą koncentrację bez efektów ubocznych?</div>
+          <div style="display: flex; gap: 10px;">
+            <button style="flex:1; padding: 10px; border: 2px solid #c8e6c9; border-radius: 8px; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;" onmouseover="this.style.background='#e8f5e9'" onmouseout="this.style.background='white'" onclick="event.stopPropagation();qcAnswer(this.closest('.qc-q'),2,true)">✅ Tak</button>
+            <button style="flex:1; padding: 10px; border: 2px solid #e0dcd4; border-radius: 8px; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;" onmouseover="this.style.background='#f5f0e6'" onmouseout="this.style.background='white'" onclick="event.stopPropagation();qcAnswer(this.closest('.qc-q'),2,false)">❌ Nie</button>
+          </div>
+        </div>
+      </div>
+      <div id="qcResult" style="display: none; margin-top: 24px; background: white; border-radius: 16px; padding: 28px; box-shadow: 0 4px 20px rgba(45,106,66,0.12); border: 2px solid #c8e6c9; text-align: center;">
+        <div id="qcResultIcon" style="font-size: 48px; margin-bottom: 12px;"></div>
+        <div id="qcResultTitle" style="font-family: 'EB Garamond', serif; font-size: 24px; color: #1a3a2a; margin-bottom: 8px;"></div>
+        <div id="qcResultText" style="font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 20px;"></div>
+        <a href="#kup-teraz" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #2D6642, #3a8a56); color: white; border-radius: 8px; text-decoration: none; font-family: 'EB Garamond', serif; font-size: 17px; font-weight: 600; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(45,106,66,0.25)'" onmouseout="this.style.transform='';this.style.boxShadow=''">Zamów CogniCit — 79 zł →</a>
+        <div id="qcResultDetail" style="margin-top: 16px; font-size: 13px; color: #888;"></div>
+      </div>
+    </div>
+  </section>
+  <script>
+  (function(){
+    var answers = [];
+    window.qcAnswer = function(el, idx, yes) {
+      answers[idx] = yes;
+      // Highlight selected button
+      el.querySelectorAll('button').forEach(function(b, i) {
+        if ((i === 0 && yes) || (i === 1 && !yes)) {
+          b.style.background = '#e8f5e9'; b.style.borderColor = '#2D6642'; b.style.fontWeight = '600';
+        } else {
+          b.style.background = '#f5f5f5'; b.style.borderColor = '#e0dcd4'; b.style.opacity = '0.6';
+        }
+      });
+      // Show next question or result
+      var qs = document.querySelectorAll('.qc-q');
+      if (idx < 2) {
+        setTimeout(function(){ qs[idx+1].style.display = 'block'; qs[idx+1].style.animation = 'fadeIn 0.4s ease'; }, 300);
+      } else {
+        setTimeout(showResult, 400);
+      }
+    };
+    function showResult() {
+      var score = answers.filter(Boolean).length;
+      var r = document.getElementById('qcResult');
+      var icon = document.getElementById('qcResultIcon');
+      var title = document.getElementById('qcResultTitle');
+      var text = document.getElementById('qcResultText');
+      var detail = document.getElementById('qcResultDetail');
+      if (score === 3) {
+        icon.textContent = '🎯';
+        title.textContent = 'CogniCit jest idealny dla Ciebie!';
+        text.innerHTML = 'Pracujesz umysłowo, pijesz dużo kawy i chcesz lepszą koncentrację — <strong>dokładnie po to powstał CogniCit</strong>. Cytykolina 300 mg buduje acetylocholinę (neuroprzekaźnik skupienia), ALA chroni neurony przed stresem oksydacyjnym, a β-CD zwiększa wchłanianie o 40%.';
+        detail.innerHTML = '💊 <strong>1 kapsułka rano</strong> · ☕ Zero kofeiny · 🧪 GMP certyfikat · 📦 Dostawa 24h';
+      } else if (score === 2) {
+        icon.textContent = '👍';
+        title.textContent = 'CogniCit może Ci pomóc';
+        text.innerHTML = 'Na podstawie Twoich odpowiedzi, CogniCit może wspierać Twoją koncentrację. <strong>Sprawdź skład</strong> — 3 synergistyczne składniki w precyzyjnych dawkach, bez kofeiny i wypełniaczy.';
+        detail.innerHTML = '🔍 Przeczytaj o <a href="skladniki.html" style="color:#2D6642;text-decoration:underline">składnikach</a> lub <a href="nauka.html" style="color:#2D6642;text-decoration:underline">badaniach naukowych</a>';
+      } else {
+        icon.textContent = '📚';
+        title.textContent = 'Sprawdź nasze artykuły';
+        text.innerHTML = 'CogniCit nie jest dla każdego. Jeśli szukasz informacji o suplementacji mózgu, zacznij od naszych artykułów edukacyjnych.';
+        detail.innerHTML = '📖 <a href="nauka.html" style="color:#2D6642;text-decoration:underline">Baza naukowa</a> · <a href="blog/index.html" style="color:#2D6642;text-decoration:underline">Blog</a> · <a href="faq.html" style="color:#2D6642;text-decoration:underline">FAQ</a>';
+      }
+      r.style.display = 'block';
+      r.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  })();
+  </script>
+
   <!-- #252 — DLACZEGO NIE KOFEINA? -->
   <section style="padding: 48px 5%; background: linear-gradient(135deg, #faf7f0, #f5f0e6);">
     <div style="max-width: 800px; margin: 0 auto;">
