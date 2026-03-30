@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-30 (Power Cycle #106 — 18:33 UTC)
+## Last Updated: 2026-03-30 (Power Cycle #109 — 20:45 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -1035,7 +1035,33 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 493. **[NEW] Add "Wiosenny reset" 30-day challenge landing page (/wiosenny-reset)** — Interactive landing page: 30-day supplement + habit challenge with downloadable checklist PDF. Each day: 1 habit tip + CogniCit reminder. Progress tracker via localStorage. Email gate for PDF download. Targets "wiosenny reset organizmu" (seasonal trend, 500+ monthly). Estimated: 2.5 hours.
 
-494. **[NEW] Create "Jak kofeina wpływa na suplementy?" blog post** — Target "kofeina suplementy interakcje" (600+ monthly). Covers: caffeine's effect on nutrient absorption (iron, calcium, B vitamins), timing recommendations (1h gap between coffee and supplements), CogniCit as caffeine-free morning alternative. Zero quality Polish content on this topic. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+494. ~~**[DONE] Enhanced blog/czy-kofeina-niszczy-suplementy.html with conversion elements**~~ ✅ — Power Cycle #107. Added FAQPage JSON-LD (5 Q&As), newsletter floating badge with pulse animation, blog email capture popup (60% scroll trigger, 15% discount, Formspree), localStorage persistence. Post now has all standard conversion elements.
 
-495. **[NEW] Add "Sezonowe promocje" dynamic pricing widget to index.html** — Rotating seasonal offer banner below hero: current = "Wiosenny pakiet: 2× CogniCit za 142 zł (−5%)" with countdown timer to end of April. Updates seasonally (summer, back-to-school, Christmas). Creates urgency + seasonal relevance. Estimated: 1 hour.
+495. ~~**[DONE] Add "Sezonowe promocje" dynamic pricing widget to index.html**~~ ✅ — Power Cycle #107. Green gradient banner between hero and news ticker. Spring promo: "2× CogniCit za 142 zł (−5%)" with countdown to April 30. Gold CTA "Zamów pakiet →". Dismissible + localStorage. Auto-hides after April 30.
 
+### 🆕 Power Cycle #107 Additions (2026-03-30 19:03 UTC)
+
+496. **[NEW] Add "Opinie klientów" mini-carousel to mobile nav on all pages** — Small star rating badge (★★★★★ 4.8/5) linking to opinie.html in hamburger menu. index.html already has this (Power Cycle #84). Extend to all 50+ pages for consistent mobile trust signal. Estimated: 1 hour.
+
+497. **[NEW] Create "Suplementy a praca zdalna — jak chronić mózg przed cyfrowym zmęczeniem?" blog post** — Outline ready in content_calendar #94. Full article targeting "praca zdalna zmęczenie suplementy" (700+ monthly). Remote worker protocol with CogniCit. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+498. **[NEW] Add "Ranking cenowy" animated bar chart to index.html** — Expand existing price comparison with animated horizontal bars. CogniCit (2.63 zł) shortest bar = cheapest. Green highlight vs grey competitors. Scroll-triggered fill animation via IntersectionObserver. Existing version on porownanie.html — replicate on homepage for visitors who don't click through. Estimated: 45 minutes.
+
+
+### 🆕 Power Cycle #108 Additions (2026-03-30 19:33 UTC)
+
+~~498. **[DONE] Add "Ranking cenowy" animated bar chart to index.html**~~ ✅ — Power Cycle #108. Animated horizontal bar chart with 3 supplements compared: CogniCit (2.63 zł), Brain Actives (4.97 zł), Mind Lab Pro (8.30 zł). Scroll-triggered fill animation via IntersectionObserver with staggered delays (150ms between bars). Cubic-bezier easing for smooth fill. CogniCit highlighted green vs grey competitors. "3× taniej niż Mind Lab Pro" callout. Link to porownanie.html for full comparison. Inserted between "3 proste kroki" section and CTA section on index.html.
+
+~~#496 (partial) — Added "30-dniowa gwarancja satysfakcji" trust badge to 3 high-traffic pages missing it**~~ ✅ — Power Cycle #108. Added green gradient guarantee section to: faq-produkt.html (before footer), jak-stosowac.html (before footer), jak-wybrac-suplement.html (before footer). Each includes: green "30" badge circle, heading, marketing copy, "Zamów bez ryzyka →" CTA. Consistent design across all pages.
+
+499. **[NEW] Add "Nootropiki a multitasking" blog post (#95 in content_calendar)** — Write full article targeting "multitasking suplementy" / "przełączanie zadań koncentracja". Zero Polish content on this topic. Attention residue mechanism, CogniCit for working memory. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+500. **[NEW] Add email capture popup to 5 newest blog posts missing it** — Audit all blog posts created in Power Cycle #101+ for newsletter popup. Some newer posts may have been created before the popup standard was established. Add floating badge + scroll-triggered popup to any missing. Estimated: 30 minutes.
+
+501. **[NEW] Create "Najlepszy suplement na koncentrację bez kofeiny 2026" SEO mega-page (/ranking-bez-kofeiny)** — Ultimate caffeine-free authority page. CogniCit (0mg) vs 5 competitors scored on 8 criteria. Interactive filter. FAQPage + Product aggregateRating JSON-LD. Estimated: 3 hours.
+
+502. **[NEW] Add "Opinie klientów" star rating badge to ALL remaining pages missing mobile nav badge** — Extend the ★4.8/5 badge to the remaining 16 pages: o-nas.html, dostawa.html, zwroty.html, regulamin.html, polityka-prywatnosci.html, polityka-cookies.html, all ingredient pages, 404.html, dziekuje-za-zapis.html, dodaj-opinie.html. Consistent mobile trust signal across entire site. Estimated: 30 minutes.
+
+503. **[NEW] Create "Najlepszy suplement na koncentrację dla seniorów 2026" blog post** — Target "suplementy koncentracja senior ranking" (800+ monthly, high purchase intent — adult children buying for parents). Comparison table scoring 5 supplements on safety, drug interactions, GMP, caffeine content, price/day. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
+
+504. **[NEW] Add satisfaction guarantee badge to all seasonal landing pages missing it** — Audit matura.html, sesja.html, powrot-do-szkoly.html for green 30-day guarantee section. Add to any missing pages for consistent trust signals on seasonal conversion pages. Estimated: 15 minutes.

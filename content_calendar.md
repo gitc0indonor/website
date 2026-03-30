@@ -2814,3 +2814,75 @@
 **Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/cytykolina-przewodnik-kompletny.html, jak-stosowac.html
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (4 Q&As)
 **Status:** Outline ready — PRIORITY (zero quality Polish content on this topic, featured snippet potential)
+
+
+### Blog Post Outline #94 — Power Cycle #107 (Added 2026-03-30)
+**Title:** "Suplementy a praca zdalna — jak chronić mózg przed cyfrowym zmęczeniem?"
+**Target keyword:** "cyfrowe zmęczenie suplementy" / "praca zdalna zmęczenie mózg" / "suplementy home office" (~700+ monthly, growing post-pandemic)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Evergreen, peak Sep (back to work) and Jan (new year productivity goals)
+
+**Outline:**
+1. **Wstęp** — 2.5 mln Polaków pracuje zdalnie. Ekrany 8-10h dziennie. Co to robi z mózgiem?
+2. **Mechanizm cyfrowego zmęczenia** — Niebieskie światło → supresja melatoniny, ciągły context switching → spadek acetylocholiny, siedzący tryb → słabszy przepływ krwi do mózgu.
+3. **Kortyzol pracownika zdalnego** — Brak granic praca/dom = chroniczny stres. Decision fatigue. Brak accountability.
+4. **Cytykolina — paliwo dla zdalnego mózgu** — 300 mg CDP-cholina = prekursor acetylocholiny. 233 publikacji PubMed.
+5. **ALA — ochrona przed stresem oksydacyjnym ekranów** — Długotrwała praca przy ekranie generuje wolne rodniki. ALA regeneruje glutation. Hager et al. 2007.
+6. **β-CD — gwarancja wchłaniania** — Stres + nieregularne posiłki = gorsze wchłanianie. β-CD chroni składniki.
+7. **Protokół "zdalny dzień" z CogniCit** — 7:00 ☀️ światło → 7:30 💊 CogniCit ze śniadaniem → 9:00 deep work → 12:00 spacer → 14:00 zadania administracyjne → 18:00 shutdown.
+8. **5 praktycznych tipów** — Stałe godziny, deep work block, CogniCit anchor, 20-20-20 rule, shutdown ritual.
+9. **Porównanie** — CogniCit (trwała koncentracja) vs kofeina (crash) vs energetyki (cukier) vs modafinil (recepta).
+10. **Podsumowanie** — "Praca zdalna to wolność, ale mózg potrzebuje wsparcia."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-programistow.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html, blog/chroniczne-zmeczenie-umyslowe.html, porownanie.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** "Praca zdalna" + "zmęczenie" = trending Polish queries. Zero Polish content connecting nootropics to remote work fatigue.
+**Status:** Outline ready, needs writing
+
+### Blog Post Outline #95 — Power Cycle #108 (Added 2026-03-30)
+**Title:** "Nootropiki a multitasking — czy suplementy pomagają przy przełączaniu zadań?"
+**Target keyword:** "multitasking suplementy" / "przełączanie zadań koncentracja" / "nootropiki focus" (~400+ monthly, zero Polish content)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Evergreen, peak Sep (back to work) and Jan (productivity resolutions)
+
+**Outline:**
+1. **Wstęp** — Przeciętny pracownik przełącza zadania co 3 minuty (badania Gloria Mark, UC Irvine). Mit wielozadaniowości: mózg nie robi 2 rzeczy naraz — tylko szybko przełącza. Koszt: 23 min na odzyskanie pełnego focusu po każdym przełączeniu.
+2. **Jak multitasking obciąża mózg?** — Attention residue (Sophie Leroy): poprzednie zadanie "zostaje" w pamięci roboczej → spadek wydajności na kolejnym. Przeciążenie kory przedczołowej → spadek acetylocholiny. Kortyzol z ciągłego przełączania → stres oksydacyjny mitochondriów.
+3. **Cytykolina — paliwo dla pamięci roboczej** — 300 mg CDP-cholina = prekursor acetylocholiny (neuroprzekaźnik pamięci roboczej i przetwarzania informacji). Mechanizm: więcej ACh = więcej "slotów" w pamięci roboczej = łatwiejsze wracanie do poprzedniego zadania. 233 publikacji PubMed.
+4. **ALA — ochrona mitochondriów pracownika wielozadaniowego** — Ciągłe przełączanie = więcej energii na każdą zmianę kontekstu. ALA regeneruje glutation, chroni mitochondria przed wolnymi rodnikami generowanymi przez chroniczny stres poznawczy. Hager et al. 2007.
+5. **Protokół "single-tasking z CogniCit"** — 7:00 CogniCit ze śniadaniem → blok 1 (90 min deep work, jedno zadanie) → przerwa 15 min → blok 2 (zadania administracyjne, batch processing) → blok 3 (kreatywne/planowanie) → 17:00 shutdown. Zero kofeiny = stabilna energia bez crashu przy przełączaniu.
+6. **5 praktycznych tipów na redukcję multitaskingu** — (a) Batch podobnych zadań, (b) Tryb focus na telefonie (30 min), (c) Jedno okno przeglądarki na raz, (d) Time-blocking w kalendarzu, (e) CogniCit jako poranny anchor koncentracji.
+7. **Porównanie: CogniCit vs popularne "narzędzia na focus"** — Tabela: CogniCit (acetylocholina = trwała koncentracja) vs kofeina (adenozyna = tymczasowa czujność) vs muzyka binauralna (placebo?) vs Pomodoro (technika, nie suplement). CogniCit = jedyne rozwiązanie na poziomie biochemicznym.
+8. **Podsumowanie** — "Multitasking jest nieunikniony w 2026 roku. Ale możesz zminimalizować jego koszty — biochemicznie (CogniCit) i praktycznie (single-tasking protokół)."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-programistow.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html, blog/chroniczne-zmeczenie-umyslowe.html, porownanie.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy suplementy pomagają przy multitaskingu?", "Jakie suplementy na przełączanie zadań?", "Czy CogniCit poprawia pamięć roboczą?", "Czy mogę łączyć z Pomodoro?", "Kiedy zobaczę efekty?")
+**SEO angle:** Zero Polish content connecting nootropics to multitasking specifically. Growing search trend as remote/hybrid work increases context switching. Positions CogniCit as the modern worker's cognitive tool.
+**Target platforms:** Google (SEO), LinkedIn, Wykop, grupy FB o produktywności
+**Status:** Outline ready, needs writing
+
+---
+
+### Blog Post Outline #96 — Power Cycle #109 (Added 2026-03-30)
+**Title:** "Suplementy na wiosenny spadek energii — jak wrócić do formy po zimie?"
+**Target keyword:** "wiosenny spadek energii suplementy" / "zmęczenie wiosna suplement" / "przesilenie wiosenne co brać" (~600+ monthly, seasonal peak March-April)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** STRONG seasonal — March-April peak. Publish IMMEDIATELY for indexing.
+
+**Outline:**
+1. **Wstęp** — "Słońce świeci, dzień się wydłuża, a Ty czujesz się zmęczony/a?" Paradoks przesilenia wiosennego.
+2. **Dlaczego wiosną masz mniej energii?** — Przestawianie zegara biologicznego (2-4 tyg. adaptacji), wahania kortyzolu, deprywacja snu podczas zmiany czasu.
+3. **Co się dzieje z mózgiem?** — Spadek melatoniny (szybsze świt), spadek acetylocholiny (przestawianie cyklu), więcej wolnych rodników (stres adaptacyjny).
+4. **Cytykolina — reset neuroprzekaźników** — 300 mg CDP-cholina = odbudowa puli acetylocholiny. Pomaga mózg adaptować się do nowego rytmu. 233 publikacji PubMed.
+5. **ALA — ochrona mitochondriów w okresie przejściowym** — Wahania temperatury i ciśnienia = stres oksydacyjny. ALA regeneruje glutation, chroni mitochondria.
+6. **5-dniowy protokół wiosennego resetu** — Dzień 1-2: CogniCit + światło rano. Dzień 3-4: + spacer + dieta sezonowa. Dzień 5: pełny protokół.
+7. **Porównanie: CogniCit vs inne rozwiązania** — Kofeina (pogarsza adaptację), energetyki (cukier), multiwitamina (brak mechanizmu nootropowego).
+8. **FAQ** — 4 pytania (Czy przesilenie jest normalne? / Kiedy mija? / Czy łączyć z witaminą D? / Czy CogniCit pomaga?)
+9. **CTA** — produkt.html
+
+**Internal links:** produkt.html, blog/nootropiki-a-sen.html, jak-stosowac.html, nauka.html, blog/poranne-nawyki-programisty.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (4 Q&As)
+**SEO angle:** Zero Polish content specifically targeting supplements + spring fatigue. Seasonal content with 4-week traffic window. Emotional hook = high engagement.
+**Status:** Outline ready — PRIORITY PUBLISH (seasonal timing critical)

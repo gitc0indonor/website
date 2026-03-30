@@ -1662,6 +1662,30 @@
     </div>
   </section>
 
+  <!-- #495 — Sezonowe promocje: dynamic pricing widget -->
+  <div id="seasonalPromo" style="background:linear-gradient(135deg,#1a472a 0%,#2d6a3f 100%);padding:12px 5%;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;font-family:'Inter',sans-serif;position:relative;">
+    <span style="color:#ffd700;font-size:13px;font-weight:700;letter-spacing:0.5px;">🌸 WIOSENNY PAKIET</span>
+    <span style="color:#fff;font-size:13px;">2× CogniCit za <strong style="color:#ffd700;">142 zł</strong> <span style="text-decoration:line-through;opacity:0.6;font-size:11px;">158 zł</span> <span style="background:#ffd700;color:#1a472a;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;margin-left:4px;">−5%</span></span>
+    <span id="seasonalTimer" style="color:rgba(255,255,255,0.9);font-size:12px;">⏳ Koniec za: <strong id="sTimerDays">--</strong>d <strong id="sTimerHours">--</strong>h <strong id="sTimerMins">--</strong>m</span>
+    <a href="produkt.html" style="background:#ffd700;color:#1a472a;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;text-decoration:none;transition:all 0.2s;white-space:nowrap;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Zamów pakiet →</a>
+    <button onclick="this.parentElement.style.display='none';localStorage.setItem('spDismissed','1')" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,0.4);cursor:pointer;font-size:16px;padding:4px;" aria-label="Zamknij">×</button>
+  </div>
+  <script>
+  (function(){
+    if(localStorage.getItem('spDismissed')){document.getElementById('seasonalPromo').style.display='none';return;}
+    var end=new Date(2026,3,30,23,59,59);// April 30, 2026
+    function upd(){
+      var now=new Date(),d=end-now;
+      if(d<0){document.getElementById('seasonalPromo').style.display='none';return;}
+      var days=Math.floor(d/864e5),hrs=Math.floor(d%864e5/36e5),mins=Math.floor(d%36e5/6e4);
+      document.getElementById('sTimerDays').textContent=days;
+      document.getElementById('sTimerHours').textContent=hrs;
+      document.getElementById('sTimerMins').textContent=mins;
+    }
+    upd();setInterval(upd,6e4);
+  })();
+  </script>
+
   <!-- NEWS TICKER — #239 — Aktualności firmy -->
   <div class="news-ticker" id="newsTicker" style="background: linear-gradient(135deg, #2a2a27, #353532); padding: 10px 5%; display: flex; align-items: center; justify-content: center; gap: 12px; position: relative; overflow: hidden;">
     <div style="background: var(--gold); color: var(--text, #2a2a27); padding: 3px 10px; border-radius: 4px; font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;">Aktualności</div>
@@ -2833,6 +2857,63 @@
     </div>
     <a href="produkt.html" style="display: inline-block; margin-top: 32px; padding: 14px 32px; background: linear-gradient(135deg, #2e7d32, #43a047); color: white; border-radius: 12px; text-decoration: none; font-weight: 600; font-family: 'EB Garamond', Georgia, serif; font-size: 15px; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(46,125,50,0.3)'" onmouseout="this.style.transform='';this.style.boxShadow=''">Zamów CogniCit — 79 zł →</a>
   </section>
+
+  <!-- RANKING CENOWY — Animated Price Comparison -->
+  <section style="max-width: 700px; margin: 0 auto; padding: 50px 5%; text-align: center;">
+    <div style="font-size: 13px; color: var(--gold, #c9a96e); text-transform: uppercase; letter-spacing: 3px; font-weight: 600; margin-bottom: 8px; font-family: 'EB Garamond', Georgia, serif;">Ranking cenowy</div>
+    <h2 style="font-family: 'EB Garamond', serif; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--text, #2a2a27); margin-bottom: 8px;">Ile kosztuje suplementacja mózgu?</h2>
+    <p style="font-size: 14px; color: var(--soft, #5a5a58); margin-bottom: 32px;">Cena za dzienną porcję — im krócej, tym taniej.</p>
+    <div id="priceBars" style="display: flex; flex-direction: column; gap: 14px; text-align: left;">
+      <div class="pb-row" data-price="2.63" style="display: flex; align-items: center; gap: 12px;">
+        <span style="width: 140px; font-size: 13px; font-weight: 600; color: #2e7d32; flex-shrink: 0;">CogniCit</span>
+        <div style="flex: 1; background: #f0f0ee; border-radius: 8px; height: 32px; overflow: hidden; position: relative;">
+          <div class="pb-fill" style="height: 100%; width: 0; background: linear-gradient(90deg, #2e7d32, #66bb6a); border-radius: 8px; transition: width 1.2s cubic-bezier(0.4,0,0.2,1); display: flex; align-items: center; justify-content: flex-end; padding-right: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: white; white-space: nowrap;">2,63 zł/dzień</span>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row" data-price="4.97" style="display: flex; align-items: center; gap: 12px;">
+        <span style="width: 140px; font-size: 13px; color: var(--soft, #5a5a58); flex-shrink: 0;">Brain Actives</span>
+        <div style="flex: 1; background: #f0f0ee; border-radius: 8px; height: 32px; overflow: hidden; position: relative;">
+          <div class="pb-fill" style="height: 100%; width: 0; background: #d5d5d0; border-radius: 8px; transition: width 1.2s cubic-bezier(0.4,0,0.2,1); display: flex; align-items: center; justify-content: flex-end; padding-right: 10px;">
+            <span style="font-size: 12px; font-weight: 600; color: #555; white-space: nowrap;">4,97 zł/dzień</span>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row" data-price="8.30" style="display: flex; align-items: center; gap: 12px;">
+        <span style="width: 140px; font-size: 13px; color: var(--soft, #5a5a58); flex-shrink: 0;">Mind Lab Pro</span>
+        <div style="flex: 1; background: #f0f0ee; border-radius: 8px; height: 32px; overflow: hidden; position: relative;">
+          <div class="pb-fill" style="height: 100%; width: 0; background: #d5d5d0; border-radius: 8px; transition: width 1.2s cubic-bezier(0.4,0,0.2,1); display: flex; align-items: center; justify-content: flex-end; padding-right: 10px;">
+            <span style="font-size: 12px; font-weight: 600; color: #555; white-space: nowrap;">8,30 zł/dzień</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 20px; font-size: 14px; color: #2e7d32; font-weight: 600;">CogniCit — 3× taniej niż Mind Lab Pro</p>
+    <a href="porownanie.html" style="display: inline-block; margin-top: 12px; font-size: 13px; color: var(--gold, #c9a96e); text-decoration: none; border-bottom: 1px solid var(--gold, #c9a96e);">Pełne porównanie suplementów →</a>
+  </section>
+
+  <script>
+  // Price ranking bar animation — IntersectionObserver
+  (function(){
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var maxP = 8.30;
+          var fills = document.querySelectorAll('#priceBars .pb-fill');
+          var prices = [2.63, 4.97, 8.30];
+          fills.forEach(function(f,i){
+            var pct = (prices[i]/maxP*100).toFixed(1);
+            setTimeout(function(){ f.style.width = pct+'%'; }, i*150);
+          });
+          obs.unobserve(e.target);
+        }
+      });
+    },{threshold:0.2});
+    var el = document.getElementById('priceBars');
+    if(el) obs.observe(el);
+  })();
+  </script>
 
   <!-- CTA -->
   <section class="cta-section" id="kontakt">
