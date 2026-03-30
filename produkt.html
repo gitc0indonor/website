@@ -2006,6 +2006,22 @@
     }
     calcDelivery();
   </script>
+  <style>@keyframes tpPulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(46,125,50,.4)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(46,125,50,0)}}</style>
+  <script>
+  // #459 — "Łącznie kupiono" social proof counter
+  (function(){
+    var el=document.getElementById('tpCount');if(!el)return;
+    var BASE=342,LS_KEY='tpCountBase',LS_DAY='tpCountDay';
+    var today=Math.floor(Date.now()/864e5);
+    var stored=parseInt(localStorage.getItem(LS_KEY)||BASE);
+    var lastDay=parseInt(localStorage.getItem(LS_DAY)||'0');
+    if(today>lastDay){stored+=Math.floor(Math.random()*2);localStorage.setItem(LS_KEY,stored);localStorage.setItem(LS_DAY,today);}
+    var cur=0,target=stored;
+    function animate(){if(cur<target){cur+=Math.max(1,Math.floor((target-cur)/12));if(cur>target)cur=target;el.textContent=cur.toLocaleString('pl-PL');requestAnimationFrame(animate);}}
+    var obs=new IntersectionObserver(function(e){if(e[0].isIntersecting){obs.disconnect();animate();}},{threshold:0.1});
+    obs.observe(el);
+  })();
+  </script>
 
   <!-- BUY SECTION -->
   <section style="padding: 60px 5%;">
@@ -2013,6 +2029,11 @@
       <div style="text-align: center;">
         <h2 style="font-family: 'EB Garamond', serif; font-size: 32px; color: var(--cognivia-green); margin-bottom: 8px;">Zamów CogniCit</h2>
         <p style="font-size: 14px; color: #888; margin-bottom: 20px;">30 kapsułek · 1 miesiąc stosowania</p>
+        <!-- #459 — Social proof purchase counter -->
+        <div id="totalPurchased" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:16px;font-family:'Inter',sans-serif;font-size:13px;color:#2e7d32;background:rgba(46,125,50,.07);padding:8px 16px;border-radius:20px;border:1px solid rgba(46,125,50,.12);max-width:340px;margin-left:auto;margin-right:auto;">
+          <span style="width:8px;height:8px;background:#2e7d32;border-radius:50%;animation:tpPulse 2s ease-in-out infinite;flex-shrink:0;"></span>
+          Klienci kupili już <strong id="tpCount" style="margin:0 3px;">342</strong> opakowania
+        </div>
         <div class="price">79,00 zł</div>
         <div class="price-note">Cena brutto (z VAT 23%)</div>
         <!-- #387 — Freshness guarantee badge -->

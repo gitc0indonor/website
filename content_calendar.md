@@ -2602,3 +2602,31 @@
 **Schema:** Article + BreadcrumbList + FAQPage (3 Q&As)
 **SEO angle:** First-mover — zero Polish content connecting nootropics to seasonal affective patterns.
 **Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #87 — Power Cycle #98
+**Title:** "Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów"
+**Target keyword:** "jak poprawić koncentrację" / "sposoby na koncentrację" (~3,000+ monthly searches in Poland — evergreen, high-volume)
+**Estimated word count:** 2,500-3,000 words
+**Seasonality:** Evergreen — peaks in Sep (back to work/school), Jan (New Year resolutions), May (exam prep)
+
+**Outline:**
+1. **Wstęp** — koncentracja to umiejętność, nie talent. Każdy może ją trenować. 10 sposobów popartych badaniami.
+2. **Sen 7-8h** — hipokamp → konsolidacja pamięci. Brak snu = spadek koncentracji o 30%. Praktyczne tipy (stała godzina, temperatura, brak ekranu).
+3. **Ruch fizyczny** — BDNF (brain-derived neurotrophic factor), 30 min dziennie. Badania: 12% poprawa funkcji poznawczych u regularnie ćwiczących.
+4. **Nawodnienie** — 2% odwodnienia = 25% spadek koncentracji. Ile pić? Zasada: 30ml/kg masy ciała.
+5. **Technika Pomodoro** — 25 min skupienia / 5 min przerwy. Dlaczego działa: ultradian rhythm mózgu. Aplikacje.
+6. **Cyfrowy detoks** — notification fatigue, multitasking mit. Badania: przełączanie zadań = 40% straty produktywności.
+7. **Dieta dla mózgu** — omega-3 (łosoś, orzechy), antyoksydanty (jagody), cholina (jajka). Śródziemnomorski model.
+8. **Medytacja mindfulness** — 10 min dziennie, 8 tygodni = mierzalna zmiana w korze przedczołowej. Aplikacje Headspace/Calmed.
+9. **Zimna ekspozycja** — zimny prysznic → noradrenalina → czujność. 30 sekund na początek.
+10. **Suplementacja oparta na dowodach** — cytykolina (233 publikacje PubMed), ALA (1522 publikacje), β-CD (biodostępność). CogniCit jako synergia tych trzech składników. Dlaczego 3 składniki > 20.
+11. **Optymalizacja środowiska** — temperatura (20-22°C), hałas (biały szum), światło (zimne > ciepłe do pracy), porządek na biurku.
+12. **FAQ** — 5 pytań (Ile czasu potrzeba na efekty? / Czy kofeina pomaga? / Czy suplementy działają? / Kiedy brać CogniCit? / Czy łączyć z kawą?)
+13. **CTA** — zamów CogniCit z 30-dniową gwarancją
+
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/cytykolina-przewodnik-kompletny.html, nauka.html, jak-stosowac.html, porownanie.html
+**Schema:** Article + BreadcrumbList + FAQPage (5 Q&As for rich snippets)
+**SEO angle:** Featured snippet potential — numbered list format matches Google's preferred structure for "jak" queries. High-volume keyword with moderate competition. Listicle format = high engagement + time-on-page.
+**Status:** Outline ready, needs writing
