@@ -455,6 +455,42 @@
   })();
   </script>
 
+  <!-- #457 — ONE-CLICK REORDER FOR RETURNING CUSTOMERS -->
+  <div id="reorderBanner" style="display:none; max-width:600px; margin:0 auto; padding:16px 20px;">
+    <div style="display:flex; align-items:center; gap:12px; background:linear-gradient(135deg,#e8f5e9,#f1f8e9); border:1px solid #c8e6c9; border-radius:12px; padding:14px 20px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+      <div style="font-size:28px; flex-shrink:0;">🔄</div>
+      <div style="flex:1; min-width:0;">
+        <div style="font-family:'EB Garamond',serif; font-size:16px; font-weight:600; color:#1a3a2a; margin-bottom:2px;">Witaj ponownie!</div>
+        <div style="font-size:13px; color:#555; line-height:1.4;">Zamówiłeś już CogniCit — kup ponownie w 1 kliknięcie.</div>
+      </div>
+      <button onclick="reorderCognicit()" style="flex-shrink:0; background:var(--cognivia-green); color:white; border:none; padding:10px 18px; border-radius:8px; font-family:'EB Garamond',serif; font-size:14px; font-weight:600; cursor:pointer; transition:transform 0.15s,box-shadow 0.15s; white-space:nowrap;" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">Kup ponownie →</button>
+      <button onclick="this.parentElement.parentElement.style.display='none'" style="background:none; border:none; font-size:16px; color:#999; cursor:pointer; padding:4px 8px; flex-shrink:0;" title="Zamknij">✕</button>
+    </div>
+  </div>
+  <script>
+  (function(){
+    try {
+      var orders = JSON.parse(localStorage.getItem('cognivia_orders') || '[]');
+      if (orders.length > 0) {
+        var last = orders[orders.length - 1];
+        var qty = last.qty || 1;
+        var banner = document.getElementById('reorderBanner');
+        if (banner) banner.style.display = 'block';
+        window._reorderQty = qty;
+      }
+    } catch(e) {}
+  })();
+  function reorderCognicit() {
+    var qty = window._reorderQty || 1;
+    if (typeof CogniviaCart !== 'undefined') {
+      CogniviaCart.addItem('cognicit', qty);
+      window.location.href = 'koszyk.html';
+    } else {
+      window.location.href = 'koszyk.html?add=cognicit&qty=' + qty;
+    }
+  }
+  </script>
+
   <!-- #224 — SCROLL-TRIGGERED LIMITED STOCK URGENCY BANNER -->
   <style>
     .urgency-banner{position:fixed;top:0;left:0;right:0;z-index:997;background:linear-gradient(135deg,#1a3a1a,#2d5a2d);color:#fff;padding:12px 20px;text-align:center;font-size:14px;font-weight:500;transform:translateY(-100%);transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 4px 20px rgba(0,0,0,0.15);display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
@@ -922,6 +958,80 @@
     </p>
   </section>
 
+  <!-- #456 — "Jak działa CogniCit w mózgu?" animated mechanism section -->
+  <section style="background: linear-gradient(135deg, #e8f5e9 0%, #fff8e1 100%); padding: 60px 20px;">
+    <h2 style="font-family: 'EB Garamond', serif; font-size: 28px; text-align: center; margin-bottom: 8px; color: #1a3a2a;">Jak działa CogniCit w mózgu?</h2>
+    <p style="text-align: center; color: #666; font-size: 15px; margin-bottom: 32px;">5 kroków od kapsułki do efektu</p>
+    <div style="max-width: 800px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: flex-start;">
+      <!-- Step 1 -->
+      <div class="brain-step" style="flex: 1 1 140px; min-width: 130px; background: white; border-radius: 14px; padding: 18px 14px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.06); opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #e8f5e9, #c8e6c9); display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 22px;">💊</div>
+        <div style="font-size: 11px; color: #2e7d32; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Krok 1</div>
+        <div style="font-size: 14px; font-weight: 600; color: #1a3a2a; margin-bottom: 4px;">Kapsułka się rozpuszcza</div>
+        <div style="font-size: 12px; color: #666; line-height: 1.4;">Kapsułka uwalnia 3 składniki w żołądku</div>
+      </div>
+      <!-- Arrow -->
+      <div style="flex: 0 0 30px; display: flex; align-items: center; justify-content: center; padding-top: 40px; font-size: 20px; color: #c9a96e;" class="brain-step-arrow">→</div>
+      <!-- Step 2 -->
+      <div class="brain-step" style="flex: 1 1 140px; min-width: 130px; background: white; border-radius: 14px; padding: 18px 14px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.06); opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #e3f2fd, #bbdefb); display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 22px;">🛡️</div>
+        <div style="font-size: 11px; color: #1565c0; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Krok 2</div>
+        <div style="font-size: 14px; font-weight: 600; color: #1a3a2a; margin-bottom: 4px;">β-CD chroni składniki</div>
+        <div style="font-size: 12px; color: #666; line-height: 1.4;">Cyklodekstryna owija cząsteczki, chroniąc je przed kwasem żołądkowym</div>
+      </div>
+      <!-- Arrow -->
+      <div style="flex: 0 0 30px; display: flex; align-items: center; justify-content: center; padding-top: 40px; font-size: 20px; color: #c9a96e;" class="brain-step-arrow">→</div>
+      <!-- Step 3 -->
+      <div class="brain-step" style="flex: 1 1 140px; min-width: 130px; background: white; border-radius: 14px; padding: 18px 14px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.06); opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #fff8e1, #ffecb3); display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 22px;">🔬</div>
+        <div style="font-size: 11px; color: #f9a825; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Krok 3</div>
+        <div style="font-size: 14px; font-weight: 600; color: #1a3a2a; margin-bottom: 4px;">Wchłanianie do krwi</div>
+        <div style="font-size: 12px; color: #666; line-height: 1.4;">Zabezpieczone składniki wchłaniają się z jelita do krwiobiegu (200% lepiej)</div>
+      </div>
+      <!-- Arrow -->
+      <div style="flex: 0 0 30px; display: flex; align-items: center; justify-content: center; padding-top: 40px; font-size: 20px; color: #c9a96e;" class="brain-step-arrow">→</div>
+      <!-- Step 4 -->
+      <div class="brain-step" style="flex: 1 1 140px; min-width: 130px; background: white; border-radius: 14px; padding: 18px 14px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.06); opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #fce4ec, #f8bbd0); display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 22px;">🧠</div>
+        <div style="font-size: 11px; color: #c62828; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Krok 4</div>
+        <div style="font-size: 14px; font-weight: 600; color: #1a3a2a; margin-bottom: 4px;">Przekracza barierę krew-mózg</div>
+        <div style="font-size: 12px; color: #666; line-height: 1.4;">Cytykolina przechodzi przez barierę krew-mózg i dociera do neuronów</div>
+      </div>
+      <!-- Arrow -->
+      <div style="flex: 0 0 30px; display: flex; align-items: center; justify-content: center; padding-top: 40px; font-size: 20px; color: #c9a96e;" class="brain-step-arrow">→</div>
+      <!-- Step 5 -->
+      <div class="brain-step" style="flex: 1 1 140px; min-width: 130px; background: white; border-radius: 14px; padding: 18px 14px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.06); opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #e8f5e9, #a5d6a7); display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 22px;">⚡</div>
+        <div style="font-size: 11px; color: #2e7d32; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Krok 5</div>
+        <div style="font-size: 14px; font-weight: 600; color: #1a3a2a; margin-bottom: 4px;">Neurony działają lepiej</div>
+        <div style="font-size: 12px; color: #666; line-height: 1.4;">Acetycholina + ochrona antyoksydacyjna = lepsza koncentracja i pamięć</div>
+      </div>
+    </div>
+    <p style="text-align: center; font-size: 11px; color: #999; margin-top: 20px;">Uproszczony schemat mechanizmu. Szczegóły na <a href="nauka.html" style="color: #2e7d32; text-decoration: none;">stronie naukowej →</a></p>
+  </section>
+  <script>
+  // #456 — Stagger animation for brain mechanism steps
+  (function(){
+    var steps=document.querySelectorAll('.brain-step');
+    var arrows=document.querySelectorAll('.brain-step-arrow');
+    if(!steps.length)return;
+    var obs=new IntersectionObserver(function(entries){
+      if(entries[0].isIntersecting){
+        steps.forEach(function(s,i){
+          setTimeout(function(){s.style.opacity='1';s.style.transform='translateY(0)';},i*200);
+        });
+        arrows.forEach(function(a,i){
+          setTimeout(function(){a.style.opacity='1';},(i*2+1)*200);
+        });
+        obs.disconnect();
+      }
+    },{threshold:0.2});
+    obs.observe(steps[0].parentElement);
+    // Initially hide arrows
+    arrows.forEach(function(a){a.style.opacity='0';a.style.transition='opacity 0.4s';});
+  })();
+  </script>
+
   <!-- SKŁADNIKI W PIGUŁCE — Interactive Ingredient Explainer -->
   <section style="background: linear-gradient(135deg, #f0f7f0 0%, #fff8e1 100%); padding: 60px 20px;">
     <h2 style="font-family: 'EB Garamond', serif; font-size: 28px; text-align: center; margin-bottom: 8px; color: #1a3a2a;">Składniki w pigułce</h2>
@@ -1207,6 +1317,44 @@
         <p style="font-size: 14px; color: #555; margin: 0;"><strong>Zalecenie:</strong> Przyjmuj 1 kapsułkę rano, z pierwszym posiłkiem. To zgodne z naturalnym rytmem dobowym i zapewnia optymalne wchłanianie.</p>
       </div>
       <p style="text-align: center; margin-top: 16px; font-size: 13px;"><a href="blog/nootropiki-a-sen.html" style="color: #2e7d32; text-decoration: none; border-bottom: 1px dotted #2e7d32;">Czytaj więcej: Nootropiki a sen — pełny artykuł →</a></p>
+    </div>
+  </section>
+
+  <!-- #465 — NAUKOWY DEEP-DIVE: SEN -->
+  <section style="background: linear-gradient(180deg, #f8faf8 0%, #eef5ee 100%); padding: 48px 20px;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 32px;">
+        <span style="font-size: 14px; color: #888; text-transform: uppercase; letter-spacing: 2px;">Naukowe podejście</span>
+        <h2 style="font-family: 'EB Garamond', serif; font-size: 28px; color: #1a3a2a; margin-top: 8px;">Dlaczego CogniCit nie zaburza snu?</h3>
+        <p style="color: #666; font-size: 14px; max-width: 600px; margin: 8px auto 0;">Trzy składniki. Trzy niezależne mechanizmy. Żaden nie wpływa na adenozynę ani melatoninę.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 28px;">
+        <div style="background: white; padding: 20px; border-radius: 12px; border-left: 4px solid #2e7d32; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 24px; margin-bottom: 8px;">🧠</div>
+          <h4 style="font-family: 'EB Garamond', serif; color: #2e7d32; font-size: 16px; margin-bottom: 6px;">Cytykolina</h4>
+          <p style="font-size: 13px; color: #555; line-height: 1.6; margin-bottom: 8px;">Buduje acetylocholinę — neuroprzekaźnik pamięci i uwagi. Acetylocholina jest kluczowa w fazie REM, ale suplementacja rano nie wpływa na naturalny cykl snu.</p>
+          <div style="background: #f0f7f0; padding: 8px 12px; border-radius: 8px; font-size: 12px; color: #2e7d32;">📚 Secades & Frontera, <em>Clinical Interventions in Aging</em>, 2014 — 233 publikacje PubMed</div>
+        </div>
+        <div style="background: white; padding: 20px; border-radius: 12px; border-left: 4px solid #b8860b; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 24px; margin-bottom: 8px;">🛡️</div>
+          <h4 style="font-family: 'EB Garamond', serif; color: #b8860b; font-size: 16px; margin-bottom: 6px;">Kwas alfa-liponowy</h4>
+          <p style="font-size: 13px; color: #555; line-height: 1.6; margin-bottom: 8px;">Regeneruje glutation podczas snu — kiedy organizm naturalnie naprawia uszkodzenia oksydacyjne z całego dnia. Nie wpływa na melatoninę ani rytm dobowy.</p>
+          <div style="background: #fef8e8; padding: 8px 12px; border-radius: 8px; font-size: 12px; color: #b8860b;">📚 Hager et al., 2007 — 1522 publikacje PubMed na temat ALA</div>
+        </div>
+        <div style="background: white; padding: 20px; border-radius: 12px; border-left: 4px solid #5c6bc0; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 24px; margin-bottom: 8px;">🔬</div>
+          <h4 style="font-family: 'EB Garamond', serif; color: #5c6bc0; font-size: 16px; margin-bottom: 6px;">β-cyklodekstryna</h4>
+          <p style="font-size: 13px; color: #555; line-height: 1.6; margin-bottom: 8px;">Nośnik obojętny dla układu nerwowego. Chroni składniki przed degradacją żołądkową — nie jest metabolizowany ani nie kumuluje się w organizmie.</p>
+          <div style="background: #f0f0fa; padding: 8px 12px; border-radius: 8px; font-size: 12px; color: #5c6bc0;">📚 Status GRAS (FDA) + dopuszczenie UE — bezpieczny do 12 g/dzień</div>
+        </div>
+      </div>
+      <div style="background: white; padding: 20px 24px; border-radius: 12px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <span style="font-size: 32px;">⚡</span>
+        <div>
+          <div style="font-family: 'EB Garamond', serif; font-size: 16px; color: #1a3a2a; font-weight: 600; margin-bottom: 4px;">Kluczowa różnica: adenozyna vs acetylocholina</div>
+          <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Kofeina blokuje receptory adenozynowe (system „senności") — to zaburza sen. Cytykolina buduje acetylocholinę (system „uwagi") — to niezależna ścieżka. Rano zwiększasz zasoby ACh na cały dzień, wieczorem adenozyna działa normalnie.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2136,6 +2284,59 @@
   </section>
 
   <!-- FOOTER -->
+  <!-- SEN — Deep-dive section #465 -->
+  <section style="padding: 60px 5%; background: linear-gradient(135deg, #f0f4f8 0%, #e8eff5 100%);">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="font-family: 'EB Garamond', serif; font-size: 36px; color: #1a3a2a; text-align: center; margin-bottom: 12px;">🌙 Czy CogniCit wpływa na sen?</h2>
+      <p style="text-align: center; color: #666; font-size: 15px; margin-bottom: 36px;">Bezpieczeństwo snu to nasz priorytet. Zero kofeiny = zero ryzyka.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 32px;">
+        <div style="background: white; border-radius: 12px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); border-top: 4px solid #2e7d32;">
+          <div style="font-size: 28px; margin-bottom: 8px;">🧪</div>
+          <h3 style="font-family: 'EB Garamond', serif; font-size: 20px; color: #1a3a2a; margin-bottom: 8px;">Cytykolina a sen</h3>
+          <p style="font-size: 14px; color: #555; line-height: 1.7;">Cytykolina działa na układ cholinergiczny (acetylocholina), <strong>nie na układ adenozynowy</strong>. To kluczowa różnica — kofeina blokuje adenozynę (= senność), cytykolina buduje neuroprzekaźnik koncentracji. Badania nie wykazały wpływu na architekturę snu w dawkach 250–500 mg<sup>[1]</sup>.</p>
+        </div>
+        <div style="background: white; border-radius: 12px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); border-top: 4px solid #c9a96e;">
+          <div style="font-size: 28px; margin-bottom: 8px;">🛡️</div>
+          <h3 style="font-family: 'EB Garamond', serif; font-size: 20px; color: #1a3a2a; margin-bottom: 8px;">ALA a nocna regeneracja</h3>
+          <p style="font-size: 14px; color: #555; line-height: 1.7;">Podczas snu mózg intensywnie naprawia uszkodzenia oksydacyjne z dnia. ALA (jako antyoksydant podwójnej rozpuszczalności) <strong>wspiera naturalne procesy naprawcze</strong> — regeneruje glutation, chroni mitochondria neuronów<sup>[2]</sup>.</p>
+        </div>
+        <div style="background: white; border-radius: 12px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); border-top: 4px solid #5c6bc0;">
+          <div style="font-size: 28px; margin-bottom: 8px;">🔒</div>
+          <h3 style="font-family: 'EB Garamond', serif; font-size: 20px; color: #1a3a2a; margin-bottom: 8px;">β-CD — obojętna dla snu</h3>
+          <p style="font-size: 14px; color: #555; line-height: 1.7;">Beta-cyklodekstryna jest nośnikiem — nie ma działania farmakologicznego. Nie wpływa na melatoninę, kortyzol ani rytm dobowy. Jedyna rola: chronić składniki aktywne przed degradacją żołądkową<sup>[3]</sup>.</p>
+        </div>
+      </div>
+
+      <div style="background: white; border-radius: 12px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); margin-bottom: 24px;">
+        <h3 style="font-family: 'EB Garamond', serif; font-size: 22px; color: #1a3a2a; margin-bottom: 12px;">📊 Porównanie: wpływ na sen</h3>
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+            <thead>
+              <tr style="background: #f8f5ef;">
+                <th style="padding: 10px 12px; text-align: left; border-bottom: 2px solid #c9a96e;">Kryterium</th>
+                <th style="padding: 10px 12px; text-align: center; border-bottom: 2px solid #2e7d32; color: #2e7d32;">CogniCit</th>
+                <th style="padding: 10px 12px; text-align: center; border-bottom: 2px solid #ddd;">Kofeinowe nootropiki</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding: 10px 12px; border-bottom: 1px solid #eee;">Zawartość kofeiny</td><td style="padding: 10px 12px; text-align: center; border-bottom: 1px solid #eee; color: #2e7d32; font-weight: 600;">0 mg ✓</td><td style="padding: 10px 12px; text-align: center; border-bottom: 1px solid #eee; color: #c0392b;">50–200 mg ✗</td></tr>
+              <tr><td style="padding: 10px 12px; border-bottom: 1px solid #eee;">Wpływ na zasypianie</td><td style="padding: 10px 12px; text-align: center; border-bottom: 1px solid #eee; color: #2e7d32; font-weight: 600;">Brak ✓</td><td style="padding: 10px 12px; text-align: center; border-bottom: 1px solid #eee; color: #c0392b;">Opóźnia ✗</td></tr>
+              <tr><td style="padding: 10px 12px; border-bottom: 1px solid #eee;">Wpływ na fazę NREM</td><td style="padding: 10px 12px; text-align: center; border-bottom: 1px solid #eee; color: #2e7d32; font-weight: 600;">Brak ✓</td><td style="padding: 10px 12px; text-align: center; border-bottom: 1px solid #eee; color: #c0392b;">Skraca ✗</td></tr>
+              <tr><td style="padding: 10px 12px; border-bottom: 1px solid #eee;">Bezpieczny wieczorem</td><td style="padding: 10px 12px; text-align: center; border-bottom: 1px solid #eee; color: #2e7d32; font-weight: 600;">Tak ✓</td><td style="padding: 10px 12px; text-align: center; border-bottom: 1px solid #eee; color: #c0392b;">Nie ✗</td></tr>
+              <tr><td style="padding: 10px 12px;">Można łączyć z melatoniną</td><td style="padding: 10px 12px; text-align: center; color: #2e7d32; font-weight: 600;">Tak ✓</td><td style="padding: 10px 12px; text-align: center; color: #e67e22;">Ostrożnie △</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <p style="font-size: 13px; color: #888; margin-bottom: 12px;">[1] Secades & Frontera, <em>Clinical Interventions in Aging</em>, 2014 · [2] Hager et al., 2007 · [3] Status GRAS FDA, dopuszczenie UE</p>
+        <a href="blog/nootropiki-a-sen.html" style="display: inline-block; padding: 12px 28px; background: #2e7d32; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 500; transition: transform 0.2s;">Czytaj więcej o suplementach i śnie →</a>
+      </div>
+    </div>
+  </section>
+
   <footer id="kontakt">
     <p style="font-family: 'EB Garamond', serif; font-size: 24px; color: white; margin-bottom: 16px;">Cognivia</p>
     <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>

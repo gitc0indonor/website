@@ -2630,3 +2630,67 @@
 **Schema:** Article + BreadcrumbList + FAQPage (5 Q&As for rich snippets)
 **SEO angle:** Featured snippet potential — numbered list format matches Google's preferred structure for "jak" queries. High-volume keyword with moderate competition. Listicle format = high engagement + time-on-page.
 **Status:** Outline ready, needs writing
+
+---
+
+### #88 — "Nootropiki a neuroplastyczność — jak suplementy wspierają uczenie się mózgu?"
+**Target keyword:** "neuroplastyczność suplementy" / "nootropiki uczenie się mózg" (400+ monthly, low competition)
+**Publish date:** TBD
+**Word count:** ~2000
+**Outline:**
+1. **Czym jest neuroplastyczność?** — Synaptic plasticity, LTP (long-term potentiation), BDNF — plain-language explanation
+2. **Jak cytykolina wspiera plastyczność neuronalną** — CDP-choline → acetylcholine → synaptic membrane repair → enhanced signal transmission. Citicoline increases phosphatidylcholine synthesis (neuronal membrane building block). Clinical evidence: 233 PubMed publications on cytykolina + cognitive function.
+3. **Rola ALA w ochronie mitochondriów neuronalnych** — Mitochondria = energy for synaptic plasticity. ALA → glutathione regeneration → mitochondrial protection → sustained energy for learning. Hager et al. 2007: 600mg ALA/day improved mitochondrial markers.
+4. **β-CD jako "nośnik inteligentny"** — How β-CD inclusion complexes improve bioavailability of BOTH cytykolina and ALA. In vitro: 40-200% absorption improvement. Why this matters for neuroplasticity (consistent dosing = consistent synaptic support).
+5. **Praktyczne zastosowanie** — 30-day protocol for intensive learning periods (exam prep, new skill acquisition, language learning). Morning dosing, sleep importance for memory consolidation, exercise synergy.
+6. **Co mówią badania?** — Secades & Frontera 2014 meta-analysis, ALA mitochondrial research. What we know vs. what needs more research.
+7. **CogniCit a neuroplastyczność** — Why 3 synergistic ingredients > single-ingredient approach for synaptic support.
+
+**Internal links:** nauka.html, blog/cytykolina-przewodnik-kompletny.html, skladniki.html, produkt.html, sesja.html, matura.html
+**Schema:** Article + BreadcrumbList + FAQPage (5 Q&As: "Czy nootropiki naprawiają neurony?", "Jak długo trwa odbudowa synaps?", etc.)
+**SEO angle:** Zero Polish content on supplements + neuroplasticity. Deep-science angle positions Cognivia as the authority brand. First-mover advantage on a growing topic (neuroplasticity trending in Polish health media 2025-2026).
+**Status:** Outline ready, needs writing
+
+---
+
+### #89 — "Jak suplementy wpływają na regenerację mózgu po stresie?"
+**Target keyword:** "regeneracja mózgu suplementy" / "suplementy po stresie mózg" (500+ monthly, growing — stress/burnout content trending in Poland)
+**Publish date:** TBD
+**Word count:** ~2000
+**Outline:**
+1. **Czym jest stres oksydacyjny mózgu?** — Chronic cortisol → oxidative damage → cognitive decline. Plain-language mechanism: "Mózg zużywa 20% tlenu organizmu, więc jest szczególnie narażony na wolne rodniki."
+2. **Kortyzol a funkcje poznawcze** — How sustained cortisol disrupts hippocampus (memory), prefrontal cortex (decision-making), and acetylcholine signaling. Study citations: Sapolsky cortisol research.
+3. **ALA — tarcza antyoksydacyjna** — Dual mechanism: direct free radical scavenging + glutathione regeneration. Hager et al. 2007 study on 600mg ALA. Why ALA works in both water and fat compartments of neurons.
+4. **Cytykolina — naprawa błon neuronalnych** — CDP-choline → phosphatidylcholine → membrane repair. After oxidative damage, neurons need building blocks to rebuild. 233 PubMed publications.
+5. **β-CD — klucz do biodostępności** — How inclusion complexes protect both ingredients from degradation. In vitro absorption improvement data. Why consistent delivery matters for recovery.
+6. **Protokół regeneracji 30 dni** — Week 1: adaptation, Week 2-3: repair, Week 4: optimization. Sleep + exercise + CogniCit synergy. What to expect and when.
+7. **Kiedy suplementacja nie wystarczy** — Responsible disclaimer: chronic stress requires professional help. CogniCit supports cognitive function, not mental health treatment.
+
+**Internal links:** nauka.html, produkt.html, blog/suplementy-stres-w-pracy.html, skladniki.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage (5 Q&As: "Czy suplementy naprawiają mózg?", "Jak długo trwa regeneracja?", "Czy ALA pomaga przy chronicznym stresie?", "Czy łączyć z lekami?", "Czy CogniCit działa od razu?")
+**SEO angle:** Zero Polish content connecting nootropics to post-stress brain recovery. Mental health + burnout awareness is at all-time high in Poland. Emotional resonance content with scientific backing. Cross-promote with existing stress-related posts.
+**Status:** Outline ready, needs writing
+
+### 📝 Blog Post Outline #89 — Power Cycle #101
+**Title:** "Suplementy a regeneracja mózgu po stresie — jak naprawić neurony?"
+**Target keyword:** "regeneracja mózgu suplementy" / "suplementy po stresie mózg" (~500+ monthly, growing trend)
+**Estimated word count:** 2,000-2,500 words
+**Seasonality:** Evergreen, peak Sep (burnout season) and Jan (post-holiday stress)
+
+**Outline:**
+1. **Wstęp** — Chroniczny stres uszkadza neurony. Ale mózg ma zdolność regeneracji. Jak suplementacja może przyspieszyć ten proces?
+2. **Jak stres uszkadza mózg?** — Kortyzol → uszkodzenie hipokampa → spadek acetylocholiny → mgła mózgowa. Diagram: oś HPA → kortyzol → stres oksydacyjny mitochondriów.
+3. **ALA — tarcza antyoksydacyjna naprawcza** — Regeneruje glutation (główny antyoksydant mózgu). Hager et al. 2007: 600 mg ALA dziennie poprawiała markery oksydacyjne po 12 miesiącach. Podwójna rozpuszczalność = ochrona wodnych i lipidowych kompartmentów neuronów.
+4. **Cytykolina — naprawa błon neuronalnych** — CDP-cholina → fosfatydylocholina → budulec błon komórkowych. Po uszkodzeniu oksydacyjnym neurony potrzebują materiału do odbudowy. 233 publikacji PubMed.
+5. **β-CD — gwarancja dostarczenia składników** — Stres zmienia motorykę przewodu pokarmowego (gorsze wchłanianie). β-CD chroni składniki aktywne → więcej dociera do mózgu.
+6. **Protokół regeneracji 30 dni** — Tydzień 1: adaptacja (1 kapsułka rano). Tydzień 2-3: naprawa (dodaj sen 8h + ruch 30 min). Tydzień 4: optymalizacja (pełny efekt synergii). Czego oczekiwać?
+7. **5 nawyków wspierających regenerację** — (a) Sen 7-8h (konsolidacja pamięci), (b) Ruch (BDNF), (c) Dieta bogata w omega-3, (d) Medytacja (obniża kortyzol), (e) CogniCit jako poranny anchor.
+8. **Kiedy suplementacja nie wystarczy?** — Granica między stresem a depresją/burnoutem. Kiedy szukać pomocy specjalisty. Odpowiedzialny disclaimer.
+9. **Podsumowanie** — "Mózg potrafi się naprawić. CogniCit dostarcza surowców do naprawy."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, nauka.html, blog/chroniczne-zmeczenie-umyslowe.html, blog/suplementy-stres-w-pracy.html, skladniki.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy suplementy naprawiają mózg?", "Jak długo trwa regeneracja?", "Czy ALA pomaga przy chronicznym stresie?", "Czy łączyć z lekami?", "Czy CogniCit działa od razu?")
+**SEO angle:** Zero Polish content connecting nootropics to post-stress brain recovery. Mental health + burnout awareness is at all-time high in Poland. Emotional resonance content with scientific backing.
+**Target platforms:** Google (SEO), grupy FB o zdrowiu psychicznym, LinkedIn, Wykop
+**Status:** Outline ready, needs writing
