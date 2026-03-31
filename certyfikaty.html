@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Certyfikaty i dokumenty — Cognivia</title>
+    <meta name="keywords" content="certyfikaty suplementów, jakość suplementów, GMP suplementy, certyfikaty Cognivia">
+
   <meta name="description" content="Certyfikaty jakości CogniCit: certyfikat GMP, wyniki badań laboratoryjnych, zgłoszenie GIS. Pełna przejrzystość i zgodność z przepisami UE.">
   <link rel="canonical" href="https://gitc0indonor.github.io/website/certyfikaty.html">
   <link rel="alternate" hreflang="pl" href="https://gitc0indonor.github.io/website/certyfikaty.html">
@@ -454,5 +456,10 @@
     });
   </script>
 <script src="js/web-vitals.js" defer></script>
+<!-- Cart Count Badge -->
+<div id="cartBadgeCount" style="display:none;position:fixed;top:12px;right:60px;z-index:1001;background:linear-gradient(135deg,#d4a017,#f0c040);color:#fff;font:bold 11px Inter,sans-serif;min-width:20px;height:20px;border-radius:10px;align-items:center;justify-content:center;padding:0 6px;box-shadow:0 2px 8px rgba(0,0,0,.2);cursor:pointer;text-decoration:none" onclick="location.href='koszyk.html'"></div>
+<script>
+(function(){try{var c=JSON.parse(localStorage.getItem('cognivia_cart'));if(c&&c.items&&c.items.length){var total=c.items.reduce(function(s,i){return s+(i.qty||0)},0);var el=document.getElementById('cartBadgeCount');if(el&&total>0){el.textContent=total>99?'99+':total;el.style.display='inline-flex';}}}catch(e){}})();
+</script>
 </body>
 </html>

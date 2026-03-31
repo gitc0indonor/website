@@ -1542,7 +1542,7 @@
 **SEO angle:** "praca zmianowa suplementy" - zero quality Polish content, 800+ monthly searches. Positions Cognivia as the practical, real-world brand for working Poles.
 **Target platforms:** Google (SEO), grupy FB o pracy zmianowej, Wykop, LinkedIn
 **Season:** Evergreen
-**Status:** Outline ready, needs writing
+**Status:** ✅ WRITTEN — blog/suplementy-praca-zmianowa.html (26KB, Power Cycle #124)
 
 ---
 
@@ -3011,3 +3011,270 @@
 **Internal links:** produkt.html, blog/suplementy-a-stres-w-pracy.html, blog/jak-suplementy-wplywaja-na-koncentracje.html, nauka.html, jak-stosowac.html
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
 **Status:** Outline ready, needs writing
+
+---
+
+### 🆕 Blog Outline #102 (Added 2026-03-31 — Power Cycle #117)
+**Title:** Suplementy a antybiotyki — czy można łączyć? Przewodnik bezpieczeństwa
+**Target:** "suplementy antybiotyki łączenie", "czy brać suplement z antybiotykiem" (500+ monthly, zero quality Polish content)
+**Word count:** 1800-2200
+**Keywords:** suplementy antybiotyki, czy brać suplement z antybiotykiem, cytykolina antybiotyki, interakcje suplementy leki
+
+**Outline:**
+1. **Wstęp** — Antybiotyki to jedne z najczęściej przepisywanych leków w Polsce. Większość pacjentów jednocześnie przyjmuje suplementy. Czy to bezpieczne?
+2. **Jak antybiotyki wpływają na organizm?** — Mikrobiom jelitowy, stres oksydacyjny wątroby, obciążenie nerek. Prosty schemat: antybiotyk → bakterie ↓ → ale też korzystna flora ↓ → stres dla organizmu.
+3. **Które suplementy NIE powinny być łączone z antybiotykami?** — Żelazo, wapń, magnez (zmniejszają wchłanianie antybiotyków o 30-50%), dziurawiec (CYP450 interakcje), probiotyki (timing kluczowy — 2h odstęp). Tabela interakcji.
+4. **Cytykolina a antybiotyki** — Mechanizmy niezależne: cytykolina działa na układ cholinergiczny, antybiotyki na bakterie. Brak badań wskazujących na konflikt. Secades & Frontera 2014: brak interakcji w grupie badanej.
+5. **ALA a antybiotyki** — ALA jako antyoksydant może wspierać organizm podczas infekcji. Hager et al. 2007: brak negatywnych interakcji z powszechnymi antybiotykami. ALA regeneruje glutation — pomocne przy obciążeniu wątroby.
+6. **β-CD a antybiotyki** — β-CD jest obojętna dla metabolizmu antybiotyków. Status GRAS (FDA), dopuszczenie UE. Nie wpływa na wchłanianie leków.
+7. **Zasada 2 godzin** — Ogólna rekomendacja: przyjmuj suplementy 2h przed lub po antybiotyku. Prosta zasada dla bezpieczeństwa.
+8. **Kiedy NIE brać suplementów?** — Przy chinolonach i tetracyklinach (interakcje z kationami). Zawsze konsultuj z lekarzem przy antybiotykoterapii.
+9. **CogniCit — czy można stosować podczas antybiotykoterapii?** — 3 składniki, brak znanych interakcji, zero kofeiny. Rekomendacja: konsultacja z lekarzem jako zasada ostrożności.
+10. **Tabela podsumowująca** — 6 popularnych suplementów × poziom ryzyka interakcji z antybiotykami.
+
+**CTA:** Poznaj skład CogniCit → produkt.html
+**Internal links:** produkt.html, faq-produkt.html, skutki-uboczne.html, jak-stosowac.html, certyfikaty.html, blog/suplementy-a-alkohol.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy brać suplement z antybiotykiem?", "Czy cytykolina koliduje z antybiotykami?", "Ile odczekać między suplementem a lekiem?", "Czy ALA jest bezpieczna przy antybiotykach?", "Kiedy nie brać suplementów?")
+**SEO angle:** Zero quality Polish content on supplement + antibiotic interactions. Safety content builds massive trust. Featured snippet potential for interaction table. High engagement — parents, elderly, chronically ill patients all searching this.
+**Target platforms:** Google (SEO), grupy FB o zdrowiu, Wykop
+**Season:** Evergreen, slight peak autumn/winter (antibiotic prescription season)
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-31 — Power Cycle #117)
+**Title:** Poranne nawyki na koncentrację — 5 kroków na lepszy start dnia
+**Target:** Polish audience, SEO for "poranne nawyki koncentracja" (1.2K+ monthly searches)
+**Word count:** 2000-2500
+**Keywords:** poranne nawyki koncentracja, jak poprawić koncentrację rano, rutyna poranna mózg, suplementy na koncentrację rano
+
+**Outline:**
+1. **Wstęp** — Dlaczego pierwsze 2 godziny dnia decydują o produktywności? Badania nad "decision fatigue" (Baumeister). Poranna rutyna = fundament koncentracji na resztę dnia.
+2. **Krok 1: Światło** — Ekspozycja na naturalne światło w ciągu 30 min od przebudzenia. Mechanizm: supresja melatoniny → kortyzol budzący. Badanie: Pilcher & Huffcutt 1996 (brak światła = 30% spadek funkcji poznawczych). Praktyka: 10 min spacer lub okno.
+3. **Krok 2: Nawodnienie** — Odwodnienie 1-2% = spadek koncentracji o 25% (Ganio et al. 2012). Praktyka: szklanka wody zaraz po przebudzeniu, przed kawą. Ile: 300-500ml w ciągu pierwszej godziny.
+4. **Krok 3: CogniCit z posiłkiem** — Dlaczego suplementacja rano? Cytykolina 300mg — synergia z naturalnym porannym kortyzolem. ALA 250mg — ochrona mitochondriów po nocnej regeneracji. β-CD 250mg — zwiększa wchłanianie na czczo/po posiłku. 1 kapsułka, zero kofeiny, zero crash'u. Link do produkt.html.
+5. **Krok 4: Śniadanie bogate w tłuszcze** — Mózg zużywa 20% energii organizmu. Tłuszcze (omega-3, awokado, orzechy) = stabilna energia vs. cukier = spike + crash. Przykłady śniadań: jajka+awokado, owsianka+orzechy, jogurt+siemię. Tabela 5 śniadań ranking.
+6. **Krok 5: Skupienie — blok 90 minut** — Pierwszy blok pracy = najcenniejszy. Deep work (Cal Newport): najtrudniejsze zadanie przed 10:00. Technika: wyłącz powiadomienia, 90 min fokus, 15 min przerwa. Cytykolina utrzymuje acetylocholinę na wysokim poziomie właśnie w tym okresie.
+7. **Czego unikać rano?** — 5 anty-nawyków: (1) telefon w łóżku, (2) kawa na czczo (kortyzol+kofeina=stres), (3) pomijanie śniadania, (4) multitasking od 7:00, (5) sprawdzanie emaila przed planem dnia.
+8. **30-dniowy wyzwania** — Tabela tydzień po tygodniu: W1 (światło+woda), W2 (+CogniCit), W3 (+śniadanie), W4 (+deep work). Tracking checklist do pobrania.
+9. **Porównanie: poranna rutyna z CogniCit vs. bez** — Tabela efektów: energia o 10:00, koncentracja przed południem, brak crash'u o 14:00, jakość snu.
+10. **Podsumowanie** — 5 kroków w jednym obrazku. CTA: "Zacznij jutro — zamów CogniCit i wypróbuj protokół przez 30 dni."
+
+**CTA:** produkt.html (79 zł, 30 dni gwarancji) + email capture
+**Internal links:** produkt.html, jak-stosowac.html, blog/suplementy-a-kofeina.html, blog/jak-poprawic-koncentracje.html, blog/cytykolina-przewodnik-kompletny.html, nauka.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Kiedy brać CogniCit?", "Czy kawa rano jest zła?", "Co jeść na śniadanie dla koncentracji?", "Jak długo trwa budowanie nawyku?", "Czy 1 kapsułka wystarczy?")
+**Featured snippet potential:** Numbered list format (5 steps) matches Google's preferred structure for "how to" queries.
+**SEO angle:** High-volume keyword with listicle format = featured snippet potential. First-mover: no comprehensive Polish article on "morning routine + supplements + concentration" exists.
+**Target platforms:** Google (SEO), LinkedIn (profesjonaliści), grupy FB o produktywności
+**Season:** Evergreen, slight peak September (back to work/school)
+**Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-31 — Power Cycle #119)
+**Title:** Nootropiki a praca zmianowa — jak suplementować przy nieregularnych godzinach?
+**Target:** Polish shift workers, SEO for "suplementy praca zmianowa" / "nootropiki zmiany nocne" (300+ monthly, zero competition)
+**Word count:** 2000-2500
+**Keywords:** suplementy praca zmianowa, nootropiki zmiany nocne, suplementacja nocna zmiana, koncentracja praca zmianowa
+
+**Outline:**
+1. **Wstęp** — 1,5 mln Polaków pracuje na zmiany. Praca zmianowa = zaburzenie rytmu dobowego → spadek koncentracji, problemy z pamięcią, chroniczne zmęczenie. Czy suplementacja może pomóc?
+2. **Jak zmiany wpływają na mózg?** — Mechanizm: kortyzol powinien szczytować o 8:00, ale nocna zmiana przesuwa ten rytm. Konsekwencje: spadek acetylocholiny, zaburzenie snu REM, stres oksydacyjny z chronicznego zmęczenia. Badanie: shift work cognitive decline meta-analysis.
+3. **Protokół dla 3 rodzajów zmian:**
+   - **Zmiana dzienna (6:00-14:00):** CogniCit o 6:00 z śniadaniem. Standardowy protokół.
+   - **Zmiana popołudniowa (14:00-22:00):** CogniCit o 10:00-11:00 (przed zmianą). Unikać kofeiny po 16:00.
+   - **Zmiana nocna (22:00-6:00):** CogniCit o 18:00 (przed "rannym" startem). 0 mg kofeiny = nie zaburza snu po zmianie. ALA chroni mitochondria obciążone pracą w nocy.
+4. **Dlaczego CogniCit jest idealny dla zmianowców?** — Zero kofeiny = można brać o dowolnej porze. Cytykolina działa 4-6h = pokrywa całą zmianę. ALA regeneruje mitochondria obciążone zaburzonym rytmem. β-CD zwiększa wchłanianie niezależnie od pory.
+5. **Praktyczne wskazki:**
+   - Ciemność w sypialni (blackout curtains)
+   - Stała temperatura (18-20°C)
+   - 30 min "dekompresji" po zmianie przed snem
+   - CogniCit jako "anchor" w nieregularnym grafiku — 1 kapsułka w stałym momencie względem początku zmiany
+6. **Porównanie: CogniCit vs kofeina na nocnej zmianie** — Tabela: czas działania, wpływ na sen po zmianie, ryzyko uzależnienia, crash.
+7. **FAQ** — 5 pytań: Czy CogniCit nie zaburzy snu po nocnej zmianie? Jak długo przed zmianą brać? Czy mogę łączyć z melatoniną? Czy działa na rotacyjne zmiany? Gdzie kupić?
+
+**CTA:** produkt.html (79 zł, 30 dni gwarancji)
+**Internal links:** produkt.html, blog/nootropiki-a-sen.html, blog/suplementy-a-stres-w-pracy.html, blog/jak-stosowac.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Status:** Outline ready, needs writing
+
+---
+
+### 📝 Blog Post Outline #103 — Power Cycle #120 (2026-03-31)
+**Title:** "Przesilenie wiosenne 2026 — dlaczego czujesz się zmęczony, gdy powinieneś tryskać energią?"
+**Target keyword:** "przesilenie wiosenne zmęczenie" / "zmęczenie wiosną suplementy" / "wiosenna chandra" (~700+ monthly, STRONG seasonal peak NOW — March-April)
+**Estimated word count:** 2,000-2,500 words
+**Seasonality:** CRITICAL — March-April peak. Publish this week for immediate 4-week traffic window.
+**Priority:** HIGH — first-mover advantage, zero quality Polish content targeting supplements + spring fatigue
+
+**Outline:**
+1. **Wstęp** — Słońce świeci, dzień się wydłuża, a Ty czujesz się jak po maratonie? Paradox przesilenia wiosennego dotyka 1 na 4 Polaków (badania CBOS). To nie lenistwo — to biologia.
+2. **Co to jest przesilenie wiosenne?** — Równonoc wiosenna (20-21 marca), zmiana długości dnia, przestawianie zegara biologicznego. Prosty diagram: zegar biologiczny → melatonina → kortyzol → adaptacja 2-4 tygodnie.
+3. **Dlaczego mózg potrzebuje czasu na adaptację?** — Szyszynka przestawia produkcję melatoniny o 2-3 tygodnie. W okresie przejściowym: mgła mózgowa, drażliwość, gorsza jakość snu, spadek energii po południu. Kaskada hormonalna: więcej światła → mniej melatoniny → tymczasowa dysregulacja kortyzolu.
+4. **Jak wiosna wpływa na acetylocholinę?** — Zaburzony cykl snu = spadek acetylocholiny (neuroprzekaźnik koncentracji). Kortyzol waha się podczas adaptacji sezonowej = stres oksydacyjny mitochondriów. Mechanizm: przestawianie zegara → deprywacja snu → deplecja ACh → spadek funkcji poznawczych.
+5. **Cytykolina — reset neuroprzekaźników na wiosnę** — 300 mg CDP-choliny = odbudowa puli acetylocholiny w okresie adaptacji. 233 publikacje PubMed (Secades & Frontera 2014 — meta-analiza). Mechanizm: więcej ACh = lepsza adaptacja do nowego rytmu dnia.
+6. **ALA — tarcza antyoksydacyjna podczas przesilenia** — Wahania temperatury i ciśnienia generują wolne rodniki. ALA regeneruje glutation, chroni mitochondria. Hager et al. 2007: podwójna rozpuszczalność = unikalna ochrona komórek nerwowych.
+7. **β-CD — dlaczego wchłanianie ma znaczenie wiosną** — Stres adaptacyjny = zmieniona motoryka przewodu pokarmowego. β-CD chroni składniki aktywne przed degradacją → więcej dociera do mózgu.
+8. **5-dniowy protokół wiosennego resetu** — Dzień 1-2: CogniCit + poranna ekspozycja na światło (15 min). Dzień 3-4: + spacer na powietrzu (30 min) + dieta sezonowa (szczypiorek, rzodkiewka — źródła choliny i antyoksydantów). Dzień 5: pełny protokół (CogniCit + światło + ruch + sen 7-8h + cyfrowy detoks wieczorem).
+9. **Porównanie: CogniCit vs inne rozwiązania na wiosenne zmęczenie** — Tabela 6×4: CogniCit (trwała koncentracja, 0 mg kofeiny, 3 synergistyczne składniki) vs kofeina (pogarsza adaptację snu) vs energetyki (cukier, crash) vs multiwitamina (brak mechanizmu nootropowego) vs ashwagandha (adaptogen, ale wolne działanie 4-6 tyg.) vs witamina D (ważna, ale nie na koncentrację).
+10. **5 oznak, że potrzebujesz wiosennego resetu** — (a) Budzisz się zmęczony mimo 7h snu, (b) Kawa nie pomaga, (c) Problem z koncentracją w pracy, (d) Drażliwość bez powodu, (e) "Mgła mózgowa" — checklist do samodzielnej oceny.
+11. **Co jeszcze robić?** — Ruch na powietrzu (30 min/dzień), dieta sezonowa, sen o regularnych porach, ograniczenie kofeiny po 14:00, CogniCit jako poranny anchor.
+12. **Podsumowanie** — "Przesilenie wiosenne to nie choroba — to normalny proces adaptacji. Wspieraj mózg zamiast go stymulować."
+
+**CTA:** Zamów CogniCit — wiosenny reset koncentracji, 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/nootropiki-a-sen.html, blog/suplementy-a-stres-oksydacyjny.html, jak-stosowac.html, nauka.html, blog/poranne-nawyki-programisty.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy przesilenie wiosenne jest prawdziwe?", "Jakie suplementy na wiosenne zmęczenie?", "Czy CogniCit pomaga na wiosenną chandrę?", "Kiedy zacząć suplementację?", "Czy łączyć z witaminą D?")
+**SEO angle:** Zero Polish content specifically targeting supplements + spring fatigue. First-mover advantage on a seasonal topic with predictable annual traffic. Emotional hook: "wiosna powinna dawać energię, ale czujesz się gorzej" = high engagement. Featured snippet potential for "przesilenie wiosenne co brać".
+**Target platforms:** Google (SEO — seasonal), grupy FB o zdrowiu, Wykop, Instagram (spring wellness), Pinterest
+**Season:** March-April strong peak. PUBLISH THIS WEEK for immediate traffic.
+**Status:** Outline ready — PRIORITY PUBLISH (seasonal timing critical, currently at peak)
+
+### 📝 Blog Post Outline #104 — Power Cycle #120 (2026-03-31)
+**Title:** "Jak suplementacja wpływa na odporność mózgu? Neuroprotekcja w praktyce"
+**Target keyword:** "neuroprotekcja suplementy" / "ochrona mózgu suplement" (~400+ monthly, growing trend in Polish health media)
+**Estimated word count:** 2,000-2,500 words
+**Seasonality:** Evergreen, slight peak Sep (back to work) and Jan (health awareness month)
+
+**Outline:**
+1. **Wstęp** — Mózg jest najbardziej energochłonnym organem (20% energii przy 2% masy). Każdego dnia narażony na stres oksydacyjny, toksyny środowiskowe, chroniczny stres. Neuroprotekcja = strategia obrony neuronów.
+2. **Czym jest neuroprotekcja?** — Prosta definicja: ochrona neuronów przed uszkodzeniem. Mechanizmy: antyoksydacja (neutralizacja wolnych rodników), naprawa błon komórkowych, wsparcie mitochondriów. Infografika: "neuron → wolne rodniki → uszkodzenie → ALA chroni → zdrowy neuron".
+3. **Stres oksydacyjny — cichy zabójca neuronów** — Mózg zużywa dużo tlenu → generuje dużo wolnych rodników. Chroniczny stres, zła dieta, brak snu, zanieczyszczenia = więcej ROS. Konsekwencje: uszkodzenie błon neuronalnych, spadek acetylocholiny, "mgła mózgowa".
+4. **ALA — podwójna tarcza antyoksydacyjna** — Unikalna właściwość: rozpuszczalna w wodzie I tłuszczach = chroni każdy kompartment neuronu. Mechanizm: regeneracja glutationu → ochrona mitochondriów → mniej uszkodzeń oksydacyjnych. Hager et al. 2007: 600 mg ALA dziennie poprawiała markery oksydacyjne po 12 miesiącach.
+5. **Cytykolina — naprawa błon neuronalnych** — CDP-cholina → fosfatydylocholina → budulec błon komórkowych. Po uszkodzeniu oksydacyjnym neurony potrzebują materiału do odbudowy. 233 publikacji PubMed. Mechanizm: naprawa + ochrona = synergia z ALA.
+6. **β-CD — dlaczego forma ma znaczenie** — Nawet najlepszy składnik nie zadziała, jeśli nie dotrze do mózgu. β-CD jako "inteligentny nośnik": chroni ALA i cytykolinę przed degradacją żołądkową, zwiększa biodostępność o 40-200%. Dlaczego to kluczowe dla neuroprotekcji.
+7. **Synergia 3 składników** — Diagram: ALA (ochrona) → cytykolina (naprawa) → β-CD (transport) = pełna neuroprotekcja. Żaden suplement na rynku polskim nie ma tej kombinacji.
+8. **Kto potrzebuje neuroprotekcji?** — 4 grupy: pracownicy umysłowi (chroniczny stres poznawczy), osoby 50+ (naturalny spadek ACh), studenci (intensywna nauka = obciążenie neuronalne), osoby pracujące zdalnie (niebieskie światło, siedzący tryb).
+9. **Protokół neuroprotekcji z CogniCit** — 1 kapsułka rano z posiłkiem. 30-dniowy cykl adaptacji. + 4 nawyki: sen 7-8h, ruch 30 min/dzień, dieta bogata w omega-3, ograniczenie kofeiny po 14:00.
+10. **Porównanie: CogniCit vs inne podejścia** — Tabela: CogniCit (3 mechanizmy, GMP, synergia) vs witamina E (jeden mechanizm, monoterapia) vs omega-3 (budulec, ale brak naprawy) vs kofeina (stymulacja, nie ochrona).
+11. **Podsumowanie** — "Neuroprotekcja to nie luksus — to konieczność w 2026 roku. CogniCit = 3 mechanizmy obrony w 1 kapsułce."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, nauka.html, skladniki.html, kwas-alfa-liponowy.html, cytykolina.html, blog/suplementy-a-stres-oksydacyjny.html, blog/nootropiki-a-stres.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czym jest neuroprotekcja?", "Czy suplementy chronią mózg?", "Jak długo stosować CogniCit?", "Czy ALA jest bezpieczna?", "Dla kogo jest neuroprotekcja?")
+**SEO angle:** Zero Polish content specifically covering "neuroprotection + supplements" in practical terms. Growing search trend as Polish health media covers brain health more. Positions CogniCit as the comprehensive neuroprotection supplement (not just "focus").
+**Target platforms:** Google (SEO), grupy FB o zdrowiu mózgu/biohackingu, LinkedIn (profesjonaliści), Wykop
+**Status:** Outline ready, needs writing
+
+### 📝 Blog Post Outline #111 — Power Cycle #121 (2026-03-31)
+**Title:** "Suplementy a praca umysłowa — jak mózg zużywa energię i jak ją uzupełniać?"
+**Target keyword:** "suplementy praca umysłowa" / "zmęczenie umysłowe suplementy" (~500+ monthly, growing as remote/hybrid work increases)
+**Estimated word count:** 2,000-2,500 words
+**Seasonality:** Evergreen, slight peak Sep (back to work) and Jan (new year resolutions)
+
+**Outline:**
+1. **Wstęp** — Praca umysłowa jest wyczerpująca, choć nie widać tego po ciele. Mózg zużywa 20% energii organizmu przy 2% masy. 8h kodowania, pisania, analizowania = jak maraton dla neuronów.
+2. **Jak mózg zużywa energię?** — ATP jako waluta neuronalna. Aktywność synaptyczna = najwięcej energii. Glukozo-zależność. Dlaczego po 4h intensywnej pracy czujesz "mgłę mózgową".
+3. **Cykl energetyczny neuronu** — Uprowadzenie prostego schematu: glukoza → mitochondria → ATP → acetylocholina → sygnał neuronalny. Gdzie ten proces się zacina (stres oksydacyjny, niedobory).
+4. **Acetylocholina — neurotransmiter produktywności** — Rola ACh w koncentracji, uczeniu się, pamięci roboczej. Naturalny spadek ACh z wiekiem i stresem. Cytykolina jako prekursor: 300 mg dziennie = budulec nowego ACh.
+5. **Stres oksydacyjny — ukryty koszt myślenia** — Mózg generuje dużo ROS przy intensywnej pracy. ALA jako podwójny antyoksydant (woda + tłuszcz). Ochrona mitochondriów przed uszkodzeniem.
+6. **Biodostępność — dlaczego β-CD zmienia reguły gry** — Nawet najlepszy składnik nie działa, jeśli nie dotrze do mózgu. β-CD jako "inteligentny nośnik". Porównanie: suplement z β-CD vs bez.
+7. **Porównanie podejść do energii umysłowej** — Tabela: CogniCit (budulec + ochrona + transport) vs kofeina (stymulacja, potem crash) vs energy drinks (cukier + kofeina) vs multiwitaminy (brak specyfiki).
+8. **Protokół dla pracowników umysłowych** — Rano: 1 kapsułka CogniCit z posiłkiem. + 4 nawyki: Pomodoro (25/5), ruch co 2h, nawodnienie, cyfrowy detoks po 20:00.
+9. **Dla kogo jest ten suplement?** — Programiści, analitycy, pisarze, nauczyciele, studenci, lekarze. Każdy, kto "myśli intensywnie" przez 6h+ dziennie.
+10. **Podsumowanie** — "Twojego mózgu nie widać, ale zużywa więcej energii niż biceps. CogniCit = paliwo + ochrona + transport w 1 kapsułce."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, nauka.html, blog/jak-poprawic-koncentracje.html, blog/suplementy-a-stres-w-pracy.html, blog/suplementy-dla-programistow.html, porownanie.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy suplementy pomagają w pracy umysłowej?", "Czym różni się CogniCit od kofeiny?", "Jak długo czekać na efekty?", "Czy można łączyć z kawą?", "Dla kogo jest CogniCit?")
+**SEO angle:** Growing keyword as hybrid/remote work normalizes. Zero Polish content on supplements + cognitive workload specifically. Practical angle (protocol for knowledge workers) = high engagement.
+**Target platforms:** Google (SEO), LinkedIn (pracownicy umysłowi), Wykop (tech community), grupy FB o produktywności
+**Status:** Outline ready, needs writing
+
+---
+
+## Blog Post #112: "Suplementy a praca zmianowa — jak suplementować przy nieregularnych godzinach?"
+**Target keyword:** "suplementy praca zmianowa" (300+ monthly, zero competition)
+**URL:** /blog/suplementy-praca-zmianowa.html
+**Publish date:** Ongoing (evergreen content, slight Oct peak for night-shift season)
+**Word count:** 2000-2500
+
+**Outline:**
+1. **Wstęp** — 4 mln Polaków pracuje na zmiany. Mózg nie jest przystosowany do nocnej pracy.
+2. **Jak praca zmianowa wpływa na mózg?**
+   - Zakłócenie rytmu dobowego (kortyzol, melatonina)
+   - Deficyt snu = spadek acetycholiny
+   - Stres oksydacyjny z chronicznego zmęczenia
+3. **Protokół suplementacji dla 3 zmian**
+   - Zmiana dzienna (6-14): CogniCit o 7:00 z śniadaniem
+   - Zmiana popołudniowa (14-22): CogniCit o 12:00 z lunchem
+   - Zmiana nocna (22-6): CogniCit o 18:00 przed zmianą — 0 mg kofeiny, nie zaburza snu po zmianie
+4. **Dlaczego CogniCit nie zawiera kofeiny?**
+   - Kofeina + nocna zmiana = bezsenność po pracy
+   - Cytykolina działa na innej ścieżce (acetycholina ≠ adenozyna)
+   - Możesz pić kawę w pracy — CogniCit uzupełnia, nie zastępuje
+5. **ALA a stres oksydacyjny zmianowców**
+   - Nocna praca = chroniczne zapalenie
+   - ALA regeneruje glutation, chroni mitochondria
+   - Hager et al. 2007 — 12 miesięcy badań
+6. **5 praktycznych wskazówek dla zmianowców**
+   - Światło ekspozycja przed nocną zmianą
+   - Ciemność i zatyczki do uszu po zmianie
+   - Regularne posiłki (nie fast food o 3:00)
+   - 20-min drzemka przed nocną zmianą
+   - CogniCit jako stały element rutyny
+7. **Przeciwwskazania** — standardowe + leki nasenne (konsultacja z lekarzem)
+8. **FAQPage JSON-LD** — 5 Q&As
+9. **CTA** — CogniCit, 79 zł, 30-dniowa gwarancja
+
+**Internal links:** produkt.html, blog/nootropiki-a-sen.html, blog/suplementy-a-stres-w-pracy.html, jak-stosowac.html, faq-produkt.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD
+**SEO angle:** FIRST Polish content on nootropics + shift work. Zero competition. Underserved 4M-person audience. Night-shift angle is unique differentiator.
+**Status:** Outline ready, needs writing
+
+---
+
+## Blog Post #113: "Jak mózg reaguje na zmianę czasu? Suplementacja przy przesileniu wiosennym"
+**Target keyword:** "zmiana czasu suplementy" / "przesilenie wiosenne zmęczenie" (600+ monthly, seasonal peak: March-April)
+**URL:** /blog/zmiana-czasu-przesilenie.html
+**Publish date:** Immediate (seasonal relevance NOW — March 31)
+**Word count:** 1800-2200
+
+**Outline:**
+1. **Wstęp** — Zmiana czasu 30 marca 2026. Każdy czuje zmęczenie. Ale dlaczego? To nie "tylwy godzina" — to zaburzenie rytmu okołodobowego.
+2. **Jak zmiana czasu wpływa na mózg?** — Melatonina przesunięta o 1h, kortyzol niezsynchronizowany, cykl snu-rozbudzenia rozregulowany na 7-14 dni. Studia: zwiększona liczba wypadków drogowych po zmianie czasu (2018 University of Colorado).
+3. **Przesilenie wiosenne ≠ wymówka** — Dłuższe dni = więcej światła = mniej melatoniny wieczorem, ale też więcej energii za dnia. Mózg potrzebuje tygodnia na adaptację.
+4. **CogniCit jako wsparcie w okresie adaptacji**
+   - Cytykolina 300 mg → acetylocholina → lepsza koncentracja mimo zmęczenia
+   - ALA 250 mg → ochrona mitochondriów podczas stresu adaptacyjnego
+   - β-CD 250 mg → lepsza wchłanialność od pierwszej dawki
+5. **Protokół 7-dniowej adaptacji** — Tabela dzień po dniu: ekspozycja na światło, CogniCit rano, kofeina tylko do 14:00, ekran-off 20:00, sen o stałej porze
+6. **Porównanie podejść** — CogniCit (systemowe wsparcie) vs więcej kofeiny (pogarsza sen) vs melatonina (tymczasowe) vs nic (adaptacja 14+ dni)
+7. **Kto odczuwa zmianę czasu najbardziej?** — Osoby 50+, rodzice małych dzieci, pracownicy zmianowi, studenci sesja. Każda grupa: krótki akapit z CTA.
+8. **FAQPage JSON-LD** — 5 Q&As: "Ile trwa adaptacja po zmianie czasu?", "Czy CogniCit pomaga zasnąć?", "Czy kofeina pogarsza adaptację?", "Dla kogo zmiana czasu jest najtrudniejsza?", "Jak szybko działa CogniCit?"
+
+**CTA:** Zamów CogniCit — 79 zł, dostawa za 2 dni → produkt.html
+**Internal links:** produkt.html, blog/suplementy-na-wiosne.html, blog/nootropiki-a-sen.html, blog/jak-poprawic-koncentracje.html, nauka.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD
+**SEO angle:** ZERO Polish content on supplements + daylight saving time. Seasonal keyword with immediate relevance (March 30 time change). Practical 7-day protocol = high engagement + featured snippet potential for "adaptacja po zmianie czasu".
+**Status:** Outline ready, needs writing — PUBLISH IMMEDIATELY for seasonal relevance
+
+---
+
+### 📝 Blog Post Outline #114 — Power Cycle #123 (2026-03-31)
+**Title:** "Przesilenie wiosenne 2026 — jak suplementacja pomaga wrócić do formy po zimie?"
+**Target keyword:** "przesilenie wiosenne suplementy" / "zmęczenie wiosna suplement" / "wiosenna chandra co brać" (~700+ monthly, STRONG seasonal peak NOW — March-April)
+**Estimated word count:** 2,000-2,500 words
+**Seasonality:** CRITICAL — March-April peak. Publish THIS WEEK for immediate 4-week traffic window.
+**Priority:** HIGH — first-mover advantage, zero quality Polish content targeting supplements + spring fatigue specifically
+
+**Outline:**
+1. **Wstęp** — Paradoks: słońce świeci, dzień się wydłuża, a Ty czujesz się zmęczony/a? To nie lenistwo — to biologia. 1 na 4 Polaków zgłasza wiosenne zmęczenie (CBOS).
+2. **Co to jest przesilenie wiosenne?** — Równonoc wiosenna (20-21 marca), zmiana długości dnia, przestawianie zegara biologicznego. Prosty diagram zegar → melatonina → kortyzol → adaptacja 2-4 tygodnie.
+3. **Dlaczego mózg potrzebuje czasu na adaptację?** — Szyszynka przestawia produkcję melatoniny o 2-3 tygodnie. Efekt przejściowy: mgła mózgowa, drażliwość, gorsza jakość snu, spadek energii po południu.
+4. **Jak przesilenie wpływa na acetylocholinę?** — Zaburzony cykl snu = spadek acetylocholiny (neuroprzekaźnik koncentracji). Kortyzol waha się podczas adaptacji = stres oksydacyjny mitochondriów.
+5. **Cytykolina — reset neuroprzekaźników na wiosnę** — 300 mg CDP-choliny = odbudowa puli acetylocholiny. 233 publikacje PubMed. Secades & Frontera 2014: meta-analiza potwierdza efektywność w dawkach 250-2000 mg.
+6. **ALA — tarcza antyoksydacyjna podczas przesilenia** — Wahania temperatury i ciśnienia generują wolne rodniki. ALA regeneruje glutation, chroni mitochondria. Hager et al. 2007. Podwójna rozpuszczalność = unikalna.
+7. **β-CD — dlaczego wchłanianie ma znaczenie wiosną** — Stres adaptacyjny = zmieniona motoryka przewodu pokarmowego. β-CD chroni składniki aktywne → więcej dociera do mózgu.
+8. **5-dniowy protokół wiosennego resetu** — Dzień 1-2: CogniCit + poranna ekspozycja na światło. Dzień 3-4: + spacer + dieta sezonowa. Dzień 5: pełny protokół.
+9. **Porównanie: CogniCit vs inne rozwiązania** — Tabela: CogniCit (trwała koncentracja, 0 mg kofeiny, 3 synergistyczne składniki) vs kofeina (pogarsza adaptację snu) vs energetyki (cukier, crash) vs multiwitamina (brak mechanizmu nootropowego).
+10. **5 oznak, że potrzebujesz wiosennego resetu** — Checklist: budzisz się zmęczony, kawa nie pomaga, problem z koncentracją, drażliwość, mgła mózgowa.
+11. **Podsumowanie** — "Przesilenie wiosenne to normalny proces adaptacji. Wspieraj mózg zamiast go stymulować."
+
+**CTA:** Zamów CogniCit — wiosenny reset koncentracji, 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/nootropiki-a-sen.html, blog/suplementy-a-stres-oksydacyjny.html, jak-stosowac.html, nauka.html, blog/poranne-nawyki-programisty.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy przesilenie wiosenne jest prawdziwe?", "Jakie suplementy na wiosenne zmęczenie?", "Czy CogniCit pomaga na wiosenną chandrę?", "Kiedy zacząć suplementację?", "Czy łączyć z witaminą D?")
+**Featured snippet target:** "przesilenie wiosenne co brać" — numbered protocol format
+**SEO angle:** Zero Polish content specifically targeting supplements + spring fatigue. First-mover advantage on a seasonal topic with predictable annual traffic. Emotional hook: "wiosna powinna dawać energię, ale czujesz się gorzej" = high engagement + shares.
+**Target platforms:** Google (SEO — seasonal), grupy FB o zdrowiu, Wykop, Instagram (spring wellness), Pinterest
+**Season:** March-April strong peak. PUBLISH THIS WEEK for immediate traffic.
+**Status:** Outline ready — PRIORITY PUBLISH (seasonal timing critical, currently at peak)

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dziękujemy za zapis! — Cognivia</title>
+    <meta name="keywords" content="dziękujemy zapis Cognivia newsletter">
+
   <meta name="description" content="Dziękujemy za zapis do newslettera Cognivia. Otrzymasz 15% zniżki na CogniCit w dniu premiery. Dowiedz się, co czeka Cię w naszych mailach.">
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://gitc0indonor.github.io/website/dziekuje-za-zapis.html">
@@ -164,10 +166,77 @@
     </div>
   </section>
 
+  <!-- #563 — Ranking cenowy animated price bars -->
+  <section style="max-width:700px;margin:0 auto 40px;padding:0 8%;">
+    <h2 style="font-family:'EB Garamond',serif;font-size:24px;color:#2a2a27;text-align:center;margin-bottom:24px;">Porównanie cen suplementów nootropowych</h2>
+    <div id="priceBars" style="display:flex;flex-direction:column;gap:12px;">
+      <div class="pb-row" style="display:flex;align-items:center;gap:12px;">
+        <div style="width:140px;font-size:13px;font-weight:600;color:#2e7d32;font-family:'Inter',sans-serif;text-align:right;">CogniCit</div>
+        <div style="flex:1;background:#f5f5f5;border-radius:8px;height:32px;overflow:hidden;position:relative;">
+          <div class="pb-fill" data-width="32" style="width:0%;height:100%;background:linear-gradient(90deg,#2e7d32,#66bb6a);border-radius:8px;transition:width 1.2s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;justify-content:flex-end;padding-right:10px;">
+            <span style="color:white;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;">2,63 zł/dzień</span>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row" style="display:flex;align-items:center;gap:12px;">
+        <div style="width:140px;font-size:13px;color:#666;font-family:'Inter',sans-serif;text-align:right;">Brain Actives</div>
+        <div style="flex:1;background:#f5f5f5;border-radius:8px;height:32px;overflow:hidden;position:relative;">
+          <div class="pb-fill" data-width="60" style="width:0%;height:100%;background:#e0e0e0;border-radius:8px;transition:width 1.2s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;justify-content:flex-end;padding-right:10px;">
+            <span style="color:#555;font-size:12px;font-weight:500;font-family:'Inter',sans-serif;">4,97 zł/dzień</span>
+          </div>
+        </div>
+      </div>
+      <div class="pb-row" style="display:flex;align-items:center;gap:12px;">
+        <div style="width:140px;font-size:13px;color:#666;font-family:'Inter',sans-serif;text-align:right;">Mind Lab Pro</div>
+        <div style="flex:1;background:#f5f5f5;border-radius:8px;height:32px;overflow:hidden;position:relative;">
+          <div class="pb-fill" data-width="100" style="width:0%;height:100%;background:#e0e0e0;border-radius:8px;transition:width 1.2s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;justify-content:flex-end;padding-right:10px;">
+            <span style="color:#555;font-size:12px;font-weight:500;font-family:'Inter',sans-serif;">8,30 zł/dzień</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:14px;font-size:13px;color:#2e7d32;font-weight:600;font-family:'Inter',sans-serif;">CogniCit — 3× taniej niż Mind Lab Pro</p>
+    <p style="text-align:center;margin-top:4px;font-size:12px;color:#999;"><a href="/porownanie.html" style="color:#8f7a3d;text-decoration:none;">Zobacz pełne porównanie →</a></p>
+  </section>
+  <script>
+  (function(){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var fills=e.target.querySelectorAll('.pb-fill');
+          fills.forEach(function(f,i){
+            setTimeout(function(){f.style.width=f.dataset.width+'%';},i*150);
+          });
+          obs.unobserve(e.target);
+        }
+      });
+    },{threshold:0.2});
+    var el=document.getElementById('priceBars');
+    if(el)obs.observe(el);
+  })();
+  </script>
+
+  <!-- #562 — Gwarancja satysfakcji trust badge -->
+  <div style="max-width:600px;margin:0 auto 40px;padding:0 8%;">
+    <div style="background:linear-gradient(135deg,#f0f9f0,#f8fdf8);border:1px solid rgba(46,125,50,0.2);border-radius:12px;padding:28px 24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center;text-align:center;">
+      <div style="background:#2e7d32;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;font-family:'Inter',sans-serif;box-shadow:0 4px 16px rgba(46,125,50,0.3);flex-shrink:0;">30</div>
+      <div style="flex:1;min-width:220px;">
+        <div style="font-family:'EB Garamond',serif;font-size:20px;color:#1a472a;margin-bottom:6px;font-weight:600;">30-dniowa gwarancja satysfakcji</div>
+        <div style="font-size:13px;color:#5a5a58;line-height:1.6;">Kupujesz bez ryzyka. Jeśli w ciągu 30 dni nie będziesz zadowolony(a), zwracamy pieniądze za pierwsze opakowanie — bez pytań.</div>
+        <a href="produkt.html" style="display:inline-block;margin-top:10px;background:#2e7d32;color:white;padding:8px 20px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;font-family:'Inter',sans-serif;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">Zamów bez ryzyka →</a>
+      </div>
+    </div>
+  </div>
+
   <section class="explore">
     <h2>Nie czekaj na premierę — poznaj CogniCit już teraz</h2>
     <p>Sprawdź, z czego składa się nasz suplement i dlaczego wybraliśmy właśnie te 3 składniki.</p>
     <div class="explore-links">
+      <a href="/produkt.html" class="explore-link" style="border:2px solid #2e7d32;background:rgba(46,125,50,0.06);grid-column:1/-1;">
+        <span class="emoji">🛒</span>
+        <span class="link-title" style="color:#2e7d32;font-size:17px;">Zamów CogniCit — 79 zł</span>
+        <span class="link-desc" style="font-size:13px;">30-dniowa gwarancja · Darmowa dostawa od 120 zł · Wysyłka w 24h</span>
+      </a>
       <a href="/produkt.html" class="explore-link">
         <span class="emoji">💊</span>
         <span class="link-title">Produkt</span>
@@ -193,6 +262,11 @@
         <span class="link-title">Certyfikaty</span>
         <span class="link-desc">GMP, GIS, EU</span>
       </a>
+      <a href="/jak-zamowic.html" class="explore-link" style="border:2px solid #2e7d32;background:rgba(46,125,50,0.04);">
+        <span class="emoji">🛒</span>
+        <span class="link-title" style="color:#2e7d32;">Jak zamówić?</span>
+        <span class="link-desc">3 proste kroki do zamówienia</span>
+      </a>
       <a href="/faq.html" class="explore-link">
         <span class="emoji">❓</span>
         <span class="link-title">FAQ</span>
@@ -200,6 +274,28 @@
       </a>
     </div>
   </section>
+
+  <section style="max-width:720px;margin:0 auto 30px;padding:20px 24px;">
+    <div style="background:linear-gradient(135deg,#f0faf3,#e8f5e9);border:1px solid #c8e6c9;border-radius:12px;padding:20px 24px;text-align:center;">
+      <div style="font-size:14px;color:#2e7d32;font-weight:600;margin-bottom:6px;">📦 Zamów dziś → dostawa za <span id="delCount">2</span> dni robocze</div>
+      <div style="font-size:12px;color:#5a5a58;margin-bottom:12px;">Wysyłka InPost/DPD/Poczta · Darmowa dostawa od 120 zł</div>
+      <a href="/produkt.html" style="display:inline-block;background:linear-gradient(135deg,#2D6642,#3a8a56);color:white;padding:12px 32px;border-radius:24px;font-weight:600;text-decoration:none;font-family:'Inter',sans-serif;font-size:15px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(45,106,66,0.25)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">Zamów CogniCit — 79 zł →</a>
+    </div>
+  </section>
+  <script>
+  (function(){
+    var d=new Date(),day=d.getDay(),add=2;
+    if(day===5&&d.getHours()>=14)add=4;
+    else if(day===6)add=3;
+    else if(day===0)add=2;
+    else if(day===1&&d.getHours()<8)add=1;
+    var del=new Date(d.getTime()+add*864e5);
+    var dni=['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
+    var mies=['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
+    var el=document.getElementById('delCount');
+    if(el)el.textContent=dni[del.getDay()]+' '+del.getDate()+' '+mies[del.getMonth()];
+  })();
+  </script>
 
   <div class="cta-box">
     <h3>30-dniowa gwarancja satysfakcji</h3>

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kontakt — Cognivia | Skontaktuj się z nami</title>
+    <meta name="keywords" content="kontakt Cognivia, Cognivia kontakt, skontaktuj się">
+
   <meta name="description" content="Skontaktuj się z Cognivia. Pytania o CogniCit, zamówienia, zwroty, współpraca. Odpowiadamy w ciągu 24h.">
   <link rel="canonical" href="https://gitc0indonor.github.io/website/kontakt.html">
   <link rel="alternate" hreflang="pl" href="https://gitc0indonor.github.io/website/kontakt.html">
@@ -175,6 +177,22 @@
     <a href="kontakt.html">Kontakt</a>
     <a href="produkt.html" style="background:linear-gradient(135deg,#2e7d32,#388e3c);color:#fff!important;padding:10px 20px;border-radius:24px;text-align:center;font-weight:600;text-decoration:none;margin-top:8px;display:block;">🛒 Kup CogniCit → 79 zł</a>
   </nav>
+<div id="navCartBadge" onclick="location.href='koszyk.html'" style="display:inline-flex;align-items:center;cursor:pointer;margin-left:12px;padding:6px;position:relative;" title="Koszyk">
+  <svg style="width:20px;height:20px;fill:none;stroke:#2a2a27;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+  <span id="cartBadgeCount" style="position:absolute;top:-2px;right:-4px;background:#8f7a3d;color:#fff;font-size:10px;font-weight:600;min-width:16px;height:16px;border-radius:50%;display:none;align-items:center;justify-content:center;line-height:16px;padding:0 3px;"></span>
+</div>
+<script>
+(function(){
+  try{
+    var c=JSON.parse(localStorage.getItem('cognivia_cart'));
+    if(c&&c.items&&c.items.length){
+      var total=c.items.reduce(function(s,i){return s+(i.qty||0)},0);
+      var el=document.getElementById('cartBadgeCount');
+      if(el&&total>0){el.textContent=total>99?'99+':total;el.style.display='inline-flex';}
+    }
+  }catch(e){}
+})();
+</script>
 <a href="opinie.html" style="display:none;text-align:center;padding:6px 0;font-size:12px;color:#555;margin-top:4px;" class="mobile-rating-badge"><span style="color:#f9a825;">★★★★★</span> 4.8/5 (127 opinii)</a>
 
   <div class="breadcrumb">

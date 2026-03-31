@@ -1,162 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<rss xmlns:ns0="http://base.google.com/ns/1.0" version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
     <title>Cognivia — CogniCit</title>
     <link>https://cognivia.eu</link>
-    <description>CogniCit — suplement diety z cytykoliną, kwasem alfa-liponowym i beta-cyklodekstryną</description>
-
-    <!-- Single Box -->
+    <description>Feed produktów Cognivia dla Google Merchant Center</description>
+    <lastBuildDate>2026-03-31T02:59:18Z</lastBuildDate>
     <item>
-      <g:id>COGNICIT-001</g:id>
-      <g:title>CogniCit — Nootropowy suplement diety (30 kapsułek)</g:title>
-      <g:description>CogniCit to suplement diety z 3 synergistycznymi składnikami: cytykolina (300 mg), kwas alfa-liponowy (250 mg) i beta-cyklodekstryna (250 mg). 1 kapsułka dziennie. Certyfikowany GMP, zarejestrowany GIS, zgodny z regulacjami UE. Bez kofeiny.</g:description>
-      <g:link>https://cognivia.eu/produkt.html</g:link>
-      <g:image_link>https://cognivia.eu/assets/products/cognicit-front.png</g:image_link>
-      <g:additional_image_link>https://cognivia.eu/assets/products/cognicit-back.png</g:additional_image_link>
-      <g:price>79.00 PLN</g:price>
-      <g:availability>in_stock</g:availability>
-      <g:availability_date>2026-04-01T00:00+01:00</g:availability_date>
-      <g:condition>new</g:condition>
-      <g:brand>Cognivia</g:brand>
-      <g:gtin>5900000000000</g:gtin>
-      <g:mpn>COGNICIT-30</g:mpn>
-      <g:product_type>Zdrowie &gt; Suplementy diety &gt; Nootropowe</g:product_type>
-      <g:google_product_category>Health &gt; Health Care &gt; Vitamins &amp; Supplements</g:google_product_category>
-      <g:shipping>
-        <g:country>PL</g:country>
-        <g:service>Standardowa</g:service>
-        <g:price>12.99 PLN</g:price>
-        <g:shipping_weight>0.15 kg</g:shipping_weight>
-      </g:shipping>
-      <g:shipping>
-        <g:country>PL</g:country>
-        <g:service>InPost Paczkomaty</g:service>
-        <g:price>12.99 PLN</g:price>
-        <g:shipping_weight>0.15 kg</g:shipping_weight>
-      </g:shipping>
-      <g:shipping>
-        <g:country>PL</g:country>
-        <g:service>DPD Kurier</g:service>
-        <g:price>15.99 PLN</g:price>
-        <g:shipping_weight>0.15 kg</g:shipping_weight>
-      </g:shipping>
-      <g:free_shipping_threshold>
-        <g:country>PL</g:country>
-        <g:price>120.00 PLN</g:price>
-      </g:free_shipping_threshold>
-      <g:tax>
-        <g:country>PL</g:country>
-        <g:rate>8</g:rate>
-        <g:tax_ship>false</g:tax_ship>
-      </g:tax>
-      <g:target_country>PL</g:target_country>
-      <g:language>pl</g:language>
-      <g:adult>false</g:adult>
-      <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
-      <g:is_bundle>false</g:is_bundle>
-      <g:energy_efficiency_class>not_applicable</g:energy_efficiency_class>
-      <g:identifier_exists>false</g:identifier_exists>
-      <g:unit_pricing_measure>30capsule</g:unit_pricing_measure>
-      <g:unit_pricing_base_measure>1capsule</g:unit_pricing_base_measure>
-      <g:promotion_id>LAUNCH15</g:promotion_id>
-      <g:product_highlight>Cytykolina 300 mg — wsparcie neuroprzekaźników</g:product_highlight>
-      <g:product_highlight>Kwas alfa-liponowy 250 mg — ochrona antyoksydacyjna</g:product_highlight>
-      <g:product_highlight>Beta-cyklodekstryna 250 mg — zwiększa wchłanianie</g:product_highlight>
-      <g:product_highlight>Certyfikat GMP, zarejestrowany GIS, zgodny z UE</g:product_highlight>
-      <g:product_highlight>Bez kofeiny — bezpieczny z kawą</g:product_highlight>
-      <g:custom_label_0>nootropowy</g:custom_label_0>
-      <g:custom_label_1>premiera</g:custom_label_1>
-      <g:custom_label_2>cena_79</g:custom_label_2>
-      <g:custom_label_3>single_box</g:custom_label_3>
-      <g:custom_label_4>caffeine_free</g:custom_label_4>
+      <ns0:id>cognicit-1box</ns0:id>
+      <ns0:title>CogniCit — Suplement nootropowy (30 kapsułek)</ns0:title>
+      <ns0:description>CogniCit to synergiczny suplement nootropowy z cytykoliną (300 mg), kwasem alfa-liponowym (250 mg) i beta-cyklodekstryną (250 mg). Certyfikat GMP, zgłoszony do GIS. Zero kofeiny.</ns0:description>
+      <ns0:link>https://cognivia.eu/produkt.html</ns0:link>
+      <ns0:image_link>https://cognivia.eu/assets/produkt-front.webp</ns0:image_link>
+      <ns0:availability>in stock</ns0:availability>
+      <ns0:price>79.00 PLN</ns0:price>
+      <ns0:brand>Cognivia</ns0:brand>
+      <ns0:condition>new</ns0:condition>
+      <ns0:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Vitamins &amp; Supplements</ns0:google_product_category>
+      <ns0:product_type>Suplement diety &gt; Nootropowy</ns0:product_type>
+      <ns0:shipping_weight>0.15 kg</ns0:shipping_weight>
+      <ns0:mpn>COGNICIT-30</ns0:mpn>
+      <ns0:identifier_exists>no</ns0:identifier_exists>
+      <ns0:shipping>
+        <ns0:service>InPost</ns0:service>
+        <ns0:price>12.99 PLN</ns0:price>
+        <ns0:country>PL</ns0:country>
+      </ns0:shipping>
+      <ns0:shipping>
+        <ns0:service>DPD</ns0:service>
+        <ns0:price>15.99 PLN</ns0:price>
+        <ns0:country>PL</ns0:country>
+      </ns0:shipping>
+      <ns0:shipping>
+        <ns0:service>Poczta Polska</ns0:service>
+        <ns0:price>10.99 PLN</ns0:price>
+        <ns0:country>PL</ns0:country>
+      </ns0:shipping>
+      <ns0:shipping_label>Darmowa dostawa od 120 zł</ns0:shipping_label>
     </item>
-
-    <!-- Bundle: 2-pack -->
     <item>
-      <g:id>COGNICIT-002</g:id>
-      <g:title>CogniCit — Zestaw 2 opakowań (60 kapsułek, -5%)</g:title>
-      <g:description>Zestaw 2 opakowań CogniCit z rabatem 5%. 60 kapsułek na 2 miesiące suplementacji. Darmowa dostawa. Cytykolina 300 mg + ALA 250 mg + β-CD 250 mg.</g:description>
-      <g:link>https://cognivia.eu/produkt.html</g:link>
-      <g:image_link>https://cognivia.eu/assets/products/cognicit-front.png</g:image_link>
-      <g:price>158.00 PLN</g:price>
-      <g:sale_price>150.00 PLN</g:sale_price>
-      <g:availability>in_stock</g:availability>
-      <g:availability_date>2026-04-01T00:00+01:00</g:availability_date>
-      <g:condition>new</g:condition>
-      <g:brand>Cognivia</g:brand>
-      <g:mpn>COGNICIT-60</g:mpn>
-      <g:product_type>Zdrowie &gt; Suplementy diety &gt; Nootropowe &gt; Zestawy</g:product_type>
-      <g:google_product_category>Health &gt; Health Care &gt; Vitamins &amp; Supplements</g:google_product_category>
-      <g:shipping>
-        <g:country>PL</g:country>
-        <g:service>Darmowa dostawa</g:service>
-        <g:price>0.00 PLN</g:price>
-        <g:shipping_weight>0.30 kg</g:shipping_weight>
-      </g:shipping>
-      <g:tax>
-        <g:country>PL</g:country>
-        <g:rate>8</g:rate>
-        <g:tax_ship>false</g:tax_ship>
-      </g:tax>
-      <g:target_country>PL</g:target_country>
-      <g:language>pl</g:language>
-      <g:adult>false</g:adult>
-      <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
-      <g:is_bundle>true</g:is_bundle>
-      <g:identifier_exists>false</g:identifier_exists>
-      <g:unit_pricing_measure>60capsule</g:unit_pricing_measure>
-      <g:unit_pricing_base_measure>1capsule</g:unit_pricing_base_measure>
-      <g:custom_label_0>nootropowy</g:custom_label_0>
-      <g:custom_label_1>premiera</g:custom_label_1>
-      <g:custom_label_2>cena_150</g:custom_label_2>
-      <g:custom_label_3>bundle_2</g:custom_label_3>
-      <g:custom_label_4>caffeine_free</g:custom_label_4>
+      <ns0:id>cognicit-2pack</ns0:id>
+      <ns0:title>CogniCit — 2× opakowanie (60 kapsułek, -5%)</ns0:title>
+      <ns0:description>Zestaw 2 opakowań CogniCit z rabatem 5%. 60 dni suplementacji. Cytykolina 300 mg + ALA 250 mg + β-CD 250 mg. GMP, GIS.</ns0:description>
+      <ns0:link>https://cognivia.eu/produkt.html</ns0:link>
+      <ns0:image_link>https://cognivia.eu/assets/produkt-front.webp</ns0:image_link>
+      <ns0:availability>in stock</ns0:availability>
+      <ns0:price>150.00 PLN</ns0:price>
+      <ns0:brand>Cognivia</ns0:brand>
+      <ns0:condition>new</ns0:condition>
+      <ns0:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Vitamins &amp; Supplements</ns0:google_product_category>
+      <ns0:product_type>Suplement diety &gt; Nootropowy &gt; Zestaw</ns0:product_type>
+      <ns0:shipping_weight>0.30 kg</ns0:shipping_weight>
+      <ns0:mpn>COGNICIT-60</ns0:mpn>
+      <ns0:identifier_exists>no</ns0:identifier_exists>
+      <ns0:sale_price>150.00 PLN</ns0:sale_price>
+      <ns0:shipping>
+        <ns0:service>InPost</ns0:service>
+        <ns0:price>12.99 PLN</ns0:price>
+        <ns0:country>PL</ns0:country>
+      </ns0:shipping>
+      <ns0:shipping>
+        <ns0:service>DPD</ns0:service>
+        <ns0:price>15.99 PLN</ns0:price>
+        <ns0:country>PL</ns0:country>
+      </ns0:shipping>
+      <ns0:shipping>
+        <ns0:service>Poczta Polska</ns0:service>
+        <ns0:price>10.99 PLN</ns0:price>
+        <ns0:country>PL</ns0:country>
+      </ns0:shipping>
+      <ns0:shipping_label>Darmowa dostawa od 120 zł</ns0:shipping_label>
     </item>
-
-    <!-- Bundle: 3-pack -->
     <item>
-      <g:id>COGNICIT-003</g:id>
-      <g:title>CogniCit — Zestaw 3 opakowań (90 kapsułek, -10%)</g:title>
-      <g:description>Zestaw 3 opakowań CogniCit z rabatem 10%. 90 kapsułek na 3 miesiące suplementacji. Darmowa dostawa. Cytykolina 300 mg + ALA 250 mg + β-CD 250 mg.</g:description>
-      <g:link>https://cognivia.eu/produkt.html</g:link>
-      <g:image_link>https://cognivia.eu/assets/products/cognicit-front.png</g:image_link>
-      <g:price>237.00 PLN</g:price>
-      <g:sale_price>213.00 PLN</g:sale_price>
-      <g:availability>in_stock</g:availability>
-      <g:availability_date>2026-04-01T00:00+01:00</g:availability_date>
-      <g:condition>new</g:condition>
-      <g:brand>Cognivia</g:brand>
-      <g:mpn>COGNICIT-90</g:mpn>
-      <g:product_type>Zdrowie &gt; Suplementy diety &gt; Nootropowe &gt; Zestawy</g:product_type>
-      <g:google_product_category>Health &gt; Health Care &gt; Vitamins &amp; Supplements</g:google_product_category>
-      <g:shipping>
-        <g:country>PL</g:country>
-        <g:service>Darmowa dostawa</g:service>
-        <g:price>0.00 PLN</g:price>
-        <g:shipping_weight>0.45 kg</g:shipping_weight>
-      </g:shipping>
-      <g:tax>
-        <g:country>PL</g:country>
-        <g:rate>8</g:rate>
-        <g:tax_ship>false</g:tax_ship>
-      </g:tax>
-      <g:target_country>PL</g:target_country>
-      <g:language>pl</g:language>
-      <g:adult>false</g:adult>
-      <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
-      <g:is_bundle>true</g:is_bundle>
-      <g:identifier_exists>false</g:identifier_exists>
-      <g:unit_pricing_measure>90capsule</g:unit_pricing_measure>
-      <g:unit_pricing_base_measure>1capsule</g:unit_pricing_base_measure>
-      <g:custom_label_0>nootropowy</g:custom_label_0>
-      <g:custom_label_1>premiera</g:custom_label_1>
-      <g:custom_label_2>cena_213</g:custom_label_2>
-      <g:custom_label_3>bundle_3</g:custom_label_3>
-      <g:custom_label_4>caffeine_free</g:custom_label_4>
+      <ns0:id>cognicit-3pack</ns0:id>
+      <ns0:title>CogniCit — 3× opakowanie (90 kapsułek, -10%)</ns0:title>
+      <ns0:description>Zestaw 3 opakowań CogniCit z rabatem 10%. 90 dni suplementacji. Cytykolina 300 mg + ALA 250 mg + β-CD 250 mg. GMP, GIS.</ns0:description>
+      <ns0:link>https://cognivia.eu/produkt.html</ns0:link>
+      <ns0:image_link>https://cognivia.eu/assets/produkt-front.webp</ns0:image_link>
+      <ns0:availability>in stock</ns0:availability>
+      <ns0:price>213.00 PLN</ns0:price>
+      <ns0:brand>Cognivia</ns0:brand>
+      <ns0:condition>new</ns0:condition>
+      <ns0:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Vitamins &amp; Supplements</ns0:google_product_category>
+      <ns0:product_type>Suplement diety &gt; Nootropowy &gt; Zestaw</ns0:product_type>
+      <ns0:shipping_weight>0.45 kg</ns0:shipping_weight>
+      <ns0:mpn>COGNICIT-90</ns0:mpn>
+      <ns0:identifier_exists>no</ns0:identifier_exists>
+      <ns0:sale_price>213.00 PLN</ns0:sale_price>
+      <ns0:shipping>
+        <ns0:service>InPost</ns0:service>
+        <ns0:price>12.99 PLN</ns0:price>
+        <ns0:country>PL</ns0:country>
+      </ns0:shipping>
+      <ns0:shipping>
+        <ns0:service>DPD</ns0:service>
+        <ns0:price>15.99 PLN</ns0:price>
+        <ns0:country>PL</ns0:country>
+      </ns0:shipping>
+      <ns0:shipping>
+        <ns0:service>Poczta Polska</ns0:service>
+        <ns0:price>10.99 PLN</ns0:price>
+        <ns0:country>PL</ns0:country>
+      </ns0:shipping>
+      <ns0:shipping_label>Darmowa dostawa od 120 zł</ns0:shipping_label>
     </item>
-
   </channel>
 </rss>
