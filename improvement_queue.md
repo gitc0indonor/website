@@ -1355,3 +1355,17 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 596. **[NEW] Create "Ranking suplementów na koncentrację bez kofeiny 2026" SEO mega-page** — Target "suplement na koncentrację bez kofeiny ranking" (1.5K+ monthly). CogniCit (0mg caffeine) vs 5 competitors scored on 8 criteria. Interactive filter. FAQPage + Product aggregateRating JSON-LD. Estimated: 3 hours.
 
 ## Last Updated: 2026-03-31 (Power Cycle #127 — 21:26 UTC)
+
+### 🆕 Power Cycle #128 Additions (2026-03-31 22:08 UTC)
+
+~~597. **[DONE] Add exit-intent quiz popup with "Test swój mózg" hook to index.html**~~ ✅ — Power Cycle #128. 3-question interactive quiz ("Jaka jest Twoja największa wyzwanie poznawcze?" / "Ile kawy pijesz?" / "Jaki jest Twój główny cel?"). Maps to personalized CogniCit ingredient recommendation (4 result types: Fokus/Pamięć/Energia/Ochrona). Email gate after quiz with 15% discount CTA. Formspree integration. localStorage persistence. Desktop: mouse-leave trigger. Mobile: 45s timer. Smooth slide-up animation, dismissible, responsive.
+
+~~598. **[DONE] Add "Ile zaoszczędzisz w ciągu roku?" annual savings calculator to seasonal landing pages**~~ ✅ — Power Cycle #128. Added to 3 seasonal pages: matura.html, sesja.html, powrot-do-szkoly.html. 3-column comparison: CogniCit 959 zł/rok vs Brain Actives 1 814 zł vs Mind Lab Pro 3 030 zł. Green gradient savings callout: "Oszczędzasz do 2 071 zł rocznie z CogniCit". CTA button linking to produkt.html. Positioned after comparison table on each page. Extends existing price calculator from index.html to seasonal conversion pages.
+
+599. **[NEW] Add "Jak zamówić?" mini-guide CTA section to blog posts about ingredients** — Blog posts about cytykolina, ALA, β-CD currently end with generic CTA. Add a visual 3-step mini-guide (Wybierz → Zapłać → Odbierz) matching the existing index.html "3 proste kroki" section. Positions CogniCit as easy to order at the moment of maximum ingredient interest. Expected 5-10% click-through increase from ingredient blog posts to produkt.html. Estimated: 30 minutes.
+
+600. **[NEW] Create "Czy suplementy naprawdę działają?" FAQ video script for YouTube** — Existing blog post (blog/czy-suplementy-dzialaja.html) is high-traffic. Convert the key arguments into a 3-5 minute YouTube video script: (1) Placebo vs science, (2) How to read clinical trials, (3) CogniCit evidence (233 PubMed on cytykolina, 1522 on ALA), (4) Red flags checklist. YouTube embed on nauka.html + blog post. Polish-language YouTube SEO opportunity — zero Polish nootropic videos exist. Estimated: 2 hours (script + storyboard).
+
+601. **[NEW] Add "Ranking cenowy" animated price bars to remaining seasonal landing pages** — sesja.html and powrot-do-szkoly.html are missing the animated price bar chart that index.html, porownanie.html, and dziekuje-za-zapis.html have. Add the same 3-bar animated chart (CogniCit 2.63 zł vs competitors). Scroll-triggered fill animation. Extends consistent price comparison across all seasonal pages. Estimated: 20 minutes.
+
+## Last Updated: 2026-03-31 (Power Cycle #128 — 22:08 UTC)

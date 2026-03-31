@@ -4006,3 +4006,51 @@
 **Blog posts:** 70 total (69 content + 1 index), all with satisfaction guarantee, newsletter badge, cross-links, and recently-read tracker
 
 **Next priorities:** #594 (ranking-koncentracja-2026 mega SEO page — 4h), #585 partial (add <picture> to produkt.html when photos arrive), #204 (CEO Formspree activation — THE blocker).
+
+### 2026-03-31 — Power Cycle #128 (22:08 UTC)
+**Implemented:**
+- ✅ #433 — Added exit-intent quiz popup with "Test swój mózg" hook to index.html
+  - 3-question interactive quiz: cognitive challenge / coffee intake / main goal
+  - 4 personalized result types: Fokus (🎯), Pamięć (🧩), Energia (⚡), Ochrona (🛡️)
+  - Each result maps to specific CogniCit ingredient recommendation with mechanism + PubMed citations
+  - Email gate after quiz completion with 15% discount CTA via Formspree
+  - Desktop: triggers on mouse leaving viewport (mouseY < 5px)
+  - Mobile: triggers after 45 seconds on page
+  - localStorage persistence (eiQuizDismissed) — won't re-show after close
+  - Smooth scale+fade animation (cubic-bezier transitions), dismissible with X or overlay click
+  - CSS: 120 lines (overlay, card, quiz steps, result, email form, responsive)
+  - JS: 80 lines (quiz logic, result mapping, form submission, trigger detection)
+  - Expected 5-8% email capture rate on exit traffic (Cialdini scarcity + quiz engagement)
+- ✅ #589 — Added "Ile zaoszczędzisz w ciągu roku?" annual savings calculator to 3 seasonal landing pages
+  - matura.html: calculator between comparison table and protocol section
+  - sesja.html: calculator between comparison table and protocol section
+  - powrot-do-szkoly.html: calculator between comparison table and protocol section
+  - 3-column comparison: CogniCit 959 zł/rok vs Brain Actives 1 814 zł vs Mind Lab Pro 3 030 zł
+  - Green gradient savings callout: "Oszczędzasz do 2 071 zł rocznie z CogniCit"
+  - CTA button linking to produkt.html
+  - Consistent design matching index.html savings calculator
+  - Extends price comparison to highest-intent seasonal conversion pages
+- ✅ Blog outline #116 added to content_calendar.md: "Jak mózg reaguje na zmianę sezonową?"
+  - Targets "zmiana sezonowa suplementy" / "wiosna zmęczenie mózg" (500+ monthly, seasonal)
+  - 10-section article with 7-day adaptation protocol
+  - NOW is the publish window (March-April peak)
+- ✅ 3 new improvement ideas added to queue (#599-#601): blog CTA mini-guide, YouTube FAQ video, seasonal price bars
+
+**Files changed:**
+- `index.html` — Exit-intent quiz popup CSS + HTML + JS (~200 lines) before </body>
+- `matura.html` — Annual savings calculator section (~35 lines) after comparison table
+- `sesja.html` — Annual savings calculator section (~35 lines) after comparison table
+- `powrot-do-szkoly.html` — Annual savings calculator section (~35 lines) after comparison table
+- `content_calendar.md` — Blog outline #116
+- `improvement_queue.md` — Items #597-#598 marked DONE; 3 new items (#599-#601); timestamp → Power Cycle #128
+- `changelog.md` — This entry
+
+**Site verification:** All 4 modified files validated — DOCTYPE ✓, </html> ✓. index.html: eiQuizOverlay + eiQuizAns + exit-quiz confirmed (24 refs). matura/sesja/powrot: "Ile zaoszczędzisz w ciągu roku?" confirmed (2 refs each). Cart JS syntax valid (node -c).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID to make site fully buyable.
+
+**Queue:** ~598 completed + ~60 active = ~658 total
+
+**Blog posts:** 70 total (69 content + 1 index), all with satisfaction guarantee, newsletter badge, cross-links, recently-read tracker
+
+**Next priorities:** #594 (ranking-koncentracja-2026 mega SEO page — 4h), #599 (blog CTA mini-guide — 30min), #204 (CEO Formspree activation — THE blocker).

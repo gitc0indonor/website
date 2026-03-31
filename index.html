@@ -3986,6 +3986,143 @@
   </script>
 <script src="js/cart-recovery.js" defer></script><!-- #330 abandoned cart recovery -->
 <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(function(){})}</script><!-- #447 PWA SW -->
+
+<!-- #433 Exit-intent quiz popup — Power Cycle #128 -->
+<style>
+.eiQuizOverlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);z-index:10000;display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+.eiQuizOverlay.active{display:flex;opacity:1}
+.eiQuizCard{background:#fff;border-radius:16px;max-width:480px;width:92%;padding:32px 28px;box-shadow:0 24px 64px rgba(0,0,0,0.2);position:relative;animation:eiqSlideUp .4s cubic-bezier(.4,0,.2,1)}
+.eiQuizClose{position:absolute;top:12px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#999;padding:4px 8px;border-radius:50%;transition:all .2s}
+.eiQuizClose:hover{background:#f5f5f5;color:#333}
+.eiQuizH{font-family:'EB Garamond',Georgia,serif;font-size:24px;color:#2a2a27;margin:0 0 6px}
+.eiQuizSub{font-family:'Inter',sans-serif;font-size:14px;color:#666;margin:0 0 20px}
+.eiQStep{display:none}
+.eiQStep.active{display:block}
+.eiQLabel{font-family:'Inter',sans-serif;font-size:13px;color:#888;margin-bottom:10px;text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.eiQText{font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#2a2a27;margin-bottom:16px;line-height:1.4}
+.eiQBtn{display:block;width:100%;padding:12px 16px;margin-bottom:8px;border:2px solid #e0e0e0;border-radius:10px;background:#fff;font-family:'Inter',sans-serif;font-size:14px;color:#444;cursor:pointer;transition:all .2s;text-align:left}
+.eiQBtn:hover{border-color:#2e7d32;color:#2e7d32;background:rgba(46,125,50,0.04)}
+.eiQBtn.sel{border-color:#2e7d32;background:rgba(46,125,50,0.08);color:#2e7d32;font-weight:600}
+.eiResult{display:none;text-align:center}
+.eiResult.active{display:block}
+.eiResultEmoji{font-size:48px;margin-bottom:12px}
+.eiResultH{font-family:'EB Garamond',Georgia,serif;font-size:22px;color:#2a2a27;margin-bottom:8px}
+.eiResultP{font-family:'Inter',sans-serif;font-size:14px;color:#555;line-height:1.6;margin-bottom:16px}
+.eiEmailForm{display:flex;gap:8px;margin-top:12px}
+.eiEmailForm input{flex:1;padding:12px 16px;border:2px solid #e0e0e0;border-radius:10px;font-family:'Inter',sans-serif;font-size:14px;outline:none;transition:border-color .2s}
+.eiEmailForm input:focus{border-color:#2e7d32}
+.eiEmailForm button{padding:12px 20px;background:#2e7d32;color:#fff;border:none;border-radius:10px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.eiEmailForm button:hover{background:#1b5e20;transform:translateY(-1px)}
+.eiPrivacy{font-size:11px;color:#999;margin-top:8px;font-family:'Inter',sans-serif}
+.eiSkipBtn{display:block;margin:12px auto 0;background:none;border:none;color:#999;font-size:12px;cursor:pointer;font-family:'Inter',sans-serif;text-decoration:underline}
+@keyframes eiqSlideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+@media(max-width:480px){.eiQuizCard{padding:24px 20px}.eiQuizH{font-size:20px}.eiQText{font-size:18px}}
+</style>
+<div class="eiQuizOverlay" id="eiQuizOverlay">
+  <div class="eiQuizCard">
+    <button class="eiQuizClose" onclick="eiQuizClose()" aria-label="Zamknij">&times;</button>
+    <!-- Step 1 -->
+    <div class="eiQStep active" data-step="1">
+      <div class="eiQLabel">🧠 Test mózgu — pytanie 1/3</div>
+      <div class="eiQText">Jaka jest Twoja największa wyzwanie poznawcze?</div>
+      <button class="eiQBtn" onclick="eiQuizAns(1,'focus')">🎯 Trudno mi się skupić na jednym zadaniu</button>
+      <button class="eiQBtn" onclick="eiQuizAns(1,'memory')">🧩 Zapominam ważne rzeczy</button>
+      <button class="eiQBtn" onclick="eiQuizAns(1,'energy')">⚡ Brakuje mi energii umysłowej po południu</button>
+      <button class="eiQBtn" onclick="eiQuizAns(1,'stress')">😰 Stres mnie paraliżuje</button>
+    </div>
+    <!-- Step 2 -->
+    <div class="eiQStep" data-step="2">
+      <div class="eiQLabel">☕ Test mózgu — pytanie 2/3</div>
+      <div class="eiQText">Ile kawy pijesz dziennie?</div>
+      <button class="eiQBtn" onclick="eiQuizAns(2,'none')">🍵 Nie piję kawy</button>
+      <button class="eiQBtn" onclick="eiQuizAns(2,'1-2')">☕ 1-2 filiżanki</button>
+      <button class="eiQBtn" onclick="eiQuizAns(2,'3+')">☕☕☕ 3 lub więcej</button>
+      <button class="eiQBtn" onclick="eiQuizAns(2,'energy')">🥤 Energetyki zamiast kawy</button>
+    </div>
+    <!-- Step 3 -->
+    <div class="eiQStep" data-step="3">
+      <div class="eiQLabel">🎯 Test mózgu — pytanie 3/3</div>
+      <div class="eiQText">Jaki jest Twój główny cel?</div>
+      <button class="eiQBtn" onclick="eiQuizAns(3,'work')">💼 Lepsza wydajność w pracy</button>
+      <button class="eiQBtn" onclick="eiQuizAns(3,'study')">📚 Lepsze wyniki w nauce</button>
+      <button class="eiQBtn" onclick="eiQuizAns(3,'brain')">🧠 Ochrona mózgu na przyszłość</button>
+      <button class="eiQBtn" onclick="eiQuizAns(3,'reduce')">☕ Mniej kawy, więcej skupienia</button>
+    </div>
+    <!-- Result -->
+    <div class="eiResult" id="eiQuizResult">
+      <div class="eiResultEmoji" id="eiResultEmoji">🧠</div>
+      <div class="eiResultH" id="eiResultH">Twój typ mózgu</div>
+      <div class="eiResultP" id="eiResultP">Na podstawie Twoich odpowiedzi, CogniCit może Ci pomóc dzięki...</div>
+      <div style="background:linear-gradient(135deg,#e8f5e9,#f1f8e9);border:1px solid #c8e6c9;border-radius:12px;padding:16px;margin:16px 0;text-align:left">
+        <div style="font-size:13px;font-weight:600;color:#2e7d32;margin-bottom:8px">🧬 Twój składnik CogniCit:</div>
+        <div id="eiIngredient" style="font-family:'EB Garamond',serif;font-size:18px;color:#2a2a27;margin-bottom:4px">Cytykolina 300 mg</div>
+        <div id="eiIngDesc" style="font-size:13px;color:#555">Prekursor acetylocholiny — neuroprzekaźnika koncentracji</div>
+      </div>
+      <div style="font-size:14px;color:#555;margin-bottom:12px">Zapisz się i otrzymaj <strong style="color:#2e7d32">15% zniżki</strong> na pierwsze zamówienie:</div>
+      <form class="eiEmailForm" action="https://formspree.io/f/xpwzgryv" method="POST" onsubmit="eiQuizSubmit(event)">
+        <input type="email" name="email" placeholder="Twój email" required>
+        <input type="hidden" name="source" value="exit-quiz">
+        <input type="hidden" name="quiz-result" id="eiQuizResultField" value="">
+        <button type="submit">Odbierz zniżkę →</button>
+      </form>
+      <div class="eiPrivacy">🔒 Twój email jest bezpieczny. Nie wysyłamy spamu. <a href="/polityka-prywatnosci.html" style="color:#2e7d32">Polityka prywatności</a></div>
+      <button class="eiSkipBtn" onclick="eiQuizClose()">Nie, dziękuję</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var shown=false,answers={},quizData={
+    focus:{emoji:'🎯',title:'Typ Fokus',desc:'Potrzebujesz silniejszej koncentracji. Twój mózg ma potencjał, ale łatwo się rozprasza.',ingredient:'Cytykolina 300 mg',ingDesc:'Prekursor acetylocholiny — neuroprzekaźnika skupienia i pamięci roboczej. 233 publikacje PubMed.'},
+    memory:{emoji:'🧩',title:'Typ Pamięć',desc:'Twoja pamięć robocza potrzebuje wsparcia. Łatwo zapominasz, szczególnie pod presją.',ingredient:'Cytykolina 300 mg + ALA 250 mg',ingDesc:'Cytykolina buduje acetylocholinę (pamięć), ALA chroni neurony przed stresem oksydacyjnym.'},
+    energy:{emoji:'⚡',title:'Typ Energia',desc:'Rano jesteś ostry/a, ale po 14:00 Twój mózg działa na rezerwie.',ingredient:'ALA 250 mg + β-CD 250 mg',ingDesc:'ALA chroni mitochondria (źródło energii neuronów), β-CD zwiększa wchłanianie o 40-200%.'},
+    stress:{emoji:'🛡️',title:'Typ Ochrona',desc:'Stres blokuje Twój potencjał. Kortyzol osłabia pamięć i koncentrację.',ingredient:'ALA 250 mg + Cytykolina 300 mg',ingDesc:'ALA neutralizuje wolne rodniki z kortyzolu. Cytykolina odbudowuje acetylocholinę zużytą przez stres.'}
+  };
+  window.eiQuizAns=function(step,ans){
+    answers[step]=ans;
+    var steps=document.querySelectorAll('.eiQStep');
+    steps[step-1].classList.remove('active');
+    if(step<3){steps[step].classList.add('active')}
+    else{eiShowResult()}
+  };
+  window.eiShowResult=function(){
+    var mainAns=answers[1]||'focus',data=quizData[mainAns]||quizData.focus;
+    document.querySelectorAll('.eiQStep').forEach(function(s){s.classList.remove('active')});
+    var r=document.getElementById('eiQuizResult');r.classList.add('active');
+    document.getElementById('eiResultEmoji').textContent=data.emoji;
+    document.getElementById('eiResultH').textContent='Jesteś typem "'+data.title+'"';
+    document.getElementById('eiResultP').textContent=data.desc;
+    document.getElementById('eiIngredient').textContent=data.ingredient;
+    document.getElementById('eiIngDesc').textContent=data.ingDesc;
+    document.getElementById('eiQuizResultField').value=mainAns;
+  };
+  window.eiQuizClose=function(){
+    var o=document.getElementById('eiQuizOverlay');o.classList.remove('active');
+    localStorage.setItem('eiQuizDismissed','1');
+  };
+  window.eiQuizSubmit=function(e){
+    e.preventDefault();
+    var form=e.target,fd=new FormData(form);
+    fetch(form.action,{method:'POST',body:fd,headers:{'Accept':'application/json'}}).then(function(){
+      form.innerHTML='<div style="text-align:center;padding:12px;color:#2e7d32;font-weight:600">✓ Dziękujemy! Sprawdź email — kod zniżkowy czeka 🎉</div>';
+      localStorage.setItem('eiQuizDismissed','1');
+      localStorage.setItem('eiQuizSubmitted','1');
+    }).catch(function(){
+      form.innerHTML='<div style="text-align:center;padding:12px;color:#e65100">Coś poszło nie tak. Spróbuj ponownie.</div>';
+    });
+  };
+  function trigger(){
+    if(shown||localStorage.getItem('eiQuizDismissed')||localStorage.getItem('eiQuizSubmitted'))return;
+    shown=true;
+    document.getElementById('eiQuizOverlay').classList.add('active');
+  }
+  // Desktop: mouse leave viewport
+  document.addEventListener('mouseleave',function(e){if(e.clientY<5)trigger()});
+  // Mobile: 45s timer
+  var isMobile=window.innerWidth<768;
+  if(isMobile)setTimeout(trigger,45000);
+})();
+</script>
 </body>
 </html>
 

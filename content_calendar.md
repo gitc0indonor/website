@@ -3357,3 +3357,26 @@
 **SEO angle:** ULTIMATE Polish-language authority page. Designed to outrank zop2021.pl, fitrepublic.pl, and other affiliate sites. Quarterly refresh format = freshness signal. Evergreen with annual update.
 **Target platforms:** Google (SEO), Wykop, grupy FB o suplementacji, Allegro listing optimization
 **Status:** Outline ready, needs writing
+
+### 📝 Blog Post Outline #116 — Power Cycle #128 (2026-03-31)
+**Title:** "Jak mózg reaguje na zmianę sezonową? Wiosenny przewodnik suplementacji"
+**Target keyword:** "zmiana sezonowa suplementy" / "wiosna zmęczenie mózg suplementacja" (~500+ monthly, seasonal peak March-April)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** March-April — NOW is the publish window
+
+**Outline:**
+1. **Wstęp** — Wiosna to nie tylko katar sienny — mózg też reaguje na zmianę sezonową. 25% Polaków zgłasza wiosenne zmęczenie (CBOS). Dlaczego?
+2. **Jak zmiana sezonowa wpływa na mózg?** — Przesunięcie rytmu dobowego (dłuższe dni → zmiana melatoniny), wahania kortyzolu, adaptacja termoregulacji. Prosty schemat: słońce → szyszynka → melatonina ↓ → kortyzol ↑ → adaptacja 2-4 tyg.
+3. **3 neuroprzekaźniki, które reagują na wiosnę** — (a) Melatonina (regulacja snu), (b) Serotonina (nastrój, zależna od światła), (c) Acetylocholina (koncentracja, spada przy zaburzonym śnie). Prosty diagram.
+4. **Cytykolina — odbudowa acetylocholiny** — 300 mg CDP-cholina = prekursor ACh. Mechanizm: więcej ACh = lepsza adaptacja do nowego rytmu. 233 publikacji PubMed.
+5. **ALA — ochrona mitochondriów** — Wahania temperatury i ciśnienia = stres oksydacyjny. ALA regeneruje glutation, chroni mitochondria. Hager et al. 2007.
+6. **β-CD — klucz do wchłaniania** — Stres adaptacyjny = gorsza absorpcja. β-CD chroni składniki.
+7. **7-dniowy protokół wiosennej adaptacji** — Tabela dzień po dniu: ekspozycja na światło, CogniCit, spacer, dieta sezonowa, sen.
+8. **Porównanie: CogniCit vs inne rozwiązania** — Tabela 6×4: trwała energia vs kofeina crash vs multiwitamina brak mechanizmu.
+9. **5 oznak, że Twój mózg potrzebuje wiosennego resetu** — Checklist.
+10. **Podsumowanie** — "Wiosna to najlepszy moment na reset. CogniCit pomaga mózgowi nadrobić zimowe zaległości."
+
+**CTA:** produkt.html (79 zł, 30-dniowa gwarancja)
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Internal links:** produkt.html, blog/nootropiki-a-sen.html, jak-stosowac.html, nauka.html, blog/poranne-nawyki-programisty.html
+**Status:** Outline ready, needs writing
