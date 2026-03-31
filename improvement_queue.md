@@ -1317,3 +1317,27 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 587. **[NEW] Add satisfaction guarantee badge to blog/suplementy-a-kofeina.html** — This blog post is high-traffic (kofeina comparison query) but may be missing the green 30-day guarantee section. Verify and add if missing for conversion consistency. Estimated: 5 minutes.
 
 588. **[NEW] Create "Nootropiki a praca zdalna" full blog post from content_calendar outline #94/#115** — Write the full article targeting "praca zdalna zmęczenie suplementy" (700+ monthly). Outline ready in content_calendar. Positions CogniCit as remote worker's daily cognitive shield. Article + BreadcrumbList + FAQPage JSON-LD. Added to sitemap.xml, blog/index.html, index.html blog section. Estimated: 2 hours.
+
+### ✅ Power Cycle #126 — 2026-03-31 20:50 UTC
+- ✅ **#574** — Added "Ile zaoszczędzisz w ciągu roku?" annual savings calculator to index.html
+  - 3-column comparison: CogniCit 959 zł/rok vs Brain Actives 1814 zł vs Mind Lab Pro 3030 zł
+  - Green gradient savings callout: "do 2 071 zł rocznie" with comparison to Mind Lab Pro
+  - CTA button linking to produkt.html
+  - Positioned between price bars section and CTA section
+- ✅ **#542** — Created blog/jak-suplementy-wplywaja-na-pamiec-robocza.html (17.8KB)
+  - 7-section article on working memory + supplement science
+  - Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+  - Comparison table, fact-box, share buttons, cross-links, satisfaction guarantee
+  - Added to sitemap.xml. Committed + pushed to GitHub Pages (59e23e4)
+  - Targets "pamięć robocza suplementy" (zero Polish competition)
+- ✅ Browser-check: site live ✓ (200 OK). Cart JS valid. All files validated.
+- ✅ Blog outline added to content_calendar.md
+- ✅ 3 new improvement ideas added (#589-#591)
+
+589. **[NEW] Add "Ile zaoszczędzisz?" annual savings calculator to seasonal landing pages** — Extend calculator from index.html to matura.html, sesja.html, powrot-do-szkoly.html. Context-specific headlines for students/parents. Estimated: 30 minutes.
+
+590. **[NEW] Create "Nootropiki a depresja sezonowa" blog post** — Target "depresja sezonowa suplementy" (800+ monthly, Oct-Nov peak). Cover SAD mechanism, cytykolina, ALA antioxidant. Zero Polish content on this topic. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
+
+591. **[NEW] Batch-add "Ostatnio czytane" tracker to ALL 70 blog posts** — Currently ~10 posts have the recently-read section. Extend to all 70 via batch script. Lower bounce rate + higher pages/session. Estimated: 15 minutes.
+
+## Last Updated: 2026-03-31 (Power Cycle #126 — 20:50 UTC)

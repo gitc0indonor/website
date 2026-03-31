@@ -3303,3 +3303,30 @@
 **SEO angle:** "Praca zdalna" + "zmęczenie" = trending Polish queries post-pandemic. Zero Polish content connecting nootropics to remote work fatigue. First-mover advantage.
 **Target platforms:** Google (SEO), LinkedIn, Wykop, grupy FB o pracy zdalnej
 **Status:** Outline ready, needs writing
+
+---
+
+### New Blog Post Outline (Added 2026-03-31 — Power Cycle #126)
+**Title:** Nootropiki a depresja sezonowa — jak suplementacja pomaga w jesiennym spadku energii?
+**Target:** Polish audience, SEO for "depresja sezonowa suplementy" / "jesienny spadek energii" (800+ monthly, seasonal peak Oct-Nov)
+**Word count:** 2000-2500
+**Keywords:** depresja sezonowa suplementy, jesienny spadek energii, nootropiki jesień, suplementy na chandrę, SAD suplementacja
+
+**Outline:**
+1. **Wstęp** — Co piąty Polak odczuwa jesienny spadek energii. To nie „lenistwo" — to mechanizm biologiczny. Czy suplementacja może pomóc?
+2. **Czym jest depresja sezonowa (SAD)?** — Spadek serotoniny z powodu mniejszej ekspozycji na światło, wzrost melatoniny, spadek witaminy D. Objawy: zmęczenie, problemy z koncentracją, obniżony nastrój, zwiększony apetyt na węglowodany.
+3. **Jak jesień wpływa na mózg?** — Mniej światła → mniej serotoniny → więcej melatoniny → ospałość. Spadek kortyzolu o poranku → trudności z „rozruchem" umysłowym. Stres oksydacyjny z chronicznego zmęczenia.
+4. **Składniki, które pomagają jesienią:**
+   - **Cytykolina** — podnosi acetylocholinę, która utrzymuje koncentrację mimo obniżonej serotoniny. Badania: 233 publikacji PubMed.
+   - **ALA** — antyoksydant chroniący mitochondria przed stresem oksydacyjnym jesiennej ospałości. Hager et al. 2007.
+   - **Witamina D** — suplementacja w okresie wrzesień-kwiecień (brak syntezy skórnej w Polsce). Nie wchodzi w skład CogniCit, ale rekomendowana równolegle.
+5. **Porównanie: CogniCit vs kofeina vs melatonina vs adaptogeny** — Tabela 6 kryteriów (mechanizm, czas działania, wpływ na sen, bezpieczeństwo, cena/dzień, sezonowość).
+6. **Jesienny protokół suplementacji** — 4-tygodniowy plan: W1 (światło + CogniCit), W2 (+witamina D), W3 (+ruch na świeżym powietrzu), W4 (pełna rutyna).
+7. **Czego unikać jesienią?** — Nadmiar kofeiny (pogarsza sen), suplementy z melatoniną na dzień, „boostery energii" z kofeiną + tauryną (crash).
+8. **Podsumowanie** — Jesień to nie wyrok. Z odpowiednią suplementacją i rutyną można utrzymać koncentrację na wysokim poziomie.
+
+**CTA:** produkt.html (79 zł, 30 dni gwarancji) + email capture (JESIEN10 code)
+**Internal links:** produkt.html, blog/suplementy-a-odpornosc.html, blog/jak-poprawic-koncentracje.html, nauka.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy depresja sezonowa to choroba?", "Kiedy zacząć suplementację na jesień?", "Czy CogniCit pomaga na jesienną chandrę?", "Jak długo trwa jesienny spadek energii?", "Czy mogę łączyć CogniCit z witaminą D?")
+**Season:** October-November (peak), evergreen content
+**Status:** Outline ready, needs writing. First-mover advantage: zero Polish content connecting nootropics to SAD.

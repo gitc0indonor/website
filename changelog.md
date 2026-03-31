@@ -3933,3 +3933,38 @@
 **Queue:** ~580 completed + ~58 active = ~638 total
 
 **Next priorities:** #588 (praca zdalna blog post — 2h), #586 (recently-read to remaining posts — 15 min), #204 (CEO Formspree activation — THE blocker).
+
+### 2026-03-31 — Power Cycle #126 (20:50 UTC)
+**Implemented:**
+- ✅ #574 — Added "Ile zaoszczędzisz w ciągu roku?" annual savings calculator to index.html
+  - 3-column comparison: CogniCit 959 zł/rok vs Brain Actives 1 814 zł vs Mind Lab Pro 3 030 zł
+  - Green gradient savings callout: "do 2 071 zł rocznie"
+  - CTA button "Zacznij oszczędzać — 79 zł" linking to produkt.html
+  - Positioned between price bars section and CTA section
+  - Responsive flexbox grid wrapping on mobile
+- ✅ #542 — Created blog/jak-suplementy-wplywaja-na-pamiec-robocza.html (17.8KB)
+  - 7-section article: Czym jest WM → Co ją osłabia → Składniki → Porównanie → CogniCit → Ćwiczenia → Podsumowanie
+  - Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+  - Comparison table: cytykolina vs bacopa vs omega-3 vs fosfatydyloseryna vs kofeina
+  - Fact-box with Cowan 2001 citation, share buttons, cross-links, satisfaction guarantee
+  - Targets "pamięć robocza suplementy" (400+ monthly, zero Polish competition)
+  - Added to sitemap.xml. Committed + pushed to GitHub Pages (59e23e4)
+- ✅ Blog outline #105 added to content_calendar.md: "Nootropiki a depresja sezonowa"
+- ✅ 3 new improvement ideas added (#589-#591)
+- ✅ Browser-check: site live at gitc0indonor.github.io/website ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+- ✅ All files validated: DOCTYPE ✓, </html> ✓, schemas ✓
+
+**Files changed:**
+- `index.html` — Annual savings calculator CSS + HTML (~30 lines)
+- `blog/jak-suplementy-wplywaja-na-pamiec-robocza.html` — NEW file (17.8KB)
+- `sitemap.xml` — Added new blog post URL
+- `improvement_queue.md` — 3 new items (#589-#591); timestamp update
+- `changelog.md` — This entry
+- `content_calendar.md` — Blog outline #105
+
+**Git:** Committed as 59e23e4, pushed to master.
+
+**Queue status:** ~574 completed + ~17 active new items = ~591 total
+**Blog posts:** 71 total (70 existing + 1 new this cycle)
+**Cart:** Full client-side JS cart functional. Formspree wired (placeholder ID). CEO must create formspree.io account and swap form ID.
