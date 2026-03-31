@@ -4138,3 +4138,26 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active — orders arrive via customer email client even without Formspree. reCAPTCHA v3 integrated (test key). **THE BLOCKER:** CEO must create formspree.io account and swap form ID to make site fully buyable without mailto fallback.
 
 **Next priorities:** #608 (expert form to faq.html — 15 min), #609 (summer landing page — 2h), #204 (CEO Formspree activation — THE blocker).
+
+### 2026-03-31 — Power Cycle #131 (23:50 UTC)
+**Implemented:**
+- ✅ **GA4 events.js added to 7 landing pages** — matura.html, sesja.html, porownanie.html, skladniki.html, ranking-nootropikow.html, faq-produkt.html, powrot-do-szkoly.html now load js/ga4-events.js with defer. Total pages with GA4 tracking: 11 (up from 4). All funnel events (view_item, add_to_cart, view_cart, begin_checkout, purchase) now fire on these high-traffic pages when CEO adds GA4 measurement ID.
+- ✅ **WhatsApp floating button added to 5 pages** — regulamin.html, polityka-prywatnosci.html, polityka-cookies.html, skutki-uboczne-nootropiki.html, ranking-nootropikow.html. Green circle with pulse animation, pre-filled message "Cześć, mam pytanie o CogniCit". Total pages with WhatsApp: 28 (up from 23).
+- ✅ **Blog outline #129** added to content_calendar.md: "Czy suplementy na koncentrację działają od razu? Prawda o pierwszych 7 dniach" — targets zero-competition keyword about supplement onset timeline.
+- ✅ **3 new improvement ideas** added to queue (#611-#613).
+- ✅ **Site verification:** All 11 modified files validated (DOCTYPE ✓, </html> ✓). Cart JS syntax valid. Live site returns 200 OK.
+
+**Files changed:**
+- `matura.html`, `sesja.html`, `porownanie.html`, `skladniki.html`, `ranking-nootropikow.html`, `faq-produkt.html`, `powrot-do-szkoly.html` — ga4-events.js script tag added before </body>
+- `regulamin.html`, `polityka-prywatnosci.html`, `polityka-cookies.html`, `skutki-uboczne-nootropiki.html`, `ranking-nootropikow.html` — WhatsApp floating button CSS+HTML added before </body>
+- `content_calendar.md` — Blog outline #129 added
+- `improvement_queue.md` — 3 new items (#611-#613); timestamp → Power Cycle #131
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID to make site fully buyable.
+
+**Queue:** ~610 completed + ~63 active = ~673 total
+**Blog posts:** 71 total (70 content + 1 index)
+**WhatsApp coverage:** 28/48 pages
+**GA4 tracking:** 11/48 pages (needs CEO to add measurement ID)
+
+**Next priorities:** #612 (ranking-koncentracja-2026 mega SEO page — 4h), #613 (re-engagement email templates — 2h), #204 (CEO Formspree activation — THE BLOCKER).

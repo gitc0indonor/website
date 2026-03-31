@@ -1419,3 +1419,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 609. **[NEW] Create seasonal "Lato 2026" landing page (/lato)** — Target summer energy/focus queries (Jun-Aug). Position CogniCit as: 1 capsule/day simplicity for travel, zero caffeine = no sleep disruption on vacation, GMP safety for peace of mind. Countdown to summer + "LETNI10" discount code. Seasonal peak: May-Jul. Article + BreadcrumbList JSON-LD. Estimated: 2 hours.
 
 610. **[NEW] Add Google reCAPTCHA v3 production site key** — CEO must register cognivia.eu at google.com/recaptcha/admin, get production site key, replace test key in kasa.html and cognivia-cart.js. Without production key, reCAPTCHA scoring may not work on live domain. Estimated: 5 minutes (CEO) + 10 seconds (swap).
+
+### 🆕 Power Cycle #131 Additions (2026-03-31 23:50 UTC)
+
+611. **[NEW] Add ga4-events.js to ALL remaining content pages** — Currently ga4-events.js is on 11 pages (index, produkt, kasa, koszyk + 7 landing pages just added). Extend to all 50+ pages for complete funnel tracking. Without events on every page, CEO has blind spots in analytics. Batch-add before </body> on all .html files missing it. Estimated: 15 minutes.
+
+612. **[NEW] Create "Ranking suplementów na koncentrację 2026" mega SEO page (/ranking-koncentracja-2026)** — Ultimate authority page targeting "najlepszy suplement na koncentrację" (5K+ monthly). Full comparison of 8 supplements scored on 10 criteria. Interactive filter by price/ingredients. FAQPage + Product aggregateRating JSON-LD. Designed to outrank Polish affiliate sites. Estimated: 4 hours.
+
+613. **[NEW] Add pre-launch "Czekamy na Ciebie" email re-engagement sequence** — For subscribers who signed up but haven't purchased within 14 days: email 1 (Day 14): "Twoja zniżka 15% czeka — nie przegap premiery!", email 2 (Day 21): "Co mówią pierwsi użytkownicy CogniCit?" (social proof), email 3 (Day 30): "Ostatnia szansa — kod COGNIVIA15 wygasa za 48h" (urgency). Pre-build HTML templates in /website/email-templates/. Estimated: 2 hours.

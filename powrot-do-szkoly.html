@@ -609,5 +609,6 @@ function dismissActivity(){document.getElementById("activity-feed").style.displa
 <script>
 (function(){try{var c=JSON.parse(localStorage.getItem('cognivia_cart'));if(c&&c.items&&c.items.length){var total=c.items.reduce(function(s,i){return s+(i.qty||0)},0);var el=document.getElementById('cartBadgeCount');if(el&&total>0){el.textContent=total>99?'99+':total;el.style.display='inline-flex';}}}catch(e){}})();
 </script>
+<script src="js/ga4-events.js" defer></script>
 </body>
 </html>

@@ -3426,3 +3426,35 @@
 **SEO angle:** Seasonal student traffic peak. Zero quality Polish content specifically targeting "suplementy na sesję" with practical 30-day protocol. Featured snippet potential for "jak przygotować się do sesji suplementy". Cross-promote with sesja landing page.
 **Target platforms:** Google (SEO), grupy FB dla studentów, Wykop
 **Status:** Outline ready, needs writing
+
+### 📝 Blog Post Outline #129 — Power Cycle #131 (2026-03-31)
+
+**Title:** "Czy suplementy na koncentrację działają od razu? Prawda o pierwszych 7 dniach"
+**Target keywords:** "suplement na koncentrację kiedy zaczyna działać", "jak długo czekać na efekty suplementów", "pierwsze dni suplementacji"
+**Estimated search volume:** 800+ monthly (zero quality Polish content on this topic)
+**Content type:** Educational / myth-busting
+**Word count:** 2000-2500
+**Publish date:** April 2026
+
+**Outline:**
+1. **Wstęp** — "Kupiłeś suplement i nic nie czujesz po 2 dniach? To normalne." Address the #1 reason for premature supplement abandonment.
+2. **Jak działają suplementy na koncentrację?** — Neurotransmitter synthesis takes time (acetylcholine pathway for cytykolina, mitochondrial support for ALA). Unlike caffeine (instant effect), nootropic ingredients build up.
+3. **Dzień 1-3: Adaptacja** — What's happening in the body: ingredient absorption begins, β-CD inclusion complex forms in digestive tract. User experience: usually no noticeable effect. This is NORMAL and expected.
+4. **Dzień 4-7: Pierwsze sygnały** — Acetylcholine levels start rising, some users notice subtle improvements in focus duration. Not "Limitless pill" — small, measurable changes.
+5. **Dzień 8-14: Stabilizacja** — Steady-state concentrations reached. Users report clearer thinking, less mental fog. Research: cytykolina meta-analysis shows measurable cognitive improvements at 2-4 weeks.
+6. **Dzień 15-30: Pełne działание** — Maximum benefit period. Consistency is key — skipping days resets the buildup. 30-day review point.
+7. **Porównanie: Suplement vs kofeina** — Timeline comparison table showing caffeine (instant spike/crash) vs CogniCit (gradual build/sustained). Reinforces why patience matters.
+8. **Dlaczego ludzie rezygnują za wcześnie?** — 3 common mistakes: expecting instant results, inconsistent dosing, comparing to stimulants.
+9. **Protokół 30 dni z CogniCit** — Daily tracker/checklist users can follow. Practical, shareable.
+10. **Podsumowanie** — "Daj swojemu mózgu 30 dni." CTA to produkt.html.
+
+**SEO elements:**
+- Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+- OG/Twitter Card meta tags
+- Share buttons (FB/Twitter/LinkedIn)
+- Cross-links to: jak-stosowac.html, blog/nootropiki-a-sen.html, produkt.html
+- Newsletter popup (60% scroll trigger)
+- Fact-box with research stats
+- Satisfaction guarantee badge
+
+**Differentiation:** Zero Polish content explains the supplement onset timeline from a neuroscience perspective. Most Polish supplement sites just say "stosuj regularnie" without explaining WHY it takes time. This article fills that gap and positions Cognivia as the honest, science-first brand.
