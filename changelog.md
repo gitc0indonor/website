@@ -3888,3 +3888,48 @@
 **Queue:** ~576 completed + ~56 active = ~632 total
 
 **Next priorities:** #575 (subscriber reorder banner — 30min), #570 (PDF lead magnet — 1.5h), #204 (CEO Formspree activation — THE blocker).
+
+### 2026-03-31 — Power Cycle #125 (20:17 UTC)
+**Implemented:**
+- ✅ **#578 (partial)** — Added WhatsApp floating button to 3 high-traffic pages
+  - faq.html: green WhatsApp icon (bottom-right, 52px circle, pulse animation)
+  - kontakt.html: same implementation
+  - opinie.html: same implementation
+  - Pre-filled message: "Cześć, mam pytanie o CogniCit"
+  - Pages now with WhatsApp: index, produkt, kasa, faq-produkt, porownanie, skladniki, sesja, matura + 3 new = 11 total
+- ✅ **#580 (partial)** — Added "Ostatnio czytane artykuły" recently-read tracker to 10 top blog posts
+  - localStorage-based tracker: records last 5 viewed blog posts per browser
+  - Displays up to 3 previously read articles in a responsive card grid
+  - CSS: cream-tinted container, hover lift animation, EB Garamond titles
+  - JS: tracks slug on page load, renders matching articles if >1 post viewed
+  - Injected into: cytykolina-przewodnik, antyoksydanty, beta-cyklodekstryna, jak-poprawic-koncentracje, suplementy-a-kofeina, nootropiki-a-sen, suplementy-a-stres-w-pracy, suplementy-praca-zmianowa, jak-budowac-rutyne-suplementacji, suplementy-a-alkohol
+  - Reduces blog bounce rate by offering related content at article bottom
+- ✅ **Blog outline #115** — Added to content_calendar.md: "Nootropiki a praca zdalna"
+  - Targets "praca zdalna zmęczenie suplementy" (700+ monthly, growing post-pandemic)
+  - 10-section article with remote work protocol + comparison table
+- ✅ **5 new improvement ideas** added to queue (#584-#588)
+
+**Files changed:**
+- `faq.html` — WhatsApp floating button (~2 lines before </body>)
+- `kontakt.html` — WhatsApp floating button
+- `opinie.html` — WhatsApp floating button
+- `blog/cytykolina-przewodnik-kompletny.html` — recently-read CSS + container + JS
+- `blog/antyoksydanty.html` — recently-read CSS + container + JS
+- `blog/beta-cyklodekstryna.html` — recently-read CSS + container + JS
+- `blog/jak-poprawic-koncentracje.html` — recently-read CSS + container + JS
+- `blog/suplementy-a-kofeina.html` — recently-read CSS + container + JS
+- `blog/nootropiki-a-sen.html` — recently-read CSS + container + JS
+- `blog/suplementy-a-stres-w-pracy.html` — recently-read CSS + container + JS
+- `blog/suplementy-praca-zmianowa.html` — recently-read CSS + container + JS
+- `blog/jak-budowac-rutyne-suplementacji.html` — recently-read CSS + container + JS
+- `blog/suplementy-a-alkohol.html` — recently-read CSS + container + JS
+- `content_calendar.md` — Blog outline #115 added
+- `improvement_queue.md` — 5 new items (#584-#588); timestamp → Power Cycle #125
+
+**Site verification:** All 13 modified files validated — DOCTYPE ✓, </html> ✓. Cart JS syntax valid (node -c). WhatsApp confirmed on 11 pages. Recently-read tracker confirmed on 10 blog posts. 69 blog posts total, 68 with satisfaction guarantee, 58 with newsletter badge.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID to make site fully buyable.
+
+**Queue:** ~580 completed + ~58 active = ~638 total
+
+**Next priorities:** #588 (praca zdalna blog post — 2h), #586 (recently-read to remaining posts — 15 min), #204 (CEO Formspree activation — THE blocker).

@@ -283,3 +283,33 @@
 - IMP-571: Add "Pytania? Czat z nami" floating WhatsApp button on all pages — Small green WhatsApp icon (fixed bottom-right on desktop, bottom-left on mobile to avoid conflict with "Napisz do nas"). Links to WhatsApp Business with pre-filled message "Cześć, mam pytanie o CogniCit". Adds instant contact channel for hesitant buyers. Estimated: 30 minutes.
 
 ---
+
+---
+
+## 📋 Cycle #109 Audit (2026-03-31 19:18 UTC)
+
+### Full Re-Audit Results
+| Component | Status | Change vs #108 |
+|-----------|--------|-----------------|
+| Cart (koszyk.html) | ✅ Working (409 lines) | No change |
+| Checkout (kasa.html) | ✅ Working (532 lines) | No change |
+| Order Confirmation (potwierdzenie.html) | ✅ Working (208 lines) | No change |
+| Product Page (produkt.html) | ✅ Complete (3206 lines) | No change |
+| Cart JS (cognivia-cart.js) | ✅ Functional — localStorage, VAT 23%, 4 shipping, 4 payment UI | No change |
+| Formspree | 🔴 Placeholder `xpwzgryv` | UNCHANGED — 37+ cycles |
+| Payment gateways | 🔴 UI only (PayU/P24/BLIK/PayPal) | No change |
+| Legal pages (5) | ✅ All verified present (faq-produkt 901L, dostawa 188L, zwroty 212L, polityka-prywatnosci 250L, regulamin 256L) | No change |
+| Trust elements | ✅ GMP, lab-tested, money-back, SSL, reviews | No change |
+| Shipping (4 methods) | ✅ InPost Paczkomat/Kurier, DPD, Poczta Polska | No change |
+| VAT 23% | ✅ Configured | No change |
+| SEO + JSON-LD | ✅ Complete | No change |
+| Improvement queue | ✅ Active — items 578-580 pending | 3 new items (581-583) |
+
+### Verdict
+**No change for 37+ cycles. Site is fully built and functional client-side. The sole blocker remains CEO activating Formspree (5-minute task at formspree.io). Cart, checkout, product listing, shipping, payment UI, trust elements, all 5 legal pages, and SEO are complete.**
+
+### Cycle #109 Added to Queue (581-583)
+- IMP-581: Add "Często kupowane razem" bundle upsell section to produkt.html — Display CogniCit + complementary product bundle (e.g., omega-3, vitamin D) with combined discount. Increases AOV by 15-25%. Uses existing cart JS to add bundle in one click. Estimated: 1.5 hours.
+- IMP-582: Implement Google Tag Manager dataLayer events for cart/checkout funnel — Add dataLayer pushes for add_to_cart, view_cart, begin_checkout, purchase events. When GTM/GA4 is connected, enables full ecommerce funnel tracking and remarketing audiences. Pre-built events ready for activation. Estimated: 1 hour.
+- IMP-583: Create "Skąd wysyłamy?" warehouse/shipping origin section on dostawa.html — Add interactive Poland map snippet showing Gdańsk warehouse location, estimated delivery zones (1-day, 2-day, 3-day), InPost locker density reference. Builds trust through transparency about logistics origin. Estimated: 45 minutes.
+

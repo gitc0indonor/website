@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-31 (Power Cycle #124 — 18:56 UTC)
+## Last Updated: 2026-03-31 (Power Cycle #125 — 18:56 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -1299,3 +1299,21 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 579. **[NEW] Create "Suplementy dla nocnych zmian — kompletny protokół 2026" downloadable PDF** — 4-page PDF lead magnet based on the new blog post: shift-specific dosing tables, sleep hygiene checklist, weekly tracker. Email-gated download from blog/suplementy-praca-zmianowa.html. Captures shift worker leads from the exact content they're reading. Estimated: 1.5 hours.
 
 580. **[NEW] Add "Ostatnio czytane artykuły" section to blog posts** — Track last 3-5 viewed blog posts via localStorage, display horizontal scrollable section at bottom of each post. Reduces blog bounce rate and increases pages/session (SEO signal). Pattern: same as existing "Ostatnio przeglądane" on produkt.html. Estimated: 30 minutes.
+
+581. **[NEW] Add "Często kupowane razem" bundle upsell section to produkt.html** — Display CogniCit + complementary product bundle (e.g., omega-3, vitamin D) with combined discount. Increases AOV by 15-25%. Uses existing cart JS to add bundle in one click. Estimated: 1.5 hours.
+
+582. **[NEW] Implement Google Tag Manager dataLayer events for cart/checkout funnel** — Add dataLayer pushes for add_to_cart, view_cart, begin_checkout, purchase events. When GTM/GA4 is connected, enables full ecommerce funnel tracking and remarketing audiences. Pre-built events ready for activation. Estimated: 1 hour.
+
+583. **[NEW] Create "Skąd wysyłamy?" warehouse/shipping origin section on dostawa.html** — Add interactive Poland map snippet showing Gdańsk warehouse location, estimated delivery zones (1-day, 2-day, 3-day), InPost locker density reference. Builds trust through transparency about logistics origin. Estimated: 45 minutes.
+
+### 🆕 Power Cycle #125 Additions (2026-03-31 20:17 UTC)
+
+584. **[NEW] Add "Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów" blog post as full article** — Outline exists in content_calendar #100 (and #87, #42, #12). High-volume keyword "jak poprawić koncentrację" (3K+ monthly). Listicle format = featured snippet potential. Already has blog/jak-poprawic-koncentracje.html (33.6KB) published — but this is "10 sprawdzonych sposobów" variant with different angle (evidence-first vs practical-first). Merge or update existing post to cover both angles. Article + BreadcrumbList + FAQPage JSON-LD already present. Estimated: 1 hour (update/enhance existing).
+
+585. **[NEW] Implement WebP image infrastructure for future product photos** — Create `<picture>` element pattern with WebP source + PNG fallback. Add `loading="lazy"` to all new img tags. Prepare CSS for responsive images (max-width, aspect-ratio). Currently minimal images on site (mostly emojis/SVGs), but this infrastructure enables instant optimization when real product photos arrive. Combined with existing content-visibility CSS, can reduce page weight by 25-40% and improve LCP by 0.5-1.5s. Estimated: 1 hour.
+
+586. **[NEW] Add "Ostatnio czytane artykuły" section to ALL remaining blog posts** — Currently 10 top blog posts have the recently-read tracker (Power Cycle #125). Extend to remaining 59 blog posts using the same localStorage pattern. Consistent engagement feature across entire blog = lower bounce rate + higher pages/session (SEO signal). Batch injection script ready. Estimated: 15 minutes (batch add).
+
+587. **[NEW] Add satisfaction guarantee badge to blog/suplementy-a-kofeina.html** — This blog post is high-traffic (kofeina comparison query) but may be missing the green 30-day guarantee section. Verify and add if missing for conversion consistency. Estimated: 5 minutes.
+
+588. **[NEW] Create "Nootropiki a praca zdalna" full blog post from content_calendar outline #94/#115** — Write the full article targeting "praca zdalna zmęczenie suplementy" (700+ monthly). Outline ready in content_calendar. Positions CogniCit as remote worker's daily cognitive shield. Article + BreadcrumbList + FAQPage JSON-LD. Added to sitemap.xml, blog/index.html, index.html blog section. Estimated: 2 hours.

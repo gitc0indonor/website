@@ -3278,3 +3278,28 @@
 **Target platforms:** Google (SEO — seasonal), grupy FB o zdrowiu, Wykop, Instagram (spring wellness), Pinterest
 **Season:** March-April strong peak. PUBLISH THIS WEEK for immediate traffic.
 **Status:** Outline ready — PRIORITY PUBLISH (seasonal timing critical, currently at peak)
+
+### 📝 Blog Post Outline #115 — Power Cycle #125 (2026-03-31)
+**Title:** "Nootropiki a praca zdalna — jak chronić mózg przed cyfrowym zmęczeniem?"
+**Target keyword:** "praca zdalna zmęczenie suplementy" / "cyfrowe zmęczenie mózg" / "suplementy home office" (~700+ monthly, growing post-pandemic)
+**Estimated word count:** 2,000-2,500 words
+**Seasonality:** Evergreen, peak Sep (back to work) and Jan (new year goals)
+
+**Outline:**
+1. **Wstęp** — 2.5 mln Polaków pracuje zdalnie. Ekrany 8-10h dziennie. Mózg zużywa 20% energii organizmu przy 2% masy — praca zdalna to maraton neuronalny.
+2. **Mechanizm cyfrowego zmęczenia** — Niebieskie światło → supresja melatoniny → gorszy sen → spadek acetylocholiny następnego dnia. Context switching co 3 min (Gloria Mark) → attention residue → spadek wydajności.
+3. **Kortyzol pracownika zdalnego** — Brak granic praca/dom = chroniczny stres. Decision fatigue (sam podejmujesz WSZYSTKIE decyzje). Brak accountability = więcej energii na samokontrolę.
+4. **Cytykolina — paliwo dla zdalnego mózgu** — 300 mg CDP-cholina = prekursor acetylocholiny (neuroprzekaźnik focusu). Mechanizm: więcej ACh = lepsza organizacja, planowanie, koncentracja. 233 publikacje PubMed.
+5. **ALA — ochrona przed stresem oksydacyjnym ekranów** — Długotrwała praca przy ekranie generuje wolne rodniki → uszkodzenie mitochondriów. ALA regeneruje glutation, chroni neurony. Hager et al. 2007.
+6. **β-CD — dlaczego wchłanianie ma znaczenie** — Stres + nieregularne posiłki = gorsze wchłanianie. β-CD chroni składniki → więcej dociera do mózgu.
+7. **Protokół "zdalny dzień" z CogniCit** — 7:00 ☀️ światło → 7:30 💊 CogniCit ze śniadaniem → 9:00 deep work → 12:00 spacer + ekran-free lunch → 14:00 zadania administracyjne → 18:00 shutdown ritual.
+8. **5 praktycznych tipów** — (a) Stałe godziny pracy, (b) Jeden deep work block dziennie, (c) CogniCit jako poranny anchor, (d) 20-20-20 rule, (e) Wieczorny shutdown ritual.
+9. **Porównanie: CogniCit vs inne rozwiązania** — Tabela: CogniCit (trwała koncentracja, 0 mg kofeiny) vs kofeina (crash o 15:00) vs energetyki (cukier, lęk) vs modafinil (recepta, ryzyko).
+10. **Podsumowanie** — "Praca zdalna to wolność, ale mózg potrzebuje wsparcia, by z niej korzystać."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-programistow.html, blog/poranne-nawyki-programisty.html, jak-stosowac.html, blog/chroniczne-zmeczenie-umyslowe.html, porownanie.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy ekran niszczy mózg?", "Jakie suplementy na zmęczenie oczu?", "Czy CogniCit pomaga przy pracy zdalnej?", "Czy mogę łączyć z kawą?", "Kiedy zacząć suplementację?")
+**SEO angle:** "Praca zdalna" + "zmęczenie" = trending Polish queries post-pandemic. Zero Polish content connecting nootropics to remote work fatigue. First-mover advantage.
+**Target platforms:** Google (SEO), LinkedIn, Wykop, grupy FB o pracy zdalnej
+**Status:** Outline ready, needs writing

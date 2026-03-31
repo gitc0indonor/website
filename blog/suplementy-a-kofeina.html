@@ -160,6 +160,16 @@
       .newsletter-float-badge { animation: none; }
     }
 
+<style>
+.recently-read{max-width:800px;margin:30px auto;padding:20px;background:rgba(255,248,225,0.3);border:1px solid rgba(201,169,110,0.15);border-radius:12px}
+.recently-read h3{font-family:'EB Garamond',serif;font-size:20px;color:#2a2a27;margin-bottom:14px;text-align:center}
+.rr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.rr-card{display:block;background:white;border:1px solid rgba(201,169,110,0.15);border-radius:8px;padding:14px;text-decoration:none;transition:all 0.3s}
+.rr-card:hover{border-color:#8f7a3d;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.rr-card .rr-emoji{font-size:20px;margin-bottom:6px;display:block}
+.rr-card .rr-title{font-family:'EB Garamond',serif;font-size:14px;color:#2a2a27;margin-bottom:4px}
+.rr-card .rr-desc{font-size:11px;color:#888}
+</style>
 </style>
 <link rel="stylesheet" href="../assets/css/cognivia-v2.css">
 
@@ -398,7 +408,8 @@
       <a href="../produkt.html" style="display: inline-block; background: #4a6741; color: white; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; white-space: nowrap; transition: transform 0.2s;">Zamów bez ryzyka →</a>
     </div>
 
-  </article>
+  <div id="recentlyRead" style="display:none"></div>
+</article>
 
 <div class="cross-links">
   <h3>Przeczytaj również</h3>

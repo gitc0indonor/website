@@ -150,7 +150,17 @@
         footer{background:var(--cognivia-charcoal);color:#ccc;padding:40px 0;text-align:center;font-size:13px}
         footer a{color:var(--cognivia-gold);text-decoration:none}
         @media(max-width:600px){.fact-box{grid-template-columns:1fr}.guarantee-section{flex-direction:column;text-align:center}table{font-size:12px}table th,table td{padding:6px 8px}}
-    </style>
+    <style>
+.recently-read{max-width:800px;margin:30px auto;padding:20px;background:rgba(255,248,225,0.3);border:1px solid rgba(201,169,110,0.15);border-radius:12px}
+.recently-read h3{font-family:'EB Garamond',serif;font-size:20px;color:#2a2a27;margin-bottom:14px;text-align:center}
+.rr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.rr-card{display:block;background:white;border:1px solid rgba(201,169,110,0.15);border-radius:8px;padding:14px;text-decoration:none;transition:all 0.3s}
+.rr-card:hover{border-color:#8f7a3d;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.rr-card .rr-emoji{font-size:20px;margin-bottom:6px;display:block}
+.rr-card .rr-title{font-family:'EB Garamond',serif;font-size:14px;color:#2a2a27;margin-bottom:4px}
+.rr-card .rr-desc{font-size:11px;color:#888}
+</style>
+</style>
 </head>
 <body>
     <div class="trust-bar-top">
@@ -352,7 +362,8 @@
                 <a href="https://twitter.com/intent/tweet?url=https://cognivia.eu/blog/suplementy-praca-zmianowa.html&text=Suplementy%20a%20praca%20zmianowa%20%E2%80%94%20jak%20suplementowa%C4%87%20przy%20nieregularnych%20godzinach%3F" class="share-btn tw" target="_blank" rel="noopener">Twitter/X</a>
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cognivia.eu/blog/suplementy-praca-zmianowa.html" class="share-btn li" target="_blank" rel="noopener">LinkedIn</a>
             </div>
-        </article>
+        <div id="recentlyRead" style="display:none"></div>
+</article>
     </div>
     <footer>
         <div class="container">
@@ -360,5 +371,12 @@
             <p style="margin-top:8px">Suplement diety. Nie zastępuje zróżnicowanej diety i zdrowego trybu życia.</p>
         </div>
     </footer>
+<script>
+(function(){
+var slug=location.pathname.split('/').pop().replace('.html','');
+var titles={'cytykolina-przewodnik-kompletny':'🧠 Cytykolina — przewodnik','antyoksydanty':'🛡️ Antyoksydanty','beta-cyklodekstryna':'🔬 Beta-CD','suplement-vs-lek':'⚖️ Suplement vs lek','jak-stosowac-cognicit':'📋 Jak stosować','mity-o-suplementach':'🚫 Mity o suplementach','poranne-nawyki-koncentracje':'🌅 Poranne nawyki','jak-poprawic-koncentracje':'🎯 Jak poprawić koncentrację','suplementy-a-kofeina':'☕ Suplementy a kofeina','nootropiki-a-sen':'😴 Nootropiki a sen','suplementy-a-stres-w-pracy':'💼 Stres w pracy','suplementy-praca-zmianowa':'🌙 Praca zmianowa','cytykolina-vs-kofeina-vs-bakopa':'🔬 Cytykolina vs kofeina','jak-budowac-rutyne-suplementacji':'📅 Rutyna suplementacji','suplementy-a-alkohol':'🍷 Suplementy a alkohol','suplementy-dla-seniorow-50-plus':'👴 Dla seniorów','suplementy-a-odpornosc':'🛡️ Suplementy a odporność','jak-suplementy-wplywaja-na-koncentracje':'📊 Koncentracja przewodnik','chroniczne-zmeczenie-umyslowe':'😩 Zmęczenie umysłowe','suplementy-na-wiosne':'🌸 Wiosenny reset','nootropiki-a-multitasking':'🔄 Multitasking','jak-mozg-zuzywa-energie':'⚡ Energia mózgu'};
+try{var read=JSON.parse(localStorage.getItem('rr_articles')||'[]');read=read.filter(function(s){return s!==slug});read.unshift(slug);if(read.length>5)read=read.slice(0,5);localStorage.setItem('rr_articles',JSON.stringify(read));var container=document.getElementById('recentlyRead');if(!container||read.length<2)return;var shown=0;var html='';for(var i=0;i<read.length&&shown<3;i++){if(read[i]===slug||!titles[read[i]])continue;html+='<a href="/blog/'+read[i]+'.html" class="rr-card"><span class="rr-emoji">'+titles[read[i]].split(' ')[0]+'</span><span class="rr-title">'+titles[read[i]].substring(titles[read[i]].indexOf(' ')+1)+'</span><span class="rr-desc">Ostatnio czytane</span></a>';shown++;}if(shown>0){container.innerHTML='<div class="recently-read"><h3>📖 Ostatnio czytane artykuły</h3><div class="rr-grid">'+html+'</div></div>';container.style.display='block';}}catch(e){}
+})();
+</script>
 </body>
 </html>
