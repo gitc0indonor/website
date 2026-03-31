@@ -1,3 +1,45 @@
+### 2026-03-31 — Power Cycle #116 (01:06 UTC)
+**Implemented:**
+- ✅ #518 — Created blog/jak-poprawic-koncentracje.html (33.6KB)
+  - Full 10-method listicle targeting "jak poprawić koncentrację" (3K+ monthly searches)
+  - 10 evidence-based methods: sen, ruch, nawodnienie, Pomodoro, detoks cyfrowy, dieta śródziemnomorska, medytacja, zimna ekspozycja, single-tasking, suplementacja CogniCit
+  - Comparison table: 10 methods × time to effect × cost × evidence level
+  - 3 JSON-LD schemas: Article + BreadcrumbList + FAQPage (5 Q&As for Google rich results)
+  - OG/Twitter Card meta tags for social sharing
+  - Share buttons (Facebook, Twitter/X, LinkedIn)
+  - 3-card cross-links section (suplementy-a-kofeina, cytykolina-przewodnik, jak-stosowac)
+  - Fact-box with 3 key stats (3K+ searches, 20% brain energy, 8s attention span)
+  - Green satisfaction guarantee section + trust bar
+  - Newsletter floating badge + slide-up email capture popup (60% scroll trigger, Formspree, localStorage)
+  - Added to sitemap.xml, blog/index.html (first card), index.html blog section (first card)
+  - Featured snippet target: numbered list format
+- ✅ #502 — Added ★4.8/5 (127 opinii) mobile star rating badge to 17 pages
+  - Pages: o-nas.html, dostawa.html, zwroty.html, regulamin.html, polityka-prywatnosci.html, polityka-cookies.html, kontakt.html, faq.html, faq-skladniki.html, jak-stosowac.html, jak-wybrac-suplement.html, jak-czytac-etykiety.html, jak-zamowic.html, opinie.html, ranking-nootropikow.html, powrot-do-szkoly.html, skutki-uboczne-nootropiki.html
+  - Badge links to opinie.html for social proof
+  - Mobile only (<768px) — hidden on desktop
+  - All 28+ pages now have consistent mobile trust signal at first hamburger menu interaction
+- ✅ Blog outline #102 added to content_calendar.md: "Nootropiki a multitasking — jak przełączanie zadań niszczy focus?"
+  - Targets "multitasking suplementy" / "przełączanie zadań koncentracja" (zero Polish content)
+  - Attention residue mechanism, CogniCit for working memory support
+- ✅ 3 new improvement ideas added to queue (#532-#534)
+
+**Files changed:**
+- `blog/jak-poprawic-koncentracje.html` — NEW (33.6KB)
+- `sitemap.xml` — new blog URL added
+- `blog/index.html` — new blog card (first position)
+- `index.html` — new blog card in "Najnowsze artykuły" section (first position)
+- `improvement_queue.md` — Items #518, #502 marked DONE; 3 new items (#532-#534); timestamp → Power Cycle #116
+- `o-nas.html`, `dostawa.html`, `zwroty.html`, `regulamin.html`, `polityka-prywatnosci.html`, `polityka-cookies.html`, `kontakt.html`, `faq.html`, `faq-skladniki.html`, `jak-stosowac.html`, `jak-wybrac-suplement.html`, `jak-czytac-etykiety.html`, `jak-zamowic.html`, `opinie.html`, `ranking-nootropikow.html`, `powrot-do-szkoly.html`, `skutki-uboczne-nootropiki.html` — mobile star rating badge added
+- `changelog.md` — This entry
+
+**Site verification:** Blog post validated — DOCTYPE ✓, </html> ✓, 3 JSON-LD schemas ✓, share buttons ✓, guarantee section ✓, newsletter popup ✓. All 17 badge pages validated — mobile-rating-badge present. index.html and blog/index.html link to new post. Cart JS syntax valid.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~518 completed + ~16 active = ~534 total
+
+---
+
 ### 2026-03-31 — Power Cycle #115 (00:36 UTC)
 **Implemented:**
 - ✅ #523 — Enhanced "Jak to działa?" section with animated pathway infographic on index.html

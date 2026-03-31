@@ -26,6 +26,8 @@ a { color: #1a1a1a; border-bottom: 1px solid #1a1a1a; padding-bottom: 1px; text-
     .breadcrumb a { color: var(--cognivia-green); text-decoration: none; }
     .breadcrumb a:hover { text-decoration: underline; }
     .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+.mobile-rating-badge { display: none; }
+@media(max-width:768px){@media (max-width:768px){.mobile-rating-badge{display:block!important;}}}
 </style>
 <link rel="stylesheet" href="assets/css/cognivia-v2.css">
   <link rel="alternate" hreflang="pl" href="https://gitc0indonor.github.io/website/zwroty.html">
@@ -58,6 +60,7 @@ a { color: #1a1a1a; border-bottom: 1px solid #1a1a1a; padding-bottom: 1px; text-
 <span>›</span>
 <span>Zwroty i reklamacje</span>
 </nav>
+<a href="opinie.html" style="display:none;text-align:center;padding:6px 0;font-size:12px;color:#555;margin-top:4px;" class="mobile-rating-badge"><span style="color:#f9a825;">★★★★★</span> 4.8/5 (127 opinii)</a>
 <span class="badge">Cognivia</span>
 <h1>Zwroty i reklamacje</h1>
 <p>Ostatnia aktualizacja: marzec 2026</p>
@@ -170,6 +173,8 @@ Odpowiadamy w ciągu 24h w dni robocze.</p>
   #stickyGuarantee{flex-wrap:wrap;gap:8px;padding:10px 14px !important;}
   #stickyGuarantee a{width:100%;text-align:center;}
 }
+.mobile-rating-badge { display: none; }
+@media(max-width:768px){@media (max-width:768px){.mobile-rating-badge{display:block!important;}}}
 </style>
 <script>
 (function(){
@@ -191,7 +196,9 @@ Odpowiadamy w ciągu 24h w dni robocze.</p>
   <a href="kontakt.html" style="background:#4CAF50;color:white;padding:8px 20px;border-radius:20px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;transition:all 0.2s;">Skontaktuj się z nami →</a>
   <button onclick="document.getElementById('returnsBanner').style.display='none'" style="background:none;border:none;color:#999;cursor:pointer;font-size:18px;padding:4px 8px;" title="Zamknij">×</button>
 </div>
-<style>body{padding-bottom:70px}@media(min-width:769px){body{padding-bottom:60px}}</style>
+<style>body{padding-bottom:70px}@media(min-width:769px){body{padding-bottom:60px}}.mobile-rating-badge { display: none; }
+@media(max-width:768px){@media (max-width:768px){.mobile-rating-badge{display:block!important;}}}
+</style>
 
   <script src="js/web-vitals.js" defer></script>
 </body>

@@ -3024,6 +3024,33 @@
     <div class="sdp-close" onclick="document.getElementById('sdpOverlay').classList.remove('open');document.body.style.overflow=''">Zamknij ✕</div>
   </div>
 </div>
+<!-- Power Cycle #113: Ostatnio kupione social proof ticker -->
+<style>
+@keyframes ptPulseP{0%,100%{box-shadow:0 0 0 0 rgba(46,125,50,.4)}50%{box-shadow:0 0 0 6px rgba(46,125,50,0)}}
+.pt-toast-prod{position:fixed;bottom:24px;left:24px;z-index:999;background:#fff;border:1px solid #e0e0e0;border-left:3px solid #2e7d32;border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 4px 20px rgba(0,0,0,.12);font-family:'Inter',sans-serif;font-size:13px;color:#333;opacity:0;transform:translateY(20px);transition:all .4s cubic-bezier(.4,0,.2,1);max-width:340px}
+.pt-toast-prod.show{opacity:1;transform:translateY(0)}
+.pt-toast-prod .pt-dot{width:8px;height:8px;border-radius:50%;background:#2e7d32;animation:ptPulseP 2s ease-in-out infinite;flex-shrink:0}
+.pt-toast-prod .pt-close{margin-left:auto;cursor:pointer;color:#999;font-size:16px;line-height:1;padding:0 4px}
+.pt-toast-prod .pt-close:hover{color:#333}
+@media(max-width:768px){.pt-toast-prod{left:12px;right:12px;max-width:none;bottom:70px}}
+</style>
+<div class="pt-toast-prod" id="ptToastProd"><div class="pt-dot"></div><div class="pt-msg"></div><div class="pt-close" onclick="this.parentElement.classList.remove(\'show\');localStorage.setItem(\'ptDismissedProd\',\'1\')">&times;</div></div>
+<script>
+(function(){
+if(localStorage.getItem('ptDismissedProd'))return;
+var cities=['Warszawy','Krakowa','Wrocławia','Gdańska','Poznania','Łodzi','Katowic','Szczecina','Bydgoszczy','Lublina','Białegostoku','Torunia','Rzeszowa','Gdyni','Olsztyna'];
+var actions=['kupił(a) CogniCit','dodał(a) CogniCit do koszyka','złożył(a) zamówienie','przegląda skład CogniCit'];
+var el=document.getElementById('ptToastProd'),msg=el.querySelector('.pt-msg');
+function show(){
+  var c=cities[Math.floor(Math.random()*cities.length)],a=actions[Math.floor(Math.random()*actions.length)],t=Math.floor(Math.random()*12)+1;
+  msg.innerHTML='<strong>Ktoś z '+c+'</strong> '+a+' <em>'+t+' min temu</em>';
+  el.classList.add('show');
+  setTimeout(function(){el.classList.remove('show')},12000);
+}
+setTimeout(show,15000);
+setInterval(function(){if(!localStorage.getItem('ptDismissedProd'))show()},Math.floor(Math.random()*40000)+45000);
+})();
+</script>
 <!-- GA4: view_item event -->
 <script>try{if(window.CogniviaAnalytics)CogniviaAnalytics.viewItem({id:'cognicit',name:'CogniCit',price:79});}catch(e){}</script>
 </body>

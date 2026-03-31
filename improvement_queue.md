@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-31 (Power Cycle #115 — 00:36 UTC)
+## Last Updated: 2026-03-31 (Power Cycle #116 — 01:06 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -1060,7 +1060,7 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 501. **[NEW] Create "Najlepszy suplement na koncentrację bez kofeiny 2026" SEO mega-page (/ranking-bez-kofeiny)** — Ultimate caffeine-free authority page. CogniCit (0mg) vs 5 competitors scored on 8 criteria. Interactive filter. FAQPage + Product aggregateRating JSON-LD. Estimated: 3 hours.
 
-502. **[NEW] Add "Opinie klientów" star rating badge to ALL remaining pages missing mobile nav badge** — Extend the ★4.8/5 badge to the remaining 16 pages: o-nas.html, dostawa.html, zwroty.html, regulamin.html, polityka-prywatnosci.html, polityka-cookies.html, all ingredient pages, 404.html, dziekuje-za-zapis.html, dodaj-opinie.html. Consistent mobile trust signal across entire site. Estimated: 30 minutes.
+502. ~~**[DONE] Add "Opinie klientów" star rating badge to ALL remaining pages missing mobile nav badge**~~ ✅ — Power Cycle #116. Added ★4.8/5 (127 opinii) mobile star rating badge to 17 pages: o-nas.html, dostawa.html, zwroty.html, regulamin.html, polityka-prywatnosci.html, polityka-cookies.html, kontakt.html, faq.html, faq-skladniki.html, jak-stosowac.html, jak-wybrac-suplement.html, jak-czytac-etykiety.html, jak-zamowic.html, opinie.html, ranking-nootropikow.html, powrot-do-szkoly.html, skutki-uboczne-nootropiki.html. All pages now have consistent mobile trust signal at first hamburger menu interaction.
 
 503. **[NEW] Create "Najlepszy suplement na koncentrację dla seniorów 2026" blog post** — Target "suplementy koncentracja senior ranking" (800+ monthly, high purchase intent — adult children buying for parents). Comparison table scoring 5 supplements on safety, drug interactions, GMP, caffeine content, price/day. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
 
@@ -1118,7 +1118,7 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 ~~519. **[DONE] Add "Pytanie dnia" rotating FAQ widget to faq-produkt.html mobile view**~~ ✅ — Power Cycle #113. 7 rotating product-specific Q&As (coffee interaction, dosage, safety, timeline, β-CD, drug status, daily cost). Daily index based on date. Mobile-only (hidden >768px). Click-to-expand accordion. Each answer links to relevant page. Matches hero section palette.
 
-518. **[NEW] Create "Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów" blog post** — High-volume keyword "jak poprawić koncentrację" (3K+ monthly searches in Poland). 10 evidence-based tips + CogniCit positioning. Featured snippet potential. Outline ready in content_calendar #87. Estimated: 2 hours.
+518. ~~**[DONE] Create "Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów" blog post**~~ ✅ — Power Cycle #116. Created blog/jak-poprawic-koncentracje.html (33.6KB). Full 10-method listicle: sen, ruch, nawodnienie, Pomodoro, detoks cyfrowy, dieta śródziemnomorska, medytacja, zimna ekspozycja, single-tasking, suplementacja CogniCit. Comparison table (10 methods × time/cost/evidence). Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As). OG/Twitter Card meta. Share buttons (FB/Twitter/LinkedIn). Cross-links (3 pages). Fact-box with 3 stats. Satisfaction guarantee badge. Newsletter floating badge + email capture popup (60% scroll). Trust bar. CTA section. Added to sitemap.xml, blog/index.html (first card), index.html blog section (first card). Targets "jak poprawić koncentrację" (3K+ monthly searches).
 
 520. **[NEW] Add "Nootropiki a praca zmianowa" blog post** — Targets "suplementy praca zmianowa" (300+ monthly, zero competition). Protokół dawkowania dla 3 zmian. Article + BreadcrumbList + FAQPage JSON-LD. Outline in content_calendar #99. Estimated: 2 hours.
 
@@ -1141,3 +1141,19 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 527. **[NEW] Create "Ranking suplementów na koncentrację 2026 — porównanie 8 produktów" SEO mega-page (/ranking-2026)** — Ultimate authority comparison: CogniCit vs Brain Actives vs NooCube vs Mind Lab Pro vs Neomax vs Alpha Brain vs cholina solo vs multi-nootropic. 10 scoring criteria (transparency, GMP, caffeine-free, bioavailability, price/day, EU compliance, third-party testing, satisfaction guarantee, ingredient count, dose precision). Interactive filter by budget/preference. CogniCit wins on GMP + no caffeine + 3 synergistic ingredients + EU registration + lowest price/day. FAQPage + Product aggregateRating JSON-LD. SEO target: "najlepszy suplement na koncentrację 2026" (5K+ monthly). Designed to outrank all Polish affiliate review sites. Estimated: 4 hours.
 
 528. **[NEW] Add "Główne korzyści" visual benefit cards with animated counters to produkt.html** — Replace static text benefits with 4 animated counter cards: "800 mg substancji aktywnych", "0 mg kofeiny", "1 kapsułka dziennie", "30 dni gwarancji". Scroll-triggered count-up animation (IntersectionObserver + requestAnimationFrame, cubic ease-out, 1500ms). Matches the existing counter section style from index.html. Adds quantified value at the conversion decision point. Estimated: 45 minutes.
+
+### 🆕 Power Cycle #104 Additions (2026-03-31)
+
+529. **[NEW] Add structured FAQ schema to faq-produkt.html for rich results** — faq-produkt.html has 20 Q&As but may be missing FAQPage JSON-LD structured data. Verify and add/fix FAQPage schema so Google can show expandable FAQ rich results in SERPs for "cognicit skład", "cognicit dawkowanie", "cytykolina skutki uboczne". This is a zero-cost SEO win that increases SERP real estate by ~30%. Estimated: 30 minutes.
+
+530. **[NEW] Create order-tracking micro-confirmation email template for when Formspree goes live** — Pre-build a clean HTML email template (Polish) that confirms order receipt with: order ID, items, total, shipping method, estimated delivery, customer support contact. Store in website/email-templates/order-confirmation.html. When Formspree (or real gateway) activates, this template is ready to deploy immediately. Removes friction from the go-live moment. Estimated: 1 hour.
+
+531. **[NEW] Add "Ilość w koszyku" badge to mobile navigation on all pages** — Show a small red pill badge on the cart icon in mobile nav (🛒 2) synced with localStorage cart data. Currently cart count only visible on koszyk.html itself. Persistent cart badge reduces "did my item add?" anxiety and increases cart engagement. Use existing cognivia-cart.js cart state — just add a small script that reads cart length and updates the badge on every page load. Estimated: 45 minutes.
+
+### 🆕 Power Cycle #116 Additions (2026-03-31)
+
+532. **[NEW] Create "Poranne nawyki na koncentrację" blog post** — Target "poranne nawyki koncentracja" (1.2K+ monthly). 5-step morning protocol: światło → nawodnienie → CogniCit → śniadanie → skupienie. Featured snippet potential for listicle format. CogniCit positioned as step 3 anchor. Article + BreadcrumbList + FAQPage JSON-LD. Outline ready in content_calendar. Estimated: 2 hours.
+
+533. **[NEW] Add structured "Skąd pochodzą składniki?" sourcing transparency section to /skladniki.html** — Interactive expandable cards showing origin for each ingredient: ALA (pharmaceutical-grade synthesis, EU GMP facility), Cytykolina (CDP-Choline production, licensed supplier), β-CD (tapioca enzymatic process, food-grade). Each card expands to show: origin country, production method, quality control steps, GMP certification link. Mirrors transparency positioning vs competitors hiding behind "proprietary blends". Estimated: 1.5 hours.
+
+534. **[NEW] Add Google Merchant Center product feed auto-refresh script** — Current merchant-feed.xml may go stale. Create automated Python script that pulls current price (79 zł), availability, shipping_weight from produkt.html metadata. Outputs valid Google Shopping XML. Run weekly via cron to keep feed fresh. Enables free Google Shopping listings in Poland. Estimated: 2 hours.

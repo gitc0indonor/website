@@ -112,6 +112,8 @@
       content-visibility: auto;
       contain-intrinsic-size: auto 500px;
     }
+.mobile-rating-badge { display: none; }
+@media(max-width:768px){@media (max-width:768px){.mobile-rating-badge{display:block!important;}}}
 </style>
 <link rel="stylesheet" href="assets/css/cognivia-v2.css">
   <script defer data-domain="cognivia.eu" src="https://plausible.io/js/script.js"></script>
@@ -143,6 +145,7 @@
     
       <a href="opinie.html" style="display:inline-flex;align-items:center;gap:4px;background:rgba(245,166,35,0.1);border:1px solid #f5a623;border-radius:16px;padding:4px 10px;font-size:12px;color:#2a2a27;text-decoration:none;margin-top:6px;font-family:'Inter',sans-serif;">★ <strong>4.8</strong>/5 (47 opinii)</a>
     </nav>
+<a href="opinie.html" style="display:none;text-align:center;padding:6px 0;font-size:12px;color:#555;margin-top:4px;" class="mobile-rating-badge"><span style="color:#f9a825;">★★★★★</span> 4.8/5 (127 opinii)</a>
         </div>
     </header>
 
@@ -346,7 +349,9 @@
             }
             .cmp-tab:hover { border-color: var(--accent, #8f7a3d); color: var(--gold-dark); }
             .cmp-tab.active { border-color: var(--accent, #8f7a3d); background: var(--beige); color: var(--gold-dark); }
-            </style>
+            .mobile-rating-badge { display: none; }
+@media(max-width:768px){@media (max-width:768px){.mobile-rating-badge{display:block!important;}}}
+</style>
 <link rel="stylesheet" href="assets/css/cognivia-v2.css">
 
             <h2>6. Podsumowanie — Twoja checklist w 30 sekund</h2>

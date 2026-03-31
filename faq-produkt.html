@@ -398,17 +398,39 @@
 
   <header>
     <a href="index.html" class="logo">Cognivia</a>
-    <nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu" style="display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px;z-index:1001;">
+      <span style="display:block;width:24px;height:2px;background:#333;border-radius:2px;transition:all .3s"></span>
+      <span style="display:block;width:24px;height:2px;background:#333;border-radius:2px;transition:all .3s"></span>
+      <span style="display:block;width:24px;height:2px;background:#333;border-radius:2px;transition:all .3s"></span>
+    </button>
+    <nav id="mainNav">
       <a href="produkt.html">Produkt</a>
       <a href="nauka.html">Nauka</a>
       <a href="faq.html">FAQ</a>
       <a href="blog/index.html">Blog</a>
       <a href="kontakt.html">Kontakt</a>
+      <a href="produkt.html#porownaj-sklad" style="font-size:0.85rem;">🔬 Porównaj skład</a>
       <a href="produkt.html" style="background:linear-gradient(135deg,#2e7d32,#388e3c);color:#fff!important;padding:8px 18px;border-radius:24px;text-align:center;font-weight:600;text-decoration:none;font-size:0.85rem;">🛒 79 zł</a>
-    
       <a href="opinie.html" style="display:inline-flex;align-items:center;gap:4px;background:rgba(245,166,35,0.1);border:1px solid #f5a623;border-radius:16px;padding:4px 10px;font-size:12px;color:#2a2a27;text-decoration:none;margin-top:6px;font-family:Inter,sans-serif;" class="mobile-star-badge">★ <strong>4.8</strong>/5 (47 opinii)</a>
     </nav>
   </header>
+  <style>
+    @media(max-width:768px){
+      #hamburgerBtn{display:flex!important}
+      #mainNav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:16px 5%;box-shadow:0 8px 24px rgba(0,0,0,.1);z-index:1000;gap:4px}
+      #mainNav.open{display:flex}
+      #mainNav a{padding:12px 16px;border-radius:8px;font-size:15px}
+      #mainNav a:hover{background:#f5f5f5}
+    }
+  </style>
+  <script>
+  (function(){
+    var btn=document.getElementById('hamburgerBtn'),nav=document.getElementById('mainNav');
+    if(!btn||!nav)return;
+    btn.addEventListener('click',function(e){e.stopPropagation();nav.classList.toggle('open')});
+    document.addEventListener('click',function(e){if(nav.classList.contains('open')&&!nav.contains(e.target)&&e.target!==btn)nav.classList.remove('open')});
+  })();
+  </script>
 
   <div class="trust-bar" style="margin-top: 78px;">
     CogniCit — 3 synergistyczne składniki · GMP Certified · EU Compliant · <a href="produkt.html">Zamów teraz →</a>
@@ -425,6 +447,39 @@
     <h1>CogniCit — najczęściej zadawane pytania</h1>
     <p>Wszystko, co musisz wiedzieć o składzie, dawkowaniu, bezpieczeństwie i zakupie CogniCit.</p>
   </section>
+
+  <!-- Power Cycle #113: Pytanie dnia mobile widget -->
+  <style>
+  .ptq-mobile{display:none;background:linear-gradient(135deg,#f8fdf8,#fff8e1);border:1px solid #e8e0d0;border-radius:12px;padding:16px 20px;margin:0 auto 20px;max-width:700px;font-family:'Inter',sans-serif}
+  .ptq-mobile .ptq-badge{display:inline-block;background:rgba(46,125,50,.1);color:#2e7d32;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;margin-bottom:8px}
+  .ptq-mobile .ptq-q{font-family:'EB Garamond',serif;font-size:17px;color:#2c2c2c;margin:8px 0;cursor:pointer;display:flex;align-items:center;gap:8px}
+  .ptq-mobile .ptq-q::before{content:'❓';font-size:14px}
+  .ptq-mobile .ptq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;font-size:14px;color:#555;line-height:1.6}
+  .ptq-mobile .ptq-a.open{max-height:300px;opacity:1}
+  .ptq-mobile .ptq-link{display:inline-block;margin-top:6px;color:#2e7d32;font-weight:600;text-decoration:none;font-size:13px}
+  @media(max-width:768px){.ptq-mobile{display:block}}
+  </style>
+  <div class="ptq-mobile" id="ptqMobile">
+    <div class="ptq-badge">🗳️ Pytanie dnia</div>
+    <div class="ptq-q" id="ptqQuestion" onclick="document.getElementById(\'ptqAnswer\').classList.toggle(\'open\')""></div>
+    <div class="ptq-a" id="ptqAnswer"></div>
+  </div>
+  <script>
+  (function(){
+    var qa=[
+      {q:'Czy CogniCit można łączyć z kawą?',a:'Tak! CogniCit nie zawiera kofeiny, więc możesz pić swoją ulubioną kawę bez obaw. Cytykolina i kofeina działają różnymi ścieżkami — uzupełniają się, nie konkurują.',l:'blog/suplementy-a-kofeina.html',lt:'Więcej o łączeniu z kawą →'},
+      {q:'Ile kapsułek dziennie?',a:'Jedna kapsułka dziennie, rano, z posiłkiem. 800 mg substancji aktywnych w jednej kapsułce to optymalna porcja.',l:'jak-stosowac.html',lt:'Pełny przewodnik dawkowania →'},
+      {q:'Czy CogniCit jest bezpieczny?',a:'Tak — produkowany w certyfikowanym zakładzie GMP, zarejestrowany w GIS, każda partia przebadana laboratoryjnie. Zero kofeiny, zero substancji uzależniających.',l:'certyfikaty.html',lt:'Zobacz certyfikaty →'},
+      {q:'Kiedy zobaczę efekty?',a:'Większość użytkowników zauważa różnicę po 7-14 dniach regularnego stosowania. Pełne efekty po 30 dniach.',l:'produkt.html',lt:'Zamów CogniCit →'},
+      {q:'Po co beta-cyklodekstryna?',a:'β-CD chroni składniki aktywne przed degradacją w żołądku i zwiększa ich wchłanianie o 40-200%. To "pancerz" dla cytykoliny i ALA.',l:'beta-cyklodekstryna.html',lt:'Dowiedz się więcej o β-CD →'},
+      {q:'Czy to jest lek?',a:'Nie — CogniCit to suplement diety. Nie zastępuje leków ani porady lekarskiej. Składniki w dawkach popartych badaniami mogą wspierać normalne funkcje poznawcze.',l:'faq.html',lt:'Pełne FAQ →'},
+      {q:'Ile kosztuje dziennie?',a:'Zaledwie 2,63 zł dziennie — mniej niż jedna kawa na mieście. 79 zł za 30 dni pełnej kuracji.',l:'produkt.html',lt:'Zamów za 79 zł →'}
+    ];
+    var idx=Math.floor(Date.now()/86400000)%qa.length,item=qa[idx];
+    document.getElementById('ptqQuestion').textContent=item.q;
+    document.getElementById('ptqAnswer').innerHTML='<p>'+item.a+'</p><a href="'+item.l+'" class="ptq-link">'+item.lt+'</a>';
+  })();
+  </script>
 
   <section class="faq-section">
 
