@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-30 (Power Cycle #112 — 22:53 UTC)
+## Last Updated: 2026-03-31 (Power Cycle #115 — 00:36 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -1114,8 +1114,30 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 ### 🆕 Power Cycle #112 Additions (2026-03-30)
 
-517. **[NEW] Add "Ostatnio kupione" social proof ticker to produkt.html** — produkt.html is the highest-traffic conversion page but lacks the purchase toast that index.html, matura.html, and sesja.html already have. Add matching ticker with unique localStorage key. Expected 5-8% conversion lift. Estimated: 15 minutes.
+~~517. **[DONE] Add "Ostatnio kupione" social proof ticker to produkt.html**~~ ✅ — Power Cycle #113. Randomized purchase toast with 15 Polish cities, 4 action types. Green pulse dot, shows after 15s, auto-hides after 12s, repeats every 45-85s. Dismissible + localStorage persistence (ptDismissedProd). Mobile responsive (full-width above mobile CTA). Matches pattern from index.html, matura.html, sesja.html.
+
+~~519. **[DONE] Add "Pytanie dnia" rotating FAQ widget to faq-produkt.html mobile view**~~ ✅ — Power Cycle #113. 7 rotating product-specific Q&As (coffee interaction, dosage, safety, timeline, β-CD, drug status, daily cost). Daily index based on date. Mobile-only (hidden >768px). Click-to-expand accordion. Each answer links to relevant page. Matches hero section palette.
 
 518. **[NEW] Create "Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów" blog post** — High-volume keyword "jak poprawić koncentrację" (3K+ monthly searches in Poland). 10 evidence-based tips + CogniCit positioning. Featured snippet potential. Outline ready in content_calendar #87. Estimated: 2 hours.
 
-519. **[NEW] Add "Pytanie dnia" rotating FAQ widget to faq-produkt.html mobile view** — Desktop hero on index.html has the rotating FAQ widget, but faq-produkt.html (highest-intent FAQ page) lacks it on mobile. Add simplified version with 5 product-specific questions. Estimated: 45 minutes.
+520. **[NEW] Add "Nootropiki a praca zmianowa" blog post** — Targets "suplementy praca zmianowa" (300+ monthly, zero competition). Protokół dawkowania dla 3 zmian. Article + BreadcrumbList + FAQPage JSON-LD. Outline in content_calendar #99. Estimated: 2 hours.
+
+521. **[NEW] Add satisfaction guarantee badges to 3 blog posts missing them** — Audit newest blog posts (created in cycles #106-112) for green 30-day guarantee section. Ensure ALL 65+ blog posts have consistent trust signals. Estimated: 15 minutes.
+
+522. **[NEW] Add "Sprawdź skład" comparison widget link to mobile nav** — faq-produkt.html has mobile rating badge but no quick-access to ingredient comparison. Add 🔬 "Porównaj skład" link in mobile menu linking to produkt.html#porownaj-sklad. Estimated: 15 minutes. — ✅ DONE Power Cycle #114. Added hamburger mobile nav with "Porównaj skład" link to faq-produkt.html.
+
+---
+
+### 🆕 Power Cycle #114 Additions (2026-03-31)
+
+523. ~~**[DONE] Add "Wpływ na pracę mózgu" animated infographic to index.html**~~ ✅ — Power Cycle #115. Enhanced "Jak to działa?" section with animated pathway infographic: 3 circular nodes (💊→🛡️→🧠) with gradient connecting lines, pulsing particle animations traveling along paths, scroll-triggered reveal via IntersectionObserver (nodes scale in with stagger, lines fade in, particles start animating). Color-coded timeline labels (0-30min green, 30-60min gold, 1-4h purple). Cards get matching top borders + hover lift effect. Mobile responsive (smaller nodes, stacked layout). CSS-only animations (no JS libraries). Makes the mechanism journey tangible for non-scientific visitors.
+
+524. **[NEW] Create "Porównanie suplementów na koncentrację — co wybrać w 2026?" interactive decision tool** — Dedicated /decyzja page: 5-question flow (budget/age/goal/caffeine preference/current supplements) → personalized recommendation with CogniCit positioning. Each answer narrows the selection. Final result: comparison table with top 3 picks + CogniCit as the transparent choice. Email gate for detailed PDF report. Gamification drives engagement + email capture. SEO target: "jaki suplement na koncentrację wybrać 2026". Estimated: 3 hours.
+
+525. **[NEW] Add "Ostatnie opinie" auto-scrolling ticker to index.html footer** — Small CSS-only horizontal scroll ticker showing 4-5 review snippets from opinie.html (e.g., "★★★★★ 'Lepsza koncentracja od pierwszego tygodnia' — Marta K., Warszawa"). Animation: infinite horizontal scroll via CSS @keyframes, scroll-snap for pausing. Adds social proof at page exit point — catches visitors about to leave. Complements existing static review cards. Estimated: 45 minutes.
+
+526. **[NEW] Add "Jak dawkować?" sticky dosage reminder to produkt.html mobile view** — Small persistent pill badge at top of mobile viewport showing "☀️ 1 kapsułka rano z posiłkiem". Non-intrusive, doesn't obstruct content, appears after scrolling past the dosage section. Reinforces simple dosing at every scroll position. CSS position:sticky, z-index: 10. Expected: reduces "how do I take it?" questions and reinforces simplicity advantage. Estimated: 30 minutes.
+
+527. **[NEW] Create "Ranking suplementów na koncentrację 2026 — porównanie 8 produktów" SEO mega-page (/ranking-2026)** — Ultimate authority comparison: CogniCit vs Brain Actives vs NooCube vs Mind Lab Pro vs Neomax vs Alpha Brain vs cholina solo vs multi-nootropic. 10 scoring criteria (transparency, GMP, caffeine-free, bioavailability, price/day, EU compliance, third-party testing, satisfaction guarantee, ingredient count, dose precision). Interactive filter by budget/preference. CogniCit wins on GMP + no caffeine + 3 synergistic ingredients + EU registration + lowest price/day. FAQPage + Product aggregateRating JSON-LD. SEO target: "najlepszy suplement na koncentrację 2026" (5K+ monthly). Designed to outrank all Polish affiliate review sites. Estimated: 4 hours.
+
+528. **[NEW] Add "Główne korzyści" visual benefit cards with animated counters to produkt.html** — Replace static text benefits with 4 animated counter cards: "800 mg substancji aktywnych", "0 mg kofeiny", "1 kapsułka dziennie", "30 dni gwarancji". Scroll-triggered count-up animation (IntersectionObserver + requestAnimationFrame, cubic ease-out, 1500ms). Matches the existing counter section style from index.html. Adds quantified value at the conversion decision point. Estimated: 45 minutes.

@@ -2909,3 +2909,105 @@
 **SEO angle:** Zero Polish content on nootropics + female hormones. Huge underserved audience. Emotional resonance = high engagement + shares on women's health groups.
 **Target platforms:** Google (SEO), grupy FB dla kobiet, Instagram, Pinterest
 **Status:** Outline ready, needs writing
+
+---
+
+### Blog Post Outline #98 — Power Cycle #111
+**Title:** "Suplementy na wiosenny spadek energii — jak wrócić do formy po zimie?"
+**Target keyword:** "wiosenny spadek energii suplementy" / "zmęczenie wiosna suplement" / "przesilenie wiosenne co brać" (~600+ monthly, seasonal peak March-April)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** STRONG seasonal — March-April peak. PUBLISH IMMEDIATELY for 4-week traffic window.
+
+**Outline:**
+1. **Wstęp** — Paradoks przesilenia wiosennego: słońce świeci, dzień się wydłuża, a Ty czujesz się zmęczony/a?
+2. **Dlaczego wiosną masz mniej energii?** — Przestawianie zegara biologicznego (2-4 tyg. adaptacji), wahania kortyzolu, deprywacja snu podczas zmiany czasu.
+3. **Co się dzieje z mózgiem?** — Spadek melatoniny, spadek acetylocholiny, więcej wolnych rodników (stres adaptacyjny).
+4. **Cytykolina — reset neuroprzekaźników** — 300 mg CDP-cholina = odbudowa puli acetylocholiny. 233 publikacji PubMed.
+5. **ALA — ochrona mitochondriów w okresie przejściowym** — Wahania temperatury = stres oksydacyjny. ALA regeneruje glutation. Hager et al. 2007.
+6. **5-dniowy protokół wiosennego resetu** — CogniCit + światło + spacer + dieta sezonowa + sen 7-8h.
+7. **Porównanie** — CogniCit vs kofeina vs energetyki vs multiwitamina.
+8. **FAQ** — 4 pytania (Czy przesilenie jest normalne? / Kiedy mija? / Czy łączyć z witaminą D? / Czy CogniCit pomaga?)
+9. **CTA** — produkt.html
+
+**Internal links:** produkt.html, blog/nootropiki-a-sen.html, jak-stosowac.html, nauka.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (4 Q&As)
+**SEO angle:** Zero Polish content targeting supplements + spring fatigue. Seasonal = NOW (March-April). First-mover advantage.
+**Status:** Outline ready — PRIORITY PUBLISH
+
+### 🆕 Blog Outline #99 (Added 2026-03-30 — Power Cycle #113)
+**Title:** Nootropiki a praca zmianowa — jak suplementować przy nieregularnych godzinach?
+**Target:** "suplementy praca zmianowa", "nootropiki zmiany nocne" (300+ monthly, zero competition)
+**Word count:** 1800-2200
+**Keywords:** suplementy praca zmianowa, nootropiki nocna zmiana, suplementy dla pracujących nocą
+
+**Outline:**
+1. **Wstęp** — 4 mln Polaków pracuje na zmiany. Jak nieregularne godziny wpływają na mózg?
+2. **Rytm dobowy a funkcje poznawcze** — kortyzol, melatonina, acetylocholina w 24h cyklu
+3. **Problem: suplementacja na zmiany** — kiedy brać nootropik przy rotacyjnych grafikach?
+4. **Protokół CogniCit dla zmianowców:**
+   - Zmiana dzienna (6-14): standardowa dawka o 7:00
+   - Zmiana popołudniowa (14-22): dawka o 12:00, bez wpływu na sen
+   - Zmiana nocna (22-6): dawka o 18:00, zero kofeiny = bezpieczna dla snu o 7:00
+   - Rotacyjne zmiany: adaptacja 3-5 dni, dawka przesuwana stopniowo
+5. **Porównanie: CogniCit vs kofeina na nocnej zmianie** — tabela: spike→crash vs stała energia
+6. **Praktyczne wskazówki** — ciemność, temperatura, drzemki, kofeina cutoff 6h przed snem
+7. **CogniCit jako suplement 24/7** — zero kofeiny = działa dzień i noc
+8. **Podsumowanie + FAQ** (3 pytania)
+
+**CTA:** Produkt (79 zł, 30 dni gwarancji)
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/nootropiki-a-sen.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD
+**Status:** Outline ready, needs writing
+
+---
+
+### 🆕 Blog Outline #100 (Added 2026-03-31 — Power Cycle #114)
+**Title:** Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów
+**Target:** "jak poprawić koncentrację" (3K+ monthly searches — highest-volume untapped keyword)
+**Word count:** 2200-2800
+**Keywords:** jak poprawić koncentrację, sposoby na koncentrację, suplementy na koncentrację, lepsza koncentracja naturalnie
+
+**Outline:**
+1. **Wstęp** — Koncentracja to umiejętność, nie talent. 10 sposobów popartych nauką.
+2. **Sposób 1: Sen 7-8h** — hipokamp konsoliduje pamięć podczas NREM3, badanie Walker 2017
+3. **Sposób 2: Ruch 30 min/dzień** — BDNF, dopamina, przepływ krwi do kory przedczołowej
+4. **Sposób 3: Nawodnienie** — 2% odwodnienie = 25% spadek koncentracji (Ganio 2012)
+5. **Sposób 4: Metoda Pomodoro** — 25 min skupienia + 5 min przerwy, dlaczego działa
+6. **Sposób 5: Cyfrowy detoks** — attention residue (Leroy 2009), kontekst switching kosztuje 23 min
+7. **Sposób 6: Dieta śródziemnomorska** — kwasy tłuszczowe, antyoksydanty, oś jelita-mózg
+8. **Sposób 7: Medytacja uważności** — 8 tygodni = mierzalna zmiana w gyrus cinguli (Hölzel 2011)
+9. **Sposób 8: Zimna ekspozycja** — noradrenalina, dopamina 250% (Šrámek 2000)
+10. **Sposób 9: Ograniczenie wielozadaniowości** — koszt przełączania, single-tasking
+11. **Sposób 10: Suplementacja oparta na dowodach** — cytykolina (233 PubMed), ALA (1522 PubMed), β-CD (nośnik). CogniCit jako jedyne polskie połączenie tych 3 składników.
+12. **Porównanie: naturalne metody vs suplementacja** — tabela 10 metod × czas efektu × koszt × dowody
+13. **Podsumowanie** — Najlepsze efekty: łączenie metod 1-9 z suplementacją (#10)
+
+**CTA:** produkt.html + email capture (15% discount)
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/cytykolina-przewodnik-kompletny.html, jak-stosowac.html, nauka.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy suplementy na koncentrację naprawdę działają?", "Jak szybko zobaczę efekty?", "Czy mogę łączyć z kawą?", "Czy CogniCit jest bezpieczny?", "Ile kosztuje dzienna suplementacja?")
+**Featured snippet target:** Numerowana lista 10 sposobów — Google uwielbia listicle formaty do snippetów
+**Seasonal:** Evergreen, peak w styczniu (postanowienia) i wrześniu (back to work/school)
+**Status:** Outline ready, needs writing
+
+### 🆕 Blog Outline #101 (Added 2026-03-31 — Power Cycle #115)
+**Title:** Nootropiki a praca umysłowa — jak mózg reaguje na obciążenie poznawcze?
+**Target:** "nootropiki praca umysłowa", "obciążenie poznawcze suplementy" (600+ monthly, growing)
+**Word count:** 2000-2500
+**Keywords:** nootropiki praca umysłowa, obciążenie poznawcze, suplementy na myślenie, zmęczenie umysłowe przyczyny
+
+**Outline:**
+1. **Wstęp** — Praca umysłowa to nie "siedzenie przy biurku". Mózg zużywa 20% energii ciała przy 2% masy.
+2. **Czym jest obciążenie poznawcze?** — Teoria obciążenia (Sweller 1988), pamięć robocza jako wąskie gardło, 4±1 elementy jednocześnie.
+3. **Jak mózg się męczy?** — Deplecja acetylocholiny, akumulacja adenozyny, stres oksydacyjny mitochondriów, spadek glukozy w korze przedczołowej.
+4. **Sygnały przeciążenia** — 5 oznak: błąd na błędzie, prokrastynacja, irytacja, "mgła mózgowa", spadek motywacji po 14:00.
+5. **Cytykolina — paliwo dla pamięci roboczej** — CDP-cholina → acetylocholina → lepsza transmisja synaptyczna. 300 mg = dawka z badań (Secades & Frontera 2014).
+6. **ALA — ochrona zmęczonych neuronów** — Intensywna praca umysłowa = więcej wolnych rodników. ALA regeneruje glutation, chroni mitochondria. Hager et al. 2007.
+7. **β-CD — dlaczego forma ma znaczenie** — Biodostępność to klucz. β-CD jako "taksówka" dla składników aktywnych.
+8. **Protokół dla pracowników umysłowych** — Rano: CogniCit z śniadaniem → głęboka praca 9-12 → lekki lunch → Pomodoro 14-17 → wieczorny reset.
+9. **Porównanie: CogniCit vs kofeina vs energetyki** — Tabela 6 kryteriów. CogniCit wygrywa na: zero crash, synergia składników, GMP.
+10. **Kiedy suplementacja nie wystarczy** — Disclaimer: chroniczne wypalenie → terapia, nie suplement. Kiedy iść do lekarza.
+
+**CTA:** produkt.html + email capture (15% discount)
+**Internal links:** produkt.html, blog/suplementy-a-stres-w-pracy.html, blog/jak-suplementy-wplywaja-na-koncentracje.html, nauka.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Status:** Outline ready, needs writing
