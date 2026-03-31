@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-31 (Power Cycle #129 — 18:56 UTC)
+## Last Updated: 2026-03-31 (Power Cycle #130 — 23:17 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -1391,3 +1391,31 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 607. **[NEW] Implement lazy-loading for all product images on index.html and produkt.html** — Current pages load all images on page load (index.html 231KB, produkt.html 243KB). Add `loading="lazy"` + placeholder blur-up technique for below-fold images. Target: reduce initial page weight by 40-60%. Improves Core Web Vitals (LCP, CLS) for Google ranking. Estimated: 30 minutes.
 
 ## Last Updated: 2026-03-31 (Ecommerce Cycle #110 — 23:05 UTC)
+
+### ✅ Power Cycle #130 — COMPLETED (2026-03-31 23:17 UTC)
+- ✅ **#604** — Added "Pytaj eksperta" Q&A submission form to faq-produkt.html
+  - Formspree-integrated form with name, email, question fields
+  - Gold gradient design matching site palette (EB Garamond heading, Inter inputs)
+  - Positioned between Powiązane pytania and CTA sections
+  - Hidden source field (faq-produkt-ask-expert) for lead tracking
+  - GDPR privacy note below submit button
+  - Expected: captures leads from visitors who didn't find their answer in FAQ
+- ✅ **#578 (partial)** — Added WhatsApp floating button to 15 high-traffic pages
+  - Pages: faq.html, kontakt.html, opinie.html, certyfikaty.html, nauka.html,
+    o-nas.html, dostawa.html, zwroty.html, faq-skladniki.html, jak-stosowac.html,
+    jak-wybrac-suplement.html, jak-czytac-etykiety.html, jak-zamowic.html,
+    dziekuje-za-zapis.html, koszyk.html
+  - Green circle button (56px desktop, 48px mobile) with pulse animation
+  - Pre-filled message: "Cześć, mam pytanie o CogniCit"
+  - Hover tooltip: "💬 Pytanie o CogniCit?"
+  - Total pages with WhatsApp: 23 (up from 8)
+- Blog outline #128 added to content_calendar.md: "Suplementy na sesję egzaminacyjną — poradnik 30 dni"
+- Cart verified: full client-side JS cart functional, 79 zł, Formspree wired (placeholder)
+- Site verified: live at gitc0indonor.github.io ✓ (200 OK)
+
+### 🆕 Power Cycle #130 New Ideas (2026-03-31)
+608. **[NEW] Add "Pytaj eksperta" form to faq.html and faq-skladniki.html** — Extend the expert Q&A form from faq-produkt.html to the general FAQ and ingredient FAQ pages. Consistent lead capture across all FAQ touchpoints. Same Formspree endpoint with unique source tracking. Estimated: 15 minutes.
+
+609. **[NEW] Create seasonal "Lato 2026" landing page (/lato)** — Target summer energy/focus queries (Jun-Aug). Position CogniCit as: 1 capsule/day simplicity for travel, zero caffeine = no sleep disruption on vacation, GMP safety for peace of mind. Countdown to summer + "LETNI10" discount code. Seasonal peak: May-Jul. Article + BreadcrumbList JSON-LD. Estimated: 2 hours.
+
+610. **[NEW] Add Google reCAPTCHA v3 production site key** — CEO must register cognivia.eu at google.com/recaptcha/admin, get production site key, replace test key in kasa.html and cognivia-cart.js. Without production key, reCAPTCHA scoring may not work on live domain. Estimated: 5 minutes (CEO) + 10 seconds (swap).

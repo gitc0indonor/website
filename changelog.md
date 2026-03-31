@@ -4098,3 +4098,43 @@
 **Blog posts:** 71 total (70 content + 1 index), all with satisfaction guarantee, newsletter badge, cross-links, recently-read tracker
 
 **Next priorities:** #603 (neuroplastyczność blog — 2.5h), #602 (price bars to ingredient posts — 15min), #204 (CEO Formspree activation — THE blocker).
+
+### 2026-03-31 — Power Cycle #130 (23:17 UTC)
+**Implemented:**
+- ✅ #604 — Added "Pytaj eksperta" Q&A submission form to faq-produkt.html
+  - Formspree-integrated form with name, email, question textarea fields
+  - Gold gradient card design (EB Garamond heading, Inter inputs, cream background)
+  - Positioned between Powiązane pytania accordion and CTA section
+  - Hidden source field "faq-produkt-ask-expert" for lead tracking via Formspree
+  - GDPR privacy note: "Twoje dane są bezpieczne — nie udostępniamy ich osobom trzecim"
+  - Captures leads from visitors who didn't find their answer in existing FAQ
+  - Expected: 2-5% of FAQ page visitors submit a question = new lead + market research data
+- ✅ #578 (partial) — Added WhatsApp floating button to 15 high-traffic pages
+  - Pages: faq.html, kontakt.html, opinie.html, certyfikaty.html, nauka.html, o-nas.html, dostawa.html, zwroty.html, faq-skladniki.html, jak-stosowac.html, jak-wybrac-suplement.html, jak-czytac-etykiety.html, jak-zamowic.html, dziekuje-za-zapis.html, koszyk.html
+  - Implementation: CSS+HTML snippet injected before </body> on each page
+  - Green circle button (56px desktop, 48px mobile) with pulse animation (waPulse keyframes, 3s delay 6s)
+  - Pre-filled message: "Cześć, mam pytanie o CogniCit" via wa.me link
+  - Hover tooltip: "💬 Pytanie o CogniCit?" (slide-in from left)
+  - Responsive: repositions on mobile (bottom-left above mobile CTA bar)
+  - Total pages with WhatsApp: 23 (up from 8) — all major content + conversion pages covered
+- Blog outline #128 added to content_calendar.md: "Suplementy na sesję egzaminacyjną — 30-dniowy poradnik"
+- 3 new improvement ideas added (#608-#610): expert form to more FAQs, summer landing page, reCAPTCHA production key
+- Cart system verified: full client-side JS cart functional, 79 zł, Formspree wired (placeholder), mailto fallback active
+- Site verification: live at gitc0indonor.github.io ✓ (200 OK), all 15 modified files validated (DOCTYPE ✓, </html> ✓)
+
+**Files changed:**
+- `faq-produkt.html` — Pytaj eksperta form section (~35 lines) between Powiązane pytania and CTA
+- `faq.html`, `kontakt.html`, `opinie.html`, `certyfikaty.html`, `nauka.html`, `o-nas.html`, `dostawa.html`, `zwroty.html`, `faq-skladniki.html`, `jak-stosowac.html`, `jak-wybrac-suplement.html`, `jak-czytac-etykiety.html`, `jak-zamowic.html`, `dziekuje-za-zapis.html`, `koszyk.html` — WhatsApp floating button CSS+HTML (~15 lines each)
+- `improvement_queue.md` — Items #604, #578 partial marked DONE; 3 new items (#608-#610); timestamp → Power Cycle #130
+- `content_calendar.md` — Blog outline #128: sesja egzaminacyjna poradnik
+- `changelog.md` — This entry
+
+**Git:** Committed as a7a1d4f, pushed to origin/master.
+
+**Queue:** ~607 completed + ~62 active = ~669 total
+**Blog posts:** 71 total (70 content + 1 index), all with satisfaction guarantee, newsletter badge, cross-links, recently-read tracker
+**WhatsApp coverage:** 23/48 pages (all major content + conversion pages)
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active — orders arrive via customer email client even without Formspree. reCAPTCHA v3 integrated (test key). **THE BLOCKER:** CEO must create formspree.io account and swap form ID to make site fully buyable without mailto fallback.
+
+**Next priorities:** #608 (expert form to faq.html — 15 min), #609 (summer landing page — 2h), #204 (CEO Formspree activation — THE blocker).

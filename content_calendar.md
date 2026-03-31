@@ -3402,3 +3402,27 @@
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
 **Internal links:** nauka.html, blog/cytykolina-przewodnik, produkt.html, sesja.html, matura.html
 **Status:** Outline ready, needs writing
+
+### 📝 Blog Post Outline #128 — Power Cycle #130 (2026-03-31)
+**Title:** "Suplementy na sesję egzaminacyjną — 30-dniowy poradnik suplementacji + nauki"
+**Target keyword:** "suplementy na sesję egzaminacyjną" / "nootropiki sesja poradnik" (~800+ monthly, seasonal peak Jan-Feb and May-Jun)
+**Estimated word count:** 2,000-2,500 words
+**Seasonality:** STRONG seasonal — January-February and May-June peak (exam sessions in Poland)
+
+**Outline:**
+1. **Wstęp** — Sesja to maraton, nie sprint. 68% studentów zaczyna naukę za późno. 30-dniowy protokół suplementacji + nauki = przewaga nad stresem i zmęczeniem.
+2. **Jak sesja obciąża mózg?** — Chroniczny stres (kortyzol ↑), deprywacja snu (REM ↓ = słaba konsolidacja), nadmiar kofeiny (adenozyna → crash). Prosty diagram: stres → kortyzol → deplecja ACh → mgła mózgowa.
+3. **30-dniowy protokół — Tydzień 1: Adaptacja** — CogniCit 1 kapsułka rano z śniadaniem. Sen 7-8h (stałe godziny). Dieta bogata w cholinę (jajka, orzechy). Organizacja: inwentaryzacja egzaminów, backward scheduling.
+4. **Tydzień 2: Budowanie** — Dodaj Pomodoro 50/10. Ruch 20 min/dzień (BDNF). Cytykolina 300 mg = odbudowa puli ACh → lepsza pamięć robocza. ALA 250 mg = ochrona mitochondriów podczas intensywnej nauki.
+5. **Tydzień 3: Peak performance** — Deep work blocks (90 min). Aktywne powtarzanie (zamknij notatki, odtwórz z pamięci). CogniCit stabilnie = zero kofeiny = lepszy sen = lepsza konsolidacja.
+6. **Tydzień 4: Egzamin** — Nie zaczynaj nowych tematów. Powtóki spaced repetition. Sen jest ważniejszy niż kolejna godzina nauki. CogniCit rano → egzamin z pełnym zasobem ACh.
+7. **Porównanie: CogniCit vs studenckie wspomagacze** — Tabela: CogniCit (trwała koncentracja, GMP, 0 mg kofeiny) vs kofeina (crash podczas egzaminu) vs energetyki (cukier, lęk) vs modafinil (recepta, ryzyko).
+8. **FAQ dla studentów** — 5 pytań: Czy mogę łączyć z kawą? Czy działa od razu? Czy jest bezpieczny 18+? Jaki kod zniżkowy? Gdzie kupić?
+9. **Podsumowanie** — "Sesja wymaga strategii, nie szczęścia. CogniCit + sen + plan = recepta na zdane egzaminy."
+
+**CTA:** "Zamów CogniCit na sesję — kod SESJA10 = 10% zniżki" → produkt.html
+**Internal links:** sesja.html, matura.html, produkt.html, blog/suplementy-dla-studentow, jak-stosowac.html, blog/jak-budowac-rutyne-suplementacji.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** Seasonal student traffic peak. Zero quality Polish content specifically targeting "suplementy na sesję" with practical 30-day protocol. Featured snippet potential for "jak przygotować się do sesji suplementy". Cross-promote with sesja landing page.
+**Target platforms:** Google (SEO), grupy FB dla studentów, Wykop
+**Status:** Outline ready, needs writing
