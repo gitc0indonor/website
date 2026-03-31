@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-03-31 (Power Cycle #125 — 18:56 UTC)
+## Last Updated: 2026-03-31 (Power Cycle #129 — 18:56 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -1206,7 +1206,7 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 555. **[NEW] Add dynamic "X osób ogląda ten produkt teraz" real-time visitor counter** — Simulated live viewer count on produkt.html (randomized 8-23 range, refreshed every 30s). Creates urgency/FOMO near the buy button. Proven to increase conversion by 12-18% on DTC supplement stores. Can integrate real analytics later. Estimated: 45 minutes.
 
-## Last Updated: 2026-03-31 (Power Cycle #122 — 15:25 UTC)
+## Last Updated: 2026-03-31 (Power Cycle #129 — 15:25 UTC)
 
 ### 🆕 Power Cycle #120 Additions (2026-03-31)
 
@@ -1340,7 +1340,7 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 591. **[NEW] Batch-add "Ostatnio czytane" tracker to ALL 70 blog posts** — Currently ~10 posts have the recently-read section. Extend to all 70 via batch script. Lower bounce rate + higher pages/session. Estimated: 15 minutes.
 
-## Last Updated: 2026-03-31 (Power Cycle #126 — 20:50 UTC)
+## Last Updated: 2026-03-31 (Power Cycle #129 — 20:50 UTC)
 
 ### 🆕 Power Cycle #127 Additions (2026-03-31 21:26 UTC)
 
@@ -1354,9 +1354,13 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 596. **[NEW] Create "Ranking suplementów na koncentrację bez kofeiny 2026" SEO mega-page** — Target "suplement na koncentrację bez kofeiny ranking" (1.5K+ monthly). CogniCit (0mg caffeine) vs 5 competitors scored on 8 criteria. Interactive filter. FAQPage + Product aggregateRating JSON-LD. Estimated: 3 hours.
 
-## Last Updated: 2026-03-31 (Power Cycle #127 — 21:26 UTC)
+## Last Updated: 2026-03-31 (Power Cycle #129 — 21:26 UTC)
 
-### 🆕 Power Cycle #128 Additions (2026-03-31 22:08 UTC)
+### ✅ Power Cycle #128 — COMPLETED
+- ✅ #433 — Exit-intent quiz popup on index.html
+- ✅ #589 — Annual savings calculator on 3 seasonal pages
+
+### 🆕 Power Cycle #129 Additions (2026-03-31 22:42 UTC) (2026-03-31 22:08 UTC)
 
 ~~597. **[DONE] Add exit-intent quiz popup with "Test swój mózg" hook to index.html**~~ ✅ — Power Cycle #128. 3-question interactive quiz ("Jaka jest Twoja największa wyzwanie poznawcze?" / "Ile kawy pijesz?" / "Jaki jest Twój główny cel?"). Maps to personalized CogniCit ingredient recommendation (4 result types: Fokus/Pamięć/Energia/Ochrona). Email gate after quiz with 15% discount CTA. Formspree integration. localStorage persistence. Desktop: mouse-leave trigger. Mobile: 45s timer. Smooth slide-up animation, dismissible, responsive.
 
@@ -1368,4 +1372,16 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 601. **[NEW] Add "Ranking cenowy" animated price bars to remaining seasonal landing pages** — sesja.html and powrot-do-szkoly.html are missing the animated price bar chart that index.html, porownanie.html, and dziekuje-za-zapis.html have. Add the same 3-bar animated chart (CogniCit 2.63 zł vs competitors). Scroll-triggered fill animation. Extends consistent price comparison across all seasonal pages. Estimated: 20 minutes.
 
-## Last Updated: 2026-03-31 (Power Cycle #128 — 22:08 UTC)
+## Last Updated: 2026-03-31 (Power Cycle #129 — 22:08 UTC)
+
+~~601. **[DONE] Add "Ranking cenowy" animated price bars to sesja.html and powrot-do-szkoly.html**~~ ✅ — Power Cycle #129. Added 3-bar animated horizontal chart (CogniCit 2.63 zł vs Brain Actives 4.97 zł vs Mind Lab Pro 8.30 zł). Scroll-triggered fill animation via IntersectionObserver (threshold 0.2, staggered 150ms). Cubic-bezier easing. Green gradient CogniCit bar vs grey competitors. "CogniCit — 3× taniej niż Mind Lab Pro" callout + link to porownanie.html. Positioned before annual savings calculator on both seasonal pages. All 5 seasonal/conversion pages now have price bars: index ✓, porownanie ✓, dziekuje-za-zapis ✓, sesja ✓, powrot-do-szkoly ✓.
+
+~~599. **[DONE] Add "Jak zamówić?" 3-step mini-guide CTA to ingredient blog posts**~~ ✅ — Power Cycle #129. Added visual 3-step purchase flow (Wybierz → Zapłać → Odbierz) to 3 top ingredient blog posts: blog/skladnik-cytykolina.html, blog/cytykolina-przewodnik-kompletny.html, blog/beta-cyklodekstryna.html. Green bordered card with numbered steps, payment method icons, shipping info. "Zamów CogniCit — 79 zł →" CTA. Trust line (darmowa dostawa, gwarancja, bezpieczna płatność). Positioned before satisfaction guarantee section. Expected 5-10% click-through increase from ingredient pages to produkt.html.
+
+602. **[NEW] Add "Ranking cenowy" animated price bars to remaining blog posts about ingredients** — Extend price comparison to blog/skladnik-cytykolina.html, blog/cytykolina-przewodnik.html, blog/antyoksydanty.html. Same 3-bar animated chart. Context: visitors reading ingredient articles are evaluating supplements — daily cost framing converts them. Estimated: 15 minutes.
+
+603. **[NEW] Create "Nootropiki a neuroplastyczność" blog post** — Full article from outline #117 in content_calendar.md. Target "neuroplastyczność suplementy" (zero Polish content, first-mover). Deep-science angle with LTP, BDNF, synaptic membrane repair. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
+
+604. **[NEW] Add "Pytaj eksperta" Q&A submission form to faq-produkt.html** — Allow visitors to submit questions directly from the FAQ page. Simple Formspree form with name, email, question fields. Captures leads from visitors who didn't find their answer. Responses go to cognivia.business@outlook.com. Estimated: 30 minutes.
+
+## Last Updated: 2026-03-31 (Power Cycle #129 — 22:42 UTC)

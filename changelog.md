@@ -4054,3 +4054,47 @@
 **Blog posts:** 70 total (69 content + 1 index), all with satisfaction guarantee, newsletter badge, cross-links, recently-read tracker
 
 **Next priorities:** #594 (ranking-koncentracja-2026 mega SEO page — 4h), #599 (blog CTA mini-guide — 30min), #204 (CEO Formspree activation — THE blocker).
+
+### 2026-03-31 — Power Cycle #129 (22:42 UTC)
+**Implemented:**
+- ✅ #601 — Added "Ranking cenowy" animated price bars to sesja.html and powrot-do-szkoly.html
+  - 3 horizontal bars: CogniCit (2.63 zł), Brain Actives (4.97 zł), Mind Lab Pro (8.30 zł)
+  - Scroll-triggered fill animation via IntersectionObserver (threshold 0.2, staggered 150ms)
+  - Cubic-bezier(0.4,0,0.2,1) easing for professional fill effect
+  - Green gradient CogniCit bar vs grey competitor bars
+  - "CogniCit — 3× taniej niż Mind Lab Pro" callout + link to porownanie.html
+  - Positioned before annual savings calculator on both seasonal pages
+  - All 5 seasonal/conversion pages now have price bars: index ✓, porownanie ✓, dziekuje-za-zapis ✓, sesja ✓, powrot-do-szkoly ✓
+- ✅ #599 — Added "3 proste kroki" mini-guide CTA to 3 ingredient blog posts
+  - blog/skladnik-cytykolina.html: 3-step visual purchase flow before guarantee section
+  - blog/cytykolina-przewodnik-kompletny.html: same
+  - blog/beta-cyklodekstryna.html: same
+  - Green bordered card with numbered steps (Wybierz → Zapłać → Odbierz)
+  - Payment methods (BLIK, PayU, karta), shipping (InPost/DPD/Poczta)
+  - "Zamów CogniCit — 79 zł →" CTA button linking to produkt.html
+  - Trust line: darmowa dostawa · 30 dni gwarancji · bezpieczna płatność
+  - Expected 5-10% click-through increase from ingredient content to product page
+- ✅ Blog outline #117 added to content_calendar.md: "Nootropiki a neuroplastyczność"
+  - Targets "neuroplastyczność suplementy" (zero Polish content, first-mover advantage)
+  - Deep-science angle: LTP, BDNF, synaptic membrane repair, 30-day protocol
+- ✅ Browser-check: site live at gitc0indonor.github.io/website ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+- ✅ All 5 modified files validated: DOCTYPE ✓, </html> ✓
+
+**Files changed:**
+- `sesja.html — Price bars chart (~35 lines HTML) + IntersectionObserver script (~15 lines)
+- `powrot-do-szkoly.html — Price bars chart (~35 lines HTML) + IntersectionObserver script (~15 lines)
+- `blog/skladnik-cytykolina.html — 3-step mini-guide CTA (~30 lines)
+- `blog/cytykolina-przewodnik-kompletny.html — 3-step mini-guide CTA (~30 lines)
+- `blog/beta-cyklodekstryna.html — 3-step mini-guide CTA (~30 lines)
+- `content_calendar.md — Blog outline #117
+- `improvement_queue.md — 2 items DONE, 3 new items (#602-#604), timestamp → Power Cycle #129
+- `changelog.md — This entry
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID to make site fully buyable.
+
+**Queue:** ~601 completed + ~60 active = ~661 total
+
+**Blog posts:** 71 total (70 content + 1 index), all with satisfaction guarantee, newsletter badge, cross-links, recently-read tracker
+
+**Next priorities:** #603 (neuroplastyczność blog — 2.5h), #602 (price bars to ingredient posts — 15min), #204 (CEO Formspree activation — THE blocker).

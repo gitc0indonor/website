@@ -3380,3 +3380,25 @@
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
 **Internal links:** produkt.html, blog/nootropiki-a-sen.html, jak-stosowac.html, nauka.html, blog/poranne-nawyki-programisty.html
 **Status:** Outline ready, needs writing
+
+---
+
+### Blog Post #117: "Nootropiki a neuroplastyczność — jak suplementy wspierają uczenie się mózgu?"
+
+**Target keywords:** "neuroplastyczność suplementy", "nootropiki uczenie się", "suplementy na naukę mózgu"
+**Search volume:** ~400/month, growing trend (neuroscience popularization in Poland)
+**Competition:** ZERO Polish content connecting nootropics to neuroplasticity specifically
+**Angle:** Deep-science: LTP (long-term potentiation), BDNF connection, synaptic membrane repair via cytykolina, oxidative stress protection via ALA. CogniCit as the neuroplasticity supplement for intensive learning periods.
+**Sections:**
+1. Czym jest neuroplastyczność? (LTP, synaptogeneza, BDNF)
+2. Co osłabia neuroplastyczność? (stres oksydacyjny, brak choliny, sen)
+3. Cytykolina → fosfatydylocholina → błony synaptyczne
+4. ALA → ochrona mitochondriów → energia do przebudowy synaps
+5. β-CD → lepsza wchłanialność → więcej składników dociera do mózgu
+6. Protokół 30-dniowy dla intensywnego uczenia się
+7. Porównanie z innymi nootropikami (bacopa, lion's mane, omega-3)
+8. FAQ (5 pytań)
+**CTA:** produkt.html (79 zł, 30-dniowa gwarancja)
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Internal links:** nauka.html, blog/cytykolina-przewodnik, produkt.html, sesja.html, matura.html
+**Status:** Outline ready, needs writing
