@@ -1384,4 +1384,10 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 604. **[NEW] Add "Pytaj eksperta" Q&A submission form to faq-produkt.html** — Allow visitors to submit questions directly from the FAQ page. Simple Formspree form with name, email, question fields. Captures leads from visitors who didn't find their answer. Responses go to cognivia.business@outlook.com. Estimated: 30 minutes.
 
-## Last Updated: 2026-03-31 (Power Cycle #129 — 22:42 UTC)
+605. **[NEW] Add "Ostatnie opinie klientów" live review ticker to produkt.html** — Small animated strip near price showing rotating recent reviews (e.g., "Anna z Warszawy — ★★★★★ — 'Lepiej się skupiam po 2 tygodniach'"). Social proof without page reload. Uses existing opinie.html data. Scroll-snapping horizontal carousel on mobile. Estimated: 1.5 hours.
+
+606. **[NEW] Create "Gwarancja satysfakcji — jak to działa?" visual infographic section on zwroty.html** — Replace current text-only return policy with a visual 3-step: (1) Zamów → (2) Przetestuj 30 dni → (3) Pełny zwrot jeśli nie zadowolony. Icons, timeline graphic, "zero ryzyka" badge. Converts hesitant first-time buyers who skip reading policy text. Estimated: 1 hour.
+
+607. **[NEW] Implement lazy-loading for all product images on index.html and produkt.html** — Current pages load all images on page load (index.html 231KB, produkt.html 243KB). Add `loading="lazy"` + placeholder blur-up technique for below-fold images. Target: reduce initial page weight by 40-60%. Improves Core Web Vitals (LCP, CLS) for Google ranking. Estimated: 30 minutes.
+
+## Last Updated: 2026-03-31 (Ecommerce Cycle #110 — 23:05 UTC)

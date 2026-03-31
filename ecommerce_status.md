@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-03-31 15:44 UTC (Ecommerce Cron Cycle #108)
+## Last Updated: 2026-03-31 23:05 UTC (Ecommerce Cron Cycle #110)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -312,4 +312,34 @@
 - IMP-581: Add "Często kupowane razem" bundle upsell section to produkt.html — Display CogniCit + complementary product bundle (e.g., omega-3, vitamin D) with combined discount. Increases AOV by 15-25%. Uses existing cart JS to add bundle in one click. Estimated: 1.5 hours.
 - IMP-582: Implement Google Tag Manager dataLayer events for cart/checkout funnel — Add dataLayer pushes for add_to_cart, view_cart, begin_checkout, purchase events. When GTM/GA4 is connected, enables full ecommerce funnel tracking and remarketing audiences. Pre-built events ready for activation. Estimated: 1 hour.
 - IMP-583: Create "Skąd wysyłamy?" warehouse/shipping origin section on dostawa.html — Add interactive Poland map snippet showing Gdańsk warehouse location, estimated delivery zones (1-day, 2-day, 3-day), InPost locker density reference. Builds trust through transparency about logistics origin. Estimated: 45 minutes.
+
+---
+
+## 📋 Cycle #110 Audit (2026-03-31 23:05 UTC)
+
+### Full Re-Audit Results
+| Component | Status | Change vs #109 |
+|-----------|--------|-----------------|
+| Cart (koszyk.html) | ✅ Working (409 lines) | No change |
+| Checkout (kasa.html) | ✅ Working (532 lines) | No change |
+| Order Confirmation (potwierdzenie.html) | ✅ Working (208 lines) | No change |
+| Product Page (produkt.html) | ✅ Complete (3206 lines) | No change |
+| Cart JS (cognivia-cart.js) | ✅ Functional (514 lines) — localStorage, VAT 23%, 4 shipping, 4 payment UI | No change |
+| Formspree | 🔴 Placeholder `xpwzgryv` (line 370) | UNCHANGED — 38+ cycles |
+| Payment gateways | 🔴 UI only (PayU/P24/BLIK/PayPal) | No change |
+| Legal pages (5) | ✅ All verified present (faq 320L, faq-produkt 901L, dostawa 188L, zwroty 212L, polityka-prywatnosci 250L, regulamin 256L) | No change |
+| Trust elements | ✅ GMP, lab-tested, money-back, SSL, reviews | No change |
+| Shipping (4 methods) | ✅ InPost Paczkomat/Kurier, DPD, Poczta Polska | No change |
+| VAT 23% | ✅ Configured | No change |
+| SEO + JSON-LD | ✅ Complete | No change |
+| Git (website repo) | ✅ Last commit: Power Cycle #129 (price bars + mini-guide CTAs) | No change since #129 |
+| Improvement queue | ✅ Active — items 602-604 pending | 3 new items (605-607) |
+
+### Verdict
+**No change for 38+ cycles. Site is fully built and functional client-side. Formspree placeholder `xpwzgryv` unchanged since initial build. Cart, checkout, product listing (3206 lines), shipping (4 methods), payment UI (4 gateways), trust elements (GMP/lab-tested/money-back/SSL/reviews), all legal pages (faq, faq-produkt, dostawa, zwroty, polityka-prywatnosci, regulamin), and SEO (JSON-LD Product/Offer schema) are complete. CEO ACTION REQUIRED: activate Formspree at formspree.io (5-minute task) to enable real order processing.**
+
+### Cycle #110 Added to Queue (605-607)
+- IMP-605: Add "Ostatnie opinie klientów" live review ticker to produkt.html — Small animated strip near price showing rotating recent reviews (e.g., "Anna z Warszawy — ★★★★★ — 'Lepiej się skupiam po 2 tygodniach'"). Social proof without page reload. Uses existing opinie.html data. Scroll-snapping horizontal carousel on mobile. Estimated: 1.5 hours.
+- IMP-606: Create "Gwarancja satysfakcji — jak to działa?" visual infographic section on zwroty.html — Replace current text-only return policy with a visual 3-step: (1) Zamów → (2) Przetestuj 30 dni → (3) Pełny zwrot jeśli nie zadowolony. Icons, timeline graphic, "zero ryzyka" badge. Converts hesitant first-time buyers who skip reading policy text. Estimated: 1 hour.
+- IMP-607: Implement lazy-loading for all product images on index.html and produkt.html — Current pages load all images on page load (index.html 231KB, produkt.html 243KB). Add `loading="lazy"` + placeholder blur-up technique for below-fold images. Target: reduce initial page weight by 40-60%. Improves Core Web Vitals (LCP, CLS) for Google ranking. Estimated: 30 minutes.
 
