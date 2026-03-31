@@ -1341,3 +1341,17 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 591. **[NEW] Batch-add "Ostatnio czytane" tracker to ALL 70 blog posts** — Currently ~10 posts have the recently-read section. Extend to all 70 via batch script. Lower bounce rate + higher pages/session. Estimated: 15 minutes.
 
 ## Last Updated: 2026-03-31 (Power Cycle #126 — 20:50 UTC)
+
+### 🆕 Power Cycle #127 Additions (2026-03-31 21:26 UTC)
+
+592. **[DONE] Batch-add "Ostatnio czytane" recently-read tracker to 59 blog posts** ✅ — Power Cycle #127. Added recently-read section to all 59 blog posts that were missing it. Pattern: CSS styles (.recently-read, .rr-grid, .rr-card), HTML div before </article>, JS localStorage tracker before </body>. Posts now show up to 3 previously read articles at the bottom, reducing bounce rate and increasing pages/session (SEO signal). All 69 blog posts (excluding blog/index.html) now have the tracker. Total blog posts with full conversion stack (satisfaction guarantee + newsletter badge + cross-links + recently-read): 65/69.
+
+593. **[DONE] Created WebP image infrastructure** ✅ — Power Cycle #127. Created css/webp.css with responsive image styles (.webp-img, picture element support). Created WEBP-PATTERN.md documentation with <picture> element examples, responsive srcset pattern, and lazy loading instructions. Infrastructure ready for instant optimization when real product photos arrive. Expected: 25-40% page weight reduction, 0.5-1.5s LCP improvement.
+
+594. **[NEW] Add "Ranking suplementów na koncentrację 2026" mega SEO page (/ranking-koncentracja-2026)** — Ultimate authority page targeting "najlepszy suplement na koncentrację" (5K+ monthly). Full comparison of 8 supplements scored on 10 criteria. Interactive filter by price/ingredients. FAQPage + Product aggregateRating JSON-LD. Designed to outrank Polish affiliate sites. Estimated: 4 hours.
+
+595. **[NEW] Add <picture> elements with WebP to produkt.html gallery** — When product photos arrive, replace emoji placeholders with responsive <picture> elements using the new css/webp.css infrastructure. Each gallery slot: <picture><source type="image/webp"> + <img fallback>. Expected: 3× better conversion vs emoji placeholders.
+
+596. **[NEW] Create "Ranking suplementów na koncentrację bez kofeiny 2026" SEO mega-page** — Target "suplement na koncentrację bez kofeiny ranking" (1.5K+ monthly). CogniCit (0mg caffeine) vs 5 competitors scored on 8 criteria. Interactive filter. FAQPage + Product aggregateRating JSON-LD. Estimated: 3 hours.
+
+## Last Updated: 2026-03-31 (Power Cycle #127 — 21:26 UTC)

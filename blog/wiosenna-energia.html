@@ -236,6 +236,7 @@
       <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://gitc0indonor.github.io/website/blog/wiosenna-energia.html" target="_blank" rel="noopener" class="share-btn li">💼 LinkedIn</a>
     </div>
   </div>
+  <div id="recentlyRead" style="display:none"></div>
 </article>
 
 <div class="cross-links">
@@ -271,6 +272,15 @@
 .subscribe-badge .badge-close{margin-left:4px;background:none;border:none;color:rgba(255,255,255,.7);font-size:16px;cursor:pointer;padding:0 2px;line-height:1}
 .subscribe-badge .badge-close:hover{color:#fff}
 @media(max-width:768px){.subscribe-badge{bottom:16px;right:16px;font-size:12px;padding:8px 14px}}
+
+.recently-read{max-width:800px;margin:30px auto;padding:20px;background:rgba(255,248,225,0.3);border:1px solid rgba(201,169,110,0.15);border-radius:12px}
+.recently-read h3{font-family:'EB Garamond',serif;font-size:20px;color:#2a2a27;margin-bottom:14px;text-align:center}
+.rr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.rr-card{display:block;background:white;border:1px solid rgba(201,169,110,0.15);border-radius:8px;padding:14px;text-decoration:none;transition:all 0.3s}
+.rr-card:hover{border-color:#8f7a3d;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.rr-card .rr-emoji{font-size:20px;margin-bottom:6px;display:block}
+.rr-card .rr-title{font-family:'EB Garamond',serif;font-size:14px;color:#2a2a27;margin-bottom:4px}
+.rr-card .rr-desc{font-size:11px;color:#888}
 </style>
 <a href="#newsletter" class="subscribe-badge" id="subBadge">
 <span class="badge-icon">0001F4EC</SPAN>

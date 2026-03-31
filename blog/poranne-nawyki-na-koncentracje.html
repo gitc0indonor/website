@@ -79,7 +79,16 @@
       article h1 { font-size: 1.8rem; }
       .guarantee-section { flex-direction: column; text-align: center; }
     }
-  </style>
+  
+.recently-read{max-width:800px;margin:30px auto;padding:20px;background:rgba(255,248,225,0.3);border:1px solid rgba(201,169,110,0.15);border-radius:12px}
+.recently-read h3{font-family:'EB Garamond',serif;font-size:20px;color:#2a2a27;margin-bottom:14px;text-align:center}
+.rr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.rr-card{display:block;background:white;border:1px solid rgba(201,169,110,0.15);border-radius:8px;padding:14px;text-decoration:none;transition:all 0.3s}
+.rr-card:hover{border-color:#8f7a3d;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.rr-card .rr-emoji{font-size:20px;margin-bottom:6px;display:block}
+.rr-card .rr-title{font-family:'EB Garamond',serif;font-size:14px;color:#2a2a27;margin-bottom:4px}
+.rr-card .rr-desc{font-size:11px;color:#888}
+</style>
   <link rel="canonical" href="https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html">
   <link rel="alternate" hreflang="pl" href="https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html">
   <meta property="og:type" content="article">
@@ -320,7 +329,8 @@
       <a class="share-btn tw" href="https://twitter.com/intent/tweet?url=https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html&text=Poranne%20nawyki%20na%20koncentracj%C4%99%20%E2%80%94%205-minutowy%20protok%C3%B3%C5%82" target="_blank" rel="noopener">Twitter/X</a>
       <a class="share-btn li" href="https://www.linkedin.com/shareArticle?mini=true&url=https://gitc0indonor.github.io/website/blog/poranne-nawyki-na-koncentracje.html" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-  </article>
+    <div id="recentlyRead" style="display:none"></div>
+</article>
 
   <!-- Email capture popup -->
   <div class="blog-email-popup" id="blogPopup">
@@ -363,5 +373,11 @@
     <p style="font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 16px;">Suplement diety. Nie może być stosowany jako substytut zróżnicowanej diety.</p>
   </footer>
   <script src="../js/web-vitals.js" defer></script>
+<script>
+(function(){
+var slug=location.pathname.split('/').pop().replace('.html','');
+var titles={'cytykolina-przewodnik-kompletny':'\u{1F9E0} Cytykolina \u2014 przewodnik','antyoksydanty':'\u{1F6E1}\uFE0F Antyoksydanty','beta-cyklodekstryna':'\u{1F52C} Beta-CD','suplement-vs-lek':'\u2696\uFE0F Suplement vs lek','jak-stosowac-cognicit':'\u{1F4CB} Jak stosowa\u0107','mity-o-suplementach':'\u{1F6AB} Mity o suplementach','poranne-nawyki-koncentracje':'\u{1F305} Poranne nawyki','jak-poprawic-koncentracje':'\u{1F3AF} Jak poprawi\u0107 koncentracj\u0119','suplementy-a-kofeina':'\u2615 Suplementy a kofeina','nootropiki-a-sen':'\u{1F634} Nootropiki a sen','suplementy-a-stres-w-pracy':'\u{1F4BC} Stres w pracy','suplementy-praca-zmianowa':'\u{1F319} Praca zmianowa','cytykolina-vs-kofeina-vs-bakopa':'\u{1F52C} Cytykolina vs kofeina','jak-budowac-rutyne-suplementacji':'\u{1F4C5} Rutyna suplementacji','suplementy-a-alkohol':'\u{1F377}\uFE0F Suplementy a alkohol','suplementy-dla-seniorow-50-plus':'\u{1F474} Dla senior\u00F3w','suplementy-a-odpornosc':'\u{1F6E1}\uFE0F Suplementy a odporno\u015B\u0107','jak-suplementy-wplywaja-na-koncentracje':'\u{1F4CA} Koncentracja przewodnik','chroniczne-zmeczenie-umyslowe':'\u{1F629} Zm\u0119czenie umys\u0142owe','suplementy-na-wiosne':'\u{1F338} Wiosenny reset','nootropiki-a-multitasking':'\u{1F504} Multitasking','jak-mozg-zuzywa-energie':'\u26A1 Energia m\u00F3zgu','czy-kofeina-niszczy-suplementy':'\u2615 Kofeina a suplementy','suplementy-a-stres-oksydacyjny':'\u{1F6E1}\uFE0F Stres oksydacyjny','suplementy-na-prace-umyslowa':'\u{1F4BB} Praca umys\u0142owa','poranne-nawyki-programisty':'\u{1F305} Nawyki programisty','suplementy-a-kofeina-u-seniorow':'\u{1F474} Kofeina u senior\u00F3w','nootropiki-a-praca-umyslowa':'\u{1F4BB} Nootropiki a praca','suplementy-dla-programistow':'\u{1F4BB} Dla programist\u00F3w','nootropiki-a-kreatywnosc':'\u{1F3A8} Nootropiki a kreatywno\u015B\u0107','nootropiki-a-sen-architektura':'\u{1F634} Architektura snu','suplementy-a-leki-przewodnik':'\u{1F48A} Suplementy a leki','nootropiki-dla-studentow':'\u{1F393} Dla student\u00F3w','nootropiki-a-stres':'\u{1F4C8} Nootropiki a stres','suplementy-stres-w-pracy':'\u{1F4BC} Stres w pracy v2','ranking-nootropikow-2026':'\u{1F3C6} Ranking 2026','suplementy-dla-mam':'\u{1F46A} Dla mam','suplementy-a-depresja-sezonowa':'\u{1F341} Depresja sezonowa','adaptogeny-w-polsce':'\u{1F33F} Adaptogeny','czy-suplementy-dzialaja':'\u2753 Czy dzia\u0142aj\u0105','kiedy-zaczac-suplementacje':'\u23F0 Kiedy zacz\u0105\u0107','koszt-suplementacji':'\u{1F4B0} Koszt suplementacji','skad-biora-sie-skladniki':'\u{1F50D} Sk\u0105d sk\u0142adniki','jak-mozg-zuzywa-energie':'\u26A1 Energia m\u00F3zgu','nootropiki-a-dieta-keto':'\u{1F966} Nootropiki a keto','mikrobiom-mozg-jelita':'\u{1F9A0} Mikrobiom a m\u00F3zg','suplementy-a-odpornosc':'\u{1F6E1}\uFE0F Odporno\u015B\u0107','suplementy-na-koncentracje-ranking':'\u{1F3C6} Ranking koncentracja','cognicit-vs-rynek':'\u2696\uFE0F CogniCit vs rynek','acetylocholina':'\u{1F9E0} Acetylocholina','przesilenie-wiosenne':'\u{1F338} Przesilenie wiosenne','suplementy-a-praca-zdalna':'\u{1F3E0} Praca zdalna','nootropiki-dla-kobiet':'\u{1F469} Dla kobiet','jak-suplementy-wplywaja-na-pamiec-robocza':'\u{1F4BE} Pami\u0119\u0107 robocza','porownanie-suplementow-na-pamiec':'\u{1F4CA} Por\u00F3wnanie pami\u0119ci'};
+try{var read=JSON.parse(localStorage.getItem('rr_articles')||'[]');read=read.filter(function(s){return s!==slug});read.unshift(slug);if(read.length>5)read=read.slice(0,5);localStorage.setItem('rr_articles',JSON.stringify(read));var container=document.getElementById('recentlyRead');if(!container||read.length<2)return;var shown=0;var html='';for(var i=0;i<read.length&&shown<3;i++){if(read[i]===slug||!titles[read[i]])continue;html+='<a href="/blog/'+read[i]+'.html" class="rr-card"><span class="rr-emoji">'+titles[read[i]].split(' ')[0]+'</span><span class="rr-title">'+titles[read[i]].substring(titles[read[i]].indexOf(' ')+1)+'</span><span class="rr-desc">Ostatnio czytane</span></a>';shown++;}if(shown>0){container.innerHTML='<div class="recently-read"><h3>\u{1F4D6} Ostatnio czytane artyku\u0142y</h3><div class="rr-grid">'+html+'</div></div>';container.style.display='block';}}catch(e){})();
+</script>
 </body>
 </html>

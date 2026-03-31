@@ -3330,3 +3330,30 @@
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy depresja sezonowa to choroba?", "Kiedy zacząć suplementację na jesień?", "Czy CogniCit pomaga na jesienną chandrę?", "Jak długo trwa jesienny spadek energii?", "Czy mogę łączyć CogniCit z witaminą D?")
 **Season:** October-November (peak), evergreen content
 **Status:** Outline ready, needs writing. First-mover advantage: zero Polish content connecting nootropics to SAD.
+
+### 📝 Blog Post Outline #127 — Power Cycle #127 (2026-03-31)
+**Title:** "Ranking suplementów na koncentrację 2026 — porównanie 8 produktów na polskim rynku"
+**Target keyword:** "najlepszy suplement na koncentrację ranking 2026" / "suplementy na koncentrację ranking" (~5K+ monthly, highest-volume target keyword in Polish nootropic space)
+**Estimated word count:** 2,500-3,000 words
+**Seasonality:** Evergreen, slight peak Jan (new year resolutions) and Sep (back to work/school)
+**Priority:** HIGH — designed to outrank Polish affiliate review sites
+
+**Outline:**
+1. **Wstęp** — Rynek suplementów na koncentrację w Polsce rośnie 15% rocznie. W 2026 konsument ma do wyboru dziesiątki produktów. Który wybrać? Ranking oparty na 10 kryteriach.
+2. **Metodologia rankingu** — 10 kryteriów oceny: (1) przejrzystość składu, (2) dawki z badań klinicznych, (3) certyfikat GMP, (4) rejestracja GIS, (5) cena za dzienną porcję, (6) zawartość kofeiny, (7) testy zewnętrzne (CoA), (8) gwarancja satysfakcji, (9) forma składników (organic vs anorganic), (10) opinie klientów.
+3. **Ranking składników nootropowych** — Tabela: cytykolina (#1, 233 publikacji PubMed, prekursor acetylocholiny), ALA (#2, 1522 publikacji, podwójny antyoksydant), bacopa (#3, 80 publikacji, ale GI side effects), ginkgo (#4, kontrowersyjne wyniki GEM 2008), kofeina (#5 — skuteczna krótkoterminowo, ale tolerance + crash).
+4. **Porównanie suplementów dostępnych w Polsce** — CogniCit vs Brain Actives vs NooCube vs Mind Lab Pro vs Neomax vs Alpha Brain vs cholina solo vs multi-nootropik. Tabela 10 kryteriów × 8 produktów z ✓/✗/◐.
+5. **Cena za dzienną porcję** — Interaktywny wykres słupkowy: CogniCit 2,63 zł vs Brain Actives 4,97 zł vs Mind Lab Pro 8,30 zł. "3× taniej niż Mind Lab Pro" callout.
+6. **Dlaczego synergia 3 składników wygrywa** — ALA (ochrona mitochondrialna) + cytykolina (neurotransmisja) + β-CD (biodostępność) > 20 składników w mikrodawkach. "Mniej = więcej" philosophy.
+7. **Dlaczego CogniCit wygrywa ranking** — 6 kart: synergia 3 składników, pełna przejrzystość, dawki z badań, GMP + EU compliance, β-CD (niespotykane u konkurencji), najniższa cena od producenta.
+8. **Checklist kupującego na 2026** — 7 pytań przed zakupem suplementu na koncentrację (GMP? GIS? skład z dawkami? cena/dzień? gwarancja? kofeina? publikacje?).
+9. **Gdzie kupić?** — Dostępność w Polsce: CogniCit = tylko cognivia.eu (gwarancja autentyczności). Konkurencja: Allegro (ryzyko fałszywek), apteki (wyższa cena), import (brak wsparcia).
+10. **Podsumowanie** — Ranking z jasną rekomendacją CogniCit jako najbardziej transparentnego, certyfikowanego i opłacalnego suplementu nootropowego na polskim rynku.
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, porownanie.html, skladniki.html, jak-wybrac-suplement.html, certyfikaty.html, blog/ranking-nootropikow-2026.html, nauka.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Jaki suplement na koncentrację jest najlepszy?", "Czy CogniCit ma kofeinę?", "Ile kosztuje dzienna suplementacja?", "Czy ranking jest sponsorowany?", "Gdzie kupić CogniCit?")
+**Featured snippet target:** Comparison table format for "ranking suplementów na koncentrację 2026" — Google loves structured comparison data.
+**SEO angle:** ULTIMATE Polish-language authority page. Designed to outrank zop2021.pl, fitrepublic.pl, and other affiliate sites. Quarterly refresh format = freshness signal. Evergreen with annual update.
+**Target platforms:** Google (SEO), Wykop, grupy FB o suplementacji, Allegro listing optimization
+**Status:** Outline ready, needs writing
