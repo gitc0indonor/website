@@ -303,6 +303,44 @@
       <p style="font-size: 14px;"><a href="../faq.html" style="color: var(--accent, #8f7a3d); text-decoration: none;">→ FAQ — najczęściej zadawane pytania</a></p>
     </div>
   
+    <!-- #602 — Animated price bars -->
+    <section style="max-width: 700px; margin: 0 auto; padding: 40px 0; text-align: center;">
+      <div style="font-size: 13px; color: #c9a96e; text-transform: uppercase; letter-spacing: 3px; font-weight: 600; margin-bottom: 8px;">Ranking cenowy</div>
+      <h3 style="font-family: 'EB Garamond', serif; font-size: clamp(1.3rem, 2.5vw, 1.7rem); color: #2a2a27; margin-bottom: 8px;">Ile kosztuje suplementacja mózgu?</h3>
+      <p style="font-size: 14px; color: #5a5a58; margin-bottom: 28px;">Cena za dzienną porcję — im krócej, tym taniej.</p>
+      <div id="priceBarsBlog" style="display: flex; flex-direction: column; gap: 14px; text-align: left;">
+        <div class="pb-row" data-price="2.63" style="display: flex; align-items: center; gap: 12px;">
+          <span style="width: 130px; font-size: 13px; font-weight: 600; color: #2e7d32; flex-shrink: 0;">CogniCit</span>
+          <div style="flex: 1; background: #f0f0ee; border-radius: 8px; height: 32px; overflow: hidden; position: relative;">
+            <div class="pb-fill-blog" style="height: 100%; width: 0; background: linear-gradient(90deg, #2e7d32, #66bb6a); border-radius: 8px; transition: width 1.2s cubic-bezier(0.4,0,0.2,1); display: flex; align-items: center; justify-content: flex-end; padding-right: 10px;">
+              <span style="font-size: 12px; font-weight: 700; color: white; white-space: nowrap;">2,63 zł/dzień</span>
+            </div>
+          </div>
+        </div>
+        <div class="pb-row" data-price="4.97" style="display: flex; align-items: center; gap: 12px;">
+          <span style="width: 130px; font-size: 13px; color: #5a5a58; flex-shrink: 0;">Brain Actives</span>
+          <div style="flex: 1; background: #f0f0ee; border-radius: 8px; height: 32px; overflow: hidden; position: relative;">
+            <div class="pb-fill-blog" style="height: 100%; width: 0; background: #d5d5d0; border-radius: 8px; transition: width 1.2s cubic-bezier(0.4,0,0.2,1); display: flex; align-items: center; justify-content: flex-end; padding-right: 10px;">
+              <span style="font-size: 12px; font-weight: 600; color: #555; white-space: nowrap;">4,97 zł/dzień</span>
+            </div>
+          </div>
+        </div>
+        <div class="pb-row" data-price="8.30" style="display: flex; align-items: center; gap: 12px;">
+          <span style="width: 130px; font-size: 13px; color: #5a5a58; flex-shrink: 0;">Mind Lab Pro</span>
+          <div style="flex: 1; background: #f0f0ee; border-radius: 8px; height: 32px; overflow: hidden; position: relative;">
+            <div class="pb-fill-blog" style="height: 100%; width: 0; background: #d5d5d0; border-radius: 8px; transition: width 1.2s cubic-bezier(0.4,0,0.2,1); display: flex; align-items: center; justify-content: flex-end; padding-right: 10px;">
+              <span style="font-size: 12px; font-weight: 600; color: #555; white-space: nowrap;">8,30 zł/dzień</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top: 20px; font-size: 14px; color: #2e7d32; font-weight: 600;">CogniCit — 3× taniej niż Mind Lab Pro</p>
+      <a href="../porownanie.html" style="display: inline-block; margin-top: 12px; font-size: 13px; color: #c9a96e; text-decoration: none; border-bottom: 1px solid #c9a96e;">Pełne porównanie suplementów →</a>
+    </section>
+    <script>
+    (function(){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){var fills=document.querySelectorAll('#priceBarsBlog .pb-fill-blog');var prices=[2.63,4.97,8.30];var maxP=8.30;fills.forEach(function(f,i){var pct=(prices[i]/maxP*100).toFixed(1);setTimeout(function(){f.style.width=pct+'%'},i*150)});obs.unobserve(e.target)}})},{threshold:0.2});var el=document.getElementById('priceBarsBlog');if(el)obs.observe(el)})();
+    </script>
+
     <!-- Trust: Satisfaction Guarantee -->
     <div style="background: linear-gradient(135deg, #f0f7f0, #e8f0e8); border: 1px solid #c5d9c5; border-radius: 12px; padding: 24px 28px; margin: 32px 0; display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
       <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #4a6741, #5a7d51); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 26px; font-weight: 700; flex-shrink: 0; box-shadow: 0 4px 12px rgba(74,103,65,0.3);">30</div>
