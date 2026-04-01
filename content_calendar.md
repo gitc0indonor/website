@@ -3575,3 +3575,32 @@
 **Internal links:** produkt.html, lato.html, blog/jak-przygotowac-mozg-na-lato.html, jak-stosowac.html
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD
 **Conversion:** Email popup (LETNI10), floating newsletter badge, satisfaction guarantee
+
+---
+
+### #136 — "Suplementy na podróż — co spakować do walizki?" (Power Cycle #135)
+**Status:** outline  
+**Publish:** May 2026 (seasonal peak May-Jul)  
+**Target keywords:** suplementy na podróż, co zabrać na wakacje suplementy, suplementy walizka  
+**Search volume:** ~400+/month, growing May-Jul  
+**Competition:** ZERO — no Polish content on travel-specific supplementation  
+**Angle:** Practical packing checklist + travel protocol for brain support  
+
+**Outline:**
+1. **Intro** — "Podróż zmienia wszystko: strefy czasowe, jedzenie, sen, stres lotniskowy. Twój mózg potrzebuje wsparcia."
+2. **Dlaczego podróż obciąża mózg?** — jet lag, dehydration, food quality drop, sleep disruption, context-switching overload
+3. **Co spakować? 5 suplementów na podróż** — CogniCit (1 kapsułka dziennie = zero hassle), elektrolity, magnez, witamina D, melatonina (na jet lag)
+4. **Protokół CogniCit na podróż:**
+   - Dzień wyjazdu: 1 kapsułka rano z posiłkiem
+   - Lot >4h: nawodnienie + CogniCit po wylądowaniu
+   - Jet lag (różnica >3h): CogniCit o lokalnej "porannej" porze
+   - Aktywne wakacje: rano z posiłkiem przed aktywnością
+5. **Checklist do wydrukowania** — packing list format, CogniCit at top
+6. **Porównanie: CogniCit vs inne opcje na podróż** — 1 kapsułka vs 5 butelek, zero kofeiny (sen w hotelu), GMP (pewność jakości za granicą)
+7. **FAQ** — 5 pytań (bezpieczeństwo w bagażu, łączenie z lekami na podróż, dawkowanie przy zmianie stref, przeciwwskazania)
+
+**CTA** — "Spakuj CogniCit na wakacje → 79 zł + LETNI10"
+
+**Internal links:** lato.html, produkt.html, jak-stosowac.html, blog/jak-przygotowac-mozg-na-lato.html, suplementy-praca-zmianowa.html  
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD  
+**Conversion:** Email popup (LETNI10), floating newsletter badge, satisfaction guarantee, share buttons

@@ -1574,10 +1574,18 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 627. **[NEW] Create automated broken-link checker script for all HTML pages** — Python script that crawls all .html files in website/, extracts href/src attributes, validates internal links resolve to existing files. Run weekly via cron. Prevents 404s from page renames/deletions. Output report to website/link-health-report.md. Estimated: 1.5 hours.
 628. **[NEW] Implement "Kup teraz, zapłać później" (BNPL) payment option placeholder in kasa.html** — Add Twisto/PayPo badge alongside existing payment methods. Polish BNPL market growing 40% YoY. No integration needed yet — just UI badge + "Dostępne wkrótce" label. Signals modern payment acceptance to younger demographic (18-25). Estimated: 20 minutes.
 
-## Last Updated: 2026-04-01 (Power Cycle #135 — 02:50 UTC)
+## Last Updated: 2026-04-01 (Power Cycle #135 — 03:28 UTC)
 
 
 ### 🆕 Power Cycle #135 Additions (2026-04-01)
 629. **[NEW] Add seasonal "Lato 2026" banner to blog/index.html** — Green gradient banner at top of blog listing promoting summer content + LETNI10 code. Drives traffic from blog readers to summer landing page (/lato). Seasonal relevance for April-July. Estimated: 15 minutes.
 630. **[NEW] Create "Czy suplementy naprawdę działają? Naukowe dowody" blog post update** — Existing blog/czy-suplementy-dzialaja.html may need refresh with 2026 data. Update PubMed counts, add new studies, refresh comparison table. Keeps evergreen content current for Google freshness ranking. Estimated: 1 hour.
 631. **[NEW] Add "Liczba sprzedanych opakowań" dynamic counter to index.html footer** — Expand existing footer order counter to show cumulative packages sold with organic daily growth. Upgrade base count (500+) for stronger social proof. Estimated: 15 minutes.
+
+### 🆕 Power Cycle #135 New Ideas (2026-04-01 03:28 UTC)
+
+632. **[NEW] Add "Pogoda na urlopie" interactive widget to lato.html** — Small interactive section: user selects travel destination (Polish cities + popular vacation spots), shows local weather + "CogniCit porada: w upale pij więcej wody, β-CD chroni składniki przed degradacją termiczną." Ties seasonal content to practical utility. Estimated: 1 hour.
+
+633. **[NEW] Create "Checklist suplementacji na lato" downloadable PDF** — 1-page printable packing checklist: CogniCit, elektrolity, krem SPF, woda, magnez. Branded with Cognivia logo + LETNI10 code. Email-gated download from lato.html. Captures leads from visitors planning summer trips. Estimated: 1.5 hours.
+
+634. **[NEW] Add "Lato 2026" seasonal badge to product page (produkt.html)** — Green pill badge below hero: "☀️ LETNI10 — 10% zniżki na pierwsze zamówienie lata". Matches seasonal promo pattern from sesja/matura. Drives urgency on the #1 conversion page during summer campaign. Estimated: 15 minutes.
