@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-04-01 13:57 UTC (Ecommerce Cron Cycle #114)
+## Last Updated: 2026-04-01 19:26 UTC (Power Cycle #145)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -1764,3 +1764,13 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 664. **[NEW] Create "Jak suplementy wpływają na odporność mózgu? Neuroprotekcja w praktyce" blog post** — Full article from outline in content_calendar. Target: "neuroprotekcja suplementy" (400+ monthly, growing). ALA glutathione + cytykolina membrane repair + β-CD bioavailability. First Polish content on practical neuroprotection. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
 
 665. **[NEW] Batch-add ga4-events.js to ALL remaining pages** — Currently on 11 pages. Extend to all ~80 HTML files for complete funnel tracking. Without events on every page, CEO has blind spots. Use same script injection pattern. Estimated: 15 minutes.
+
+### 🆕 Power Cycle #145 Additions (2026-04-01 19:26 UTC)
+
+~~666. **[DONE] Add "Warto wiedzieć" fact boxes to 5 blog posts**~~ ✅ — Power Cycle #145. Added fact boxes to: blog/jak-poprawic-koncentracje.html (3K+ monthly stat), blog/jak-przygotowac-mozg-na-lato.html (Harvard heat study stat), blog/suplementy-praca-zmianowa.html (1.5M shift workers), blog/suplementy-a-odpornosc.html (2K+ monthly stat), blog/jak-suplementy-wplywaja-na-pamiec-robocza.html (Cowan 2001 working memory stat). All validated: DOCTYPE ✓, </html> ✓, fact-box ✓. Committed + pushed (1fe0f0b).
+
+667. **[NEW] Add "Warto wiedzieć" fact boxes to remaining 10 blog posts with highest traffic** — Continue #340. Target posts: blog/nootropiki-a-sen.html, blog/suplementy-a-kofeina.html, blog/czy-suplementy-dzialaja.html, blog/suplementy-dla-seniorow-50-plus.html, blog/nootropiki-a-stres.html, blog/cytykolina-przewodnik-kompletny.html, blog/suplementy-dla-programistow.html, blog/poranne-nawyki-programisty.html, blog/antyoksydanty.html, blog/beta-cyklodekstryna.html. Estimated: 30 minutes.
+
+668. **[NEW] Add LETNI10 countdown timer to email popup on index.html footer newsletter** — Show "LETNI10 ważny jeszcze X dni" countdown below the existing email form. Creates urgency at the primary email capture point. Dismissible + localStorage. Estimated: 20 minutes.
+
+669. **[NEW] Create "Jak suplementy wpływają na koncentrację? Kompletny przewodnik 2026" blog post from outline #38** — The highest-impact blog post in the entire content calendar. "suplementy na koncentrację" = 8K+ monthly searches. Designed to outrank all Polish affiliate sites. 3000+ words, 5 schemas. Estimated: 4 hours.
