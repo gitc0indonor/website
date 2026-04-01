@@ -769,6 +769,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://cognivia.eu/blog/jak-nawodnic-mozg.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://cognivia.eu/blog/jak-przygotowac-mozg-na-lato.html</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -854,6 +860,11 @@
   <url>
     <loc>https://gitc0indonor.github.io/website/lato.html</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cognivia.eu/blog/jak-nawodnic-mozg.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>

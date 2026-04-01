@@ -127,7 +127,16 @@
   .blog-nav .container{display:flex;justify-content:space-between;align-items:center}
   .blog-nav a{color:var(--green);text-decoration:none;font-weight:500;font-size:.9rem}
   .blog-nav .logo{font-family:var(--font-serif);font-size:1.3rem;font-weight:700;color:var(--green)}
-  </style>
+  
+.recently-read{max-width:800px;margin:30px auto;padding:20px;background:rgba(255,248,225,0.3);border:1px solid rgba(201,169,110,0.15);border-radius:12px}
+.recently-read h3{font-family:"EB Garamond",serif;font-size:20px;color:#2a2a27;margin-bottom:14px;text-align:center}
+.rr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.rr-card{display:block;background:white;border:1px solid rgba(201,169,110,0.15);border-radius:8px;padding:14px;text-decoration:none;transition:all 0.3s}
+.rr-card:hover{border-color:#8f7a3d;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.rr-card .rr-emoji{font-size:20px;margin-bottom:6px;display:block}
+.rr-card .rr-title{font-family:"EB Garamond",serif;font-size:14px;color:#2a2a27;margin-bottom:4px}
+.rr-card .rr-desc{font-size:11px;color:#888}
+</style>
 </head>
 <body>
 
@@ -245,7 +254,8 @@
         <a href="https://twitter.com/intent/tweet?url=https://cognivia.eu/blog/jak-przygotowac-mozg-na-lato.html&text=Jak%20przygotowa%C4%87%20m%C3%B3zg%20na%20lato%3F" target="_blank" class="share-btn share-tw">🐦 Tweetnij</a>
         <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cognivia.eu/blog/jak-przygotowac-mozg-na-lato.html" target="_blank" class="share-btn share-li">💼 LinkedIn</a>
       </div>
-    </article>
+      <div id="recentlyRead" style="display:none"></div>
+</article>
   </div>
 
   <div class="guarantee" style="max-width:800px;margin:0 auto 1rem;padding:1.5rem;">

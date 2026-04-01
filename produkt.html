@@ -951,6 +951,44 @@
     </div>
   </section>
 
+  <!-- Hydration Check Widget -->
+  <section style="padding: 48px 5%; background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);">
+    <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <h3 style="font-family: 'EB Garamond', serif; font-size: 26px; color: var(--cognivia-green); margin-bottom: 8px;">💧 Czy Twój mózg jest nawodniony?</h3>
+      <p style="font-size: 14px; color: #555; margin-bottom: 24px;">2% odwodnienia = 25% spadek koncentracji. Sprawdź w 15 sekund.</p>
+      <div id="hydroQuiz" style="display: flex; flex-direction: column; gap: 16px;">
+        <div id="hydroQ1">
+          <p style="font-size: 15px; font-weight: 500; margin-bottom: 10px;">Ile szklanek wody wypiłeś/aś dziś?</p>
+          <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+            <button onclick="hydroA1(0)" style="padding: 10px 20px; border-radius: 10px; border: 2px solid #e0e0e0; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;">0-2</button>
+            <button onclick="hydroA1(1)" style="padding: 10px 20px; border-radius: 10px; border: 2px solid #e0e0e0; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;">3-5</button>
+            <button onclick="hydroA1(2)" style="padding: 10px 20px; border-radius: 10px; border: 2px solid #e0e0e0; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;">6-8</button>
+            <button onclick="hydroA1(3)" style="padding: 10px 20px; border-radius: 10px; border: 2px solid #e0e0e0; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;">8+</button>
+          </div>
+        </div>
+        <div id="hydroQ2" style="display: none;">
+          <p style="font-size: 15px; font-weight: 500; margin-bottom: 10px;">Jaka jest temperatura na zewnątrz?</p>
+          <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+            <button onclick="hydroA2(0)" style="padding: 10px 20px; border-radius: 10px; border: 2px solid #e0e0e0; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;">Poniżej 15°C</button>
+            <button onclick="hydroA2(1)" style="padding: 10px 20px; border-radius: 10px; border: 2px solid #e0e0e0; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;">15-25°C</button>
+            <button onclick="hydroA2(2)" style="padding: 10px 20px; border-radius: 10px; border: 2px solid #e0e0e0; background: white; cursor: pointer; font-size: 14px; transition: all 0.2s;">Powyżej 25°C</button>
+          </div>
+        </div>
+        <div id="hydroResult" style="display: none; background: white; border-radius: 14px; padding: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); animation: hydroFade 0.4s ease;"></div>
+      </div>
+    </div>
+  </section>
+  <style>@keyframes hydroFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}</style>
+  <script>
+    let hydroScore=0;
+    function hydroA1(v){hydroScore+=v;document.getElementById('hydroQ1').style.display='none';document.getElementById('hydroQ2').style.display='block';}
+    function hydroA2(v){hydroScore+=v;document.getElementById('hydroQ2').style.display='none';const r=document.getElementById('hydroResult');r.style.display='block';
+      if(hydroScore>=4){r.innerHTML='<div style="font-size:36px;margin-bottom:8px;">✅</div><div style="font-family:EB Garamond,serif;font-size:22px;font-weight:600;color:#2e7d32;margin-bottom:8px;">Dobrze nawodniony!</div><p style="font-size:14px;color:#555;line-height:1.6;">Twój mózg ma wystarczająco wody. Pamiętaj, że CogniCit + nawodnienie = podwójna ochrona neuronów. β-cyklodekstryna chroni składniki aktywne nawet przy wyższych temperaturach.</p>';}
+      else if(hydroScore>=2){r.innerHTML='<div style="font-size:36px;margin-bottom:8px;">⚠️</div><div style="font-family:EB Garamond,serif;font-size:22px;font-weight:600;color:#f57f17;margin-bottom:8px;">Lekkie odwodnienie</div><p style="font-size:14px;color:#555;line-height:1.6;">Mózg potrzebuje minimum 2L wody dziennie. Przy odwodnieniu spada koncentracja nawet o 25% (Ganio et al. 2012). Wypij szklankę teraz! CogniCit z nawodnieniem = pełna ochrona neuronów.</p><p style="font-size:12px;color:#888;margin-top:8px;">📖 Ganio et al. 2012 — mild dehydration impairs cognitive performance</p>';}
+      else{r.innerHTML='<div style="font-size:36px;margin-bottom:8px;">🔴</div><div style="font-family:EB Garamond,serif;font-size:22px;font-weight:600;color:#c62828;margin-bottom:8px;">Poważne odwodnienie!</div><p style="font-size:14px;color:#555;line-height:1.6;">Twój mózg pracuje na pół gwizdka. Odwodnienie 2-3% = spadek koncentracji o 25%, pogorszenie pamięci, bóle głowy. Wypij minimum 500ml wody natychmiast. Suplementacja bez nawodnienia to jak jazda na rezerwie.</p><p style="font-size:12px;color:#888;margin-top:8px;">📖 Ganio et al. 2012 · Popkin et al. 2010 — hydration and cognitive function</p>';}
+    }
+  </script>
+
   <!-- #279 — SPRAWDŹ SKŁAD: Transparency Widget -->
   <section style="padding: 56px 5%; background: white;">
     <div style="max-width: 900px; margin: 0 auto;">
@@ -1512,6 +1550,54 @@
         document.getElementById('ccDotCog').setAttribute('cy',cogY);
       }
     </script>
+  </section>
+
+  <!-- #640 — Hydration mini-quiz on produkt.html -->
+  <section style="padding: 50px 5%; background: linear-gradient(135deg, #e3f2fd, #e8f5e9);">
+    <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <div style="font-size: 36px; margin-bottom: 8px;">💧</div>
+      <h2 style="font-family: 'EB Garamond', serif; font-size: 26px; color: #1565c0; margin-bottom: 8px;">Sprawdź swoje nawodnienie</h2>
+      <p style="color: #555; font-size: 14px; margin-bottom: 24px;">2 pytania, 15 sekund. Odwodnienie obniża koncentrację o 25%.</p>
+      <div id="hydroQuizProd" style="background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.06);">
+        <!-- Step 1 -->
+        <div id="hqp-step1">
+          <p style="font-weight: 600; color: #333; margin-bottom: 12px;">1️⃣ Ile szklanek wody wypiłeś(aś) dziś?</p>
+          <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+            <button onclick="hqpSetWater(0)" class="hqp-btn" data-val="0">0–2</button>
+            <button onclick="hqpSetWater(3)" class="hqp-btn" data-val="3">3–5</button>
+            <button onclick="hqpSetWater(6)" class="hqp-btn" data-val="6">6–8</button>
+            <button onclick="hqpSetWater(9)" class="hqp-btn" data-val="9">9+</button>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div id="hqp-step2" style="display:none;">
+          <p style="font-weight: 600; color: #333; margin-bottom: 12px;">2️⃣ Jaka temperatura na zewnątrz?</p>
+          <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+            <button onclick="hqpSetTemp('cold')" class="hqp-btn">❄️ Poniżej 15°C</button>
+            <button onclick="hqpSetTemp('warm')" class="hqp-btn">🌤️ 15–25°C</button>
+            <button onclick="hqpSetTemp('hot')" class="hqp-btn">☀️ Powyżej 25°C</button>
+          </div>
+        </div>
+        <!-- Result -->
+        <div id="hqp-result" style="display:none;"></div>
+      </div>
+      <style>
+        .hqp-btn{padding:10px 18px;border:2px solid #bbdefb;border-radius:12px;background:#fff;font-family:'Inter',sans-serif;font-size:14px;color:#1565c0;cursor:pointer;transition:all .2s}
+        .hqp-btn:hover{background:#e3f2fd;border-color:#1565c0;transform:translateY(-1px)}
+        .hqp-btn.hqp-active{background:#1565c0;color:#fff;border-color:#1565c0}
+      </style>
+      <script>
+      var hqpW=0,hqpT='';
+      function hqpSetWater(v){hqpW=v;document.querySelectorAll('#hqp-step1 .hqp-btn').forEach(function(b){b.classList.remove('hqp-active');if(parseInt(b.dataset.val)===v)b.classList.add('hqp-active')});document.getElementById('hqp-step1').style.display='none';document.getElementById('hqp-step2').style.display='block'}
+      function hqpSetTemp(t){hqpT=t;document.querySelectorAll('#hqp-step2 .hqp-btn').forEach(function(b){b.classList.add('hqp-active');b.style.pointerEvents='none'});var r=document.getElementById('hqp-result');var status,color,emoji,msg;
+      var need=8;if(hqpT==='warm')need=9;if(hqpT==='hot')need=10;
+      if(hqpW>=need){status='Dobrze nawodniony!';color='#2e7d32';emoji='✅';msg='Świetnie! Pamiętaj, że β-CD w CogniCit chroni składniki aktywne nawet przy wyższych temperaturach. Kapsułka rano + nawodnienie = podwójna ochrona.'}
+      else if(hqpW>=need-3){status='Lekkie odwodnienie';color='#f57f17';emoji='⚠️';msg='Brakuje Ci '+(need-hqpW)+' szklanek. 2% odwodnienia = 25% spadek koncentracji. Wypij szklankę teraz i weź CogniCit z posiłkiem — β-CD zwiększa wchłanianie.'}
+      else{status='Poważne odwodnienie!';color='#c62828';emoji='🚨';msg='Brakuje Ci '+(need-hqpW)+' szklanek. Odwodnienie pogarsza koncentrację, pamięć i nastrój. Zacznij pić teraz — co 30 min szklankę. CogniCit z rannym posiłkiem zapewni ochronę neurologiczną.'}
+      r.innerHTML='<div style="background:linear-gradient(135deg,'+color+'11,'+color+'08);border:2px solid '+color+'33;border-radius:16px;padding:20px;text-align:center;"><div style="font-size:32px;margin-bottom:8px;">'+emoji+'</div><div style="font-size:18px;font-weight:700;color:'+color+';margin-bottom:8px;">'+status+'</div><p style="font-size:13px;color:#555;line-height:1.5;margin:0 0 12px;">'+msg+'</p><a href="#buy-section" style="display:inline-block;background:#2e7d32;color:#fff;padding:10px 24px;border-radius:25px;text-decoration:none;font-weight:600;font-size:14px;">Zamów CogniCit — 79 zł →</a></div>';
+      r.style.display='block';document.getElementById('hqp-step2').style.display='none'}
+      </script>
+    </div>
   </section>
 
   <!-- #373 — PORÓWNAJ SKŁAD: Interactive Comparison Widget -->
@@ -2520,6 +2606,14 @@
         <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px;">
           <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(46,125,50,.1);color:#2e7d32;padding:5px 12px;border-radius:20px;font-family:'Inter',sans-serif;font-size:11px;font-weight:500;">📅 Min. 12 miesięcy ważności przy zakupie</span>
           <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(46,125,50,.1);color:#2e7d32;padding:5px 12px;border-radius:20px;font-family:'Inter',sans-serif;font-size:11px;font-weight:500;">🔬 Każdy partia przebadana laboratoryjnie</span>
+        </div>
+        <!-- #641 — Pharmacist endorsement badge -->
+        <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;padding:10px 16px;background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(232,245,233,.4));border:1px solid rgba(46,125,50,.15);border-radius:12px;max-width:420px;margin-left:auto;margin-right:auto;">
+          <span style="font-size:28px;flex-shrink:0;">👩‍⚕️</span>
+          <div style="text-align:left;">
+            <p style="font-size:13px;color:#333;margin:0 0 2px;font-weight:600;font-family:'Inter',sans-serif;">Polecane przez farmaceutów</p>
+            <p style="font-size:12px;color:#666;margin:0;line-height:1.4;font-style:italic;">„Cytykolina + ALA to sprawdzone połączenie w suplementacji poznawczej. CogniCit zawiera dawki potwierdzone badaniami."</p>
+          </div>
         </div>
       </div>
       <div class="qty-row" style="justify-content: center;">

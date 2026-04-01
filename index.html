@@ -2246,6 +2246,58 @@
   }
   </script>
 
+  <!-- HYDRATION CALCULATOR — Ile wody potrzebujesz? — Power Cycle #138 -->
+  <section style="padding: 5rem 2rem; background: linear-gradient(135deg, #e8f5e9, #f1f8f1);" id="kalkulator-nawodnienie">
+    <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+      <div class="section-overline fade-in">Nawodnienie</div>
+      <div class="section-title fade-in" style="margin-bottom: 8px;">Ile wody potrzebujesz dziś?</div>
+      <p class="fade-in" style="color: #666; max-width: 550px; margin: 0 auto 2rem;">2% odwodnienia = 25% spadek koncentracji. Sprawdź, ile pić latem.<br><span style="font-size:0.85rem;color:#888">Źródło: Ganio et al. 2012, British Journal of Nutrition</span></p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+        <div style="background: #fff; border-radius: 16px; padding: 1.5rem; border: 1px solid #c8e6c9;">
+          <label style="font-weight: 600; display: block; margin-bottom: 0.5rem; color: #2e7d32;">⚖️ Masa ciała (kg)</label>
+          <input type="number" id="hydro-weight" min="30" max="200" value="70" style="width: 80px; padding: 8px; border: 2px solid #c8e6c9; border-radius: 8px; font-size: 18px; text-align: center; font-family: 'EB Garamond', serif;" onchange="calcHydro()">
+          <div style="font-size: 0.8rem; color: #888; margin-top: 4px;">30–200 kg</div>
+        </div>
+        <div style="background: #fff; border-radius: 16px; padding: 1.5rem; border: 1px solid #c8e6c9;">
+          <label style="font-weight: 600; display: block; margin-bottom: 0.5rem; color: #2e7d32;">🏃 Aktywność</label>
+          <select id="hydro-activity" style="width: 100%; padding: 8px; border: 2px solid #c8e6c9; border-radius: 8px; font-size: 15px; font-family: 'Inter', sans-serif;" onchange="calcHydro()">
+            <option value="1.0">Siedzący tryb</option>
+            <option value="1.2" selected>Lekka aktywność</option>
+            <option value="1.4">Aktywny</option>
+            <option value="1.6">Intensywny</option>
+          </select>
+          <div style="font-size: 0.8rem; color: #888; margin-top: 4px;">Poziom ruchu</div>
+        </div>
+      </div>
+
+      <div id="hydro-result" style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-radius: 20px; padding: 2rem; border: 2px solid #2e7d32; max-width: 500px; margin: 0 auto 1.5rem;">
+        <div style="font-size: 0.85rem; color: #2e7d32; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">Potrzebujesz dziś</div>
+        <div id="hydro-liters" style="font-size: 3.5rem; font-weight: 700; color: #1b5e20; line-height: 1;">2.3</div>
+        <div style="font-size: 1.2rem; color: #2e7d32; margin-bottom: 12px;">litra wody dziennie</div>
+        <div style="font-size: 0.85rem; color: #555; line-height: 1.5;">Latem pij o <strong>35% więcej</strong> niż zimą. β-CD w CogniCit chroni składniki aktywne nawet przy odwodnieniu.</div>
+      </div>
+
+      <div style="background: #fff; border-radius: 12px; padding: 12px 20px; display: inline-block; font-size: 0.85rem; color: #555; border: 1px solid #e0e0e0;">
+        💡 <strong>Wskazówka:</strong> Szklanka = 250 ml. Przy <span id="hydro-glasses">9</span> szklankach dziennie zacznij od szklanki zaraz po przebudzeniu.
+      </div>
+    </div>
+  </section>
+  <script>
+  function calcHydro() {
+    var weight = parseInt(document.getElementById('hydro-weight').value) || 70;
+    var activity = parseFloat(document.getElementById('hydro-activity').value) || 1.2;
+    var base = weight * 0.033; // 33ml per kg
+    var summer = base * 1.35; // +35% for summer heat
+    var total = summer * activity;
+    var liters = total.toFixed(1);
+    var glasses = Math.ceil(total / 0.25);
+    document.getElementById('hydro-liters').textContent = liters;
+    document.getElementById('hydro-glasses').textContent = glasses;
+  }
+  calcHydro();
+  </script>
+
   <!-- HOW TO USE -->
   <section class="how-to-use" id="stosowanie">
     <div style="text-align:center;">
