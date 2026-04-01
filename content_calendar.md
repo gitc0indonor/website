@@ -3484,3 +3484,25 @@
 **Conversion elements:** Article + BreadcrumbList + FAQPage JSON-LD, share buttons, newsletter popup, fact-box, satisfaction guarantee, cross-links to lato.html
 
 **Differentiation:** Zero Polish content addresses summer cognitive performance. Most articles focus on physical energy (caffeine, B vitamins). This article positions CogniCit as the BRAIN supplement for summer — unique angle, seasonal relevance, emotional resonance with vacation plans.
+
+### Blog Post Outline #131 (Added 2026-04-01 — Power Cycle #133)
+**Title:** "Jak przygotować mózg na lato? Przewodnik suplementacji ciepłych miesięcy"
+**Target:** "suplementy na lato mózg" / "suplementacja latem koncentracja" (400+ monthly, seasonal peak May-Jul)
+**Word count:** 2000-2500
+**Keywords:** suplementy na lato, koncentracja latem, suplementacja ciepłe miesiące, mózg a upał, dehydratacja mózg
+
+**Outline:**
+1. **Intro** — Lato = więcej wrażeń, ale mózg pracuje ciężej (dehydratacja, zmiana rytmu, jet lag)
+2. **Jak upał wpływa na mózg** — Mechanizm: wysoka temperatura → rozszerzenie naczyń → spadek ciśnienia → gorsze dotlenienie. Badania: 2018 Harvard — wydajność poznawcza spada o 13% przy >30°C
+3. **Dehydratacja a koncentracja** — Już 2% odwodnienia = 25% spadek zdolności poznawczych. Cytykolina jako wsparcie dla neuronów podczas stresu cieplnego
+4. **ALA — ochrona antyoksydacyjna latem** — Więcej słońca = więcej wolnych rodników UV. ALA regeneruje glutation, chroni mitochondria
+5. **β-CD — dlaczego latem wchłanialność jest ważniejsza** — Zmieniona flora jelitowa latem, podróże, różne diety → β-CD stabilizuje wchłanianie
+6. **Protokół letniej suplementacji** — 5 kroków: rano CogniCit → hydratacja (2.5L) → unikanie kofeiny w upał → sen 7-8h → ochrona przed słońcem
+7. **CogniCit na wakacje** — 1 kapsułka dziennie, brak kofeiny (bezpieczna dla snu w hotelu), blister pack travel-friendly
+8. **Porównanie** — CogniCit vs energetyki vs kofeina vs multi-nootropik: kto wygrywa latem?
+9. **FAQ** — 5 pytań o letnią suplementację
+10. **CTA** — Zamów przed wakacjami, LETNI10 kod
+
+**Conversion elements:** Article + BreadcrumbList + FAQPage JSON-LD, share buttons, newsletter popup, fact-box, satisfaction guarantee, cross-links to lato.html and blog/suplementy-na-wiosne.html
+
+**Differentiation:** Unique angle — "lato dla mózgu" vs typical "lato dla ciała" content. Zero Polish competition.

@@ -4220,3 +4220,43 @@
 **GA4 tracking:** 11/48 pages (needs CEO to add measurement ID)
 
 **Next priorities:** #612 (ranking-koncentracja-2026 mega SEO page — 4h), #613 (re-engagement email templates — 2h), #204 (CEO Formspree activation — THE BLOCKER).
+
+### 2026-04-01 — Power Cycle #133 (01:00 UTC)
+**Implemented:**
+- ✅ **#614** — Updated seasonal promo widget on index.html from spring to summer
+  - Changed theme: "🌸 WIOSENNY PAKIET" → "☀️ LATO 2026"
+  - Updated color scheme: darker green gradient (#0d5028 → #1a8a4a) for summer feel
+  - Extended countdown deadline from April 30 → July 31, 2026
+  - Same bundle deal (2× CogniCit 142 zł, -5%) — seasonal branding refresh
+  - localStorage dismissal persistence carried over from previous version
+  - Ensures seasonal relevance for approaching summer (Apr-Jul)
+- ✅ **#602** — Added animated horizontal price bar chart to 3 ingredient blog posts
+  - blog/skladnik-cytykolina.html: price bars between mini-guide CTA and satisfaction guarantee
+  - blog/cytykolina-przewodnik-kompletny.html: same pattern
+  - blog/antyoksydanty.html: same pattern
+  - Bars: CogniCit 2.63 zł/dzień (green gradient) vs Brain Actives 4.97 zł (grey) vs Mind Lab Pro 8.30 zł (grey)
+  - Scroll-triggered fill animation via IntersectionObserver (threshold 0.2)
+  - Staggered 150ms delay between bars, cubic-bezier(0.4,0,0.2,1) easing
+  - "CogniCit — 3× taniej niż Mind Lab Pro" callout text
+  - CTA link to porownanie.html for full comparison
+  - Self-contained inline JS with unique #priceBarsBlog id (no conflict with index.html price bars)
+  - Expected: converts ingredient researchers by framing daily cost at moment of interest
+- ✅ Blog outline #131 added to content_calendar.md: "Jak przygotować mózg na lato?"
+- ✅ 3 new improvement ideas added to queue (#617-#619)
+- ✅ Browser-check: site live at gitc0indonor.github.io ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+- ✅ All 4 modified files validated (DOCTYPE ✓)
+- ✅ Git committed + pushed to GitHub Pages (ad321b7)
+
+**Files changed:**
+- `index.html` — Seasonal promo: spring→summer theme, colors, deadline
+- `blog/skladnik-cytykolina.html` — Price bars section (~35 lines)
+- `blog/cytykolina-przewodnik-kompletny.html` — Price bars section (~35 lines)
+- `blog/antyoksydanty.html` — Price bars section (~35 lines)
+- `changelog.md` — This entry
+- `improvement_queue.md` — Power Cycle #133 log + 3 new items
+- `content_calendar.md` — Blog outline #131
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~616 completed + ~58 active = ~674 total

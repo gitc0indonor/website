@@ -1,5 +1,5 @@
 # Website Improvement Queue
-## Last Updated: 2026-04-01 (Power Cycle #132 — 00:20 UTC)
+## Last Updated: 2026-04-01 (Power Cycle #133 — 01:00 UTC)
 
 ### ✅ Completed (this session — ecommerce build)
 
@@ -1480,3 +1480,30 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 **Landing pages:** 9 (index, produkt, matura, sesja, powrot-do-szkoly, porownanie, skladniki, ranking, lato)
 
 **Next priorities:** #614 (summer promo widget — 30min), #615 (travel blog — 2h), #612 (ranking-koncentracja-2026 mega SEO — 4h), #204 (CEO Formspree — THE blocker).
+
+---
+
+### ✅ Power Cycle #133 — COMPLETED (2026-04-01 01:00 UTC)
+- ✅ **#614** — Updated seasonal promo widget on index.html from spring to summer
+  - Changed theme: "🌸 WIOSENNY PAKIET" → "☀️ LATO 2026"
+  - Updated color scheme: darker green gradient (#0d5028 → #1a8a4a)
+  - Extended deadline from April 30 → July 31, 2026
+  - Same 2-pack bundle (142 zł, -5%) — seasonal branding refresh
+- ✅ **#602** — Added animated price bars to 3 ingredient blog posts
+  - blog/skladnik-cytykolina.html, blog/cytykolina-przewodnik-kompletny.html, blog/antyoksydanty.html
+  - CogniCit 2.63 vs Brain Actives 4.97 vs Mind Lab Pro 8.30 zł/dzień
+  - Scroll-triggered fill animation via IntersectionObserver
+  - CTA link to porownanie.html for full comparison
+- ✅ Blog outline #131 added to content_calendar.md
+- ✅ Git committed + pushed to GitHub Pages (ad321b7)
+
+### 🆕 Power Cycle #133 New Ideas (2026-04-01)
+617. **[NEW] Add animated price bars to blog/beta-cyklodekstryna.html** — Same pattern as #602. Contextual price framing on ingredient deep-dive pages. Estimated: 10 minutes.
+618. **[NEW] Create "Jak przygotować mózg na lato?" blog post** — Full article from content_calendar outline #131. Targets "suplementy na lato mózg". Unique summer brain angle. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
+619. **[NEW] Add "LETNI10" discount code to lato.html** — Currently no code on summer landing page. Add prominent banner matching SESJA10 pattern. Hidden Formspree field for ROI tracking. Estimated: 15 minutes.
+
+**Queue:** ~616 completed + ~58 active = ~674 total
+**Blog posts:** 71 total
+**Landing pages:** 9
+
+**Next priorities:** #618 (summer blog post — 2.5h), #617 (price bars — 10min), #619 (LETNI10 code — 15min), #204 (CEO Formspree — THE blocker).
