@@ -3604,3 +3604,75 @@
 **Internal links:** lato.html, produkt.html, jak-stosowac.html, blog/jak-przygotowac-mozg-na-lato.html, suplementy-praca-zmianowa.html  
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD  
 **Conversion:** Email popup (LETNI10), floating newsletter badge, satisfaction guarantee, share buttons
+
+---
+
+### Blog Post Outline #137 — Power Cycle #136 (2026-04-01)
+**Title:** "Suplementy na wiosnę — 5 sygnałów że Twój mózg potrzebuje resetu"
+**Target keyword:** "suplementy na wiosnę" / "wiosenny spadek energii mózg" / "zmęczenie wiosną suplementy" (~700+ monthly, STRONG seasonal peak March-April)
+**Word count:** 2,000-2,500
+**Seasonality:** CRITICAL — March-April peak. Publish immediately for remaining 4-week traffic window.
+
+**Outline:**
+1. **Wstęp** — Wiosna powinna dawać energię, ale wiele osób czuje się zmęczonych. 5 sygnałów ostrzegawczych że Twój mózg potrzebuje wiosennego resetu + jak suplementacja pomaga w adaptacji sezonowej.
+2. **Sygnał #1: Budzisz się zmęczony mimo 7-8h snu** — Zegar biologiczny przestawia się 2-4 tygodnie po zmianie czasu. Melatonina nie zsynchronizowana = płytki sen. Cytykolina 300mg pomaga odbudować acetylocholinę mimo zaburzonego snu REM.
+3. **Sygnał #2: Kawa przestała działać** — Paradoks wiosenny: więcej światła = więcej kortyzolu = organizm "nie potrzebuje" kofeiny, ale przyzwyczajenie zostało. Tolerance buildup. CogniCit = zero kofeiny = energia bez uzależnienia.
+4. **Sygnał #3: Mgła mózgowa po południu** — Wahania temperatury i ciśnienia = stres oksydacyjny mitochondriów. ALA regeneruje glutation, chroni neurony. Hager et al. 2007.
+5. **Sygnał #4: Drażliwość bez powodu** — Kortyzol waha się podczas adaptacji sezonowej → niestabilność nastroju. Acetylocholina (z cytykoliny) stabilizuje transmisję neuronalną.
+6. **Sygnał #5: Trudność z koncentracją na dłużej niż 20 minut** — Attention span spada przy chronicznym zmęczeniu. CogniCit: synergia ALA (ochrona) + cytykolina (neurotransmisja) + β-CD (biodostępność).
+7. **Protokół 7-dniowego wiosennego resetu** — Tabela dzień po dniu: światło, CogniCit, spacer, dieta, sen.
+8. **Porównanie: CogniCit vs inne rozwiązania** — Tabela 6×4.
+9. **FAQ** — 5 pytań.
+10. **CTA** — produkt.html + LETNI10 code.
+
+**Internal links:** produkt.html, lato.html, blog/suplementy-na-wiosne.html (already published), jak-stosowac.html, nauka.html, blog/poranne-nawyki-programisty.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Status:** Outline ready, needs writing
+
+
+---
+
+### Blog Post Outline #138 (Added 2026-04-01 — Power Cycle #136)
+**Title:** "Suplementy na urlop — co zabrać do walizki? Praktyczny poradnik"
+**Target keyword:** "suplementy na urlop" / "co zabrać na wakacje suplementy" / "suplementy walizka poradnik" (~500+ monthly, seasonal peak May-Jul)
+**Estimated word count:** 2,000-2,500
+**Seasonality:** STRONG seasonal — May-Jul peak. Publish mid-April for indexing.
+
+**Outline:**
+1. **Wstęp** — Urlop to odpoczynek dla ciała, ale mózg pracuje nadal (nowe miejsca, język, nawigacja, decyzje). Co spakować, żeby wspierać koncentrację na wyjeździe?
+2. **Dlaczego urlop obciąża mózg?** — Jet lag (zmiana strefy czasowej → kortyzol), dehydratacja (klimatyzacja, alkohol, upał), zmiana snu (hotelowe łóżko), stres logistyczny (lotniska, transfery). Badania: 2% odwodnienia = 25% spadek koncentracji (Ganio 2012).
+3. **5 suplementów na letni wyjazd** — Tabela:
+   - CogniCit (1 kapsułka dziennie → acetylocholina + ochrona mitochondriów + β-CD)
+   - Elektrolity (odwodnienie → magnez, potas, sód)
+   - Witamina D (jeśli lecisz na północ → suplementacja)
+   - Magnez (stres podróżny → skurcze, drażliwość)
+   - Melatonina (opcjonalnie na jet lag → tylko przy różnicy >3h stref)
+4. **Praktyczna lista pakowania** — Checklist do wydrukowania: każdy suplement / cel / dawkowanie / forma (blister vs słoik). CogniCit = 1 blister pack, 0 mg kofeiny, nie wymaga lodówki.
+5. **Protokół podróżny CogniCit** — Samolot: kapsułka przed boardingiem + woda. Samochód: rano przed drogą. Plaża: rano z lokalnym śniadaniem. Wieczór: zero kofeiny = dobry sen w hotelu.
+6. **Porównanie: CogniCit vs inne opcje na wyjazd** — Tabela 6×4: CogniCit (1 kapsułka, GMP, zero kofeiny) vs 5 różnych suplementów (ciężkie, wymagają lodówki) vs kofeina (crash + zaburzenie snu) vs nic (zmęczenie na urlopie).
+7. **Przypadki szczególne** — Dla rodziców z dziećmi (szybka adaptacja, więcej energii), dla par (wspólna suplementacja), dla seniorów (bezpieczny profil, zero kofeiny).
+8. **FAQ** — 5 pytań: Czy CogniCit można zabrać w bagażu podręcznym? Czy działa przy zmianie strefy czasowej? Czy mogę pić alkohol na urlopie z CogniCit? Czy jest bezpieczny dla osób 18+? Ile kapsułek spakować na 2 tygodnie?
+9. **Podsumowanie** — "Urlop to nie wymówka od suplementacji. 1 kapsułka dziennie = mózg działa na wakacjach tak samo jak w pracy."
+
+**CTA:** "Spakuj CogniCit na urlop → 79 zł + LETNI10 = 10% zniżki" → produkt.html
+**Internal links:** produkt.html, lato.html, blog/jak-przygotowac-mozg-na-lato.html, jak-stosowac.html, blog/suplementy-praca-zmianowa.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Conversion:** Email popup (LETNI10, 60% scroll), floating newsletter badge, satisfaction guarantee, share buttons
+**SEO angle:** Zero Polish content on supplements + vacation specifically. Practical packing list = high engagement + shares. Seasonal May-Jul traffic. First-mover advantage.
+**Target platforms:** Google (SEO), Instagram (travel wellness), grupy FB o podróżach, Pinterest (packing lists)
+**Status:** Outline ready, needs writing. Publish mid-April for May-Jul traffic window.
+
+### Blog Outline #139 — "Jak nawodnić mózg? Przewodnik na lato 2026"
+**Target keywords:** "nawodnienie mózg", "woda a koncentracja", "odwodnienie objawy mózgowe"
+**Monthly searches:** ~600+ (seasonal peak May-Aug)
+**Angle:** Most hydration content is about skin/body. Zero Polish content focuses specifically on BRAIN hydration.
+**Structure:**
+1. Dlaczego mózg potrzebuje wody? (75% wody = mózg)
+2. Mechanizm odwodnienia (2% = 25% spadek koncentracji — Ganio 2012)
+3. Objawy odwodnienia mózgowego (ból głowy, mgła, drażliwość)
+4. Ile pić w upał? (kalkulator — link do lato.html)
+5. CogniCit + nawodnienie = podwójna ochrona (β-CD chroni składniki, ALA regeneruje)
+6. Praktyczne tipy (butelka, elektrolity, owoce)
+**Schemas:** Article + BreadcrumbList + FAQPage (5 Q&As)
+**CTA:** LETNI10 code + link to lato.html
+**Estimated:** 2 hours
