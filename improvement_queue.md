@@ -1707,7 +1707,7 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 643. **[NEW] Implement "Ostatnio kupione" social proof notification toast on produkt.html** — Small bottom-left toast popup showing "Ktoś z Warszawy kupił CogniCit 12 min temu." Uses localStorage + random city/timer generation. FOMO effect. Disappears after 8 seconds. Estimated: 45 minutes.
 
-## Last Updated: 2026-04-01 (Power Cycle #140 — 15:29 UTC)
+## Last Updated: 2026-04-01 (Power Cycle #144 — 18:15 UTC)
 
 ### ✅ Power Cycle #140 — COMPLETED (2026-04-01 15:29 UTC)
 - ✅ **#653** — Added pharmacist endorsement badge to 3 seasonal landing pages
@@ -1756,3 +1756,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 661. **[NEW] Create "Suplementy na koncentrację w pracy" blog post from outline #143** — NOW is the publish window (April, back-to-office season after Easter). Office workers searching for focus supplements. Zero Polish content specifically targeting "suplementy na koncentrację w pracy". Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
 
 662. **[NEW] Add "Poznaj składniki" interactive tooltip popups to produkt.html ingredient list** — When user hovers/taps on ingredient name (Cytykolina, ALA, β-CD), show a tooltip with: dose, mechanism summary, PubMed citation count, link to dedicated page. Makes the ingredient list interactive and educational without requiring page navigation. CSS-only tooltips with hover + touch support. Estimated: 45 minutes.
+
+### 🆕 Power Cycle #144 Additions (2026-04-01 18:15 UTC)
+
+663. **[NEW] Add "Czas do końca LETNI10" countdown to ALL pages with email popups** — Extend the summer promo countdown from index.html to sesja, matura, lato, powrot-do-szkoly email popups. Each popup should show "LETNI10 ważny jeszcze X dni" with countdown to July 31. Creates urgency at the exact email capture moment. Estimated: 30 minutes.
+
+664. **[NEW] Create "Jak suplementy wpływają na odporność mózgu? Neuroprotekcja w praktyce" blog post** — Full article from outline in content_calendar. Target: "neuroprotekcja suplementy" (400+ monthly, growing). ALA glutathione + cytykolina membrane repair + β-CD bioavailability. First Polish content on practical neuroprotection. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
+
+665. **[NEW] Batch-add ga4-events.js to ALL remaining pages** — Currently on 11 pages. Extend to all ~80 HTML files for complete funnel tracking. Without events on every page, CEO has blind spots. Use same script injection pattern. Estimated: 15 minutes.

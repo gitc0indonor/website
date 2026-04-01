@@ -4585,3 +4585,22 @@
 **Landing pages:** 10 (index, produkt, matura, sesja, powrot-do-szkoly, porownanie, skladniki, ranking, lato, + seasonal pages)
 
 **Next priorities:** #644 (hydration blog post — 2.5h), #656 (PDF lead magnet — 2h), #204 (CEO Formspree — THE blocker).
+
+### 2026-04-01 — Power Cycle #144 (18:15 UTC)
+**Implemented:**
+- ✅ **WhatsApp floating button** — Batch-added to ~46 pages missing it (all blog posts + non-blog content pages). Green circle button with pulse animation, pre-filled "Cześć, mam pytanie o CogniCit" message via wa.me link. Hover tooltip "💬 Pytanie o CogniCit?". Mobile responsive (repositioned above CTA bar). Total pages with WhatsApp: 80+ (complete site coverage).
+- ✅ **Satisfaction guarantee badges** — Added 30-day green guarantee sections to 2 blog posts missing them: blog/nootropiki-a-sport.html, blog/suplementy-na-jesienna-chandre.html. All blog posts now have consistent trust signals.
+- ✅ Blog outline #144 added to content_calendar.md: "Czy suplementy na koncentrację działają od razu? Prawda o pierwszych 7 dniach" — ZERO Polish content on supplement onset timeline, first-mover advantage.
+- ✅ Browser-check: site live at gitc0indonor.github.io ✓ (200 OK, 235KB index.html). Cart JS valid. All modified files validated.
+- ✅ Git committed + pushed (043f4bc).
+
+**Files changed:** 46 HTML files (WhatsApp additions) + 2 blog posts (guarantee badges) + content_calendar.md + improvement_queue.md + changelog.md
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. reCAPTCHA v3 (test key). **THE BLOCKER:** CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~663 completed + ~63 active = ~726 total
+**Blog posts:** 74 total (73 content + 1 index), all with WhatsApp + guarantee + newsletter badge + cross-links + recently-read tracker
+**WhatsApp coverage:** 100% (all pages with </body>)
+**GA4 tracking:** 11/80 pages (needs CEO measurement ID)
+
+**Next priorities:** #664 (neuroprotection blog — 2.5h), #665 (GA4 to all pages — 15min), #663 (LETNI10 countdown — 30min), #204 (CEO Formspree — THE BLOCKER).

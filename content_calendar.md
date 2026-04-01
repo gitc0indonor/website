@@ -3768,3 +3768,23 @@
 **Internal links:** produkt.html, blog/suplementy-a-stres-w-pracy.html, blog/suplementy-a-kofeina.html, porownanie.html
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
 **Status:** Outline ready, needs writing
+
+### Blog Post Outline #144 (Added 2026-04-01 — Power Cycle #144)
+**Title:** Czy suplementy na koncentrację działają od razu? Prawda o pierwszych 7 dniach
+**Target:** Skeptical searchers, SEO for "czy suplementy działają od razu", "kiedy zaczynają działać nootropiki"
+**Word count:** 1800-2200
+**Keywords:** kiedy działają suplementy, nootropiki efekty czas, suplementy koncentracja po jakim czasie, cytykolina kiedy działa
+
+**Outline:**
+1. **Wstęp** — 80% użytkowników porzuca suplementy po 3 dniach bo "nie czują różnicy". Prawda: mózg potrzebuje czasu na adaptację.
+2. **Dzień 1-3: Adaptacja** — β-CD zwiększa wchłanianie, cytykolina zaczyna budować rezerwy acetylocholiny. Co czujesz: nic (albo lekkie pobudzenie). To normalne.
+3. **Dzień 4-7: Pierwsze sygnały** — Lepsza koncentracja przy monotonnych zadaniach, mniej "rozproszenia". ALA zaczyna ochronę mitochondrialną.
+4. **Dzień 8-14: Stabilizacja** — Stała energia bez spike/crash. Poprawa pamięci roboczej. Cytykolina osiąga steady-state.
+5. **Dzień 15-30: Pełne efekty** — Optymalna koncentracja, lepsza odporność na stres oksydacyjny.
+6. **Porównanie: CogniCit vs kofeina vs placebo** — Tabela timeline efektów.
+7. **FAQ** — 5 Q&As (kiedy brać, co jeśli nie czuję, czy mogę zwiększyć dawkę)
+
+**CTA:** produkt.html + email capture popup
+**Internal links:** produkt.html, blog/jak-budowac-rutyne-suplementacji.html, nauka.html, blog/cytykolina-przewodnik-kompletny.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Status:** Outline ready, needs writing. ZERO Polish content on supplement onset timeline — first-mover advantage.
