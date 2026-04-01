@@ -3879,3 +3879,30 @@
 **SEO angle:** ZERO Polish content on working memory + supplements. Deep-science angle differentiates from generic "popraw pamięć" articles. Cowan 2001 citation = authority. Cross-promote with existing WM blog post (#542).
 **Target platforms:** Google (SEO), LinkedIn (knowledge workers), grupy FB o nauce/neuroscience
 **Status:** Outline ready, needs writing
+
+---
+
+### Blog Post Outline #150 (Added 2026-04-01 — Power Cycle #148)
+**Title:** "Jak suplementacja wpływa na sen głęboki? Regeneracja mózgu w nocy"
+**Target keyword:** "sen głęboki suplementy" / "regeneracja mózgu sen" / "nootropiki a jakość snu" (~600+ monthly, growing trend as sleep science becomes mainstream in Poland)
+**Estimated word count:** 2,000-2,500
+**Seasonality:** Evergreen, slight peak Nov-Feb (shorter days, sleep quality concerns)
+
+**Outline:**
+1. **Wstęp** — Sen to nie "wyłączenie" mózgu — to aktywna faza naprawy i konsolidacji. Faza NREM3 (sen głęboki) = naprawa mitochondriów. Faza REM = konsolidacja pamięci. Czy suplementacja może to wspierać — albo zaszkodzić?
+2. **Fazy snu a neuroprzekaźniki** — Prosty diagram: NREM1 (przejściowy) → NREM2 (stabilizacja) → NREM3 (głęboki, naprawa) → REM (marzenia, pamięć). Rola acetylocholiny: szczyt w REM (konsolidacja), spadek w NREM3 (regeneracja). Kofeina zakłóca ten cykl — adenozyna jest naturalnym "hamulcem" na noc.
+3. **Jak kofeina niszczy sen głęboki** — Półtrwanie 5-6h. Kawa o 15:00 = 50% kofeiny obecnej o 21:00 = redukcja NREM3 o 20% (Drake et al., 2013). Mechanizm: blokada receptorów A1 → mózg nie "wie", że jest noc → płytszy sen. Konsekwencja: mniej naprawy mitochondrialnej → więcej zmęczenia następnego dnia → więcej kofeiny → błędne koło.
+4. **Czy cytykolina zaburza sen?** — Odpowiedź: NIE. Różne mechanizmy: cytykolina → acetylocholina (pamięć, koncentracja) vs kofeina → adenozyna (czujność/senność). Brak dowodów na wpływ cytykoliny na latencję snu lub architekturę faz w dawkach 250-500 mg. Secades & Frontera 2014: meta-analiza potwierdza bezpieczeństwo. Rekomendacja: rano, zgodnie z rytmem dobowym.
+5. **ALA — nocna regeneracja mitochondriów** — Wolne rodniki generowane w ciągu dnia są neutralizowane głównie podczas snu NREM3. ALA (podwójna rozpuszczalność) regeneruje glutation — kluczowy antyoksydant naprawczy mitochondriów. Hager et al. 2007: ALA poprawiała markery oksydacyjne. Mechanizm nocny: podczas snu organizm przełącza z trybu "działanie" na "naprawa" → ALA wspiera ten przełącznik.
+6. **β-CD — obojętna dla architektury snu** — β-CD jest nośnikiem, nie substancją aktywną farmakologicznie. Status GRAS (FDA), dopuszczenie UE do 12 g/dzień. Nie wpływa na melatoninę, serotoninę ani GABA. Czysty transport dla ALA i cytykoliny.
+7. **Protokół "mózg w nocy" z CogniCit** — Rano (6:00-9:00): 1 kapsułka CogniCit ze śniadaniem. Unikanie kofeiny po 14:00 (chroni NREM3). Redukcja niebieskiego światła 2h przed snem (chroni melatoninę). Rutyna 10-min (medytacja/oddech) przed snem. Zero kofeiny w CogniCit = zero ryzyka dla snu.
+8. **Porównanie: suplementy które pomagają vs szkodzą snu** — Tabela 6 suplementów × wpływ na sen: CogniCit (0mg kofeina, neutralny, ✅), ashwagandha (lekka sedacja, pomocny, ✅), melatonina (regulacja cyklu, pomocna, ✅), kofeina (blokada adenozyny, szkodliwy, ❌), L-teanina (relaksacja, pomocna, ✅), multi-nootropik z kofeiną (ryzyko bezsenności, ❌).
+9. **FAQ** — 5 pytań: "Czy CogniCit nasennie?", "Kiedy najlepiej brać?", "Czy mogę łączyć z melatoniną?", "Czy działa na bezsenność?", "Czy jest bezpieczny przy problemach ze snem?"
+10. **Podsumowanie** — "Sen to fundament koncentracji. CogniCit wspiera Twój mózg za dnia, nie przeszkadzając mu w nocy."
+
+**CTA:** "Wsparcie koncentracji bez utraty snu — CogniCit od 79 zł" → produkt.html
+**Internal links:** blog/nootropiki-a-sen.html (existing sleep post), produkt.html, jak-stosowac.html, faq-produkt.html (sleep FAQ), blog/suplementy-a-kofeina.html, nauka.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** First Polish content connecting nootropic supplementation to SLEEP QUALITY (not just "do supplements keep you awake"). Positions CogniCit as the sleep-friendly nootropic. Complements existing sleep blog post with deeper neuroscience angle. Growing trend as sleep science becomes mainstream.
+**Target platforms:** Google (SEO), grupy FB o zdrowym śnie/biohackingu, Wykop
+**Status:** Outline ready, needs writing

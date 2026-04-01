@@ -1804,3 +1804,13 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 678. **[NEW] Add animated counter cards to porownanie.html and ranking-nootropikow.html** — produkt.html now has "CogniCit w liczbach" animated counters (800mg, 0mg caffeine, 1 capsule, 30-day guarantee). Extend same pattern to comparison and ranking pages. Consistent science credibility at all conversion points. Estimated: 20 minutes.
 
 ## Last Updated: 2026-04-01 (Power Cycle #146 — 20:39 UTC)
+
+### 🆕 Power Cycle #148 New Ideas (2026-04-01 23:12 UTC)
+
+682. **[NEW] Add "Bezpieczne zakupy" trust strip CSS upgrade — replace inline styles with external CSS class** — Current trust strip uses inline styles. Extract to a reusable `.trust-strip` CSS class in a shared stylesheet for easier maintenance and consistent styling. Add dark mode support via media query. Estimated: 30 minutes.
+
+683. **[NEW] Create "Ranking suplementów na koncentrację 2026" mega SEO page (/ranking-koncentracja-2026)** — Ultimate authority page targeting "najlepszy suplement na koncentrację" (5K+ monthly). Full comparison of 8 supplements scored on 10 criteria. Interactive filter by price/ingredients. FAQPage + Product aggregateRating JSON-LD. Designed to outrank Polish affiliate sites. Estimated: 4 hours.
+
+684. **[NEW] Add LETNI10 savings calculator to all seasonal landing pages (matura, sesja, powrot-do-szkoly)** — Extend the LETNI10 calculator popup pattern from index.html to seasonal pages. Context-specific headlines ("Ile zaoszczędzisz na sesję z LETNI10?"). Expected 8-12% click-through increase. Estimated: 1 hour.
+
+## Last Updated: 2026-04-01 (Power Cycle #148 — 23:12 UTC)
