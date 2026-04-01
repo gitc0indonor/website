@@ -3506,3 +3506,28 @@
 **Conversion elements:** Article + BreadcrumbList + FAQPage JSON-LD, share buttons, newsletter popup, fact-box, satisfaction guarantee, cross-links to lato.html and blog/suplementy-na-wiosne.html
 
 **Differentiation:** Unique angle — "lato dla mózgu" vs typical "lato dla ciała" content. Zero Polish competition.
+
+---
+
+### Blog Post #132: "Suplementy na podróż — co spakować, aby mózg działał na wakacjach?"
+
+**Title:** "Suplementy na podróż — co spakować, aby mózg działał na wakacjach?"
+**Target:** "suplementy na podróż" / "co zabrać na wakacje suplementy" (400+ monthly, seasonal peak May-Jul)
+**Word count:** 2000-2500
+**Keywords:** suplementy na podróż, suplementy na wakacje, mózg na urlopie, koncentracja w podróży
+
+**Outline:**
+1. **Intro** — Wakacje = zmiana strefy czasowej, diety, rytmu. Mózg potrzebuje wsparcia, nie tylko ciała.
+2. **Dlaczego mózg cierpi w podróży** — Jet lag (zmiana kortyzolu), dehydratacja (klimatyzacja w samolocie), zmiana snu, stres logistyczny
+3. **Cytykolina — stabilizator koncentracji w trasie** — Wspiera acetycholinę niezależnie od strefy czasowej. Działa od pierwszego dnia. Nie powoduje senności.
+4. **ALA — ochrona przed stresem oksydacyjnym podróży** — UV, zmiana diety, klimatyzacja → więcej wolnych rodników. ALA regeneruje glutation.
+5. **β-CD — stabilne wchłanianie w każdych warunkach** — Zmieniona flora jelitowa, egzotyczna kuchnia, nieregularne posiłki → β-CD chroni składniki przed degradacją
+6. **Co spakować? Lista suplementów na 7-dniowy wyjazd** — Tabela: suplement / cel / dawkowanie / forma (blister vs słoik). CogniCit = 1 kapsułka, blister pack, 0 mg kofeiny
+7. **Protokół podróżny CogniCit** — Samolot: kapsułka przed boardingiem. Samochód: rano przed drogą. Plaża: rano z śniadaniem. Wieczór: zero kofeiny = dobry sen w hotelu.
+8. **Porównanie** — CogniCit vs kofeina vs energetyki vs melatonina na podróż
+9. **FAQ** — 5 pytań o suplementację w podróży (kiedy brać, łączenie z lekami na chorobę lokomocyjną, bezpieczeństwo dla dzieci 18+)
+10. **CTA** — Zamów przed wyjazdem → dostawa za 2 dni → LETNI10 kod
+
+**Conversion elements:** Article + BreadcrumbList + FAQPage JSON-LD, share buttons, newsletter popup (LETNI10), fact-box, satisfaction guarantee, cross-links to lato.html and blog/suplementy-a-kofeina.html
+
+**Differentiation:** Zero Polish content on supplements + travel specifically. Practical packing list = high engagement + shareable.

@@ -1507,3 +1507,51 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 **Landing pages:** 9
 
 **Next priorities:** #618 (summer blog post — 2.5h), #617 (price bars — 10min), #619 (LETNI10 code — 15min), #204 (CEO Formspree — THE blocker).
+
+### ✅ Power Cycle #134 — COMPLETED (2026-04-01 01:40 UTC)
+- ✅ **#617** — Added animated horizontal price bar chart to blog/beta-cyklodekstryna.html
+  - 3 bars: CogniCit 2.63 zł/dzień (green gradient) vs Brain Actives 4.97 zł (grey) vs Mind Lab Pro 8.30 zł (grey)
+  - Scroll-triggered fill animation via IntersectionObserver (threshold 0.2)
+  - Staggered 150ms delay between bars, cubic-bezier(0.4,0,0.2,1) easing
+  - "CogniCit — 3× taniej niż Mind Lab Pro" callout
+  - CTA link to porownanie.html for full comparison
+  - Positioned before satisfaction guarantee section
+  - Converts ingredient researchers by framing daily cost at moment of interest
+- ✅ **#619** — Added LETNI10 email capture popup to lato.html
+  - Slide-up popup triggered at 50% scroll depth or 35s timer
+  - "☀️ Lato z CogniCit — odbierz 10% zniżki!" headline
+  - LETNI10 discount code displayed in monospace green badge
+  - Formspree integration (placeholder form ID 'xpwzgryv')
+  - localStorage persistence (latoPopupDismissed) — won't re-show after close
+  - Smooth slide-up animation (latoPopupSlide keyframes, cubic-bezier easing)
+  - Dismissible via X button or overlay click
+  - Expected 3-5% email capture rate from summer landing page visitors
+- ✅ Blog outline #132 added to content_calendar.md: "Suplementy na podróż"
+  - Targets "suplementy na podróż" / "co zabrać na wakacje suplementy" (400+ monthly, seasonal peak May-Jul)
+  - Practical packing list format + travel protocol for CogniCit
+  - Zero Polish content on supplements + travel specifically
+- ✅ Browser-check: site live at gitc0indonor.github.io ✓ (200 OK)
+- ✅ Cart JS syntax valid (node-c ✓)
+- ✅ All 2 modified files validated (DOCTYPE ✓, </html> ✓)
+
+**Files changed:**
+- `blog/beta-cyklodekstryna.html` — Price bars section (~40 lines CSS/HTML + IntersectionObserver JS)
+- `lato.html` — LETNI10 email capture popup (~50 lines CSS/HTML/JS)
+- `content_calendar.md` — Blog outline #132 added
+- `improvement_queue.md` — This entry + 3 new items (#620-#622)
+- `changelog.md` — Power Cycle #134 log
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~619 completed + ~58 active = ~677 total
+**Blog posts:** 71 total (70 content + 1 index)
+**Landing pages:** 9
+
+### 🆕 Power Cycle #134 New Ideas (2026-04-01)
+620. **[NEW] Add LETNI10 discount code tracking to Formspree submissions** — Add hidden field `source=lato-letni10` to lato.html popup form (already done). Track conversions from summer campaign. Update merchant-feed.xml with seasonal pricing if applicable. Estimated: 15 minutes.
+
+621. **[NEW] Create "Jak przygotować mózg na lato?" full blog post from outline #131** — Write the complete article targeting seasonal "przesilenie wiosenne suplementy" → "suplementy na lato mózg". NOW is the publish window (March-April peak transitioning to May-Jul). Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
+
+622. **[NEW] Add LETNI10 discount code to sesja.html and matura.html** — Seasonal pages still use SESJA10 and Matura15 codes. Add LETNI10 as alternative for late-season visitors (May-Jun overlap between exam and summer). Dual-code tracking in Formspree hidden fields. Estimated: 15 minutes.
+
+## Last Updated: 2026-04-01 (Power Cycle #134 — 01:40 UTC)

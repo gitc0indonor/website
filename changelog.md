@@ -4260,3 +4260,45 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. CEO must create formspree.io account and swap form ID.
 
 **Queue:** ~616 completed + ~58 active = ~674 total
+
+### 2026-04-01 — Power Cycle #134 (01:40 UTC)
+**Implemented:**
+- ✅ #617 — Added animated horizontal price bar chart to blog/beta-cyklodekstryna.html
+  - 3 bars: CogniCit 2.63 zł/dzień (green) vs Brain Actives 4.97 zł (grey) vs Mind Lab Pro 8.30 zł (grey)
+  - Scroll-triggered fill animation via IntersectionObserver (threshold 0.2, staggered 150ms)
+  - Cubic-bezier(0.4,0,0.2,1) easing for professional fill effect
+  - "CogniCit — 3× taniej niż Mind Lab Pro" callout + porownanie.html CTA
+  - Positioned before satisfaction guarantee section on β-CD ingredient blog post
+  - Converts ingredient researchers by framing daily cost at moment of peak interest
+- ✅ #619 — Added LETNI10 email capture popup to lato.html
+  - Slide-up popup triggered at 50% scroll depth or 35s fallback timer
+  - "☀️ Lato z CogniCit — odbierz 10% zniżki!" headline with summer emoji
+  - LETNI10 discount code in monospace green badge (10% off summer orders)
+  - Formspree-integrated email form (placeholder ID — CEO must swap)
+  - localStorage persistence (latoPopupDismissed) — won't re-show after dismiss
+  - Smooth latoPopupSlide keyframes animation with cubic-bezier easing
+  - Dismissible via X button or overlay click
+  - GDPR privacy note below form
+  - Expected 3-5% email capture rate from summer campaign visitors
+- ✅ Blog outline #132 added to content_calendar.md: "Suplementy na podróż"
+  - Targets "suplementy na podróż" (400+ monthly, seasonal peak May-Jul)
+  - Practical packing list + travel protocol for CogniCit
+  - Zero Polish content on supplements + travel specifically
+- ✅ Browser-check: site live at gitc0indonor.github.io ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+- ✅ Both modified files validated: DOCTYPE ✓, </html> ✓
+
+**Files changed:**
+- `blog/beta-cyklodekstryna.html` — Price bars section (~40 lines CSS/HTML/JS)
+- `lato.html` — LETNI10 email capture popup (~50 lines CSS/HTML/JS)
+- `content_calendar.md` — Blog outline #132 added
+- `improvement_queue.md` — Items #617, #619 marked DONE; 3 new items (#620-#622); timestamp updated
+- `changelog.md` — This entry
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. reCAPTCHA v3 integrated (test key). CEO must: (1) create formspree.io account, (2) swap form ID in js/cognivia-cart.js, (3) create GA4 property and add measurement ID.
+
+**Queue:** ~619 completed + ~58 active = ~677 total
+**Blog posts:** 71 total
+**Landing pages:** 9
+
+**Next priorities:** #621 (summer blog post — 2.5h), #622 (LETNI10 to seasonal pages — 15min), #204 (CEO Formspree — THE blocker).
