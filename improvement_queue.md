@@ -1779,3 +1779,16 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 670. **[NEW] Add "Wakacyjna promocja" bundle section to lato.html** — 3-column bundle grid (1 box 79 zł / 2 boxes 142 zł with LETNI10 / 3 boxes 213 zł with extra gift). Summer-themed design with beach/travel emojis. Increases AOV during seasonal traffic spike. Estimated: 1 hour.
 671. **[NEW] Create "Suplementy a ekrany" blog post from outline #146** — Growing topic as screen time increases post-pandemic. Zero Polish content on nootropics + digital eye strain. Article + BreadcrumbList + FAQPage JSON-LD. Publish window: April (evergreen). Estimated: 2.5 hours.
 672. **[NEW] Add "Ile zaoszczędzisz z LETNI10?" savings calculator popup to index.html** — When LETNI10 badge is clicked, show modal: "Z LETNI10 oszczędzasz na 3 opakowaniach: 213 zł → 191.70 zł = 21.30 zł w kieszeni." Interactive calculator drives urgency for summer promo code usage. Dismissible, localStorage persistence. Estimated: 30 minutes.
+
+673. **[NEW] Add "Dlaczego CogniCit?" comparison micro-table to produkt.html** — Expandable table comparing CogniCit vs generic citicoline supplements vs generic ALA supplements. Columns: składnik, dawka CogniCit, dawka konkurencja, bioavailability. Highlights β-cyclodextrin advantage. Toggles open below ingredient section. Targets visitors comparing supplements. Estimated: 45 minutes.
+
+674. **[NEW] Create FAQPage JSON-LD for faq-skladniki.html** — faq-skladniki.html has 13 Q&As but may be missing structured data. Add FAQPage schema so Google shows expandable FAQ rich results for "cytykolina skutki uboczne", "kwas alfa liponowy dawkowanie", "beta-cyklodekstryna co to". Zero-cost SERP real estate expansion. Estimated: 20 minutes.
+
+675. **[NEW] Add "Bezpieczne zakupy" trust strip to footer of ALL pages** — Persistent footer bar with 4 icons: 🔒 SSL, 🏭 GMP, 📋 RODO, 💰 30 dni zwrot. Small, non-intrusive, always visible. Reinforces trust at every scroll depth without cluttering conversion pages. CSS-only, no JS. Estimated: 20 minutes.
+
+### 🆕 Power Cycle #146 New Ideas (2026-04-01 20:39 UTC)
+676. **[NEW] Add "Jak kofeina wpływa na suplementy?" full blog post from outline #148** — NOW is the publish window (April, evergreen). Zero quality Polish content. Featured snippet potential. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
+677. **[NEW] Batch-add LETNI10 countdown to all remaining email popups** — Currently countdown added to matura, sesja, powrot-do-szkoly, lato. Extend to all blog post popups and index.html footer newsletter. Consistent seasonal urgency across all capture points. Estimated: 15 minutes.
+678. **[NEW] Add animated counter cards to porownanie.html and ranking-nootropikow.html** — produkt.html now has "CogniCit w liczbach" animated counters (800mg, 0mg caffeine, 1 capsule, 30-day guarantee). Extend same pattern to comparison and ranking pages. Consistent science credibility at all conversion points. Estimated: 20 minutes.
+
+## Last Updated: 2026-04-01 (Power Cycle #146 — 20:39 UTC)

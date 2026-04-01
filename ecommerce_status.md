@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-04-01 17:32 UTC (Ecommerce Cron Cycle #115)
+## Last Updated: 2026-04-01 21:06 UTC (Ecommerce Cron Cycle #116)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -499,3 +499,36 @@
 - IMP-658: Create order confirmation email template in Polish for Formspree go-readiness — Pre-build clean HTML email template with order ID, items list, total (with VAT breakdown), shipping method + ETA, return policy summary, Cognivia contact. Store in website/email-templates/order-confirmation.html. When Formspree activates, template deploys instantly. Estimated: 1 hour.
 - IMP-659: Add "Popularne pytania przed zakupem" collapsible FAQ section to kasa.html checkout — Display 3-4 top pre-purchase questions (shipping time, return policy, payment security, dosage) as collapsible accordion directly on checkout page. Reduces hesitation at the conversion moment. Pulls from existing faq-produkt.html content. Small CSS/JS addition. Estimated: 45 minutes.
 
+
+## 📋 Cycle #116 Audit (2026-04-01 21:06 UTC)
+
+### Full Re-Audit Results
+| Component | Status | Change vs #115 |
+|-----------|--------|-----------------|
+| Cart (koszyk.html) | ✅ Working (424 lines) | No change |
+| Checkout (kasa.html) | ✅ Working (536 lines) | No change |
+| Order Confirmation (potwierdzenie.html) | ✅ Working (217 lines) | No change |
+| Product Page (produkt.html) | ✅ Complete (3327 lines) | No change |
+| Cart JS (cognivia-cart.js) | ✅ Functional (514 lines) — localStorage, VAT 23%, 4 shipping, 4 payment UI | No change |
+| Formspree | 🔴 Placeholder `xpwzgryv` (line 370) | UNCHANGED — 44+ cycles |
+| Payment gateways | 🔴 UI only (PayU/P24/BLIK/PayPal) | No change |
+| Legal pages (8) | ✅ All verified present (faq, faq-produkt, faq-skladniki, dostawa, zwroty, polityka-prywatnosci, regulamin, polityka-cookies) | No change |
+| Trust elements | ✅ GMP, lab-tested, money-back, SSL, reviews, reCAPTCHA | No change |
+| Shipping (4 methods) | ✅ InPost Paczkomat/Kurier, DPD, Poczta Polska | No change |
+| VAT 23% | ✅ Configured | No change |
+| SEO + JSON-LD | ✅ Complete | No change |
+| Certificates page | ✅ Present | No change |
+| Reviews page | ✅ Present | No change |
+| Improvement queue | ✅ Active — items 654-672 pending | 3 new items (673-675) |
+
+### Verdict
+**No change for 44+ cycles. Site is fully built and functional client-side. Formspree placeholder `xpwzgryv` unchanged since initial build. Cart (424L), checkout (536L), product page (3327L), all 8 legal/trust pages verified present. 4 shipping methods and 4 payment UI options configured. VAT 23% active. CEO ACTION REQUIRED: activate Formspree at formspree.io (5-minute task) to enable real order processing.**
+
+### Cycle #116 Added to Queue (673-675)
+- IMP-673: Add "Dlaczego CogniCit?" comparison micro-table to produkt.html — Expandable table comparing CogniCit vs generic supplements, highlighting β-cyclodextrin bioavailability advantage. Estimated: 45 minutes.
+- IMP-674: Create FAQPage JSON-LD for faq-skladniki.html — 13 Q&As present but possibly missing structured data. Add schema for Google rich results. Estimated: 20 minutes.
+- IMP-675: Add "Bezpieczne zakupy" trust strip to footer of ALL pages — Persistent footer bar with SSL/GMP/RODO/30-day return icons. Always-visible trust reinforcement. Estimated: 20 minutes.
+
+---
+
+*Next check scheduled by cron.*

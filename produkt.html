@@ -989,6 +989,62 @@
     }
   </script>
 
+  <!-- #528 — GŁÓWNE KORZYŚCI: Animated Counter Cards -->
+  <section style="padding: 56px 5%; background: linear-gradient(135deg, #f8fdf8, #f0f7f0);">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h3 style="font-family: 'EB Garamond', serif; font-size: 28px; color: var(--cognivia-green, #2e7d32); margin-bottom: 8px;" class="fade-in">CogniCit w liczbach</h3>
+      <p style="font-size: 15px; color: #666; margin-bottom: 40px;" class="fade-in">Konkretne dane — nie marketingowe hasła</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px;">
+        <div style="background: white; border-radius: 14px; padding: 28px 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); border-top: 3px solid #2e7d32;" class="fade-in">
+          <div style="font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 700; color: #2e7d32; margin-bottom: 4px;"><span class="counter-value" data-target="800" data-suffix=" mg">0</span></div>
+          <div style="font-size: 13px; color: #555; line-height: 1.5;">substancji aktywnych w 1 kapsułce</div>
+        </div>
+        <div style="background: white; border-radius: 14px; padding: 28px 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); border-top: 3px solid #8f7a3d;" class="fade-in">
+          <div style="font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 700; color: #8f7a3d; margin-bottom: 4px;"><span class="counter-value" data-target="0" data-suffix=" mg">0</span></div>
+          <div style="font-size: 13px; color: #555; line-height: 1.5;">kofeiny — bez crashu, bez uzależnienia</div>
+        </div>
+        <div style="background: white; border-radius: 14px; padding: 28px 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); border-top: 3px solid #5c8a6e;" class="fade-in">
+          <div style="font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 700; color: #5c8a6e; margin-bottom: 4px;"><span class="counter-value" data-target="1" data-suffix="">0</span></div>
+          <div style="font-size: 13px; color: #555; line-height: 1.5;">kapsułka dziennie — najprostszy schemat</div>
+        </div>
+        <div style="background: white; border-radius: 14px; padding: 28px 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); border-top: 3px solid #d4a76a;" class="fade-in">
+          <div style="font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 700; color: #d4a76a; margin-bottom: 4px;"><span class="counter-value" data-target="30" data-suffix=" dni">0</span></div>
+          <div style="font-size: 13px; color: #555; line-height: 1.5;">gwarancji satysfakcji — zero ryzyka</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+  (function(){
+    var observed=false;
+    var obs=new IntersectionObserver(function(entries){
+      if(observed)return;
+      if(entries[0].isIntersecting){
+        observed=true;
+        document.querySelectorAll('.counter-value').forEach(function(el){
+          var target=parseInt(el.dataset.target)||0;
+          var suffix=el.dataset.suffix||'';
+          var start=0;
+          var duration=1800;
+          var startTime=null;
+          function animate(ts){
+            if(!startTime)startTime=ts;
+            var progress=Math.min((ts-startTime)/duration,1);
+            var ease=1-Math.pow(1-progress,3);
+            var current=Math.round(ease*target);
+            el.textContent=current.toLocaleString('pl-PL')+suffix;
+            if(progress<1)requestAnimationFrame(animate);
+          }
+          requestAnimationFrame(animate);
+        });
+        obs.disconnect();
+      }
+    },{threshold:0.3});
+    var section=document.currentScript.previousElementSibling;
+    if(section)obs.observe(section);
+  })();
+  </script>
+
   <!-- #279 — SPRAWDŹ SKŁAD: Transparency Widget -->
   <section style="padding: 56px 5%; background: white;">
     <div style="max-width: 900px; margin: 0 auto;">

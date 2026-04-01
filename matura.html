@@ -484,6 +484,7 @@
     <button class="blog-popup-close" onclick="closeBlogPopup()">×</button>
     <h4>🎓 Przygotowujesz się do matury?</h4>
     <p>Zapisz się i otrzymaj <strong>15% zniżki</strong> kod Matura15 lub letni <strong>LETNI10</strong> na pierwsze zamówienie CogniCit.</p>
+    <div id="letniCountdown" style="background:rgba(46,125,50,0.08);border-radius:8px;padding:8px 12px;margin-bottom:12px;text-align:center;font-size:12px;color:#2e7d32;font-weight:500;"></div>
     <form action="https://formspree.io/f/xpwzgryv" method="POST">
       <input type="hidden" name="source" value="matura-page-popup">
       <input type="email" name="email" placeholder="Twój email" required>
@@ -503,6 +504,7 @@
         }
       });
     })();
+    (function(){var d=new Date(2026,6,31),n=new Date(),diff=Math.ceil((d-n)/(864e5));var el=document.getElementById('letniCountdown');if(el&&diff>0)el.textContent='⏰ LETNI10 ważny jeszcze '+diff+' dni — nie przegap!';else if(el)el.textContent='⏰ LETNI10 — ostatni dzień promocji!';})();
     function closeBlogPopup() {
       document.getElementById('blogEmailPopup').classList.remove('visible');
       localStorage.setItem('maturaPopupDismissed', '1');

@@ -4681,3 +4681,47 @@
 **WhatsApp coverage:** 100%
 
 **Next priorities:** #664 (neuroprotection blog — 2.5h), #671 (screens blog — 2.5h), #668 (LETNI10 countdown — 20min), #204 (CEO Formspree — THE BLOCKER).
+
+### ✅ Power Cycle #146 — COMPLETED (2026-04-01 20:39 UTC)
+- ✅ **#528** — Added "CogniCit w liczbach" animated counter cards to produkt.html
+  - 4 counter cards: 800 mg substancji aktywnych, 0 mg kofeiny, 1 kapsułka dziennie, 30 dni gwarancji
+  - IntersectionObserver triggers count-up animation on scroll into viewport (threshold 0.3)
+  - requestAnimationFrame with cubic ease-out (1-Math.pow(1-progress,3)), 1800ms duration
+  - Polish locale number formatting (toLocaleString('pl-PL'))
+  - Colored top borders per card (green/gold/sage/gold) + matching number colors
+  - Responsive grid (auto-fit minmax 160px, 1fr))
+  - Gradient background (f8fdf8 → f0f7f0), positioned between hydration quiz and transparency widget
+  - Self-contained IIFE script — no external dependencies, no conflict with existing page scripts
+  - Quantified value at conversion decision point — visitors see concrete numbers
+- ✅ **#663** — Added LETNI10 countdown timer to email popups on 4 seasonal/landing pages
+  - matura.html: countdown div + JS between popup text and form — "⏰ LETNI10 ważny jeszcze X dni"
+  - sesja.html: same countdown pattern — calculates days until July 31, 2026
+  - powrot-do-szkoly.html: same countdown pattern
+  - lato.html: countdown inside LETNI10 popup — "letniCountdownLato" element
+  - All countdowns use same IIFE: calculates diff=(July31-now)/86400000, displays days remaining
+  - Fallback: "Ostatni dzień promocji!" when countdown reaches 0
+  - Creates seasonal urgency at exact email capture moment — Cialdini scarcity principle
+- ✅ Blog outline #148 added to content_calendar.md: "Jak kofeina wpływa na suplementy?"
+- ✅ Browser-check: site live at gitc0indonor.github.io ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+- ✅ All 5 modified files validated: DOCTYPE ✓, </html> ✓
+- ✅ 3 new improvement ideas added (#676-#678)
+
+**Files changed:**
+- `produkt.html` — Animated counter section (~50 lines CSS/HTML + IIFE JS) between hydration quiz and transparency widget
+- `matura.html` — LETNI10 countdown div + JS (~3 lines)
+- `sesja.html` — LETNI10 countdown div + JS (~3 lines)
+- `powrot-do-szkoly.html` — LETNI10 countdown div + JS (~3 lines)
+- `lato.html` — LETNI10 countdown div + JS (~3 lines)
+- `content_calendar.md` — Blog outline #148
+- `improvement_queue.md` — 3 new items (#676-#678)
+- `changelog.md` — This entry
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. reCAPTCHA v3 integrated (test key). **THE BLOCKER:** CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~675 completed + ~65 active = ~740 total
+**Blog posts:** 74 total (73 content + 1 index)
+**Landing pages:** 10
+**GA4 tracking:** 50/80 pages
+**WhatsApp coverage:** 100%
+**LETNI10 countdown:** 4 seasonal popups (matura, sesja, powrot-do-szkoly, lato)

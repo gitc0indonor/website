@@ -3837,3 +3837,20 @@
 **SEO angle:** Zero Polish content connecting nootropics to screen fatigue specifically. Growing trend as screen time increases post-pandemic. Positions CogniCit as the daily neuroprotection for screen workers. Practical protocol format = high engagement.
 **Target platforms:** Google (SEO), LinkedIn (remote workers), Wykop (tech community), grupy FB o zdrowiu oczu
 **Status:** Outline ready, needs writing
+
+---
+
+### Blog Post #148: "Jak kofeina wpływa na suplementy? Przewodnik interakcji 2026"
+
+**Target keywords:** "kofeina suplementy interakcje", "kawa a suplementy diety", "łączenie kawy z suplementami"
+**Search volume:** ~600/month (growing)
+**Content angle:** ZERO quality Polish content on this topic. Most articles say "nie łączyć" without explaining WHY. This article explains the mechanisms (absorption competition, receptor competition, metabolic pathways) and gives practical timing advice. CogniCit positioned as zero-caffeine supplement = zero interaction risk.
+**Structure:**
+1. Dlaczego kofeina "wchodzi w drogę" suplementom? (mechanism)
+2. 5 najczęstszych interakcji kofeina + suplementy (tabela)
+3. Które suplementy NIE mieszają się z kawą? (ranking)
+4. CogniCit = zero kofeiny = zero interakcji (pozycjonowanie)
+5. Praktyczny protokół: kiedy pić kawę, kiedy brać suplementy?
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/nootropiki-a-sen.html, faq-produkt.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Status:** Outline ready, needs writing

@@ -453,6 +453,7 @@
   <button class="close-popup" onclick="closeSchoolPopup()">×</button>
   <h4>📚 15% zniżki na start roku szkolnego</h4>
   <p>Zapisz się i otrzymaj kod rabatowy — letni <strong>LETNI10</strong> lub powitalny <strong>School15</strong> na pierwsze zamówienie CogniCit.</p>
+  <div id="letniCountdown" style="background:rgba(46,125,50,0.08);border-radius:8px;padding:8px 12px;margin-bottom:12px;text-align:center;font-size:12px;color:#2e7d32;font-weight:500;"></div>
   <form action="https://formspree.io/f/your-form-id" method="POST">
     <input type="hidden" name="_subject" value="Newsletter — Powrót do szkoły">
     <input type="hidden" name="source" value="powrot-do-szkoly">
@@ -461,6 +462,9 @@
   </form>
 </div>
 
+<script>
+(function(){var d=new Date(2026,6,31),n=new Date(),diff=Math.ceil((d-n)/(864e5));var el=document.getElementById('letniCountdown');if(el&&diff>0)el.textContent='⏰ LETNI10 ważny jeszcze '+diff+' dni — nie przegap!';else if(el)el.textContent='⏰ LETNI10 — ostatni dzień promocji!';})();
+</script>
 <script>
 // Email popup — trigger after 50% scroll
 (function() {
