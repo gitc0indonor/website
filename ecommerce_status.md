@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-03-31 23:05 UTC (Ecommerce Cron Cycle #110)
+## Last Updated: 2026-04-01 02:48 UTC (Ecommerce Cron Cycle #111)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -188,6 +188,36 @@
 - IMP-538: Add "Zaufało nas X klientów" dynamic trust counter to checkout page (kasa.html) — Simulated social proof counter near submit button. Reduces checkout abandonment by 8-15%. Can be replaced with real data when backend launches. Estimated: 1 hour.
 - IMP-539: Create "Jak CogniCit działa w 3 kroki?" visual explainer section for produkt.html — Horizontal 3-step infographic: Cytykolina → neurotransmitery, ALA → antyoksydacja, β-CD → wchłanialność. SVG icons, scroll animation, responsive. Estimated: 2 hours.
 - IMP-540: Implement smart sticky "Dodaj do koszyka" bar on produkt.html — Appears on scroll past main CTA. Slim bottom bar (mobile) / top bar (desktop) with product name, price, qty, buy button. IntersectionObserver toggle. Estimated: 1 hour.
+
+---
+
+## 📋 Cycle #111 Audit (2026-04-01 02:48 UTC)
+
+### Full Re-Audit Results
+| Component | Status | Change vs #110 |
+|-----------|--------|-----------------|
+| Cart (koszyk.html) | ✅ Working (424 lines) | No change |
+| Checkout (kasa.html) | ✅ Working (532 lines) | No change |
+| Order Confirmation (potwierdzenie.html) | ✅ Working (208 lines) | No change |
+| Product Page (produkt.html) | ✅ Complete (3206 lines) | No change |
+| Cart JS (cognivia-cart.js) | ✅ Functional (514 lines) — localStorage, VAT 23%, 4 shipping, 4 payment UI | No change |
+| Formspree | 🔴 Placeholder `xpwzgryv` (line 370) | UNCHANGED — 39+ cycles |
+| Payment gateways | 🔴 UI only (PayU/P24/BLIK/PayPal) | No change |
+| Legal pages (7) | ✅ All verified present (faq 31119B, faq-produkt 59320B, dostawa 11603B, zwroty 16822B, polityka-prywatnosci 17784B, regulamin 20823B, polityka-cookies 27417B) | No change |
+| Trust elements | ✅ GMP, lab-tested, money-back, SSL, reviews | No change |
+| Shipping (4 methods) | ✅ InPost Paczkomat/Kurier, DPD, Poczta Polska | No change |
+| VAT 23% | ✅ Configured | No change |
+| SEO + JSON-LD | ✅ Complete | No change |
+| Git (website repo) | ✅ Active — Power Cycle #134 completed | Blog + landing page updates |
+| Improvement queue | ✅ Active — items 623-625 pending | 3 new items (626-628) |
+
+### Verdict
+**No change for 39+ cycles. Site is fully built and functional client-side. Formspree placeholder `xpwzgryv` unchanged since initial build. Cart, checkout, product listing (3206 lines), shipping (4 methods), payment UI (4 gateways), trust elements (GMP/lab-tested/money-back/SSL/reviews), all 7 legal pages (faq, faq-produkt, dostawa, zwroty, polityka-prywatnosci, regulamin, polityka-cookies), and SEO (JSON-LD Product/Offer schema) are complete. CEO ACTION REQUIRED: activate Formspree at formspree.io (5-minute task) to enable real order processing.**
+
+### Cycle #111 Added to Queue (626-628)
+- IMP-626: Add "Bestseller" and "Nowość" product badges to produkt.html and index.html — Psychological urgency labels. "Bestseller" badge on CogniCit product card (auto-show if sales data available, static for now). Green/red pill badges with subtle pulse animation. Increases CTR 12-18% in e-commerce. Estimated: 30 minutes.
+- IMP-627: Create automated broken-link checker script for all HTML pages — Python script that crawls all .html files in website/, extracts href/src attributes, validates internal links resolve to existing files. Run weekly via cron. Prevents 404s from page renames/deletions. Output report to website/link-health-report.md. Estimated: 1.5 hours.
+- IMP-628: Implement "Kup teraz, zapłać później" (BNPL) payment option placeholder in kasa.html — Add Twisto/PayPo badge alongside existing payment methods. Polish BNPL market growing 40% YoY. No integration needed yet — just UI badge + "Dostępne wkrótce" label. Signals modern payment acceptance to younger demographic (18-25). Estimated: 20 minutes.
 
 ---
 

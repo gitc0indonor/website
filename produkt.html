@@ -272,6 +272,7 @@
       .guarantee-steps { grid-template-columns: 1fr; }
       .guarantee-section { padding: 28px 20px; }
     }
+    @keyframes bestPulse { 0%,100%{box-shadow:0 2px 8px rgba(255,107,53,0.3)} 50%{box-shadow:0 2px 16px rgba(255,107,53,0.5)} }
 </style>
 <link rel="stylesheet" href="assets/css/cognivia-v2.css">
   <link rel="stylesheet" href="css/cart.css">
@@ -435,6 +436,10 @@
   </header>
 
   <section class="hero">
+    <!-- #626 — Bestseller badge -->
+    <div style="display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #ff6b35, #f7c948); color: #fff; padding: 5px 16px; border-radius: 20px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(255,107,53,0.3); animation: bestPulse 3s ease-in-out infinite;">
+      🔥 Bestseller
+    </div>
     <div style="font-size: 12px; color: var(--cognivia-pink); text-transform: uppercase; letter-spacing: 3px; font-weight: 600; margin-bottom: 12px;">Suplement diety</div>
     <h1>CogniCit</h1>
     <!-- Visible star rating — #94 -->

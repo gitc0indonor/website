@@ -3531,3 +3531,47 @@
 **Conversion elements:** Article + BreadcrumbList + FAQPage JSON-LD, share buttons, newsletter popup (LETNI10), fact-box, satisfaction guarantee, cross-links to lato.html and blog/suplementy-a-kofeina.html
 
 **Differentiation:** Zero Polish content on supplements + travel specifically. Practical packing list = high engagement + shareable.
+
+### Blog Post Outline #133 — Power Cycle #134 (2026-04-01)
+**Title:** "Suplementy na podróż — co spakować, aby mózg działał na wakacjach?"
+**Target keyword:** "suplementy na podróż" / "co zabrać na wakacje suplementy" (400+ monthly, seasonal peak May-Jul)
+**Word count:** 2,000-2,500
+**Keywords:** suplementy na podróż, suplementy na wakacje, mózg na urlopie, koncentracja w podróży
+
+**Outline:**
+1. **Intro** — Wakacje = zmiana strefy czasowej, diety, rytmu. Mózg potrzebuje wsparcia, nie tylko ciała.
+2. **Dlaczego mózg cierpi w podróży** — Jet lag, dehydratacja (klimatyzacja w samolocie), zmiana snu, stres logistyczny
+3. **Cytykolina — stabilizator koncentracji w trasie** — Wspiera acetylocholinę niezależnie od strefy czasowej
+4. **ALA — ochrona przed stresem oksydacyjnym podróży** — UV, zmiana diety, klimatyzacja
+5. **β-CD — stabilne wchłanianie w każdych warunkach** — Zmieniona flora jelitowa, egzotyczna kuchnia
+6. **Co spakować? Lista suplementów na 7-dniowy wyjazd** — Tabela suplementów
+7. **Protokół podróżny CogniCit** — Samolot/samochód/plaża/wieczór
+8. **Porównanie** — CogniCit vs kofeina vs energetyki vs melatonina na podróż
+9. **FAQ** — 5 pytań
+10. **CTA** — Zamów przed wyjazdem, LETNI10 kod
+
+**Conversion elements:** Article + BreadcrumbList + FAQPage JSON-LD, share buttons, newsletter popup, satisfaction guarantee
+**Differentiation:** Zero Polish content on supplements + travel specifically
+**Status:** Outline ready, needs writing
+
+### Blog Post Outline #135 (Added 2026-04-01 — Power Cycle #135)
+**Title:** Suplementy na podróż — co spakować do walizki?
+**Target:** "suplementy na podróż" / "co zabrać na wakacje suplementy" (400+ monthly, seasonal peak May-Jul)
+**Word count:** 1800-2200
+**Keywords:** suplementy na podróż, suplementy na wakacje, co zabrać na wyjazd suplementy
+
+**Outline:**
+1. **Wstęp** — Dlaczego suplementacja na wyjeździe jest ważniejsza niż w domu?
+2. **Zmiana strefy czasowej** — Jet lag a koncentracja, jak cytykolina pomaga w adaptacji
+3. **Odwodnienie na wyjeździe** — 2% odwodnienia = 25% spadek funkcji poznawczych (Ganio 2012)
+4. **ALA jako tarcza antyoksydacyjna** — Ochrona mitochondriów przy zmianie diety, klimatu, stresu podróżnego
+5. **β-CD a stabilność w podróży** — Dlaczego kapsułki CogniCit nie wymagają lodówki
+6. **Praktyczna lista pakowania** — Checklist: CogniCit + elektrolity + witamina D + magnez
+7. **Protokół podróżny CogniCit** — Kiedy brać: przed lotem, na miejscu, po powrocie
+8. **Porównanie** — CogniCit vs energetyki na lotnisku vs kofeina w samolocie
+9. **FAQPage JSON-LD** — 5 pytań: lot samolotem, zmiana klimatu, dzieci 18+, alkohol, dawkowanie
+10. **CTA** — Zamów przed wyjazdem → 79 zł + LETNI10
+
+**Internal links:** produkt.html, lato.html, blog/jak-przygotowac-mozg-na-lato.html, jak-stosowac.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD
+**Conversion:** Email popup (LETNI10), floating newsletter badge, satisfaction guarantee
