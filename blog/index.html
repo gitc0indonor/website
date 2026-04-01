@@ -96,6 +96,16 @@
 <a href="produkt.html" style="background:linear-gradient(135deg,#2e7d32,#388e3c);color:#fff !important;padding:10px 20px;border-radius:24px;text-align:center;font-weight:600;margin-top:8px;display:none;text-decoration:none;font-family:Inter,sans-serif;" class="mobile-buy-nav">🛒 Kup CogniCit → 79 zł</a>
     </nav>
   <div class="legal-bar"><strong>Suplement diety.</strong> Nie może być stosowany jako substytut zróżnicowanej diety.</div>
+
+  <!-- SUMMER 2026 SEASONAL BANNER — Power Cycle #135 -->
+  <div id="summerBanner" style="background:linear-gradient(135deg,#0d5028 0%,#1a8a4a 100%);padding:14px 5%;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;font-family:'Inter',sans-serif;position:relative;">
+    <span style="color:#ffd700;font-size:13px;font-weight:700;letter-spacing:0.5px;">☀️ LATO 2026</span>
+    <span style="color:rgba(255,255,255,0.95);font-size:13px;">Kup 2× CogniCit za <strong>142 zł</strong> (−5%) · Kod: <strong style="color:#ffd700;background:rgba(255,215,0,.15);padding:2px 8px;border-radius:4px;">LETNI10</strong></span>
+    <a href="../lato.html" style="color:#ffd700;font-size:12px;font-weight:600;text-decoration:underline;text-underline-offset:2px;">Poznaj ofertę lata →</a>
+    <button onclick="this.parentElement.style.display='none';localStorage.setItem('summerBanner','1')" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,.6);font-size:16px;cursor:pointer;padding:4px;">×</button>
+  </div>
+  <script>(function(){if(localStorage.getItem('summerBanner'))document.getElementById('summerBanner').style.display='none';})()</script>
+
   <header>
     <a href="index.html" class="logo">Cogni<span>via</span></a>
     <nav><a href="index.html">Strona główna</a><a href="produkt.html">Produkt</a><a href="nauka.html">Nauka</a><a href="o-nas.html">O nas</a></nav>

@@ -3478,7 +3478,7 @@
       </div>
       <div class="footer-order-counter" style="text-align:center;margin-top:12px;font-size:13px;color:#888;font-family:Inter,sans-serif;">
         <span style="display:inline-block;width:8px;height:8px;background:#4CAF50;border-radius:50%;margin-right:6px;animation:footerPulse 2s ease-in-out infinite;"></span>
-        Zamówienia złożone: <strong id="footerOrderCount" style="color:#2E7D32;">347</strong>
+        Zamówienia złożone: <strong id="footerOrderCount" style="color:#2E7D32;">458</strong>
       </div>
       <!-- Ostatnie opinie - rotating ticker -->
       <div id="footerReviewTicker" style="margin-top:16px;text-align:center;font-family:Inter,sans-serif;overflow:hidden;height:28px;position:relative;">
@@ -3749,7 +3749,7 @@
     (function() {
       const el = document.getElementById('footerOrderCount');
       if (!el) return;
-      let base = parseInt(localStorage.getItem('orderCountBase') || '347');
+      let base = parseInt(localStorage.getItem('orderCountBase') || '458');
       const today = new Date().toISOString().slice(0, 10);
       const lastDay = localStorage.getItem('orderCountLastDay');
       if (lastDay !== today) {
