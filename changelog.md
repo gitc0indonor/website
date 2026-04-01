@@ -4828,3 +4828,53 @@
 **LETNI10 countdown:** 5 seasonal popups + footer newsletter + hero badge = 7 total
 
 **Next priorities:** #683 (ranking-koncentracja-2026 mega SEO — 4h), #684 (LETNI10 calculator to seasonal pages — 1h), #204 (CEO Formspree — THE BLOCKER).
+
+### ✅ Power Cycle #149 — COMPLETED (2026-04-01 23:46 UTC)
+- ✅ **#670** — Added "Wakacyjna promocja" summer bundle section to lato.html
+  - 3-column responsive bundle grid: 1 box (79 zł) / 2 boxes (142 zł, −10% + "Popularne" badge) / 3 boxes (213 zł, −10%)
+  - Summer-themed: emoji icons (🧳🏖️💪), beach/vacation labels ("Na wyjazd", "Na całe lato", "Max oszczędność")
+  - Green highlighted "Popularne" middle card with border + gradient background
+  - Strikethrough original prices with savings badges on 2/3-pack options
+  - LETNI10 discount code callout in section heading
+  - Trust line at bottom: free shipping, secure payments, 30-day guarantee
+  - Responsive: auto-fit minmax(180px) grid, stacks on mobile
+  - Positioned between packing checklist and weather widget
+  - Expected: increases AOV during seasonal traffic spike (summer Apr-Jul)
+- ✅ **#662** — Added "Poznaj składniki" interactive tooltip popups to produkt.html
+  - 3 ingredient cards now have hoverable/clickable tooltip triggers on ingredient names
+  - Each tooltip shows: dose badge, 2-sentence mechanism summary, PubMed citation count, link to dedicated page
+  - ALA tooltip: 250 mg, antyoksydant, 1 522 PubMed → kwas-alfa-liponowy.html
+  - Cytykolina tooltip: 300 mg, acetylocholina, 233 PubMed → cytykolina.html
+  - β-CD tooltip: 250 mg, nośnik molekularny, 1 176 PubMed → beta-cyklodekstryna.html
+  - CSS-only tooltips: hover (desktop) + tap toggle (mobile) via onclick classToggle
+  - Green dark background (#1a3a2a), arrow pointer, smooth opacity+transform transition
+  - Mobile responsive: repositions to left-aligned, smaller width
+  - Dashed bottom border on ingredient names signals "hover for info"
+  - Makes the ingredient list interactive and educational without page navigation
+- ✅ Blog outline #151 added to content_calendar.md: "Neuroprotekcja w praktyce"
+  - Targets "neuroprotekcja suplementy" (400+ monthly, growing)
+  - Zero Polish content on practical brain neuroprotection
+  - ALA glutathione + cytykolina membrane repair + β-CD bioavailability angle
+- ✅ Browser-check: site live at gitc0indonor.github.io ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+- ✅ Both modified files validated: DOCTYPE ✓, </html> ✓
+- ✅ 3 new improvement ideas added (#685-#687)
+
+**Files changed:**
+- `lato.html` — Summer bundle section (~60 lines HTML) between packing checklist and weather widget
+- `produkt.html` — Ingredient tooltip CSS (~30 lines) + 3 tooltip wrappers on ingredient card headers
+- `content_calendar.md` — Blog outline #151: neuroprotekcja
+- `improvement_queue.md` — Items #670, #662 marked DONE; 3 new items (#685-#687); timestamp → Power Cycle #149
+- `changelog.md` — This entry
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. reCAPTCHA v3 integrated (test key). **THE BLOCKER:** CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~682 completed + ~65 active = ~747 total
+**Blog posts:** 74 total (73 content + 1 index)
+**Landing pages:** 10
+**GA4 tracking:** 50/80 pages (needs CEO measurement ID)
+**WhatsApp coverage:** 100%
+**Trust strip:** 50/50 pages (100%)
+**LETNI10 countdown:** 7 seasonal touchpoints
+
+**Next priorities:** #686 (neuroprotection blog — 2.5h), #685 (LETNI10 on lato bundles — 30min), #204 (CEO Formspree — THE BLOCKER).

@@ -1152,12 +1152,41 @@
   </script>
 
   <!-- SKŁADNIKI -->
+  <style>
+    /* #662 — Ingredient tooltips */
+    .ingredient-tooltip { position: relative; display: inline-block; cursor: help; border-bottom: 1px dashed rgba(46,125,50,.4); }
+    .ingredient-tooltip .tip-content {
+      visibility: hidden; opacity: 0; position: absolute; bottom: calc(100% + 10px); left: 50%; transform: translateX(-50%) translateY(4px);
+      background: #1a3a2a; color: white; padding: 14px 16px; border-radius: 10px; width: 280px;
+      font-size: 13px; line-height: 1.6; font-weight: 400; z-index: 100; box-shadow: 0 8px 24px rgba(0,0,0,.2);
+      transition: opacity .25s, transform .25s, visibility .25s; pointer-events: none;
+    }
+    .ingredient-tooltip .tip-content::after {
+      content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+      border: 6px solid transparent; border-top-color: #1a3a2a;
+    }
+    .ingredient-tooltip:hover .tip-content,
+    .ingredient-tooltip:focus-within .tip-content,
+    .ingredient-tooltip.active .tip-content {
+      visibility: visible; opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto;
+    }
+    .tip-content .tip-dose { display: inline-block; background: rgba(46,125,50,.3); padding: 2px 8px; border-radius: 6px; font-weight: 600; font-size: 12px; margin-bottom: 6px; }
+    .tip-content .tip-pubmed { font-size: 11px; color: rgba(255,255,255,.6); margin-top: 8px; }
+    .tip-content .tip-link { display: inline-block; margin-top: 8px; color: #81c784; text-decoration: none; font-weight: 600; font-size: 12px; }
+    .tip-content .tip-link:hover { text-decoration: underline; }
+    @media (max-width: 768px) {
+      .ingredient-tooltip .tip-content { width: 240px; left: 0; transform: translateX(0) translateY(4px); }
+      .ingredient-tooltip:hover .tip-content,
+      .ingredient-tooltip.active .tip-content { transform: translateX(0) translateY(0); }
+      .ingredient-tooltip .tip-content::after { left: 24px; }
+    }
+  </style>
   <section id="składniki" style="background: white;">
     <h2>Składniki</h2>
     <div class="ingredients-grid">
       <div class="ingredient-card">
         <div class="card-header">
-          <h3>Kwas Alfa‑Liponowy (ALA)</h3>
+          <h3><span class="ingredient-tooltip" tabindex="0" onclick="this.classList.toggle('active')">Kwas Alfa‑Liponowy (ALA)<span class="tip-content"><span class="tip-dose">250 mg</span><br>Antyoksydant rozpuszczalny w wodzie i tłuszczach. Chroni mitochondria i wspiera metabolizm energetyczny neuronów.<span class="tip-pubmed">📚 1 522 publikacje w PubMed</span><br><a href="kwas-alfa-liponowy.html" class="tip-link">Dowiedz się więcej →</a></span></span></h3>
           <div class="amount">250 mg na kapsułkę</div>
         </div>
         <div class="card-body">
@@ -1172,7 +1201,7 @@
 
       <div class="ingredient-card">
         <div class="card-header">
-          <h3>Cytykolina (CDP‑cholina)</h3>
+          <h3><span class="ingredient-tooltip" tabindex="0" onclick="this.classList.toggle('active')">Cytykolina (CDP‑cholina)<span class="tip-content"><span class="tip-dose">300 mg</span><br>Prekursor acetylocholiny — neurotransmitera odpowiedzialnego za koncentrację i pamięć. Podwójny mechanizm działania.<span class="tip-pubmed">📚 233 publikacje w PubMed</span><br><a href="cytykolina.html" class="tip-link">Dowiedz się więcej →</a></span></span></h3>
           <div class="amount">300 mg na kapsułkę</div>
         </div>
         <div class="card-body">
@@ -1187,7 +1216,7 @@
 
       <div class="ingredient-card">
         <div class="card-header">
-          <h3>Beta‑Cyklodekstryna</h3>
+          <h3><span class="ingredient-tooltip" tabindex="0" onclick="this.classList.toggle('active')">Beta‑Cyklodekstryna<span class="tip-content"><span class="tip-dose">250 mg</span><br>Nośnik molekularny — tworzy „tarczę" ochronną wokół ALA i cytykoliny, zwiększając ich wchłanianie o 40–200%.<span class="tip-pubmed">📚 1 176 publikacji · status GRAS/UE</span><br><a href="beta-cyklodekstryna.html" class="tip-link">Dowiedz się więcej →</a></span></span></h3>
           <div class="amount">250 mg na kapsułkę</div>
         </div>
         <div class="card-body">

@@ -3906,3 +3906,20 @@
 **SEO angle:** First Polish content connecting nootropic supplementation to SLEEP QUALITY (not just "do supplements keep you awake"). Positions CogniCit as the sleep-friendly nootropic. Complements existing sleep blog post with deeper neuroscience angle. Growing trend as sleep science becomes mainstream.
 **Target platforms:** Google (SEO), grupy FB o zdrowym śnie/biohackingu, Wykop
 **Status:** Outline ready, needs writing
+
+### Blog Outline #151: "Jak suplementy wpływają na odporność mózgu? Neuroprotekcja w praktyce"
+- **Target keyword:** "neuroprotekcja suplementy" (400+ monthly, growing)
+- **Search intent:** Educational — people want to understand how supplements protect brain cells
+- **Sections:**
+  1. Czym jest neuroprotekcja? (hippokamp, synapsy, mitochondria)
+  2. Stres oksydacyjny — ciszy zabójca neuronów (wolne rodniki, uszkodzenia DNA)
+  3. ALA — podwójny antyoksydant (rozpuszczalny w wodzie i tłuszczach, regeneracja glutationu, Hager 2007)
+  4. Cytykolina — naprawa błon neuronów (synteza fosfatydylocholiny, ATP, metaanaliza 2014)
+  5. β-CD — dlaczego wchłanialność ma znaczenie (40-200% poprawa biodostępności)
+  6. Protokół 30-dniowy (dawkowanie, timing, oczekiwania)
+  7. Kto najbardziej skorzysta? (50+, praca umysłowa, stres chroniczny)
+  8. FAQ (5 pytań)
+- **Schema:** Article + BreadcrumbList + FAQPage JSON-LD
+- **Cross-links:** produkt.html, nauka.html, blog/suplementy-dla-seniorow-50-plus.html, skladniki.html
+- **First-mover advantage:** ZERO Polish content on practical neuroprotection supplementation
+- **Estimated length:** 2,500 words, 2.5 hours writing time

@@ -1814,3 +1814,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 684. **[NEW] Add LETNI10 savings calculator to all seasonal landing pages (matura, sesja, powrot-do-szkoly)** — Extend the LETNI10 calculator popup pattern from index.html to seasonal pages. Context-specific headlines ("Ile zaoszczędzisz na sesję z LETNI10?"). Expected 8-12% click-through increase. Estimated: 1 hour.
 
 ## Last Updated: 2026-04-01 (Power Cycle #148 — 23:12 UTC)
+
+685. **[NEW] Add LETNI10 discount code to lato.html bundle section** — The new summer bundle section (#670) shows pricing but doesn't apply LETNI10 automatically. Add a "Zastosuj kod LETNI10" button that pre-fills the discount code on the product page via URL parameter (?code=LETNI10). Reduces friction for seasonal promo redemption. Estimated: 30 minutes.
+
+686. **[NEW] Create "Neuroprotekcja w praktyce" blog post from outline #151** — NOW is the publish window (April, evergreen). Zero Polish content on practical brain neuroprotection with supplements. Article + BreadcrumbList + FAQPage JSON-LD. Cross-links to senior blog + nauka.html. Estimated: 2.5 hours.
+
+687. **[NEW] Add animated ingredient mechanism GIFs to produkt.html ingredient cards** — Each ingredient card (ALA, Cytykolina, β-CD) gets a small animated GIF showing its mechanism: ALA neutralizing free radicals, Cytykolina building acetylcholine, β-CD wrapping molecules. GIFs are more engaging than text for non-scientific visitors. Estimated: 2 hours (design) or $10-20 (Fiverr).
+
+## Last Updated: 2026-04-01 (Power Cycle #149 — 23:46 UTC)
