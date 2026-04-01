@@ -3788,3 +3788,26 @@
 **Internal links:** produkt.html, blog/jak-budowac-rutyne-suplementacji.html, nauka.html, blog/cytykolina-przewodnik-kompletny.html
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
 **Status:** Outline ready, needs writing. ZERO Polish content on supplement onset timeline — first-mover advantage.
+
+### Blog Post Outline #145 (Added 2026-04-01 — Power Cycle #145)
+**Title:** "Suplementy a praca kreatywna — jak designerzy, pisarze i muzycy mogą wspierać swój mózg?"
+**Target keyword:** "suplementy dla kreatywnych" / "nootropiki twórczość" / "suplementy dla pisarzy" (~300+ monthly, ZERO Polish content)
+**Estimated word count:** 1,800-2,200 words
+**Seasonality:** Evergreen, slight peak Jan (new creative projects) and Sep (back to work)
+
+**Outline:**
+1. **Wstęp** — Kreatywność to nie talent — to neurochemia. Przełączanie między DMN (Default Mode Network) a CEN (Central Executive Network) wymaga acetylocholiny. CogniCit wspiera ten mechanizm.
+2. **Jak mózg generuje pomysły?** — DMN (marzenie, skojarzenia) vs CEN (analiza, realizacja). Płynne przełączanie = kreatywność. Mechanizm: acetylocholina moduluje przełączanie. Cytykolina = więcej ACh = płynniejsze przełączanie.
+3. **Co blokuje kreatywność?** — Stres oksydacyjny mitochondriów (mniej energii = mniej skojarzeń), chroniczny kortyzol (zamyka DMN), niedobór snu (REM = konsolidacja kreatywna), nadmiar kofeiny (wąski focus = mniej dywergentnego myślenia).
+4. **ALA — ochrona mitochondriów twórcy** — Praca kreatywna wymaga dużo energii neuronalnej. ALA chroni mitochondria przed stresem oksydacyjnym. Hager 2007.
+5. **β-CD — dlaczego wchłanianie ma znaczenie dla kreatywności** — Nawet najlepszy składnik nie zadziała, jeśli nie dotrze do mózgu.
+6. **Protokół dla twórcy** — Rano: CogniCit → deep creative work (9-12) → ruch/przerwa → popołudniowa edycja. Wieczór: bez ekranów, sen 7-8h.
+7. **Porównanie: CogniCit vs kofeina vs "stacki biohakerów"** — Tabela: mechanizm, trwałość, skutki uboczne, cena/dzień.
+8. **FAQ** — 5 pytań (Czy suplementy pomagają w kreatywności? / Czy CogniCit zawęża myślenie? / Kiedy brać? / Czy łączyć z kawą? / Ile kosztuje?)
+
+**CTA:** Zamów CogniCit → produkt.html (79 zł, 30-dniowa gwarancja)
+**Internal links:** produkt.html, blog/suplementy-dla-programistow.html, blog/suplementy-praca-zdalna.html, blog/cytykolina-przewodnik-kompletny.html, jak-stosowac.html, nauka.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**SEO angle:** Zero Polish content on supplements + creativity. First-mover advantage. Target: designers, writers, developers, musicians.
+**Target platforms:** Google (SEO), LinkedIn (creative professionals), grupy FB o designie/pisaniu
+**Status:** Outline ready, needs writing
