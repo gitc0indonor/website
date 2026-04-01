@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-04-01 13:57 UTC (Ecommerce Cron Cycle #114)
+## Last Updated: 2026-04-01 17:32 UTC (Ecommerce Cron Cycle #115)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -465,4 +465,37 @@
 - IMP-605: Add "Ostatnie opinie klientów" live review ticker to produkt.html — Small animated strip near price showing rotating recent reviews (e.g., "Anna z Warszawy — ★★★★★ — 'Lepiej się skupiam po 2 tygodniach'"). Social proof without page reload. Uses existing opinie.html data. Scroll-snapping horizontal carousel on mobile. Estimated: 1.5 hours.
 - IMP-606: Create "Gwarancja satysfakcji — jak to działa?" visual infographic section on zwroty.html — Replace current text-only return policy with a visual 3-step: (1) Zamów → (2) Przetestuj 30 dni → (3) Pełny zwrot jeśli nie zadowolony. Icons, timeline graphic, "zero ryzyka" badge. Converts hesitant first-time buyers who skip reading policy text. Estimated: 1 hour.
 - IMP-607: Implement lazy-loading for all product images on index.html and produkt.html — Current pages load all images on page load (index.html 231KB, produkt.html 243KB). Add `loading="lazy"` + placeholder blur-up technique for below-fold images. Target: reduce initial page weight by 40-60%. Improves Core Web Vitals (LCP, CLS) for Google ranking. Estimated: 30 minutes.
+
+
+---
+
+## 📋 Cycle #115 Audit (2026-04-01 17:32 UTC)
+
+### Full Re-Audit Results
+| Component | Status | Change vs #114 |
+|-----------|--------|-----------------|
+| Cart (koszyk.html) | ✅ Working (424 lines) | No change |
+| Checkout (kasa.html) | ✅ Working (536 lines) | No change |
+| Order Confirmation (potwierdzenie.html) | ✅ Working (216 lines) | No change |
+| Product Page (produkt.html) | ✅ Complete (3310 lines) | No change |
+| Cart JS (cognivia-cart.js) | ✅ Functional (514 lines) — localStorage, VAT 23%, 4 shipping, 4 payment UI | No change |
+| Formspree | 🔴 Placeholder `xpwzgryv` (line 370) | UNCHANGED — 43+ cycles |
+| Payment gateways | 🔴 UI only (PayU/P24/BLIK/PayPal) | No change |
+| Legal pages (8) | ✅ All verified present (faq 355L, faq-produkt, faq-skladniki, dostawa 203L, zwroty 227L, polityka-prywatnosci 264L, regulamin 270L, polityka-cookies 468L) | No change |
+| Trust elements | ✅ GMP, lab-tested, money-back, SSL, reviews, reCAPTCHA | No change |
+| Shipping (4 methods) | ✅ InPost Paczkomat/Kurier, DPD, Poczta Polska | No change |
+| VAT 23% | ✅ Configured | No change |
+| SEO + JSON-LD | ✅ Complete | No change |
+| Certificates page | ✅ Present | No change |
+| Reviews page | ✅ Present | No change |
+| Git status | ✅ Active — Power Cycle #141 completed (hydration calculator, LETNI10 badge, pharmacist badges) | New cycle completions |
+| Improvement queue | ✅ Active — items 644-656 pending | 3 new items (657-659) |
+
+### Verdict
+**No change for 43+ cycles. Site is fully built and functional client-side. Formspree placeholder `xpwzgryv` unchanged since initial build. Cart (424L), checkout (536L), product page (3310L), all 8 legal/trust pages verified present. 4 shipping methods and 4 payment UI options configured. VAT 23% active. Recent Power Cycles (#140-141) added pharmacist badges to seasonal pages, hydration calculator to index.html, and LETNI10 promo badge. CEO ACTION REQUIRED: activate Formspree at formspree.io (5-minute task) to enable real order processing.**
+
+### Cycle #115 Added to Queue (657-659)
+- IMP-657: Add Google reCAPTCHA v3 production key — Current test site key (`6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI`) works on localhost but may show warnings on production. CEO needs to register cognivia.eu at google.com/recaptcha, get production keys, replace in kasa.html and cognivia-cart.js. Estimated: 10 minutes (CEO action).
+- IMP-658: Create order confirmation email template in Polish for Formspree go-readiness — Pre-build clean HTML email template with order ID, items list, total (with VAT breakdown), shipping method + ETA, return policy summary, Cognivia contact. Store in website/email-templates/order-confirmation.html. When Formspree activates, template deploys instantly. Estimated: 1 hour.
+- IMP-659: Add "Popularne pytania przed zakupem" collapsible FAQ section to kasa.html checkout — Display 3-4 top pre-purchase questions (shipping time, return policy, payment security, dosage) as collapsible accordion directly on checkout page. Reduces hesitation at the conversion moment. Pulls from existing faq-produkt.html content. Small CSS/JS addition. Estimated: 45 minutes.
 

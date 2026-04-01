@@ -1706,3 +1706,45 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 642. **[NEW] Create automated email order notification template for Formspree go-live** — Pre-build Polish HTML email with order summary, shipping ETA, return instructions. Store in website/email-templates/. When Formspree activates, template is ready for instant deployment. Estimated: 1 hour.
 
 643. **[NEW] Implement "Ostatnio kupione" social proof notification toast on produkt.html** — Small bottom-left toast popup showing "Ktoś z Warszawy kupił CogniCit 12 min temu." Uses localStorage + random city/timer generation. FOMO effect. Disappears after 8 seconds. Estimated: 45 minutes.
+
+## Last Updated: 2026-04-01 (Power Cycle #140 — 15:29 UTC)
+
+### ✅ Power Cycle #140 — COMPLETED (2026-04-01 15:29 UTC)
+- ✅ **#653** — Added pharmacist endorsement badge to 3 seasonal landing pages
+  - lato.html: 👩‍⚕️ pill badge below buy badge in hero section
+  - sesja.html: same badge below delivery countdown in hero section
+  - matura.html: same badge below delivery countdown in hero section
+  - Design: light green tinted background (rgba), subtle 1.5px border, 20px pill radius, Inter font 11px, italic quote
+  - Medical-professional social proof at first viewport impression on seasonal conversion pages
+  - All 3 files validated: DOCTYPE ✓, </html> ✓, pharmacist badge confirmed
+- ✅ Browser-check: site live at gitc0indonor.github.io ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+
+### 🆕 Power Cycle #140 New Ideas (2026-04-01)
+644. **[NEW] Add "Jak nawodnić mózg?" blog post (#140 outline) as full article** — Publish window is NOW (April, pre-summer). Zero Polish content on brain-specific hydration. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours. PRIORITY.
+
+645. **[NEW] Add "Lato 2026" seasonal badge to index.html hero** — Green pill badge "☀️ LETNI10 — 10% zniżki na lato" below existing pharmacist badge. Creates seasonal urgency at first impression. Dismissible + localStorage. Estimated: 15 minutes.
+
+646. **[NEW] Create "Ranking suplementów na koncentrację 2026" mega SEO page (/ranking-koncentracja-2026)** — Ultimate authority page targeting "najlepszy suplement na koncentrację" (5K+ monthly). Full comparison of 8 supplements scored on 10 criteria. Interactive filter. FAQPage + Product aggregateRating JSON-LD. Estimated: 4 hours.
+
+### 🆕 Power Cycle #141 Additions (2026-04-01 16:10 UTC)
+
+~~653. **[DONE] Add pharmacist endorsement badge to 3 seasonal landing pages**~~ ✅ — Power Cycle #141. Added pill badge to lato.html (below buy badge), sesja.html (below delivery countdown), matura.html (below delivery countdown). Design: light green tinted background, italic quote, matching hero sections. All 3 files validated.
+
+~~638. **[DONE] Add hydration calculator to index.html**~~ ✅ — Power Cycle #141. Interactive widget: weight input (30-200kg) + activity level selector (4 levels). Calculates daily water needs for summer heat (+35% base from 33ml/kg formula). Result: liters/day display with science citation (Ganio et al. 2012). β-CD thermal stability positioning. Green gradient section matching site palette. Auto-calculates on page load. Positioned between caffeine calculator and ROI calculator sections.
+
+~~645. **[DONE] Add LETNI10 seasonal promo badge to index.html hero**~~ ✅ — Power Cycle #141. Green-tinted pill badge below pharmacist endorsement: "☀️ LETNI10 — 10% zniżki na lato · kod ważny do 31 lipca". Subtle pulse animation (letniPulse keyframes). Creates seasonal urgency at first viewport impression. Complements existing lato.html landing page and LETNI10 email capture popup.
+
+654. **[NEW] Create "Jak kofeina wpływa na suplementy? Kompletny przewodnik interakcji" blog post** — Write the outline from content_calendar #130. Target: "kofeina suplementy interakcje" (600+ monthly). ZERO quality Polish content on this topic. Featured snippet potential. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2 hours.
+
+655. **[NEW] Add "Lato 2026" seasonal promo countdown to ALL landing pages** — Extend LETNI10 badge from index.html to sesja.html, matura.html, porownanie.html, skladniki.html hero sections. Consistent seasonal urgency across all conversion points. Green pill badge with countdown to July 31. Estimated: 15 minutes.
+
+656. **[NEW] Create downloadable "Przewodnik suplementacji na lato" PDF lead magnet** — 3-page branded PDF: summer brain health tips, hydration checklist, CogniCit protocol, LETNI10 code. Email-gated download from lato.html. Captures leads from summer-aware visitors. Estimated: 2 hours.
+
+### 🆕 Power Cycle #142 Additions — Ecommerce Cron (2026-04-01 17:32 UTC)
+
+657. **[NEW] Add Google reCAPTCHA v3 production key** — Current test site key (`6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI`) works on localhost but may show warnings on production. CEO needs to register cognivia.eu at google.com/recaptcha, get production keys, replace in kasa.html and cognivia-cart.js. Estimated: 10 minutes (CEO action). BLOCKER for go-live.
+
+658. **[NEW] Create order confirmation email template in Polish for Formspree go-readiness** — Pre-build clean HTML email template with order ID, items list, total (with VAT breakdown), shipping method + ETA, return policy summary, Cognivia contact. Store in website/email-templates/order-confirmation.html. When Formspree activates, template deploys instantly. Removes friction from go-live moment. Estimated: 1 hour.
+
+659. **[NEW] Add "Popularne pytania przed zakupem" collapsible FAQ section to kasa.html checkout** — Display 3-4 top pre-purchase questions (shipping time, return policy, payment security, dosage) as collapsible accordion directly on checkout page. Reduces hesitation at the conversion moment. Pulls from existing faq-produkt.html content. Small CSS/JS addition, no new dependencies. Estimated: 45 minutes.
