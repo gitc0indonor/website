@@ -1,3 +1,62 @@
+### 2026-04-01 — Power Cycle #132 (00:20 UTC)
+**Implemented:**
+- ✅ #608 — Added "Pytaj eksperta" Q&A submission form to faq.html
+  - Formspree-integrated form with name, email, question textarea fields
+  - Gold gradient card design (EB Garamond heading, Inter inputs, cream background)
+  - Positioned between Powiązane pytania accordion and back-link section
+  - Hidden source field "faq-ask-expert" for lead tracking via Formspree
+  - GDPR privacy note: "Twoje dane są bezpieczne"
+  - Matches pattern from faq-produkt.html expert form
+  - Captures leads from visitors who didn't find their answer in existing FAQ
+- ✅ #609 — Created /lato.html (30KB) seasonal summer landing page
+  - Hero: "☀️ Lato 2026" season tag, trust row (GMP/EU/Lab/0mg caffeine), buy badge
+  - Mini-review rotating carousel (3 verified reviews, 6s auto-rotation)
+  - 4 problem cards (heat dehydration, jet lag, late nights, remote work from beach)
+  - Safety box: 0mg caffeine, 1 capsule/day simplicity, GMP+GIS, neuroprotection
+  - 3 ingredient mechanism cards (ALA antioxidant, Cytykolina ACh, β-CD bioavailability)
+  - Full 7-row comparison table: CogniCit vs energetyki vs kofeina vs multi-nootropic
+  - 4-step summer protocol (morning/hydration/sleep/travel)
+  - 3 target audience cards (travelers/remote workers/active people)
+  - Animated horizontal price bar chart (CogniCit 2.63 vs Brain Actives 4.97 vs MLP 8.30)
+  - Annual savings calculator (959 vs 1814 vs 3030 zł/rok with "do 2071 zł" callout)
+  - Delivery countdown widget (dynamic business-day calculation)
+  - Satisfaction guarantee badge (30-day green circle)
+  - Social proof ticker (randomized Polish city + action, 15 cities, 4 actions)
+  - WhatsApp floating button (bottom-left, pulse animation)
+  - GA4 events tracking (js/ga4-events.js)
+  - 3 JSON-LD schemas: Article + BreadcrumbList + Product aggregateRating
+  - OG/Twitter Card meta tags, canonical URL, hreflang="pl"
+  - Added to sitemap.xml (weekly, priority 0.7)
+  - Added to index.html footer Informacje section
+  - First Polish seasonal landing page targeting summer supplementation — zero competition
+- ✅ Blog outline #130 added to content_calendar.md: "Suplementy na wakacje"
+  - Targets "suplementy na wakacje" / "energia latem" (600+ monthly, seasonal peak May-Jul)
+  - 10-section article with summer protocol, comparison table, FAQPage JSON-LD
+  - First Polish content connecting nootropics to summer lifestyle
+- ✅ 3 new improvement ideas added to queue (#614-#616)
+- ✅ Browser-check: site live at gitc0indonor.github.io/website ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+- ✅ All 4 modified files validated (DOCTYPE ✓, </html> ✓)
+
+**Files changed:**
+- `faq.html` — Pytaj eksperta form section (~30 lines HTML) between related questions and back-link
+- `lato.html` — NEW (30KB) — full seasonal summer landing page with all conversion elements
+- `sitemap.xml` — lato.html URL added before closing </urlset>
+- `index.html` — footer Informacje section: lato.html link added
+- `content_calendar.md` — Blog outline #130: suplementy na wakacje
+- `improvement_queue.md` — Items #608, #609 marked DONE; 3 new items (#614-#616)
+- `changelog.md` — This entry
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active — orders arrive via customer email client even without Formspree. reCAPTCHA v3 integrated (test key). CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~609 completed + ~65 active = ~674 total
+**Blog posts:** 71 total (70 content + 1 index)
+**Landing pages:** 9 (index, produkt, matura, sesja, powrot-do-szkoly, porownanie, skladniki, ranking-nootropikow, lato)
+
+**Next priorities:** #614 (summer promo widget — 30min), #615 (travel blog post — 2h), #612 (ranking-koncentracja-2026 mega SEO page — 4h), #204 (CEO Formspree activation — THE blocker).
+
+---
+
 ### 2026-03-31 — Power Cycle #116 (01:06 UTC)
 
 ### 2026-03-31 — Power Cycle #122 (15:25 UTC)

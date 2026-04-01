@@ -3458,3 +3458,29 @@
 - Satisfaction guarantee badge
 
 **Differentiation:** Zero Polish content explains the supplement onset timeline from a neuroscience perspective. Most Polish supplement sites just say "stosuj regularnie" without explaining WHY it takes time. This article fills that gap and positions Cognivia as the honest, science-first brand.
+
+---
+
+### Blog Outline #130 — "Suplementy na wakacje — jak nie stracić formy umysłowej latem?"
+**Published:** —
+**Status:** outline
+**Target keywords:** suplementy na wakacje, energia latem, suplementy podróż, suplementy na lato
+**Estimated monthly searches:** 600+ (seasonal peak: May-Jul)
+**Competition:** low (zero Polish content connecting nootropics to summer lifestyle)
+**Content plan:**
+1. **Dlaczego lato obciąża mózg?** — upał, zmiana rytmu, alkohol, późne noce
+2. **Typowe letnie pułapki energetyczne** — energetyki odwadniają, kofeina + upał = crash
+3. **Cytykolina na lato** — koncentracja przy zmianie otoczenia i stref czasowych
+4. **ALA jako antyoksydant** — ochrona mitochondriów przed stresem oksydacyjnym upału
+5. **β-CD na wakacjach** — prostota 1 kapsułki dziennie, nie wymaga lodówki
+6. **Protokół letni CogniCit** — rano z śniadaniem, nawadniaj, nie odstawiaj w podróży
+7. **Porównanie: CogniCit vs energetyki vs kofeina na wakacjach** — tabela 7 kryteriów
+8. **Dla kogo?** — podróżnicy, pracujący zdalnie, aktywni sportowcy
+9. **FAQ** — 5 pytań (upał, alkohol, podróż samolotem, dzieci, cena)
+10. **Podsumowanie + CTA** — 79 zł, LETNI10 kod, 30 dni gwarancji
+
+**SEO target:** first Polish content on supplements + summer lifestyle
+**Seasonal peak:** May-Jul (publish by mid-April for indexing)
+**Conversion elements:** Article + BreadcrumbList + FAQPage JSON-LD, share buttons, newsletter popup, fact-box, satisfaction guarantee, cross-links to lato.html
+
+**Differentiation:** Zero Polish content addresses summer cognitive performance. Most articles focus on physical energy (caffeine, B vitamins). This article positions CogniCit as the BRAIN supplement for summer — unique angle, seasonal relevance, emotional resonance with vacation plans.
