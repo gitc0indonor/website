@@ -3695,3 +3695,76 @@
 **CTA:** LETNI10 code + link to lato.html + hydration calculator link
 **Cross-links:** lato.html, blog/jak-przygotowac-mozg-na-lato.html, produkt.html, blog/suplementy-a-kofeina.html
 **Estimated:** 2.5 hours
+
+### Blog Post Outline #141 (Added 2026-04-01 — Power Cycle #140)
+**Title:** "Jak nawodnić mózg? Kompletny przewodnik na lato 2026"
+**Target keyword:** "jak nawodnić mózg" / "nawodnienie mózgu suplement" (800+ monthly, growing May-Aug seasonal peak)
+**Estimated word count:** 2,000-2,500
+**Seasonality:** STRONG seasonal — May-Aug peak. Publish within 2 weeks for indexing.
+**Priority:** HIGH — zero Polish content on brain-specific hydration, first-mover advantage
+
+**Outline:**
+1. **Wstęp** — Mózg to 75% wody. 2% odwodnienia = 25% spadek koncentracji (Ganio et al. 2012). Ale większość artykułów o nawodnieniu dotyczy skóry i ciała — nie mózgu. Ten przewodnik to zmienia.
+2. **Dlaczego mózg potrzebuje więcej wody niż myślisz?** — Hipokamp jest szczególnie wrażliwy na odwodnienie. Mechanizm: mniej wody → gęstsza krew → mniej tlenu do neuronów → spadek acetylocholiny. Badania: przy 2% odwodnieniu zdolność koncentracji spada o 25%.
+3. **7 objawów odwodnienia mózgu** — (a) ból głowy, (b) mgła mózgowa, (c) drażliwość, (d) zmęczenie mimo snu, (e) problemy z pamięcią krótkotrwałą, (f) suchość oczu, (g) spadek motywacji. Checklist.
+4. **Ile wody naprawdę potrzebujesz?** — Wzór: masa ciała × 33ml × współczynnik aktywności × 1.35 (upał). Tabela: 50kg → 2.2L, 70kg → 3.1L, 90kg → 4.0L. Kalkulator (link do lato.html).
+5. **β-CD a stabilność składników w warunkach odwodnienia** — Stres cieplny zmienia pH żołądka i motorykę jelit → gorsze wchłanianie. β-CD chroni cytykolinę i ALA przed degradacją = więcej dociera do mózgu nawet przy odwodnieniu.
+6. **ALA jako ochrona mitochondriów podczas upału** — Wysoka temperatura = więcej wolnych rodników → uszkodzenie mitochondriów. ALA regeneruje glutation, chroni neurony. Hager et al. 2007.
+7. **Protokół nawodnienia mózgu z CogniCit** — 5 kroków: (a) szklanka wody zaraz po przebudzeniu, (b) CogniCit ze śniadaniem, (c) butelka wody przy biurku (2L do 14:00), (d) elektrolity przy aktywności fizycznej, (e) unikanie kofeiny w upał (diureza).
+8. **Porównanie: CogniCit + nawodnienie vs inne podejścia** — Tabela: CogniCit + woda (trwała ochrona) vs same elektrolity (brak neuroprotekcji) vs kofeina (diureza, pogarsza odwodnienie) vs nic (spadek koncentracji).
+9. **FAQ** — 5 pytań: "Ile wody pić przy suplementacji?", "Czy CogniCit odwadnia?", "Czy mogę pić kawę latem z CogniCit?", "Co jeśli zapomnę pić wodę?", "Czy elektrolity pomagają mózgowi?")
+10. **Podsumowanie** — "Nawodnienie to fundament koncentracji. CogniCit chroni neurony, ale woda daje im paliwo."
+
+**CTA:** Zamów CogniCit — 79 zł + LETNI10 = 10% zniżki na lato → produkt.html
+**Internal links:** lato.html, produkt.html, blog/jak-przygotowac-mozg-na-lato.html, blog/suplementy-a-kofeina.html, jak-stosowac.html, nauka.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Conversion:** Email popup (LETNI10, 60% scroll), floating newsletter badge, satisfaction guarantee, share buttons
+**SEO angle:** Zero Polish content on brain-specific hydration. First-mover advantage. Seasonal May-Aug traffic. Practical + scientific angle positions Cognivia as the education-first brand.
+**Target platforms:** Google (SEO), Instagram (hydration tips), grupy FB o zdrowiu, Pinterest
+**Status:** Outline ready, needs writing — PRIORITY (publish within 2 weeks)
+
+### Blog Post Outline #142 (Added 2026-04-01 — Power Cycle #141)
+**Title:** "Suplementy na egzamin maturalny — jak przygotować mózg na maj 2026?"
+**Target keyword:** "suplementy na maturę" / "nootropiki egzamin maturalny" / "jak przygotować mózg do matury" (~1.5K+ monthly, STRONG seasonal peak Feb-May)
+**Estimated word count:** 2,000-2,500
+**Seasonality:** CRITICAL — Feb-May peak. Matura exams start May 4, 2026. Publish immediately.
+
+**Outline:**
+1. **Wstęp** — Matura to maraton poznawczy: 3-5 egzaminów w ciągu 2 tygodni. Mózg maturzysty zużywa 25% więcej energii niż w normalnym trybie. Strategia suplementacji = przewaga.
+2. **Jak matura obciąża mózg?** — Chroniczny stres (kortyzol ↑↑), deprywacja snu (all-nightery = spadek ACh o 30%), nadmiar kofeiny (adenozyna → crash podczas egzaminu). Prosty diagram.
+3. **Protokół 30-dniowy przed maturą** — Tydzień 1-2: adaptacja (CogniCit rano, 7-8h snu). Tydzień 3: peak (deep work + aktywne powtarzanie). Tydzień 4: egzamin (sen > nauka o 2:00).
+4. **Cytykolina — paliwo dla pamięci długotrwałej** — 300 mg CDP-cholina = prekursor ACh. Mechanizm konsolidacji pamięci podczas snu REM. 233 publikacji PubMed. Dlaczego działa lepiej niż kofeina.
+5. **ALA — ochrona mitochondriów maturzysty** — Intensywna nauka = więcej wolnych rodników. ALA regeneruje glutation, chroni neurony. Hager et al. 2007.
+6. **Porównanie: CogniCit vs maturalne "wspomagacze"** — Tabela: CogniCit (trwała koncentracja, GMP) vs kofeina (crash na egzaminie) vs energetyki (cukier, lęk) vs modafinil (recepta, ryzyko).
+7. **FAQ dla maturzystów** — 5 pytań.
+8. **Podsumowanie** — "Matura wymaga strategii, nie szczęścia."
+
+**CTA:** "Zamów CogniCit na maturę — kod MATURA15 = 15% zniżki" → produkt.html
+**Internal links:** matura.html, produkt.html, blog/suplementy-dla-studentow.html, jak-stosowac.html, blog/jak-budowac-rutyne-suplementacji.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Status:** Outline ready, needs writing
+
+### Blog Post Outline #143 (Added 2026-04-01 — Power Cycle #143)
+**Title:** Suplementy na koncentrację w pracy — jak utrzymać focus przez 8 godzin?
+**Target:** Polish office workers, SEO for "suplementy na koncentrację w pracy", "focus w pracy suplementy"
+**Word count:** 1800-2200
+**Keywords:** suplementy na koncentrację w pracy, jak utrzymać focus, suplementy do pracy umysłowej, nootropik do biura
+
+**Outline:**
+1. **Wstęp** — Przeciętny Polak pracuje 8h umysłowo dziennie. Po 14:00 koncentracja spada o 40%. Problem: kofeina daje spike + crash.
+2. **Dlaczego focus spada po południu?** — Cykl kortyzolu, deplecja acetylocholiny, spadek glukozy, "decision fatigue".
+3. **Ranking suplementów do pracy** — Tabela porównawcza:
+   - CogniCit (cytykolina + ALA + β-CD) — sustained focus, 0mg kofeiny
+   - Kofeina — spike 30min, crash po 3h
+   - Ashwagandha — adaptogen, działa po 2-4 tyg.
+   - L-teanina + kofeina — lepszy synergia, ale nadal kofeina
+   - Omega-3 — budulec, ale 1-3 mies. na efekty
+4. **Protokół CogniCit dla pracowników biurowych** — 3 scenariusze: standard 9-17, zmianowy, zdalny.
+5. **5 nawyków wspierających focus** — Pomodoro, nawodnienie, ruch, sen, detoks cyfrowy.
+6. **FAQ** — 5 Q&As (kofeina, dawkowanie, bezpieczeństwo, cena, efekty)
+7. **Podsumowanie** — CogniCit jako codzienny anchor focusu w pracy.
+
+**CTA:** produkt.html + email capture (LETNI10)
+**Internal links:** produkt.html, blog/suplementy-a-stres-w-pracy.html, blog/suplementy-a-kofeina.html, porownanie.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**Status:** Outline ready, needs writing

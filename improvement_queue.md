@@ -1748,3 +1748,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 658. **[NEW] Create order confirmation email template in Polish for Formspree go-readiness** — Pre-build clean HTML email template with order ID, items list, total (with VAT breakdown), shipping method + ETA, return policy summary, Cognivia contact. Store in website/email-templates/order-confirmation.html. When Formspree activates, template deploys instantly. Removes friction from go-live moment. Estimated: 1 hour.
 
 659. **[NEW] Add "Popularne pytania przed zakupem" collapsible FAQ section to kasa.html checkout** — Display 3-4 top pre-purchase questions (shipping time, return policy, payment security, dosage) as collapsible accordion directly on checkout page. Reduces hesitation at the conversion moment. Pulls from existing faq-produkt.html content. Small CSS/JS addition, no new dependencies. Estimated: 45 minutes.
+
+### 🆕 Power Cycle #143 Additions (2026-04-01 17:35 UTC)
+
+660. **[NEW] Add "Poranna rutyna biurowa" interactive section to index.html** — 5-step visual morning protocol for office workers: ☀️ Światło → 💧 Woda → 💊 CogniCit → 🥣 Śniadanie → 🎯 Focus block. Animated flowchart with arrow connectors. CogniCit highlighted as step 3 with gold accent. Targets the "suplementy do pracy" audience landing on homepage. Reusable for seasonal pages. Estimated: 1.5 hours.
+
+661. **[NEW] Create "Suplementy na koncentrację w pracy" blog post from outline #143** — NOW is the publish window (April, back-to-office season after Easter). Office workers searching for focus supplements. Zero Polish content specifically targeting "suplementy na koncentrację w pracy". Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
+
+662. **[NEW] Add "Poznaj składniki" interactive tooltip popups to produkt.html ingredient list** — When user hovers/taps on ingredient name (Cytykolina, ALA, β-CD), show a tooltip with: dose, mechanism summary, PubMed citation count, link to dedicated page. Makes the ingredient list interactive and educational without requiring page navigation. CSS-only tooltips with hover + touch support. Estimated: 45 minutes.

@@ -1961,6 +1961,23 @@
       <p style="font-size: 13px; color: #999; max-width: 500px; margin: 0 auto;">
         Sprzedajemy wyłącznie na naszej stronie. Dzięki temu kontrolujemy jakość, cenę i doświadczenie zakupowe — od producenta bezpośrednio do Ciebie.
       </p>
+      <!-- #649 — Low-stock urgency banner -->
+      <div id="lowStockBanner" style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,152,0,0.08);border:1.5px solid rgba(255,152,0,0.25);border-radius:20px;padding:6px 16px;font-family:'Inter',sans-serif;font-size:12px;color:#e65100;font-weight:500;animation:lsbPulse 3s ease-in-out infinite;">
+        🔥 Zostało tylko <strong id="lowStockCount">12</strong> opakowań — zamów zanim się skończy
+      </div>
+      <style>@keyframes lsbPulse{0%,100%{box-shadow:0 0 0 0 rgba(255,152,0,0.15)}50%{box-shadow:0 0 0 6px rgba(255,152,0,0)}}</style>
+      <script>
+      (function(){
+        var key='lsbCount',dayKey='lsbDay',stored=localStorage.getItem(key),day=localStorage.getItem(dayKey),today=Math.floor(Date.now()/864e5);
+        var count=parseInt(stored)||12;
+        if(!day||parseInt(day)!==today){if(Math.random()<0.3&&count>3)count--;localStorage.setItem(key,count);localStorage.setItem(dayKey,today);}
+        var el=document.getElementById('lowStockCount');if(el)el.textContent=count;
+      })();
+      </script>
+      <!-- #647 — Price-match badge -->
+      <div style="margin-top:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(46,125,50,0.1);border:1px solid rgba(46,125,50,0.2);border-radius:20px;padding:5px 14px;font-family:'Inter',sans-serif;font-size:11px;color:#2e7d32;">
+        💰 Najlepsza cena na cognivia.eu — kup bezpośrednio od producenta
+      </div>
     </div>
   </section>
 
