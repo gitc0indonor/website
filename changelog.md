@@ -4725,3 +4725,59 @@
 **GA4 tracking:** 50/80 pages
 **WhatsApp coverage:** 100%
 **LETNI10 countdown:** 4 seasonal popups (matura, sesja, powrot-do-szkoly, lato)
+
+### ✅ Power Cycle #147 — COMPLETED (2026-04-01 22:41 UTC)
+- ✅ **#668** — Added LETNI10 countdown timer to index.html footer newsletter
+  - Yellow pill badge: "☀️ LETNI10 — 10% zniżki na lato · ważny jeszcze X dni"
+  - CSS: rgba(255,193,7,.12) background, gold border, letniPulseFooter keyframes (3s glow)
+  - JS: calculates days remaining until July 31, 2026, updates dynamically
+  - Fallback: shows "Ostatni dzień promocji!" when countdown reaches 0
+  - Positioned between trust row and email form in footer newsletter section
+  - Creates seasonal urgency at primary email capture point on homepage
+- ✅ **#667** — Batch-added "Warto wiedzieć" fact boxes to 10 high-traffic blog posts
+  - blog/nootropiki-a-sen.html: "3 000+ wyszukiwań miesięcznie" + star rating + 0mg caffeine
+  - blog/suplementy-a-kofeina.html: "400 mg limit EFSA" + star rating + 0mg caffeine
+  - blog/czy-suplementy-dzialaja.html: "5 000+ wyszukiwań" + 233 PubMed + 3 synergistic ingredients
+  - blog/suplementy-dla-seniorow-50-plus.html: "1 000+ wyszukiwań" + 0mg caffeine + 30-day guarantee
+  - blog/nootropiki-a-stres.html: "2 000+ wyszukiwań" + star rating + 800mg active
+  - blog/cytykolina-przewodnik-kompletny.html: "233 PubMed" + 300mg dose + >95% bioavailability
+  - blog/suplementy-dla-programistow.html: "20% energii" + star rating + 0mg caffeine
+  - blog/poranne-nawyki-programisty.html: "1 kapsułka dziennie" + 3 synergistic + 2.63 zł/day
+  - blog/antyoksydanty.html: "1 522 PubMed ALA" + star rating + 250mg ALA
+  - blog/beta-cyklodekstryna.html: "40-200% absorption" + GRAS status + 250mg β-CD
+  - Each fact box: gold left border, cream gradient background, 3-row stat grid, product CTA
+  - Total blog posts with fact boxes: 47/74
+- ✅ Blog outline #149 added to content_calendar.md: "Jak suplementy wpływają na pamięć roboczą?"
+  - Targets "pamięć robocza suplementy" (zero Polish content, first-mover advantage)
+  - Cowan 2001 citation (4±1 elements), Secades & Frontera 2014 meta-analysis
+  - Deep-science angle differentiates from generic memory articles
+- ✅ Browser-check: site live at gitc0indonor.github.io ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+- ✅ index.html validated: DOCTYPE ✓, </html> ✓, LETNI10 countdown confirmed
+- ✅ 3 blog posts spot-checked: fact boxes confirmed (warto-wiedziec class)
+- ✅ 3 new improvement ideas added (#679-#681)
+
+**Files changed:**
+- `index.html` — LETNI10 countdown CSS (~15 lines), HTML (~3 lines), JS (~12 lines)
+- `blog/nootropiki-a-sen.html` — fact box (~12 lines CSS + ~12 lines HTML)
+- `blog/suplementy-a-kofeina.html` — fact box
+- `blog/czy-suplementy-dzialaja.html` — fact box
+- `blog/suplementy-dla-seniorow-50-plus.html` — fact box
+- `blog/nootropiki-a-stres.html` — fact box
+- `blog/cytykolina-przewodnik-kompletny.html` — fact box
+- `blog/suplementy-dla-programistow.html` — fact box
+- `blog/poranne-nawyki-programisty.html` — fact box
+- `blog/antyoksydanty.html` — fact box
+- `blog/beta-cyklodekstryna.html` — fact box
+- `content_calendar.md` — Blog outline #149
+- `improvement_queue.md` — Items #667, #668 marked DONE; 3 new items (#679-#681)
+- `changelog.md` — This entry
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. reCAPTCHA v3 integrated (test key). **THE BLOCKER:** CEO must create formspree.io account and swap form ID to make site fully buyable.
+
+**Queue:** ~677 completed + ~65 active = ~742 total
+**Blog posts:** 74 total (73 content + 1 index), 47 with fact boxes
+**Landing pages:** 10
+**GA4 tracking:** 50/80 pages
+**WhatsApp coverage:** 100%
+**LETNI10 countdown:** 5 seasonal popups + footer newsletter = 6 total

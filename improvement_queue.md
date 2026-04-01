@@ -1434,7 +1434,19 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 616. **[NEW] Add seasonal "LETNI10" discount code tracking to lato.html** — Hidden Formspree field with source=lato-letni10. Track how many signups/orders originate from the summer landing page. Measure seasonal campaign ROI. Update merchant-feed.xml with seasonal pricing if applicable. Estimated: 15 minutes.
 
-## Last Updated: 2026-04-01 (Power Cycle #132 — 00:20 UTC)
+### 🆕 Power Cycle #147 Additions (2026-04-01 22:41 UTC)
+
+~~667. **[DONE] Add "Warto wiedzieć" fact boxes to 10 high-traffic blog posts**~~ ✅ — Power Cycle #147. Added fact boxes to: blog/nootropiki-a-sen.html, blog/suplementy-a-kofeina.html, blog/czy-suplementy-dzialaja.html, blog/suplementy-dla-seniorow-50-plus.html, blog/nootropiki-a-stres.html, blog/cytykolina-przewodnik-kompletny.html, blog/suplementy-dla-programistow.html, blog/poranne-nawyki-programisty.html, blog/antyoksydanty.html, blog/beta-cyklodekstryna.html. Each has 3 stat cards with relevant data, gold accent, product CTA link. Total blog posts with fact boxes: 47/74.
+
+~~668. **[DONE] Add LETNI10 countdown timer to index.html footer newsletter**~~ ✅ — Power Cycle #147. Added yellow pill badge with LETNI10 code + days remaining until July 31, 2026. CSS animation (letniPulseFooter). JS calculates dynamic days remaining. Creates seasonal urgency at primary email capture point.
+
+679. **[NEW] Batch-add LETNI10 countdown to ALL email popups on blog posts** — Extend the LETNI10 countdown from seasonal pages to all 74 blog post email capture popups. Each popup should show "LETNI10 ważny jeszcze X dni" with days remaining until July 31. Creates seasonal urgency at every email capture moment. Batch injection script. Estimated: 15 minutes.
+
+680. **[NEW] Create "Jak suplementy wpływają na pamięć roboczą?" blog post from outline #149** — Zero Polish content on working memory + supplements. Deep-science angle differentiates from generic articles. Cowan 2001 citation = authority. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 2.5 hours.
+
+681. **[NEW] Add animated "CogniCit w liczbach" counter cards to /porownanie.html** — produkt.html has animated counters (800mg, 0mg caffeine, 1 capsule, 30-day guarantee). Extend same pattern to comparison page. Consistent science credibility at comparison decision point. Estimated: 20 minutes.
+
+## Last Updated: 2026-04-01 (Power Cycle #147 — 22:41 UTC)
 
 ### ✅ Power Cycle #132 — COMPLETED (2026-04-01 00:20 UTC)
 - ✅ **#608** — Added "Pytaj eksperta" Q&A submission form to faq.html

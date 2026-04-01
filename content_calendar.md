@@ -3854,3 +3854,28 @@
 **Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/nootropiki-a-sen.html, faq-produkt.html, jak-stosowac.html
 **Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
 **Status:** Outline ready, needs writing
+
+### Blog Post Outline #149 (Added 2026-04-01 — Power Cycle #147)
+**Title:** "Jak suplementy wpływają na pamięć roboczą? Nauka o slocie 4±1"
+**Target keyword:** "pamięć robocza suplementy" / "working memory suplementy" / "jak poprawić pamięć krótkotrwałą" (~500+ monthly, zero Polish content on working memory + supplements)
+**Estimated word count:** 2,000-2,500
+**Seasonality:** Evergreen, slight peak Sep (back to work/school) and Jan (resolutions)
+
+**Outline:**
+1. **Wstęp** — Pamięć robocza to "biurko mózgowe" — ile rzeczy możesz trzymać w głowie jednocześnie. Cowan (2001): to nie 7±2 jak się powszechnie uważa, ale 4±1. Czy suplementacja może poszerzyć to biurko?
+2. **Czym jest pamięć robocza?** — Prosty model: "mentalne biurko" z 4 slotami. Każdy slot = jeden element (liczba, słowo, obraz). Przy przepełnieniu: zapominanie, błędy, frustracja. Praca umysłowa = ciągłe zarządzanie tymi slotami.
+3. **Co wypełnia sloty pamięci roboczej?** — Context switching (każda zmiana zadania zajmuje slot), stres (kortyzol "zajmuje" sloty), niedobór snu (gorsza konsolidacja = mniej wolnych slotów rano), wielozadaniowości (mit — mózg nie robi 2 rzeczy naraz).
+4. **Cytykolina a pojemność pamięci roboczej** — Mechanizm: acetylocholina moduluje transmisję w korze przedczołowej → więcej ACh = lepsza utrzymanie wielu elementów jednocześnie. Meta-analiza Secades & Frontera 2014: cytykolina poprawiała wyniki testów pamięci roboczej u osób 50+. Dawkowanie: 300 mg w CogniCit = dawka z badań.
+5. **ALA — ochrona mitochondriów pamięci roboczej** — Utrzymywanie 4 elementów jednocześnie = duży koszt energetyczny dla neuronów. ALA regeneruje glutation → mitochondria mają więcej paliwa → dłuższy czas utrzymania focusu. Hager et al. 2007.
+6. **β-CD — dlaczego wchłanianie ma znaczenie dla pamięci roboczej** — Nieregularne posiłki, stres, zmęczenie = gorsze wchłanianie składników. β-CD chroni cytykolinę i ALA → więcej dociera do kory przedczołowej.
+7. **5 ćwiczeń na pamięć roboczą + CogniCit** — (a) Dual N-back (aplikacja), (b) Chunking (grupowanie informacji), (c) Mind mapping (wizualizacja), (d) Czytanie ze zrozumieniem (aktywne), (e) CogniCit jako biochemiczne wsparcie. Tabela: ćwiczenie / czas / efekt / synergia z CogniCit.
+8. **Porównanie: CogniCit vs inne podejścia do pamięci roboczej** — Tabela: CogniCit (acetylocholina = większa pojemność) vs kofeina (czujność ≠ pojemność) vs bacopa (wolne działanie 4-6 tyg.) vs ginkgo (kontrowersyjne wyniki). CogniCit wygrywa na: mechanizm, dawka, synergia, szybkość działania.
+9. **Dla kogo jest ten artykuł?** — Studenci (egzaminy = max obciążenie WM), programiści (debugging = wiele zmiennych w głowie), analitycy (dane = chunking), lekarze (wywiad + diagnoza = parallel processing).
+10. **Podsumowanie** — "Twoja pamięć robocza ma 4 sloty. CogniCit pomaga lepiej zarządzać każdym z nich."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/jak-suplementy-wplywaja-na-pamiec-robocza.html (already published), blog/cytykolina-przewodnik-kompletny.html, nauka.html, sesja.html, matura.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czym jest pamięć robocza?", "Czy suplementy poprawiają pamięć roboczą?", "Ile slotów ma pamięć robocza?", "Czy CogniCit pomaga przy nauce?", "Kiedy zobaczę efekty?")
+**SEO angle:** ZERO Polish content on working memory + supplements. Deep-science angle differentiates from generic "popraw pamięć" articles. Cowan 2001 citation = authority. Cross-promote with existing WM blog post (#542).
+**Target platforms:** Google (SEO), LinkedIn (knowledge workers), grupy FB o nauce/neuroscience
+**Status:** Outline ready, needs writing

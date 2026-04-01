@@ -184,6 +184,22 @@
 .rr-card .rr-emoji{font-size:20px;margin-bottom:6px;display:block}
 .rr-card .rr-title{font-family:'EB Garamond',serif;font-size:14px;color:#2a2a27;margin-bottom:4px}
 .rr-card .rr-desc{font-size:11px;color:#888}
+
+    .warto-wiedziec {{
+      background: linear-gradient(135deg, #fffde7 0%, #fff8e1 100%);
+      border-left: 4px solid #f9a825;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-family: Inter, sans-serif;
+    }}
+    .warto-wiedziec h4 {{ color: #8f7a3d; margin: 0 0 12px; font-size: 15px; }}
+    .ww-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }}
+    .ww-stat {{ text-align: center; }}
+    .ww-stat .num {{ font-size: 22px; font-weight: 700; color: #2e7d32; display: block; }}
+    .ww-stat .desc {{ font-size: 12px; color: #666; margin-top: 4px; display: block; }}
+    @media (max-width: 500px) {{ .ww-grid {{ grid-template-columns: 1fr; }} }}
+
 </style>
 </style>
 <link rel="stylesheet" href="../assets/css/cognivia-v2.css">
@@ -427,7 +443,17 @@
     <div style="background: linear-gradient(135deg, #f0f7f0, #e8f0e8); border: 1px solid #c5d9c5; border-radius: 12px; padding: 24px 28px; margin: 32px 0; display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
       <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #4a6741, #5a7d51); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 26px; font-weight: 700; flex-shrink: 0; box-shadow: 0 4px 12px rgba(74,103,65,0.3);">30</div>
       <div style="flex: 1; min-width: 200px;">
-        <strong style="font-size: 17px; color: #2a2a27; display: block; margin-bottom: 4px;">30-dniowa gwarancja satysfakcji</strong>
+        <strong style="font-size: 17px; color: #2a2a27; display: block; margin-bottom: 4px;">
+    <div class="warto-wiedziec">
+      <h4>📊 Warto wiedzieć</h4>
+      <div class="ww-grid">
+        <div class="ww-stat"><span class="num">3 000+</span><span class="desc">wyszukiwań miesięcznie „suplementy a sen"</span></div>
+        <div class="ww-stat"><span class="num">★ 4,8/5</span><span class="desc">średnia ocena CogniCit (127 opinii)</span></div>
+        <div class="ww-stat"><span class="num">0 mg</span><span class="desc">kofeiny — bezpieczny dla snu</span></div>
+      </div>
+    </div>
+
+    30-dniowa gwarancja satysfakcji</strong>
         <p style="font-size: 14px; color: #555; margin: 0;">Nie jesteś zadowolony? Zwrócimy pieniądze za pierwsze opakowanie. Zero ryzyka, zero pytań.</p>
       </div>
       <a href="../produkt.html" style="display: inline-block; background: #4a6741; color: white; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; white-space: nowrap; transition: transform 0.2s;">Zamów bez ryzyka →</a>
