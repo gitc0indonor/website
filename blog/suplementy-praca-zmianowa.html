@@ -159,7 +159,18 @@
 .rr-card .rr-emoji{font-size:20px;margin-bottom:6px;display:block}
 .rr-card .rr-title{font-family:'EB Garamond',serif;font-size:14px;color:#2a2a27;margin-bottom:4px}
 .rr-card .rr-desc{font-size:11px;color:#888}
-</style>
+/* Newsletter floating badge */
+.nl-badge{position:fixed;bottom:24px;left:24px;width:50px;height:50px;background:#1a6b3c;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;cursor:pointer;z-index:996;box-shadow:0 4px 16px rgba(26,107,60,.3);animation:nlPulse 2s ease-in-out infinite}
+@keyframes nlPulse{0%,100%{box-shadow:0 4px 16px rgba(26,107,60,.3)}50%{box-shadow:0 4px 24px rgba(26,107,60,.5)}}
+@media(min-width:769px){.nl-badge{display:none}}
+.blog-email-popup{position:fixed;bottom:-300px;right:24px;width:340px;background:#fff;border-radius:16px 16px 0 0;box-shadow:0 -4px 30px rgba(0,0,0,.15);padding:1.5rem;z-index:997;transition:bottom .5s cubic-bezier(0.4,0,0.2,1)}
+.blog-email-popup.visible{bottom:0}
+.blog-email-popup h4{font-size:1.1rem;margin-bottom:.5rem}
+.blog-email-popup p{font-size:.85rem;color:#666;margin-bottom:1rem}
+.blog-email-popup input[type="email"]{width:100%;padding:10px 14px;border:2px solid #e8e0d0;border-radius:8px;font-size:.9rem;margin-bottom:.75rem}
+.blog-email-popup button[type="submit"]{width:100%;padding:12px;background:#1a6b3c;color:#fff;border:none;border-radius:8px;font-weight:600;font-size:.9rem;cursor:pointer}
+.blog-popup-close{position:absolute;top:8px;right:12px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999}
+@media(max-width:768px){.blog-email-popup{width:calc(100% - 32px);right:16px}}
 </style>
 </head>
 <body>
@@ -378,5 +389,35 @@ var titles={'cytykolina-przewodnik-kompletny':'🧠 Cytykolina — przewodnik','
 try{var read=JSON.parse(localStorage.getItem('rr_articles')||'[]');read=read.filter(function(s){return s!==slug});read.unshift(slug);if(read.length>5)read=read.slice(0,5);localStorage.setItem('rr_articles',JSON.stringify(read));var container=document.getElementById('recentlyRead');if(!container||read.length<2)return;var shown=0;var html='';for(var i=0;i<read.length&&shown<3;i++){if(read[i]===slug||!titles[read[i]])continue;html+='<a href="/blog/'+read[i]+'.html" class="rr-card"><span class="rr-emoji">'+titles[read[i]].split(' ')[0]+'</span><span class="rr-title">'+titles[read[i]].substring(titles[read[i]].indexOf(' ')+1)+'</span><span class="rr-desc">Ostatnio czytane</span></a>';shown++;}if(shown>0){container.innerHTML='<div class="recently-read"><h3>📖 Ostatnio czytane artykuły</h3><div class="rr-grid">'+html+'</div></div>';container.style.display='block';}}catch(e){}
 })();
 </script>
+
+<!-- Newsletter floating badge -->
+<div class="nl-badge" onclick="document.getElementById('blogEmailPopup').classList.add('visible')" title="Zapisz się — 15% zniżki">📬</div>
+<!-- Email Popup -->
+<div class="blog-email-popup" id="blogEmailPopup">
+  <button class="blog-popup-close" onclick="document.getElementById('blogEmailPopup').classList.remove('visible');localStorage.setItem('zmianaBlogPopup','1')">×</button>
+  <h4>🌙 Suplementy na zmiany — odbierz 15% zniżki!</h4>
+  <p>Zapisz się i otrzymaj kod <strong>COGNIVIA15</strong> na 15% zniżki na pierwsze zamówienie</p>
+  <form action="https://formspree.io/f/xpwzgryv" method="POST">
+    <input type="hidden" name="source" value="blog-praca-zmianowa-popup">
+    <input type="email" name="email" placeholder="Twój email..." required>
+    <button type="submit">Odbierz zniżkę →</button>
+  </form>
+  <p style="font-size:.75rem;color:#999;margin-top:.5rem">Twoje dane są bezpieczne. <a href="../polityka-prywatnosci.html" style="color:#999">Polityka prywatności</a></p>
+</div>
+<script>
+(function(){
+  if(localStorage.getItem('zmianaBlogPopup'))return;
+  var shown=false;
+  window.addEventListener('scroll',function(){
+    if(shown)return;
+    if(window.scrollY/(document.body.scrollHeight-window.innerHeight)>0.6){
+      document.getElementById('blogEmailPopup').classList.add('visible');
+      shown=true;
+    }
+  });
+  setTimeout(function(){if(!shown){document.getElementById('blogEmailPopup').classList.add('visible');shown=true;}},35000);
+})();
+</script>
+
 </body>
 </html>
