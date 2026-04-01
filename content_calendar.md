@@ -3811,3 +3811,29 @@
 **SEO angle:** Zero Polish content on supplements + creativity. First-mover advantage. Target: designers, writers, developers, musicians.
 **Target platforms:** Google (SEO), LinkedIn (creative professionals), grupy FB o designie/pisaniu
 **Status:** Outline ready, needs writing
+
+### Blog Post Outline #146 — Power Cycle #146 (2026-04-01 20:39 UTC)
+**Title:** "Suplementy a ekrany — jak chronić mózg przed cyfrowym zmęczeniem w 2026?"
+**Target keyword:** "zmęczenie ekranowe suplementy" / "suplementy na zmęczenie oczu" / "niebieskie światło mózg suplementacja" (~600+ monthly, growing trend as screen time increases)
+**Estimated word count:** 2,000-2,500
+**Seasonality:** Evergreen, peak Sep (back to work/school) and Jan (digital detox resolutions)
+**Priority:** MEDIUM — growing topic, zero Polish content connecting nootropics to screen fatigue
+
+**Outline:**
+1. **Wstęp** — Przeciętny Polak spędza 7-9h dziennie przed ekranem. Mózg zużywa 20% energii ciała przy 2% masy — ekrany to maraton neuronalny.
+2. **Jak ekrany wpływają na mózg?** — Niebieskie światło → supresja melatoniny → gorszy sen → spadek acetylocholiny następnego dnia. Continuous partial attention → spadek zdolności głębokiej pracy. Prosty diagram: ekran → oczy → mózg → zmęczenie.
+3. **Cyfrowe zmęczenie oczu (CVS/digital eye strain)** — Objawy: suchość, ból głowy, niewyraźne widzenie. Mechanizm: zmniejszona częstotliwość mrugania (z 15/min do 5/min przy ekranie), akomodacja na stałą odległość.
+4. **Acetylocholina a focus przed ekranem** — Context switching co 3 min (Gloria Mark, UC Irvine) → attention residue → spadek acetylocholiny. Cytykolina 300 mg = prekursor ACh = zasoby do utrzymania focusu mimo ciągłego przełączania.
+5. **ALA — ochrona neuronów przed niebieskim światłem** — Długotrwała ekspozycja na ekrany generuje wolne rodniki (fotooksydacja). ALA regeneruje glutation, chroni mitochondria. Hager et al. 2007.
+6. **β-CD — stabilne wchłanianie w trybie ekranowym** — Siedzący tryb + przekąski przy biurku = nieregularne posiłki → gorsze wchłanianie. β-CD chroni składniki aktywne.
+7. **Protokół "cyfrowa ochrona" z CogniCit** — Rano: CogniCit → 20-20-20 rule (co 20 min patrz 20 stóp w dal przez 20 sekund) → filtr niebieskiego światła wieczorem → 2h bez ekranu przed snem.
+8. **Porównanie: CogniCit vs inne rozwiązania** — Tabela: CogniCit (neuroprotekcja + focus) vs okulary z filtrem (tylko oczy) vs kofeina (maskuje zmęczenie) vs suplementy na oczy (luteina, ale brak neuroprotekcji).
+9. **Dla kogo jest ten artykuł?** — Programiści, graficy, analitycy, nauczyciele, osoby pracujące zdalne, studenci. Każdy, kto "żyje na ekranach" 6h+ dziennie.
+10. **Podsumowanie** — "Ekrany nie znikną. Ale możesz chronić mózg, który z nich korzysta. CogniCit = neuroprotekcja na co dzień."
+
+**CTA:** Zamów CogniCit — 79 zł, 30-dniowa gwarancja → produkt.html
+**Internal links:** produkt.html, blog/suplementy-dla-programistow.html, blog/suplementy-praca-zdalna.html, blog/chroniczne-zmeczenie-umyslowe.html, jak-stosowac.html, nauka.html, lato.html
+**Schema:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As: "Czy ekrany niszczą mózg?", "Jakie suplementy na zmęczenie oczu?", "Czy CogniCit pomaga przy pracy przy komputerze?", "Czy niebieskie światło uszkadza neurony?", "Ile godzin dziennie przy ekranie jest bezpiecznych?")
+**SEO angle:** Zero Polish content connecting nootropics to screen fatigue specifically. Growing trend as screen time increases post-pandemic. Positions CogniCit as the daily neuroprotection for screen workers. Practical protocol format = high engagement.
+**Target platforms:** Google (SEO), LinkedIn (remote workers), Wykop (tech community), grupy FB o zdrowiu oczu
+**Status:** Outline ready, needs writing

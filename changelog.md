@@ -4642,3 +4642,42 @@
 **GA4 tracking:** 11/80 pages (needs CEO measurement ID)
 
 **Next priorities:** #667 (fact boxes to 10 more posts — 30min), #668 (LETNI10 countdown — 20min), #669 (koncentrację mega blog — 4h), #204 (CEO Formspree — THE BLOCKER).
+
+### ✅ Power Cycle #146 — COMPLETED (2026-04-01 20:39 UTC)
+- ✅ **#665** — Batch-added ga4-events.js to 38 pages missing it
+  - All root-level .html files now load js/ga4-events.js with defer attribute
+  - Total pages with GA4 tracking: 50 (up from 12)
+  - Enables full ecommerce funnel tracking (view_item, add_to_cart, begin_checkout, purchase) when CEO adds GA4 measurement ID
+  - Pages include: all content pages, legal pages, ingredient pages, certificate pages, contact, about, shipping, returns, cookie policy, etc.
+- ✅ **#655** — Added LETNI10 seasonal promo badge to 6 high-traffic pages
+  - faq-produkt.html: Green pill badge with pulse animation, after hero section
+  - faq.html: Same badge after first </section>
+  - opinie.html: Same badge after hero section
+  - certyfikaty.html: Same badge after hero section
+  - kontakt.html: Same badge after hero section
+  - dziekuje-za-zapis.html: Same badge after hero section
+  - Design: "☀️ LETNI10 — 10% zniżki na lato · ważny do 31 lipca"
+  - CSS animation: letniPulse (box-shadow glow, 3s ease-in-out)
+  - Total pages with LETNI10 badge: 16 (up from 10)
+- ✅ Blog outline #146 added to content_calendar.md: "Suplementy a ekrany"
+- ✅ 3 new improvement ideas added to queue (#670-#672)
+- ✅ Browser-check: site live at gitc0indonor.github.io ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+- ✅ All 6 modified files validated: DOCTYPE ✓, </html> ✓, LETNI10 badge ✓, ga4-events.js ✓
+
+**Files changed:**
+- 38 .html files — ga4-events.js script tag added before </body>
+- faq-produkt.html, faq.html, opinie.html, certyfikaty.html, kontakt.html, dziekuje-za-zapis.html — LETNI10 badge CSS+HTML after hero
+- content_calendar.md — Blog outline #146
+- improvement_queue.md — 3 new items (#670-#672)
+- changelog.md — This entry
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. reCAPTCHA v3 integrated (test key). **THE BLOCKER:** CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~669 completed + ~68 active = ~737 total
+**Blog posts:** 74 total (73 content + 1 index)
+**GA4 tracking:** 50/80 pages (needs CEO measurement ID)
+**LETNI10 badge:** 16/80 pages (all high-traffic conversion pages covered)
+**WhatsApp coverage:** 100%
+
+**Next priorities:** #664 (neuroprotection blog — 2.5h), #671 (screens blog — 2.5h), #668 (LETNI10 countdown — 20min), #204 (CEO Formspree — THE BLOCKER).

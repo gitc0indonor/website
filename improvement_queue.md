@@ -1774,3 +1774,8 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 668. **[NEW] Add LETNI10 countdown timer to email popup on index.html footer newsletter** — Show "LETNI10 ważny jeszcze X dni" countdown below the existing email form. Creates urgency at the primary email capture point. Dismissible + localStorage. Estimated: 20 minutes.
 
 669. **[NEW] Create "Jak suplementy wpływają na koncentrację? Kompletny przewodnik 2026" blog post from outline #38** — The highest-impact blog post in the entire content calendar. "suplementy na koncentrację" = 8K+ monthly searches. Designed to outrank all Polish affiliate sites. 3000+ words, 5 schemas. Estimated: 4 hours.
+
+### 🆕 Power Cycle #146 New Ideas (2026-04-01 20:39 UTC)
+670. **[NEW] Add "Wakacyjna promocja" bundle section to lato.html** — 3-column bundle grid (1 box 79 zł / 2 boxes 142 zł with LETNI10 / 3 boxes 213 zł with extra gift). Summer-themed design with beach/travel emojis. Increases AOV during seasonal traffic spike. Estimated: 1 hour.
+671. **[NEW] Create "Suplementy a ekrany" blog post from outline #146** — Growing topic as screen time increases post-pandemic. Zero Polish content on nootropics + digital eye strain. Article + BreadcrumbList + FAQPage JSON-LD. Publish window: April (evergreen). Estimated: 2.5 hours.
+672. **[NEW] Add "Ile zaoszczędzisz z LETNI10?" savings calculator popup to index.html** — When LETNI10 badge is clicked, show modal: "Z LETNI10 oszczędzasz na 3 opakowaniach: 213 zł → 191.70 zł = 21.30 zł w kieszeni." Interactive calculator drives urgency for summer promo code usage. Dismissible, localStorage persistence. Estimated: 30 minutes.
