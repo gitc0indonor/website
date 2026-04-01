@@ -3676,3 +3676,22 @@
 **Schemas:** Article + BreadcrumbList + FAQPage (5 Q&As)
 **CTA:** LETNI10 code + link to lato.html
 **Estimated:** 2 hours
+
+### #140 — "Jak nawodnić mózg? Kompletny przewodnik 2026"
+**Target keywords:** "jak nawodnić mózg", "woda a koncentracja", "nawodnienie mózgu suplementy"
+**Search volume:** 800+ monthly (growing May-Aug seasonal peak)
+**Competition:** ZERO Polish content on brain-specific hydration
+**Angle:** Brain is 75% water → 2% dehydration = 25% cognitive decline (Ganio et al. 2012) → CogniCit as dual protection (β-CD + ALA)
+**Outline:**
+1. Dlaczego mózg potrzebuje więcej wody niż myślisz? (hippocampus sensitivity)
+2. Objawy odwodnienia mózgu — 7 sygnałów (bóle głowy, mgła, drażliwość, zmęczenie)
+3. Ile wody naprawdę potrzebujesz? (kalkulator + tabela waga/aktywność/upał)
+4. β-CD a stabilność składników aktywnych w warunkach odwodnienia
+5. ALA jako ochrona mitochondriów podczas stresu cieplnego
+6. Porównanie: CogniCit vs same elektrolity vs same kawa
+7. 5-dniowy protokół nawodnienia mózgu
+8. FAQ (5 Q&As)
+**Schemas:** Article + BreadcrumbList + FAQPage (5 Q&As)
+**CTA:** LETNI10 code + link to lato.html + hydration calculator link
+**Cross-links:** lato.html, blog/jak-przygotowac-mozg-na-lato.html, produkt.html, blog/suplementy-a-kofeina.html
+**Estimated:** 2.5 hours
