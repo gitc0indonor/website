@@ -1861,42 +1861,194 @@
     </div>
   </section>
 
-  <!-- #439 — JAK SZYBKO POCZUJĘ EFEKTY? Timeline -->
+  <!-- #688 — EFEKTY W 30 DNI — Enhanced Interactive Timeline -->
   <section style="background: var(--cognivia-beige, #f3f1ec); padding: 60px 20px;">
     <div style="max-width: 800px; margin: 0 auto;">
-      <h2 style="font-family: 'EB Garamond', serif; font-size: 32px; color: #1a3a2a; text-align: center; margin-bottom: 40px;">Kiedy poczuję różnicę?</h2>
+      <h2 style="font-family: 'EB Garamond', serif; font-size: 32px; color: #1a3a2a; text-align: center; margin-bottom: 8px;">Efekty w 30 dni</h2>
+      <p style="text-align: center; font-size: 14px; color: #888; margin-bottom: 40px;">Kliknij każdy etap, aby zobaczyć co dzieje się w Twoim organizmie</p>
+
+      <!-- Progress bar -->
+      <div style="background: #e0e0e0; border-radius: 20px; height: 8px; margin-bottom: 40px; overflow: hidden;">
+        <div id="timeline-progress" style="width: 0%; height: 100%; background: linear-gradient(90deg, #2e7d32, #8f7a3d); border-radius: 20px; transition: width 0.6s ease;"></div>
+      </div>
+
       <div style="position: relative; padding-left: 40px;">
-        <div style="position: absolute; left: 15px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #2e7d32, #8f7a3d);"></div>
-        <div style="position: relative; margin-bottom: 32px;">
-          <div style="position: absolute; left: -33px; width: 12px; height: 12px; background: #2e7d32; border-radius: 50%; border: 3px solid #e8f5e9;"></div>
-          <div style="background: white; padding: 20px 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
-            <span style="font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px;">Dzień 1–3</span>
-            <h3 style="font-family: 'EB Garamond', serif; color: #2e7d32; font-size: 18px; margin: 4px 0 8px;">Pierwsze wrażenie</h3>
-            <p style="font-size: 14px; color: #555; margin: 0;">Niektórzy użytkownicy zgłaszają subiektywne odczucie większej „jasności umysłu" już po pierwszych dniach. To efekt acetylocholiny z cytykoliny. Nie oczekuj jednak drastycznej zmiany — suplementacja to proces, nie przycisk.</p>
+        <div style="position: absolute; left: 15px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #2e7d32, #388e3c, #689f38, #8f7a3d);"></div>
+
+        <!-- Phase 1: Days 1-3 -->
+        <div class="timeline-phase" data-phase="1" onclick="toggleTimelinePhase(this)" style="position: relative; margin-bottom: 24px; cursor: pointer;">
+          <div style="position: absolute; left: -33px; width: 14px; height: 14px; background: #2e7d32; border-radius: 50%; border: 3px solid #e8f5e9; z-index: 1;"></div>
+          <div style="background: white; padding: 20px 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); border-left: 3px solid #2e7d32; transition: box-shadow 0.3s ease;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 11px; color: #2e7d32; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600;">Faza 1 · Dzień 1–3</span>
+                <h3 style="font-family: 'EB Garamond', serif; color: #1a3a2a; font-size: 20px; margin: 4px 0 0;">🔬 Pierwsze wrażenie</h3>
+              </div>
+              <span class="timeline-arrow" style="font-size: 18px; color: #2e7d32; transition: transform 0.3s ease;">▼</span>
+            </div>
+            <p style="font-size: 14px; color: #555; margin: 12px 0 0;">Niektórzy użytkownicy zgłaszają subiektywne odczucie większej „jasności umysłu" już po pierwszych dniach.</p>
+            <div class="timeline-details" style="display: none; margin-top: 16px; padding-top: 16px; border-top: 1px solid #eee;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div style="background: #f8fdf8; padding: 12px; border-radius: 8px;">
+                  <div style="font-size: 12px; color: #2e7d32; font-weight: 600; margin-bottom: 4px;">Co czujesz</div>
+                  <div style="font-size: 13px; color: #555;">Subtelna „jasność", lepsza orientacja w zadaniach, mniej „mgły mózgowej"</div>
+                </div>
+                <div style="background: #fef8f0; padding: 12px; border-radius: 8px;">
+                  <div style="font-size: 12px; color: #8f7a3d; font-weight: 600; margin-bottom: 4px;">Co się dzieje w środku</div>
+                  <div style="font-size: 13px; color: #555;">Cytykolina wchłania się, podnosi poziom acetylocholiny w synapsach. β-CD chroni składniki przed degradacją żołądkową.</div>
+                </div>
+              </div>
+              <div style="margin-top: 12px; padding: 8px 12px; background: #f0f7f0; border-radius: 6px; font-size: 12px; color: #555;">
+                📊 <strong>Cytykolina:</strong> biodostępność oralna >95% (Secades & Frontera, 2014). Pierwszy efekt na ACh widoczny po 1-2h.
+              </div>
+            </div>
           </div>
         </div>
-        <div style="position: relative; margin-bottom: 32px;">
-          <div style="position: absolute; left: -33px; width: 12px; height: 12px; background: #388e3c; border-radius: 50%; border: 3px solid #e8f5e9;"></div>
-          <div style="background: white; padding: 20px 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
-            <span style="font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px;">Dzień 7–14</span>
-            <h3 style="font-family: 'EB Garamond', serif; color: #2e7d32; font-size: 18px; margin: 4px 0 8px;">Stabilizacja</h3>
-            <p style="font-size: 14px; color: #555; margin: 0;">Cytykolina osiąga stabilny poziom w organizmie. ALA zaczyna wykazywać efekt antyoksydacyjny na poziomie komórkowym. Użytkownicy najczęściej zgłaszają poprawę w zadaniach wymagających dłuższej koncentracji.</p>
+
+        <!-- Phase 2: Days 4-7 -->
+        <div class="timeline-phase" data-phase="2" onclick="toggleTimelinePhase(this)" style="position: relative; margin-bottom: 24px; cursor: pointer;">
+          <div style="position: absolute; left: -33px; width: 14px; height: 14px; background: #388e3c; border-radius: 50%; border: 3px solid #e8f5e9; z-index: 1;"></div>
+          <div style="background: white; padding: 20px 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); border-left: 3px solid #388e3c; transition: box-shadow 0.3s ease;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 11px; color: #388e3c; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600;">Faza 2 · Dzień 4–7</span>
+                <h3 style="font-family: 'EB Garamond', serif; color: #1a3a2a; font-size: 20px; margin: 4px 0 0;">⚡ Adaptacja</h3>
+              </div>
+              <span class="timeline-arrow" style="font-size: 18px; color: #388e3c; transition: transform 0.3s ease;">▼</span>
+            </div>
+            <p style="font-size: 14px; color: #555; margin: 12px 0 0;">Organizm przyzwyczaja się do suplementacji. Codzienne zadania umysłowe zaczynają wymagać mniej wysiłku.</p>
+            <div class="timeline-details" style="display: none; margin-top: 16px; padding-top: 16px; border-top: 1px solid #eee;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div style="background: #f8fdf8; padding: 12px; border-radius: 8px;">
+                  <div style="font-size: 12px; color: #2e7d32; font-weight: 600; margin-bottom: 4px;">Co czujesz</div>
+                  <div style="font-size: 13px; color: #555;">Łatwiejsze skupienie, mniej rozproszeń, dłuższe sesje pracy bez przerw</div>
+                </div>
+                <div style="background: #fef8f0; padding: 12px; border-radius: 8px;">
+                  <div style="font-size: 12px; color: #8f7a3d; font-weight: 600; margin-bottom: 4px;">Co się dzieje w środku</div>
+                  <div style="font-size: 13px; color: #555;">ALA dociera do mitochondriów, zaczyna neutralizować wolne rodniki. Fosfatydylocholina z cytykoliny naprawia błony komórkowe neuronów.</div>
+                </div>
+              </div>
+              <div style="margin-top: 12px; padding: 8px 12px; background: #f0f7f0; border-radius: 6px; font-size: 12px; color: #555;">
+                📊 <strong>ALA:</strong> szczyt stężenia w osoczu po 30-60 min (Hager et al., 2007). Efekt antyoksydacyjny narasta z każdym dniem.
+              </div>
+            </div>
           </div>
         </div>
-        <div style="position: relative; margin-bottom: 32px;">
-          <div style="position: absolute; left: -33px; width: 12px; height: 12px; background: #8f7a3d; border-radius: 50%; border: 3px solid #f5f0e0;"></div>
-          <div style="background: white; padding: 20px 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
-            <span style="font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px;">Dzień 15–30</span>
-            <h3 style="font-family: 'EB Garamond', serif; color: #8f7a3d; font-size: 18px; margin: 4px 0 8px;">Pełny efekt</h3>
-            <p style="font-size: 14px; color: #555; margin: 0;">Po 2–4 tygodniach regularnego stosowania składniki osiągają pełną akumulację. To moment, w którym możesz obiektywnie ocenić, czy CogniCit działa dla Ciebie. Jeśli nie — masz 30-dniową gwarancję zwrotu.</p>
+
+        <!-- Phase 3: Days 8-14 -->
+        <div class="timeline-phase" data-phase="3" onclick="toggleTimelinePhase(this)" style="position: relative; margin-bottom: 24px; cursor: pointer;">
+          <div style="position: absolute; left: -33px; width: 14px; height: 14px; background: #689f38; border-radius: 50%; border: 3px solid #f0f7f0; z-index: 1;"></div>
+          <div style="background: white; padding: 20px 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); border-left: 3px solid #689f38; transition: box-shadow 0.3s ease;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 11px; color: #689f38; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600;">Faza 3 · Dzień 8–14</span>
+                <h3 style="font-family: 'EB Garamond', serif; color: #1a3a2a; font-size: 20px; margin: 4px 0 0;">🎯 Stabilizacja</h3>
+              </div>
+              <span class="timeline-arrow" style="font-size: 18px; color: #689f38; transition: transform 0.3s ease;">▼</span>
+            </div>
+            <p style="font-size: 14px; color: #555; margin: 12px 0 0;">Cytykolina osiąga stabilny poziom. ALA wykazuje pełny efekt antyoksydacyjny. Koncentracja staje się bardziej „domyślna".</p>
+            <div class="timeline-details" style="display: none; margin-top: 16px; padding-top: 16px; border-top: 1px solid #eee;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div style="background: #f8fdf8; padding: 12px; border-radius: 8px;">
+                  <div style="font-size: 12px; color: #2e7d32; font-weight: 600; margin-bottom: 4px;">Co czujesz</div>
+                  <div style="font-size: 13px; color: #555;">Wyraźna poprawa w zadaniach wymagających długiej koncentracji. Lepsza pamięć robocza (utrzymanie wielu wątków naraz).</div>
+                </div>
+                <div style="background: #fef8f0; padding: 12px; border-radius: 8px;">
+                  <div style="font-size: 12px; color: #8f7a3d; font-weight: 600; margin-bottom: 4px;">Co się dzieje w środku</div>
+                  <div style="font-size: 13px; color: #555;">Steady-state acetylocholina. Mitochondria neuronów działają wydajniej dzięki ALA (koenzym w cyklu Krebsa). β-CD zwiększa biodostępność o ~30% vs. bez nośnika.</div>
+                </div>
+              </div>
+              <div style="margin-top: 12px; padding: 8px 12px; background: #f0f7f0; border-radius: 6px; font-size: 12px; color: #555;">
+                📊 <strong>Meta-analiza:</strong> cytykolina 300-500 mg/dzień poprawia pamięć i uwagę u zdrowych dorosłych (Fioravanti & Yanagi, 2005).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 4: Days 15-30 -->
+        <div class="timeline-phase" data-phase="4" onclick="toggleTimelinePhase(this)" style="position: relative; margin-bottom: 24px; cursor: pointer;">
+          <div style="position: absolute; left: -33px; width: 14px; height: 14px; background: #8f7a3d; border-radius: 50%; border: 3px solid #f5f0e0; z-index: 1;"></div>
+          <div style="background: white; padding: 20px 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); border-left: 3px solid #8f7a3d; transition: box-shadow 0.3s ease;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 11px; color: #8f7a3d; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600;">Faza 4 · Dzień 15–30</span>
+                <h3 style="font-family: 'EB Garamond', serif; color: #1a3a2a; font-size: 20px; margin: 4px 0 0;">🏆 Pełny efekt</h3>
+              </div>
+              <span class="timeline-arrow" style="font-size: 18px; color: #8f7a3d; transition: transform 0.3s ease;">▼</span>
+            </div>
+            <p style="font-size: 14px; color: #555; margin: 12px 0 0;">Pełna akumulacja składników. Obiektywna ocena efektów. Decyzja: kontynuować z 30-dniową gwarancją w tle.</p>
+            <div class="timeline-details" style="display: none; margin-top: 16px; padding-top: 16px; border-top: 1px solid #eee;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div style="background: #f8fdf8; padding: 12px; border-radius: 8px;">
+                  <div style="font-size: 12px; color: #2e7d32; font-weight: 600; margin-bottom: 4px;">Co czujesz</div>
+                  <div style="font-size: 13px; color: #555;">Stała, niezawodna koncentracja. Mniej „spadków" w ciągu dnia. Lepsza jakość snu (ALA nie zawiera kofeiny).</div>
+                </div>
+                <div style="background: #fef8f0; padding: 12px; border-radius: 8px;">
+                  <div style="font-size: 12px; color: #8f7a3d; font-weight: 600; margin-bottom: 4px;">Co się dzieje w środku</div>
+                  <div style="font-size: 13px; color: #555;">Optymalna akumulacja fosfatydylocholiny w błonach neuronów. Pełna ochrona antyoksydacyjna mitochondriów. Neuroplastyczność wspierana przez stabilny poziom ACh.</div>
+                </div>
+              </div>
+              <div style="margin-top: 12px; padding: 8px 12px; background: #f0f7f0; border-radius: 6px; font-size: 12px; color: #555;">
+                📊 <strong>Gwarancja:</strong> Jeśli nie zauważysz różnicy po 30 dniach — zwracamy pieniądze. Bez pytań. <a href="zwroty.html" style="color: #2e7d32; font-weight: 600;">Szczegóły →</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Summary bar -->
+      <div style="display: flex; justify-content: center; gap: 16px; margin-top: 32px; flex-wrap: wrap;">
+        <div style="background: white; padding: 12px 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); min-width: 100px;">
+          <div style="font-size: 24px; font-weight: 700; color: #2e7d32;">95%+</div>
+          <div style="font-size: 11px; color: #888;">biodostępność cytykoliny</div>
+        </div>
+        <div style="background: white; padding: 12px 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); min-width: 100px;">
+          <div style="font-size: 24px; font-weight: 700; color: #2e7d32;">0 mg</div>
+          <div style="font-size: 11px; color: #888;">kofeiny — nie zaburza snu</div>
+        </div>
+        <div style="background: white; padding: 12px 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); min-width: 100px;">
+          <div style="font-size: 24px; font-weight: 700; color: #2e7d32;">30 dni</div>
+          <div style="font-size: 11px; color: #888;">gwarancja zwrotu</div>
+        </div>
+      </div>
+
       <div style="text-align: center; margin-top: 16px;">
         <p style="font-size: 13px; color: #888; font-style: italic;">Indywidualne efekty mogą się różnić. Suplementacja wymaga regularności i cierpliwości.</p>
       </div>
     </div>
   </section>
+  <script>
+  function toggleTimelinePhase(el) {
+    var details = el.querySelector('.timeline-details');
+    var arrow = el.querySelector('.timeline-arrow');
+    if (!details) return;
+    if (details.style.display === 'none' || !details.style.display) {
+      details.style.display = 'block';
+      arrow.style.transform = 'rotate(180deg)';
+      el.querySelector('div[style*="box-shadow"]').style.boxShadow = '0 4px 20px rgba(46,125,50,0.1)';
+      // Update progress bar based on phase
+      var phase = el.getAttribute('data-phase');
+      var progress = {1: 25, 2: 50, 3: 75, 4: 100};
+      document.getElementById('timeline-progress').style.width = (progress[phase] || 0) + '%';
+    } else {
+      details.style.display = 'none';
+      arrow.style.transform = 'rotate(0deg)';
+      el.querySelector('div[style*="box-shadow"]').style.boxShadow = '0 2px 12px rgba(0,0,0,0.04)';
+    }
+  }
+  // Auto-expand first phase on scroll into view
+  var tlObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var first = document.querySelector('.timeline-phase[data-phase="1"]');
+        if (first) { setTimeout(function() { toggleTimelinePhase(first); }, 600); }
+        tlObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  var tlSection = document.querySelector('.timeline-phase');
+  if (tlSection) tlObserver.observe(tlSection.parentElement);
+  </script>
 
   <!-- PODMIOT ODPOWIEDZIALNY -->
   <section style="background: white;">

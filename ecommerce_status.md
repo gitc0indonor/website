@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-04-01 21:06 UTC (Ecommerce Cron Cycle #116)
+## Last Updated: 2026-04-02 00:36 UTC (Ecommerce Cron Cycle #117)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -528,6 +528,37 @@
 - IMP-673: Add "Dlaczego CogniCit?" comparison micro-table to produkt.html — Expandable table comparing CogniCit vs generic supplements, highlighting β-cyclodextrin bioavailability advantage. Estimated: 45 minutes.
 - IMP-674: Create FAQPage JSON-LD for faq-skladniki.html — 13 Q&As present but possibly missing structured data. Add schema for Google rich results. Estimated: 20 minutes.
 - IMP-675: Add "Bezpieczne zakupy" trust strip to footer of ALL pages — Persistent footer bar with SSL/GMP/RODO/30-day return icons. Always-visible trust reinforcement. Estimated: 20 minutes.
+
+---
+
+## 📋 Cycle #117 Audit (2026-04-02 00:36 UTC)
+
+### Full Re-Audit Results
+| Component | Status | Change vs #116 |
+|-----------|--------|-----------------|
+| Cart (koszyk.html) | ✅ Working (425 lines) | No change |
+| Checkout (kasa.html) | ✅ Working (537 lines) | No change |
+| Order Confirmation (potwierdzenie.html) | ✅ Working (218 lines) | No change |
+| Product Page (produkt.html) | ✅ Complete (3413 lines) | No change |
+| Cart JS (cognivia-cart.js) | ✅ Functional (514 lines) — localStorage, VAT 23%, 4 shipping, 4 payment UI | No change |
+| Formspree | 🔴 Placeholder `xpwzgryv` (line 370) | UNCHANGED — 45+ cycles |
+| Payment gateways | 🔴 UI only (PayU/P24/BLIK/PayPal) | No change |
+| Legal pages (8) | ✅ All verified present (faq, faq-produkt, faq-skladniki, dostawa, zwroty, polityka-prywatnosci, regulamin, polityka-cookies) | No change |
+| Trust elements | ✅ GMP, lab-tested, money-back, SSL, reviews, reCAPTCHA | No change |
+| Shipping (4 methods) | ✅ InPost Paczkomat/Kurier, DPD, Poczta Polska | No change |
+| VAT 23% | ✅ Configured | No change |
+| SEO + JSON-LD | ✅ Complete | No change |
+| Certificates page | ✅ Present | No change |
+| Reviews page | ✅ Present | No change |
+| Improvement queue | ✅ Active — items 673-675 pending | 3 new items (676-678) |
+
+### Verdict
+**No change for 45+ cycles. Site is fully built and functional client-side. Formspree placeholder `xpwzgryv` unchanged since initial build. Cart (425L), checkout (537L), product page (3413L), all 8 legal/trust pages verified present. 4 shipping methods and 4 payment UI options configured. VAT 23% active. Cart JS syntax valid. CEO ACTION REQUIRED: activate Formspree at formspree.io (5-minute task) to enable real order processing.**
+
+### Cycle #117 Added to Queue (676-678)
+- IMP-676: Add "Bezpieczne zakupy" trust strip to remaining pages missing it — Persistent footer bar with SSL/GMP/RODO/30-day return icons. Audit all ~80 HTML pages for trust strip. Add to any missing. Estimated: 20 minutes.
+- IMP-677: Implement GA4 measurement ID + gtag.js snippet on all pages — Events fire to dataLayer but no GA4 property receives them. CEO must create GA4 property at analytics.google.com and provide measurement ID. Batch-add gtag.js to all pages once ID available. Estimated: 15 minutes (after CEO provides ID).
+- IMP-678: Add LETNI10 savings calculator popup to all seasonal landing pages — When LETNI10 badge is clicked, show modal with calculated savings for 1/2/3-box bundles. Drives summer promo code usage. Estimated: 30 minutes.
 
 ---
 

@@ -4878,3 +4878,30 @@
 **LETNI10 countdown:** 7 seasonal touchpoints
 
 **Next priorities:** #686 (neuroprotection blog — 2.5h), #685 (LETNI10 on lato bundles — 30min), #204 (CEO Formspree — THE BLOCKER).
+
+### 2026-04-02 — Power Cycle #150 (00:21 UTC)
+**Implemented:**
+- ✅ **#681** — Added animated "CogniCit w liczbach" counter cards to /porownanie.html
+  - 4 counter cards: 800 mg, 0 mg kofeiny, 3 składniki, 30 dni gwarancji
+  - Scroll-triggered count-up animation via IntersectionObserver + requestAnimationFrame
+  - Cubic ease-out easing, 1800ms duration, 200ms stagger between counters
+  - Colored top borders (green/gold/sage/gold) matching produkt.html counter section
+  - Positioned between cross-links and CTA for maximum conversion impact
+- ✅ **#685** — Updated lato.html bundle section links with LETNI10 discount code
+  - 3 bundle CTA links now pre-fill LETNI10 via URL parameter (?code=LETNI10&qty=1/2/3)
+  - Reduces friction: visitors from bundle section land on product page with discount ready
+- ✅ Blog outline #152 added: "Jak suplementy wpływają na produktywność?"
+- ✅ 3 new improvement ideas added to queue (#688-#690)
+
+**Files changed:**
+- `porownanie.html` — Counter section + IntersectionObserver JS (~50 lines)
+- `lato.html` — LETNI10 code parameter on 3 bundle links
+- `content_calendar.md` — Blog outline #152
+- `improvement_queue.md` — Items #681, #685 marked DONE + 3 new items
+- `changelog.md` — This entry
+
+**Site verification:** Both files validated — DOCTYPE ✓, </html> ✓. porownanie.html counters confirmed (800/0/3/30 targets). lato.html LETNI10 links confirmed. Cart JS valid. Site live (200 OK).
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. reCAPTCHA v3 (test key). CEO must: create formspree.io account + swap form ID.
+
+**Queue:** ~685 completed + ~65 active = ~750 total
