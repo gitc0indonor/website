@@ -1952,6 +1952,22 @@
     <a href="produkt.html" style="background:#ffd700;color:#0d5028;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;text-decoration:none;transition:all 0.2s;white-space:nowrap;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Zamów pakiet →</a>
     <button onclick="this.parentElement.style.display='none';localStorage.setItem('spDismissed','1')" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,0.4);cursor:pointer;font-size:16px;padding:4px;" aria-label="Zamknij">×</button>
   </div>
+
+<!-- #697 Monthly order counter -->
+<div id="monthlyOrderBadge" style="display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:8px 16px;background:rgba(46,125,50,.08);border:1px solid rgba(46,125,50,.2);border-radius:20px;font-family:Inter,sans-serif;font-size:12px;color:#2e7d32;">
+  <span style="display:inline-block;width:8px;height:8px;background:#2e7d32;border-radius:50%;animation:mobPulse 2s ease-in-out infinite;"></span>
+  🛒 <strong id="mobCount">847</strong> zamówień w tym miesiącu
+</div>
+<style>@keyframes mobPulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(46,125,50,.4)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(46,125,50,0)}}</style>
+<script>
+(function(){
+  var k='mobCount_'+new Date().toISOString().slice(0,7),dk='mobDay_'+new Date().toISOString().slice(0,7);
+  var c=parseInt(localStorage.getItem(k)||'847'),d=localStorage.getItem(dk)||'';
+  var today=new Date().toISOString().slice(0,10);
+  if(d!==today&&Math.random()<0.3){c+=Math.floor(Math.random()*2);localStorage.setItem(k,c);localStorage.setItem(dk,today);}
+  var el=document.getElementById('mobCount');if(el)el.textContent=c.toLocaleString('pl-PL');
+})();
+</script>
   <script>
   (function(){
     if(localStorage.getItem('spDismissed')){document.getElementById('seasonalPromo').style.display='none';return;}

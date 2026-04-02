@@ -3980,3 +3980,51 @@
 **CTA:** produkt.html + email capture popup (60% scroll)
 **Internal links:** produkt.html, porownanie.html, nauka.html, cytykolina-przewodnik-kompletny.html, skladniki.html
 **Status:** Outline ready, needs writing. Publish window: April 2026 (evergreen).
+
+**Status:** Outline ready, needs writing
+
+---
+
+### Blog Post Outline #154 (Power Cycle #152)
+**Title:** "Suplementy na koncentrację w pracy — jak utrzymać focus przez 8 godzin?"
+**Target:** "suplementy na koncentrację w pracy", "focus w pracy suplementy" (600+ monthly, growing post-Easter back-to-office)
+**Word count:** 2000-2500
+**Keywords:** suplementy na koncentrację w pracy, jak się skupić w pracy, nootropiki do pracy, focus suplement
+
+**Outline:**
+1. **Wstęp** — Powrót do biura po Wielkanocy. Statystyki: średnio 2h 53 min produktywnej pracy na 8h (RescueTime). Przyczyny: meetingi, Slack, open space, zmęczenie decyzyjne. Teza: suplementacja może przesunąć ten wskaźnik o 20-30%.
+2. **Dlaczego tracimy focus w pracy?** — 4 mechanizmy:
+   - **Przeładowanie decyzyjne** — 35 000 decyzji dziennie (Cornell), deplecja glukozy w PFC
+   - **Koszt przełączania kontekstu** — 23 min na powrót do głębokiej pracy (Gloria Mark, UC Irvine)
+   - **Deplecja acetylocholiny** — intensywna praca umysłowa zużywa ACh, spada koncentracja
+   - **Stres oksydacyjny** — chroniczny kortyzol → uszkodzenie mitochondrialne neuronów
+3. **5 składników wspierających focus** — Ranking:
+   - **Cytykolina (CDP-Cholina)** — prekursor ACh, odbudowuje pule neuroprzekaźnika, 300 mg/dzień, efekt po 7 dniów
+   - **Kwas alfa-liponowy (ALA)** — ochrona mitochondrialna, regeneracja glutationu, 250 mg/dzień
+   - **Beta-cyklodekstryna** — nośnik zwiększający biodostępność, chroni składniki przed degradacją
+   - **Kofeina** — blokada adenozyny, ale: crash o 14:00, tolerancja, zaburzenia snu
+   - **L-teanina** — synergia z kofeiną, ale efekt krótkotrwały (2-3h)
+4. **Porównanie: CogniCit vs. typowe strategie biurowe** — Tabela 5×5:
+   - Kawa (3-5 dziennie) vs CogniCit (1 kapsułka)
+   - Energetyki vs CogniCit
+   - Multiwitamina vs CogniCit
+   - Modafinil (Rx) vs CogniCit
+   - Nicotine pouches vs CogniCit
+   - Kolumny: czas działania, crash?, koszt/dzień, bezpieczeństwo, GMP
+5. **Protokół CogniCit dla pracy biurowej** — 5 kroków:
+   - ☀️ 7:00 — 1 kapsułka z śniadaniem
+   - 💧 9:00 — szklanka wody (β-CD chroni składniki)
+   - 🎯 10:00-12:00 — peak focus (cytykolina osiąga Cmax)
+   - 🥗 13:00 — lekki lunch (unikać ciężkiego → senność)
+   - 🧘 15:00 — 5-min przerwa + ruch (ALA wspiera regenerację)
+6. **Bezpieczeństwo w pracy** — 0 mg kofeiny = nie koliduje z kawą, nie zaburza snu po nadgodzinach, GMP certyfikat, brak ryzyka testów antydopingowych
+7. **FAQ** — 5 pytań (czy mogę łączyć z kawą?, kiedy zaczyna działać?, czy jest lekiem?, ile dziennie?, gdzie kupić?)
+8. **Podsumowanie** — Rekomendacja CogniCit dla profesjonalistów
+
+**Schemas:** Article + BreadcrumbList + FAQPage JSON-LD (5 entries)
+**CTA:** "Zamów CogniCit — 79 zł →" + email popup (60% scroll)
+**Cross-links:** blog/suplementy-dla-programistow.html, blog/suplementy-a-stres-w-pracy.html, produkt.html, jak-stosowac.html
+**Seasonal angle:** Post-Easter back-to-office (April), evergreen with September peak
+**Competitive advantage:** Zero Polish content targeting "suplementy na koncentrację w pracy" specifically. First-mover.
+
+**Status:** Outline ready, needs writing

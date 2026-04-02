@@ -582,6 +582,25 @@ function calcHydro(){
 calcHydro();
 </script>
 
+
+  <!-- ZAPYTAJ O SKŁAD -- #700 Ingredient question form -->
+  <section style="max-width: 700px; margin: 32px auto; padding: 0 16px;">
+    <div style="background: linear-gradient(135deg, #f8fdf8 0%, #f0f7f0 100%); border: 1.5px solid #c8e6c9; border-radius: 12px; padding: 28px 32px;">
+      <h3 style="font-family: 'EB Garamond', serif; color: #1a3a2a; font-size: 22px; margin-bottom: 6px; text-align: center;">🔬 Masz pytanie o skład?</h3>
+      <p style="font-family: Inter, sans-serif; font-size: 14px; color: #555; text-align: center; margin-bottom: 20px;">Nasi eksperci odpowiedzą na każde pytanie dotyczące składników, dawkowania lub interakcji.</p>
+      <form action="https://formspree.io/f/xpwzgryv" method="POST" style="display: flex; flex-direction: column; gap: 12px;">
+        <input type="hidden" name="source" value="lato-ask-ingredient">
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <input type="text" name="name" placeholder="Twoje imię" required style="flex: 1; min-width: 180px; padding: 12px 16px; border: 1.5px solid #c8e6c9; border-radius: 8px; font-family: Inter, sans-serif; font-size: 14px; background: #fff; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#2e7d32'" onblur="this.style.borderColor='#c8e6c9'">
+          <input type="email" name="email" placeholder="Twój email" required style="flex: 1; min-width: 180px; padding: 12px 16px; border: 1.5px solid #c8e6c9; border-radius: 8px; font-family: Inter, sans-serif; font-size: 14px; background: #fff; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#2e7d32'" onblur="this.style.borderColor='#c8e6c9'">
+        </div>
+        <textarea name="question" placeholder="Np. Czy suplement jest stabilny w wysokich temperaturach?" rows="3" required style="padding: 12px 16px; border: 1.5px solid #c8e6c9; border-radius: 8px; font-family: Inter, sans-serif; font-size: 14px; background: #fff; resize: vertical; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#2e7d32'" onblur="this.style.borderColor='#c8e6c9'"></textarea>
+        <button type="submit" style="align-self: center; padding: 12px 32px; background: linear-gradient(135deg, #2e7d32, #43a047); color: white; border: none; border-radius: 8px; font-family: Inter, sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 16px rgba(46,125,50,0.3)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">Wyślij pytanie →</button>
+        <p style="font-size: 11px; color: #888; text-align: center; margin-top: 4px;">Twoje dane są bezpieczne. Zgodnie z RODO — nie udostępniamy ich osobom trzecim.</p>
+      </form>
+    </div>
+  </section>
+
 <!-- CTA -->
 <section class="cta-section">
   <h2>Lato 2026 — zacznij z energią</h2>
@@ -718,5 +737,78 @@ function closeBlogPopupLato(){
 </footer>
 
 <!-- Bezpieczne zakupy trust strip --><div style="background:#f8fdf8;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;padding:10px 20px;text-align:center;font-family:Inter,sans-serif;font-size:12px;color:#555;display:flex;justify-content:center;gap:24px;flex-wrap:wrap;align-items:center;"><span>🔒 Szyfrowane płatności SSL</span><span>🏭 Certyfikat GMP</span><span>📋 Zgodne z RODO</span><span>💰 30 dni na zwrot</span></div>
+<!-- Floating "Porównaj skład" comparison button (mobile) -->
+<style>
+.floating-cmp-btn{position:fixed;bottom:80px;left:16px;z-index:998;width:48px;height:48px;border-radius:50%;background:#2e7d32;color:#fff;border:none;font-size:22px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.2);display:none;animation:fcPulse 3s ease-in-out 6s 3;transition:transform .2s}
+.floating-cmp-btn:hover{transform:scale(1.1)}
+.floating-cmp-btn:active{transform:scale(.95)}
+@keyframes fcPulse{0%,100%{box-shadow:0 4px 12px rgba(0,0,0,.2)}50%{box-shadow:0 4px 20px rgba(46,125,50,.5)}}
+@media(max-width:768px){.floating-cmp-btn{display:flex;align-items:center;justify-content:center}}
+.fc-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:9990;display:none;align-items:flex-end;justify-content:center}
+.fc-overlay.active{display:flex}
+.fc-panel{background:#fff;border-radius:20px 20px 0 0;width:100%;max-height:80vh;overflow-y:auto;padding:24px 16px;animation:fcSlide .3s ease-out}
+@keyframes fcSlide{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.fc-panel h3{font-family:'EB Garamond',serif;font-size:20px;color:#2e7d32;margin:0 0 16px;text-align:center}
+.fc-table{width:100%;border-collapse:collapse;font-size:13px}
+.fc-table th{background:#f0f7f0;padding:10px 8px;text-align:left;font-weight:600;border-bottom:2px solid #e0e0e0}
+.fc-table td{padding:8px;border-bottom:1px solid #f0f0f0}
+.fc-table .cogni{background:rgba(46,125,50,.05);font-weight:600;color:#2e7d32}
+.fc-table .yes{color:#2e7d32;font-weight:700}
+.fc-table .no{color:#c62828}
+.fc-cta{text-align:center;margin-top:16px}
+.fc-cta a{display:inline-block;background:#2e7d32;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px}
+.fc-close{text-align:center;margin-top:12px;font-size:13px;color:#888;cursor:pointer}
+</style>
+<button class="floating-cmp-btn" onclick="document.querySelector('.fc-overlay').classList.add('active')" aria-label="Porównaj skład">🔬</button>
+<div class="fc-overlay" onclick="if(event.target===this)this.classList.remove('active')">
+  <div class="fc-panel">
+    <h3>🔍 Porównaj skład</h3>
+    <table class="fc-table">
+      <tr><th></th><th class="cogni">CogniCit</th><th>Typowy suplement</th></tr>
+      <tr><td>Składniki</td><td class="cogni">3 synergistyczne</td><td>20+ w mikrodawkach</td></tr>
+      <tr><td>Dawki z badań</td><td class="yes">✓ Tak</td><td class="no">✗ Rzadko</td></tr>
+      <tr><td>Certyfikat GMP</td><td class="yes">✓ Tak</td><td class="no">✗ Brak</td></tr>
+      <tr><td>β-CD (biodostępność)</td><td class="yes">✓ 250 mg</td><td class="no">✗ Brak</td></tr>
+      <tr><td>Kofeina</td><td class="yes">✓ 0 mg</td><td class="no">✗ 50-200 mg</td></tr>
+      <tr><td>Antyoksydant (ALA)</td><td class="yes">✓ 250 mg</td><td class="no">✗ Brak</td></tr>
+      <tr><td>Cena/dzień</td><td class="cogni">2,63 zł</td><td>4-8 zł</td></tr>
+      <tr><td>Gwarancja</td><td class="yes">✓ 30 dni</td><td class="no">✗ Brak</td></tr>
+    </table>
+    <div class="fc-cta"><a href="/produkt.html">Zamów CogniCit — 79 zł →</a></div>
+    <div class="fc-close" onclick="document.querySelector('.fc-overlay').classList.remove('active')">Zamknij ✕</div>
+  </div>
+</div>
+
+<!-- Power Cycle #152: Floating comparison button --><style>.cmpFloatBtn{position:fixed;bottom:75px;left:16px;z-index:997;width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#2e7d32,#388e3c);color:#fff;border:none;font-size:22px;box-shadow:0 4px 16px rgba(46,125,50,.35);cursor:pointer;display:flex;align-items:center;justify-content:center;text-decoration:none;animation:cmpPulse 2.5s ease-in-out 6s 3}.cmpFloatBtn:active{transform:scale(.92)}@keyframes cmpPulse{0%,100%{box-shadow:0 4px 16px rgba(46,125,50,.35)}50%{box-shadow:0 4px 28px rgba(46,125,50,.6)}}@media(min-width:769px){.cmpFloatBtn{display:none!important}}</style><a href="produkt.html#porownaj-sklad" class="cmpFloatBtn" aria-label="Porownaj sklad">🔬</a><!-- Power Cycle #152: Pytanie dnia rotating FAQ -->
+<style>
+.podWrap{max-width:700px;margin:20px auto;padding:16px 20px;background:rgba(46,125,50,.04);border:1px solid rgba(46,125,50,.12);border-radius:12px}
+.podLabel{font-family:Inter,sans-serif;font-size:11px;color:#2e7d32;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+.podQ{font-family:"EB Garamond",Georgia,serif;font-size:18px;color:#1a3a2a;cursor:pointer;margin:0;padding:10px 0;border-bottom:1px solid #e8f5e9}
+.podA{font-family:Inter,sans-serif;font-size:13px;color:#555;line-height:1.6;max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;padding:0}
+.podA.open{max-height:300px;padding:12px 0}
+.podA a{color:#2e7d32;font-weight:600}
+</style>
+<div class="podWrap">
+<div class="podLabel">📝 Pytanie dnia</div>
+<div class="podQ" onclick="this.nextElementSibling.classList.toggle('open')" id="podQText"></div>
+<div class="podA" id="podAText"></div>
+</div>
+<script>
+(function(){
+var faqs=[
+{q:"Czy CogniCit jest stabilny w wysokich temperaturach?",a:"Tak. β-cyklodekstryna chroni składniki aktywne przed degradacją termiczną. Kapsułki można przechowywać w temperaturze pokojowej nawet latem. <a href='produkt.html'>Dowiedz się więcej →</a>"},
+{q:"Czy mogę brać CogniCit na plaży?",a:"Tak! 1 kapsułka rano z śniadaniem — niezależnie gdzie jesteś. Blister pack jest podróżny. Zero kofeiny = dobry sen w hotelu. <a href='jak-stosowac.html'>Zobacz protokół →</a>"},
+{q:"Czy CogniCit pomaga przy jet lag?",a:"Cytykolina wspiera acetylocholinę niezależnie od strefy czasowej. Nie jest to lek na jet lag, ale pomaga utrzymać koncentrację podczas adaptacji. <a href='blog/jak-przygotowac-mozg-na-lato.html'>Przeczytaj więcej →</a>"},
+{q:"Czy mogę pić alkohol na wakacjach z CogniCit?",a:"Brak znanych interakcji. Ale rekomendujemy: CogniCit rano, alkohol wieczorem. Nigdy jednocześnie. <a href='blog/suplementy-a-alkohol.html'>Przeczytaj o interakcjach →</a>"},
+{q:"Ile kapsułek zabrać na 2-tygodniowy urlop?",a:"14 kapsułek = połowa opakowania. Ale zamów pełne opakowanie (30 szt.) — będziesz mieć zapas po powrocie. 79 zł + kod LETNI10 = 10% zniżki. <a href='produkt.html'>Zamów →</a>"},
+{q:"Czy suplementy na koncentrację działają latem?",a:"Tak. Cytykolina, ALA i β-CD działają niezależnie od pory roku. Latem dodatkowo chronią przed stresem oksydacyjnym upału. <a href='nauka.html'>Zobacz badania →</a>"},
+{q:"Jak przechowywać CogniCit na wakacjach?",a:"Temperatura pokojowa, oryginalne opakowanie, chronić od bezpośredniego słońca. Nie wymaga lodówki. <a href='jak-stosowac.html'>Więcej o przechowywaniu →</a>"}
+];
+var d=Math.floor(Date.now()/864e5)%faqs.length;
+document.getElementById('podQText').textContent=faqs[d].q;
+document.getElementById('podAText').innerHTML=faqs[d].a;
+})();
+</script>
+
 </body>
 </html>

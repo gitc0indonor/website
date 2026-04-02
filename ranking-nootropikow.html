@@ -203,7 +203,9 @@
     <p>Oceniamy suplementy obiektywnie: <strong>skład, dawki, certyfikaty, dowody naukowe, transparentność.</strong> Bez sponsoringu. Bez afiliacji. Tylko fakty.</p>
     <div style="text-align:center;padding:8px 0;"><a href="/produkt.html" style="display:inline-block;padding:10px 24px;background:rgba(46,125,50,.15);border:1.5px solid rgba(46,125,50,.3);border-radius:24px;color:#2e7d32;font-family:Inter,sans-serif;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s;">🛒 Kup na cognivia.eu → 79 zł</a>
 <div style="margin-top:10px;display:inline-flex;align-items:center;gap:6px;background:rgba(46,125,50,0.12);border:1px solid rgba(46,125,50,0.25);border-radius:20px;padding:5px 14px;font-family:Inter,sans-serif;font-size:12px;color:#2e7d32;animation:letniPulse 3s ease-in-out infinite;">☀️ <strong>LETNI10</strong> — 10% zniżki na lato · ważny do 31 lipca</div>
-<style>@keyframes letniPulse{0%,100%{box-shadow:0 0 0 0 rgba(46,125,50,0.15)}50%{box-shadow:0 0 0 6px rgba(46,125,50,0)}}</style></div>
+<style>@keyframes letniPulse{0%,100%{box-shadow:0 0 0 0 rgba(46,125,50,0.15)}50%{box-shadow:0 0 0 6px rgba(46,125,50,0)}}</style>
+<div id="delivCountdown" style="margin-top:8px;display:inline-flex;align-items:center;gap:6px;background:rgba(46,125,50,0.08);border:1px solid rgba(46,125,50,0.18);border-radius:20px;padding:5px 14px;font-family:Inter,sans-serif;font-size:12px;color:#2e7d32;">📦 Zamów dziś → dostawa za <strong id="delivDays">2</strong> dni robocze</div>
+<script>(function(){var d=new Date(),day=d.getDay(),h=d.getHours(),days=2;if(day===0||day===6)days=2+(8-day+1)%7;else if(day===5&&h>=14)days=4;else if(h>=14)days++;document.getElementById('delivDays').textContent=days;})();</script></div>
 
     <!-- ===================== MAIN RANKING TABLE ===================== -->
     <h2>Ranking suplementów nootropowych — Polska 2026</h2>
@@ -514,6 +516,56 @@
       <p>CogniCit — trzy synergistyczne składniki, certyfikat GMP, zero kofeiny. 79 zł za 30 dni suplementacji.</p>
       <a href="/produkt.html" class="cta-btn">Zamów CogniCit →</a>
     </div>
+
+    <!-- CogniCit w liczbach — animated counters -->
+    <div class="cognicit-counters" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin:30px auto;max-width:700px;">
+      <div class="counter-card" style="text-align:center;padding:20px 12px;background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);border-top:3px solid #2e7d32;">
+        <div class="counter-value" style="font-family:'EB Garamond',Georgia,serif;font-size:2.2rem;font-weight:700;color:#2e7d32;" data-target="800">0</div>
+        <div style="font-size:0.8rem;color:#666;margin-top:4px;">mg substancji aktywnych</div>
+      </div>
+      <div class="counter-card" style="text-align:center;padding:20px 12px;background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);border-top:3px solid #f5c518;">
+        <div class="counter-value" style="font-family:'EB Garamond',Georgia,serif;font-size:2.2rem;font-weight:700;color:#f5c518;" data-target="0">0</div>
+        <div style="font-size:0.8rem;color:#666;margin-top:4px;">mg kofeiny</div>
+      </div>
+      <div class="counter-card" style="text-align:center;padding:20px 12px;background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);border-top:3px solid #8fbc8f;">
+        <div class="counter-value" style="font-family:'EB Garamond',Georgia,serif;font-size:2.2rem;font-weight:700;color:#8fbc8f;" data-target="3">0</div>
+        <div style="font-size:0.8rem;color:#666;margin-top:4px;">synergistyczne składniki</div>
+      </div>
+      <div class="counter-card" style="text-align:center;padding:20px 12px;background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);border-top:3px solid #f5c518;">
+        <div class="counter-value" style="font-family:'EB Garamond',Georgia,serif;font-size:2.2rem;font-weight:700;color:#f5c518;" data-target="30">0</div>
+        <div style="font-size:0.8rem;color:#666;margin-top:4px;">dni gwarancji</div>
+      </div>
+    </div>
+    <script>
+    (function(){
+      var counters=document.querySelectorAll('.counter-value');
+      if(!counters.length)return;
+      var obs=new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            var el=entry.target;
+            var target=parseInt(el.dataset.target);
+            if(target===0){el.textContent='0';obs.unobserve(el);return;}
+            var start=0;var duration=1800;var startTime=null;
+            function animate(ts){
+              if(!startTime)startTime=ts;
+              var progress=Math.min((ts-startTime)/duration,1);
+              var eased=1-Math.pow(1-progress,3);
+              var current=Math.round(eased*target);
+              el.textContent=current.toLocaleString('pl-PL');
+              if(progress<1)requestAnimationFrame(animate);
+            }
+            requestAnimationFrame(animate);
+            obs.unobserve(el);
+          }
+        });
+      },{threshold:0.3});
+      counters.forEach(function(c,i){
+        c.style.transition='opacity 0.4s ease '+(i*0.2)+'s';
+        obs.observe(c);
+      });
+    })();
+    </script>
   
   <style>
   .social-proof-banner{display:flex;align-items:center;gap:10px;padding:12px 18px;background:rgba(46,125,50,.08);border:1px solid rgba(46,125,50,.15);border-radius:8px;margin:20px auto;max-width:420px;font-family:Inter,sans-serif;font-size:14px;color:#2e7d32}

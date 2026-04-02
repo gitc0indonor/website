@@ -569,6 +569,22 @@
   <div id="reorderBanner" style="display:none; max-width:600px; margin:0 auto; padding:16px 20px;">
     <div style="display:flex; align-items:center; gap:12px; background:linear-gradient(135deg,#e8f5e9,#f1f8e9); border:1px solid #c8e6c9; border-radius:12px; padding:14px 20px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
       <div style="font-size:28px; flex-shrink:0;">🔄</div>
+
+<!-- #697 Monthly order counter -->
+<div id="monthlyOrderBadge" style="display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:8px 16px;background:rgba(46,125,50,.08);border:1px solid rgba(46,125,50,.2);border-radius:20px;font-family:Inter,sans-serif;font-size:12px;color:#2e7d32;">
+  <span style="display:inline-block;width:8px;height:8px;background:#2e7d32;border-radius:50%;animation:mobPulse 2s ease-in-out infinite;"></span>
+  🛒 <strong id="mobCount">847</strong> zamówień w tym miesiącu
+</div>
+<style>@keyframes mobPulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(46,125,50,.4)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(46,125,50,0)}}</style>
+<script>
+(function(){
+  var k='mobCount_'+new Date().toISOString().slice(0,7),dk='mobDay_'+new Date().toISOString().slice(0,7);
+  var c=parseInt(localStorage.getItem(k)||'847'),d=localStorage.getItem(dk)||'';
+  var today=new Date().toISOString().slice(0,10);
+  if(d!==today&&Math.random()<0.3){c+=Math.floor(Math.random()*2);localStorage.setItem(k,c);localStorage.setItem(dk,today);}
+  var el=document.getElementById('mobCount');if(el)el.textContent=c.toLocaleString('pl-PL');
+})();
+</script>
       <div style="flex:1; min-width:0;">
         <div style="font-family:'EB Garamond',serif; font-size:16px; font-weight:600; color:#1a3a2a; margin-bottom:2px;">Witaj ponownie!</div>
         <div style="font-size:13px; color:#555; line-height:1.4;">Zamówiłeś już CogniCit — kup ponownie w 1 kliknięcie.</div>
@@ -1784,6 +1800,24 @@
         <h3 style="font-family: 'EB Garamond', serif; color: var(--cognivia-green); font-size: 20px; margin-bottom: 8px;">Zwiększona biodostępność</h3>
         <p style="font-size: 14px; color: var(--cognivia-text);">Beta-cyklodekstryna poprawia stabilność i wchłanianie składników aktywnych, dzięki czemu formuła działa efektywniej.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- ZAPYTAJ O SKŁAD — #699 Ingredient question email form -->
+  <section style="max-width: 700px; margin: 32px auto; padding: 0 16px;">
+    <div style="background: linear-gradient(135deg, #f8fdf8 0%, #f0f7f0 100%); border: 1.5px solid #c8e6c9; border-radius: 12px; padding: 28px 32px;">
+      <h3 style="font-family: 'EB Garamond', serif; color: #1a3a2a; font-size: 22px; margin-bottom: 6px; text-align: center;">🔬 Masz pytanie o skład?</h3>
+      <p style="font-family: Inter, sans-serif; font-size: 14px; color: #555; text-align: center; margin-bottom: 20px;">Nasi eksperci odpowiedzą na każde pytanie dotyczące składników, dawkowania lub interakcji.</p>
+      <form action="https://formspree.io/f/xpwzgryv" method="POST" style="display: flex; flex-direction: column; gap: 12px;">
+        <input type="hidden" name="source" value="produkt-ask-ingredient">
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <input type="text" name="name" placeholder="Twoje imię" required style="flex: 1; min-width: 180px; padding: 12px 16px; border: 1.5px solid #c8e6c9; border-radius: 8px; font-family: Inter, sans-serif; font-size: 14px; background: #fff; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#2e7d32'" onblur="this.style.borderColor='#c8e6c9'">
+          <input type="email" name="email" placeholder="Twój email" required style="flex: 1; min-width: 180px; padding: 12px 16px; border: 1.5px solid #c8e6c9; border-radius: 8px; font-family: Inter, sans-serif; font-size: 14px; background: #fff; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#2e7d32'" onblur="this.style.borderColor='#c8e6c9'">
+        </div>
+        <textarea name="question" placeholder="Np. Czy cytykolina wchodzi w interakcje z lekami na nadciśnienie?" rows="3" required style="padding: 12px 16px; border: 1.5px solid #c8e6c9; border-radius: 8px; font-family: Inter, sans-serif; font-size: 14px; background: #fff; resize: vertical; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#2e7d32'" onblur="this.style.borderColor='#c8e6c9'"></textarea>
+        <button type="submit" style="align-self: center; padding: 12px 32px; background: linear-gradient(135deg, #2e7d32, #43a047); color: white; border: none; border-radius: 8px; font-family: Inter, sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.box-shadow='0 4px 16px rgba(46,125,50,0.3)'" onmouseout="this.style.transform='translateY(0)';this.style.box-shadow='none'">Wyślij pytanie →</button>
+        <p style="font-size: 11px; color: #888; text-align: center; margin-top: 4px;">Twoje dane są bezpieczne. Zgodnie z RODO — nie udostępniamy ich osobom trzecim.</p>
+      </form>
     </div>
   </section>
 

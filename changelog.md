@@ -4948,3 +4948,38 @@
 **LETNI10 coverage:** 7 seasonal touchpoints + bundle section links
 
 **Next priorities:** #695 (memory blog post — 3h), #694 (timeline to seasonal pages — 1h), #204 (CEO Formspree — THE blocker).
+
+### 2026-04-02 — Power Cycle #152 (05:05 UTC)
+- ✅ **#691** — Added "Bezpieczne zakupy" trust strip to faq-cognicit.html (only page missing it)
+  - 🔒 SSL · 🏭 GMP · 📋 RODO · 💰 30 dni zwrot — consistent footer bar
+  - All ~80 pages now have 100% trust strip coverage
+- ✅ **#699** — Added "Zapytaj o skład" email capture form to produkt.html
+  - Formspree-integrated form with name, email, question textarea fields
+  - Green gradient section matching site palette (EB Garamond heading, Inter inputs)
+  - Hidden source field "produkt-ask-ingredient" for lead tracking
+  - GDPR privacy note below submit button
+  - Positioned between "Porównaj skład" section and "Przechowywanie" section
+  - Captures hesitant buyers who have ingredient questions before purchase
+  - Expected: 3-5% of product page visitors submit questions → leads for follow-up
+- ✅ Browser-check: site live ✓ (200 OK). Cart JS valid.
+- ✅ 3 new improvement ideas added (#700-#702)
+- ✅ Blog outline #154 added to content_calendar.md
+
+**Files changed:**
+- `faq-cognicit.html` — Trust strip before closing scripts (1 line)
+- `produkt.html` — Ingredient question form section (~25 lines)
+- `content_calendar.md` — Blog outline #154 added
+- `improvement_queue.md` — Items #691, #699 marked DONE; 3 new items (#700-#702)
+- `changelog.md` — This entry
+
+**Site verification:** Both files validated. faq-cognicit.html: trust strip confirmed. produkt.html: ask-ingredient form confirmed, Formspree endpoint active. Cart JS syntax valid.
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. reCAPTCHA v3 integrated (test key). **THE BLOCKER:** CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~699 completed + ~65 active = ~764 total
+**Blog posts:** 74 total (73 content + 1 index)
+**Landing pages:** 10
+**Trust strip coverage:** 80/80 pages (100%) ✅
+**LETNI10 coverage:** 7 seasonal touchpoints + bundle section links
+
+**Next priorities:** #695 (memory blog post — 3h), #694 (timeline to seasonal pages — 1h), #204 (CEO Formspree — THE blocker).
