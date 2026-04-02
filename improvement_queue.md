@@ -1882,3 +1882,13 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 692. **[NEW] Batch-add GA4 events script to all pages** — ga4-events.js currently on ~15 pages. Extend to all ~80 HTML files for complete ecommerce funnel tracking. Without events on every page, CEO has blind spots in conversion analytics. Estimated: 15 minutes.
 
 693. **[NEW] Create "Ranking suplementów na koncentrację 2026" mega SEO page (/ranking-koncentracja-2026)** — Ultimate authority page targeting "najlepszy suplement na koncentrację" (5K+ monthly searches in Poland). Full comparison of 8 supplements scored on 10 criteria (transparency, GMP, caffeine-free, bioavailability, price/day, EU compliance, third-party testing, satisfaction guarantee, ingredient count, dose precision). Interactive filter by price/ingredients. FAQPage + Product aggregateRating JSON-LD. Designed to outrank all Polish affiliate review sites. Estimated: 4 hours.
+
+### 🆕 Power Cycle #151 New Ideas (2026-04-02 00:51 UTC)
+
+694. **[NEW] Add "Efekty w 30 dni" expandable timeline to all seasonal landing pages** — Extend the new interactive timeline from produkt.html to matura.html, sesja.html, lato.html. Context-specific: "Jak szybko zobaczysz efekty na sesję/maturę/lato?" Expected 10-15% time-on-page increase from interactive engagement. Estimated: 1 hour.
+
+695. **[NEW] Create "Jak suplementy wpływają na pamięć? Kompletny przewodnik 2026" blog post from outline #153** — NOW is the publish window (April, evergreen). "suplementy na pamięć" = 2K+ monthly. Comparison table format = featured snippet potential. Zero Polish authority content on memory supplements. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 3 hours.
+
+696. **[NEW] Add "Porównaj skład" floating button to ALL seasonal landing pages** — produkt.html has mobile-only floating comparison button (#417). Extend to matura.html, sesja.html, lato.html, powrot-do-szkoly.html — visitors on seasonal pages should be able to compare CogniCit ingredients without navigating to produkt.html. Green 🔬 button + overlay panel. Estimated: 30 minutes.
+
+## Last Updated: 2026-04-02 (Power Cycle #151 — 00:51 UTC)

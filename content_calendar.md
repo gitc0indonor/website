@@ -3951,3 +3951,32 @@
 **SEO angle:** "Produktywność" + "suplementy" = growing Polish search trend as hybrid/remote work normalizes. Zero Polish content connecting nootropics to productivity science. First-mover advantage. Practical protocol = high engagement + shares on LinkedIn.
 **Target platforms:** Google (SEO), LinkedIn (pracownicy umysłowi), Wykop (produktywność), grupy FB o rozwoju zawodowym
 **Status:** Outline ready, needs writing
+
+---
+
+### Blog Post Outline #153 (Power Cycle #151)
+**Title:** "Jak suplementy wpływają na pamięć? Kompletny przewodnik 2026"
+**Target:** "suplementy na pamięć", "jak poprawić pamięć suplementy" (2K+ monthly)
+**Word count:** 2000-2500
+**Keywords:** suplementy na pamięć ranking, jak poprawić pamięć, cytykolina pamięć, nootropiki na pamięć
+
+**Outline:**
+1. **Wstęp** — Każdy zapomina. Kiedy to norma, a kiedy sygnał? Rynek suplementów na pamięć rośnie 12% YoY.
+2. **Jak działa pamięć?** — 3 typy (robocza, krótkoterminowa, długoterminowa). Hipokamp, acetylocholina, konsolidacja podczas snu. Prosty model dla czytelnika.
+3. **Ranking składników na pamięć** — Tabela porównawcza:
+   - Cytykolina (CDP-Cholina) — 233 publikacji PubMed, prekursor ACh, 300 mg dawka, efekt po 7-14 dniach
+   - Bacopa monnieri — 80 publikacji, adaptogen, działa po 4-6 tyg., trudność: jakość ekstraktu
+   - Ginkgo biloba — 150+ publikacji, ale kontrowersyjne (GEM study 2008, brak efektu u zdrowych)
+   - Omega-3 (DHA) — budulec błon neuronowych, ale 1-3 mies. na efekty, interakcje z lekami
+   - Fosfatydyloseryna — dobry profil, ale drogi (~4 zł/dzień) i słabsze dowody
+4. **Tabela 8 kryteriów** — składnik, dawka, czas działania, PubMed count, GMP, cena/dzień, stymulant?, ocena
+5. **Dlaczego cytykolina wygrywa?** — Najwięcej dowodów, najszybsze działanie, synergia z ALA + β-CD
+6. **CogniCit — więcej niż jeden składnik** — 3 synergistyczne składniki vs. single-ingredient supplements
+7. **Czego unikać?** — Proprietary blends, brak GMP, mikrodawki, "magiczne" formuły
+8. **Praktyczne wskazówki** — 5-tip checklist: jak wybrać suplement na pamięć
+9. **Podsumowanie** — Ranking + rekomendacja CogniCit
+
+**Schemas:** Article + BreadcrumbList + FAQPage JSON-LD (5 Q&As)
+**CTA:** produkt.html + email capture popup (60% scroll)
+**Internal links:** produkt.html, porownanie.html, nauka.html, cytykolina-przewodnik-kompletny.html, skladniki.html
+**Status:** Outline ready, needs writing. Publish window: April 2026 (evergreen).

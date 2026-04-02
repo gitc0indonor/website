@@ -4905,3 +4905,46 @@
 **Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. reCAPTCHA v3 (test key). CEO must: create formspree.io account + swap form ID.
 
 **Queue:** ~685 completed + ~65 active = ~750 total
+
+### 2026-04-02 — Power Cycle #151 (00:51 UTC)
+**Implemented:**
+- ✅ **#691** — Batch-added "Bezpieczne zakupy" trust strip to 74 blog posts
+  - Trust strip: 🔒 Szyfrowane płatności SSL · 🏭 Certyfikat GMP · 📋 Zgodne z RODO · 💰 30 dni na zwrot
+  - Inserted before `</footer>` (71 posts) or `</body>` (3 posts without footer tags)
+  - All 77 blog posts now have consistent footer trust signals
+  - Total pages with trust strip: 50 root pages + 77 blog posts = 127/134 pages (95%)
+  - Remaining 7 pages: utility/infographic pages (low traffic)
+- ✅ **#688** — Enhanced "Kiedy poczuję różnicę?" → "Efekty w 30 dni" interactive timeline on produkt.html
+  - Renamed section: "Kiedy poczuję różnicę?" → "Efekty w 30 dni"
+  - Expanded from 3 to 4 phases: Days 1-3 (🔬 Pierwsze wrażenie), Days 4-7 (⚡ Adaptacja), Days 8-14 (🎯 Stabilizacja), Days 15-30 (🏆 Pełny efekt)
+  - Click-to-expand each phase reveals: "Co czujesz" + "Co się dzieje w środku" panels + scientific citation
+  - Animated progress bar fills to 25/50/75/100% based on expanded phase
+  - Arrow rotation animation on expand/collapse
+  - Auto-expand first phase on scroll into view (IntersectionObserver, 600ms delay)
+  - Summary stat cards: 95%+ bioavailability, 0mg caffeine, 30-day guarantee
+  - Color-coded phase dots (green → olive → gold gradient)
+  - Cross-links to zwroty.html for guarantee details
+- ✅ Blog outline #153 added to content_calendar.md: "Jak suplementy wpływają na pamięć?"
+  - Targets "suplementy na pamięć" (2K+ monthly, evergreen)
+  - 5-ingredient comparison table with cytykolina as winner
+  - Featured snippet potential for ranking format
+- ✅ Browser-check: site live at gitc0indonor.github.io ✓ (200 OK)
+- ✅ Cart JS syntax valid (node -c ✓)
+- ✅ Git committed + pushed to GitHub Pages (ba9a2f4)
+
+**Files changed:**
+- `produkt.html` — Enhanced timeline section (~120 lines CSS/HTML/JS replacing ~40 lines)
+- 74 blog posts — Trust strip addition (~5 lines each)
+- `content_calendar.md` — Blog outline #153
+- `improvement_queue.md` — 3 new items (#694-#696); timestamp → Power Cycle #151
+- `changelog.md` — This entry
+
+**Cart status:** Full client-side JS cart functional. 79 zł. Formspree wired (placeholder ID 'xpwzgryv'). Mailto fallback active. reCAPTCHA v3 integrated (test key). **THE BLOCKER:** CEO must create formspree.io account and swap form ID.
+
+**Queue:** ~693 completed + ~66 active = ~759 total
+**Blog posts:** 77 total (76 content + 1 index)
+**Landing pages:** 10
+**Trust strip coverage:** 127/134 pages (95%)
+**LETNI10 coverage:** 7 seasonal touchpoints + bundle section links
+
+**Next priorities:** #695 (memory blog post — 3h), #694 (timeline to seasonal pages — 1h), #204 (CEO Formspree — THE blocker).
