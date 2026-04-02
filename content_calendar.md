@@ -4028,3 +4028,21 @@
 **Competitive advantage:** Zero Polish content targeting "suplementy na koncentrację w pracy" specifically. First-mover.
 
 **Status:** Outline ready, needs writing
+
+### #155 — "Jak suplementy wpływają na regenerację mózgu po stresie?" (Power Cycle #153)
+- **Target keywords:** "regeneracja mózgu suplementy", "suplementy po stresie mózg", "neuroregeneracja suplementacja"
+- **Search volume:** 500+ monthly, growing trend (post-pandemic mental health awareness)
+- **Competition:** ZERO Polish content connecting nootropics to brain recovery
+- **Angle:** Post-stress brain recovery: oxidative damage → ALA glutathione repair, ACh depletion → cytykolina rebuild, β-CD bioavailability under stress
+- **Outline:**
+  1. Co dzieje się z mózgiem po chronicznym stresie? (cortisol → neuron damage)
+  2. ALA jako tarcza regeneracyjna (mitochondrial repair, glutathione)
+  3. Cytykolina jako budulec naprawczy (ACh synthesis, membrane repair)
+  4. β-CD — dlaczego biodostępność ma znaczenie podczas stresu
+  5. 30-dniowy protokół regeneracji (week-by-week expectations)
+  6. Porównanie: CogniCit vs ashwagandha vs kofeina vs multi-suplement
+  7. Kiedy suplementacja nie wystarczy — konsultacja z lekarzem
+- **Schema:** Article + BreadcrumbList + FAQPage (5 Q&As)
+- **Cross-links:** produkt.html, blog/nootropiki-a-stres.html, blog/suplementy-a-stres-w-pracy.html, nauka.html
+- **CTA:** LETNI10 discount code + 30-day guarantee
+- **Publish window:** April 2026 (evergreen, mental health awareness month)
