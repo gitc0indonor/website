@@ -1989,3 +1989,18 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 719. **[NEW] Add "Subskrybuj" floating badge for newsletter on blog pages** — Small persistent badge (bottom-right on desktop, full-width top bar on mobile) on all blog posts: "Zapisz się → 15% zniżki na pierwsze zamówienie". Non-intrusive but always visible. Complements scroll-based popup with always-on conversion point. Expected: 2-4% additional email capture rate. Estimated: 45 minutes.
 
 720. **[NEW] Create interactive "Jaki suplement jest dla Ciebie?" quiz page** — 5-question personality quiz (What's your biggest cognitive challenge? / Hours of mental work? / Coffee habits? / Age range? / Primary goal?). Each answer maps to ingredient recommendation with explanation. Results page shows personalized CogniCit breakdown + "Zamów swój suplement" CTA. Email gate before results for lead capture. SEO target: "jaki suplement dla mnie quiz". Expected: 15-25% email capture rate on quiz completers. Estimated: 3 hours.
+
+297. [NEW] Create Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów blog post — High-volume keyword "jak poprawić koncentrację" (3K+ monthly searches in Poland). 10 evidence-based lifestyle tips + CogniCit positioning. Listicle format = high engagement + featured snippet potential. Outline ready in content_calendar.
+
+301. [NEW] Add FAQ accordion with "Pytanie dnia" rotating widget to index.html hero — 7 rotating FAQ entries with daily index based on date. Click-to-expand accordion with smooth animation. Topics: coffee compatibility, daily dose, safety, timeline, β-CD purpose, drug status, daily cost. Non-intrusive card design matching site palette.
+
+302. [NEW] Add real-time inventory counter to produkt.html — Simulated stock counter with base count that probabilistically decrements on page load. Creates urgency: "XX sztuk w magazynie" badge near price. Even simulated inventory creates purchase urgency (psychological scarcity).
+
+
+### 🆕 Power Cycle Additions (2026-04-08 21:10 UTC)
+
+721. **[NEW] Add animated 'time saved' counter to index.html hero** — Live counter showing cumulative hours of focus gained by all CogniCit users (simulated: base 15000 hours + day increment). Green pulsing dot animation matching social proof patterns. Social proof: 15000+ godzin lepszej koncentracji builds trust immediately on landing. Estimated: 30 minutes.
+
+722. **[NEW] Create 'Dlaczego CogniCit?' FAQ landing page (/dlaczego-cognicit)** — Quick-scan landing page answering top 5 objections: Why no caffeine? Why only 3 ingredients? Why GMP matters? Why 79 zł? Why order now? Each answer in expandable accordion. Links to certyfikaty, porownanie, produkt. SEO for dlaczego cognicit, cognicit opinie. Estimated: 2 hours.
+
+723. **[NEW] Add 'Sticky CTA' bar that appears on scroll for index.html** — After user scrolls past hero (500px), show a slim sticky top bar with: CogniCit logo, 79 zł price, Zamów teraz button. Follows user through entire page. Increases conversion for mobile users who might otherwise scroll past CTA section. Estimated: 45 minutes.
