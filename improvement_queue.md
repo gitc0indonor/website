@@ -2004,3 +2004,13 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 722. **[NEW] Create 'Dlaczego CogniCit?' FAQ landing page (/dlaczego-cognicit)** — Quick-scan landing page answering top 5 objections: Why no caffeine? Why only 3 ingredients? Why GMP matters? Why 79 zł? Why order now? Each answer in expandable accordion. Links to certyfikaty, porownanie, produkt. SEO for dlaczego cognicit, cognicit opinie. Estimated: 2 hours.
 
 723. **[NEW] Add 'Sticky CTA' bar that appears on scroll for index.html** — After user scrolls past hero (500px), show a slim sticky top bar with: CogniCit logo, 79 zł price, Zamów teraz button. Follows user through entire page. Increases conversion for mobile users who might otherwise scroll past CTA section. Estimated: 45 minutes.
+
+
+### 🆕 Power Cycle Additions (2026-04-08 22:54 UTC)
+
+724. **[NEW] Add 'Jak działa CogniCit?' animated explainer section to index.html hero** — Below headline, add simple 3-step visual: (1) Kapsułka rozpuszcza się → (2) β-CD chroni składniki → (3) Mózg przyswaja. Animated SVG or CSS sequence. Quick visual explanation for visitors who don't read the full product page. Builds understanding before conversion. Estimated: 1.5 hours.
+
+725. **[NEW] Add 'Efekty po 7 dniach' timeline visual to produkt.html buy section** — Progress bar showing: Dzień 1-7: Adaptacja → Dzień 8-14: Pierwsze efekty → Dzień 15-21: Wyraźna poprawa → Dzień 22-30: Pełna skuteczność. Visual timeline with checkmarks for completed phases. Manages expectations and reduces early-churn when users expect instant results. Estimated: 45 minutes.
+
+726. **[NEW] Add 'Szybka dostawa' shipping badge to cart and checkout pages** — Prominent badge with truck emoji + Dostawa już jutro! (for orders before 14:00) to reduce cart abandonment. Shows in cart summary and checkout header. Leverages Poland's fast logistics (InPost same-day/next-day). Estimated: 20 minutes.
+
