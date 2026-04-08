@@ -48,6 +48,30 @@
 **Internal links:** produkt.html, porownanie.html, nauka.html, cytykolina-przewodnik-kompletny.html, skladniki.html
 **Status:** Outline ready, needs writing
 
+### New Blog Post Outline (Added 2026-04-08 — Power Cycle #149)
+**Title:** Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów
+**Target:** Polish audience, SEO for "jak poprawić koncentrację" (3K+ monthly searches)
+**Word count:** 1800-2200
+**Keywords:** jak poprawić koncentrację, naturalne sposoby na koncentrację, koncentracja praca, ćwiczenia koncentracji
+
+**Outline:**
+1. **Wstęp** — Każdy z nas gubi myśli w trakcie dnia. 10 praktycznych sposobów na lepszą koncentrację.
+2. **Sen — fundament skupienia** — 7-8 godzin, regularne godziny, ciemność. Wpływ na acetylocholinę.
+3. **Ruch — najlepszy nootropyk** — 20 minut spaceru przed pracą, endorfiny, przepływ krwi do mózgu.
+4. **Nawodnienie — mózg to w 75% woda** — 2-3 litry dziennie, drop w koncentracji już przy 2% odwodnienia.
+5. **Przerwy Pomodoro** — 25 min pracy / 5 min przerwy. Ultradian rhythm.
+6. **Dieta — paliwo bez spadków** — śniadanie z białkiem, unikaj cukru przed południem, CogniCit rano.
+7. **Medytacja i oddychanie** — 5 minut przed pracą, technika 4-7-8, obniża kortyzol.
+8. **Detoks cyfrowy** — Godzina bez ekranu przed snem, blue light filtr w dzień.
+9. **Suplementacja — wsparcie z zewnątrz** — Cytykolina (300mg), ALA (250mg), beta-CD (250mg), kofeina kontra.
+10. **Rutyna — mózg kocha powtórzenia** — te same rano, ten sam początek pracy, habit stacking.
+11. **Środowisko pracy** — porządek na biurku, muzyka kontra cisza, temperatura 20-22°C.
+12. **Podsumowanie** — Kombinacja daje najlepsze efekty. CogniCit jako uzupełnienie stylu życia.
+
+**CTA:** produkt.html + email capture
+**Internal links:** produkt.html, nauka.html, blog/cytykolina-przewodnik-kompletny.html, blog/suplementy-a-kofeina.html
+**Status:** Outline ready, needs writing
+
 ---
 
 ### Future Posts (Ideas)
