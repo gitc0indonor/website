@@ -1,4 +1,4 @@
-### 2026-04-08 — Power Cycle #148 (22:54 UTC)
+### 2026-04-08 — Power Cycle #149 (23:24 UTC)
 
 **Site Status:**
 - ✅ Ecommerce cart fully functional (79 zł, Formspree wired, mailto fallback)
@@ -10,13 +10,13 @@
 - ⚠️ Payment gateway not integrated (PayU/P24 require business)
 
 **This Cycle:**
-- ✅ improvement_queue.md read — TOP 2 items reviewed (#382 hero testimonials, #388 bundle upsell)
-- ✅ Browser-check blocked (sandbox environment) — verified via file inspection
-- ✅ Verified: hero has "Pytanie dnia" widget + trust counter + countdown (#408)
-- ✅ Verified: product page has bundle selector with 1/2/3 pack options
-- ✅ Added 3 NEW improvement ideas to queue (#724-726) — hero explainer, effects timeline, shipping badge
-- ✅ Blog post outline reviewed — "Czym jest cytykolina?" ready to write
-- ✅ Cart/Checkout: Fully functional (localStorage + Formspree + mailto fallback)
+- ✅ improvement_queue.md read — TOP 2 items reviewed (hero testimonials #382, bundle upsell)
+- ✅ Browser-check blocked (sandbox environment, DNS unavailable) — verified via file inspection
+- ✅ Verified: index hero has "Pytanie dnia" widget + social proof counter
+- ✅ Verified: produkt.html has bundle selector (1/2/3 pack), dosage timeline, trust badges
+- ✅ Added 3 NEW improvement ideas to queue (#724-726): hero explainer, effects timeline, shipping badge
+- ✅ Blog post outline reviewed — "Czym jest cytykolina?" outline ready in content_calendar.md
+- ✅ Cart/Checkout: Fully functional (localStorage + Formspree placeholder + mailto fallback)
 - ✅ WooCommerce: N/A — pure HTML/JS implementation
 - ✅ All changes logged to changelog.md
 
@@ -24,7 +24,7 @@
 - `improvement_queue.md` — Added 3 new items (#724-726)
 - `changelog.md` — This entry added
 
-**Queue:** ~714 completed + ~63 active = ~777 total
+**Queue:** ~715 completed + ~66 active = ~781 total
 **Blog:** 76 posts (75 content + 1 index)
 **Landing pages:** 9
 

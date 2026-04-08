@@ -389,6 +389,14 @@
 
 ---
 
+### 🆕 Power Cycle #149 Additions (2026-04-08)
+
+724. **[NEW] Add animated hero section explainer video placeholder** — Below the hero on index.html, add a clickable "Zobacz jak to działa" button that opens a modal with embedded video placeholder (YouTube-style with play button). Since real video not available yet, use animated SVG placeholder with "Wkrótce: film wyjaśniający mechanizm działania". Creates visual interest and anticipates video content. Estimated: 45 minutes.
+
+725. **[NEW] Add "Efekty w 30 dni" visual timeline to index.html** — Replicate the successful timeline from produkt.html (#298) to index.html: Dni 1-7 (adaptacja), Dni 8-14 (pierwsze efekty), Dni 15-21 (stabilizacja), Dni 22-30 (pełne działanie). Each phase expandable with science explanation. Positions CogniCit as the "evidenced results" supplement. Estimated: 1 hour.
+
+726. **[NEW] Add "Szyka wysyłka" micro-badge to produkt.html hero** — Add a small green pill badge below product name: "🚀 Wysyłka w 24h". Matches existing trust badges (GMP, GIS, fresh guarantee). Reinforces shipping speed at the exact decision moment. Already in sticky sidebar — this adds it to the main hero area. Estimated: 15 minutes.
+
 ### 🆕 Competitive Intelligence Additions (2026-03-27)
 *Source: Competitive warfare sweep — analyzed Brain Actives, Mind Booster, NooCube*
 
