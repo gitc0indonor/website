@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polityka jakości Cognivia | GMP, GIS, CoA - standardy produkcji</title>
+  <meta name="description" content="Poznaj standardy jakości Cognivia: certyfikat GMP, zgłoszenie GIS, badania laboratoryjne każdej partii, pełna trasowalność surowców.">
+  <meta name="keywords" content="polityka jakości, GMP, GIS, CoA, certyfikaty, badania laboratoryjne, jakość suplementów">
+  <link rel="canonical" href="https://gitc0indonor.github.io/website/jakosc.html">
+  <meta property="og:title" content="Polityka jakości Cognivia | GMP, GIS, CoA">
+  <meta property="og:description" content="Standardy jakości Cognivia: certyfikat GMP, zgłoszenie GIS, badania każdej partii.">
+  <meta property="og:url" content="https://gitc0indonor.github.io/website/jakosc.html">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --cognivia-green: #2D6642; --cognivia-gold: #c9a96e; --cognivia-beige: #f5f0e8; --cognivia-charcoal: #2a2a28; --cognivia-text: #4a4a48; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'EB Garamond', Georgia, serif; color: var(--cognivia-text); background: var(--cognivia-beige); line-height: 1.7; }
+    header { position: fixed; top: 0; width: 100%; padding: 16px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(245,240,232,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #e0dcd4; }
+    .logo { font-family: 'EB Garamond', serif; font-size: 24px; font-weight: 700; color: var(--cognivia-charcoal); text-decoration: none; }
+    .logo span { color: var(--cognivia-green); }
+    nav a { margin-left: 20px; color: var(--cognivia-text); text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+    .breadcrumb { max-width: 900px; margin: 80px auto 0; padding: 0 6%; font-size: 12px; color: #888; }
+    .breadcrumb a { color: var(--cognivia-green); text-decoration: none; }
+    .breadcrumb span { margin: 0 6px; opacity: 0.4; }
+    .hero { text-align: center; padding: 60px 8% 40px; max-width: 800px; margin: 0 auto; }
+    .hero h1 { font-family: 'EB Garamond', serif; font-size: 42px; color: var(--cognivia-charcoal); margin-bottom: 16px; }
+    .hero h1 span { color: var(--cognivia-green); }
+    .hero p { font-size: 18px; color: var(--cognivia-text); }
+    .section { background: #fff; border-radius: 16px; padding: 40px; margin: 24px auto; max-width: 900px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+    .section h2 { font-family: 'EB Garamond', serif; font-size: 28px; color: var(--cognivia-green); margin-bottom: 20px; }
+    .section h3 { font-family: 'EB Garamond', serif; font-size: 22px; color: var(--cognivia-charcoal); margin: 24px 0 12px; }
+    .section p { font-size: 15px; margin-bottom: 12px; }
+    .section ul { margin: 12px 0 12px 20px; }
+    .section li { font-size: 15px; margin-bottom: 8px; }
+    .badge-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 24px 0; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; }
+    .badge-gmp { background: #dcfce7; color: #16a34a; border: 1px solid #bbf7d0; }
+    .badge-gis { background: #dbeafe; color: #2563eb; border: 1px solid #bfdbfe; }
+    .badge-coa { background: #fef3c7; color: #d97706; border: 1px solid #fde68a; }
+    .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 24px 0; }
+    .step { text-align: center; padding: 24px; background: var(--cognivia-beige); border-radius: 12px; }
+    .step-number { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--cognivia-green); color: #fff; border-radius: 50%; font-family: 'Inter', sans-serif; font-weight: 600; margin-bottom: 12px; }
+    .step h4 { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--cognivia-charcoal); margin-bottom: 8px; }
+    .step p { font-size: 14px; color: var(--cognivia-text); }
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+    .comparison-table th, .comparison-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #e0dcd4; }
+    .comparison-table th { background: var(--cognivia-beige); font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; color: var(--cognivia-charcoal); }
+    .comparison-table td { font-size: 14px; }
+    .check { color: var(--cognivia-green); font-size: 18px; }
+    .cross { color: #dc2626; font-size: 18px; }
+    .guarantee { background: linear-gradient(135deg, #dcfce7 0%, #f0fdf4 100%); padding: 32px; border-radius: 16px; text-align: center; margin: 32px auto; max-width: 700px; }
+    .guarantee h3 { color: var(--cognivia-green); margin-bottom: 12px; }
+    .guarantee p { font-size: 16px; color: var(--cognivia-text); }
+    .cta { text-align: center; padding: 40px; }
+    .cta a { display: inline-block; background: var(--cognivia-green); color: #fff; padding: 16px 40px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 15px; transition: transform 0.2s, box-shadow 0.2s; }
+    .cta a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(45,102,66,0.3); }
+    footer { text-align: center; padding: 40px 5%; font-size: 12px; color: #999; border-top: 1px solid #e0dcd4; background: #fff; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 32px; }
+      .section { padding: 24px 16px; }
+      .process-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Polityka jakości Cognivia",
+    "description": "Standardy jakości Cognivia: certyfikat GMP, zgłoszenie GIS, badania laboratoryjne każdej partii, pełna trasowalność surowców.",
+    "url": "https://gitc0indonor.github.io/website/jakosc.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://gitc0indonor.github.io/website/"},
+      {"@type": "ListItem", "position": 2, "name": "Polityka jakości", "item": "https://gitc0indonor.github.io/website/jakosc.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Cogni<span>via</span></a>
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <a href="produkt.html">Produkt</a>
+      <a href="skladniki.html">Składniki</a>
+      <a href="certyfikaty.html">Certyfikaty</a>
+    </nav>
+  </header>
+  
+  <nav class="breadcrumb">
+    <a href="index.html">Strona główna</a> <span>›</span> Polityka jakości
+  </nav>
+
+  <div class="hero">
+    <h1>Nasza <span>Polityka Jakości</span></h1>
+    <p>Przejrzystość na każdym etapie produkcji — od surowca do gotowego produktu</p>
+  </div>
+
+  <div class="section">
+    <h2>Nasze zobowiązanie jakościowe</h2>
+    <p>W Cognivia jakość nie jest opcją — jest fundamentem. Każda partia produktu przechodzi rygorystyczne badania laboratoryjne, a cały proces produkcji odbywa się w warunkach zgodnych z certyfikatem GMP (Good Manufacturing Practice).</p>
+    
+    <div class="badge-row">
+      <div class="badge badge-gmp">✓ Certyfikat GMP</div>
+      <div class="badge badge-gis">✓ Zgłoszenie GIS</div>
+      <div class="badge badge-coa">✓ Certyfikat CoA</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>5 etapów kontroli jakości</h2>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h4>Weryfikacja surowców</h4>
+        <p>Każdy surowiec przed produkcją jest badany pod kątem czystości, tożsamości i zgodności ze specyfikacją.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h4>Kontrola procesu</h4>
+        <p>Podczas produkcji monitorujemy kluczowe parametry: temperaturę, wilgotność, czas mieszania.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h4>Badania końcowe</h4>
+        <p>Każda partia przechodzi badania laboratoryjne: zawartość składników, czystość mikrobiologiczna.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h4>Analiza dokumentacji</h4>
+        <p>Przed release przeglądamy wszystkie dokumenty: protokoły produkcyjne, wyniki badań, etykietowanie.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">5</div>
+        <h4>Trasowalność</h4>
+        <p>Każde opakowanie ma numer partii — można prześledzić pochodzenie surowców aż do źródła.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Co odróżnia nas od konkurencji?</h2>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Kryterium</th>
+          <th>Cognivia</th>
+          <th>Typowy suplement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Certyfikat GMP</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✗</span> rzadko</td>
+        </tr>
+        <tr>
+          <td>Badania każdej partii</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✗</span> sporadycznie</td>
+        </tr>
+        <tr>
+          <td>Pełna trasowalność</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✗</span></td>
+        </tr>
+        <tr>
+          <td>Zgłoszenie GIS</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✗</span> często brak</td>
+        </tr>
+        <tr>
+          <td>Certyfikat CoA</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✗</span></td>
+        </tr>
+        <tr>
+          <td>Publikacja wyników</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="cross">✗</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Standardy i regulacje</h2>
+    <h3>Certyfikat GMP (Good Manufacturing Practice)</h3>
+    <p>Nasz partner produkcyjny posiada certyfikat GMP potwierdzający zgodność z międzynarodowymi standardami produkcji suplementów diety. Certyfikat obejmuje:</p>
+    <ul>
+      <li>System zarządzania jakością (HACCP)</li>
+      <li>Kontrolę środowiska produkcyjnego</li>
+      <li>Walidację procesów produkcyjnych</li>
+      <li>Kontrolę surowców i wyrobu gotowego</li>
+      <li>System dokumentacji i archiwizacji</li>
+    </ul>
+
+    <h3>Zgłoszenie do GIS</h3>
+    <p>CogniCit został zgłoszony do Głównego Inspektora Sanitarnego (GIS) zgodnie z ustawą z dnia 25 sierpnia 2006 r. o bezpieczeństwie żywności i żywienia. Numer zgłoszenia dostępny na życzenie.</p>
+
+    <h3>Certyfikat CoA (Certificate of Analysis)</h3>
+    <p>Dla każdej partii produkcyjnej otrzymujemy certyfikat CoA (Certificate of Analysis) potwierdzający:</p>
+    <ul>
+      <li>Zawartość deklarowanych składników aktywnych</li>
+      <li>Brak zanieczyszczeń mikrobiologicznych</li>
+      <li>Zgodność ze specyfikacją fizykochemiczną</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Surowce — skąd pochodzą?</h2>
+    <p>W Cognivia stosujemy wyłącznie surowce farmaceutyczne z certyfikatem GMP:</p>
+    <ul>
+      <li><strong>Kwas alfa-liponowy (ALA)</strong> — syntetyzowany w warunkach farmaceutycznych, czystość ≥99%</li>
+      <li><strong>Cytykolina (CDP-Cholina)</strong> — farmaceutyczny surowiec, certyfikat GMP</li>
+      <li><strong>Beta-cyklodekstryna</strong> — nośnik klasy farmaceutycznej, status GRAS</li>
+      <li><strong>Kapsułka HPMC</strong> — roślinna, bez żelatyny, certyfikat hala</li>
+    </ul>
+    <p>Każdy surowiec pochodzi z zweryfikowanych dostawców spełniających nasze standardy jakościowe.</p>
+  </div>
+
+  <div class="guarantee">
+    <h3>🛡️ 30-dniowa gwarancja satysfakcji</h3>
+    <p>Jesteśmy pewni jakości CogniCit. Jeśli z jakiegokolwiek powodu nie będziesz zadowolony, zwrócimy pieniądze — bez pytań, bez formalności.</p>
+  </div>
+
+  <div class="cta">
+    <a href="produkt.html">Zamów CogniCit →</a>
+  </div>
+
+  <footer>
+    <p>© 2026 Cognivia. Wszelkie prawa zastrzeżone.</p>
+    <p>
+      <a href="polityka-prywatnosci.html" style="color:#888;text-decoration:none;">Polityka prywatności</a> |
+      <a href="regulamin.html" style="color:#888;text-decoration:none;">Regulamin</a> |
+      <a href="kontakt.html" style="color:#888;text-decoration:none;">Kontakt</a>
+    </p>
+  </footer>
+</body>
+</html>

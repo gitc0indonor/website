@@ -1981,3 +1981,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 717. **[NEW] Create "Suplementy a stres — jak chroniczny stres wpływa na mózg?" blog post** — Target "suplementy na stres" (2K+ monthly), "jak stres wpływa na mózg" (800+). Covers cortisol mechanism, hippocampus damage, ALA neuroprotection, cytykolina for acetylcholine under stress. Article + BreadcrumbList + FAQPage JSON-LD. Cross-links to skutki-uboczne.html and nauka.html. Estimated: 2.5 hours.
 
+
+### 🆕 Power Cycle Additions (2026-04-08 20:10 UTC)
+
+718. **[NEW] Add micro-interactions to "Dodaj do koszyka" button** — On click: (1) button scales to 0.95, (2) cart icon bounces with count increment, (3) brief confetti/sparkle effect on success. Small detail makes site feel premium and responsive. CSS animations only, no JS library. Increases perceived quality and click satisfaction. Estimated: 45 minutes.
+
+719. **[NEW] Add "Subskrybuj" floating badge for newsletter on blog pages** — Small persistent badge (bottom-right on desktop, full-width top bar on mobile) on all blog posts: "Zapisz się → 15% zniżki na pierwsze zamówienie". Non-intrusive but always visible. Complements scroll-based popup with always-on conversion point. Expected: 2-4% additional email capture rate. Estimated: 45 minutes.
+
+720. **[NEW] Create interactive "Jaki suplement jest dla Ciebie?" quiz page** — 5-question personality quiz (What's your biggest cognitive challenge? / Hours of mental work? / Coffee habits? / Age range? / Primary goal?). Each answer maps to ingredient recommendation with explanation. Results page shows personalized CogniCit breakdown + "Zamów swój suplement" CTA. Email gate before results for lead capture. SEO target: "jaki suplement dla mnie quiz". Expected: 15-25% email capture rate on quiz completers. Estimated: 3 hours.
