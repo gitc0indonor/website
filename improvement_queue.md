@@ -389,6 +389,12 @@
 
 ---
 
+757. **[NEW] Add micro-interactions to "Dodaj do koszyka" button** — On click: (1) button scales down 0.95 then back, (2) cart icon bounces with count increment animation, (3) brief confetti/sparkle particle effect on success. Small detail that makes the site feel premium. CSS animations only, no JS library. Estimated: 45 minutes.
+
+758. **[NEW] Add "Subskrybuj" floating badge for newsletter on blog pages** — Small persistent badge (bottom-right corner on desktop) on all blog posts: "Zapisz się → 15% zniżki". Non-intrusive, always visible but dismissible. Complements scroll-based popup. Estimated: 45 minutes.
+
+759. **[NEW] Add FAQPage JSON-LD to faq-produkt.html** — 20 Q&As exist but no schema markup. Adding FAQPage JSON-LD triggers Google rich snippets. Free organic CTR boost. Estimated: 30 minutes.
+
 ### 🆕 Power Cycle #150 Additions (2026-04-09)
 
 751. **[NEW] Add "Polecane przez ekspertów" trust badge to index.html hero** — Add an "Eksperci polecają" badge below GMP badge showing "Rekomendowany przez neurologów i farmaceutów" with clipboard icon. Builds authority at hero section. Estimated: 15 minutes.
