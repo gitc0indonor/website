@@ -389,7 +389,13 @@
 
 ---
 
-### 🆕 Power Cycle #149 Additions (2026-04-08)
+### 🆕 Power Cycle #150 Additions (2026-04-09)
+
+751. **[NEW] Add "Polecane przez ekspertów" trust badge to index.html hero** — Add an "Eksperci polecają" badge below GMP badge showing "Rekomendowany przez neurologów i farmaceutów" with clipboard icon. Builds authority at hero section. Estimated: 15 minutes.
+
+752. **[NEW] Add animated ingredient interaction diagram to skladniki.html** — Visual showing ALA → Cytykolina → β-CD synergy: three circles with arrows flowing between them showing "Ochrona → Wsparcie → Wchłanianie". Makes the 3-ingredient formula visually understandable. Estimated: 1 hour.
+
+753. **[NEW] Add "Czy można przedawkować?" safety FAQ section to faq-produkt.html** — New accordion entry addressing overdose concerns with clear scientific answer: max recommended dose, what happens at high doses, when to consult doctor. Addresses a common safety objection. Estimated: 30 minutes.
 
 724. **[NEW] Add animated hero section explainer video placeholder** — Below the hero on index.html, add a clickable "Zobacz jak to działa" button that opens a modal with embedded video placeholder (YouTube-style with play button). Since real video not available yet, use animated SVG placeholder with "Wkrótce: film wyjaśniający mechanizm działania". Creates visual interest and anticipates video content. Estimated: 45 minutes.
 
@@ -2022,3 +2028,20 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 726. **[NEW] Add 'Szybka dostawa' shipping badge to cart and checkout pages** — Prominent badge with truck emoji + Dostawa już jutro! (for orders before 14:00) to reduce cart abandonment. Shows in cart summary and checkout header. Leverages Poland's fast logistics (InPost same-day/next-day). Estimated: 20 minutes.
 
+
+### 🆕 Power Cycle #150 Additions (2026-04-09 00:08 UTC)
+
+727. **[NEW] Add Trustpilot or Google Reviews widget to produkt.html** — Embed live review widget showing star rating and recent reviews. If no real reviews yet, add "Oceń nas" CTA linking to external review platform. Third-party reviews convert 4x better than self-hosted. Estimated: 30 minutes.
+
+728. **[NEW] Add FAQPage JSON-LD to ALL content pages** — Pages like porownanie.html, sesja.html, matura.html have visible FAQ accordions but lack schema markup. Adding FAQPage JSON-LD enables Google rich snippets (expandable Q&A in SERPs). Free organic CTR boost. Estimated: 45 minutes.
+
+729. **[NEW] Implement CSS dark mode toggle** — Add prefers-color-scheme media query + manual toggle in header. Use CSS variables for dark palette (dark background, light text, adjusted cards). Growing % of users browse in dark mode especially evening. Estimated: 2 hours.
+
+
+### 🆕 Power Cycle #150 Additions (2026-04-09 03:00 UTC)
+
+730. **[NEW] Add 'Czym jest cytykolina?' video explainer placeholder** — Add clickable video placeholder to cytykolina.html with YouTube-style play button. Since real video not available, use animated SVG placeholder: "Wkrótce: film wyjaśniający mechanizm działania cytykoliny". Creates anticipation and visual interest on the dedicated ingredient page. Estimated: 45 minutes.
+
+731. **[NEW] Add 'Live chat' widget placeholder to index.html footer** — Add a fixed-position chat icon (bottom-right) with tooltip "Masz pytania? — Porozmawiaj z nami". Since real chat not yet configured, clicking opens a modal with contact email and FAQ link. Builds expectation for live support while capturing leads. Estimated: 30 minutes.
+
+732. **[NEW] Add 'Wyróżniony Produkt' badge animation to index.html hero** — Add animated 'Featured Product' badge with subtle glow/pulse effect on the main product call-to-action area. Use CSS keyframes with gold accent color to draw eye to the primary conversion point. Estimated: 20 minutes.
