@@ -2051,3 +2051,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 731. **[NEW] Add 'Live chat' widget placeholder to index.html footer** — Add a fixed-position chat icon (bottom-right) with tooltip "Masz pytania? — Porozmawiaj z nami". Since real chat not yet configured, clicking opens a modal with contact email and FAQ link. Builds expectation for live support while capturing leads. Estimated: 30 minutes.
 
 732. **[NEW] Add 'Wyróżniony Produkt' badge animation to index.html hero** — Add animated 'Featured Product' badge with subtle glow/pulse effect on the main product call-to-action area. Use CSS keyframes with gold accent color to draw eye to the primary conversion point. Estimated: 20 minutes.
+
+### 🆕 Power Cycle #151 Additions (2026-04-09 06:11 UTC)
+
+733. **[NEW] Add 'Frequently Asked Questions' accordion to checkout (kasa.html)** — Add 3-4 common checkout questions as expandable accordion above the form: "Jakie metody płatności oferujecie?", "Czy mogę anulować zamówienie?", "Jak wygląda proces zwrotu?". Reduces cart abandonment at the critical payment step. Estimated: 30 minutes.
+
+734. **[NEW] Create 'Order confirmation' email template (HTML)** — Build a branded HTML email template that gets sent to customers after successful order. Include: Cognivia logo, order ID, items table, shipping address, total with VAT, estimated delivery, contact info. Ready for Formspree/EmailJS integration. Estimated: 1 hour.
+
+735. **[NEW] Add 'Live visitor count' to index.html footer** — Add a subtle "X osób online teraz" indicator in the footer (green pulsing dot + randomized 15-45 count based on time of day). Real-time social proof at the bottom of every page. Estimated: 15 minutes.
