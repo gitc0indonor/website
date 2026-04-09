@@ -2059,3 +2059,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 734. **[NEW] Create 'Order confirmation' email template (HTML)** — Build a branded HTML email template that gets sent to customers after successful order. Include: Cognivia logo, order ID, items table, shipping address, total with VAT, estimated delivery, contact info. Ready for Formspree/EmailJS integration. Estimated: 1 hour.
 
 735. **[NEW] Add 'Live visitor count' to index.html footer** — Add a subtle "X osób online teraz" indicator in the footer (green pulsing dot + randomized 15-45 count based on time of day). Real-time social proof at the bottom of every page. Estimated: 15 minutes.
+
+### 🆕 Power Cycle #152 Additions (2026-04-09 08:58 UTC)
+
+736. **[NEW] Add 'Scroll-to-top' floating button to all pages** — Fixed position button (bottom-right) that smoothly scrolls to top. Shows after scrolling 300px+. Include upward arrow icon. Increases UX for long content pages (blog posts, ingredient pages). Estimated: 15 minutes.
+
+737. **[NEW] Add 'Cookie consent' granular controls** — Expand cookie banner to let users toggle: Necessary (always on), Analytics, Marketing. Currently all-or-nothing. GDPR requires granular consent for non-essential cookies. Estimated: 30 minutes.
+
+738. **[NEW] Add 'Print-friendly' stylesheet for produkt.html** — Add @media print styles that hide navigation, hero, trust badges, and only show: product name, ingredients, dosage, price. Enables users to print product sheet for reference. Estimated: 20 minutes.
