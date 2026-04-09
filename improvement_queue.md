@@ -2067,3 +2067,11 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 737. **[NEW] Add 'Cookie consent' granular controls** — Expand cookie banner to let users toggle: Necessary (always on), Analytics, Marketing. Currently all-or-nothing. GDPR requires granular consent for non-essential cookies. Estimated: 30 minutes.
 
 738. **[NEW] Add 'Print-friendly' stylesheet for produkt.html** — Add @media print styles that hide navigation, hero, trust badges, and only show: product name, ingredients, dosage, price. Enables users to print product sheet for reference. Estimated: 20 minutes.
+
+### 🆕 Power Cycle #154 Additions (2026-04-09 16:04 UTC)
+
+739. **[NEW] Add 'Live Chat Widget' to footer** — Fixed chat bubble (bottom-right) with "Porozmawiaj z nami" tooltip. Clicking opens modal with FAQ links + contact form. Creates expectation for support while capturing leads. Estimated: 30 minutes.
+
+740. **[NEW] Add 'Scarcity Timer' to produkt.html** — Real-time countdown showing "XX osób ogląda teraz" + inventory countdown. Creates urgency and social proof simultaneously. Estimated: 45 minutes.
+
+741. **[NEW] Add 'Social Share Floating' sidebar** — Sticky left-side share buttons (Facebook, Messenger, Copy Link) on desktop, fixed bottom bar on mobile. Increases organic reach when visitors share. Estimated: 20 minutes.
