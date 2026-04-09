@@ -2075,3 +2075,19 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 740. **[NEW] Add 'Scarcity Timer' to produkt.html** — Real-time countdown showing "XX osób ogląda teraz" + inventory countdown. Creates urgency and social proof simultaneously. Estimated: 45 minutes.
 
 741. **[NEW] Add 'Social Share Floating' sidebar** — Sticky left-side share buttons (Facebook, Messenger, Copy Link) on desktop, fixed bottom bar on mobile. Increases organic reach when visitors share. Estimated: 20 minutes.
+
+### 🆕 Cycle #120 Additions (2026-04-09 17:38 UTC)
+
+742. **[NEW] Add 'Proces zamówienia' step indicator to checkout** — Visual 4-step progress bar (Koszyk → Dane → Płatność → Potwierdzenie) on kasa.html showing current checkout stage. Reduces cart abandonment by clarifying process. Estimated: 20 minutes.
+
+743. **[NEW] Create 'Dlaczego my?' trust comparison page** — Compare Cognivia vs marketplace sellers: direct-from-manufacturer, GMP certified, 30-day guarantee, Polish support team. Add to footer links. Builds confidence for first-time buyers. Estimated: 45 minutes.
+
+744. **[NEW] Add 'Produkt niedostępny' back-in-stock notification form** — Simple email capture form for when product is out of stock (future inventory feature). Always shows "Dostępny" currently, but UI placeholder needed for future. Estimated: 15 minutes.
+
+### 🆕 Cycle #155 Additions (2026-04-09 22:44 UTC)
+
+745. **[NEW] Add 'Exit Intent Popup' with discount code** — Detect mouse leaving viewport, show modal with 10% discount for first order. Email capture required to get code. Builds cart abandonment recovery. Estimated: 30 minutes.
+
+746. **[NEW] Add 'Delivery Estimate' countdown to cart** — Show "Zamów w ciągu X:XX aby otrzymać jutro" countdown on koszyk.html. Creates urgency for free shipping threshold. Estimated: 20 minutes.
+
+747. **[NEW] Add 'Breadcrumb Navigation' to product pages** — Add hierarchical breadcrumb: Strona główna > Suplementy > CogniCit on produkt.html, ingredient pages. Improves SEO and UX for navigation. Estimated: 15 minutes.
