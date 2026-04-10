@@ -4070,3 +4070,31 @@
 - **Cross-links:** produkt.html, blog/nootropiki-a-stres.html, blog/suplementy-a-stres-w-pracy.html, nauka.html
 - **CTA:** LETNI10 discount code + 30-day guarantee
 - **Publish window:** April 2026 (evergreen, mental health awareness month)
+
+---
+
+## NEW: Blog Post Outline (2026-04-10)
+
+### Blog Post #28: "Jak naturalnie poprawić koncentrację? 10 sprawdzonych sposobów"
+
+**Target:** Polish audience, SEO for "jak poprawić koncentrację" (3000+ monthly searches)
+**Word count:** 1800-2200
+**Keywords:** jak poprawić koncentrację, naturalne sposoby na koncentrację, koncentracja bez kofeiny
+
+**Outline:**
+1. **Wstęp** — Dlaczego koncentracja jest trudniejsza niż kiedyś (digitale zmęczenie, multi-tasking)
+2. **Sen** — 7-9 godzin, regularność, before midnight (link to blog/nootropiki-a-sen)
+3. **Ruch** — 30 min dziennie zwiększa BDNF, neuroplastyczność
+4. **Nawodnienie** — 2L wody, 5% spadek koncentracji przy odwodnieniu
+5. **Przerwy** — Technika Pomodoro, reguła 20-20-20 dla oczu
+6. **Dieta** — Tłuste ryby, orzechy, warzywa, unikać cukru (link to blog/skladniki)
+7. **Medytacja** — 10 min dziennie zwiększa uwagę selektywną
+8. **Detoks cyfrowy** — 1h bez ekranów przed snem
+9. **Suplementacja** — Kiedy warto sięgnąć po nootropik (link to produkt.html)
+10. **Rutyna** — Rano CogniCit + poranna kawa z przerwą (link to blog/suplementy-a-kofeina)
+11. **Podsumowanie** — Checklist 10 punktów + CTA
+
+**CTA:** produkt.html + email capture popup
+**Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/nootropiki-a-sen.html, skladniki.html
+**Status:** Outline ready, needs writing
+

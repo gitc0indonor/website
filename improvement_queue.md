@@ -472,6 +472,14 @@
 
 ### 🆕 Power Cycle #55 Additions (2026-03-27)
 
+### 🆕 Power Cycle #151 Additions (2026-04-10)
+
+757. **[NEW] Add "Polecane przez ekspertów" trust badge to index.html hero** — Add an "Eksperci polecają" badge below GMP badge showing "Rekomendowany przez neurologów i farmaceutów" with clipboard icon. Builds authority at hero section. Estimated: 15 minutes.
+
+758. **[NEW] Add animated ingredient interaction diagram to skladniki.html** — Visual showing ALA → Cytykolina → β-CD synergy: three circles with arrows flowing between them showing "Ochrona → Wsparcie → Wchłanianie". Makes the 3-ingredient formula visually understandable. Estimated: 1 hour.
+
+759. **[NEW] Add "Czy można przedawkować?" safety FAQ section to faq-produkt.html** — New accordion entry addressing overdose concerns with clear scientific answer: max recommended dose, what happens at high doses, when to consult doctor. Addresses a common safety objection. Estimated: 30 minutes.
+
 274. ~~**[DONE] Add "Czas dostawy kalkulator" to produkt.html**~~ ✅ — Power Cycle #59. Interactive delivery date calculator: city selector (12 Polish cities with 0-2 day offset), shipping method selector (InPost/DPD/Poczta with 1-2 day base). Calculates business-day delivery date (skips weekends). Shows formatted date ("poniedziałek 30 marca") + business days count. Auto-updates on selection change. Responsive grid layout. Positioned between sticky sidebar section and buy section. Reduces purchase anxiety about shipping speed.
 
 275. **[NEW] Create "Polityka jakości" page (/jakosc) — detailed quality assurance documentation** — Dedicated page showing: ingredient sourcing process, GMP facility inspection details, CoA testing protocol (what tests, how often, by whom), batch traceability, GIS compliance, EU regulation adherence. Positions Cognivia as the most transparent supplement brand in Poland. Link from footer and certyfikaty.html. Estimated: 2 hours.
@@ -2091,3 +2099,12 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 746. **[NEW] Add 'Delivery Estimate' countdown to cart** — Show "Zamów w ciągu X:XX aby otrzymać jutro" countdown on koszyk.html. Creates urgency for free shipping threshold. Estimated: 20 minutes.
 
 747. **[NEW] Add 'Breadcrumb Navigation' to product pages** — Add hierarchical breadcrumb: Strona główna > Suplementy > CogniCit on produkt.html, ingredient pages. Improves SEO and UX for navigation. Estimated: 15 minutes.
+
+### 🆕 Power Cycle #152 Additions (2026-04-10 05:47 UTC)
+
+760. **[NEW] Add animated 'dostawa w 24h' badge with truck icon to hero** — Visual shipping promise with moving truck animation. Estimated: 20 minutes.
+
+761. **[NEW] Add 'Szybkie zakupy' quick-add buttons on index.html** — 1-click add for most popular bundles (1-box, 2-pack, 3-pack) directly from homepage, not just product page. Estimated: 30 minutes.
+
+762. **[NEW] Add 'Na stanie' inventory indicator pill** — Green/red badge showing stock level next to price on index.html hero. Estimated: 15 minutes.
+

@@ -1,5 +1,5 @@
 # Ecommerce Status — cognivia.eu
-## Last Updated: 2026-04-02 08:12 UTC (Ecommerce Cron Cycle #119)
+## Last Updated: 2026-04-09 17:38 UTC (Ecommerce Cron Cycle #120)
 
 ## 🟡 OVERALL: Cart/Checkout FUNCTIONAL — Orders NOT arriving (Formspree placeholder)
 
@@ -621,6 +621,37 @@
 - IMP-700: Add "Zapytaj o skład" form to seasonal landing pages (matura, sesja, lato) — Extend ingredient question form from produkt.html to seasonal pages. Context-specific placeholders per page. Same Formspree endpoint with unique source tracking. Expected 2-4% question submission rate. Estimated: 30 minutes.
 - IMP-701: Create "Suplementy a pamięć — jak zapamiętujemy? Kompletny przewodnik 2026" blog post — High-volume target "suplementy na pamięć" (2K+ monthly). Memory neuroscience with CogniCit ingredients mapped to encoding/consolidation/retrieval. Comparison table = featured snippet potential. Article + BreadcrumbList + FAQPage JSON-LD. Estimated: 3 hours.
 - IMP-702: Add "Efekty w 30 dni" expandable timeline to matura.html and sesja.html — Interactive timeline showing expected benefits during exam preparation: Week 1 (adaptacja) → Week 2 (lepsze zapamiętywanie) → Week 3 (stała koncentracja) → Week 4 (pełne efekty). Reduces "czy zdążę przed egzaminem?" objection. CSS-only accordion. Estimated: 1 hour.
+
+---
+
+*Next check scheduled by cron.*
+
+## 📋 Cycle #120 Audit (2026-04-09 17:38 UTC)
+
+### Full Re-Audit Results
+| Component | Status | Change vs #119 |
+|-----------|--------|-----------------|
+| Cart (koszyk.html) | ✅ Working | No change |
+| Checkout (kasa.html) | ✅ Working | No change |
+| Order Confirmation (potwierdzenie.html) | ✅ Working | No change |
+| Product Page (produkt.html) | ✅ Complete | No change |
+| Cart JS (cognivia-cart.js) | ✅ Functional | No change |
+| Formspree | 🔴 Placeholder `xpwzgryv` (line 370) | UNCHANGED — 48+ cycles |
+| Payment gateways | 🔴 UI only (PayU/P24/BLIK/PayPal) | No change |
+| Legal pages (8) | ✅ All verified present | No change |
+| Trust elements | ✅ GMP, lab-tested, money-back, SSL, reviews | No change |
+| Shipping (4 methods) | ✅ InPost/DPD/Poczta Polska | No change |
+| VAT 23% | ✅ Configured | No change |
+| SEO + JSON-LD | ✅ Complete | No change |
+| Improvement queue | ✅ Active — items 700+ pending | 3 new items (742-744) |
+
+### Verdict
+**No change for 48+ cycles. Site is fully built and functional client-side. Formspree placeholder unchanged. CEO ACTION REQUIRED: activate Formspree at formspree.io to enable real orders.**
+
+### Cycle #120 Added to Queue (742-744)
+- IMP-742: Add "Proces zamówienia" step indicator to checkout — Visual 4-step bar (Koszyk → Dane → Płatność → Potwierdzenie) on kasa.html showing current progress. Reduces abandonment. Estimated: 20 minutes.
+- IMP-743: Create "Dlaczego my?" trust comparison page — Compare Cognivia vs marketplace sellers: direct-from-manufacturer, GMP certified, 30-day guarantee, Polish support. Place in footer. Estimated: 45 minutes.
+- IMP-744: Add "Produkt niedostępny" back-in-stock notification form — Capture email when product is out of stock (future feature). Currently always in stock. UI placeholder. Estimated: 15 minutes.
 
 ---
 
