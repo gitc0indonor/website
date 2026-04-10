@@ -330,6 +330,107 @@
     <p style="text-align:center; font-size: 12px; color: #aaa; margin-top: 8px;">β-CD jest uznawana za bezpieczną (GRAS) przez FDA i EFSA. Nie jest metabolizowana przez organizm.</p>
   </div>
 
+  <!-- ANIMATED INGREDIENT INTERACTION DIAGRAM -->
+  <div style="background: var(--cognivia-beige); border-radius: 16px; padding: 40px; margin: 32px auto; max-width: 800px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
+    <h2 style="font-family: 'EB Garamond', serif; font-size: 28px; color: var(--cognivia-green); margin-bottom: 8px; text-align: center;">⚡ Synergia składników</h2>
+    <p style="text-align: center; font-size: 14px; color: #888; margin-bottom: 40px;">ALA → Cytykolina → β-CD — jak trzy składniki współpracują ze sobą</p>
+    
+    <div style="display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 12px; align-items: center; max-width: 700px; margin: 0 auto 20px;" id="synergyDiagram">
+      <!-- ALA -->
+      <div class="syn-card" id="syn-ala" style="background: white; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 2px solid transparent; transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);">
+        <div style="font-size: 36px; margin-bottom: 8px;">🛡️</div>
+        <div style="font-weight: 700; color: #2a2a28; font-size: 16px;">ALA</div>
+        <div style="font-size: 11px; color: #777; margin-top: 4px;">Kwas alfa-liponowy</div>
+      </div>
+      
+      <div style="font-size: 28px; color: var(--cognivia-gold);" id="syn-arrow1">→</div>
+      
+      <!-- Cytykolina -->
+      <div class="syn-card" id="syn-citicoline" style="background: white; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 2px solid transparent; transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);">
+        <div style="font-size: 36px; margin-bottom: 8px;">🧠</div>
+        <div style="font-weight: 700; color: #2a2a28; font-size: 16px;">Cytykolina</div>
+        <div style="font-size: 11px; color: #777; margin-top: 4px;">CDP-Cholina</div>
+      </div>
+      
+      <div style="font-size: 28px; color: var(--cognivia-gold);" id="syn-arrow2">→</div>
+      
+      <!-- β-CD -->
+      <div class="syn-card" id="syn-bcd" style="background: white; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 2px solid transparent; transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);">
+        <div style="font-size: 36px; margin-bottom: 8px;">🔬</div>
+        <div style="font-weight: 700; color: #2a2a28; font-size: 16px;">β-CD</div>
+        <div style="font-size: 11px; color: #777; margin-top: 4px;">Beta-cyklodekstryna</div>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 24px;">
+      <div style="min-height: 80px;">
+        <p class="syn-desc" id="syn-desc-1" style="font-size: 15px; color: var(--cognivia-text); line-height: 1.7; opacity: 1; transition: opacity 0.5s ease;"><strong>ALA</strong> neutralizuje wolne rodniki, chroniąc neurony przed uszkodzeniem oksydacyjnym. Oczyszcza środowisko komórkowe.</p>
+        <p class="syn-desc" id="syn-desc-2" style="font-size: 15px; color: var(--cognivia-text); line-height: 1.7; opacity: 0; position: absolute; left: 0; right: 0; margin: 0 auto; max-width: 600px; transform: translateY(-100%); transition: opacity 0.5s ease; display: none;"><strong>Cytykolina</strong> buduje i naprawia błony neuronów oraz zwiększa produkcję acetylocholiny — neuroprzekaźnika odpowiedzialnego za pamięć i koncentrację.</p>
+        <p class="syn-desc" id="syn-desc-3" style="font-size: 15px; color: var(--cognivia-text); line-height: 1.7; opacity: 0; position: absolute; left: 0; right: 0; margin: 0 auto; max-width: 600px; transform: translateY(-100%); transition: opacity 0.5s ease; display: none;"><strong>β-CD</strong> tworzy pierścień ochronny, chroni oba składniki przed degradacją w żołądku i zwiększa ich biodostępność o 40-200%.</p>
+      </div>
+    </div>
+    
+    <style>
+    @keyframes synergyPulse {
+      0%,100% { box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+      50% { box-shadow: 0 8px 24px rgba(45, 102, 66, 0.25); }
+    }
+    @keyframes arrowFlow {
+      0% { opacity: 0.3; transform: translateX(-10px); }
+      50% { opacity: 1; transform: translateX(0); }
+      100% { opacity: 0.3; transform: translateX(10px); }
+    }
+    @media (max-width: 768px) {
+      #synergyDiagram { grid-template-columns: 1fr !important; gap: 24px !important; }
+      #syn-arrow1, #syn-arrow2 { display: none !important; }
+    }
+    </style>
+    
+    <script>
+    (function(){
+      let step = 1;
+      const cards = ['syn-ala', 'syn-citicoline', 'syn-bcd'];
+      const arrows = ['syn-arrow1', 'syn-arrow2'];
+      const descs = ['syn-desc-1', 'syn-desc-2', 'syn-desc-3'];
+      
+      function animateSynergy() {
+        cards.forEach((id, i) => {
+          const el = document.getElementById(id);
+          const desc = document.getElementById(descs[i]);
+          
+          if(i+1 === step) {
+            el.style.borderColor = 'var(--cognivia-green)';
+            el.style.transform = 'scale(1.08)';
+            el.style.boxShadow = '0 8px 24px rgba(45, 102, 66, 0.2)';
+            desc.style.opacity = '1';
+            desc.style.display = 'block';
+            desc.style.transform = 'translateY(0)';
+          } else {
+            el.style.borderColor = 'transparent';
+            el.style.transform = 'scale(1)';
+            el.style.boxShadow = '0 4px 12px rgba(0,0,0,0.06)';
+            desc.style.opacity = '0';
+            setTimeout(() => { desc.style.display = 'none'; }, 500);
+          }
+        });
+        
+        arrows.forEach((id, i) => {
+          const arrow = document.getElementById(id);
+          arrow.style.opacity = (i+1 < step) ? '1' : '0.3';
+          arrow.style.animation = (i+1 < step) ? 'arrowFlow 1.5s ease-in-out infinite' : 'none';
+        });
+        
+        step = step % 3 + 1;
+      }
+      
+      setTimeout(() => {
+        animateSynergy();
+        setInterval(animateSynergy, 3500);
+      }, 800);
+    })();
+    </script>
+  </div>
+
   <!-- SYNERGIA -->
   <div class="synergy">
     <h2>Synergia — razem > suma części</h2>
