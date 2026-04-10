@@ -409,8 +409,51 @@
 }
 </style>
 
+  <style>
+    .floating-lab-badge {
+      position: fixed;
+      top: 100px;
+      right: 24px;
+      background: white;
+      border: 2px solid var(--cognivia-green);
+      border-radius: 12px;
+      padding: 10px 14px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      z-index: 999;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--cognivia-green);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      animation: pulseBadge 3s ease-in-out infinite;
+    }
+    @keyframes pulseBadge {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+    .stock-indicator {
+      background: #e8f5e9;
+      color: #2e7d32;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      display: inline-block;
+      margin: 8px 0;
+    }
+    @media (max-width: 768px) {
+      .floating-lab-badge {
+        right: 12px;
+        top: 90px;
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="floating-lab-badge">🧪 Certyfikat GMP ✓</div>
   <div class="scroll-progress"></div>
   <nav class="mobile-menu">
     <a href="produkt.html">Produkt</a>
