@@ -149,6 +149,11 @@
       border-color: rgba(143, 122, 61, 0.3);
       animation: trustBadgePulse 2.5s ease-in-out 3;
     }
+    @keyframes trustBadgePulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(143, 122, 61, 0.2); }
+      50% { box-shadow: 0 0 0 8px rgba(143, 122, 61, 0); }
+    }
+    }
     /* #216 — Trust badge pulse animation */
     @keyframes trustBadgePulse {
       0% { box-shadow: 0 0 0 0 rgba(201,169,110,0.4); }
