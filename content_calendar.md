@@ -4098,3 +4098,32 @@
 **Internal links:** produkt.html, blog/suplementy-a-kofeina.html, blog/nootropiki-a-sen.html, skladniki.html
 **Status:** Outline ready, needs writing
 
+-e 
+---
+
+### New Blog Post Outline (Added 2026-04-10 — Power Cycle #153)
+**Title:** 5 powodów dlaczego kofeina niszczy Twój koncentrację (i co użyć zamiast niej)
+**Target:** Polish audience, SEO for "kofeina a koncentracja", "alternatywa dla kawy", "nootropiki bez kofeiny"
+**Word count:** 1800-2200
+**Keywords:** kofeina a koncentracja, alternatywa dla kawy, nootropiki bez kofeiny, cytykolina vs kofeina, zmęczenie po kawie
+
+**Outline:**
+1. **Wstęp** - Polacy piją 3-4 kawy dziennie. Ale czy kofeina naprawdę poprawia koncentrację długoterminowo?
+2. **Jak działa kofeina** - blokada adenozyny, tolerancja, cykl pobudzenie-zjazd
+3. **5 negatywnych efektów długoterminowych:**
+   1. Tolerancja (potrzebujesz coraz więcej)
+   2. Zjazd energetyczny po 2-3 godzinach
+   3. Zaburzenia snu (półtrwanie 5-6 godzin)
+   4. Podwyższony kortyzol i lęk
+   5. Brak wpływu na pamięć długotrwałą
+4. **Co działa zamiast kofeiny?** - Cytykolina jako prekursor acetylocholiny, nie stymulant, trwały efekt, brak zjazdu
+5. **Porównanie tabela:** Kofeina vs CogniCit (cytykolina + ALA + β-CD)
+6. **Dla kogo?** Programiści, studenci, osoby 50+, każdy kto chce stabilną koncentrację bez crashu
+7. **Rekomendacja:** Zastąp 2. kawę w ciągu dnia CogniCit. Pierwsza kawka jest OK.
+8. **Podsumowanie** - Kofeina = natychmiastowy kop. CogniCit = trwała koncentracja.
+
+**CTA:** Sprawdź CogniCit → produkt.html
+**Internal links:** blog/suplementy-a-kofeina.html, produkt.html, cytykolina.html, jak-stosowac.html
+**SEO angle:** "kofeina a koncentracja" 2.2K monthly searches. Positions CogniCit as the caffeine-free alternative.
+**Status:** ✅ Outline added. Ready for writing.
+
