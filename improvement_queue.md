@@ -8,9 +8,10 @@ Last updated: 2026-04-10 16:21 UTC
 | HIGH | Add public order tracking lookup page | ✅ IMPLEMENTED 2026-04-10 |
 | HIGH | Add verified customer testimonials section | ✅ IMPLEMENTED 2026-04-10 |
 | MEDIUM | Add trust badges + lab result icons to hero | ✅ IMPLEMENTED 2026-04-10 |
-| HIGH | Add floating lab result badge on product sticky header | 📋 QUEUED |
-| MEDIUM | Add customer photo testimonials with verified order badges | 📋 QUEUED |
-| MEDIUM | Add live order count ticker on hero | 📋 QUEUED |
+| HIGH | Add floating lab result badge on product sticky header | ✅ IMPLEMENTED 2026-04-10 18:55 UTC |
+| MEDIUM | Add customer photo testimonials with verified order badges | ✅ IMPLEMENTED 2026-04-10 19:53 UTC |
+| MEDIUM | Add live order count ticker on hero | ✅ IMPLEMENTED 2026-04-10 19:53 UTC |
+| HIGH | Add real-time remaining stock indicator on product page | ✅ IMPLEMENTED 2026-04-10 18:55 UTC |
 | MEDIUM | Add shipping & returns policy page | 📋 QUEUED |
 | MEDIUM | Add real-time remaining stock indicator on product page | 📋 QUEUED |
 | MEDIUM | Add abandoned cart reminder emails | 📋 QUEUED |
@@ -23,3 +24,18 @@ Last updated: 2026-04-10 16:21 UTC
 | MEDIUM | Add lab result certificate download widget on product page | 📋 QUEUED |
 | MEDIUM | Add side-by-side comparison table vs competitors | 📋 QUEUED |
 | LOW | Add product wishlist functionality | 📋 QUEUED |
+| HIGH | Add before/after cognitive performance comparison graphic | 📋 QUEUED |
+| MEDIUM | Add sticky "last units remaining" countdown indicator | 📋 QUEUED |
+| MEDIUM | Add customer purchase verification badges on testimonials | 📋 QUEUED |
+| MEDIUM | Add scroll-triggered ingredient reveal animations | 📋 QUEUED |
+| MEDIUM | Add 1-click reorder button for returning customers | 📋 QUEUED |
+| MEDIUM | Add ingredient deep dive individual pages for each active compound | 📋 QUEUED |
+| HIGH | Add before/after cognitive performance comparison graphic | 📋 QUEUED |
+| MEDIUM | Add sticky "last units remaining" countdown indicator | 📋 QUEUED |
+| HIGH | Add before/after cognitive performance comparison graphic | 📋 QUEUED |
+| MEDIUM | Add sticky "last units remaining" countdown indicator | 📋 QUEUED |
+| MEDIUM | Add customer purchase verification badges on testimonials | 📋 QUEUED |
+-e 
+| MEDIUM | Add side-by-side comparison table vs competitors | 📋 QUEUED |
+| MEDIUM | Add lab result certificate download widget on product page | 📋 QUEUED |
+| MEDIUM | Add floating trust badge bar on all pages | 📋 QUEUED |

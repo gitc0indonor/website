@@ -4127,3 +4127,25 @@
 **SEO angle:** "kofeina a koncentracja" 2.2K monthly searches. Positions CogniCit as the caffeine-free alternative.
 **Status:** ✅ Outline added. Ready for writing.
 
+
+
+---
+
+### NEW BLOG POST (Power Cycle #155 - 2026-04-10)
+**Title:** Dlaczego opłaca się wybrać minimalistyczną suplementację?
+**Target:** Polish audience, SEO-focused
+**Word count:** 1500-1800
+**Keywords:** minimalistyczna suplementacja, mało składników suplement, prosta formuła, lepszy suplement mniej składników
+
+**Outline:**
+1. **Wstęp** - Rynek jest pełen suplementów z 20+ składników. Czy więcej = lepiej?
+2. **Problem suplementów-kombajnów** - Mikrodawki, interakcje, brak weryfikacji, placebo efekt
+3. **Zalety minimalistycznego podejścia** - Dokładne dawki, pełna transparentność, łatwiejsza kontrola jakości, mniej interakcji
+4. **Synergia ponad ilością** - Czemu 3 dobrze dobrane składniki działają lepiej niż 20 po trochu
+5. **Jak CogniCit został zaprojektowany?** - Proces wyboru składników, odrzucone składniki, kryteria naukowe
+6. **Checklist dla kupującego** - Ile składników jest optymalnie? Kiedy więcej to za dużo?
+7. **Podsumowanie** - Precyzja > ilość. Suplementacja to nie zbieranie składników - to budowanie formuły.
+
+**CTA:** Poznaj formułę CogniCit → produkt.html
+**Status:** ✅ ADDED 2026-04-10
+
