@@ -480,6 +480,12 @@
 
 759. **[NEW] Add "Czy można przedawkować?" safety FAQ section to faq-produkt.html** — New accordion entry addressing overdose concerns with clear scientific answer: max recommended dose, what happens at high doses, when to consult doctor. Addresses a common safety objection. Estimated: 30 minutes.
 
+760. **[NEW] Add "Quick view" modal for product gallery on produkt.html** — Users click thumbnail to see enlarged image in modal with smooth fade-in, navigation arrows for multiple images, close on click-outside or ESC key. Estimated: 45 minutes.
+
+761. **[NEW] Add "Frequently bought together" suggestion to cart page** — When user visits koszyk.html, show "Razem z CogniCit polecamy:" with related products (simulated bundle: 2-pack with 5% discount, 3-pack with 10% discount). Estimated: 30 minutes.
+
+762. **[NEW] Add scroll-triggered "back to top" floating button** — Appears after scrolling 500px, shows subtle arrow-up icon, smooth scroll to top on click. Estimated: 15 minutes.
+
 274. ~~**[DONE] Add "Czas dostawy kalkulator" to produkt.html**~~ ✅ — Power Cycle #59. Interactive delivery date calculator: city selector (12 Polish cities with 0-2 day offset), shipping method selector (InPost/DPD/Poczta with 1-2 day base). Calculates business-day delivery date (skips weekends). Shows formatted date ("poniedziałek 30 marca") + business days count. Auto-updates on selection change. Responsive grid layout. Positioned between sticky sidebar section and buy section. Reduces purchase anxiety about shipping speed.
 
 275. **[NEW] Create "Polityka jakości" page (/jakosc) — detailed quality assurance documentation** — Dedicated page showing: ingredient sourcing process, GMP facility inspection details, CoA testing protocol (what tests, how often, by whom), batch traceability, GIS compliance, EU regulation adherence. Positions Cognivia as the most transparent supplement brand in Poland. Link from footer and certyfikaty.html. Estimated: 2 hours.
