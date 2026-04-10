@@ -486,6 +486,10 @@
 
 762. **[NEW] Add scroll-triggered "back to top" floating button** — Appears after scrolling 500px, shows subtle arrow-up icon, smooth scroll to top on click. Estimated: 15 minutes.
 
+763. **[NEW] Add "Powiedz znajomemu" referral program section to index.html** — "Zaproponuj CogniCit znajomemu i otrzymaj 10% zniżki na następne zamówienie". Referral banner below trust badges. Estimated: 45 minutes.
+764. **[NEW] Add ingredient origin map to /skladniki.html** — Visual map showing where each ingredient is sourced from: ALA (Germany), Cytykolina (Italy), β-CD (Netherlands). Builds transparency trust. Estimated: 1 hour.
+765. **[NEW] Add "Dzień w życiu z CogniCit" narrative blog post** — Follow a typical workday using CogniCit: morning routine, deep work, afternoon focus, evening recovery. Relatable lifestyle content. Estimated: 2 hours.
+
 274. ~~**[DONE] Add "Czas dostawy kalkulator" to produkt.html**~~ ✅ — Power Cycle #59. Interactive delivery date calculator: city selector (12 Polish cities with 0-2 day offset), shipping method selector (InPost/DPD/Poczta with 1-2 day base). Calculates business-day delivery date (skips weekends). Shows formatted date ("poniedziałek 30 marca") + business days count. Auto-updates on selection change. Responsive grid layout. Positioned between sticky sidebar section and buy section. Reduces purchase anxiety about shipping speed.
 
 275. **[NEW] Create "Polityka jakości" page (/jakosc) — detailed quality assurance documentation** — Dedicated page showing: ingredient sourcing process, GMP facility inspection details, CoA testing protocol (what tests, how often, by whom), batch traceability, GIS compliance, EU regulation adherence. Positions Cognivia as the most transparent supplement brand in Poland. Link from footer and certyfikaty.html. Estimated: 2 hours.
@@ -2114,3 +2118,10 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 
 762. **[NEW] Add 'Na stanie' inventory indicator pill** — Green/red badge showing stock level next to price on index.html hero. Estimated: 15 minutes.
 
+
+179. [NEW] Add animated ingredient synergy diagram to skladniki.html — Interactive animation showing ALA → Cytykolina → β-CD flow with sequential highlighting, pulse animations, and dynamic descriptions. Automatically cycles through steps, responsive mobile layout. ✅ DONE 2026-04-10
+180. [NEW] Add "Polecane przez ekspertów" trust badge to index.html hero below GMP badge — Gold-accented badge with pulsing animation, expert endorsement signal for conversion trust. ✅ DONE 2026-04-10
+
+181. [NEW] Add scroll-triggered ingredient mechanism reveal on produkt.html — Animate each ingredient card as user scrolls down product page with staggered reveal effect
+182. [NEW] Add mouse-hover interaction bubbles on składniki synergy diagram — When user hovers over an ingredient card, show connection lines and highlight synergistic effects
+183. [NEW] Add 30-second auto-loop video explainer of β-CD mechanism as micro-animation on homepage hero
