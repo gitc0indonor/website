@@ -2125,3 +2125,8 @@ ppets for "jak zamówić suplement" queries. Estimated: 30 minutes.
 181. [NEW] Add scroll-triggered ingredient mechanism reveal on produkt.html — Animate each ingredient card as user scrolls down product page with staggered reveal effect
 182. [NEW] Add mouse-hover interaction bubbles on składniki synergy diagram — When user hovers over an ingredient card, show connection lines and highlight synergistic effects
 183. [NEW] Add 30-second auto-loop video explainer of β-CD mechanism as micro-animation on homepage hero
+
+--- 2026-04-10T12:32:24+00:00 ECOMMERCE CRON IMPROVEMENTS ---
+1. [ ] Guest checkout option for kasa.html
+2. [ ] Order tracking lookup public page
+3. [ ] Live stock remaining counter on produkt.html

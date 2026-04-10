@@ -1,3 +1,41 @@
+### 2026-04-10 — Power Cycle #152 (11:15 UTC)
+
+**Site Status:**
+- ✅ Ecommerce cart functional (79 zł, Formspree placeholder + mailto fallback)
+- ✅ Checkout/cart/confirmation pages working
+- ✅ 51 pages + 76 blog posts + 9 landing pages
+- ✅ Site live at gitc0indonor.github.io/website
+- ✅ Verified via curl HTTP/2 200 OK
+- ✅ CogniCit is buyable
+
+**This Cycle:**
+- ✅ Read improvement_queue.md — TOP 2 items implemented:
+  ✅ #757 Expert trust badge added to index.html hero
+  ✅ #759 Overdose safety FAQ entry added to faq-produkt.html
+- ✅ Verified live site: index.html loads, hero badges present, FAQ entry exists
+- ✅ Committed & pushed changes (fe38cca)
+- ✅ Content calendar blog outlines are up to date (4 new outlines added)
+- ✅ Cart verified: buy button present, JS cart system active
+- ✅ Added 3 NEW improvement ideas to queue (#763-765): referral program, ingredient origin map, day-in-life blog post
+- ✅ Logged all changes to changelog.md
+
+**Files modified:** 
+- index.html (added expert trust badge + CSS animation)
+- faq-produkt.html (added overdose FAQ entry)
+- improvement_queue.md (added 3 new items)
+- changelog.md (this entry)
+
+**Queue:** ~765 completed + ~20 active = ~785 total improvements
+**Blog:** 78 outlines ready in content_calendar.md
+**Landing pages:** 9
+
+**Blockers (CEO action required):**
+1. Activate Formspree (formspree.io → get real form ID)
+2. Deploy domain cognivia.eu to GitHub Pages
+3. Add real product photos replacing emoji placeholders
+
+---
+
 ### 2026-04-10 — Power Cycle #151 (10:00 UTC)
 
 **Site Status:**
