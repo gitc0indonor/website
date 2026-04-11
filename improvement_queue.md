@@ -50,3 +50,7 @@ Last updated: 2026-04-11 00:41 UTC
 | MEDIUM | Add side-by-side comparison table vs competitors | 📋 QUEUED |
 | MEDIUM | Add lab result certificate download widget on product page | 📋 QUEUED |
 | MEDIUM | Add floating trust badge bar on all pages | 📋 QUEUED |
+-e 
+| HIGH | Add 30-day money back guarantee banner on product page | 📋 QUEUED |
+| MEDIUM | Add user satisfaction score widget (96% approval) | 📋 QUEUED |
+| MEDIUM | Add "Frequently bought together" product bundle section | 📋 QUEUED |
