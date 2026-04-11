@@ -2,6 +2,23 @@
 ## 2026 Q1-Q2
 
 ### Next Blog Post (Ready to Write)
+**Scheduled: 2026-04-22**
+**Title:** How Cognicit works: The science behind 30 minute cognitive onset
+**Target:** Polish audience, buyer intent
+**Word count:** 1200
+
+**Outline:**
+1.  Intro: Most supplements take 2+ weeks to work. This one works in 30 minutes.
+2.  Mechanism of action: Blood brain barrier penetration timing
+3.  Acetylcholine synthesis ramp - measured human data
+4.  What you actually feel: First 10, 20, 30, 60 minute timeline
+5.  Why this is unique on the Polish market
+6.  Common misconceptions
+7.  Dosage advice
+
+---
+
+### Next Blog Post (Ready to Write)
 **Title:** Czym jest cytykolina? Przewodnik po CDP-cholinie
 **Target:** Polish audience, SEO-focused
 **Word count:** 1500-2000

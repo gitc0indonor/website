@@ -1,9 +1,15 @@
 # 🚀 WEBSITE IMPROVEMENT QUEUE
-Last updated: 2026-04-10 16:21 UTC
+Last updated: 2026-04-11 00:41 UTC
 
 ## PENDING IMPROVEMENTS
 | Priority | Item | Status |
 |----------|------|--------|
+| MEDIUM | Add exit intent email signup popup with 10% first order discount | ✅ IMPLEMENTED 2026-04-11 01:13 UTC |
+| MEDIUM | Add shipping timeline estimator widget on cart page | ✅ IMPLEMENTED 2026-04-11 01:13 UTC |
+| MEDIUM | Add scroll-triggered FAQ accordion on product page | 📋 QUEUED |
+| MEDIUM | Add ingredient deep dive individual pages for each active compound | 📋 QUEUED |
+| MEDIUM | Add sticky "last units remaining" countdown indicator | 📋 QUEUED |
+| MEDIUM | Add before/after cognitive performance comparison graphic | 📋 QUEUED |
 | HIGH | Implement guest checkout (no account required) | ✅ IMPLEMENTED 2026-04-10 |
 | HIGH | Add public order tracking lookup page | ✅ IMPLEMENTED 2026-04-10 |
 | HIGH | Add verified customer testimonials section | ✅ IMPLEMENTED 2026-04-10 |
