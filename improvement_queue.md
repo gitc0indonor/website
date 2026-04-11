@@ -4,8 +4,13 @@ Last updated: 2026-04-11 00:41 UTC
 ## PENDING IMPROVEMENTS
 | Priority | Item | Status |
 |----------|------|--------|
+| MEDIUM | Add sticky "last units remaining" countdown indicator | 📋 QUEUED |
+| HIGH | Add before/after cognitive performance comparison graphic | 📋 QUEUED |
+| MEDIUM | Add lab result certificate download widget on product page | 📋 QUEUED |
 | MEDIUM | Add exit intent email signup popup with 10% first order discount | ✅ IMPLEMENTED 2026-04-11 01:13 UTC |
 | MEDIUM | Add shipping timeline estimator widget on cart page | ✅ IMPLEMENTED 2026-04-11 01:13 UTC |
+| MEDIUM | Add scroll-triggered FAQ accordion on product page | ✅ IMPLEMENTED 2026-04-11 04:35 UTC |
+| MEDIUM | Add ingredient deep dive individual pages for each active compound | ✅ IMPLEMENTED 2026-04-11 04:35 UTC |
 | MEDIUM | Add scroll-triggered FAQ accordion on product page | 📋 QUEUED |
 | MEDIUM | Add ingredient deep dive individual pages for each active compound | 📋 QUEUED |
 | MEDIUM | Add sticky "last units remaining" countdown indicator | 📋 QUEUED |
