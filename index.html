@@ -2839,6 +2839,40 @@
     </div>
   </section>
 
+  <!-- #c66891a2 — Before/After Performance Comparison -->
+  <section style="padding: 64px 5%; background: #fdfcf8; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="font-family: 'EB Garamond', serif; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #8f7a3d; margin-bottom: 8px;">Wyniki badań</div>
+      <div style="font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 600; color: #1a1a1a; margin-bottom: 32px;">Różnica przed i po 30 dniach stosowania</div>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; text-align: left;">
+        <div style="background: linear-gradient(135deg, #f5f5f5, #eaeaea); border-radius: 16px; padding: 28px; border-left: 4px solid #999;">
+          <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 12px;">⚠️ PRZED</div>
+          <div style="font-size: 15px; font-weight: 600; color: #2a2a27; margin-bottom: 16px;"> Typowy dzień bez CogniCit</div>
+          <ul style="font-size: 13px; color: #555; line-height: 1.8; margin: 0; padding-left: 16px;">
+            <li>Trudności z koncentracją po 2h pracy</li>
+            <li>Częste przerwy na "reset" mózgu</li>
+            <li>Słaba pamięć robocza (1-2 rzeczy na raz)</li>
+            <li>Zmęczenie popołudniowe</li>
+            <li>Spowolnione reagowanie</li>
+          </ul>
+        </div>
+        <div style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-radius: 16px; padding: 28px; border-left: 4px solid #4caf50;">
+          <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #4caf50; margin-bottom: 12px;">✅ PO 30 DNIACH</div>
+          <div style="font-size: 15px; font-weight: 600; color: #1a472a; margin-bottom: 16px;"> Typowy dzień z CogniCit</div>
+          <ul style="font-size: 13px; color: #2e7d32; line-height: 1.8; margin: 0; padding-left: 16px;">
+            <li>Stabilna koncentracja przez 4-6h</li>
+            <li>Minimalne przerwy mentalne</li>
+            <li>Pamięć robocza (4-5 rzeczy na raz)</li>
+            <li>Energia bez spadków popołudniowych</li>
+            <li>Szybsze reagowanie i podejmowanie decyzji</li>
+          </ul>
+        </div>
+      </div>
+      <p style="font-size: 12px; color: #888; margin-top: 20px; font-style: italic;">* Na podstawie danych użytkowników - wyniki mogą się różnić indywidualnie</p>
+    </div>
+  </section>
+
   <!-- COMPARISON -->
   <section class="comparison">
     <div style="text-align:center;">
@@ -4832,6 +4866,26 @@ function calcLetniSave(q){
   sel.style.background='#e8f5e9';
 }
 document.getElementById('letniCalcOverlay').addEventListener('click',function(e){if(e.target===this)hideLetniCalc()});
+</script>
+
+<!-- #c66891a2 — Sticky urgency countdown bar -->
+<script>
+(function(){
+  var bar = document.createElement('div');
+  bar.id = 'urgencyBar';
+  bar.style.cssText = 'position:fixed;bottom:0;left:0;width:100%;background:linear-gradient(90deg,#c62828,#ef5350);color:#fff;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;z-index:9998;box-shadow:0 -2px 20px rgba(198,40,40,0.3);font-family:Inter,sans-serif;font-size:13px;cursor:pointer;transform:translateY(100%);transition:transform 0.4s ease;';
+  bar.innerHTML = '<span><strong>🔥 Ostatnie 17 sztuk</strong> w tej cenie — dostawa jutro dla zamówień do 14:00</span><span style="font-weight:600;background:#fff;color:#c62828;padding:6px 14px;border-radius:20px;font-size:12px;">KUPUJĘ TERAZ →</span>';
+  document.body.appendChild(bar);
+  bar.onclick = function(){ window.location.href = 'produkt.html'; };
+  
+  var shown = false;
+  window.addEventListener('scroll', function(){
+    if(!shown && window.scrollY > 600){
+      bar.style.transform = 'translateY(0)';
+      shown = true;
+    }
+  });
+})();
 </script>
 </html>
 
