@@ -83,6 +83,9 @@ Last updated: 2026-04-11 00:41 UTC
 | 🟡 MEDIUM | Add lab result certificate download widget on product page | ✅ IMPLEMENTED 2026-04-12 14:15 UTC |
 | 🟡 MEDIUM | Add animated trust badge footer bar on every page | ✅ IMPLEMENTED 2026-04-12 14:15 UTC |
 | 🟡 MEDIUM | Add "How it works" animated infographic section | 📋 QUEUED |
+| 🟡 MEDIUM | Add live customer count ticker showing orders today | 📋 QUEUED |
+| 🟡 MEDIUM | Add Instagram/TikTok social proof embed section | 📋 QUEUED |
+| 🟡 MEDIUM | Add email capture exit popup with 10% discount code | 📋 QUEUED |
 
 ### 2026-04-12 13:14 UTC ECOMMERCE AUDIT ADDED
 | Priority | Item | Status |
